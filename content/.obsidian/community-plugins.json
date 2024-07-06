@@ -10,5 +10,6 @@
   "obsidian-table-generator",
   "obsidian-tagfolder",
   "homepage",
-  "obsidian-file-cleaner"
+  "obsidian-file-cleaner",
+  "obsidian-plugin-toc"
 ]

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/remove-a-filesystem-from-a-partition/</link>
+    <description>Remove a filesystem from a partition To delete a filesystem, partition, raid and disk labels from the disk. Use wipefs -a /dev/sdb1 May also use wipefs -a /dev/sdb? to delete sub partitions? (I need to verify this)&#xA;Make sure the filesystem is unmounted first.&#xA;[root@server2 mapper]# lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINTS sda 8:0 0 20G 0 disk ├─sda1 8:1 0 1G 0 part └─sda2 8:2 0 19G 0 part ├─rhel-root 253:0 0 17G 0 lvm / └─rhel-swap 253:1 0 2G 0 lvm [SWAP] sdb 8:16 0 250M 0 disk ├─sdb1 8:17 0 95M 0 part ├─sdb2 8:18 0 95M 0 part └─sdb3 8:19 0 38M 0 part [SWAP] sdc 8:32 0 250M 0 disk sdd 8:48 0 250M 0 disk └─sdd1 8:49 0 163M 0 part ├─vgfs-ext4vol 253:2 0 128M 0 lvm └─vgfs-xfsvol 253:3 0 128M 0 lvm sde 8:64 0 250M 0 disk ├─vgfs-ext4vol 253:2 0 128M 0 lvm ├─vgfs-xfsvol 253:3 0 128M 0 lvm └─vgfs-swapvol 253:7 0 144M 0 lvm [SWAP] sdf 8:80 0 5G 0 disk └─vgvdo1-vpool0_vdata 253:4 0 5G 0 lvm └─vgvdo1-vpool0-vpool 253:5 0 20G 0 lvm └─vgvdo1-lvvdo 253:6 0 20G 0 lvm sr0 11:0 1 9.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/remove-a-filesystem-from-a-partition/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

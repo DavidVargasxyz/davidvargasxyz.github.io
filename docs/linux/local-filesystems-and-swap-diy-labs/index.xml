@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/local-filesystems-and-swap-diy-labs/</link>
+    <description>Local Filesystems and Swap DIY Labs Lab: Create VFAT, Ext4, and XFS File Systems in Partitions and Mount Persistently Create three 70MB primary partitions on one of the available 250MB disks (lsblk) by invoking the parted utility directly at the command prompt. [root@server2 mapper]# parted /dev/sdb mklabel msdos Information: You may need to update /etc/fstab. [root@server2 mapper]# parted /dev/sdb mkpart primary 1 70m Information: You may need to update /etc/fstab. root@server2 mapper]# parted /dev/sdb print Model: ATA VBOX HARDDISK (scsi) Disk /dev/sdb: 262MB Sector size (logical/physical): 512B/512B Partition Table: msdos Disk Flags: Number Start End Size Type File system Flags 1 1049kB 70.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/local-filesystems-and-swap-diy-labs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

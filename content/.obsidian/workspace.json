@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3f8eac0b36d7e95e",
+            "id": "98550067d2f0aa38",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/Local File Systems and Swap.md",
+                "file": "booknotes/Million Dollar Weekend.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "348c898a413e71aa",
+            "id": "4dc89ba081ed05b5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "now/_index.md",
+                "file": "linux/Storage Management.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "chown",
+                "query": "storage management",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "now/_index.md",
+                "file": "linux/Storage Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "now/_index.md",
+                "file": "linux/Storage Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "now/_index.md"
+                "file": "linux/Storage Management.md"
               }
             }
           }
@@ -162,35 +162,39 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "348c898a413e71aa",
+  "active": "95386cd3ccbc9478",
   "lastOpenFiles": [
-    "linux/Local File Systems and Swap.md",
-    "_index.md",
-    "booknotes/Million Dollar Weekend.md",
-    "booknotes/The Relationship Handbook.md",
-    "writing/caffeine-bird.md",
-    "tools/Process-bookfusion-highlights.md",
-    "linux/RHCSA Study Tracker.md",
-    "linux/_index.md",
-    "booknotes/_index.md",
-    "booknotes/The Power of Positive Dog Training.md",
-    "booknotes/The Truth.md",
-    "booknotes/The 12 Week Year.md",
-    "booknotes/123 Magic.md",
-    "booknotes/Bliss of the Celibate.md",
-    "booknotes/Dopamine Nation.md",
-    "booknotes/Master Reading List.md",
-    "booknotes/Playful Parenting.md",
-    "booknotes/Reading List.md",
-    "booknotes/The Psychology of Money.md",
-    "booknotes/The Blog Startup.md",
-    "now/_index.md",
-    "linux/rhcsa/RHCSA_Tracker.md",
-    "linux/rhcsa",
-    "now/Projects.md",
-    "now/quit_caffeine.md",
     "linux/RHCSA Notes.md",
-    "linux/Containers.md",
+    "linux/_index.md",
+    "linux/Storage Optimization with Virtual Data Optimizer (VDO).md",
+    "booknotes/Million Dollar Weekend.md",
+    "linux/Local Filesystems and Swap DIY Labs.md",
+    "linux/Storage Management.md",
+    "linux/Local File Systems and Swap.md",
+    "linux/Storage DYI Labs.md",
+    "linux/File System Management.md",
+    "linux/Adding Storage for Practice.md",
+    "images/Pasted image 20240706044207.png",
+    "images/Pasted image 20240706043958.png",
+    "images/Pasted image 20240706043837.png",
+    "images/Pasted image 20240706043737.png",
+    "linux/Thin Provisioning.md",
+    "linux/Partition Information (MBR and GPT).md",
+    "linux/Installation.md",
+    "linux/Remove a filesystem from a partition.md",
+    "linux/File Systems and File System Types.md",
+    "linux/RHCSA Study Tracker.md",
+    "linux/Swap and its Management.md",
+    "linux/File Systems and Swap Review Questions.md",
+    "linux/Interaction.md",
+    "linux/Storage Review Questions.md",
+    "linux/Logical Volume Manager (LVM).md",
+    "linux/Disk Partitions.md",
+    "linux/Archive/RHCSA9-asghar-ghori.md",
+    "linux/Partition Information.md",
+    "linux/Advanced Package Management.md",
+    "now/_index.md",
+    "linux/rhcsa",
     "linux/Local File Systems and Swap.md~",
     "images/image-0A8W8M1U.jpg",
     "images/Pasted image 20240414040338.png",
@@ -198,10 +202,6 @@
     "images/Pasted image 20240414034407.png",
     "images/Pasted image 20240403135641.png",
     "images/Pasted image 20240402045454.png",
-    "images/Pasted image 20240321045933.png",
-    "images/Pasted image 20240321045343.png",
-    "images/Pasted image 20231205145351.png",
-    "images/Pasted image 20231205144234.png",
     "booknotes/Million Dollar Weekend.md~",
     "tools/LEGO_BRICK_LABELS-CONTACT_SHEET.pdf",
     "images/A Guide to the Good Life _ The Ancient Art of Stoic Joy by William B. Irvine.epub",

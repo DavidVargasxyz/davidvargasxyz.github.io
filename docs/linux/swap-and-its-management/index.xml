@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/swap-and-its-management/</link>
+    <description>Swap and its Management The system splits the physical memory into small logical chunks called pages and maps their physical locations to virtual locations on the swap to facilitate access by system processors. This physical-to-virtual mapping of pages is stored in a data structure called page table, and it is maintained by the kernel. When a program or process is spawned, it requires space in the physical memory to run and be processed.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/swap-and-its-management/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

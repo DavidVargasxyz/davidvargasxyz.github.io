@@ -173,7 +173,7 @@ The two types of device files are character (or raw) and block.
 - Data on block devices is accessed randomly.
 - Hard disk drives, optical drives, parallel printers, etc.
 
-## Procfs File System (/proc)
+### Procfs File System (/proc)
 
 - Config and status info on:
 	- Kernel, CPU, memory, disks, partitioning, file systems, networking, running processes, etc.
@@ -181,14 +181,14 @@ The two types of device files are character (or raw) and block.
 - Interface to interact with kernel-maintained information.
 - Contents created in memory at system boot time, updated during runtime, and destroyed at system shutdown.
 
-## Runtime File System (/run)
+### Runtime File System (/run)
 
 - Data for processes running on the system.
 	- /run/media
 - Used to automatically mount external file systems (CD, DVD, flash USB.)
 - Contents deleted at shutdown.
 
-## The System File System (/sys)
+### The System File System (/sys)
 
 - Info about hardware devices, drivers, and some kernel features.
 - Used by the kernel to load necessary support for devices, create device nodes in /dev, and configure devices.

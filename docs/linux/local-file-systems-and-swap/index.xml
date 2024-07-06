@@ -3,7 +3,7 @@
   <channel>
     <title></title>
     <link>http://davidvargas.xyz/linux/local-file-systems-and-swap/</link>
-    <description>Local File Systems and Swap Topics File system benefits, categories, and types Ext3/Ext4, XFS, VFAT, and ISO9660 File system administration commandset Mount and unmount file systems manually and persistently Determine and use UUID Apply and use file system label Monitor file system and directory usage Create and mount different types of local file systems in partitions Create, mount, and resize Ext4 and XFS file systems in LVM Understand, create, and activate swap in partitions and LVM RHCSA Objectives: 30.</description>
+    <description>Local File Systems and Swap File systems&#xA;can be optimized, resized, mounted, and unmounted independently. must be connected to the directory hierarchy in order to be accessed by users and applications. This may be accomplished automatically at system boot or manually as required. File systems can be mounted or unmounted using their unique identifiers, labels, or device files. \ swap space. Swapping&#xA;provides a mechanism to move out and in pages of idle data between physical memory and swap.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://davidvargas.xyz/linux/local-file-systems-and-swap/index.xml" rel="self" type="application/rss+xml" />

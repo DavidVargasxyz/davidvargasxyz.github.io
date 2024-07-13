@@ -3,7 +3,7 @@
   <channel>
     <title></title>
     <link>http://davidvargas.xyz/linux/using-man-pages/</link>
-    <description>https://www.youtube.com/watch?v=RzAkjX_9B7E&amp;t=295s&#xA;man man&#xA;h for help&#xA;q to quit&#xA;Man uses less&#xA;^ mean ctrl&#xA;^f Forward one page&#xA;^b backward one page&#xA;can use # followed by command to repeat that many times&#xA;g first line in file&#xA;G last line in file&#xA;CR means press enter&#xA;Searching /searchword&#xA;press enter to jump first occurance of searched word&#xA;n to jump to next match&#xA;N to go to previous match</description>
+    <description>https://www.youtube.com/watch?v=RzAkjX_9B7E&amp;t=295s&#xA;Man (manual) pages are the built in help system for Linux. They contain documentation for most commands.&#xA;Run the man command on a command to get to it’s man page. man man&#xA;Navigating a man page h&#xA;Get help q&#xA;Quit out of the man page Man uses less&#xA;^ mean ctrl&#xA;^f Forward one page&#xA;^b backward one page&#xA;can use # followed by command to repeat that many times</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://davidvargas.xyz/linux/using-man-pages/index.xml" rel="self" type="application/rss+xml" />

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.124.1">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="Process and Task Scheduling Review Questions Q. What are the two commands to list the PID of a specific process? A. The pidof and pgrep commands.
+Q. By default the *.allow files exist. True or False? A. False. By default, the *.deny files exist.
+Q. Where do the scheduling daemons store log information of executed jobs? A. The scheduling daemons store log information of executed jobs in the /var/log/cron file.">
+    <meta name="author" content="David Vargas">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="Process and Task Scheduling Review Questions Q. What are the two commands to list the PID of a specific process? A. The pidof and pgrep commands.
+Q. By default the *.allow files exist. True or False? A. False. By default, the *.deny files exist.
+Q. Where do the scheduling daemons store log information of executed jobs? A. The scheduling daemons store log information of executed jobs in the /var/log/cron file.">
+    <meta property="og:url" content="http://davidvargas.xyz/linux/process-and-task-scheduling-review-questions/">
+    <meta property="og:description" content="Process and Task Scheduling Review Questions Q. What are the two commands to list the PID of a specific process? A. The pidof and pgrep commands.
+Q. By default the *.allow files exist. True or False? A. False. By default, the *.deny files exist.
+Q. Where do the scheduling daemons store log information of executed jobs? A. The scheduling daemons store log information of executed jobs in the /var/log/cron file.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Linux">
+    <meta itemprop="description" content="Process and Task Scheduling Review Questions Q. What are the two commands to list the PID of a specific process? A. The pidof and pgrep commands.
+Q. By default the *.allow files exist. True or False? A. False. By default, the *.deny files exist.
+Q. Where do the scheduling daemons store log information of executed jobs? A. The scheduling daemons store log information of executed jobs in the /var/log/cron file.">
+    <meta itemprop="wordCount" content="996">
+    <title></title>
+    <link href="/images/logo.svg?1720914483" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720914483" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1720914483" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720914483" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1720914483" rel="stylesheet">
+    <link href="/css/fonts.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1720914483" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1720914483" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1720914483" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1720914483" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1720914483" rel="stylesheet">
+    <link href="/css/print.css?1720914483" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1720914483"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/davidvargas.xyz';
+      window.index_js_url="/index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'amoled' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-23N4FSG0HM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-23N4FSG0HM');
+</script>
+
+
+  </head>
+  <body class="mobile-support html" data-url="/linux/process-and-task-scheduling-review-questions/">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-back" data-content-empty="show" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="history.back()" type="button" title=""><i class="fa-fw fas fa-chevron-left"></i></button>
+            </div>
+
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#process-and-task-scheduling-review-questions">Process and Task Scheduling Review Questions</a>
+      <ul>
+        <li><a href="#review-questions">Review Questions</a></li>
+        <li><a href="#answers-to-review-questions">Answers to Review Questions</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-about" data-content-empty="show" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/about/" title=""><span class="title">About</span></a>
+            </div>
+
+            <div class="topbar-button topbar-button-now" data-content-empty="show" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/now/" title=""><span class="title">Now</span></a>
+            </div>
+
+            <div class="topbar-button topbar-button-recommended" data-content-empty="show" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/recommended/" title=""><span class="title">Recommended</span></a>
+            </div>
+
+            <div class="topbar-button topbar-button-booknotes" data-content-empty="show" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/booknotes/" title=""><span class="title">Book Notes</span></a>
+            </div>
+
+            <div class="topbar-button topbar-button-contact" data-content-empty="show" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/contact/" title=""><span class="title">Contact</span></a>
+            </div>
+
+
+
+
+
+
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id=""></h1>
+
+<h2 id="process-and-task-scheduling-review-questions">Process and Task Scheduling Review Questions</h2>
+<p>Q. What are the two commands to list the PID of a specific process?
+A. The <code>pidof</code> and <code>pgrep</code> commands.</p>
+<p>Q. By default the *.allow files exist. True or False?
+A. False. By default, the *.deny files exist.</p>
+<p>Q. Where do the scheduling daemons store log information of executed jobs?
+A. The scheduling daemons store log information of executed jobs in the /var/log/cron file.</p>
+<p>Q. You must restart the crond service after modifying the /etc/crontab file. True or False?
+A. False. The crond daemon does not need a restart after a crontable is modified.</p>
+<p>Q. What are the background service processes normally referred to in Linux?
+A. The background service processes are referred to as daemons.</p>
+<p>Q. What is the default nice value?
+A. The default nice value is zero.</p>
+<p>Q. Which service runs missed scheduled tasks?
+A. The anacron service executes any missed at and cron jobs.</p>
+<p>Q. The parent process gets the nice value of its child process. True or False?
+A. False.  The child process inherits its parent’s niceness.</p>
+<p>Q. When would the cron daemon execute a job that is submitted as */10 * 2-6 6 * /home/user1/script1.sh?
+A. The cron daemon will run the script every tenth minute past the hour on the 2nd, 3rd, 4th, 5th, and 6th day of every sixth month.</p>
+<p>Q. What is the other command besides ps to view running processes?
+A. The top command.</p>
+<p>Q. Every process that runs on the system has a unique identifier called UID. True or False?
+A. False. It is called the PID.</p>
+<p>Q. Why would you use the renice command?
+A. The renice command is used to change the niceness of a running process.</p>
+<p>Q. Which user does not have to be explicitly defined in either *.allow or *.deny file to run the at and cron jobs?
+A. The root user.</p>
+<p>Q. When would the at command execute a job that is submitted as at 01:00 12/12/2020?
+A. The at command will run it at 1am on December 12, 2020.</p>
+<p>Q. What are the two commands that you can use to terminate a process?
+A. The kill and pkill commands.</p>
+<p>Q. What is the directory location where user crontab files are stored?
+A. The user crontab files are stored in the /var/spool/cron directory.</p>
+<p>Q. What would the nice command display without any options or arguments?
+A. The nice command displays the default nice value when executed without any options.</p>
+<p>Q. Which command can be used to edit crontables?
+A. You can use the crontab command with the -e option to edit crontables.</p>
+<p>Q. The default location to send application error messages is the system log file. True or False?
+A. False. The default location is the user screen where the program is initiated.</p>
+<p>Q. What are the five process states?
+A. The five process states are running, sleeping, waiting, stopped, and zombie.</p>
+<p>Q. Signal 9 is used for a hard termination of a process. True or False?
+A. True.</p>
+<h3 class="style3" id="review-questions">Review Questions</h3>
+<p>\</p>
+<p>1. The default location to send application error messages is the
+system log file. True or False?</p>
+<p>2. What are the five process states?</p>
+<p>3. Signal 9 is used for a hard termination of a process. True or False?</p>
+<p>4. You must restart the crond service after modifying the /etc/crontab
+file. True or False?</p>
+<p>5. What are the background service processes normally referred to in
+Linux?</p>
+<p>6. What is the default nice value?</p>
+<p>7. The parent process gets the nice value of its child process. True or
+False?</p>
+<p>8. When would the cron daemon execute a job that is submitted as */10
+* 2-6 6 * /home/user1/script1.sh?</p>
+<p>9. What is the other command besides ps to view running processes?</p>
+<p>10. Every process that runs on the system has a unique identifier
+called UID. True or False?</p>
+<p>11. Why would you use the renice command?</p>
+<p>12. What are the two commands to list the PID of a specific process?</p>
+<p>13. By default the *.allow files exist. True or False?</p>
+<p>14. Where do the scheduling daemons store log information of executed
+jobs?</p>
+<p>15. Which user does not have to be explicitly defined in either
+*.allow or *.deny file to run the at and cron jobs?</p>
+<p>16. When would the at command execute a job that is submitted as at
+01:00 12/12/2020?</p>
+<p>17. What are the two commands that you can use to terminate a process?</p>
+<p>18. What is the directory location where user crontab files are stored?</p>
+<p>19. What would the nice command display without any options or
+arguments?</p>
+<p>20. Which command can be used to edit crontables?</p>
+<p>::: {style=&ldquo;page-break-before: always;&rdquo;}
+:::</p>
+<p>[]{#chapter0272.html}</p>
+<h3 class="style3" id="answers-to-review-questions">Answers to Review Questions</h3>
+<p>\</p>
+<p>1. False. The default location is the user screen where the program is
+initiated.</p>
+<p>2. The five process states are running, sleeping, waiting, stopped, and
+zombie.</p>
+<p>3. True.</p>
+<p>4. False. The crond daemon does not need a restart after a crontable is
+modified.</p>
+<p>5. The background service processes are referred to as daemons.</p>
+<p>6. The default nice value is zero.</p>
+<p>7. False. The child process inherits its parent&rsquo;s niceness.</p>
+<p>8. The cron daemon will run the script every tenth minute past the hour
+on the 2nd, 3rd, 4th, 5th, and 6th day of every sixth month.</p>
+<p>9. The top command.</p>
+<p>10. False. It is called the PID.</p>
+<p>11. The renice command is used to change the niceness of a running
+process.</p>
+<p>12. The pidof and pgrep commands.</p>
+<p>13. False. By default, the *.deny files exist.</p>
+<p>14. The scheduling daemons store log information of executed jobs in
+the /var/log/cron file.</p>
+<p>15. The root user.</p>
+<p>16. The at command will run it at 1am on December 12, 2020.</p>
+<p>17. The kill and pkill commands.</p>
+<p>18. The user crontab files are stored in the /var/spool/cron directory.</p>
+<p>19. The nice command displays the default nice value when executed
+without any options.</p>
+<p>20. You can use the crontab command with the -e option to edit
+crontables.</p>
+<p>::: {style=&ldquo;page-break-before: always;&rdquo;}
+:::</p>
+<p>[]{#chapter0273.html}</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="https://davidvargas.xyz">
+  <img src="/images/V.svg" alt="davidvargas.xyz" >
+</a>
+
+        </div>
+
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.min.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1720914483" defer></script>
+        <script src="/js/search.js?1720914483" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/linux/" class="parent "><a class="padding" href="/linux/">Linux</a><ul id="R-subsections-9e5aaccdf48687824ccd3b3097af8e41" class="morespace collapsible-menu">
+          <li data-nav-id="/linux/process-and-task-scheduling-review-questions/" class="active"><a class="padding" href="/linux/process-and-task-scheduling-review-questions/"></a></li></ul></li>
+          <li data-nav-id="/networking/" class=""><a class="padding" href="/networking/">Networking</a></li>
+          <li data-nav-id="/tools/" class=""><a class="padding" href="/tools/">Tools</a></li>
+          <li data-nav-id="/writing/" class=""><a class="padding" href="/writing/">Writing</a></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://github.com/davidvargasxyz"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/linux/process-and-task-scheduling-review-questions/" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-amoled" value="amoled" selected>Amoled</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1720914483" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1720914483" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="/js/d3/d3-color.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1720914483" defer></script>
+    <script src="/js/js-yaml.min.js?1720914483" defer></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
+    </script>
+    <script src="/js/theme.js?1720914483" defer></script>
+  </body>
+</html>

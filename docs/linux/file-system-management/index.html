@@ -24,20 +24,20 @@ Tunes or displays file system attributes XFS Management Commands xfs_admin Tunes
     <meta itemprop="description" content="File System Management File System Administration Commands Some are limited to their operations on the Extended, XFS, or VFAT file system type, while others are general and applicable to all file system types. Extended File System Management Commands e2label
 Modifies the label of a file system tune2fs
 Tunes or displays file system attributes XFS Management Commands xfs_admin Tunes file system attributes xfs_growfs Extends the size of a file system xfs_info Exhibits information about a file system General File System Commands blkid Displays block device attributes including their UUIDs and labels df Reports file system utilization du Calculates disk usage of directories and file systems fsadm Resizes a file system.">
-    <meta itemprop="wordCount" content="1655">
+    <meta itemprop="wordCount" content="1684">
     <title></title>
-    <link href="/images/logo.svg?1720283041" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1720283041" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720283041" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1720283041" rel="stylesheet">
-    <link href="/css/auto-complete.css?1720283041" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720283041" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1720283041" rel="stylesheet">
-    <link href="/css/fonts.css?1720283041" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1720283041" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1720283041" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1720283041" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1720283041" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1720283041" rel="stylesheet">
-    <link href="/css/print.css?1720283041" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1720283041"></script>
+    <link href="/images/logo.svg?1720914483" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720914483" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1720914483" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720914483" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1720914483" rel="stylesheet">
+    <link href="/css/fonts.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1720914483" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1720914483" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1720914483" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1720914483" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1720914483" rel="stylesheet">
+    <link href="/css/print.css?1720914483" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1720914483"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -359,7 +359,10 @@ device files for logical volumes are always unique and remain persistent across 
 </span></span><span style="display:flex;"><span><span style="color:#78787e">#</span>
 </span></span><span style="display:flex;"><span>/dev/mapper/rhel-root   /                       xfs     defaults        <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">LABEL</span><span style="color:#ff6ac1">=</span>bootfs /boot                   xfs     defaults        <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span>
-</span></span><span style="display:flex;"><span>/dev/mapper/rhel-swap   none                    swap    defaults        <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span></span></span></code></pre></div><p>EXAM TIP: Any missing or invalid entry in this file may render the system unbootable. You will have to boot the system in emergency mode to
+</span></span><span style="display:flex;"><span>/dev/mapper/rhel-swap   none                    swap    defaults        <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span></span></span></code></pre></div><p>Add a device and UUID to fstab:
+<code>$(blkid -o value -s UUID &lt;device&gt;) other stuff you need for the fstab here &gt;&gt; /etc/fstab</code></p>
+<p>or <code>genfstab -U /mnt &gt;&gt; /etc/fstab</code></p>
+<p>EXAM TIP: Any missing or invalid entry in this file may render the system unbootable. You will have to boot the system in emergency mode to
 fix this file. Ensure that you understand each field in the file for both file system and swap entries.</p>
 <p>The format of this file is such that each row is broken out into six columns to identify the required attributes for each file system to be
 successfully mounted. Here is what the columns contain:</p>
@@ -437,12 +440,12 @@ successfully mounted. Here is what the columns contain:</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1720283041" defer></script>
-        <script src="/js/lunr/lunr.min.js?1720283041" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1720283041" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1720283041" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1720283041" defer></script>
-        <script src="/js/search.js?1720283041" defer></script>
+        <script src="/js/auto-complete.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.min.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1720914483" defer></script>
+        <script src="/js/search.js?1720914483" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -513,8 +516,8 @@ successfully mounted. Here is what the columns contain:</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1720283041" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1720283041" defer></script>
+    <script src="/js/clipboard.min.js?1720914483" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1720914483" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -530,20 +533,20 @@ successfully mounted. Here is what the columns contain:</p>
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1720283041" defer></script>
-    <script src="/js/js-yaml.min.js?1720283041" defer></script>
+    <script src="/js/d3/d3-color.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1720914483" defer></script>
+    <script src="/js/js-yaml.min.js?1720914483" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1720283041" defer></script>
+    <script src="/js/theme.js?1720914483" defer></script>
   </body>
 </html>

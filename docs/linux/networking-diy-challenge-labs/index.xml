@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/networking-diy-challenge-labs/</link>
+    <description>Networking DIY Challenge Labs Lab 15-1: Add New Interface and Configure Connection Profile with nmcli Add a third network interface to rhel9server40 in VirtualBox. As user1 with sudo on server40, run ip a and verify the addition of the new interface. Use the nmcli command and assign IP 192.168.0.40/24 and gateway 192.168.0.1 [root@server40 ~]# nmcli c a type Ethernet ifname enp0s8 con-name enp0s8 ip4 192.168.0.40/24 gw4 192.168.0.1 Deactivate and reactivate this connection manually.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/networking-diy-challenge-labs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -4,10 +4,10 @@
 
 - Create three 70MB primary partitions on one of the available 250MB disks (lsblk) by invoking the parted utility directly at the command prompt. 
 ```bash
-[root@server2 mapper]# parted /dev/sdb mklabel msdos
+[root@server2 mapper]# parted /dev/sdc mklabel msdos
 Information: You may need to update /etc/fstab.
 
-[root@server2 mapper]# parted /dev/sdb mkpart primary 1 70m
+[root@server2 mapper]# parted /dev/sdc mkpart primary 1 70m
 Information: You may need to update /etc/fstab.
 
 root@server2 mapper]# parted /dev/sdb print
@@ -22,7 +22,7 @@ Number  Start   End     Size    Type     File system  Flags
 
 ```
 
-```
+```bash
 parted) mkpart primary 71MB 140MB                                    
 Warning: The resulting partition is not properly aligned for best performance: 138671s % 2048s != 0s
 Ignore/Cancel?                                                            
@@ -46,10 +46,10 @@ Number  Start   End     Size    Type     File system  Flags
 - Apply label "msdos" if the disk is new.
 - Initialize partition 1 with VFAT, partition 2 with Ext4, and partition 3 with XFS file system types. 
 ```bash
-[root@server2 mapper]# sudo mkfs -t vfat /dev/sdb1
+[root@server2 mapper]# sudo mkfs -t vfat /dev/sdc1
 mkfs.fat 4.2 (2021-01-31)
 
-[root@server2 mapper]# sudo mkfs -t ext4 /dev/sdb2
+[root@server2 mapper]# sudo mkfs -t ext4 /dev/sdc2
 mke2fs 1.46.5 (30-Dec-2021)
 Creating filesystem with 67380 1k blocks and 16848 inodes
 Filesystem UUID: 43b590ff-3330-4b88-aef9-c3a97d8cf51e
@@ -61,7 +61,7 @@ Writing inode tables: done
 Creating journal (4096 blocks): done
 Writing superblocks and filesystem accounting information: done
 
-[root@server2 mapper]# sudo mkfs -t xfs /dev/sdb3
+[root@server2 mapper]# sudo mkfs -t xfs /dev/sdc3
 Filesystem should be larger than 300MB.
 Log size should be at least 64MB.
 Support for filesystems like this one is deprecated and they will not be supported in future releases.
@@ -82,15 +82,15 @@ realtime =none                   extsz=4096   blocks=0, rtextents=0
 ```bash
 [root@server2 mapper]# mkdir /vfatfs5 /ext4fs5 /xfsfs5
 
-[root@server2 mapper]# mount /dev/sdb1 /vfatfs5
+[root@server2 mapper]# mount /dev/sdc1 /vfatfs5
 mount: (hint) your fstab has been modified, but systemd still uses
        the old version; use 'systemctl daemon-reload' to reload.
 
-[root@server2 mapper]# mount /dev/sdb2 /ext4fs5
+[root@server2 mapper]# mount /dev/sdc2 /ext4fs5
 mount: (hint) your fstab has been modified, but systemd still uses
        the old version; use 'systemctl daemon-reload' to reload.
 
-[root@server2 mapper]# mount /dev/sdb3 /xfsfs5
+[root@server2 mapper]# mount /dev/sdc3 /xfsfs5
 mount: (hint) your fstab has been modified, but systemd still uses
        the old version; use 'systemctl daemon-reload' to reload.
 
@@ -103,12 +103,13 @@ mount: (hint) your fstab has been modified, but systemd still uses
 
 - Determine the UUIDs for the three file systems, and add them to the fstab file.
 ```bash
-[root@server2 mapper]# blkid /dev/sdb1 /dev/sdb2 /dev/sdb3 >> /etc/fstab
+[root@server2 mapper]# blkid /dev/sdc1 /dev/sdc2 /dev/sdc3 >> /etc/fstab
 
 [root@server2 mapper]# vim /etc/fstab
 
-
 ```
+
+
 
 - Unmount all three file systems manually, and execute `mount -a` to mount them all.
 `umount /dev/sdb1 /dev/sdb2 /dev/sdb3`
@@ -291,16 +292,69 @@ WARNING: dos signature detected on /dev/sdb at offset 510. Wipe it? [y/n]: y
 
 - Create two 100MB partitions on an available 250MB disk (lsblk) by invoking the parted utility directly at the command prompt. 
 - Apply label "msdos" if the disk is new. 
+```bash
+[root@localhost ~]# parted /dev/sdd mklabel msdos
+Information: You may need to update /etc/fstab.
+
+[root@localhost ~]# parted /dev/sdd mkpart primary 1 100MB
+Information: You may need to update /etc/fstab.
+
+[root@localhost ~]# parted /dev/sdd mkpart primary 101 201
+Information: You may need to update /etc/fstab.
+
+```
+
 - Initialize one of the partitions with swap structures. 
+```bash
+[root@localhost ~]# sudo mkswap /dev/sdd1
+Setting up swapspace version 1, size = 94 MiB (98562048 bytes)
+no label, UUID=40eea6c2-b80c-4b25-ad76-611071db52d5
+```
+
 - Apply label swappart to the swap partition, and add it to the fstab file. 
-- Execute swapon -a to activate it. 
-- Run swapon -s to confirm activation.
+```bash
+[root@localhost ~]# swaplabel -L swappart /dev/sdd1
+[root@localhost ~]# blkid /dev/sdd1 >> /etc/fstab
+[root@localhost ~]# vim /etc/fstab
+UUID="40eea6c2-b80c-4b25-ad76-611071db52d5" swap swap pri=1 0 0
+```
+
+- Execute `swapon -a` to activate it. 
+- Run `swapon -s` to confirm activation.
 
 - Initialize the other partition for use in LVM. 
+```bash
+[root@localhost ~]# pvcreate /dev/sdd2
+  Physical volume "/dev/sdd2" successfully created.
+
+```
+
 - Expand volume group vg200 (Lab 14-3) by adding this physical volume to it. 
+```bash
+[root@localhost ~]# vgextend vg200 /dev/sdd2
+  Volume group "vg200" successfully extended
+```
+
 - Create logical volume swapvol of size 180MB. 
-- Use the vgs, pvs, lvs, and vgdisplay commands for verification. 
+```bash
+[root@localhost ~]# lvcreate -L 180 -n swapvol vg200
+  Logical volume "swapvol" created.
+```
+
+- Use the `vgs`, `pvs`, `lvs`, and `vgdisplay` commands for verification. 
 - Initialize the logical volume for swap. 
+```bash
+[root@localhost vg200]# mkswap /dev/vg200/swapvol
+Setting up swapspace version 1, size = 180 MiB (188739584 bytes)
+no label, UUID=a4b939d0-4b53-4e73-bee5-4c402aff6f9b
+
+```
+
 - Add an entry to the fstab file for the new swap area using its device file. 
-- Execute swapon -a to activate it. 
-- Run swapon - s to confirm activation.
+```bash
+[root@localhost vg200]# vim /etc/fstab
+/dev/vg200/swapvol swap swap pri=2 0 0
+```
+
+- Execute `swapon -a` to activate it. 
+- Run `swapon -s` to confirm activation.

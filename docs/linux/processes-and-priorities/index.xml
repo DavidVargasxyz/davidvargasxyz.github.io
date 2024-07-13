@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/processes-and-priorities/</link>
+    <description>Processes and Priorities Process&#xA;a unit for provisioning system resources. any program, application, or command that runs on the system. created in memory when a program, application, or command is initiated. organized in a hierarchical fashion. Each process has a parent process (a.k.a. a calling process) that spawns it. A single parent process may have one or many child processes passes many of its attributes to them at the time of their creation.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/processes-and-priorities/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

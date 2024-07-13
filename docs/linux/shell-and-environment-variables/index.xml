@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/shell-and-environment-variables/</link>
+    <description>Shell and Environment Variables current shell - Where a program is executed.&#xA;sub-shell (child shell) - created within a shell to run a program.&#xA;two types of variables: local (or shell) and environment. local variable&#xA;Private to the shell in which it is created. Only used by programs that are started in that shell. environment variable inherited from the current shell to the sub-shell during the execution of a program value stored in an environment variable is accessible to the program, as well as any sub-programs that it spawns during its lifecycle.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/shell-and-environment-variables/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

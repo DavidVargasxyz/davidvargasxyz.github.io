@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/process-and-task-scheduling-labs/</link>
+    <description>Process and Task Scheduling Labs Lab: ps ps ps Check manual pages: man ps Run with “every” and “full format” flags: ps -ef Produce an output with the command name in column 1, PID in column 2, PPID in column 3, and owner name in column 4, run it as follows: ps -o comm,pid,ppid,user Check how many sshd processes are currently running on the system: ps -C sshdLab: top top top View manual page: man topLab: List a specific process list the PID of the rsyslogd daemon pidof rsyslogd or pgrep rsyslogdLab: Listing Processes by User and Group Ownership List processes owned by user1: ps -U user1 List processes owned by group root: ps -G rootLab: nice View the default nice value: nice List priority and niceness for all processes: ps -eflLab: Start Processes at Non-Default Priorities (2 terminals) Run the top command at the default priority/niceness in Terminal 1: top Check the priority and niceness for the top command in Terminal 2 using the ps command: ps -efl | grep top Terminate the top session in Terminal 1 by pressing the letter q and relaunch it at a lower priority with a nice value of +2: nice -n 2 top \Check the priority and niceness for the top command in Terminal 2 using the ps command: ps -efl | grep top Terminate the top session in Terminal 1 by pressing the letter q and relaunch it at a higher priority with a nice value of -10.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/process-and-task-scheduling-labs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

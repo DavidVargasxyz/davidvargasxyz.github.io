@@ -20,20 +20,20 @@ Understand, set, and unset shell and environment variables Comprehend and use co
     <meta property="article:section" content="Linux">
     <meta itemprop="description" content="Chapter 7 RHCSA Notes - The Bash Shell Introduction to the bash shell
 Understand, set, and unset shell and environment variables Comprehend and use command and variable expansions Grasp and utilize input, output, and error redirections Know and use history substitution, command line editing, tab completion, tilde substitution, and command aliasing Identify and use metacharacters, wildcard characters, pipes, and pipelines Discover the use of quoting mechanisms and regular expressions Run and control jobs in background and foreground Identify and examine shell startup files RHCSA Objectives: 02.">
-    <meta itemprop="wordCount" content="3713">
+    <meta itemprop="wordCount" content="3223">
     <title></title>
-    <link href="/images/logo.svg?1720283041" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1720283041" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720283041" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1720283041" rel="stylesheet">
-    <link href="/css/auto-complete.css?1720283041" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720283041" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1720283041" rel="stylesheet">
-    <link href="/css/fonts.css?1720283041" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1720283041" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1720283041" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1720283041" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1720283041" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1720283041" rel="stylesheet">
-    <link href="/css/print.css?1720283041" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1720283041"></script>
+    <link href="/images/logo.svg?1720914483" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720914483" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1720914483" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720914483" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1720914483" rel="stylesheet">
+    <link href="/css/fonts.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1720914483" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1720914483" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1720914483" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1720914483" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1720914483" rel="stylesheet">
+    <link href="/css/print.css?1720914483" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1720914483"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -79,22 +79,6 @@ Understand, set, and unset shell and environment variables Comprehend and use co
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#shell-and-environment-variables">Shell and Environment Variables</a></li>
-    <li><a href="#setting-and-unsetting-variables">Setting and unsetting variables</a>
-      <ul>
-        <li><a href="#echo-command">echo command</a></li>
-        <li><a href="#env-command">env command</a></li>
-        <li><a href="#printenv-command">printenv command</a></li>
-        <li><a href="#set-command">set command</a></li>
-      </ul>
-    </li>
-    <li><a href="#command-and-variable-substitutions">Command and Variable substitutions</a></li>
-    <li><a href="#input-output-and-error-redirections">Input, Output, and Error Redirections</a></li>
-    <li><a href="#history-substitution">History Substitution</a>
-      <ul>
-        <li><a href="#history-command">history command</a></li>
-      </ul>
-    </li>
     <li><a href="#editing-at-the-command-line">Editing at the Command line</a>
       <ul>
         <li><a href="#common-key-combinations">Common key combinations:</a></li>
@@ -108,7 +92,7 @@ Understand, set, and unset shell and environment variables Comprehend and use co
         <li><a href="#unalias-command">unalias command</a></li>
       </ul>
     </li>
-    <li><a href="#metacharacters-and-wildcard-characters">Metacharacters and Wildcard Characters</a></li>
+    <li><a href="#metacharacters-and-wildcard">Metacharacters and Wildcard</a></li>
     <li><a href="#quoting-mechanisms">Quoting Mechanisms</a></li>
     <li><a href="#regular-expressions-regexp-or-regex">Regular expressions (regexp or regex)</a>
       <ul>
@@ -203,303 +187,48 @@ Understand, set, and unset shell and environment variables Comprehend and use co
 <p>Regular expressions are text patterns for matching against an input provided in a search operation.</p>
 <p>At login, plenty of system and user startup scripts are executed to set up the user environment.</p>
 <p>bash shell is resident in the /usr/bin/bash file.</p>
-<h2 id="shell-and-environment-variables">Shell and Environment Variables</h2>
-<ul>
-<li>
-<p>current shell
-- Where a program is executed.</p>
-</li>
-<li>
-<p>sub-shell (child shell)
-- created within a shell to run a program.</p>
-</li>
-<li>
-<p>two types of variables: local (or shell) and environment.
-local variable</p>
-<ul>
-<li>Private to the shell in which it is created.</li>
-<li>Value cannot be used by programs that are not started in that shell.
-environment variable</li>
-<li>inherited from the current shell to the sub-shell during the execution of a program</li>
-<li>value stored in an environment variable is accessible to the program, as well as any sub-programs that it spawns during its lifecycle.</li>
-<li>Any environment variable set in a sub-shell is lost when the sub-shell terminates.</li>
-<li>env or the printenv command to view predefined environment variables.</li>
-<li>Common predefined environment variables:
-<ul>
-<li>DISPLAY
-<ul>
-<li>Stores the hostname or IP address for graphical terminal sessions</li>
-</ul>
-</li>
-<li>HISTFILE
-<ul>
-<li>Defines the file for storing the history of executed commands</li>
-</ul>
-</li>
-<li>HISTSIZE
-<ul>
-<li>Defines the maximum size for the HISTFILE</li>
-</ul>
-</li>
-<li>HOME
-<ul>
-<li>Sets the home directory path LOGNAME Retains the login name</li>
-</ul>
-</li>
-<li>MAIL
-<ul>
-<li>Contains the path to the user mail directory</li>
-</ul>
-</li>
-<li>PATH
-<ul>
-<li>Directories to be searched when executing a command. Eliminates the need to specify the absolute path of a command to run it.</li>
-</ul>
-</li>
-<li>PPID
-<ul>
-<li>Holds the identifier number for the parent program</li>
-</ul>
-</li>
-<li>PS1
-<ul>
-<li>Defines the primary command prompt PS2 Defines the secondary command prompt</li>
-</ul>
-</li>
-<li>PWD
-<ul>
-<li>Stores the current directory location</li>
-</ul>
-</li>
-<li>SHELL
-<ul>
-<li>Holds the absolute path to the primary primary shell file</li>
-</ul>
-</li>
-<li>TERM
-<ul>
-<li>Holds the terminal type value</li>
-</ul>
-</li>
-<li>UID
-<ul>
-<li>Holds the logged-in user’s UID</li>
-</ul>
-</li>
-<li>USER
-<ul>
-<li>Retains the name of the logged-in user</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="setting-and-unsetting-variables">Setting and unsetting variables</h2>
-<ul>
-<li>export, unset, and echo to define and undefine environment variables</li>
-<li>Use uppercase for variables</li>
-</ul>
-<h3 id="echo-command">echo command</h3>
-<ul>
-<li>restricted to showing the value of a specific variable</li>
-</ul>
-<h3 id="env-command">env command</h3>
-<ul>
-<li>Displays the environment variables only.</li>
-</ul>
-<h3 id="printenv-command">printenv command</h3>
-<ul>
-<li>Displays the environment variables only.</li>
-</ul>
-<h3 id="set-command">set command</h3>
-<ul>
-<li>View both local and environment variables.</li>
-</ul>
-<h2 id="command-and-variable-substitutions">Command and Variable substitutions</h2>
-<ul>
-<li>PS1 Environment variable sets what the prompt looks like.</li>
-<li>Default value is \u@\h \W\$
-<ul>
-<li>\u
-<ul>
-<li>logged-in user name</li>
-</ul>
-</li>
-<li>\h
-<ul>
-<li>System hostname</li>
-</ul>
-</li>
-<li>\W
-<ul>
-<li>Working directory</li>
-</ul>
-</li>
-<li>\$
-<ul>
-<li>End of command prompt</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>command whose output you want assigned to a variable must be encapsulated within either backticks <code>hostname</code> or parentheses $(hostname).</li>
-</ul>
-<h2 id="input-output-and-error-redirections">Input, Output, and Error Redirections</h2>
-<ul>
-<li>Input, output, and error character streams:
-<ul>
-<li>standard input (or stdin)
-<ul>
-<li>input redirection</li>
-<li>&lt;</li>
-</ul>
-</li>
-<li>standard output (or stdout)
-<ul>
-<li>
-<blockquote>
-</blockquote>
-</li>
-<li>
-<blockquote>
-<blockquote>
-</blockquote>
-</blockquote>
-<ul>
-<li>append instead of overwrite</li>
-</ul>
-</li>
-<li>$&gt;
-<ul>
-<li>Redirect standard error and output</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>standard error (or stderr)
-<ul>
-<li>
-<blockquote>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>File descriptors:
-<ul>
-<li>0, 1, and 2
-<ul>
-<li>1
-<ul>
-<li>represents standard output location</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Can use these to represent character streams instead of &lt;, and &gt;</li>
-</ul>
-</li>
-<li>noclobber feature
-<ul>
-<li>prevent overwriting of the output file</li>
-<li>set -o noclobber
-<ul>
-<li>activates the feature</li>
-</ul>
-</li>
-<li>set +o noclobber
-<ul>
-<li>deactivate the feature</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="history-substitution">History Substitution</h2>
-<ul>
-<li>Command history or history expansion.</li>
-<li>can disable and re-enable if required.</li>
-<li>Values may be altered for individual users by editing .bashrc or .bash_profile in the user&rsquo;s home directory.</li>
-<li>Three variables
-<ul>
-<li>HISTFILE
-<ul>
-<li>defines the name and location of the history file to be used to store command history,</li>
-<li>default is .bash_history in the user’s home directory.</li>
-</ul>
-</li>
-<li>HISTSIZE
-<ul>
-<li>dictates the maximum number of commands commands to be held in memory for the current session.</li>
-</ul>
-</li>
-<li>HISTFILESIZE
-<ul>
-<li>sets the maximum number of commands allowed for storage in the history file at the beginning of the current session and are written to the HISTFILE from memory at the end of the current terminal session.</li>
-<li>Usually, HISTSIZE and HISTFILESIZE are set to a common value.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="history-command">history command</h3>
-<ul>
-<li>displays or reruns previously executed commands.</li>
-<li>gets the history data from the system memory as well as from the .bash_history file.</li>
-<li>Shows all entries by default.</li>
-<li>set +0 history
-<ul>
-<li>disable history expansion</li>
-</ul>
-</li>
-<li>set -0 history
-<ul>
-<li>re-enable history expansion</li>
-</ul>
-</li>
-</ul>
+<p><a href="/linux/shell-and-environment-variables/">Shell and Environment Variables</a>
+<a href="/linux/input-output-and-error-redirections/">Input, Output, and Error Redirections</a>
+<a href="/linux/history-substitution/">History Substitution</a></p>
 <h2 id="editing-at-the-command-line">Editing at the Command line</h2>
 <h3 id="common-key-combinations">Common key combinations:</h3>
 <ul>
-<li>Ctrl+a / Home
+<li><strong>Ctrl+a / Home</strong>
 <ul>
 <li>Moves the cursor to the beginning of the command line</li>
 </ul>
 </li>
-<li>Ctrl+e / End
+<li><strong>Ctrl+e / End</strong>
 <ul>
 <li>Moves the cursor to the end of the command line</li>
 </ul>
 </li>
-<li>Ctrl+u
+<li><strong>Ctrl+u</strong>
 <ul>
-<li>Erase the entire line</li>
+<li>Erase everything at and before cursor</li>
 </ul>
 </li>
-<li>Ctrl+k
+<li><strong>Ctrl+k</strong>
 <ul>
-<li>Erase from the cursor to the end of the command line</li>
+<li>Erase Everything at cursor and after</li>
 </ul>
 </li>
-<li>Alt+f
+<li><strong>Alt+f</strong>
 <ul>
 <li>Moves the cursor to the right one word at a time</li>
 </ul>
 </li>
-<li>Alt+b
+<li><strong>Alt+b</strong>
 <ul>
 <li>Moves the cursor to the left one word at a time</li>
 </ul>
 </li>
-<li>Ctrl+f / Right arrow
+<li><strong>Ctrl+f / Right arrow</strong>
 <ul>
 <li>Moves the cursor to the right one character at a time</li>
 </ul>
 </li>
-<li>Ctrl+b / Left arrow
+<li><strong>Ctrl+b / Left arrow</strong>
 <ul>
 <li>Moves the cursor to the left one character at a time</li>
 </ul>
@@ -549,36 +278,55 @@ environment variable</li>
 <li>set an alias.</li>
 <li>internal shell command.</li>
 </ul>
-<h3 id="unalias-command">unalias command</h3>
+<div class="highlight wrap-code"><pre tabindex="0"><code>[root@localhost ~]# alias
+alias cp=&#39;cp -i&#39;
+alias egrep=&#39;egrep --color=auto&#39;
+alias fgrep=&#39;fgrep --color=auto&#39;
+alias grep=&#39;grep --color=auto&#39;
+alias l.=&#39;ls -d .* --color=auto&#39;
+alias ll=&#39;ls -l --color=auto&#39;
+alias ls=&#39;ls --color=auto&#39;
+alias mv=&#39;mv -i&#39;
+alias rm=&#39;rm -i&#39;
+alias xzegrep=&#39;xzegrep --color=auto&#39;
+alias xzfgrep=&#39;xzfgrep --color=auto&#39;
+alias xzgrep=&#39;xzgrep --color=auto&#39;
+alias zegrep=&#39;zegrep --color=auto&#39;
+alias zfgrep=&#39;zfgrep --color=auto&#39;
+alias zgrep=&#39;zgrep --color=auto&#39;</code></pre></div><div class="highlight wrap-code"><pre tabindex="0"><code>[root@localhost ~]# alias frog=&#39;pwd&#39;
+[root@localhost ~]# frog
+/root</code></pre></div><h3 id="unalias-command">unalias command</h3>
 <ul>
 <li>unset an alias.</li>
 <li>internal shell command.</li>
 </ul>
-<h2 id="metacharacters-and-wildcard-characters">Metacharacters and Wildcard Characters</h2>
+<div class="highlight wrap-code"><pre tabindex="0"><code>[root@localhost ~]# unalias frog
+[root@localhost ~]# frog
+-bash: frog: command not found</code></pre></div><h2 id="metacharacters-and-wildcard">Metacharacters and Wildcard</h2>
 <ul>
 <li>Metacharacters
 <ul>
 <li>special characters that possess special meaning to the shell.</li>
 <li>used in pattern matching (a.k.a. filename expansion or file globbing) and regular expressions.</li>
-<li>dollar sign ($)
+<li><strong>dollar sign ($)</strong>
 <ul>
 <li>mark the end of a line</li>
 <li>Used in regular expressions</li>
 </ul>
 </li>
-<li>caret (^)
+<li><strong>caret (^)</strong>
 <ul>
 <li>mark the beginning of a line</li>
 <li>Used in regular expressions</li>
 </ul>
 </li>
-<li>period (.)
+<li><strong>period (.)</strong>
 <ul>
 <li>match a single position</li>
 <li>Used in regular expressions</li>
 </ul>
 </li>
-<li>asterisk (*)
+<li><strong>asterisk (*)</strong>
 <ul>
 <li>used in pattern matching</li>
 <li>wildcard character</li>
@@ -586,7 +334,7 @@ environment variable</li>
 <li>Used in regular expressions</li>
 </ul>
 </li>
-<li>question mark (?)
+<li><strong>question mark (?)</strong>
 <ul>
 <li>used in pattern matching</li>
 <li>wildcard character</li>
@@ -594,7 +342,7 @@ environment variable</li>
 <li>Used in regular expressions</li>
 </ul>
 </li>
-<li>pipe (|)
+<li><strong>pipe (|)</strong>
 <ul>
 <li>send the output of one command as input to the next.</li>
 <li>also used to define alternations in regular expressions.</li>
@@ -606,13 +354,18 @@ environment variable</li>
 </li>
 </ul>
 </li>
-<li>angle brackets (&lt; &gt;)</li>
-<li>curly brackets ({})
+<li><strong>angle brackets (&lt; &gt;)</strong>
 <ul>
-<li>Used in regular expressions</li>
+<li>Redirections</li>
 </ul>
 </li>
-<li>square brackets ([])
+<li><strong>curly brackets ({})</strong>
+<ul>
+<li>Used in regular expressions</li>
+<li>Match an element a specific number of times</li>
+</ul>
+</li>
+<li><strong>square brackets ([])</strong>
 <ul>
 <li>used in pattern matching</li>
 <li>wildcard character</li>
@@ -622,22 +375,38 @@ environment variable</li>
 <li>Used in regular expressions</li>
 </ul>
 </li>
-<li>parentheses (())</li>
-<li>plus (+)</li>
-<li>exclamation mark (!)
+<li><strong>parentheses (())</strong>
+<ul>
+<li>Create a sub shell</li>
+</ul>
+</li>
+<li><strong>plus (+)</strong>
+<ul>
+<li>Match a character one or more time</li>
+</ul>
+</li>
+<li><strong>exclamation mark (!)</strong>
 <ul>
 <li>inverse matches</li>
 </ul>
 </li>
-<li>semicolon (;)</li>
-<li>backslash ()</li>
+<li><strong>semicolon (;)</strong>
+<ul>
+<li>Run a second command after the ;</li>
+</ul>
+</li>
+<li><strong>backslash ()</strong>
+<ul>
+<li>Cancel out a special character&rsquo;s meaning.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <h2 id="quoting-mechanisms">Quoting Mechanisms</h2>
 <ul>
 <li>Disable special meaning of metacharacters</li>
-<li>backslash ()
+<li>backslash (\)
 <ul>
 <li>escape character</li>
 <li></li>
@@ -713,25 +482,25 @@ environment variable</li>
 </ul>
 <p>commands and control sequences for administering the jobs.</p>
 <ul>
-<li>jobs
+<li><code>jobs</code>
 <ul>
 <li>Shell built-in command</li>
 <li>display jobs.</li>
 </ul>
 </li>
-<li>bg
+<li><code>bg </code>
 <ul>
 <li>Shell built-in command</li>
 <li>move a job to the background or restart a job in the background that was suspended with Ctrl+z.</li>
 </ul>
 </li>
-<li>fg
+<li><code>fg </code>
 <ul>
 <li>Shell built-in command</li>
 <li>move a job to the foreground</li>
 </ul>
 </li>
-<li>Ctrl+z
+<li><code>Ctrl+z </code>
 <ul>
 <li>Suspends a foreground job and allows the terminal window to be used for other purposes</li>
 </ul>
@@ -740,7 +509,7 @@ environment variable</li>
 <h3 id="jobs-command">jobs command</h3>
 <p>output
 plus sign (+)
-- indicates the current background job and the
+- indicates the current background job
 minus sign (-)
 - signifies the previous job.
 Stopped
@@ -758,7 +527,7 @@ Stopped
 </ol>
 <ul>
 <li>set the general environment for all users at the time of their login to the system.</li>
-<li>\located in the /etc directory</li>
+<li>located in the /etc directory</li>
 <li>maintained by the Linux admin.</li>
 <li>system-wide startup files for bash shell users:
 <ul>
@@ -851,7 +620,7 @@ printenv</code></pre></div><h3 id="lab-viewing-environment-variable-values">Lab:
 <ol>
 <li>Define a local variable called VR1:</li>
 </ol>
-<div class="highlight wrap-code"><pre tabindex="0"><code>VR1=RHEL8</code></pre></div><ol start="2">
+<div class="highlight wrap-code"><pre tabindex="0"><code>VR1=RHEL9</code></pre></div><ol start="2">
 <li>View the value of VR1:</li>
 </ol>
 <div class="highlight wrap-code"><pre tabindex="0"><code>echo $VR1</code></pre></div><ol start="3">
@@ -872,10 +641,10 @@ printenv</code></pre></div><h3 id="lab-viewing-environment-variable-values">Lab:
 <div class="highlight wrap-code"><pre tabindex="0"><code>unset VR1</code></pre></div><ol start="8">
 <li>Define a local variable that contains a value with one or more white spaces:</li>
 </ol>
-<div class="highlight wrap-code"><pre tabindex="0"><code>VR2=&#34;I love RHEL 8&#34;</code></pre></div><ol start="9">
+<div class="highlight wrap-code"><pre tabindex="0"><code>VR2=&#34;I love RHEL 9&#34;</code></pre></div><ol start="9">
 <li>Define and make the variable an environment variable at the same time:</li>
 </ol>
-<div class="highlight wrap-code"><pre tabindex="0"><code>export VR3=&#34;I love RHEL 8&#34;</code></pre></div><ol start="10">
+<div class="highlight wrap-code"><pre tabindex="0"><code>export VR3=&#34;I love RHEL 9&#34;</code></pre></div><ol start="10">
 <li>View local and environment variables:</li>
 </ol>
 <div class="highlight wrap-code"><pre tabindex="0"><code>set</code></pre></div><h3 id="lab-modify-primary-command-prompt">Lab: Modify Primary Command Prompt</h3>
@@ -1012,7 +781,7 @@ alias</code></pre></div><ol start="2">
 <div class="highlight wrap-code"><pre tabindex="0"><code>ls -d .*</code></pre></div><ol start="3">
 <li>List all files in the /var/log directory that end in “.log”:</li>
 </ol>
-<div class="highlight wrap-code"><pre tabindex="0"><code>ls /ver/log/*.log</code></pre></div><ol start="4">
+<div class="highlight wrap-code"><pre tabindex="0"><code>ls /var/log/*.log</code></pre></div><ol start="4">
 <li>list all files and directories under /var/log with exactly four characters in their names:</li>
 </ol>
 <div class="highlight wrap-code"><pre tabindex="0"><code>ls -d /var/log/????</code></pre></div><ol start="5">
@@ -1104,7 +873,7 @@ echo &#34;&#39;\&#39;&#34;</code></pre></div><h3 id="lab-grep-and-regex">Lab: gr
 <li>View the first 10 lines of /etc/profile:</li>
 </ol>
 <div class="highlight wrap-code"><pre tabindex="0"><code>head /etc/profile</code></pre></div><ol start="3">
-<li>View the directory /etc/profile.d:L</li>
+<li>View the directory /etc/profile.d</li>
 </ol>
 <div class="highlight wrap-code"><pre tabindex="0"><code>ls -l /etc/profile.d/</code></pre></div><ol start="4">
 <li>View .bashrc</li>
@@ -1117,7 +886,7 @@ echo &#34;&#39;\&#39;&#34;</code></pre></div><h3 id="lab-grep-and-regex">Lab: gr
 <li>Permanently customize the primary shell prompt to display “&lt;user1@server1 in /etc &gt;:” when this user switches into the /etc directory. The prompt should always reflect the current directory directory path.</li>
 </ol>
 <div class="highlight wrap-code"><pre tabindex="0"><code>vim ~/.bash_profile
-export PS1=&#39;$USERNAME $PWD</code></pre></div><h3 id="lab-7-2-redirect-the-standard-input-output-and-error-user1">Lab 7-2: Redirect the Standard Input, Output, and Error (user1)</h3>
+export PS1=&#39;$USERNAME $PWD&#39;</code></pre></div><h3 id="lab-7-2-redirect-the-standard-input-output-and-error-user1">Lab 7-2: Redirect the Standard Input, Output, and Error (user1)</h3>
 <ol>
 <li>Run the ls command on /etc, /dvd, and /var. Have the output printed on the screen and the errors forwarded to file /tmp/ioerror.</li>
 </ol>
@@ -1145,17 +914,17 @@ A. /etc/profile is the file where the history variables are defined for all user
 A. The Ctrl+z key combination will suspend the running program and give you access to the command prompt.</p>
 <p>Q. Name the three quoting mechanisms?
 A. The three quoting mechanisms are backslash, single quotation mark, and double quotation mark.</p>
-<p>Q. What would the command export VAR1=”I passed RHCSA” do?
+<p>Q. What would the command <code>export VAR1=”I passed RHCSA”</code> do?
 A. The command provided will set an environment variable with the quoted string as its value.</p>
 <p>Q. Name the default filename and location where user command history is stored?
 A. The user command history is stored in ~/.bash_history file.</p>
 <p>Q. What is the primary function of the shell in Linux?
 A. The shell acts as an interface between a user and the system.</p>
-<p>Q. What would the command cd ~user20 do if executed as user10?
+<p>Q. What would the command <code>cd ~user20</code> do if executed as user10?
 A. The command provided will allow user10 to cd into user20’s home directory provided user10 has proper access permissions.</p>
 <p>Q. Which command would you use to display all matching lines from a text file?
 A. The grep command.</p>
-<p>Q. What would the command ls &gt; ls.out do?
+<p>Q. What would the command <code>ls &gt; ls.out</code> do?
 A. The command provided will redirect the ls command output to the specified file.</p>
 
             <footer class="footline">
@@ -1185,12 +954,12 @@ A. The command provided will redirect the ls command output to the specified fil
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1720283041" defer></script>
-        <script src="/js/lunr/lunr.min.js?1720283041" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1720283041" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1720283041" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1720283041" defer></script>
-        <script src="/js/search.js?1720283041" defer></script>
+        <script src="/js/auto-complete.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.min.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1720914483" defer></script>
+        <script src="/js/search.js?1720914483" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -1261,8 +1030,8 @@ A. The command provided will redirect the ls command output to the specified fil
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1720283041" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1720283041" defer></script>
+    <script src="/js/clipboard.min.js?1720914483" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1720914483" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -1278,20 +1047,20 @@ A. The command provided will redirect the ls command output to the specified fil
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1720283041" defer></script>
-    <script src="/js/js-yaml.min.js?1720283041" defer></script>
+    <script src="/js/d3/d3-color.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1720914483" defer></script>
+    <script src="/js/js-yaml.min.js?1720914483" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1720283041" defer></script>
+    <script src="/js/theme.js?1720914483" defer></script>
   </body>
 </html>

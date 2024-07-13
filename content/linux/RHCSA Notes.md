@@ -20,7 +20,7 @@ Track my RHCSA progress: [RHCSA Study Tracker](RHCSA%20Study%20Tracker.md)
 - [Storage Management](Storage%20Management.md)
 - [Local File Systems and Swap](Local%20File%20Systems%20and%20Swap.md)
 - [Networking Network Devices and Network Connections](Networking%20Network%20Devices%20and%20Network%20Connections.md)
-- [Network File System](Network%20File%20System.md)
+- [Network File System (NFS)](Network%20File%20System%20(NFS).md)
 - [Hostname Resolution and Time Synchronization](Hostname%20Resolution%20and%20Time%20Synchronization.md)
 - [The Secure Shell Service](The%20Secure%20Shell%20Service.md)
 - [The Linux Firewall](The%20Linux%20Firewall.md)
@@ -31,3 +31,8 @@ Track my RHCSA progress: [RHCSA Study Tracker](RHCSA%20Study%20Tracker.md)
 - [Sample exam 2](Sample%20exam%202.md)
 - [Sample Exam 3](Sample%20Exam%203.md)
 - [Sample Exam 4](Sample%20Exam%204.md)                                                                                 
+
+## Extra Resourses
+
+[Using Man Pages](Using%20Man%20Pages.md)
+[[RHCSA Exam Environment]]

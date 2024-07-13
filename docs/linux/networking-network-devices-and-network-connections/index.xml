@@ -3,7 +3,7 @@
   <channel>
     <title></title>
     <link>http://davidvargas.xyz/linux/networking-network-devices-and-network-connections/</link>
-    <description>Networking, Network Devices, and Network Connections \&#xA;::: {style=“border-style: double; border-color: rgb(0, 0, 0); border-top-width: 1px; width: 0.375;”} :::&#xA;\&#xA;This chapter describes the following major topics: \&#xA;Overview of basic networking concepts: hostname, IPv4, network classes, subnetting, subnet mask, CIDR, protocol, TCP/UDP, well-known ports, ICMP, Ethernet address, IPv6, IPv4/IPv6 differences, consistent device naming, etc.&#xA;\&#xA;Change hostname of the system&#xA;\&#xA;Understand the concepts of network device and connection</description>
+    <description>Networking, Network Devices, and Network Connections Hostname Hardware and IP Addressing Protocols Network Manager Service Administration Tools Understanding Hosts Table Networking DIY Challenge Labs Networking Review Questions </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://davidvargas.xyz/linux/networking-network-devices-and-network-connections/index.xml" rel="self" type="application/rss+xml" />

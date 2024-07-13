@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/process-and-task-scheduling-review-questions/</link>
+    <description>Process and Task Scheduling Review Questions Q. What are the two commands to list the PID of a specific process? A. The pidof and pgrep commands.&#xA;Q. By default the *.allow files exist. True or False? A. False. By default, the *.deny files exist.&#xA;Q. Where do the scheduling daemons store log information of executed jobs? A. The scheduling daemons store log information of executed jobs in the /var/log/cron file.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/process-and-task-scheduling-review-questions/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

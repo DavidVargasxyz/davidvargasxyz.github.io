@@ -16,143 +16,27 @@ At login, plenty of system and user startup scripts are executed to set up the u
 
 bash shell is resident in the /usr/bin/bash file.
 
-## Shell and Environment Variables
- 
- - current shell 
-		- Where a program is executed.
-- sub-shell (child shell)
-		- created within a shell to run a program.
-		
-- two types of variables: local (or shell) and environment. 
-	local variable 
-	- Private to the shell in which it is created.
-	- Value cannot be used by programs that are not started in that shell. 
-	environment variable
-	- inherited from the current shell to the sub-shell during the execution of a program
-	- value stored in an environment variable is accessible to the program, as well as any sub-programs that it spawns during its lifecycle. 
-	- Any environment variable set in a sub-shell is lost when the sub-shell terminates.
-	- env or the printenv command to view predefined environment variables.
-	- Common predefined environment variables:
-		- DISPLAY 
-			- Stores the hostname or IP address for graphical terminal sessions 
-		- HISTFILE 
-			- Defines the file for storing the history of executed commands 
-		- HISTSIZE 
-			- Defines the maximum size for the HISTFILE 
-		- HOME 
-			- Sets the home directory path LOGNAME Retains the login name 
-		- MAIL 
-			- Contains the path to the user mail directory
-		- PATH 
-			- Directories to be searched when executing a command. Eliminates the need to specify the absolute path of a command to run it. 
-		- PPID 
-			- Holds the identifier number for the parent program 
-		- PS1 
-			- Defines the primary command prompt PS2 Defines the secondary command prompt 
-		- PWD 
-			- Stores the current directory location 
-		- SHELL 
-			- Holds the absolute path to the primary primary shell file
-		- TERM 
-			- Holds the terminal type value 
-		- UID 
-			- Holds the logged-in user’s UID 
-		- USER 
-			- Retains the name of the logged-in user
-
-## Setting and unsetting variables
-- export, unset, and echo to define and undefine environment variables
-- Use uppercase for variables
-
-### echo command
-- restricted to showing the value of a specific variable
-### env command
-- Displays the environment variables only.
-### printenv command
-- Displays the environment variables only.
-### set command
-- View both local and environment variables.
-
-## Command and Variable substitutions
-- PS1 Environment variable sets what the prompt looks like.
-- Default value is \\u@\\h \\W\\$
-	- \\u
-		- logged-in user name
-	- \\h
-		- System hostname
-	- \\W
-		- Working directory
-	- \\$
-		- End of command prompt
-- command whose output you want assigned to a variable must be encapsulated within either backticks `hostname` or parentheses $(hostname).
-
-## Input, Output, and Error Redirections
-
-- Input, output, and error character streams:
-	- standard input (or stdin)
-		- input redirection
-		- <
-	- standard output (or stdout)
-		- >
-		- >>
-			- append instead of overwrite
-		- $>
-			- Redirect standard error and output
-	 - standard error (or stderr)
-		 - >
-- File descriptors:
-	- 0, 1, and 2
-		- 1
-			- represents standard output location
-	- Can use these to represent character streams instead of <, and >
-- noclobber feature
-	- prevent overwriting of the output file
-	- set -o noclobber
-		- activates the feature
-	- set +o noclobber
-		- deactivate the feature
-
-## History Substitution
-- Command history or history expansion.
-- can disable and re-enable if required.
-- Values may be altered for individual users by editing .bashrc or .bash_profile in the user's home directory.
-- Three variables
-	- HISTFILE
-		- defines the name and location of the history file to be used to store command history,
-		- default is .bash_history in the user’s home directory.
-	- HISTSIZE
-		- dictates the maximum number of commands commands to be held in memory for the current session.
-	- HISTFILESIZE
-		- sets the maximum number of commands allowed for storage in the history file at the beginning of the current session and are written to the HISTFILE from memory at the end of the current terminal session.
-		- Usually, HISTSIZE and HISTFILESIZE are set to a common value.
-
-### history command
-- displays or reruns previously executed commands.
-- gets the history data from the system memory as well as from the .bash_history file.
-- Shows all entries by default.
-- set +0 history
-	- disable history expansion
-- set -0 history
-	- re-enable history expansion
-
+[Shell and Environment Variables](Shell%20and%20Environment%20Variables.md)
+[Input, Output, and Error Redirections](Input,%20Output,%20and%20Error%20Redirections.md)
+[History Substitution](History%20Substitution.md)
 ## Editing at the Command line
 
 ### Common key combinations:
-- Ctrl+a / Home 
+- **Ctrl+a / Home** 
 	- Moves the cursor to the beginning of the command line 
-- Ctrl+e / End 
+- **Ctrl+e / End** 
 	- Moves the cursor to the end of the command line 
-- Ctrl+u 
-	- Erase the entire line 
-- Ctrl+k 
-	- Erase from the cursor to the end of the command line 
-- Alt+f 
+- **Ctrl+u** 
+	- Erase everything at and before cursor
+- **Ctrl+k** 
+	- Erase Everything at cursor and after
+- **Alt+f** 
 	- Moves the cursor to the right one word at a time 
-- Alt+b 
+- **Alt+b** 
 	- Moves the cursor to the left one word at a time 
-- Ctrl+f / Right arrow 
+- **Ctrl+f / Right arrow** 
 	- Moves the cursor to the right one character at a time
-- Ctrl+b / Left arrow 
+- **Ctrl+b / Left arrow** 
 	- Moves the cursor to the left one character at a time
 
 ### Tab completion
@@ -179,59 +63,97 @@ bash shell is resident in the /usr/bin/bash file.
 ### alias command
 - set an alias.
 - internal shell command.
+
+```
+[root@localhost ~]# alias
+alias cp='cp -i'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l.='ls -d .* --color=auto'
+alias ll='ls -l --color=auto'
+alias ls='ls --color=auto'
+alias mv='mv -i'
+alias rm='rm -i'
+alias xzegrep='xzegrep --color=auto'
+alias xzfgrep='xzfgrep --color=auto'
+alias xzgrep='xzgrep --color=auto'
+alias zegrep='zegrep --color=auto'
+alias zfgrep='zfgrep --color=auto'
+alias zgrep='zgrep --color=auto'
+
+```
+
+```
+[root@localhost ~]# alias frog='pwd'
+[root@localhost ~]# frog
+/root
+```
+
 ### unalias command
 - unset an alias.
 - internal shell command.
+```
+[root@localhost ~]# unalias frog
+[root@localhost ~]# frog
+-bash: frog: command not found
+```
 
-## Metacharacters and Wildcard Characters
+## Metacharacters and Wildcard
 - Metacharacters
 	- special characters that possess special meaning to the shell.
 	- used in pattern matching (a.k.a. filename expansion or file globbing) and regular expressions.
-	- dollar sign ($) 
+	- **dollar sign ($)** 
 		- mark the end of a line
 		- Used in regular expressions
-	- caret (^)
+	- **caret (^)**
 		- mark the beginning of a line
 		- Used in regular expressions
-	- period (.)
+	- **period (.)**
 		- match a single position
 		- Used in regular expressions
-	- asterisk (\*)
+	- **asterisk (\*)**
 		- used in pattern matching
 		- wildcard character
 		- matches zero to an unlimited number of characters except for the leading period (.) in a hidden filename.
 		- Used in regular expressions
-	- question mark (?)
+	- **question mark (?)**
 		- used in pattern matching
 		- wildcard character
 		- matches exactly one character except for the leading period in a hidden filename.
 		- Used in regular expressions
-	- pipe (|)
+	- **pipe (|)**
 		- send the output of one command as input to the next.
 		- also used to define alternations in regular expressions.
 		- Can use as many times in a command as you need. (pipeline)
 		- Can be used as an OR operator (alternation)
 			- this|that|other
-	- angle brackets (< >)
-	- curly brackets ({})
+	- **angle brackets (< >)**
+		- Redirections
+	- **curly brackets ({})**
 		- Used in regular expressions
-	- square brackets ([])
+		- Match an element a specific number of times
+	- **square brackets ([])**
 		- used in pattern matching
 		- wildcard character
 		- match either a set of characters or a range of characters for a single character position.
 		- order in which they are listed has no importance.
 		- range of characters must be specified in a proper sequence such as [a-z] or [0-9].
 		- Used in regular expressions
-	- parentheses (())
-	- plus (+)
-	- exclamation mark (!)
+	- **parentheses (())**
+		- Create a sub shell
+	- **plus (+)**
+		- Match a character one or more time
+	- **exclamation mark (!)**
 		- inverse matches
-	- semicolon (;)
-	- backslash (\) 
+	- **semicolon (;)**
+		- Run a second command after the ;
+	- **backslash (\)** 
+		- Cancel out a special character's meaning.
 	
 ## Quoting Mechanisms
 - Disable special meaning of metacharacters
-- backslash (\)
+- backslash (\\)
 	- escape character
 	- 
 - single quotation (‘’)
@@ -270,22 +192,22 @@ bash shell is resident in the /usr/bin/bash file.
 	- management of multiple jobs within a shell environment
 
 commands and control sequences for administering the jobs.
-- jobs 
+- `jobs` 
 	- Shell built-in command
 	- display jobs.
-- bg 
+- `bg `
 	- Shell built-in command 
 	- move a job to the background or restart a job in the background that was suspended with Ctrl+z.
-- fg 
+- `fg `
 	- Shell built-in command 
 	- move a job to the foreground 
-- Ctrl+z 
+- `Ctrl+z `
 	- Suspends a foreground job and allows the terminal window to be used for other purposes
 
 ### jobs command
 output
 	plus sign (+) 
-		- indicates the current background job and the 
+		- indicates the current background job
 	minus sign (-) 
 		- signifies the previous job.
 	Stopped
@@ -298,7 +220,7 @@ output
 - two types of startup files: 
 	- 1. system-wide
 		- set the general environment for all users at the time of their login to the system.
-		- \located in the /etc directory
+		- located in the /etc directory
 		- maintained by the Linux admin.
 		- system-wide startup files for bash shell users:
 			- /etc/bashrc 
@@ -373,7 +295,7 @@ echo $USER
 ### Lab: Setting and Unsetting Variables
 1. Define a local variable called VR1:
 ```
-VR1=RHEL8
+VR1=RHEL9
 ```
 
 2. View the value of VR1:
@@ -408,12 +330,12 @@ unset VR1
 
 8. Define a local variable that contains a value with one or more white spaces:
 ```
-VR2="I love RHEL 8"
+VR2="I love RHEL 9"
 ```
 
 9. Define and make the variable an environment variable at the same time:
 ```
-export VR3="I love RHEL 8"
+export VR3="I love RHEL 9"
 ```
 
 10. View local and environment variables:
@@ -633,7 +555,7 @@ ls -d .*
 
 3. List all files in the /var/log directory that end in “.log”:
 ```
-ls /ver/log/*.log
+ls /var/log/*.log
 ```
 
 4. list all files and directories under /var/log with exactly four characters in their names:
@@ -787,7 +709,7 @@ head /etc/bashrc
 head /etc/profile
 ```
 
-3. View the directory /etc/profile.d:L
+3. View the directory /etc/profile.d
 ```
 ls -l /etc/profile.d/
 ```
@@ -811,7 +733,7 @@ cat ~/.bash_profile
 1. Permanently customize the primary shell prompt to display “<user1@server1 in /etc >:” when this user switches into the /etc directory. The prompt should always reflect the current directory directory path. 
 ```
 vim ~/.bash_profile
-export PS1='$USERNAME $PWD
+export PS1='$USERNAME $PWD'
 ```
 
 ### Lab 7-2: Redirect the Standard Input, Output, and Error (user1)
@@ -857,7 +779,7 @@ A. The Ctrl+z key combination will suspend the running program and give you acce
 Q. Name the three quoting mechanisms? 
 A. The three quoting mechanisms are backslash, single quotation mark, and double quotation mark. 
 
-Q. What would the command export VAR1=”I passed RHCSA” do? 
+Q. What would the command `export VAR1=”I passed RHCSA”` do? 
 A. The command provided will set an environment variable with the quoted string as its value. 
 
 Q. Name the default filename and location where user command history is stored? 
@@ -866,12 +788,12 @@ A. The user command history is stored in ~/.bash_history file.
 Q. What is the primary function of the shell in Linux? 
 A. The shell acts as an interface between a user and the system. 
 
-Q. What would the command cd ~user20 do if executed as user10? 
+Q. What would the command `cd ~user20` do if executed as user10? 
 A. The command provided will allow user10 to cd into user20’s home directory provided user10 has proper access permissions. 
 
 Q. Which command would you use to display all matching lines from a text file? 
 A. The grep command. 
 
-Q. What would the command ls > ls.out do?
+Q. What would the command `ls > ls.out` do?
 A. The command provided will redirect the ls command output to the specified file.
 

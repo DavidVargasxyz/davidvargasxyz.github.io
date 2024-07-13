@@ -8,24 +8,26 @@
         "type": "tabs",
         "children": [
           {
-            "id": "98550067d2f0aa38",
+            "id": "b997d3a1aa86947d",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "booknotes/Million Dollar Weekend.md",
-                "mode": "source",
+                "file": "_index.md",
+                "mode": "preview",
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
-            "id": "4dc89ba081ed05b5",
+            "id": "2d081ce9929622ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/Storage Management.md",
+                "file": "linux/Basic Package Management Labs.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "storage management",
+                "query": "fstab",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,7 +84,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d7f1f5db3dece7a2",
@@ -98,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/Storage Management.md",
+                "file": "linux/Basic Package Management Labs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/Storage Management.md",
+                "file": "linux/Basic Package Management Labs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/Storage Management.md"
+                "file": "linux/Basic Package Management Labs.md"
               }
             }
           }
@@ -162,46 +165,46 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "95386cd3ccbc9478",
+  "active": "2d081ce9929622ca",
   "lastOpenFiles": [
-    "linux/RHCSA Notes.md",
-    "linux/_index.md",
-    "linux/Storage Optimization with Virtual Data Optimizer (VDO).md",
-    "booknotes/Million Dollar Weekend.md",
-    "linux/Local Filesystems and Swap DIY Labs.md",
-    "linux/Storage Management.md",
-    "linux/Local File Systems and Swap.md",
-    "linux/Storage DYI Labs.md",
-    "linux/File System Management.md",
-    "linux/Adding Storage for Practice.md",
-    "images/Pasted image 20240706044207.png",
-    "images/Pasted image 20240706043958.png",
-    "images/Pasted image 20240706043837.png",
-    "images/Pasted image 20240706043737.png",
-    "linux/Thin Provisioning.md",
-    "linux/Partition Information (MBR and GPT).md",
-    "linux/Installation.md",
-    "linux/Remove a filesystem from a partition.md",
-    "linux/File Systems and File System Types.md",
     "linux/RHCSA Study Tracker.md",
-    "linux/Swap and its Management.md",
-    "linux/File Systems and Swap Review Questions.md",
-    "linux/Interaction.md",
-    "linux/Storage Review Questions.md",
-    "linux/Logical Volume Manager (LVM).md",
-    "linux/Disk Partitions.md",
-    "linux/Archive/RHCSA9-asghar-ghori.md",
-    "linux/Partition Information.md",
+    "linux/Basic Package Management Labs.md",
+    "linux/Basic Package Management DIY labs.md",
+    "linux/_index.md",
+    "_index.md",
+    "linux/Basic Package Management.md",
+    "linux/RHCSA Notes.md",
+    "images/Pasted image 20240713164339.png",
+    "linux/Package Integrity and Credibility.md",
+    "linux/Basic Package Management Review Questions.md",
+    "linux/RPM (Redhat Package Manager).md",
+    "linux/Advanced File Management.md",
+    "linux/Hostname Resolution and Time Synchronization.md",
+    "linux/NFS Basics and Configuration.md",
     "linux/Advanced Package Management.md",
-    "now/_index.md",
+    "linux/AutoFS.md",
+    "linux/NFS DIY Labs.md",
+    "linux/Network File System (NFS).md",
+    "linux/NFS Review Questions.md",
+    "linux/Storage Management.md",
+    "linux/Process and Task Scheduling Labs.md",
+    "2024-07-11.md",
+    "linux/Process and Task Scheduling.md",
+    "linux/Using Man Pages.md",
+    "linux/RHCSA Exam Environment.md",
+    "images/Pasted image 20240710073529.png",
+    "images/Pasted image 20240710050536.png",
+    "images/Pasted image 20240710050240.png",
+    "images/Pasted image 20240709212056.png",
+    "linux/Interaction.md",
+    "images/Pasted image 20240709211540.png",
+    "images/Pasted image 20240709205705.png",
+    "images/Pasted image 20240709205201.png",
+    "images/Pasted image 20240709205042.png",
+    "images/Pasted image 20240709204152.png",
+    "linux/Network File System.md~",
     "linux/rhcsa",
     "linux/Local File Systems and Swap.md~",
-    "images/image-0A8W8M1U.jpg",
-    "images/Pasted image 20240414040338.png",
-    "images/Pasted image 20240414035218.png",
-    "images/Pasted image 20240414034407.png",
-    "images/Pasted image 20240403135641.png",
-    "images/Pasted image 20240402045454.png",
     "booknotes/Million Dollar Weekend.md~",
     "tools/LEGO_BRICK_LABELS-CONTACT_SHEET.pdf",
     "images/A Guide to the Good Life _ The Ancient Art of Stoic Joy by William B. Irvine.epub",

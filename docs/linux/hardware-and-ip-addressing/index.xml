@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/hardware-and-ip-addressing/</link>
+    <description>Hardware and IP Addressing Ethernet Address 48-bit address that is used to identify the correct destination node for data packets transmitted from the source node. The data packets include hardware addresses for the source and the destination node. also referred to as the hardware, physical, link layer, or MAC address. List all network interfaces with their ethernet addresses:&#xA;ip addr | grep etherSubnetting Network address space is divided into several smaller and more manageable logical subnetworks (subnets).</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/hardware-and-ip-addressing/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

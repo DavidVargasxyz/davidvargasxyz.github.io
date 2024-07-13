@@ -206,6 +206,11 @@ LABEL=bootfs /boot                   xfs     defaults        0 0
 /dev/mapper/rhel-swap   none                    swap    defaults        0 0
 ```
 
+Add a device and UUID to fstab:
+`$(blkid -o value -s UUID <device>) other stuff you need for the fstab here >> /etc/fstab`
+
+or `genfstab -U /mnt >> /etc/fstab`
+
 EXAM TIP: Any missing or invalid entry in this file may render the system unbootable. You will have to boot the system in emergency mode to
 fix this file. Ensure that you understand each field in the file for both file system and swap entries.
 

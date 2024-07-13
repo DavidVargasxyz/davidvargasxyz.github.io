@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/nfs-diy-labs/</link>
+    <description>NFS DIY Labs Lab: Configure NFS Share and Automount with Direct Map As user1 with sudo on server30, share directory /sharenfs (create it) in read/write mode using NFS. [root@server30 /]# mkdir /sharenfs [root@server30 /]# chmod 777 /sharenfs [root@server30 /]# vim /etc/exports # Add -&gt; /sharenfs server40(rw) [root@server30 /]# dnf -y install nfs-utils [root@server30 /]# firewall-cmd --permanent --add-service nfs [root@server30 /]# firewall-cmd --reload success [root@server30 /]# systemctl --now enable nfs-server [root@server30 /]# exportfs -av exporting server40.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/nfs-diy-labs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

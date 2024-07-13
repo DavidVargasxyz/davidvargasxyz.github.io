@@ -28,20 +28,20 @@ Overseeing backups Backups must be executed on a regular schedule and restores m
 process of actually adding and removing accounts is typically automated by a configuration management system or centralized directory service
 Adding hardware Automating tasks increases your efficiency, reduces the likelihood of errors caused by humans, and improves your ability to respond rapidly to changing equirements
 Overseeing backups Backups must be executed on a regular schedule and restores must be tested periodically to ensure that they are functioning correctly.">
-    <meta itemprop="wordCount" content="4141">
+    <meta itemprop="wordCount" content="5868">
     <title></title>
-    <link href="/images/logo.svg?1720283041" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1720283041" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720283041" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1720283041" rel="stylesheet">
-    <link href="/css/auto-complete.css?1720283041" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720283041" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1720283041" rel="stylesheet">
-    <link href="/css/fonts.css?1720283041" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1720283041" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1720283041" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1720283041" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1720283041" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1720283041" rel="stylesheet">
-    <link href="/css/print.css?1720283041" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1720283041"></script>
+    <link href="/images/logo.svg?1720914483" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720914483" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1720914483" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720914483" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1720914483" rel="stylesheet">
+    <link href="/css/fonts.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1720914483" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1720914483" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1720914483" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1720914483" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1720914483" rel="stylesheet">
+    <link href="/css/print.css?1720914483" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1720914483"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..\/..';
@@ -108,6 +108,17 @@ Overseeing backups Backups must be executed on a regular schedule and restores m
         <li><a href="#vim">Vim</a></li>
         <li><a href="#programming">Programming</a></li>
         <li><a href="#distributions">Distributions</a></li>
+      </ul>
+    </li>
+    <li><a href="#autofs">AutoFS</a>
+      <ul>
+        <li><a href="#autofs-maps">AutoFS Maps</a></li>
+        <li><a href="#direct-map">Direct Map</a></li>
+        <li><a href="#indirect-map">Indirect Map</a></li>
+        <li><a href="#lab-access-nfs-share-using-direct-map-server10">Lab: Access NFS Share Using Direct Map (server10)</a></li>
+        <li><a href="#exercise-16-4-access-nfs-share-using-indirect-map">Exercise 16-4: Access NFS Share Using Indirect Map</a></li>
+        <li><a href="#automounting-user-home-directories-">Automounting User Home Directories \</a></li>
+        <li><a href="#exercise-16-5-automount-user-home-directories-using-indirect-map">Exercise 16-5: Automount User Home Directories Using Indirect Map</a></li>
       </ul>
     </li>
   </ul>
@@ -1056,6 +1067,249 @@ San Francisco, CA: No Starch Press, 2012.</p>
 Programming for Total Beginners. San Francisco, CA: No Starch Press,
 2015.</p>
 </blockquote>
+<h2 id="autofs">AutoFS</h2>
+<ul>
+<li>Automatically mount and unmount on clients during runtime and system reboots.</li>
+<li>Triggers mount or unmount action based on mount point activity.</li>
+<li>Client-side service</li>
+<li>Mount an NFS share on demand</li>
+<li>Entry placed in AutoFS config files.</li>
+<li>Automatically mounts share upon detecting activity in it&rsquo;s mount point. (touch, ls, cd)</li>
+<li>unmounts share if the share hasn&rsquo;t been accessed for a predefined period of time.</li>
+<li>Mounts managed with autofs should not be mounted manually via /etc/fstab to avoid inconsistencies.</li>
+<li>Saves Kernel from having to maintain unused NFS shares. (Improved performance!)</li>
+<li>NFS shares are defined in config files called maps (/etc/ or /etc/auto.master.d/)</li>
+<li>Does not use /etc/fstab.</li>
+<li>Does not require root to mount a share (fstab does).</li>
+<li>Prevents client from hanging if share is down.</li>
+<li>Share is unmounted if not accessed for 5 minutes (default)</li>
+<li>Supports wildcard characters or environment variables.</li>
+<li>Automount daemond
+<ul>
+<li>in the userland mounts configured shares automatically upon access.</li>
+<li>invoked at system boot.</li>
+<li>Reads AutoFS master map and create inititial mount point entries. (not mounting yet)</li>
+<li>Does not mount shares until user activity is detected.</li>
+<li>Unmounts after set timeframe of inactivity.</li>
+</ul>
+</li>
+<li>Use the mount command on a share to verify the path of the AutoFS map, file system type, and options used during mount.</li>
+</ul>
+<p>/etc/autofs.conf/ preset Directives:
+master_map_name=auto.master
+timeout = 300
+negative_timeout = 60
+mount_nfs_default_protocol = 4
+logging = none</p>
+<p>Additional directives:
+<strong>master_map_name</strong>
+- Name of the master map. Default is /etc/auto.master
+<strong>timeout</strong>
+- time in second to unmount a share.
+<strong>negative_timeout</strong>
+- Timeout (in seconds) value for failed mount attempts. (1 minute default)
+<strong>mount_nfs_default_protocol</strong>
+- Sets the NFS version used to mount shares.
+logging
+- Logging level (none, verbose, debug)
+- Default is none (disabled)</p>
+<ul>
+<li>Normally left to their default values.</li>
+</ul>
+<h3 id="autofs-maps">AutoFS Maps</h3>
+<ul>
+<li>Where AutoFS finds the shares to mount and their locations.</li>
+<li>Also tells Autofs what options to use. Map Types</li>
+<li>master</li>
+<li>direct</li>
+<li>indirect</li>
+</ul>
+<p><strong>Master Map</strong></p>
+<p>Define entries for indirect and direct maps.</p>
+<ul>
+<li>/etc/auto.master is default</li>
+<li>Default is defined in /etc/autofs.conf with master_map_name directive.</li>
+<li>May be used to define entries for indirect and direct maps.
+<ul>
+<li>But it is recommended to store user-defined maps in /etc/auto.master.d/
+<ul>
+<li>AutoFS service parses this at startup.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can append an option to auto.master but it will apply globally to all subentries in the specified map file.</li>
+</ul>
+<p>Map entry format examples:</p>
+<hr>
+<p>/-                      /etc/auto.master.d/auto.direct   # Line 1</p>
+<p>/misc                   /etc/auto.misc                   # Line 2</p>
+<h3 id="direct-map">Direct Map</h3>
+<div class="highlight wrap-code"><pre tabindex="0"><code>/- /etc/auto.master.d/auto.direct &lt;-- defines direct map and points to auto.direct for details</code></pre></div><p>Mount shares on unrelated mount points</p>
+<ul>
+<li>Always visible to users</li>
+<li>Can exist with an indirect share under one parent directory</li>
+<li>Accessing a directory containing many direct mount points mounts all shares.</li>
+<li>Each direct map entry places a separate share entry to /etc/mtab
+<ul>
+<li>/etc/mtab maintains a list of all mounted file systems whether they are local or remote.</li>
+<li>Updated whenever a local file system, removable file system, or aq network share is mounted or unmounted.</li>
+</ul>
+</li>
+</ul>
+<h3 id="indirect-map">Indirect Map</h3>
+<div class="highlight wrap-code"><pre tabindex="0"><code>/misc /etc/auto.misc &lt;-- indirect map and points to auto.misc for details</code></pre></div><p>Automount removable filesystems</p>
+<ul>
+<li>Mount point /misc precedes mount point entries in /etc/auto.miscq</li>
+<li>Used to automount removable file systems (CD, DVD, USB disks, etc.)</li>
+<li>Custom indirect map files should be located in /etc/auto.master.d/</li>
+<li>Preferred over direct mount for mounting all shares under one common parent directory.</li>
+<li>Become visible only after they have been accessed.</li>
+<li>Local and indirect mounted shares cannot coexist under the same parent directory.</li>
+<li>One entry in /etc/mtab gets added for each indirect map.</li>
+<li>Accessing a directory containing many indirect mount points shows only the shares that are already mounted.</li>
+<li>Usually better to use indirect map for automounting NFS shares.</li>
+</ul>
+<h3 id="lab-access-nfs-share-using-direct-map-server10">Lab: Access NFS Share Using Direct Map (server10)</h3>
+<ol>
+<li>Install Autofs</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0"><code>sudo dnf install -y autofs</code></pre></div><ol>
+<li>Create mount point /autodir using mkdir</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0"><code>sudo mkdir /autodir</code></pre></div><ol>
+<li>Add an entry to /etc/auto.master to point the AutoFS service to the auto.dir file for more information:</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0"><code>/- /etc/auto.master.d/auto.dir</code></pre></div><ol>
+<li>Create /etc/auto.master.d/auto.dir and add the mount point, NFS server, and share info:</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0"><code>/autodir server20:/common</code></pre></div><ol>
+<li>Start AutoFS service and enable it at startup:</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0"><code>sudo systemctl enable --now autofs</code></pre></div><ol>
+<li>Make sure AUtoFS service is running. Use -l and &ndash;no-pager options to show full details without piping the output to a pager program (pg)</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0"><code>sudo systemctl status autofs -l --no-pager</code></pre></div><ol>
+<li>Run ls on the mount point then verify the share is automounted and accessible with mount.</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0"><code>ls /autodir
+mount | grep autodir</code></pre></div><ol>
+<li>Wait 5 minutes and run the mount command again to see it has disappeared.</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0"><code>mount | grep autodir</code></pre></div><h3 id="exercise-16-4-access-nfs-share-using-indirect-map">Exercise 16-4: Access NFS Share Using Indirect Map</h3>
+<ul>
+<li>configure an indirect map to automount the NFS share /common that is available from server20.</li>
+<li>install the relevant software and set up AutoFS maps to support the automatic mounting.</li>
+<li>observe that the specified mount point &ldquo;autoindir&rdquo; is created automatically under /misc.</li>
+</ul>
+<p>Note that /common is already mounted on the /local mount point via the fstab file and it is also configured via a direct map for automounting on /autodir. There should occur no conflict in configuration or functionality among the three.</p>
+<p>1. Install the autofs software package if it is not already there:</p>
+<p>2. Confirm the entry for the indirect map /misc in the /etc/auto.master
+file exists:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 common<span style="color:#ff6ac1">]</span><span style="color:#78787e"># grep ^/misc /etc/auto.master</span>
+</span></span><span style="display:flex;"><span>/misc	/etc/auto.misc</span></span></code></pre></div><p>3. Edit the /etc/auto.misc file and add the mount point, NFS server, and share information to it:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>autoindir server30:/common</span></span></code></pre></div><p>4. Start the AutoFS service now and set it to autostart at system reboots:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># systemctl enable --now autofs</span></span></span></code></pre></div><p>5. Verify the operational status of the AutoFS service. Use the -l and --no-pager options to show full details without piping the output to a pager program (the pg command in this case):</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># systemctl status autofs -l --no-pager</span></span></span></code></pre></div><p><br>
+6. Run the ls command on the mount point /misc/autoindir and then grep for both auto.misc and autoindir on the mount command output to verify that the share is automounted and accessible:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls /misc/autoindir</span>
+</span></span><span style="display:flex;"><span>test.text</span></span></code></pre></div><div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mount | egrep &#39;auto.misc|autoindir&#39;</span>
+</span></span><span style="display:flex;"><span>/etc/auto.misc on /misc <span style="color:#ff5c57">type</span> autofs <span style="color:#ff6ac1">(</span>rw,relatime,fd<span style="color:#ff6ac1">=</span>7,pgrp<span style="color:#ff6ac1">=</span>3321,timeout<span style="color:#ff6ac1">=</span>300,minproto<span style="color:#ff6ac1">=</span>5,maxproto<span style="color:#ff6ac1">=</span>5,indirect,pipe_ino<span style="color:#ff6ac1">=</span>31779<span style="color:#ff6ac1">)</span>
+</span></span><span style="display:flex;"><span>server30:/common on /misc/autoindir <span style="color:#ff5c57">type</span> nfs4 <span style="color:#ff6ac1">(</span>rw,relatime,vers<span style="color:#ff6ac1">=</span>4.2,rsize<span style="color:#ff6ac1">=</span>262144,wsize<span style="color:#ff6ac1">=</span>262144,namlen<span style="color:#ff6ac1">=</span>255,hard,proto<span style="color:#ff6ac1">=</span>tcp,timeo<span style="color:#ff6ac1">=</span>600,retrans<span style="color:#ff6ac1">=</span>2,sec<span style="color:#ff6ac1">=</span>sys,clientaddr<span style="color:#ff6ac1">=</span>192.168.0.40,local_lock<span style="color:#ff6ac1">=</span>none,addr<span style="color:#ff6ac1">=</span>192.168.0.30<span style="color:#ff6ac1">)</span></span></span></code></pre></div><ul>
+<li>/misc/autoindir has been auto generated.</li>
+<li>You can use the ubrella mount point /misc to mount additional auto-generated mount points.</li>
+</ul>
+<h3 id="automounting-user-home-directories-">Automounting User Home Directories \</h3>
+<p>AutoFS allows us to automount user home directories by exploiting two special characters in indirect maps.</p>
+<p><strong>asterisk (*)</strong></p>
+<ul>
+<li>replaces the references to specific mount points and the</li>
+</ul>
+<p><strong>ampersand (&amp;)</strong></p>
+<ul>
+<li>
+<p>Substitutes the references to NFS servers and shared subdirectories.</p>
+</li>
+<li>
+<p>With user home directories located under /home, on one or more NFS servers, the AutoFS service will connect with all of them simultaneously when a user attempts to log on to a client.</p>
+</li>
+<li>
+<p>The service will mount only that specific user&rsquo;s home directory rather than the entire /home.</p>
+</li>
+<li>
+<p>The indirect map entry for this type of substitution is defined in an indirect map, such as /etc/auto.master.d/auto.home.</p>
+</li>
+</ul>
+<p><code>* -rw &amp;:/home/&amp;</code></p>
+<ul>
+<li>
+<p>With this entry in place, there is no need to update any AutoFS configuration files if additional NFS servers with /home shared are added or removed.</p>
+</li>
+<li>
+<p>If user home directories are added or deleted, there will be no impact on the functionality of AutoFS.</p>
+</li>
+<li>
+<p>If there is only one NFS server sharing the home directories, you can simply specify its name in lieu of the first &amp; symbol in the above entry.</p>
+</li>
+</ul>
+<h3 id="exercise-16-5-automount-user-home-directories-using-indirect-map">Exercise 16-5: Automount User Home Directories Using Indirect Map</h3>
+<p>There are two portions for this exercise. The first portion should be done on server20 (NFS server) and the second portion on server10 (NFS client) as user1 with sudo where required.</p>
+<p>first portion</p>
+<ul>
+<li>create a user account called user30 with UID 3000.</li>
+<li>add the /home directory to the list of NFS shares so that it becomes available for remote mount.</li>
+</ul>
+<p>second portion</p>
+<ul>
+<li>create a user account called user30 with UID 3000, base directory /nfshome, and no home directory.</li>
+<li>create an umbrella mount point called /nfshome for mounting the user home directory from the NFS server.</li>
+<li>install the relevant software and establish an indirect map to automount the remote home directory of user30 under /nfshome.</li>
+<li>observe that the home directory is automounted under /nfshome when you sign in as user30.</li>
+</ul>
+<p>On NFS server server20:</p>
+<p>1. Create a user account called user30 with UID 3000 (-u) and assign
+password &ldquo;password1&rdquo;:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 common<span style="color:#ff6ac1">]</span><span style="color:#78787e"># useradd -u 3000 user30</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 common<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo password1 | sudo passwd --stdin user30</span>
+</span></span><span style="display:flex;"><span>Changing password <span style="color:#ff6ac1">for</span> user user30.
+</span></span><span style="display:flex;"><span>passwd: all authentication tokens updated successfully.</span></span></code></pre></div><p>2. Edit the /etc/exports file and add an entry for /home (do not modify or remove the previous entry):
+<code>/home server40(rw)</code></p>
+<p>3. Export all the shares listed in the /etc/exports file:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 common<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo exportfs -avr</span>
+</span></span><span style="display:flex;"><span>exporting server40.example.com:/home
+</span></span><span style="display:flex;"><span>exporting server40.example.com:/common</span></span></code></pre></div><p>On NFS client server10:</p>
+<p>1. Install the autofs software package if it is not already there:
+<code>dnf install autofs</code></p>
+<p>2. Create a user account called user30 with UID 3000 (-u), base home directory location /nfshome (-b), no home directory (-M), and password &ldquo;password1&rdquo;:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 misc<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo useradd -u 3000 -b /nfshome -M user30</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 misc<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo password1 | sudo passwd --stdin user30</span></span></span></code></pre></div><p>This is to ensure that the UID for the user is consistent on the server and the client to avoid access issues.</p>
+<p>3. Create the umbrella mount point /nfshome to automount the user&rsquo;s home directory:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo mkdir /nfshome</span></span></code></pre></div><p>4. Edit the /etc/auto.master file and add the mount point and indirect map location to it:
+<code>/nfshome /etc/auto.master.d/auto.home</code></p>
+<p>5. Create the /etc/auto.master.d/auto.home file and add the following information to it:
+<code>* -rw server30:/home/&amp;</code></p>
+<p>For multiple user setup, you can replace &ldquo;user30&rdquo; with the &amp; character, but ensure that those users exist on both the server and the client with consistent UIDs.</p>
+<p>6. Start the AutoFS service now and set it to autostart at system reboots. This step is not required if AutoFS is already running and enabled.
+<code>systemctl enable --now autofs</code></p>
+<p>7. Verify the operational status of the AutoFS service. Use the -l and --no-pager options to show full details without piping the output to a pager program (the pg command):
+<code>systemctl status autofs -l --no-pager</code></p>
+<p>8. Log in as user30 and run the pwd, ls, and df commands for verification:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 nfshome<span style="color:#ff6ac1">]</span><span style="color:#78787e"># su - user30</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user30@server40 ~<span style="color:#ff6ac1">]</span>$ ls
+</span></span><span style="display:flex;"><span>user30.txt
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user30@server40 ~<span style="color:#ff6ac1">]</span>$ <span style="color:#ff5c57">pwd</span>
+</span></span><span style="display:flex;"><span>/nfshome/user30
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user30@server40 ~<span style="color:#ff6ac1">]</span>$ df -h
+</span></span><span style="display:flex;"><span>Filesystem             Size  Used Avail Use% Mounted on
+</span></span><span style="display:flex;"><span>devtmpfs               4.0M     <span style="color:#ff9f43">0</span>  4.0M   0% /dev
+</span></span><span style="display:flex;"><span>tmpfs                  888M     <span style="color:#ff9f43">0</span>  888M   0% /dev/shm
+</span></span><span style="display:flex;"><span>tmpfs                  356M  5.1M  351M   2% /run
+</span></span><span style="display:flex;"><span>/dev/mapper/rhel-root   17G  2.2G   15G  13% /
+</span></span><span style="display:flex;"><span>/dev/sda1              960M  344M  617M  36% /boot
+</span></span><span style="display:flex;"><span>tmpfs                  178M     <span style="color:#ff9f43">0</span>  178M   0% /run/user/0
+</span></span><span style="display:flex;"><span>server30:/common        17G  2.2G   15G  13% /local
+</span></span><span style="display:flex;"><span>server30:/home/user30   17G  2.2G   15G  13% /nfshome/user30</span></span></code></pre></div><p>EXAM TIP: You may need to configure AutoFS for mounting a remote user
+home directory.</p>
 
             <footer class="footline">
             </footer>
@@ -1084,12 +1338,12 @@ Programming for Total Beginners. San Francisco, CA: No Starch Press,
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1720283041" defer></script>
-        <script src="/js/lunr/lunr.min.js?1720283041" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1720283041" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1720283041" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1720283041" defer></script>
-        <script src="/js/search.js?1720283041" defer></script>
+        <script src="/js/auto-complete.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.min.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1720914483" defer></script>
+        <script src="/js/search.js?1720914483" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -1160,8 +1414,8 @@ Programming for Total Beginners. San Francisco, CA: No Starch Press,
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1720283041" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1720283041" defer></script>
+    <script src="/js/clipboard.min.js?1720914483" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1720914483" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -1177,20 +1431,20 @@ Programming for Total Beginners. San Francisco, CA: No Starch Press,
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1720283041" defer></script>
-    <script src="/js/js-yaml.min.js?1720283041" defer></script>
+    <script src="/js/d3/d3-color.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1720914483" defer></script>
+    <script src="/js/js-yaml.min.js?1720914483" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1720283041" defer></script>
+    <script src="/js/theme.js?1720914483" defer></script>
   </body>
 </html>

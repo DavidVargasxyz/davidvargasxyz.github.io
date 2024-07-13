@@ -32,20 +32,20 @@ Hostname Resolution and Time Synchronization \
 \
 This chapter describes the following major topics: \
 Overview of Domain Name System and hostname resolution Understand various DNS roles Analyze entries in resolver configuration files Perform name resolution using a variety of lookup tools Describe time synchronization and the role of Network Time Protocol Comprehend the terms: time source, NTP roles, and stratum levels Anatomy of the Chrony service configuration file Configure and verify NTP/Chrony client service View and set system date and time \">
-    <meta itemprop="wordCount" content="4664">
+    <meta itemprop="wordCount" content="4764">
     <title></title>
-    <link href="/images/logo.svg?1720283041" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1720283041" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720283041" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1720283041" rel="stylesheet">
-    <link href="/css/auto-complete.css?1720283041" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720283041" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1720283041" rel="stylesheet">
-    <link href="/css/fonts.css?1720283041" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1720283041" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1720283041" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1720283041" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1720283041" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1720283041" rel="stylesheet">
-    <link href="/css/print.css?1720283041" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1720283041"></script>
+    <link href="/images/logo.svg?1720914483" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720914483" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1720914483" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720914483" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1720914483" rel="stylesheet">
+    <link href="/css/fonts.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1720914483" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1720914483" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1720914483" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1720914483" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1720914483" rel="stylesheet">
+    <link href="/css/print.css?1720914483" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1720914483"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -124,6 +124,11 @@ Overview of Domain Name System and hostname resolution Understand various DNS ro
     <li><a href="#do-it-yourself-challenge-labs">Do-It-Yourself Challenge Labs</a></li>
     <li><a href="#lab-17-1-configure-chrony">Lab 17-1: Configure Chrony</a></li>
     <li><a href="#lab-17-2-modify-system-date-and-time">Lab 17-2: Modify System Date and Time</a></li>
+    <li><a href="#hostname">Hostname</a>
+      <ul>
+        <li><a href="#lab-change-the-hostname">Lab: Change the Hostname</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
                 </div>
@@ -202,8 +207,8 @@ communicate with remote systems. There are several lookup programs that
 use DNS to obtain information.</p>
 <p>\</p>
 <p>::: {style=&ldquo;text-align: center;&rdquo;}
-<a href="#R-image-30ec2d404f4b240dc5f6a0ff98295271" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-NAZVOO3N.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-30ec2d404f4b240dc5f6a0ff98295271"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-NAZVOO3N.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
+<a href="#R-image-3411595bc988f0357c20b1cb01885cd6" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-NAZVOO3N.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3411595bc988f0357c20b1cb01885cd6"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-NAZVOO3N.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
 <p>The Chrony service, an implementation of the Network Time Protocol, maintains the clock on the system and keeps it synchronized with a more
 accurate and reliable source of time. Providing accurate and uniform time for systems on the network allows time-sensitive applications such
 as monitoring software, backup tools, scheduling utilities, billing systems, file sharing protocols, and authentication programs to perform
@@ -238,8 +243,8 @@ redhat.com.</p>
 <p><a href="/linux/hostname-resolution-and-time-synchronization/#chapter0521.html">Figure 17-1 exhibits a sample hierarchy of the name space, showing the
 top three domain levels.</a></p>
 <p>\</p>
-<p><a href="#R-image-ab60ca0e78c2dd3eb8fad5f4d100b3c7" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-TJ7OW7U5.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ab60ca0e78c2dd3eb8fad5f4d100b3c7"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-TJ7OW7U5.jpg"></a></p>
+<p><a href="#R-image-13d40466590daf6a51db43ed957a660e" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-TJ7OW7U5.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-13d40466590daf6a51db43ed957a660e"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-TJ7OW7U5.jpg"></a></p>
 <p>\</p>
 <p>At the deepest level of the hierarchy are the leaves (systems, nodes, or
 any device with an IP address) of the name space. For example, a network
@@ -316,8 +321,8 @@ example.gov</p>
 resolv.conf file on both server10 and server20. These entries are
 automatically placed by the NetworkManager service.</p>
 <p>\</p>
-<p><a href="#R-image-3fb86a776788af87552f2e5bae75ff02" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-KOBUAFWS.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3fb86a776788af87552f2e5bae75ff02"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-KOBUAFWS.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
+<p><a href="#R-image-32562b86f5e7ead5fd611129d0071af6" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-KOBUAFWS.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-32562b86f5e7ead5fd611129d0071af6"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-KOBUAFWS.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
 <!-- raw HTML omitted -->
 <p>On a system with this file absent, the resolver utilities only query the
 nameserver configured on the localhost, determine the domain name from
@@ -388,10 +393,10 @@ following shows a few usage examples.</p>
 <p>To get the IP for redhat.com using the nameserver listed in the
 resolv.conf file:</p>
 <p>\</p>
-<p><a href="#R-image-2132d5b38bb0f96b50264a68943c9de6" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-YDHYBNK1.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2132d5b38bb0f96b50264a68943c9de6"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-YDHYBNK1.jpg"></a></p>
-<p><a href="#R-image-0ac52d4735ca137de5a88712a84ef7c9" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-TGZ3IJXO.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0ac52d4735ca137de5a88712a84ef7c9"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-TGZ3IJXO.jpg"></a></p>
+<p><a href="#R-image-04f38957a9a31f6c263332869e570db4" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-YDHYBNK1.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-04f38957a9a31f6c263332869e570db4"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-YDHYBNK1.jpg"></a></p>
+<p><a href="#R-image-27a49c3f39c397230f5048e5a7bb1e0d" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-TGZ3IJXO.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-27a49c3f39c397230f5048e5a7bb1e0d"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-TGZ3IJXO.jpg"></a></p>
 <p>The output shows the total time (20 milliseconds) it took to get the
 result, the IP addresses (52.200.142.250 and 34.235.198.240) of
 redhat.com, the nameserver IPv6 (2001:1970:xxxxxx) used for the query,
@@ -401,8 +406,8 @@ information.</p>
 <p>To perform a reverse lookup on the redhat.com IP (52.200.142.250), use
 the -x option with the command:</p>
 <p>\</p>
-<p><a href="#R-image-301dff7f0b2df4c5271d405289e7deaf" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-H3BLEJ3V.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-301dff7f0b2df4c5271d405289e7deaf"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-H3BLEJ3V.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
+<p><a href="#R-image-4d7aad1b9f82c167edeed9a8e2b65d3e" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-H3BLEJ3V.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4d7aad1b9f82c167edeed9a8e2b65d3e"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-H3BLEJ3V.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
 <!-- raw HTML omitted -->
 <p>Reference the command&rsquo;s manual pages for details and options.</p>
 <h2 id="performing-name-resolution-with-host">Performing Name Resolution with host</h2>
@@ -414,8 +419,8 @@ the -v option for verbosity.</p>
 <p>\</p>
 <p>To perform a lookup on redhat.com:</p>
 <p>\</p>
-<p><a href="#R-image-f4c428142b978e15ff6e425af37d0f3b" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-5QNYLQ6V.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f4c428142b978e15ff6e425af37d0f3b"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-5QNYLQ6V.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
+<p><a href="#R-image-5c7b0d35f7714cb4ae84fdae6cf88121" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-5QNYLQ6V.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5c7b0d35f7714cb4ae84fdae6cf88121"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-5QNYLQ6V.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
 <!-- raw HTML omitted -->
 <p>Rerun the above with -v added. The output will be similar to that of the
 dig command.</p>
@@ -423,8 +428,8 @@ dig command.</p>
 <p>To perform a reverse lookup on the IP of redhat.com using the -v flag to
 add details:</p>
 <p>\</p>
-<p><a href="#R-image-0ce49096026da5fc06a6e535ae7f9c64" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-WOZD6C5K.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0ce49096026da5fc06a6e535ae7f9c64"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-WOZD6C5K.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
+<p><a href="#R-image-8e5d43517a342b8eeaa7c5d458b65628" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-WOZD6C5K.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8e5d43517a342b8eeaa7c5d458b65628"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-WOZD6C5K.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
 <!-- raw HTML omitted -->
 <p>Refer to the command&rsquo;s manual pages for options and more information.</p>
 <h2 class="style3" id="performing-name-resolution-with-nslookup">Performing Name Resolution with nslookup</h2>
@@ -435,13 +440,13 @@ specified at the command line. The following shows a few usage examples.</p>
 <p>To get the IP for redhat.com using nameserver 8.8.8.8 instead of the
 nameserver defined in resolv.conf:</p>
 <p>\</p>
-<p><a href="#R-image-869c48589390429865718606c8b8b7ac" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-6MJ73J5Q.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-869c48589390429865718606c8b8b7ac"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-6MJ73J5Q.jpg"></a></p>
+<p><a href="#R-image-73ea7b5f1908ab814e396e22e197af59" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-6MJ73J5Q.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-73ea7b5f1908ab814e396e22e197af59"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-6MJ73J5Q.jpg"></a></p>
 <p>To perform a reverse lookup on the IP of redhat.com using the nameserver
 from the resolver configuration file:</p>
 <p><br>
-<a href="#R-image-5791c3ca76d21135784d732eff46c075" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-TCI69YR4.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5791c3ca76d21135784d732eff46c075"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-TCI69YR4.jpg"></a></p>
+<a href="#R-image-b7c36e7b0c51cc7a74aad2a8e16d1500" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-TCI69YR4.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b7c36e7b0c51cc7a74aad2a8e16d1500"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-TCI69YR4.jpg"></a></p>
 <p>Consult the command&rsquo;s manual pages on how to use it in interactive mode.</p>
 <h2 id="performing-name-resolution-with-getent">Performing Name Resolution with getent</h2>
 <p>\</p>
@@ -451,8 +456,8 @@ This command reads the corresponding database and displays the
 information if found. For name resolution, use the hosts database and
 getent will attempt to resolve the specified hostname or IP address. For
 instance, run the following for forward and reverse lookups:</p>
-<p><a href="#R-image-5814d3d053119636bc185b2d95b0ee92" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-TMDUQ18Q.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5814d3d053119636bc185b2d95b0ee92"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-TMDUQ18Q.jpg"></a></p>
+<p><a href="#R-image-7be1c1195db4321ad842d768c1b74432" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-TMDUQ18Q.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7be1c1195db4321ad842d768c1b74432"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-TMDUQ18Q.jpg"></a></p>
 <p>Check the command&rsquo;s manual pages for available flags and additional
 information.</p>
 <h2 class="style3" id="time-synchronization">Time Synchronization</h2>
@@ -575,8 +580,8 @@ Examples:</p>
 <p>Servers sharing the same stratum can be configured as peers to exchange time updates with one another.</p>
 </li>
 </ul>
-<p><a href="#R-image-ac694ae767439cadbfeb2a9a2b522b70" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-OOGYXDFA.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ac694ae767439cadbfeb2a9a2b522b70"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-OOGYXDFA.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
+<p><a href="#R-image-d8fb6b79135c95d81f926810e2214914" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-OOGYXDFA.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d8fb6b79135c95d81f926810e2214914"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-OOGYXDFA.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
 <p><br>
 There are numerous public NTP servers available for free that synchronize time.
 They normally operate at higher stratum levels such as 2 and 3.</p>
@@ -635,8 +640,8 @@ the sources and tracking subcommands list current sources of time and view perfo
 <li>validate the binding and operation.</li>
 </ul>
 <p>1. Install the Chrony package using the dnf command:</p>
-<p><a href="#R-image-0903acd8c6aa78d836f1afc3e8b33443" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-12U3TD72.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0903acd8c6aa78d836f1afc3e8b33443"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-12U3TD72.jpg"></a></p>
+<p><a href="#R-image-e171a1988a54ef56d4b42753c139b7c9" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-12U3TD72.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e171a1988a54ef56d4b42753c139b7c9"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-12U3TD72.jpg"></a></p>
 <p>The software is already installed on the system.</p>
 <p>2. Ensure that preconfigured public time server entries are present in
 the /etc/chrony.conf file:</p>
@@ -644,12 +649,12 @@ the /etc/chrony.conf file:</p>
 pool 2.rhel.pool.ntp.org iburst</code></pre></div><p>There is a single pool entry set in the file by default. This pool name is backed by multiple NTP servers behind the scenes.</p>
 <p>3. Start the Chrony service and set it to autostart at reboots:
 <code>sudo systemctl --now enable chronyd</code></p>
-<p><a href="#R-image-7e96fd8d9bec880165ac3dbba1bbe7b7" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-05VCU30R.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7e96fd8d9bec880165ac3dbba1bbe7b7"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-05VCU30R.jpg"></a></p>
+<p><a href="#R-image-96e63636ba32f63116c166ff46739d17" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-05VCU30R.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-96e63636ba32f63116c166ff46739d17"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-05VCU30R.jpg"></a></p>
 <p>4. Examine the operational status of Chrony:
 <code>sudo systemctl status chronyd --no-pager -l</code>
-<a href="#R-image-40799f9378d4a445b79f61cd9405528b" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-Z4GH16SN.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-40799f9378d4a445b79f61cd9405528b"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-Z4GH16SN.jpg"></a></p>
+<a href="#R-image-2cda6a935971a01d968df39e9c00f94f" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-Z4GH16SN.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2cda6a935971a01d968df39e9c00f94f"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-Z4GH16SN.jpg"></a></p>
 <p>The service has started successfully and it is set for autostart.</p>
 <p>5. Inspect the binding status using the sources subcommand with chronyc:</p>
 <div class="highlight wrap-code"><pre tabindex="0"><code>[root@server1 ~]# chronyc sources
@@ -658,8 +663,8 @@ MS Name/IP address         Stratum Poll Reach LastRx Last sample
 ^+ ntp7-2.mattnordhoffdns.n&gt;     2   8   377   324  -3641us[-3641us] +/-   53ms
 ^* 2600:1700:4e60:b983::123      1   8   377   430   +581us[  +84us] +/-   36ms
 ^- 2600:1700:5a0f:ee00::314&gt;     2   8   377    58  -1226us[-1226us] +/-   50ms
-^- 2603:c020:6:b900:ed2f:b4&gt;     2   9   377   320   +142us[ +142us] +/-   73ms</code></pre></div><p><a href="#R-image-36f699bb009e060d6ab5b565c91bb13a" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-QQAUUTE5.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-36f699bb009e060d6ab5b565c91bb13a"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-QQAUUTE5.jpg"></a></p>
+^- 2603:c020:6:b900:ed2f:b4&gt;     2   9   377   320   +142us[ +142us] +/-   73ms</code></pre></div><p><a href="#R-image-b35d75cc997b9e864eec61f6bfd45e42" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-QQAUUTE5.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b35d75cc997b9e864eec61f6bfd45e42"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-QQAUUTE5.jpg"></a></p>
 <p>^ means the source is a server
 * implies current association with the source.</p>
 <p>Poll</p>
@@ -687,8 +692,8 @@ Skew            : 0.998 ppm
 Root delay      : 0.064471066 seconds
 Root dispersion : 0.003769779 seconds
 Update interval : 517.9 seconds
-Leap status     : Normal</code></pre></div><p><a href="#R-image-780d587c7346d55b358675bb30958b67" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-U9AIT51T.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-780d587c7346d55b358675bb30958b67"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-U9AIT51T.jpg"></a></p>
+Leap status     : Normal</code></pre></div><p><a href="#R-image-098af4695f59a09e5d9e6362803ce14f" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-U9AIT51T.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-098af4695f59a09e5d9e6362803ce14f"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-U9AIT51T.jpg"></a></p>
 <p>Rows 1 and 2 in the above output identify the current source of time
 (Reference ID) and the stratum level it is configured at (Stratum). Row
 3 shows the reference time at which the last measurement from the time
@@ -706,29 +711,29 @@ command and search for the section &ldquo;tracking&rdquo; for additional details
 This command can modify the date, time, and time zone.
 When executed without any option, as shown below, it outputs the local time, Universal time, RTC time (real-time
 clock, a battery-backed hardware clock located on the system board), time zone, and the status of the NTP service:</p>
-<p><a href="#R-image-6827a6b5add1af50239e52408b7aabbc" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-2VNY85LG.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6827a6b5add1af50239e52408b7aabbc"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-2VNY85LG.jpg"></a></p>
+<p><a href="#R-image-73f465c25a9926495a5177b78f2f9244" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-2VNY85LG.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-73f465c25a9926495a5177b78f2f9244"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-2VNY85LG.jpg"></a></p>
 <p>This command requires that the NTP/Chrony service is deactivated in
 order to make time adjustments. Run the timedatectl command as follows
 to turn off NTP and verify:</p>
 <p>\</p>
-<p><a href="#R-image-8f6d708491385225fc1b3f40969f18f2" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-UYIURDAL.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8f6d708491385225fc1b3f40969f18f2"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-UYIURDAL.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
+<p><a href="#R-image-1caefb914fb8b0eb24316448ec6ea35c" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-UYIURDAL.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1caefb914fb8b0eb24316448ec6ea35c"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-UYIURDAL.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
 <!-- raw HTML omitted -->
 <p>To modify the current date to February 28, 2023, and confirm:</p>
 <p>\</p>
-<p><a href="#R-image-7948cbcc7bf6d3b9106d7000664b9483" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-PBWZS3DT.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7948cbcc7bf6d3b9106d7000664b9483"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-PBWZS3DT.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
+<p><a href="#R-image-b5bb7a2859e2dc938cc00b8ac344874e" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-PBWZS3DT.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b5bb7a2859e2dc938cc00b8ac344874e"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-PBWZS3DT.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
 <!-- raw HTML omitted -->
 <p>To change both date and time in one go (March 18, 2023 11:20 p.m.):</p>
 <p>\</p>
-<p><a href="#R-image-18987cf00378f6e5e2416c98b0680df3" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-KLSPK1PF.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-18987cf00378f6e5e2416c98b0680df3"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-KLSPK1PF.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
+<p><a href="#R-image-c51fe73519ec5a9531b0d56cc7f5d3c2" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-KLSPK1PF.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c51fe73519ec5a9531b0d56cc7f5d3c2"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-KLSPK1PF.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
 <!-- raw HTML omitted -->
 <p>To reactivate NTP:</p>
 <p>\</p>
-<p><a href="#R-image-631d05bd2c86489a644703a11e8a1563" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-XCSIHCHZ.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-631d05bd2c86489a644703a11e8a1563"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-XCSIHCHZ.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
+<p><a href="#R-image-002681fbff4aa4d1aab8b8c3e849b8c3" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-XCSIHCHZ.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-002681fbff4aa4d1aab8b8c3e849b8c3"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-XCSIHCHZ.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
 <!-- raw HTML omitted -->
 <p>Check out the manual pages of the timedatectl command for more
 subcommands and usage examples.</p>
@@ -738,14 +743,14 @@ date and time.</p>
 <p>\</p>
 <p>To view current date and time:</p>
 <p>\</p>
-<p><a href="#R-image-d92290e7e4b391fd8999433acb2d3392" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-WD0CY9GL.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d92290e7e4b391fd8999433acb2d3392"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-WD0CY9GL.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
+<p><a href="#R-image-8be9f7b4484d94d6b720a5b53538a2b6" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-WD0CY9GL.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8be9f7b4484d94d6b720a5b53538a2b6"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-WD0CY9GL.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
 <!-- raw HTML omitted -->
 <p>To change the date and time to February 11, 2023, 8:00 a.m.:</p>
 <p>\</p>
 <!-- raw HTML omitted -->
-<p><a href="#R-image-2ca4c7f8dca35df627979046c59e740e" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-8U96CFAF.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2ca4c7f8dca35df627979046c59e740e"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-8U96CFAF.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
+<p><a href="#R-image-e8760f8db8bc57279456fcffbee120b7" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-8U96CFAF.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e8760f8db8bc57279456fcffbee120b7"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-8U96CFAF.jpg"></a>{height=&ldquo;100%&rdquo;}</p>
 <!-- raw HTML omitted -->
 <p>There are many options available with the date command. Consult its
 manual pages for details.</p>
@@ -880,7 +885,36 @@ timedatectl command. (Hint: Time Synchronization).</p>
 <p>::: {style=&ldquo;page-break-before: always;&rdquo;}
 :::</p>
 <p>[]{#chapter0543.html}</p>
-
+<h2 id="hostname">Hostname</h2>
+<ul>
+<li>&ldquo;-&rdquo;, &ldquo;_ &ldquo;, and &ldquo;. &quot; characters are allowed.</li>
+<li>Up to 253 characters.</li>
+<li>Stored in /etc/hostname.</li>
+<li>can be viewed with several different commands, such as <code>hostname</code>, <code>hostnamectl</code>, <code>uname</code>, and <code>nmcli</code>, as well as by displaying the content of the /etc/hostname file.</li>
+</ul>
+<p>View the hostname:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>hostnamectl --static</code></pre></div><div class="highlight wrap-code"><pre tabindex="0"><code>hostname</code></pre></div><div class="highlight wrap-code"><pre tabindex="0"><code>uname -n</code></pre></div><div class="highlight wrap-code"><pre tabindex="0"><code>cat /etc/hostname</code></pre></div><h3 id="lab-change-the-hostname">Lab: Change the Hostname</h3>
+<p>Server1</p>
+<ol>
+<li>Open /etc/hostname and change the entry to server10.example.com</li>
+<li>restart the systemd-hostnamed service daemon</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0"><code>sudo systemctl restart systemd-hostnamed</code></pre></div><ol start="3">
+<li>confirm</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0"><code>hostname</code></pre></div><p>server2</p>
+<ol>
+<li>Change the hostname with hostnamectl:</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0"><code>sudo hostnamectl set-hostname server21.example.com</code></pre></div><ol start="2">
+<li>
+<p>Log out and back in for the prompt to update</p>
+</li>
+<li>
+<p>Change the hostname using nmcli</p>
+</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0"><code>nmcli general hostname server20.example.com</code></pre></div>
             <footer class="footline">
             </footer>
           </article>
@@ -908,12 +942,12 @@ timedatectl command. (Hint: Time Synchronization).</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1720283041" defer></script>
-        <script src="/js/lunr/lunr.min.js?1720283041" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1720283041" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1720283041" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1720283041" defer></script>
-        <script src="/js/search.js?1720283041" defer></script>
+        <script src="/js/auto-complete.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.min.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1720914483" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1720914483" defer></script>
+        <script src="/js/search.js?1720914483" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -984,8 +1018,8 @@ timedatectl command. (Hint: Time Synchronization).</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1720283041" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1720283041" defer></script>
+    <script src="/js/clipboard.min.js?1720914483" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1720914483" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -1001,20 +1035,20 @@ timedatectl command. (Hint: Time Synchronization).</p>
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1720283041" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1720283041" defer></script>
-    <script src="/js/js-yaml.min.js?1720283041" defer></script>
+    <script src="/js/d3/d3-color.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1720914483" defer></script>
+    <script src="/js/js-yaml.min.js?1720914483" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1720283041" defer></script>
+    <script src="/js/theme.js?1720914483" defer></script>
   </body>
 </html>

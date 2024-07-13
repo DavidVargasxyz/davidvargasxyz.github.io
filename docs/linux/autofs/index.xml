@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/autofs/</link>
+    <description>AutoFS Automatically mount and unmount on clients during runtime and system reboots. Triggers mount or unmount action based on mount point activity. Client-side service Mount an NFS share on demand Entry placed in AutoFS config files. Automatically mounts share upon detecting activity in it’s mount point. (touch, ls, cd) unmounts share if the share hasn’t been accessed for a predefined period of time. Mounts managed with autofs should not be mounted manually via /etc/fstab to avoid inconsistencies.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/autofs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

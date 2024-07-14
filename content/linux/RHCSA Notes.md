@@ -34,5 +34,5 @@ Track my RHCSA progress: [RHCSA Study Tracker](RHCSA%20Study%20Tracker.md)
 
 ## Extra Resourses
 
-[Using Man Pages](Using%20Man%20Pages.md)
-[RHCSA Exam Environment](RHCSA%20Exam%20Environment.md)
+- [Using Man Pages](Using%20Man%20Pages.md)
+- [RHCSA Exam Environment](RHCSA%20Exam%20Environment.md)

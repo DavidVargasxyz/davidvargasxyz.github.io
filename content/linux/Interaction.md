@@ -424,7 +424,7 @@ type ls
 
 #### uname command
 - Show system operating system name.
-```
+```bash
 [root@server1 bin]# uname
 Linux
 ```

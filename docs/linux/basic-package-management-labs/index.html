@@ -16,20 +16,20 @@
     <meta property="og:type" content="article">
     <meta property="article:section" content="Linux">
     <meta itemprop="description" content="Basic Package Management Labs Lab: Mount RHEL 9 ISO Persistently Go to the VirtualBox VM Manager and make sure that the RHEL 8 image is attached to RHEL9-VM1 as depicted below: Open the /etc/fstab file in the vim editor (or another editor of your choice) and add the following line entry at the end of the file to mount the DVD image (/dev/sr0) in read-only (ro) mode on the /mnt directory.">
-    <meta itemprop="wordCount" content="656">
+    <meta itemprop="wordCount" content="877">
     <title></title>
-    <link href="/images/logo.svg?1720914483" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720914483" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1720914483" rel="stylesheet">
-    <link href="/css/auto-complete.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720914483" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1720914483" rel="stylesheet">
-    <link href="/css/fonts.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1720914483" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1720914483" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1720914483" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1720914483" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1720914483" rel="stylesheet">
-    <link href="/css/print.css?1720914483" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1720914483"></script>
+    <link href="/images/logo.svg?1720981677" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1720981678" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720981678" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1720981678" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720981678" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720981678" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1720981678" rel="stylesheet">
+    <link href="/css/fonts.css?1720981678" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1720981678" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1720981678" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1720981678" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1720981678" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1720981678" rel="stylesheet">
+    <link href="/css/print.css?1720981678" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1720981678"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -140,8 +140,8 @@
 <ol>
 <li>
 <p>Go to the VirtualBox VM Manager and make sure that the RHEL 8 image is attached to RHEL9-VM1 as depicted below:
-<a href="#R-image-ade3f789462af8f7d7cbf219398eadfd" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="Pasted%20image%2020240713164339.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ade3f789462af8f7d7cbf219398eadfd"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="Pasted%20image%2020240713164339.png"></a></p>
+<a href="#R-image-e5ed7fd7a3205f175fe8e399546950a2" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="Pasted%20image%2020240713164339.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e5ed7fd7a3205f175fe8e399546950a2"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="Pasted%20image%2020240713164339.png"></a></p>
 </li>
 <li>
 <p>Open the /etc/fstab file in the vim editor (or another editor of your choice) and add the following line entry at the end of the file to mount the DVD image (/dev/sr0) in read-only (ro) mode on the /mnt directory.</p>
@@ -228,8 +228,7 @@
 <h3 id="lab-removing-a-package">Lab: Removing a Package</h3>
 <ol>
 <li>Remove sushi
-<code>sudo rpm sushi -ve</code>
-``</li>
+<code>sudo rpm sushi -ve</code></li>
 </ol>
 <h3 id="lab-extracting-files-from-an-installable-package">Lab: Extracting Files from an Installable Package</h3>
 <ol>
@@ -241,9 +240,11 @@
 <p>Extract all files from the crony package to /tmp and create the directory structure:</p>
 </li>
 </ol>
-<div class="highlight wrap-code"><pre tabindex="0"><code>cd /tmp
-sudo rpm2cpio /mnt/BaseOS/Packages/chrony-3.3-3.el8.x86_64.rpm | cpio -imd
-1066 blocks</code></pre></div><ol start="3">
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 mnt<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cd /tmp</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>sudo rpm2cpio /mnt/BaseOS/Packages/chrony-3.3-3.el8.x86_64.rpm | cpio -imd
+</span></span><span style="display:flex;"><span><span style="color:#ff9f43">1066</span> blocks<span style="color:#ff6ac1">](</span>&lt;<span style="color:#ff6ac1">[</span>root@server30 tmp<span style="color:#ff6ac1">]</span><span style="color:#78787e"># rpm2cpio /mnt/BaseOS/Packages/chrony-4.3-1.el9.x86_64.rpm | cpio -imd</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff9f43">1253</span> blocks&gt;<span style="color:#ff6ac1">)</span></span></span></code></pre></div><ol start="3">
 <li>
 <p>Use find to locate the crony.conf file:
 <code>sudo find . -name chrony.conf</code></p>
@@ -272,9 +273,9 @@ sudo rpmkeys -K /mnt/BaseOS/Packages/zsh-5.5.1-6.el8.x86_64.rpm</code></pre></di
 <code>sudo rpm -V at</code></li>
 <li>Change permissions of one of the files and run the check again:</li>
 </ol>
-<div class="highlight wrap-code"><pre tabindex="0"><code>ls -l /etc/sysconfig/atd
-sudo chmod -v 770 /etc/sysconfig/atd
-sudo rpm -V at</code></pre></div><ol start="3">
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -l /etc/sysconfig/atd
+</span></span><span style="display:flex;"><span>sudo chmod -v <span style="color:#ff9f43">770</span> /etc/sysconfig/atd
+</span></span><span style="display:flex;"><span>sudo rpm -V at</span></span></code></pre></div><ol start="3">
 <li>
 <p>Run the check directly on the file:
 <code>sudo rpm -Vf /etc/sysconfig/atd</code></p>
@@ -283,43 +284,87 @@ sudo rpm -V at</code></pre></div><ol start="3">
 <p>Reset the value and check the file again:</p>
 </li>
 </ol>
-<div class="highlight wrap-code"><pre tabindex="0"><code>sudo chmod -v 644 /etc/sysconfig/atd
-sudo rpm -V at</code></pre></div><h3 id="lab-perform-package-management-using-rpm">Lab: Perform Package Management Using rpm</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chmod -v <span style="color:#ff9f43">644</span> /etc/sysconfig/atd
+</span></span><span style="display:flex;"><span>sudo rpm -V at</span></span></code></pre></div><h3 id="lab-perform-package-management-using-rpm">Lab: Perform Package Management Using rpm</h3>
 <ol>
-<li>
-<p>Run the ls command on the /mnt/AppStream/Packages directory to confirm that the dcraw package is available:
-<code>ls -l /mnt/AppStream/Packages/dcraw*</code></p>
-</li>
-<li>
-<p>Run the rpm command and verify the integrity and credibility of the package:
-<code>rpmkeys -K /mnt/AppStream/Packages/dcraw-9.27.0-9.el8.x86_64.rpm</code></p>
-</li>
-<li>
-<p>Install the Package:
-<code>sudo rpm -ivh /mnt/AppStream/Packaghes/dcraw-9.27.0-9.el8x86_64.rpm</code></p>
-</li>
-<li>
-<p>Show basic information about the package:
-<code>rpm -qi dcraw</code></p>
-</li>
-<li>
-<p>Show all the files the package contains:
-<code>rpm -ql dcraw</code></p>
-</li>
-<li>
-<p>List the documentation files the package has:
-<code>rpm -qd dcraw</code></p>
-</li>
-<li>
-<p>Verify the attributes of each file in the package. Use verbose mode.
-<code>rpm -Vv dcraw</code></p>
-</li>
-<li>
-<p>Remove the package:
-<code>sudo rpm -ve dcraw</code></p>
-</li>
+<li>Run the <code>ls</code> command on the /mnt/AppStream/Packages directory to confirm that the rmt package is available:</li>
 </ol>
-
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 tmp<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -l /mnt/BaseOS/Packages/rmt*</span>
+</span></span><span style="display:flex;"><span>-r--r--r--. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">49582</span> Nov <span style="color:#ff9f43">20</span>  <span style="color:#ff9f43">2021</span> /mnt/BaseOS/Packages/rmt-1.6-6.el9.x86_64.rpm</span></span></code></pre></div><ol start="2">
+<li>Run the rpm command and verify the integrity and credibility of the package:</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 tmp<span style="color:#ff6ac1">]</span><span style="color:#78787e"># rpmkeys -K /mnt/BaseOS/Packages/rmt-1.6-6.el9.x86_64.rpm</span>
+</span></span><span style="display:flex;"><span>/mnt/BaseOS/Packages/rmt-1.6-6.el9.x86_64.rpm: digests signatures OK</span></span></code></pre></div><ol start="3">
+<li>Install the Package:</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 tmp<span style="color:#ff6ac1">]</span><span style="color:#78787e"># rpmkeys -K /mnt/BaseOS/Packages/rmt-1.6-6.el9.x86_64.rpm</span>
+</span></span><span style="display:flex;"><span>/mnt/BaseOS/Packages/rmt-1.6-6.el9.x86_64.rpm: digests signatures OK
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 tmp<span style="color:#ff6ac1">]</span><span style="color:#78787e"># rpm -ivh /mnt/BaseOS/Packages/rmt-1.6-6.el9.x86_64.rpm</span>
+</span></span><span style="display:flex;"><span>Verifying...                         <span style="color:#78787e">################################# [100%])</span>
+</span></span><span style="display:flex;"><span>Preparing...                         <span style="color:#78787e">################################# [100%])</span>
+</span></span><span style="display:flex;"><span>Updating / installing...
+</span></span><span style="display:flex;"><span>   1:rmt-2:1.6-6.el9                 <span style="color:#78787e">################################# [100%])</span></span></span></code></pre></div><ol start="4">
+<li>Show basic information about the package:</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 tmp<span style="color:#ff6ac1">]</span><span style="color:#78787e"># rpm -qi rmt</span>
+</span></span><span style="display:flex;"><span>Name        : rmt
+</span></span><span style="display:flex;"><span>Epoch       : <span style="color:#ff9f43">2</span>
+</span></span><span style="display:flex;"><span>Version     : 1.6
+</span></span><span style="display:flex;"><span>Release     : 6.el9
+</span></span><span style="display:flex;"><span>Architecture: x86_64
+</span></span><span style="display:flex;"><span>Install Date: Sat <span style="color:#ff9f43">13</span> Jul <span style="color:#ff9f43">2024</span> 09:02:08 PM MST
+</span></span><span style="display:flex;"><span>Group       : Unspecified
+</span></span><span style="display:flex;"><span>Size        : <span style="color:#ff9f43">88810</span>
+</span></span><span style="display:flex;"><span>License     : CDDL
+</span></span><span style="display:flex;"><span>Signature   : RSA/SHA256, Sat <span style="color:#ff9f43">20</span> Nov <span style="color:#ff9f43">2021</span> 08:46:44 AM MST, Key ID 199e2f91fd431d51
+</span></span><span style="display:flex;"><span>Source RPM  : star-1.6-6.el9.src.rpm
+</span></span><span style="display:flex;"><span>Build Date  : Tue <span style="color:#ff9f43">10</span> Aug <span style="color:#ff9f43">2021</span> 03:13:47 PM MST
+</span></span><span style="display:flex;"><span>Build Host  : x86-vm-55.build.eng.bos.redhat.com
+</span></span><span style="display:flex;"><span>Packager    : Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;
+</span></span><span style="display:flex;"><span>Vendor      : Red Hat, Inc.
+</span></span><span style="display:flex;"><span>URL         : http://freecode.com/projects/star
+</span></span><span style="display:flex;"><span>Summary     : Provides certain programs with access to remote tape devices
+</span></span><span style="display:flex;"><span>Description :
+</span></span><span style="display:flex;"><span>The rmt utility provides remote access to tape devices <span style="color:#ff6ac1">for</span> programs
+</span></span><span style="display:flex;"><span>like dump <span style="color:#ff6ac1">(</span>a filesystem backup program<span style="color:#ff6ac1">)</span>, restore <span style="color:#ff6ac1">(</span>a program <span style="color:#ff6ac1">for</span>
+</span></span><span style="display:flex;"><span>restoring files from a backup<span style="color:#ff6ac1">)</span>, and tar <span style="color:#ff6ac1">(</span>an archiving program<span style="color:#ff6ac1">)</span>.</span></span></code></pre></div><ol start="5">
+<li>Show all the files the package contains:</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 tmp<span style="color:#ff6ac1">]</span><span style="color:#78787e"># rpm -ql rmt</span>
+</span></span><span style="display:flex;"><span>/etc/default/rmt
+</span></span><span style="display:flex;"><span>/etc/rmt
+</span></span><span style="display:flex;"><span>/usr/lib/.build-id
+</span></span><span style="display:flex;"><span>/usr/lib/.build-id/c2
+</span></span><span style="display:flex;"><span>/usr/lib/.build-id/c2/6a51ea96fc4b4367afe7d44d16f1405c3c7ec9
+</span></span><span style="display:flex;"><span>/usr/sbin/rmt
+</span></span><span style="display:flex;"><span>/usr/share/doc/star
+</span></span><span style="display:flex;"><span>/usr/share/doc/star/CDDL.Schily.txt
+</span></span><span style="display:flex;"><span>/usr/share/doc/star/COPYING
+</span></span><span style="display:flex;"><span>/usr/share/man/man1/rmt.1.gz</span></span></code></pre></div><ol start="6">
+<li>List the documentation files the package has:</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 tmp<span style="color:#ff6ac1">]</span><span style="color:#78787e"># rpm -qd rmt</span>
+</span></span><span style="display:flex;"><span>/usr/share/doc/star/CDDL.Schily.txt
+</span></span><span style="display:flex;"><span>/usr/share/doc/star/COPYING
+</span></span><span style="display:flex;"><span>/usr/share/man/man1/rmt.1.gz</span></span></code></pre></div><ol start="7">
+<li>Verify the attributes of each file in the package. Use verbose mode.</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 tmp<span style="color:#ff6ac1">]</span><span style="color:#78787e"># rpm -vV rmt</span>
+</span></span><span style="display:flex;"><span>.........  c /etc/default/rmt
+</span></span><span style="display:flex;"><span>.........    /etc/rmt
+</span></span><span style="display:flex;"><span>.........  a /usr/lib/.build-id
+</span></span><span style="display:flex;"><span>.........  a /usr/lib/.build-id/c2
+</span></span><span style="display:flex;"><span>.........  a /usr/lib/.build-id/c2/6a51ea96fc4b4367afe7d44d16f1405c3c7ec9
+</span></span><span style="display:flex;"><span>.........    /usr/sbin/rmt
+</span></span><span style="display:flex;"><span>.........    /usr/share/doc/star
+</span></span><span style="display:flex;"><span>.........  d /usr/share/doc/star/CDDL.Schily.txt
+</span></span><span style="display:flex;"><span>.........  d /usr/share/doc/star/COPYING
+</span></span><span style="display:flex;"><span>.........  d /usr/share/man/man1/rmt.1.gz</span></span></code></pre></div><ol start="8">
+<li>Remove the package:</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 tmp<span style="color:#ff6ac1">]</span><span style="color:#78787e"># rpm -ve rmt</span>
+</span></span><span style="display:flex;"><span>Preparing packages...
+</span></span><span style="display:flex;"><span>rmt-2:1.6-6.el9.x86_64</span></span></code></pre></div>
             <footer class="footline">
             </footer>
           </article>
@@ -347,12 +392,12 @@ sudo rpm -V at</code></pre></div><h3 id="lab-perform-package-management-using-rp
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1720914483" defer></script>
-        <script src="/js/lunr/lunr.min.js?1720914483" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1720914483" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1720914483" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1720914483" defer></script>
-        <script src="/js/search.js?1720914483" defer></script>
+        <script src="/js/auto-complete.js?1720981678" defer></script>
+        <script src="/js/lunr/lunr.min.js?1720981678" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1720981678" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1720981678" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1720981678" defer></script>
+        <script src="/js/search.js?1720981678" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -423,8 +468,8 @@ sudo rpm -V at</code></pre></div><h3 id="lab-perform-package-management-using-rp
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1720914483" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1720914483" defer></script>
+    <script src="/js/clipboard.min.js?1720981678" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1720981678" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -440,20 +485,20 @@ sudo rpm -V at</code></pre></div><h3 id="lab-perform-package-management-using-rp
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1720914483" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1720914483" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1720914483" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1720914483" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1720914483" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1720914483" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1720914483" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1720914483" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1720914483" defer></script>
-    <script src="/js/js-yaml.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-color.min.js?1720981678" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1720981678" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1720981678" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1720981678" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1720981678" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1720981678" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1720981678" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1720981678" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1720981678" defer></script>
+    <script src="/js/js-yaml.min.js?1720981678" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1720914483" defer></script>
+    <script src="/js/theme.js?1720981678" defer></script>
   </body>
 </html>

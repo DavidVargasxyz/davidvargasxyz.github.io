@@ -3,7 +3,7 @@
   <channel>
     <title></title>
     <link>http://davidvargas.xyz/linux/basic-package-management-diy-labs/</link>
-    <description>Lab 9-1: Install and Verify Packages As user1 with sudo on server3, make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm command and install the zsh package by specifying its full path. Run the rpm command again and perform the following on the zsh package: (1) show information, (2) validate integrity, and (3) display attributes. (Hint: Package Management with rpm).&#xA;Lab 9-2: Query and Erase Packages As user1 with sudo on server3, make sure the RHEL 9 ISO image is attached to the VM and mounted.</description>
+    <description>Lab 9-1: Install and Verify Packages As user1 with sudo on server3,&#xA;make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm command and install the zsh package by specifying its full path. Run the rpm command again and perform the following on the zsh package: (1) show information (2) validate integrity (3) display attributes Lab 9-2: Query and Erase Packages As user1 with sudo on server3,</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://davidvargas.xyz/linux/basic-package-management-diy-labs/index.xml" rel="self" type="application/rss+xml" />

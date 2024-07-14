@@ -6,34 +6,34 @@
     <meta name="generator" content="Hugo 0.124.1">
     <meta name="generator" content="Relearn 6.0.0+tip">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
-    <meta name="description" content="Lab 9-1: Install and Verify Packages As user1 with sudo on server3, make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm command and install the zsh package by specifying its full path. Run the rpm command again and perform the following on the zsh package: (1) show information, (2) validate integrity, and (3) display attributes. (Hint: Package Management with rpm).
-Lab 9-2: Query and Erase Packages As user1 with sudo on server3, make sure the RHEL 9 ISO image is attached to the VM and mounted.">
+    <meta name="description" content="Lab 9-1: Install and Verify Packages As user1 with sudo on server3,
+make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm command and install the zsh package by specifying its full path. Run the rpm command again and perform the following on the zsh package: (1) show information (2) validate integrity (3) display attributes Lab 9-2: Query and Erase Packages As user1 with sudo on server3,">
     <meta name="author" content="David Vargas">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="Lab 9-1: Install and Verify Packages As user1 with sudo on server3, make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm command and install the zsh package by specifying its full path. Run the rpm command again and perform the following on the zsh package: (1) show information, (2) validate integrity, and (3) display attributes. (Hint: Package Management with rpm).
-Lab 9-2: Query and Erase Packages As user1 with sudo on server3, make sure the RHEL 9 ISO image is attached to the VM and mounted.">
+    <meta name="twitter:description" content="Lab 9-1: Install and Verify Packages As user1 with sudo on server3,
+make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm command and install the zsh package by specifying its full path. Run the rpm command again and perform the following on the zsh package: (1) show information (2) validate integrity (3) display attributes Lab 9-2: Query and Erase Packages As user1 with sudo on server3,">
     <meta property="og:url" content="http://davidvargas.xyz/linux/basic-package-management-diy-labs/">
-    <meta property="og:description" content="Lab 9-1: Install and Verify Packages As user1 with sudo on server3, make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm command and install the zsh package by specifying its full path. Run the rpm command again and perform the following on the zsh package: (1) show information, (2) validate integrity, and (3) display attributes. (Hint: Package Management with rpm).
-Lab 9-2: Query and Erase Packages As user1 with sudo on server3, make sure the RHEL 9 ISO image is attached to the VM and mounted.">
+    <meta property="og:description" content="Lab 9-1: Install and Verify Packages As user1 with sudo on server3,
+make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm command and install the zsh package by specifying its full path. Run the rpm command again and perform the following on the zsh package: (1) show information (2) validate integrity (3) display attributes Lab 9-2: Query and Erase Packages As user1 with sudo on server3,">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Linux">
-    <meta itemprop="description" content="Lab 9-1: Install and Verify Packages As user1 with sudo on server3, make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm command and install the zsh package by specifying its full path. Run the rpm command again and perform the following on the zsh package: (1) show information, (2) validate integrity, and (3) display attributes. (Hint: Package Management with rpm).
-Lab 9-2: Query and Erase Packages As user1 with sudo on server3, make sure the RHEL 9 ISO image is attached to the VM and mounted.">
-    <meta itemprop="wordCount" content="150">
+    <meta itemprop="description" content="Lab 9-1: Install and Verify Packages As user1 with sudo on server3,
+make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm command and install the zsh package by specifying its full path. Run the rpm command again and perform the following on the zsh package: (1) show information (2) validate integrity (3) display attributes Lab 9-2: Query and Erase Packages As user1 with sudo on server3,">
+    <meta itemprop="wordCount" content="138">
     <title></title>
-    <link href="/images/logo.svg?1720914483" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720914483" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1720914483" rel="stylesheet">
-    <link href="/css/auto-complete.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720914483" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1720914483" rel="stylesheet">
-    <link href="/css/fonts.css?1720914483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1720914483" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1720914483" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1720914483" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1720914483" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1720914483" rel="stylesheet">
-    <link href="/css/print.css?1720914483" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1720914483"></script>
+    <link href="/images/logo.svg?1720981677" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1720981678" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1720981678" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1720981678" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720981678" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1720981678" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1720981678" rel="stylesheet">
+    <link href="/css/fonts.css?1720981678" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1720981678" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1720981678" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1720981678" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1720981678" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1720981678" rel="stylesheet">
+    <link href="/css/print.css?1720981678" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1720981678"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -126,9 +126,32 @@ Lab 9-2: Query and Erase Packages As user1 with sudo on server3, make sure the R
 <h1 id=""></h1>
 
 <h2 id="lab-9-1-install-and-verify-packages">Lab 9-1: Install and Verify Packages</h2>
-<p>As user1 with sudo on server3, make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm command and install the zsh package by specifying its full path. Run the rpm command again and perform the following on the zsh package: (1) show information, (2) validate integrity, and (3) display attributes. (Hint: Package Management with rpm).</p>
+<p>As user1 with sudo on server3,</p>
+<ul>
+<li>make sure the RHEL 9 ISO image is attached to the VM and mounted.</li>
+<li>Use the rpm command and install the zsh package by specifying its full path.</li>
+<li>Run the rpm command again and perform the following on the zsh package:
+<ul>
+<li>(1) show information</li>
+<li>(2) validate integrity</li>
+<li>(3) display attributes</li>
+</ul>
+</li>
+</ul>
 <h2 id="lab-9-2-query-and-erase-packages">Lab 9-2: Query and Erase Packages</h2>
-<p>As user1 with sudo on server3, make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm command to perform the following: (1) check whether the setup package is installed, (2) display the list of configuration files in the setup package, (3) show information for the zlib-devel package on the ISO image, (4) reinstall the zsh package (&ndash;reinstall -vh), and (5) remove the zsh package. (Hint: Package Management with rpm).</p>
+<p>As user1 with sudo on server3,</p>
+<ul>
+<li>make sure the RHEL 9 ISO image is attached to the VM and mounted.</li>
+<li>Use the rpm command to perform the following:
+<ul>
+<li>(1) check whether the setup package is installed</li>
+<li>(2) display the list of configuration files in the setup package</li>
+<li>(3) show information for the zlib-devel package on the ISO image</li>
+<li>(4) reinstall the zsh package (&ndash;reinstall -vh),</li>
+<li>(5) remove the zsh package.</li>
+</ul>
+</li>
+</ul>
 
             <footer class="footline">
             </footer>
@@ -157,12 +180,12 @@ Lab 9-2: Query and Erase Packages As user1 with sudo on server3, make sure the R
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1720914483" defer></script>
-        <script src="/js/lunr/lunr.min.js?1720914483" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1720914483" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1720914483" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1720914483" defer></script>
-        <script src="/js/search.js?1720914483" defer></script>
+        <script src="/js/auto-complete.js?1720981678" defer></script>
+        <script src="/js/lunr/lunr.min.js?1720981678" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1720981678" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1720981678" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1720981678" defer></script>
+        <script src="/js/search.js?1720981678" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -233,8 +256,8 @@ Lab 9-2: Query and Erase Packages As user1 with sudo on server3, make sure the R
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1720914483" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1720914483" defer></script>
+    <script src="/js/clipboard.min.js?1720981678" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1720981678" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -250,20 +273,20 @@ Lab 9-2: Query and Erase Packages As user1 with sudo on server3, make sure the R
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1720914483" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1720914483" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1720914483" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1720914483" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1720914483" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1720914483" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1720914483" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1720914483" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1720914483" defer></script>
-    <script src="/js/js-yaml.min.js?1720914483" defer></script>
+    <script src="/js/d3/d3-color.min.js?1720981678" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1720981678" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1720981678" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1720981678" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1720981678" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1720981678" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1720981678" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1720981678" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1720981678" defer></script>
+    <script src="/js/js-yaml.min.js?1720981678" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1720914483" defer></script>
+    <script src="/js/theme.js?1720981678" defer></script>
   </body>
 </html>

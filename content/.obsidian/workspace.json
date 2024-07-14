@@ -27,14 +27,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/Basic Package Management Labs.md",
+                "file": "linux/RHCSA Exam Environment.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "07a45b7f0e28d748",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "linux/Package Integrity and Credibility.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6e1e3c0be4cc6a55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "linux/RHCSA Notes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -84,8 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d7f1f5db3dece7a2",
@@ -101,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/Basic Package Management Labs.md",
+                "file": "linux/RHCSA Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/Basic Package Management Labs.md",
+                "file": "linux/RHCSA Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/Basic Package Management Labs.md"
+                "file": "linux/RHCSA Notes.md"
               }
             }
           }
@@ -165,17 +188,20 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "2d081ce9929622ca",
+  "active": "6e1e3c0be4cc6a55",
   "lastOpenFiles": [
-    "linux/RHCSA Study Tracker.md",
-    "linux/Basic Package Management Labs.md",
-    "linux/Basic Package Management DIY labs.md",
     "linux/_index.md",
     "_index.md",
+    "linux/RHCSA Exam Environment.md",
+    "linux/Basic Package Management DIY labs.md",
     "linux/Basic Package Management.md",
-    "linux/RHCSA Notes.md",
-    "images/Pasted image 20240713164339.png",
+    "linux/Basic Package Management Labs.md",
     "linux/Package Integrity and Credibility.md",
+    "linux/Installation.md",
+    "linux/RHCSA Notes.md",
+    "linux/Interaction.md",
+    "linux/RHCSA Study Tracker.md",
+    "images/Pasted image 20240713164339.png",
     "linux/Basic Package Management Review Questions.md",
     "linux/RPM (Redhat Package Manager).md",
     "linux/Advanced File Management.md",
@@ -191,12 +217,10 @@
     "2024-07-11.md",
     "linux/Process and Task Scheduling.md",
     "linux/Using Man Pages.md",
-    "linux/RHCSA Exam Environment.md",
     "images/Pasted image 20240710073529.png",
     "images/Pasted image 20240710050536.png",
     "images/Pasted image 20240710050240.png",
     "images/Pasted image 20240709212056.png",
-    "linux/Interaction.md",
     "images/Pasted image 20240709211540.png",
     "images/Pasted image 20240709205705.png",
     "images/Pasted image 20240709205201.png",

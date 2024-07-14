@@ -71,6 +71,7 @@ Note: The image and the packages therein can now be accessed via the /mnt direct
 ### Lab: Upgrading a Package (RPM)
 1. Upgrade sushi with the -U option:
 `sudo rpm -Uvh /mnt/AppStream/Packages/sushi-3.28.3-1.el8.x86_64.rpm`
+
 ### Lab: Freshening a Package
 1. Freshen the sushi package:
 `sudo rpm -Fvh /mnt/AppStream/Packages/sushi-3.28.3-1.el8.x86_64.rpm`
@@ -83,17 +84,17 @@ Note: The image and the packages therein can now be accessed via the /mnt direct
 ### Lab: Removing a Package
 1. Remove sushi
 `sudo rpm sushi -ve`
-``
-
 ### Lab: Extracting Files from an Installable Package
 1. You have lost /etc/crony.conf. Determine what package this file comes from:
 `rpm -qf /etc/chrony.conf`
 
 2. Extract all files from the crony package to /tmp and create the directory structure:
-```
-cd /tmp
-sudo rpm2cpio /mnt/BaseOS/Packages/chrony-3.3-3.el8.x86_64.rpm | cpio -imd
-1066 blocks
+```bash
+[root@server30 mnt]# cd /tmp
+
+[sudo rpm2cpio /mnt/BaseOS/Packages/chrony-3.3-3.el8.x86_64.rpm | cpio -imd
+1066 blocks](<[root@server30 tmp]# rpm2cpio /mnt/BaseOS/Packages/chrony-4.3-1.el9.x86_64.rpm | cpio -imd
+1253 blocks>)
 ```
 
 3. Use find to locate the crony.conf file:
@@ -121,7 +122,7 @@ sudo rpmkeys -K /mnt/BaseOS/Packages/zsh-5.5.1-6.el8.x86_64.rpm
 1. Run a check on the at program:
 `sudo rpm -V at`
 2. Change permissions of one of the files and run the check again:
-```
+```bash
 ls -l /etc/sysconfig/atd
 sudo chmod -v 770 /etc/sysconfig/atd
 sudo rpm -V at
@@ -131,7 +132,7 @@ sudo rpm -V at
 `sudo rpm -Vf /etc/sysconfig/atd`
 
 4. Reset the value and check the file again:
-```
+```bash
 sudo chmod -v 644 /etc/sysconfig/atd
 sudo rpm -V at
 ```
@@ -139,27 +140,97 @@ sudo rpm -V at
 
 
 ### Lab: Perform Package Management Using rpm
-1. Run the ls command on the /mnt/AppStream/Packages directory to confirm that the dcraw package is available:
-`ls -l /mnt/AppStream/Packages/dcraw*`
+1. Run the `ls` command on the /mnt/AppStream/Packages directory to confirm that the rmt package is available:
+```bash
+[root@server30 tmp]# ls -l /mnt/BaseOS/Packages/rmt*
+-r--r--r--. 1 root root 49582 Nov 20  2021 /mnt/BaseOS/Packages/rmt-1.6-6.el9.x86_64.rpm
+```
 
 2. Run the rpm command and verify the integrity and credibility of the package:
-`rpmkeys -K /mnt/AppStream/Packages/dcraw-9.27.0-9.el8.x86_64.rpm`
+```bash
+[root@server30 tmp]# rpmkeys -K /mnt/BaseOS/Packages/rmt-1.6-6.el9.x86_64.rpm
+/mnt/BaseOS/Packages/rmt-1.6-6.el9.x86_64.rpm: digests signatures OK
+```
 
 3. Install the Package:
-`sudo rpm -ivh /mnt/AppStream/Packaghes/dcraw-9.27.0-9.el8x86_64.rpm`
+```bash
+[root@server30 tmp]# rpmkeys -K /mnt/BaseOS/Packages/rmt-1.6-6.el9.x86_64.rpm
+/mnt/BaseOS/Packages/rmt-1.6-6.el9.x86_64.rpm: digests signatures OK
+[root@server30 tmp]# rpm -ivh /mnt/BaseOS/Packages/rmt-1.6-6.el9.x86_64.rpm
+Verifying...                         ################################# [100%])
+Preparing...                         ################################# [100%])
+Updating / installing...
+   1:rmt-2:1.6-6.el9                 ################################# [100%])
+```
 
 4. Show basic information about the package:
-`rpm -qi dcraw`
+```bash
+[root@server30 tmp]# rpm -qi rmt
+Name        : rmt
+Epoch       : 2
+Version     : 1.6
+Release     : 6.el9
+Architecture: x86_64
+Install Date: Sat 13 Jul 2024 09:02:08 PM MST
+Group       : Unspecified
+Size        : 88810
+License     : CDDL
+Signature   : RSA/SHA256, Sat 20 Nov 2021 08:46:44 AM MST, Key ID 199e2f91fd431d51
+Source RPM  : star-1.6-6.el9.src.rpm
+Build Date  : Tue 10 Aug 2021 03:13:47 PM MST
+Build Host  : x86-vm-55.build.eng.bos.redhat.com
+Packager    : Red Hat, Inc. <http://bugzilla.redhat.com/bugzilla>
+Vendor      : Red Hat, Inc.
+URL         : http://freecode.com/projects/star
+Summary     : Provides certain programs with access to remote tape devices
+Description :
+The rmt utility provides remote access to tape devices for programs
+like dump (a filesystem backup program), restore (a program for
+restoring files from a backup), and tar (an archiving program).
+```
 
 5. Show all the files the package contains:
-`rpm -ql dcraw`
+```bash
+[root@server30 tmp]# rpm -ql rmt
+/etc/default/rmt
+/etc/rmt
+/usr/lib/.build-id
+/usr/lib/.build-id/c2
+/usr/lib/.build-id/c2/6a51ea96fc4b4367afe7d44d16f1405c3c7ec9
+/usr/sbin/rmt
+/usr/share/doc/star
+/usr/share/doc/star/CDDL.Schily.txt
+/usr/share/doc/star/COPYING
+/usr/share/man/man1/rmt.1.gz
+```
 
 6. List the documentation files the package has:
-`rpm -qd dcraw`
+```bash
+[root@server30 tmp]# rpm -qd rmt
+/usr/share/doc/star/CDDL.Schily.txt
+/usr/share/doc/star/COPYING
+/usr/share/man/man1/rmt.1.gz
+```
 
 7. Verify the attributes of each file in the package. Use verbose mode.
-`rpm -Vv dcraw`
+```bash
+[root@server30 tmp]# rpm -vV rmt
+.........  c /etc/default/rmt
+.........    /etc/rmt
+.........  a /usr/lib/.build-id
+.........  a /usr/lib/.build-id/c2
+.........  a /usr/lib/.build-id/c2/6a51ea96fc4b4367afe7d44d16f1405c3c7ec9
+.........    /usr/sbin/rmt
+.........    /usr/share/doc/star
+.........  d /usr/share/doc/star/CDDL.Schily.txt
+.........  d /usr/share/doc/star/COPYING
+.........  d /usr/share/man/man1/rmt.1.gz
+```
 
 8. Remove the package:
-`sudo rpm -ve dcraw`
+```bash
+[root@server30 tmp]# rpm -ve rmt
+Preparing packages...
+rmt-2:1.6-6.el9.x86_64
+```
 

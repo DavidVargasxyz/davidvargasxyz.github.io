@@ -28,14 +28,14 @@ tasks identified in each phase.
 ### The Firmware Phase (BIOS and UEFI)
 
 firmware:  
-- BIOS (*Basic Input/Output System*) or the UEFI (*Unified Extensible Firmware Interface*) code that is stored in flash memory on the x86-based system board. It 
+- BIOS (*Basic Input/Output System*) or the UEFI (*Unified Extensible Firmware Interface*) code that is stored in flash memory on the x86-based system board. 
 - runs the *Power-On-Self-Test* (POST) to detect, test, and initialize the system hardware components.
 - Installs appropriate drivers for the video hardware
 - exhibits system messages on the screen.
 - scans available storage devices to locate a boot device, 
 	- starting with a 512-byte image that contains 
 		- 446 bytes of the bootloader program, 
-		- 64 bytes for the partition table, and the 
+		- 64 bytes for the partition table
 		- last two bytes with the boot signature. 
 		- referred to as the *Master Boot Record* (MBR) 
 		- located on the first sector of the boot disk. 
@@ -59,11 +59,11 @@ BIOS
 UEFI
 - new 32/64-bit architecture-independent specification replacing BIOS. 
 - delivers enhanced boot and runtime services
-- superior features such as speed over the legacy 16-bit BIOS. It 
-- has its own device drivers, is 
-- able to mount and read extended file systems, 
+- superior features such as speed over the legacy 16-bit BIOS. 
+- has its own device drivers
+- able to mount and read extended file systems
 - includes UEFI-compliant application tools, and
-- supports one or more bootloader programs. It 
+- supports one or more bootloader programs.
 - comes with a boot manager that allows you to choose an alternative boot source. 
 
 ### Bootloader Phase
@@ -74,13 +74,13 @@ UEFI
 
 The primary job of the bootloader program is to
 - spot the Linux kernel code in the */boot* file system, 
-- decompress it, 
-- load it into memory based on the configuration defined in the **boot*grub2/grub.cfg* file,
+- decompress it
+- load it into memory based on the configuration defined in the **boot/grub2/grub.cfg** file
 - transfer control over to it to further the boot process. 
 
 UEFI-based systems, 
-- GRUB2 looks for the EFI system partition **boot*efi* instead, and 
-- runs the kernel based on the configuration defined in the /boot/*efi/EFI/redhat/grub.efi* file. 
+- GRUB2 looks for the EFI system partition **/boot/efi** instead, and 
+- runs the kernel based on the configuration defined in the /boot/efi/EFI/redhat/grub.efi file. 
 
 ### Kernel Phase
 
@@ -88,22 +88,22 @@ UEFI-based systems,
 - After getting control from the bootloader, the kernel: 
 - extracts the *initial RAM disk* (initrd) file system image found in the */boot* file system into memory, 
 - decompresses it
-- mounts it as read-only on */sysroot* to serve as the temporary root file system. The kernel 
+- mounts it as read-only on */sysroot* to serve as the temporary root file system
 - loads necessary modules from the initrd image to allow access to the physical disks and the partitions and file systems therein. 
 - loads any required drivers to support the boot process. 
 - Later, it unmounts the initrd image and mounts the actual physical root file system on */* in read/write mode.
 
 - At this point, the necessary foundation has been built for the boot process to carry on and to start loading the enabled services.
--  kernel executes the *systemd* process with PID 1 and passes the control over to it.
+- kernel executes the *systemd* process with PID 1 and passes the control over to it.
 
 ### Initialization Phase
 
 - fourth and the last phase in the boot process.
 - Systemd: 
-- takes control from the kernel and continues the boot process. It 
-- is the default system initialization scheme used in RHEL 8. It 
-- starts all enabled userspace system and network services and
-- brings the system up to the preset boot target.
+- takes control from the kernel and continues the boot process.
+- is the default system initialization scheme used in RHEL 9.
+- starts all enabled userspace system and network services
+- Brings the system up to the preset boot target.
 - A boot target is an operational level that is achieved after a series of services have been started to get to that state. 
 
 - system boot process is considered complete when all enabled services are operational for the boot target and users are able to log in to the system 
@@ -111,37 +111,34 @@ UEFI-based systems,
 ### GRUB2 Bootloader
 
 - After the firmware phase has concluded, the 
-- bootloader presents a menu with a list of bootable kernels available on the syste
-- waits for a predefined amount of time before it times out and boots the default kernel. 
+- Bootloader presents a menu with a list of bootable kernels available on the system
+- Waits for a predefined amount of time before it times out and boots the default kernel. 
 - You may want to interact with GRUB2 before the autoboot times out to boot with a non-default kernel, boot to a different target, or customize the kernel boot string.
-
 - Press a key before the timeout expires to interrupt the autoboot process and interact with GRUB2. 
 - autoboot countdown default value is 5 seconds.
 
 ### Interacting with GRUB2
 
 - GRUB2 main menu shows a list of bootable kernels at the top. 
-- edit a selected kernel menu entry by pressing an *e* or go to the grub\> command prompt by pressing a *c*.
+- Edit a selected kernel menu entry by pressing an *e* or go to the grub\> command prompt by pressing a *c*.
 
 edit mode, 
-- GRUB2 loads the configuration for the selected kernel entry from the /boot/grub2/grub.cfg file in an editor,
+- GRUB2 loads the configuration for the selected kernel entry from the /boot/grub2/grub.cfg file in an editor
 - enables you to make a desired modification before booting the system. 
 - you can boot the system into a less capable operating target by adding "rescue", "emergency", or "3" to the end of the line that begins with the keyword "linux", 
-- Press Ctrl+x when done to boot. 
+- Press `Ctrl+x` when done to boot. 
 - one-time temporary change and it won't touch the *grub.cfg* file.
-- press ESC to discard the changes and return to the main menu.
-- grub> command prompt appears when you press Ctrl+c while in the edit window 
-- or a *c* from the main menu. 
+- press `ESC` to discard the changes and return to the main menu.
+- `grub>` command prompt appears when you press `Ctrl+c` while in the edit window 
+- or a `c` from the main menu. 
 - command mode: execute debugging, recovery, etc. 
 - view available commands by pressing the TAB key.
 
 ### GRUB2 Commands
 
-
-
 #### Understanding GRUB2 Configuration Files
 
-/boot/grub2/grub.cfg
+**/boot/grub2/grub.cfg**
 - Referenced at boot time. 
 - Generated automatically when a new kernel is installed or upgraded
 - not advisable to modify it directly, as your changes will be overwritten. The 

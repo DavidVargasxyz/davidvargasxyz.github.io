@@ -84,7 +84,7 @@ List kernel packages installed on the system:
 ### Analyzing Kernel Version
 
 Check the version of the kernel running on the system to check for compatibility with an application or database:
-```
+```bash
 uname -r
 5.14.0-362.24.1.el9_3.x86_64
 
@@ -107,10 +107,10 @@ Kernel and its support files (noteworthy locations)
 
 ### /boot 
 
-- Created at system installation. It 
+- Created at system installation.
 - Linux kernel
 - GRUB2 configuration
-- other kernel and boot support files. A 
+- other kernel and boot support files. 
 
 View the /boot filesystem:
 `ls -l /boot`
@@ -128,7 +128,7 @@ View the /boot filesystem:
 - hold bootloader information specific to firmware type used on the system: UEFI or BIOS.
 
 List /boot/Grub2:
-```
+```bash
 [root@localhost ~]# ls -l /boot/grub2
 total 32
 -rw-r--r--. 1 root root   64 Feb 25 05:13 device.map
@@ -149,7 +149,7 @@ drwxr-xr-x. 2 root root 4096 Feb 25 05:13 locale
 - storage location for configuration of the running and rescue kernels.
 - Configuration is stored in files under the /boot/loader/entries/
 
-```
+```bash
 [root@localhost ~]# ls -l /boot/loader/entries/
 total 12
 -rw-r--r--. 1 root root 484 Feb 25 05:13 8215ac7e45d34823b4dce2e258c3cc47-0-rescue.conf
@@ -160,7 +160,7 @@ total 12
 - The files are named using the machine id of the system as stored in /etc/machine-id/ and the kernel version they are for. 
 
 content of the kernel file:
-```
+```bash
 [root@localhost entries]# cat /boot/loader/entries/8215ac7e45d34823b4dce2e258c3cc47-5.14.0-362.18.1.el9_3.x86_64.conf
 title Red Hat Enterprise Linux (5.14.0-362.18.1.el9_3.x86_64) 9.3 (Plow)
 version 5.14.0-362.18.1.el9_3.x86_64
@@ -182,15 +182,15 @@ grub_class rhel
 - contents are created and updated in memory at system boot and during runtime
 - destroyed at system shutdown
 - current state of the kernel, which includes 
-	- hardware configuration and 
-	- status information about 
+	- hardware configuration
+	- status information 
 		- processor, 
 		- memory, s
 		- storage, 
 		- file systems, 
 		- swap, 
-		- processes, 
-		- network interfaces and 
+		- processes
+		- network interfaces
 		- connections, 
 		- routing, *
 		- etc.* 
@@ -212,13 +212,13 @@ processor and memory information:
 
 - data used by top, ps, uname, free, uptime and w, to display information.
 
-### /usrlib/modules/
+### /us/lib/modules/
 
 - holds information about kernel modules. 
 - subdirectories are specific to the kernels installed on the system. 
  
 Long listing of /usr/lib/modules/ shows two installed kernels:
-```
+```bash
 [root@localhost entries]# ls -l /usr/lib/modules
 total 8
 drwxr-xr-x. 7 root root 4096 Mar 16 06:18 5.14.0-362.18.1.el9_3.x86_64

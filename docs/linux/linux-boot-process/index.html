@@ -20,20 +20,20 @@ starts selective services during its transition from one phase into another. pre
     <meta property="article:section" content="Linux">
     <meta itemprop="description" content="Linux Boot Process Multiple phases during the boot process.
 starts selective services during its transition from one phase into another. presents the administrator an opportunity to interact with a preboot program to boot the system into a non-default target, pass an option to the kernel reset the lost or forgotten root user password. launches a number of services during its transition to the default or specified target. boot process after the system has been powered up or restarted.">
-    <meta itemprop="wordCount" content="1672">
+    <meta itemprop="wordCount" content="1661">
     <title></title>
-    <link href="/images/logo.svg?1721262920" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1721262920" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721262920" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1721262920" rel="stylesheet">
-    <link href="/css/auto-complete.css?1721262920" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721262920" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1721262920" rel="stylesheet">
-    <link href="/css/fonts.css?1721262920" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721262920" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1721262920" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1721262920" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1721262920" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1721262920" rel="stylesheet">
-    <link href="/css/print.css?1721262920" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1721262920"></script>
+    <link href="/images/logo.svg?1721305790" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721305791" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1721305791" rel="stylesheet">
+    <link href="/css/auto-complete.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721305791" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1721305791" rel="stylesheet">
+    <link href="/css/fonts.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721305791" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1721305791" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1721305791" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1721305791" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1721305791" rel="stylesheet">
+    <link href="/css/print.css?1721305791" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1721305791"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -170,7 +170,7 @@ tasks identified in each phase.</p>
 <h3 id="the-firmware-phase-bios-and-uefi">The Firmware Phase (BIOS and UEFI)</h3>
 <p>firmware:</p>
 <ul>
-<li>BIOS (<em>Basic Input/Output System</em>) or the UEFI (<em>Unified Extensible Firmware Interface</em>) code that is stored in flash memory on the x86-based system board. It</li>
+<li>BIOS (<em>Basic Input/Output System</em>) or the UEFI (<em>Unified Extensible Firmware Interface</em>) code that is stored in flash memory on the x86-based system board.</li>
 <li>runs the <em>Power-On-Self-Test</em> (POST) to detect, test, and initialize the system hardware components.</li>
 <li>Installs appropriate drivers for the video hardware</li>
 <li>exhibits system messages on the screen.</li>
@@ -179,7 +179,7 @@ tasks identified in each phase.</p>
 <li>starting with a 512-byte image that contains
 <ul>
 <li>446 bytes of the bootloader program,</li>
-<li>64 bytes for the partition table, and the</li>
+<li>64 bytes for the partition table</li>
 <li>last two bytes with the boot signature.</li>
 <li>referred to as the <em>Master Boot Record</em> (MBR)</li>
 <li>located on the first sector of the boot disk.</li>
@@ -215,11 +215,11 @@ tasks identified in each phase.</p>
 <ul>
 <li>new 32/64-bit architecture-independent specification replacing BIOS.</li>
 <li>delivers enhanced boot and runtime services</li>
-<li>superior features such as speed over the legacy 16-bit BIOS. It</li>
-<li>has its own device drivers, is</li>
-<li>able to mount and read extended file systems,</li>
+<li>superior features such as speed over the legacy 16-bit BIOS.</li>
+<li>has its own device drivers</li>
+<li>able to mount and read extended file systems</li>
 <li>includes UEFI-compliant application tools, and</li>
-<li>supports one or more bootloader programs. It</li>
+<li>supports one or more bootloader programs.</li>
 <li>comes with a boot manager that allows you to choose an alternative boot source.</li>
 </ul>
 <h3 id="bootloader-phase">Bootloader Phase</h3>
@@ -231,14 +231,14 @@ tasks identified in each phase.</p>
 <p>The primary job of the bootloader program is to</p>
 <ul>
 <li>spot the Linux kernel code in the <em>/boot</em> file system,</li>
-<li>decompress it, </li>
-<li>load it into memory based on the configuration defined in the **boot<em>grub2/grub.cfg</em> file,</li>
+<li>decompress it</li>
+<li>load it into memory based on the configuration defined in the <strong>boot/grub2/grub.cfg</strong> file</li>
 <li>transfer control over to it to further the boot process.</li>
 </ul>
 <p>UEFI-based systems,</p>
 <ul>
-<li>GRUB2 looks for the EFI system partition **boot<em>efi</em> instead, and</li>
-<li>runs the kernel based on the configuration defined in the /boot/<em>efi/EFI/redhat/grub.efi</em> file.</li>
+<li>GRUB2 looks for the EFI system partition <strong>/boot/efi</strong> instead, and</li>
+<li>runs the kernel based on the configuration defined in the /boot/efi/EFI/redhat/grub.efi file.</li>
 </ul>
 <h3 id="kernel-phase">Kernel Phase</h3>
 <ul>
@@ -255,7 +255,7 @@ tasks identified in each phase.</p>
 <p>decompresses it</p>
 </li>
 <li>
-<p>mounts it as read-only on <em>/sysroot</em> to serve as the temporary root file system. The kernel</p>
+<p>mounts it as read-only on <em>/sysroot</em> to serve as the temporary root file system</p>
 </li>
 <li>
 <p>loads necessary modules from the initrd image to allow access to the physical disks and the partitions and file systems therein.</p>
@@ -282,16 +282,16 @@ tasks identified in each phase.</p>
 <p>Systemd:</p>
 </li>
 <li>
-<p>takes control from the kernel and continues the boot process. It</p>
+<p>takes control from the kernel and continues the boot process.</p>
 </li>
 <li>
-<p>is the default system initialization scheme used in RHEL 8. It</p>
+<p>is the default system initialization scheme used in RHEL 9.</p>
 </li>
 <li>
-<p>starts all enabled userspace system and network services and</p>
+<p>starts all enabled userspace system and network services</p>
 </li>
 <li>
-<p>brings the system up to the preset boot target.</p>
+<p>Brings the system up to the preset boot target.</p>
 </li>
 <li>
 <p>A boot target is an operational level that is achieved after a series of services have been started to get to that state.</p>
@@ -302,46 +302,34 @@ tasks identified in each phase.</p>
 </ul>
 <h3 id="grub2-bootloader">GRUB2 Bootloader</h3>
 <ul>
-<li>
-<p>After the firmware phase has concluded, the</p>
-</li>
-<li>
-<p>bootloader presents a menu with a list of bootable kernels available on the syste</p>
-</li>
-<li>
-<p>waits for a predefined amount of time before it times out and boots the default kernel.</p>
-</li>
-<li>
-<p>You may want to interact with GRUB2 before the autoboot times out to boot with a non-default kernel, boot to a different target, or customize the kernel boot string.</p>
-</li>
-<li>
-<p>Press a key before the timeout expires to interrupt the autoboot process and interact with GRUB2.</p>
-</li>
-<li>
-<p>autoboot countdown default value is 5 seconds.</p>
-</li>
+<li>After the firmware phase has concluded, the</li>
+<li>Bootloader presents a menu with a list of bootable kernels available on the system</li>
+<li>Waits for a predefined amount of time before it times out and boots the default kernel.</li>
+<li>You may want to interact with GRUB2 before the autoboot times out to boot with a non-default kernel, boot to a different target, or customize the kernel boot string.</li>
+<li>Press a key before the timeout expires to interrupt the autoboot process and interact with GRUB2.</li>
+<li>autoboot countdown default value is 5 seconds.</li>
 </ul>
 <h3 id="interacting-with-grub2">Interacting with GRUB2</h3>
 <ul>
 <li>GRUB2 main menu shows a list of bootable kernels at the top.</li>
-<li>edit a selected kernel menu entry by pressing an <em>e</em> or go to the grub&gt; command prompt by pressing a <em>c</em>.</li>
+<li>Edit a selected kernel menu entry by pressing an <em>e</em> or go to the grub&gt; command prompt by pressing a <em>c</em>.</li>
 </ul>
 <p>edit mode,</p>
 <ul>
-<li>GRUB2 loads the configuration for the selected kernel entry from the /boot/grub2/grub.cfg file in an editor,</li>
+<li>GRUB2 loads the configuration for the selected kernel entry from the /boot/grub2/grub.cfg file in an editor</li>
 <li>enables you to make a desired modification before booting the system.</li>
 <li>you can boot the system into a less capable operating target by adding &ldquo;rescue&rdquo;, &ldquo;emergency&rdquo;, or &ldquo;3&rdquo; to the end of the line that begins with the keyword &ldquo;linux&rdquo;,</li>
-<li>Press Ctrl+x when done to boot.</li>
+<li>Press <code>Ctrl+x</code> when done to boot.</li>
 <li>one-time temporary change and it won&rsquo;t touch the <em>grub.cfg</em> file.</li>
-<li>press ESC to discard the changes and return to the main menu.</li>
-<li>grub&gt; command prompt appears when you press Ctrl+c while in the edit window</li>
-<li>or a <em>c</em> from the main menu.</li>
+<li>press <code>ESC</code> to discard the changes and return to the main menu.</li>
+<li><code>grub&gt;</code> command prompt appears when you press <code>Ctrl+c</code> while in the edit window</li>
+<li>or a <code>c</code> from the main menu.</li>
 <li>command mode: execute debugging, recovery, etc.</li>
 <li>view available commands by pressing the TAB key.</li>
 </ul>
 <h3 id="grub2-commands">GRUB2 Commands</h3>
 <h4 id="understanding-grub2-configuration-files">Understanding GRUB2 Configuration Files</h4>
-<p>/boot/grub2/grub.cfg</p>
+<p><strong>/boot/grub2/grub.cfg</strong></p>
 <ul>
 <li>Referenced at boot time.</li>
 <li>Generated automatically when a new kernel is installed or upgraded</li>
@@ -515,12 +503,12 @@ timeout value when GRUB2 menu appears.</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1721262920" defer></script>
-        <script src="/js/lunr/lunr.min.js?1721262920" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1721262920" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1721262920" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1721262920" defer></script>
-        <script src="/js/search.js?1721262920" defer></script>
+        <script src="/js/auto-complete.js?1721305791" defer></script>
+        <script src="/js/lunr/lunr.min.js?1721305791" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1721305791" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1721305791" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1721305791" defer></script>
+        <script src="/js/search.js?1721305791" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -591,8 +579,8 @@ timeout value when GRUB2 menu appears.</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1721262920" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1721262920" defer></script>
+    <script src="/js/clipboard.min.js?1721305791" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1721305791" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -608,20 +596,20 @@ timeout value when GRUB2 menu appears.</p>
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1721262920" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1721262920" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1721262920" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1721262920" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1721262920" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1721262920" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1721262920" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1721262920" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1721262920" defer></script>
-    <script src="/js/js-yaml.min.js?1721262920" defer></script>
+    <script src="/js/d3/d3-color.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1721305791" defer></script>
+    <script src="/js/js-yaml.min.js?1721305791" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1721262920" defer></script>
+    <script src="/js/theme.js?1721305791" defer></script>
   </body>
 </html>

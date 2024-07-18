@@ -24,20 +24,20 @@ services, and">
     <meta itemprop="description" content="Linux Kernel controls everything on the system. hardware enforces security and access controls runs, schedules, and manages processes and service daemons. comprised of several modules. A new kernel must be installed or an existing kernel must be upgraded when the need arises from an application or functionality standpoint. core of the Linux system. It manages hardware, enforces security, regulates access to the system, as well as handles
 processes,
 services, and">
-    <meta itemprop="wordCount" content="1234">
+    <meta itemprop="wordCount" content="1229">
     <title></title>
-    <link href="/images/logo.svg?1721262920" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1721262920" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721262920" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1721262920" rel="stylesheet">
-    <link href="/css/auto-complete.css?1721262920" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721262920" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1721262920" rel="stylesheet">
-    <link href="/css/fonts.css?1721262920" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721262920" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1721262920" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1721262920" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1721262920" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1721262920" rel="stylesheet">
-    <link href="/css/print.css?1721262920" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1721262920"></script>
+    <link href="/images/logo.svg?1721305790" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721305791" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1721305791" rel="stylesheet">
+    <link href="/css/auto-complete.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721305791" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1721305791" rel="stylesheet">
+    <link href="/css/fonts.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721305791" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1721305791" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1721305791" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1721305791" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1721305791" rel="stylesheet">
+    <link href="/css/print.css?1721305791" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1721305791"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -91,7 +91,7 @@ services, and">
         <li><a href="#kernel-directory-structure">Kernel Directory Structure</a></li>
         <li><a href="#boot">/boot</a></li>
         <li><a href="#proc">/proc</a></li>
-        <li><a href="#usrlibmodules">/usrlib/modules/</a></li>
+        <li><a href="#uslibmodules">/us/lib/modules/</a></li>
         <li><a href="#installing-the-kernel">Installing the Kernel</a></li>
       </ul>
     </li>
@@ -297,8 +297,8 @@ are also available.</li>
 </ul>
 <h3 id="analyzing-kernel-version">Analyzing Kernel Version</h3>
 <p>Check the version of the kernel running on the system to check for compatibility with an application or database:</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>uname -r
-5.14.0-362.24.1.el9_3.x86_64</code></pre></div><p>5 - Major version
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>uname -r
+</span></span><span style="display:flex;"><span>5.14.0-362.24.1.el9_3.x86_64</span></span></code></pre></div><p>5 - Major version
 14 - Major revision
 0 - Kernel patch version
 362 - Red Hat version
@@ -313,10 +313,10 @@ x86_64 - Processor architecture</p>
 </ul>
 <h3 id="boot">/boot</h3>
 <ul>
-<li>Created at system installation. It</li>
+<li>Created at system installation.</li>
 <li>Linux kernel</li>
 <li>GRUB2 configuration</li>
-<li>other kernel and boot support files. A</li>
+<li>other kernel and boot support files.</li>
 </ul>
 <p>View the /boot filesystem:
 <code>ls -l /boot</code></p>
@@ -341,14 +341,14 @@ x86_64 - Processor architecture</p>
 <li>hold bootloader information specific to firmware type used on the system: UEFI or BIOS.</li>
 </ul>
 <p>List /boot/Grub2:</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>[root@localhost ~]# ls -l /boot/grub2
-total 32
--rw-r--r--. 1 root root   64 Feb 25 05:13 device.map
-drwxr-xr-x. 2 root root   25 Feb 25 05:13 fonts
--rw-------. 1 root root 7049 Mar 21 04:47 grub.cfg
--rw-------. 1 root root 1024 Mar 21 05:12 grubenv
-drwxr-xr-x. 2 root root 8192 Feb 25 05:13 i386-pc
-drwxr-xr-x. 2 root root 4096 Feb 25 05:13 locale</code></pre></div><ul>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -l /boot/grub2</span>
+</span></span><span style="display:flex;"><span>total <span style="color:#ff9f43">32</span>
+</span></span><span style="display:flex;"><span>-rw-r--r--. <span style="color:#ff9f43">1</span> root root   <span style="color:#ff9f43">64</span> Feb <span style="color:#ff9f43">25</span> 05:13 device.map
+</span></span><span style="display:flex;"><span>drwxr-xr-x. <span style="color:#ff9f43">2</span> root root   <span style="color:#ff9f43">25</span> Feb <span style="color:#ff9f43">25</span> 05:13 fonts
+</span></span><span style="display:flex;"><span>-rw-------. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">7049</span> Mar <span style="color:#ff9f43">21</span> 04:47 grub.cfg
+</span></span><span style="display:flex;"><span>-rw-------. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">1024</span> Mar <span style="color:#ff9f43">21</span> 05:12 grubenv
+</span></span><span style="display:flex;"><span>drwxr-xr-x. <span style="color:#ff9f43">2</span> root root <span style="color:#ff9f43">8192</span> Feb <span style="color:#ff9f43">25</span> 05:13 i386-pc
+</span></span><span style="display:flex;"><span>drwxr-xr-x. <span style="color:#ff9f43">2</span> root root <span style="color:#ff9f43">4096</span> Feb <span style="color:#ff9f43">25</span> 05:13 locale</span></span></code></pre></div><ul>
 <li>grub.cfg
 <ul>
 <li>bootable kernel information</li>
@@ -365,23 +365,23 @@ drwxr-xr-x. 2 root root 4096 Feb 25 05:13 locale</code></pre></div><ul>
 <li>storage location for configuration of the running and rescue kernels.</li>
 <li>Configuration is stored in files under the /boot/loader/entries/</li>
 </ul>
-<div class="highlight wrap-code"><pre tabindex="0"><code>[root@localhost ~]# ls -l /boot/loader/entries/
-total 12
--rw-r--r--. 1 root root 484 Feb 25 05:13 8215ac7e45d34823b4dce2e258c3cc47-0-rescue.conf
--rw-r--r--. 1 root root 460 Mar 16 06:17 8215ac7e45d34823b4dce2e258c3cc47-5.14.0-362.18.1.el9_3.x86_64.conf
--rw-r--r--. 1 root root 459 Mar 16 06:17 8215ac7e45d34823b4dce2e258c3cc47-5.14.0-362.24.1.el9_3.x86_64.conf</code></pre></div><ul>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -l /boot/loader/entries/</span>
+</span></span><span style="display:flex;"><span>total <span style="color:#ff9f43">12</span>
+</span></span><span style="display:flex;"><span>-rw-r--r--. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">484</span> Feb <span style="color:#ff9f43">25</span> 05:13 8215ac7e45d34823b4dce2e258c3cc47-0-rescue.conf
+</span></span><span style="display:flex;"><span>-rw-r--r--. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">460</span> Mar <span style="color:#ff9f43">16</span> 06:17 8215ac7e45d34823b4dce2e258c3cc47-5.14.0-362.18.1.el9_3.x86_64.conf
+</span></span><span style="display:flex;"><span>-rw-r--r--. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">459</span> Mar <span style="color:#ff9f43">16</span> 06:17 8215ac7e45d34823b4dce2e258c3cc47-5.14.0-362.24.1.el9_3.x86_64.conf</span></span></code></pre></div><ul>
 <li>The files are named using the machine id of the system as stored in /etc/machine-id/ and the kernel version they are for.</li>
 </ul>
 <p>content of the kernel file:</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>[root@localhost entries]# cat /boot/loader/entries/8215ac7e45d34823b4dce2e258c3cc47-5.14.0-362.18.1.el9_3.x86_64.conf
-title Red Hat Enterprise Linux (5.14.0-362.18.1.el9_3.x86_64) 9.3 (Plow)
-version 5.14.0-362.18.1.el9_3.x86_64
-linux /vmlinuz-5.14.0-362.18.1.el9_3.x86_64
-initrd /initramfs-5.14.0-362.18.1.el9_3.x86_64.img $tuned_initrd
-options root=/dev/mapper/rhel-root ro crashkernel=1G-4G:192M,4G-64G:256M,64G-:512M resume=/dev/mapper/rhel-swap rd.lvm.lv=rhel/root rd.lvm.lv=rhel/swap rhgb quiet  $tuned_params
-grub_users $grub_users
-grub_arg --unrestricted
-grub_class rhel</code></pre></div><ul>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost entries<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat /boot/loader/entries/8215ac7e45d34823b4dce2e258c3cc47-5.14.0-362.18.1.el9_3.x86_64.conf</span>
+</span></span><span style="display:flex;"><span>title Red Hat Enterprise Linux <span style="color:#ff6ac1">(</span>5.14.0-362.18.1.el9_3.x86_64<span style="color:#ff6ac1">)</span> 9.3 <span style="color:#ff6ac1">(</span>Plow<span style="color:#ff6ac1">)</span>
+</span></span><span style="display:flex;"><span>version 5.14.0-362.18.1.el9_3.x86_64
+</span></span><span style="display:flex;"><span>linux /vmlinuz-5.14.0-362.18.1.el9_3.x86_64
+</span></span><span style="display:flex;"><span>initrd /initramfs-5.14.0-362.18.1.el9_3.x86_64.img <span style="color:#ff5c57">$tuned_initrd</span>
+</span></span><span style="display:flex;"><span>options <span style="color:#ff5c57">root</span><span style="color:#ff6ac1">=</span>/dev/mapper/rhel-root ro <span style="color:#ff5c57">crashkernel</span><span style="color:#ff6ac1">=</span>1G-4G:192M,4G-64G:256M,64G-:512M <span style="color:#ff5c57">resume</span><span style="color:#ff6ac1">=</span>/dev/mapper/rhel-swap rd.lvm.lv<span style="color:#ff6ac1">=</span>rhel/root rd.lvm.lv<span style="color:#ff6ac1">=</span>rhel/swap rhgb quiet  <span style="color:#ff5c57">$tuned_params</span>
+</span></span><span style="display:flex;"><span>grub_users <span style="color:#ff5c57">$grub_users</span>
+</span></span><span style="display:flex;"><span>grub_arg --unrestricted
+</span></span><span style="display:flex;"><span>grub_class rhel</span></span></code></pre></div><ul>
 <li>&ldquo;title&rdquo; is displayed on the bootloader screen</li>
 <li>&ldquo;kernelopts&rdquo; and &ldquo;tuned_params&rdquo; supply values to the booting kernel to control its behavior.</li>
 </ul>
@@ -392,16 +392,16 @@ grub_class rhel</code></pre></div><ul>
 <li>destroyed at system shutdown</li>
 <li>current state of the kernel, which includes
 <ul>
-<li>hardware configuration and</li>
-<li>status information about
+<li>hardware configuration</li>
+<li>status information
 <ul>
 <li>processor,</li>
 <li>memory, s</li>
 <li>storage,</li>
 <li>file systems,</li>
 <li>swap,</li>
-<li>processes,</li>
-<li>network interfaces and</li>
+<li>processes</li>
+<li>network interfaces</li>
 <li>connections,</li>
 <li>routing, *</li>
 <li>etc.*</li>
@@ -433,16 +433,16 @@ processor and memory information:
 <ul>
 <li>data used by top, ps, uname, free, uptime and w, to display information.</li>
 </ul>
-<h3 id="usrlibmodules">/usrlib/modules/</h3>
+<h3 id="uslibmodules">/us/lib/modules/</h3>
 <ul>
 <li>holds information about kernel modules.</li>
 <li>subdirectories are specific to the kernels installed on the system.</li>
 </ul>
 <p>Long listing of /usr/lib/modules/ shows two installed kernels:</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>[root@localhost entries]# ls -l /usr/lib/modules
-total 8
-drwxr-xr-x. 7 root root 4096 Mar 16 06:18 5.14.0-362.18.1.el9_3.x86_64
-drwxr-xr-x. 8 root root 4096 Mar 16 06:18 5.14.0-362.24.1.el9_3.x86_64</code></pre></div><p>View /usr/lib/modules/5.14.0-362.18.1.el9_3.x86_64/:
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost entries<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -l /usr/lib/modules</span>
+</span></span><span style="display:flex;"><span>total <span style="color:#ff9f43">8</span>
+</span></span><span style="display:flex;"><span>drwxr-xr-x. <span style="color:#ff9f43">7</span> root root <span style="color:#ff9f43">4096</span> Mar <span style="color:#ff9f43">16</span> 06:18 5.14.0-362.18.1.el9_3.x86_64
+</span></span><span style="display:flex;"><span>drwxr-xr-x. <span style="color:#ff9f43">8</span> root root <span style="color:#ff9f43">4096</span> Mar <span style="color:#ff9f43">16</span> 06:18 5.14.0-362.24.1.el9_3.x86_64</span></span></code></pre></div><p>View /usr/lib/modules/5.14.0-362.18.1.el9_3.x86_64/:
 <code>ls -l /usr/lib/modules/5.14.0-362.18.1.el9_3.x86_64</code></p>
 <ul>
 <li>Subdirectories hold module-specific information for the kernel version.</li>
@@ -539,12 +539,12 @@ components.</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1721262920" defer></script>
-        <script src="/js/lunr/lunr.min.js?1721262920" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1721262920" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1721262920" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1721262920" defer></script>
-        <script src="/js/search.js?1721262920" defer></script>
+        <script src="/js/auto-complete.js?1721305791" defer></script>
+        <script src="/js/lunr/lunr.min.js?1721305791" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1721305791" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1721305791" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1721305791" defer></script>
+        <script src="/js/search.js?1721305791" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -615,8 +615,8 @@ components.</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1721262920" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1721262920" defer></script>
+    <script src="/js/clipboard.min.js?1721305791" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1721305791" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -632,20 +632,20 @@ components.</p>
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1721262920" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1721262920" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1721262920" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1721262920" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1721262920" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1721262920" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1721262920" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1721262920" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1721262920" defer></script>
-    <script src="/js/js-yaml.min.js?1721262920" defer></script>
+    <script src="/js/d3/d3-color.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1721305791" defer></script>
+    <script src="/js/js-yaml.min.js?1721305791" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1721262920" defer></script>
+    <script src="/js/theme.js?1721305791" defer></script>
   </body>
 </html>

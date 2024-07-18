@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/Linux Kernel.md",
+                "file": "linux/Linux Boot Process.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/RHCSA Notes.md",
+                "file": "linux/Using Man Pages.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/Linux Kernel.md",
+                "file": "linux/Using Man Pages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/Linux Kernel.md",
+                "file": "linux/Using Man Pages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/Linux Kernel.md"
+                "file": "linux/Using Man Pages.md"
               }
             }
           }
@@ -162,22 +163,22 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "07a45b7f0e28d748",
+  "active": "fb4934d61534cd25",
   "lastOpenFiles": [
-    "linux/Boot Process, Grub2, and Kernel.md",
+    "linux/_index.md",
+    "linux/RHCSA Study Tracker.md",
+    "linux/Linux Boot Process.md",
     "linux/RHCSA Notes.md",
+    "linux/Boot Process, Grub2, and Kernel.md",
+    "linux/Linux Kernel.md",
     "linux/Boot Grub2 Kernel Labs.md",
     "linux/Boot Grub2 Kernel Review Questions.md",
     "linux/Reset the root User Password.md",
     "linux/Booting into Specific Targets.md",
-    "linux/Linux Boot Process.md",
-    "linux/Linux Kernel.md",
     "linux/Basic User Management.md",
     "linux/Listing Logged-In Users.md",
-    "linux/RHCSA Study Tracker.md",
     "linux/Basic User Management Review Questions.md",
     "linux/Basic User Management Labs.md",
-    "linux/_index.md",
     "linux/User Account Management.md",
     "linux/No-Login (Non-Interactive) User Account.md",
     "linux/Local User Authentication Files.md",

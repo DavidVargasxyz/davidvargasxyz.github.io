@@ -8,45 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b997d3a1aa86947d",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_index.md",
-                "mode": "preview",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "2d081ce9929622ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/RHCSA Exam Environment.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "07a45b7f0e28d748",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/Package Integrity and Credibility.md",
+                "file": "linux/Linux Kernel.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6e1e3c0be4cc6a55",
+            "id": "fb4934d61534cd25",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -57,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d7f1f5db3dece7a2",
@@ -124,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/RHCSA Notes.md",
+                "file": "linux/Linux Kernel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/RHCSA Notes.md",
+                "file": "linux/Linux Kernel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/RHCSA Notes.md"
+                "file": "linux/Linux Kernel.md"
               }
             }
           }
@@ -188,35 +162,35 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "6e1e3c0be4cc6a55",
+  "active": "07a45b7f0e28d748",
   "lastOpenFiles": [
-    "linux/_index.md",
-    "_index.md",
-    "linux/RHCSA Exam Environment.md",
-    "linux/Basic Package Management DIY labs.md",
-    "linux/Basic Package Management.md",
-    "linux/Basic Package Management Labs.md",
-    "linux/Package Integrity and Credibility.md",
-    "linux/Installation.md",
+    "linux/Boot Process, Grub2, and Kernel.md",
     "linux/RHCSA Notes.md",
-    "linux/Interaction.md",
+    "linux/Boot Grub2 Kernel Labs.md",
+    "linux/Boot Grub2 Kernel Review Questions.md",
+    "linux/Reset the root User Password.md",
+    "linux/Booting into Specific Targets.md",
+    "linux/Linux Boot Process.md",
+    "linux/Linux Kernel.md",
+    "linux/Basic User Management.md",
+    "linux/Listing Logged-In Users.md",
     "linux/RHCSA Study Tracker.md",
-    "images/Pasted image 20240713164339.png",
-    "linux/Basic Package Management Review Questions.md",
-    "linux/RPM (Redhat Package Manager).md",
+    "linux/Basic User Management Review Questions.md",
+    "linux/Basic User Management Labs.md",
+    "linux/_index.md",
+    "linux/User Account Management.md",
+    "linux/No-Login (Non-Interactive) User Account.md",
+    "linux/Local User Authentication Files.md",
     "linux/Advanced File Management.md",
-    "linux/Hostname Resolution and Time Synchronization.md",
-    "linux/NFS Basics and Configuration.md",
+    "linux/Advanced File Management Labs.md",
+    "linux/RHCSA Exam Environment.md",
+    "_index.md",
+    "linux/Permission Classes and Types.md",
+    "linux/Advanced File Management Review Questions.md",
+    "linux/Find Command.md",
+    "linux/Access Control Lists (ACLs).md",
     "linux/Advanced Package Management.md",
-    "linux/AutoFS.md",
-    "linux/NFS DIY Labs.md",
-    "linux/Network File System (NFS).md",
-    "linux/NFS Review Questions.md",
-    "linux/Storage Management.md",
-    "linux/Process and Task Scheduling Labs.md",
-    "2024-07-11.md",
-    "linux/Process and Task Scheduling.md",
-    "linux/Using Man Pages.md",
+    "images/Pasted image 20240713164339.png",
     "images/Pasted image 20240710073529.png",
     "images/Pasted image 20240710050536.png",
     "images/Pasted image 20240710050240.png",

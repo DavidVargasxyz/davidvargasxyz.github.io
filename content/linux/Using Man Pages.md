@@ -69,29 +69,29 @@ When you see file in a man page, think file and or directory
 
 **Description**
  short and long options do the same thing
- ![](Pasted%20image%2020240709203757.png)
+ ![](/images/Pasted%20image%2020240709203757.png)
 
 May need to move to different areas to see format for underlined options.
 
-![](Pasted%20image%2020240709203856.png)
+![](images/Pasted%20image%2020240709203856.png)
 
 type `/SIZE` and press enter to do a forward search for SIZE. Then hit n to jump through the next occurrences of the word.
 
-![](Pasted%20image%2020240709204152.png)
+![](/imagesPasted%20image%2020240709204152.png)
 
 Valid options may also be included under the description:
 
-![](Pasted%20image%2020240709205042.png)
+![](images/Pasted%20image%2020240709205042.png)
 
 Some options need to be ran with other options:
 
-![](Pasted%20image%2020240709205201.png)
+![](images/Pasted%20image%2020240709205201.png)
 
 For most options, the order doesn't matter when using multiple options.
 
 Short form must have specifications that the long form requires. It just uses a space instead of an = sign. Can also be used without a space with the short option. 
 
-![](Pasted%20image%2020240709205705.png)
+![](images/Pasted%20image%2020240709205705.png)
 
 If you combine short arguments. Put the one that requires a value last.
 
@@ -99,7 +99,7 @@ If you combine short arguments. Put the one that requires a value last.
 
 Run `man man` to view man sections
 
-![](Pasted%20image%2020240709211540.png)
+![](images/Pasted%20image%2020240709211540.png)
 
 Current section number is printed at the top left of the man page. 
 
@@ -173,10 +173,10 @@ Shell builtins do not have man pages. Look at the shell man page for info on the
 Search for the Shell Builtins section:
 `/SHELL BUILTIN COMMANDS`
 
-![](Pasted%20image%2020240710050240.png)
+![](images/Pasted%20image%2020240710050240.png)
 
 You can find help on builtins with the help command:
-![](Pasted%20image%2020240710050536.png)
+![](images/Pasted%20image%2020240710050536.png)
 
 ```bash
 david@fedora:~$ help hash

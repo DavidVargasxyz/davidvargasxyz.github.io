@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/advanced-file-management-labs/</link>
+    <description>Advanced File Management Labs Lab: find stuff Create file 10 and search for it. [vagrant@server1 ~]$ sudo touch /root/file10 [vagrant@server1 ~]$ sudo find / -name file10 -print /root/file10 Perform a case insensitive search for files and directories in /dev that begin with “usb” followed by any characters. [vagrant@server1 ~]$ find /dev -iname usb* /dev/usbmon0 Find files smaller than 1MB (-1M) in size (-size) in the root user’s home directory (~). [vagrant@server1 etc]$ find ~ -size -1M Search for files larger than 40MB (+40M) in size (-size) in the /usr directory: [vagrant@server1 etc]$ sudo find /usr -size +40M /usr/share/GeoIP/GeoLite2-City.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/advanced-file-management-labs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/user-account-management/</link>
+    <description>User Account Management useradd Command add a new user to the system adds entries to the four user authentication files for each account added to the system creates a home directory for the user and copies the default user startup files from the skeleton directory /etc/skel into the user’s home directory used to update the default settings that are used at the time of new user creation for unspecified settings Options -b (–base-dir) Defines the absolute path to the base directory for placing user home directories.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/user-account-management/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

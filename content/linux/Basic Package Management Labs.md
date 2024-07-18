@@ -1,4 +1,4 @@
-## Basic Package Management Labs
+/rpm## Basic Package Management Labs
 
 ### Lab: Mount RHEL 9 ISO Persistently
 1. Go to the VirtualBox VM Manager and make sure that the RHEL 8 image is attached to RHEL9-VM1 as depicted below:

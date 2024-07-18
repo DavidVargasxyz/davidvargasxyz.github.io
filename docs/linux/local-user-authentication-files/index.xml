@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/local-user-authentication-files/</link>
+    <description>Local User Authentication Files Three supported account types: root, normal, service root has full access to all services and administrative functions on the system. created by default during installation. Normal user-level privileges cannot perform any administrative functions can run applications and programs that have been authorized. Service take care of their respective services, which include apache, ftp, mail, and chrony. User account information for local users is stored in four files that are located in the /etc directory.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/local-user-authentication-files/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

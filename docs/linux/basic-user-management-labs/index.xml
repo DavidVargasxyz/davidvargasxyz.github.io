@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/basic-user-management-labs/</link>
+    <description>Basic User Management Labs Lab: who whoLab: what wLab: last List all user login, logout, and system reboot occurrences: last List system reboot info only: last rebootLab: lastb lastbLab: lastlog lastlogLab: id View info about currently active user: id View info about another user: id user1Lab: groups View current user’s groups: groups View groups of another user: groups user1Lab: user authentication files list of the four files and their backups from the /etc directory: ls -l /etc/passwd* /etc/group* /etc/shadow* /etc/gshadow* View first and last 3 lines of the passwd file head -3 /etc/passwd ; tail -3 /etc/passwd verify the permissions and ownership on the passwd file: ls -l /etc/passwd View first and last 3 lines of the shadow file: head -3 /etc/shadow ; tail -3 /etc/shadow verify the permissions and ownership on the shadow file: ls -l /etc/shadow View first and last 3 lines of the group file: head -3 /etc/group ; tail -3 /etc/group Verify the permissions and ownership on the group file: ls -l /etc/group View first and last 3 lines of the gshadow file: head -3 /etc/gshadow ; tail -3 /etc/gshadow Verify the permissions and ownership on the gshadow file: ls -l /etc/gshadowLab: useradd and login.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/basic-user-management-labs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -3,7 +3,7 @@
   <channel>
     <title></title>
     <link>http://davidvargas.xyz/linux/basic-package-management-review-questions/</link>
-    <description>Basic Package Management Review Questions Q. What would the rpm -ql zsh command do? A. The command provided will list all the files that are included in the installed zsh package.&#xA;Q. State the purpose of the rpm2cpio command. A. The rpm2cpio command is used to extract files from the specified package.&#xA;Q. What is the difference between freshening and upgrading a package?&#xA;A. Both are used to upgrade an existing package, but freshening requires an older version of the package to exist.</description>
+    <description>Basic Package Management Review Questions Q. What would the rpm -ql zsh command do? A. The command provided will list all the files that are included in the installed zsh package.&#xA;Q. What is the difference between installing and upgrading a package? A. Installing will install a new package whereas upgrading will upgrade an existing package or install it if it does not already exist.&#xA;Q. Package database is located in the /var/lib/rpm directory.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://davidvargas.xyz/linux/basic-package-management-review-questions/index.xml" rel="self" type="application/rss+xml" />

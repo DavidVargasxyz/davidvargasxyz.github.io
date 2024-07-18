@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/boot-grub2-kernel-labs/</link>
+    <description>Boot Grub2 Kernel Labs Lab: Enable Verbose System Boot Remove “quiet” from the end of the value of the variable GRUB_CMDLINE_LINUX in the /etc/default/grub file run grub2-mkconfig to apply the update. Reboot the system and observe that the system now displays verbose information during the boot process. Lab: Reset root User Password reset the root user password by booting the system into emergency mode with SELinux disabled. Try to log in with root and enter the new password after the reboot.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/boot-grub2-kernel-labs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/listing-logged-in-users/</link>
+    <description>Listing Logged-In Users A list of the users who have successfully signed on to the system with valid credentials can be printed using who and w&#xA;who command references the /run/utmp file and displays the information. displays login name of user shows terminal session device filename pts stands for pseudo terminal session shows data and time of user login Shows if terminal session is graphical(:0), remote(IP address), or textual on the console what command (w) Shows length of time the user has been idle CPU time used by all processes including any existing background jobs attached to this terminal (JCPU), CPU time used by the current process (PCPU), current activity (WHAT).</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/listing-logged-in-users/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

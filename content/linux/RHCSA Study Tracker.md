@@ -4,14 +4,14 @@
 | [[Installation]]                                       | X               | X            | X           | X                   |
 | [[Interaction]]                                        | X               | X            | X           | X                   |
 | [[File Management]]                                    | X               | X            | X           | X                   |
-| [[Advanced File Management]]                           | X               | X            | X           |                     |
-| [[Basic User Management]]                              | X               | X            | X           |                     |
+| [[Advanced File Management]]                           | X               | X            | X           | X                   |
+| [[Basic User Management]]                              | X               | X            | X           | X                   |
 | [[Advanced User Management]]                           | X               | X            | X           |                     |
 | [[Bash]]                                               | X               | X            | X           |                     |
 | [[Process and Task Scheduling]]                        | X               | X            | X           |                     |
-| [[Basic Package Management]]                           | X               | X            |             |                     |
-| [[Advanced Package Management]]                        | X               | X            |             |                     |
-| [[Boot Grub2 Kernel]]                                  | X               | X            |             |                     |
+| [[Basic Package Management]]                           | X               | X            | X           |                     |
+| [[Advanced Package Management]]                        | X               | X            | X           |                     |
+| [[Boot Process, Grub2, and Kernel]]                                  | X               | X            |             |                     |
 | [[Sysinit Logging Tuning]]                             | X               | X            |             |                     |
 | [[Storage Management]]                                 | X               | X            |             |                     |
 | [[Local File Systems and Swap]]                        | X               | X            |             |                     |

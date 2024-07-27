@@ -3,7 +3,7 @@
   <channel>
     <title></title>
     <link>http://davidvargas.xyz/linux/local-file-systems-and-swap/</link>
-    <description>Local File Systems and Swap File systems&#xA;can be optimized, resized, mounted, and unmounted independently. must be connected to the directory hierarchy in order to be accessed by users and applications. This may be accomplished automatically at system boot or manually as required. File systems can be mounted or unmounted using their unique identifiers, labels, or device files. \ swap space. Swapping&#xA;provides a mechanism to move out and in pages of idle data between physical memory and swap.</description>
+    <description>Local File Systems and Swap File Systems and File System Types File System Management Monitoring File System Usage Swap and its Management File Systems and Swap Review Questions Remove a filesystem from a partition Local Filesystems and Swap DIY Labs </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://davidvargas.xyz/linux/local-file-systems-and-swap/index.xml" rel="self" type="application/rss+xml" />

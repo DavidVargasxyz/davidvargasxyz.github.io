@@ -71,8 +71,6 @@ Console 6 (Ctrl_Alt+F6)
 
 - Default Graphical configuration and installation console screen
 
-Lab: What happens if I press the console hotkeys while I am logged in to my desktop?
-
 Console 1 Brings you to the log in screen. Console 2 does nothing. Console 3-6 all bring you to this log in screen
 
 ![[Pasted image 20230624051043.png]]
@@ -130,13 +128,13 @@ Chnge the oot order
 1. power off the vm
 2. Set oot sequene to hrd dis first then optil, remove floppy
 
-Aept liense terms nd rete user
+Accept license terms and rete user
 
-?Enle geogrphil lotion?
+
 
 ssh from host os with putty
 
-Issue these ommnds fter set up
+Issue these Commnds after set up
 
 ```
 whoami 

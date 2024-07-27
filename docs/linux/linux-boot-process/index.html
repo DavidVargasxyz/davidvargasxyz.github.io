@@ -20,20 +20,20 @@ starts selective services during its transition from one phase into another. pre
     <meta property="article:section" content="Linux">
     <meta itemprop="description" content="Linux Boot Process Multiple phases during the boot process.
 starts selective services during its transition from one phase into another. presents the administrator an opportunity to interact with a preboot program to boot the system into a non-default target, pass an option to the kernel reset the lost or forgotten root user password. launches a number of services during its transition to the default or specified target. boot process after the system has been powered up or restarted.">
-    <meta itemprop="wordCount" content="1661">
+    <meta itemprop="wordCount" content="1655">
     <title></title>
-    <link href="/images/logo.svg?1721305790" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1721305791" rel="stylesheet">
-    <link href="/css/auto-complete.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1721305791" rel="stylesheet">
-    <link href="/css/fonts.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1721305791" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1721305791" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1721305791" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1721305791" rel="stylesheet">
-    <link href="/css/print.css?1721305791" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1721305791"></script>
+    <link href="/images/logo.svg?1722081507" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1722081508" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1722081508" rel="stylesheet">
+    <link href="/css/auto-complete.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1722081508" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1722081508" rel="stylesheet">
+    <link href="/css/fonts.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1722081508" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1722081508" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1722081508" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1722081508" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1722081508" rel="stylesheet">
+    <link href="/css/print.css?1722081508" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1722081508"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -334,29 +334,25 @@ tasks identified in each phase.</p>
 <li>Referenced at boot time.</li>
 <li>Generated automatically when a new kernel is installed or upgraded</li>
 <li>not advisable to modify it directly, as your changes will be overwritten. The</li>
-<li>/etc/default/grub:
+</ul>
+<p><strong>/etc/default/grub</strong></p>
 <ul>
 <li>primary source file that is used to regenerate grub.cfg.</li>
 <li>Defines the directives that govern how GRUB2 should behave at boot time.</li>
-<li>Any changes made to the <em>grub</em> file will only take effect after the <em>grub2-mkconfig</em> utility has been executed.</li>
-</ul>
-</li>
-</ul>
-<h4 id="etcdefaultgrub">/etc/default/grub</h4>
-<ul>
+<li>Any changes made to the <em>grub</em> file will only take effect after the <em>grub2-mkconfig</em> utility has been executed</li>
 <li>Defines the directives that control the behavior of GRUB2 at boot time.</li>
-<li>Any changes in this file must be followed by the execution of the <em>grub2-mkconfig</em> command in order to be reflected in grub.cfg.</li>
+<li>Any changes in this file must be followed by the execution of the <code>grub2-mkconfig</code> command in order to be reflected in grub.cfg.</li>
 </ul>
 <p>Default settings:</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>[root@localhost default]# nl /etc/default/grub
-     1	GRUB_TIMEOUT=5
-     2	GRUB_DISTRIBUTOR=&#34;$(sed &#39;s, release .*$,,g&#39; /etc/system-release)&#34;
-     3	GRUB_DEFAULT=saved
-     4	GRUB_DISABLE_SUBMENU=true
-     5	GRUB_TERMINAL_OUTPUT=&#34;console&#34;
-     6	GRUB_CMDLINE_LINUX=&#34;crashkernel=1G-4G:192M,4G-64G:256M,64G-:512M resume=/dev/mapper/rhel-swap rd.lvm.lv=rhel/root rd.lvm.lv=rhel/swap rhgb quiet&#34;
-     7	GRUB_DISABLE_RECOVERY=&#34;true&#34;
-     8	GRUB_ENABLE_BLSCFG=true</code></pre></div><table>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost default<span style="color:#ff6ac1">]</span><span style="color:#78787e"># nl /etc/default/grub</span>
+</span></span><span style="display:flex;"><span>     1	<span style="color:#ff5c57">GRUB_TIMEOUT</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">5</span>
+</span></span><span style="display:flex;"><span>     2	<span style="color:#ff5c57">GRUB_DISTRIBUTOR</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;</span><span style="color:#ff6ac1">$(</span>sed <span style="color:#5af78e">&#39;s, release .*$,,g&#39;</span> /etc/system-release<span style="color:#ff6ac1">)</span><span style="color:#5af78e">&#34;</span>
+</span></span><span style="display:flex;"><span>     3	<span style="color:#ff5c57">GRUB_DEFAULT</span><span style="color:#ff6ac1">=</span>saved
+</span></span><span style="display:flex;"><span>     4	<span style="color:#ff5c57">GRUB_DISABLE_SUBMENU</span><span style="color:#ff6ac1">=</span><span style="color:#ff5c57">true</span>
+</span></span><span style="display:flex;"><span>     5	<span style="color:#ff5c57">GRUB_TERMINAL_OUTPUT</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;console&#34;</span>
+</span></span><span style="display:flex;"><span>     6	<span style="color:#ff5c57">GRUB_CMDLINE_LINUX</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;crashkernel=1G-4G:192M,4G-64G:256M,64G-:512M resume=/dev/mapper/rhel-swap rd.lvm.lv=rhel/root rd.lvm.lv=rhel/swap rhgb quiet&#34;</span>
+</span></span><span style="display:flex;"><span>     7	<span style="color:#ff5c57">GRUB_DISABLE_RECOVERY</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;true&#34;</span>
+</span></span><span style="display:flex;"><span>     8	<span style="color:#ff5c57">GRUB_ENABLE_BLSCFG</span><span style="color:#ff6ac1">=</span>true</span></span></code></pre></div><table>
 <thead>
 <tr>
 <th><strong>Directive</strong></th>
@@ -403,41 +399,41 @@ tasks identified in each phase.</p>
 </ul>
 <h4 id="bootgrub2grubcfg---bootefiefiredhatgrubcfg">/boot/grub2/grub.cfg - /boot/efi/EFI/redhat/grub.cfg</h4>
 <ul>
-<li>ain GRUB2 configuration file that supplies boot-time configuration information. This file is</li>
+<li>Main GRUB2 configuration file that supplies boot-time configuration information.</li>
 <li>located in the /boot/grub2/ on BIOS-based systems</li>
 <li>/boot/efi/EFI/redhat/ on UEFI-based systems.</li>
-<li>can be recreated manually with the <em>grub2-mkconfig</em> utility</li>
+<li>can be recreated manually with the <code>grub2-mkconfig</code> utility</li>
 <li>automatically regenerated when a new kernel is installed or upgraded.</li>
 <li>file will lose any previous manual changes made to it.</li>
 </ul>
-<p>grub2-mkconfig command also</p>
+<p><code>grub2-mkconfig</code> command</p>
 <ul>
-<li>uses the settings defined in helper scripts located in the /etc/grub.d directory.</li>
+<li>Uses the settings defined in helper scripts located in the /etc/grub.d directory.</li>
 </ul>
-<div class="highlight wrap-code"><pre tabindex="0"><code>[root@localhost default]# ls -l /etc/grub.d
-total 104
--rwxr-xr-x. 1 root root  9346 Jan  9 09:51 00_header
--rwxr-xr-x. 1 root root  1046 Aug 29  2023 00_tuned
--rwxr-xr-x. 1 root root   236 Jan  9 09:51 01_users
--rwxr-xr-x. 1 root root   835 Jan  9 09:51 08_fallback_counting
--rwxr-xr-x. 1 root root 19665 Jan  9 09:51 10_linux
--rwxr-xr-x. 1 root root   833 Jan  9 09:51 10_reset_boot_success
--rwxr-xr-x. 1 root root   892 Jan  9 09:51 12_menu_auto_hide
--rwxr-xr-x. 1 root root   410 Jan  9 09:51 14_menu_show_once
--rwxr-xr-x. 1 root root 13613 Jan  9 09:51 20_linux_xen
--rwxr-xr-x. 1 root root  2562 Jan  9 09:51 20_ppc_terminfo
--rwxr-xr-x. 1 root root 10869 Jan  9 09:51 30_os-prober
--rwxr-xr-x. 1 root root  1122 Jan  9 09:51 30_uefi-firmware
--rwxr-xr-x. 1 root root   218 Jan  9 09:51 40_custom
--rwxr-xr-x. 1 root root   219 Jan  9 09:51 41_custom
--rw-r--r--. 1 root root   483 Jan  9 09:51 README</code></pre></div><p>00_header</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost default<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -l /etc/grub.d</span>
+</span></span><span style="display:flex;"><span>total <span style="color:#ff9f43">104</span>
+</span></span><span style="display:flex;"><span>-rwxr-xr-x. <span style="color:#ff9f43">1</span> root root  <span style="color:#ff9f43">9346</span> Jan  <span style="color:#ff9f43">9</span> 09:51 00_header
+</span></span><span style="display:flex;"><span>-rwxr-xr-x. <span style="color:#ff9f43">1</span> root root  <span style="color:#ff9f43">1046</span> Aug <span style="color:#ff9f43">29</span>  <span style="color:#ff9f43">2023</span> 00_tuned
+</span></span><span style="display:flex;"><span>-rwxr-xr-x. <span style="color:#ff9f43">1</span> root root   <span style="color:#ff9f43">236</span> Jan  <span style="color:#ff9f43">9</span> 09:51 01_users
+</span></span><span style="display:flex;"><span>-rwxr-xr-x. <span style="color:#ff9f43">1</span> root root   <span style="color:#ff9f43">835</span> Jan  <span style="color:#ff9f43">9</span> 09:51 08_fallback_counting
+</span></span><span style="display:flex;"><span>-rwxr-xr-x. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">19665</span> Jan  <span style="color:#ff9f43">9</span> 09:51 10_linux
+</span></span><span style="display:flex;"><span>-rwxr-xr-x. <span style="color:#ff9f43">1</span> root root   <span style="color:#ff9f43">833</span> Jan  <span style="color:#ff9f43">9</span> 09:51 10_reset_boot_success
+</span></span><span style="display:flex;"><span>-rwxr-xr-x. <span style="color:#ff9f43">1</span> root root   <span style="color:#ff9f43">892</span> Jan  <span style="color:#ff9f43">9</span> 09:51 12_menu_auto_hide
+</span></span><span style="display:flex;"><span>-rwxr-xr-x. <span style="color:#ff9f43">1</span> root root   <span style="color:#ff9f43">410</span> Jan  <span style="color:#ff9f43">9</span> 09:51 14_menu_show_once
+</span></span><span style="display:flex;"><span>-rwxr-xr-x. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">13613</span> Jan  <span style="color:#ff9f43">9</span> 09:51 20_linux_xen
+</span></span><span style="display:flex;"><span>-rwxr-xr-x. <span style="color:#ff9f43">1</span> root root  <span style="color:#ff9f43">2562</span> Jan  <span style="color:#ff9f43">9</span> 09:51 20_ppc_terminfo
+</span></span><span style="display:flex;"><span>-rwxr-xr-x. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">10869</span> Jan  <span style="color:#ff9f43">9</span> 09:51 30_os-prober
+</span></span><span style="display:flex;"><span>-rwxr-xr-x. <span style="color:#ff9f43">1</span> root root  <span style="color:#ff9f43">1122</span> Jan  <span style="color:#ff9f43">9</span> 09:51 30_uefi-firmware
+</span></span><span style="display:flex;"><span>-rwxr-xr-x. <span style="color:#ff9f43">1</span> root root   <span style="color:#ff9f43">218</span> Jan  <span style="color:#ff9f43">9</span> 09:51 40_custom
+</span></span><span style="display:flex;"><span>-rwxr-xr-x. <span style="color:#ff9f43">1</span> root root   <span style="color:#ff9f43">219</span> Jan  <span style="color:#ff9f43">9</span> 09:51 41_custom
+</span></span><span style="display:flex;"><span>-rw-r--r--. <span style="color:#ff9f43">1</span> root root   <span style="color:#ff9f43">483</span> Jan  <span style="color:#ff9f43">9</span> 09:51 README</span></span></code></pre></div><p>00_header</p>
 <ul>
 <li>sets the GRUB2 environment
-<em>10_linux</em></li>
+10_linux</li>
 <li>searches for all installed kernels on the same disk partition
 30_os-prober</li>
 <li>searches for the presence of other operating systems
-40_custom and <em>41_custom</em> are to</li>
+40_custom and 41_custom are to</li>
 <li>introduce any customization.</li>
 <li>like add custom entries to the boot menu.</li>
 </ul>
@@ -445,18 +441,18 @@ total 104
 <ul>
 <li>Sources /boot/grub2/grubenv for kernel options and other settings.</li>
 </ul>
-<div class="highlight wrap-code"><pre tabindex="0"><code>[root@localhost grub2]# cat grubenv
-# GRUB Environment Block
-# WARNING: Do not edit this file by tools other than grub-editenv!!!
-saved_entry=8215ac7e45d34823b4dce2e258c3cc47-5.14.0-362.24.1.el9_3.x86_64
-menu_auto_hide=1
-boot_success=0
-boot_indeterminate=0
-############################################################################
-############################################################################</code></pre></div><p>If a new kernel is installed:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost grub2<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat grubenv</span>
+</span></span><span style="display:flex;"><span><span style="color:#78787e"># GRUB Environment Block</span>
+</span></span><span style="display:flex;"><span><span style="color:#78787e"># WARNING: Do not edit this file by tools other than grub-editenv!!!</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">saved_entry</span><span style="color:#ff6ac1">=</span>8215ac7e45d34823b4dce2e258c3cc47-5.14.0-362.24.1.el9_3.x86_64
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">menu_auto_hide</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">boot_success</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">boot_indeterminate</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#78787e">############################################################################</span>
+</span></span><span style="display:flex;"><span><span style="color:#78787e">############################################################################</span></span></span></code></pre></div><p>If a new kernel is installed:</p>
 <ul>
 <li>the existing kernel entries remain intact.</li>
-<li>All bootable kernels are listed in the GRUB2 menu, and</li>
+<li>All bootable kernels are listed in the GRUB2 menu</li>
 <li>any of the kernel entries can be selected to boot.</li>
 </ul>
 <h3 id="lab-change-default-system-boot-timeout">Lab: Change Default System Boot Timeout</h3>
@@ -470,7 +466,7 @@ boot_indeterminate=0
 </li>
 <li>
 <p>Execute the <em>grub2-mkconfig</em> command to reproduce <em>grub.cfg</em>:
-<code>grub2-mkconfig -o /boot/grub2/grub.cfg&gt;)</code></p>
+<code>grub2-mkconfig -o /boot/grub2/grub.cfg</code></p>
 </li>
 </ol>
 <p>3.Restart the system with <em>sudo reboot</em> and confirm the new
@@ -503,12 +499,12 @@ timeout value when GRUB2 menu appears.</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1721305791" defer></script>
-        <script src="/js/search.js?1721305791" defer></script>
+        <script src="/js/auto-complete.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.min.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1722081508" defer></script>
+        <script src="/js/search.js?1722081508" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -579,8 +575,8 @@ timeout value when GRUB2 menu appears.</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1721305791" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1721305791" defer></script>
+    <script src="/js/clipboard.min.js?1722081508" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1722081508" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -596,20 +592,20 @@ timeout value when GRUB2 menu appears.</p>
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1721305791" defer></script>
-    <script src="/js/js-yaml.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-color.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1722081508" defer></script>
+    <script src="/js/js-yaml.min.js?1722081508" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1721305791" defer></script>
+    <script src="/js/theme.js?1722081508" defer></script>
   </body>
 </html>

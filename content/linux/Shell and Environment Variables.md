@@ -1,17 +1,18 @@
 ## Shell and Environment Variables
  
- - current shell 
-		- Where a program is executed.
-- sub-shell (child shell)
-		- created within a shell to run a program.
-		
+ **Current shell** 
+- Where a program is executed.
+
+**Sub-shell (child shell)**
+- created within a shell to run a program.
+
 - two types of variables: local (or shell) and environment. 
 	**local variable** 
 	- Private to the shell in which it is created.
 	- Only used by programs that are started in that shell. 
 	**environment variable**
-	- inherited from the current shell to the sub-shell during the execution of a program
-	- value stored in an environment variable is accessible to the program, as well as any sub-programs that it spawns during its lifecycle. 
+	- Inherited from the current shell to the sub-shell during the execution of a program
+	- Value stored in an environment variable is accessible to the program, as well as any sub-programs that it spawns during its lifecycle. 
 	- Any environment variable set in a sub-shell is lost when the sub-shell terminates.
 	- `env` or the `printenv` command to view predefined environment variables.
 	- Common predefined environment variables:
@@ -47,11 +48,11 @@
 - Use uppercase for variables
 
 ### echo command
-- restricted to showing the value of a specific variable
+- Restricted to showing the value of a specific variable
 ### env command
 - Displays the environment variables only.
 
-```
+```bash
 [root@localhost ~]# env
 SHELL=/bin/bash
 HISTCONTROL=ignoredups
@@ -105,4 +106,4 @@ OLDPWD=/dev/vg200
 		- Working directory
 	- \\$
 		- End of command prompt
-- command whose output you want assigned to a variable must be encapsulated within either backticks `hostname` or parentheses $(hostname).
+- Command whose output you want assigned to a variable must be encapsulated within either backticks `hostname` or parentheses $(hostname).

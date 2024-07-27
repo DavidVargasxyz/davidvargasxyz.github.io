@@ -20,20 +20,20 @@
     <meta property="article:section" content="Linux">
     <meta itemprop="description" content="Storage DYI Labs Lab 13-1: Create and Remove Partitions with parted Create a 100MB primary partition on one of the available 250MB disks (lsblk) by invoking the parted utility directly at the command prompt. Apply label “msdos” if the disk is new.
 [root@server20 ~]# sudo parted /dev/sdb mklabel msdos Warning: The existing disk label on /dev/sdb will be destroyed and all data on this disk will be lost. Do you want to continue?">
-    <meta itemprop="wordCount" content="2245">
+    <meta itemprop="wordCount" content="2259">
     <title></title>
-    <link href="/images/logo.svg?1721305790" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1721305791" rel="stylesheet">
-    <link href="/css/auto-complete.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1721305791" rel="stylesheet">
-    <link href="/css/fonts.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1721305791" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1721305791" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1721305791" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1721305791" rel="stylesheet">
-    <link href="/css/print.css?1721305791" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1721305791"></script>
+    <link href="/images/logo.svg?1722081507" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1722081509" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1722081509" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1722081509" rel="stylesheet">
+    <link href="/css/auto-complete.css?1722081509" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1722081509" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1722081509" rel="stylesheet">
+    <link href="/css/fonts.css?1722081509" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1722081509" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1722081509" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1722081509" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1722081509" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1722081509" rel="stylesheet">
+    <link href="/css/print.css?1722081509" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1722081509"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -230,8 +230,7 @@
 </span></span><span style="display:flex;"><span>Do you want to proceed? <span style="color:#ff6ac1">(</span>Y/N<span style="color:#ff6ac1">)</span>: y
 </span></span><span style="display:flex;"><span>OK; writing new GUID partition table <span style="color:#ff6ac1">(</span>GPT<span style="color:#ff6ac1">)</span> to /dev/sdb.
 </span></span><span style="display:flex;"><span>The operation has completed successfully.</span></span></code></pre></div><h3 id="lab-13-3-create-volume-group-and-logical-volumes">Lab 13-3: Create Volume Group and Logical Volumes</h3>
-<p><br>
-initialize 1x250MB disk for use in LVM (use lsblk to identify available disks).</p>
+<p>initialize 1x250MB disk for use in LVM (use lsblk to identify available disks).</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdd mklabel msdos</span>
 </span></span><span style="display:flex;"><span>Warning: The existing disk label on /dev/sdd will be destroyed and all data
 </span></span><span style="display:flex;"><span>on this disk will be lost. Do you want to <span style="color:#ff6ac1">continue</span>?
@@ -252,8 +251,9 @@ initialize 1x250MB disk for use in LVM (use lsblk to identify available disks).<
 </span></span><span style="display:flex;"><span> <span style="color:#ff9f43">1</span>      1049kB  250MB  249MB  primary
 </span></span><span style="display:flex;"><span> 
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvcreate /dev/sdd1</span>
-</span></span><span style="display:flex;"><span>  Physical volume <span style="color:#5af78e">&#34;/dev/sdd1&#34;</span> successfully created.</span></span></code></pre></div><p>Create volume group vg100 with PE size 16MB and add the physical volume.</p>
-<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgcreate -vs 15 vg100 /dev/sdd1</span>
+</span></span><span style="display:flex;"><span>  Physical volume <span style="color:#5af78e">&#34;/dev/sdd1&#34;</span> successfully created.</span></span></code></pre></div><p>(Can also just use the full disk without making it into a partition first.)</p>
+<p>Create volume group vg100 with PE size 16MB and add the physical volume.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgcreate -vs 16 vg100 /dev/sdd1</span>
 </span></span><span style="display:flex;"><span>  Wiping signatures on new PV /dev/sdd1.
 </span></span><span style="display:flex;"><span>  Adding physical volume <span style="color:#5af78e">&#39;/dev/sdd1&#39;</span> to volume group <span style="color:#5af78e">&#39;vg100&#39;</span>
 </span></span><span style="display:flex;"><span>  Creating volume group backup <span style="color:#5af78e">&#34;/etc/lvm/backup/vg100&#34;</span> <span style="color:#ff6ac1">(</span>seqno 1<span style="color:#ff6ac1">)</span>.
@@ -339,7 +339,7 @@ initialize 1x250MB disk for use in LVM (use lsblk to identify available disks).<
 </span></span><span style="display:flex;"><span>  Alloc PE / Size       <span style="color:#ff9f43">4863</span> / &lt;19.00 GiB
 </span></span><span style="display:flex;"><span>  Free  PE / Size       <span style="color:#ff9f43">0</span> / <span style="color:#ff9f43">0</span>   
 </span></span><span style="display:flex;"><span>  VG UUID               UiK3fy-FGOc-2fnP-C1Y6-JS0l-irEe-Sq3c4h</span></span></code></pre></div><h3 id="lab-13-4-expand-volume-group-and-logical-volume">Lab 13-4: Expand Volume Group and Logical Volume</h3>
-<p>create a partition on an available 250MB disk and initialize it for use in LVM (use lsblk to identify available disks).</p>
+<p>Create a partition on an available 250MB disk and initialize it for use in LVM (use lsblk to identify available disks).</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># parted /dev/sdb mklabel msdos</span>
 </span></span><span style="display:flex;"><span>Warning: The existing disk label on /dev/sdb will be destroyed and all data on this disk will be lost. Do you want to <span style="color:#ff6ac1">continue</span>?
 </span></span><span style="display:flex;"><span>Yes/No? yes                                                               
@@ -521,12 +521,12 @@ reduce the size of vdovol logical volume to 80MB.</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1721305791" defer></script>
-        <script src="/js/search.js?1721305791" defer></script>
+        <script src="/js/auto-complete.js?1722081509" defer></script>
+        <script src="/js/lunr/lunr.min.js?1722081509" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1722081509" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1722081509" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1722081509" defer></script>
+        <script src="/js/search.js?1722081509" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -597,8 +597,8 @@ reduce the size of vdovol logical volume to 80MB.</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1721305791" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1721305791" defer></script>
+    <script src="/js/clipboard.min.js?1722081509" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1722081509" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -614,20 +614,20 @@ reduce the size of vdovol logical volume to 80MB.</p>
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1721305791" defer></script>
-    <script src="/js/js-yaml.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-color.min.js?1722081509" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1722081509" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1722081509" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1722081509" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1722081509" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1722081509" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1722081509" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1722081509" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1722081509" defer></script>
+    <script src="/js/js-yaml.min.js?1722081509" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1721305791" defer></script>
+    <script src="/js/theme.js?1722081509" defer></script>
   </body>
 </html>

@@ -1,13 +1,10 @@
 ## Adding Storage for Practice
 
 
-### Exercise 13-1: Add Required Storage to server2
+### Lab: Add Required Storage to server2
 
 
-In this exercise, you will start VirtualBox and add 4x250MB and 1x5GB
-disks to server2 in preparation for exercises in this and the next
-chapter.
-
+- start VirtualBox and add 4x250MB and 1x5GB disks to server2 
 
 1\. Start VirtualBox on your Windows/Mac computer and highlight the RHEL9-VM2 virtual machine that you created in Lab 1-1. See Figure 13-1.
 

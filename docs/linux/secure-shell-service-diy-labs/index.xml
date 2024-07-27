@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/secure-shell-service-diy-labs/</link>
+    <description>Secure Shell Service DIY Labs Lab: Establish Key-Based Authentication Create user account user20 on both systems and assign a password. [root@server40 ~]# adduser user20 [root@server40 ~]# passwd user20 Changing password for user user20. New password: BAD PASSWORD: The password is shorter than 8 characters Retype new password: passwd: all authentication tokens updated successfully. As user20 on server40, generate a private/public key pair without a passphrase using the ssh-keygen command. [user20@server40 ~]# ssh-keygen -N &#34;&#34; -q Enter file in which to save the key (/root/.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/secure-shell-service-diy-labs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

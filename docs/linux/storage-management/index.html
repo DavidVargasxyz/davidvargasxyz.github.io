@@ -6,30 +6,30 @@
     <meta name="generator" content="Hugo 0.124.1">
     <meta name="generator" content="Relearn 6.0.0+tip">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
-    <meta name="description" content="Storage Management Data is stored on disks that are logically divided into partitions. A partition can exist on a portion of a disk, on an entire disk, or it may span multiple disks. Each partition is accessed and managed independent of other partitions and may contain a file system or swap space. Partitioning information is stored at special disk locations that the system references at boot time. Partitions created with a combination of most tools can coexist on a single disk.">
+    <meta name="description" content="Storage Management Adding Storage for Practice Partition Information (MBR and GPT) Disk Partitions Thin Provisioning Logical Volume Manager (LVM) Virtual Data Optimizer (VDO) Storage Review Questions Storage DYI Labs ">
     <meta name="author" content="David Vargas">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="Storage Management Data is stored on disks that are logically divided into partitions. A partition can exist on a portion of a disk, on an entire disk, or it may span multiple disks. Each partition is accessed and managed independent of other partitions and may contain a file system or swap space. Partitioning information is stored at special disk locations that the system references at boot time. Partitions created with a combination of most tools can coexist on a single disk.">
+    <meta name="twitter:description" content="Storage Management Adding Storage for Practice Partition Information (MBR and GPT) Disk Partitions Thin Provisioning Logical Volume Manager (LVM) Virtual Data Optimizer (VDO) Storage Review Questions Storage DYI Labs ">
     <meta property="og:url" content="http://davidvargas.xyz/linux/storage-management/">
-    <meta property="og:description" content="Storage Management Data is stored on disks that are logically divided into partitions. A partition can exist on a portion of a disk, on an entire disk, or it may span multiple disks. Each partition is accessed and managed independent of other partitions and may contain a file system or swap space. Partitioning information is stored at special disk locations that the system references at boot time. Partitions created with a combination of most tools can coexist on a single disk.">
+    <meta property="og:description" content="Storage Management Adding Storage for Practice Partition Information (MBR and GPT) Disk Partitions Thin Provisioning Logical Volume Manager (LVM) Virtual Data Optimizer (VDO) Storage Review Questions Storage DYI Labs ">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Linux">
-    <meta itemprop="description" content="Storage Management Data is stored on disks that are logically divided into partitions. A partition can exist on a portion of a disk, on an entire disk, or it may span multiple disks. Each partition is accessed and managed independent of other partitions and may contain a file system or swap space. Partitioning information is stored at special disk locations that the system references at boot time. Partitions created with a combination of most tools can coexist on a single disk.">
-    <meta itemprop="wordCount" content="211">
+    <meta itemprop="description" content="Storage Management Adding Storage for Practice Partition Information (MBR and GPT) Disk Partitions Thin Provisioning Logical Volume Manager (LVM) Virtual Data Optimizer (VDO) Storage Review Questions Storage DYI Labs ">
+    <meta itemprop="wordCount" content="29">
     <title></title>
-    <link href="/images/logo.svg?1721305790" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1721305791" rel="stylesheet">
-    <link href="/css/auto-complete.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1721305791" rel="stylesheet">
-    <link href="/css/fonts.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1721305791" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1721305791" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1721305791" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1721305791" rel="stylesheet">
-    <link href="/css/print.css?1721305791" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1721305791"></script>
+    <link href="/images/logo.svg?1722081507" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1722081508" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1722081508" rel="stylesheet">
+    <link href="/css/auto-complete.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1722081508" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1722081508" rel="stylesheet">
+    <link href="/css/fonts.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1722081508" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1722081508" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1722081508" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1722081508" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1722081508" rel="stylesheet">
+    <link href="/css/print.css?1722081508" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1722081508"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -118,25 +118,15 @@
 
 <h1 id="storage-management">Storage Management</h1>
 <ul>
-<li>Data is stored on disks that are logically divided into partitions.</li>
-<li>A partition can exist on a portion of a disk, on an entire disk, or it may span multiple disks.</li>
-<li>Each partition is accessed and managed independent of other partitions and may contain a file system or swap space.</li>
-<li>Partitioning information is stored at special disk locations that the system references at boot time.</li>
-<li>Partitions created with a combination of most tools can coexist on a single disk.</li>
-<li>Thin provisioning is a powerful feature that guarantees an efficient use of storage space by allocating only what is needed and by storing data at adjacent locations.</li>
-<li>Many storage management solutions incorporate thin provisioning technology in their core configuration.</li>
-<li>Virtual Data Optimizer capitalizes on thin provisioning, de-duplication, and compression technologies to conserve storage space, improve data throughput, and save money.</li>
-<li>The Logical Volume Manager solution sets up an abstraction layer between the operating system and the storage hardware. It utilizes virtual objects for storage pooling and allocation, and offers a slew of commands to carry out management operations.</li>
+<li><a href="/linux/adding-storage-for-practice/">Adding Storage for Practice</a></li>
+<li><a href="/linux/partition-information-mbr-and-gpt/">Partition Information (MBR and GPT)</a></li>
+<li><a href="/linux/disk-partitions/">Disk Partitions</a></li>
+<li><a href="/linux/thin-provisioning/">Thin Provisioning</a></li>
+<li><a href="/linux/logical-volume-manager-lvm/">Logical Volume Manager (LVM)</a></li>
+<li><a href="/linux/virtual-data-optimizer-vdo/">Virtual Data Optimizer (VDO)</a></li>
+<li><a href="/linux/storage-review-questions/">Storage Review Questions</a></li>
+<li><a href="/linux/storage-dyi-labs/">Storage DYI Labs</a></li>
 </ul>
-<h1 id="storage-topics">Storage topics</h1>
-<p><a href="/linux/adding-storage-for-practice/">Adding Storage for Practice</a>
-<a href="/linux/partition-information-mbr-and-gpt/">Partition Information (MBR and GPT)</a>
-<a href="/linux/disk-partitions/">Disk Partitions</a>
-<a href="/linux/thin-provisioning/">Thin Provisioning</a>
-<a href="/linux/logical-volume-manager-lvm/">Logical Volume Manager (LVM)</a>
-<a href="/linux/storage-optimization-with-virtual-data-optimizer-vdo/">Storage Optimization with Virtual Data Optimizer (VDO)</a>
-<a href="/linux/storage-review-questions/">Storage Review Questions</a>
-<a href="/linux/storage-dyi-labs/">Storage DYI Labs</a></p>
 
             <footer class="footline">
             </footer>
@@ -165,12 +155,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1721305791" defer></script>
-        <script src="/js/search.js?1721305791" defer></script>
+        <script src="/js/auto-complete.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.min.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1722081508" defer></script>
+        <script src="/js/search.js?1722081508" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -241,8 +231,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1721305791" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1721305791" defer></script>
+    <script src="/js/clipboard.min.js?1722081508" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1722081508" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -258,20 +248,20 @@
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1721305791" defer></script>
-    <script src="/js/js-yaml.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-color.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1722081508" defer></script>
+    <script src="/js/js-yaml.min.js?1722081508" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1721305791" defer></script>
+    <script src="/js/theme.js?1722081508" defer></script>
   </body>
 </html>

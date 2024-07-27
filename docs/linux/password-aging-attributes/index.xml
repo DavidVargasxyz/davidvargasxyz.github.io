@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/password-aging-attributes/</link>
+    <description>Password Aging attributes Can be done for an individual user or applied to all users. Can prevent users from logging in to the system by locking their access for a period of time or permanently. Must be performed by a user with elevated privileges of the root user. Normal users may be allowed access to privileged commands by defining them appropriately in a configuration file. Each file that exists on the system regardless of its type has an owning user and an owning group.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/password-aging-attributes/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

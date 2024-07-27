@@ -1,6 +1,6 @@
 ## Understanding Hosts Table
 
-See [Hostname Resolution and Time Synchronization](Hostname%20Resolution%20and%20Time%20Synchronization.md)
+See [DNS and Time Synchronization](DNS%20and%20Time%20Synchronization.md)
 
 /etc/hosts file) 
 - Table used to maintain hostname to IP mapping for systems on the local network, allowing us to access a system by simply employing its hostname.

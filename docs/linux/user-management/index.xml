@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/user-management/</link>
+    <description>User Management Switching Users su command Ctrl-d - return to previous user su - - switch user with startup scripts -c - issue a command as a user without switching to them.&#xA;root user can switch into any user account that exists on the system without being prompted for that user’s password. switching into the root account to execute privileged actions is not recommended. whoami command show current user logname command Identity of the user who originally logged in.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/user-management/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

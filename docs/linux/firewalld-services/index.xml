@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/firewalld-services/</link>
+    <description>firewalld Services For easier activation and deactivation of specific rules. preconfigured firewall rules delineated for various services and stored in different files. \ The rules consist of necessary settings, such as the port number, protocol, and possibly helper modules, to support the loading of the service. Can be added to a zone. By default, firewalld blocks all traffic unless a service or port is explicitly opened. Service Configuration Files firewalld stores service rules in XML format at two locations: system-defined rules in the /usr/lib/firewalld/services directory Can be used as templates for adding new service rules, or activated instantly.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/firewalld-services/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

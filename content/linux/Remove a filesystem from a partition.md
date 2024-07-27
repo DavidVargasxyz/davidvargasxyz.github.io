@@ -80,8 +80,7 @@ sdf                       8:80   0    5G  0 disk
 sr0                      11:0    1  9.8G  0 rom  
 ```
 
-I could not use this on a disk used in an LV. Remove the LVs:
-`lvremove lvvdo vgfs`
+I could not use this on a disk used in an LV. Remove the LVs: `lvremove lvvdo vgfs`
 
 ```bash
 [root@server2 mapper]# lsblk

@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "07a45b7f0e28d748",
+            "id": "f5ad00467143edca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/Linux Boot Process.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fb4934d61534cd25",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/Using Man Pages.md",
+                "file": "linux/Bash.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/Using Man Pages.md",
+                "file": "linux/Bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/Using Man Pages.md",
+                "file": "linux/Bash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/Using Man Pages.md"
+                "file": "linux/Bash.md"
               }
             }
           }
@@ -163,34 +150,34 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "fb4934d61534cd25",
+  "active": "f5ad00467143edca",
   "lastOpenFiles": [
-    "linux/_index.md",
+    "linux/History Substitution.md",
+    "linux/Bash.md",
+    "linux/Input, Output, and Error Redirections.md",
     "linux/RHCSA Study Tracker.md",
-    "linux/Linux Boot Process.md",
+    "linux/Shell and Environment Variables.md",
+    "linux/Bash Review Questions.md",
+    "linux/Bash Labs.md",
+    "linux/Shell Startup Files.md",
+    "linux/Jobs.md",
+    "linux/Metacharacters and Wildcard.md",
+    "linux/Editing at the Command line.md",
+    "linux/Local File Systems and Swap.md",
+    "linux/The Linux Firewall.md",
+    "linux/File System Management.md",
+    "linux/File Systems and File System Types.md",
+    "linux/firewalld Management.md",
+    "linux/Monitoring File System Usage.md",
+    "linux/firewalld Services.md",
+    "linux/`firewalld` Zones.md",
+    "linux/Storage Management.md",
+    "linux/Logical Volume Manager (LVM).md",
+    "linux/The Linux Firewall DIY Labs.md",
+    "linux/The Linux Firewall Review Questions.md",
+    "linux/Virtual Data Optimizer (VDO).md",
+    "linux/Sample Exam 1.md",
     "linux/RHCSA Notes.md",
-    "linux/Boot Process, Grub2, and Kernel.md",
-    "linux/Linux Kernel.md",
-    "linux/Boot Grub2 Kernel Labs.md",
-    "linux/Boot Grub2 Kernel Review Questions.md",
-    "linux/Reset the root User Password.md",
-    "linux/Booting into Specific Targets.md",
-    "linux/Basic User Management.md",
-    "linux/Listing Logged-In Users.md",
-    "linux/Basic User Management Review Questions.md",
-    "linux/Basic User Management Labs.md",
-    "linux/User Account Management.md",
-    "linux/No-Login (Non-Interactive) User Account.md",
-    "linux/Local User Authentication Files.md",
-    "linux/Advanced File Management.md",
-    "linux/Advanced File Management Labs.md",
-    "linux/RHCSA Exam Environment.md",
-    "_index.md",
-    "linux/Permission Classes and Types.md",
-    "linux/Advanced File Management Review Questions.md",
-    "linux/Find Command.md",
-    "linux/Access Control Lists (ACLs).md",
-    "linux/Advanced Package Management.md",
     "images/Pasted image 20240713164339.png",
     "images/Pasted image 20240710073529.png",
     "images/Pasted image 20240710050536.png",

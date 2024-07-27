@@ -3,7 +3,7 @@
   <channel>
     <title></title>
     <link>http://davidvargas.xyz/linux/adding-storage-for-practice/</link>
-    <description>Adding Storage for Practice Exercise 13-1: Add Required Storage to server2 In this exercise, you will start VirtualBox and add 4x250MB and 1x5GB disks to server2 in preparation for exercises in this and the next chapter.&#xA;1. Start VirtualBox on your Windows/Mac computer and highlight the RHEL9-VM2 virtual machine that you created in Lab 1-1. See Figure 13-1.&#xA;2. Click Settings at the top and then Storage on the window that pops up.</description>
+    <description>Adding Storage for Practice Lab: Add Required Storage to server2 start VirtualBox and add 4x250MB and 1x5GB disks to server2 1. Start VirtualBox on your Windows/Mac computer and highlight the RHEL9-VM2 virtual machine that you created in Lab 1-1. See Figure 13-1.&#xA;2. Click Settings at the top and then Storage on the window that pops up. Click on “Controller: SATA” to select it. Figure 13-2.&#xA;3. Click on the right-side icon next to “Controller: SATA” to add a hard disk and then click Create (on the Medium Selector screen) 4.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://davidvargas.xyz/linux/adding-storage-for-practice/index.xml" rel="self" type="application/rss+xml" />

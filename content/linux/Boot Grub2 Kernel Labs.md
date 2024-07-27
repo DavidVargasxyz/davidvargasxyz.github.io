@@ -3,24 +3,24 @@
 ### Lab: Enable Verbose System Boot
 
 - Remove "quiet" from the end of the value of the variable GRUB_CMDLINE_LINUX in the /etc/default/grub file
-- run *grub2-mkconfig* to apply the update. 
+- Run *grub2-mkconfig* to apply the update. 
 - Reboot the system and observe that the system now displays verbose information during the boot process. 
 
 ### Lab: Reset root User Password
 
--  reset the *root* user password by booting the system into emergency mode with SELinux disabled. 
+-  Reset the *root* user password by booting the system into emergency mode with SELinux disabled. 
 - Try to log in with root and enter the new password after the reboot. 
 
 ### Lab: Install New Kernel
 
-- check the current version of the kernel using the *uname* or *rpm* command. 
+- Check the current version of the kernel using the *uname* or *rpm* command. 
 - Download a higher version from the Red Hat Customer Portal or [rpmfind.net](http://rpmfind.net) and install it. 
 - Reboot the system and ensure the new kernel is listed on the bootloader menu. 
 
 ### Lab: Download and Install a New Kernel
 
 - download the latest available kernel packages from the Red Hat Customer Portal \ 
-- install them using the dnf command. You will 
+- install them using the dnf command.
 - ensure that the existing kernel and its configuration remain intact.
 
 * As an alternative (preferred) to downloading kernel packages individually and then installing them, you can follow the instructions provided in "Containers" chapter to register *server1* with RHSM and run **sudo dnf install kernel** to install the latest kernel and all the dependencies collectively.
@@ -61,3 +61,5 @@ confirm the loading of the new kernel:
 
 14. View the contents of the *version* and cmdline files under /proc to verify the active kernel:
 `cat /proc/version
+
+Or just `dnf install kernel`

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/linux-groups-and-their-management/</link>
+    <description>Linux Groups and their Management /etc/group group info /etc/login.defs default policies /etc/gshadow group administrator information and group-level passwords group management tools groupadd, groupmod, and groupdel create, alter, and erase groups groupadd command adds entries to the group and gshadow files for each group added to the system picks up default values from /etc/login.defs Switches -g (–gid) Specifies the GID to be assigned to the group -o (–non-unique) Creates a group with a matching GID of an existing group.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/linux-groups-and-their-management/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

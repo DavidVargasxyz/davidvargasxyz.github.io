@@ -110,7 +110,6 @@ mount: (hint) your fstab has been modified, but systemd still uses
 ```
 
 
-
 - Unmount all three file systems manually, and execute `mount -a` to mount them all.
 `umount /dev/sdb1 /dev/sdb2 /dev/sdb3`
 - Run `df -h` for verification. 
@@ -269,7 +268,7 @@ WARNING: dos signature detected on /dev/sdb at offset 510. Wipe it? [y/n]: y
 
 - Add the new physical volume to volume group vg200.
 ```bash
-[root@server2 ~]# vgextend vg200 /dev/sdb
+[root@server2 ~]# vgextend vg /dev/sdb
   Devices file /dev/sdc is excluded: device is partitioned.
   WARNING: adding device /dev/sdb with idname t10.ATA_VBOX_HARDDISK_VB428913dd-446a194f which is already used for missing device.
   Volume group "vg" successfully extended
@@ -329,22 +328,22 @@ UUID="40eea6c2-b80c-4b25-ad76-611071db52d5" swap swap pri=1 0 0
 
 ```
 
-- Expand volume group vg200 (Lab 14-3) by adding this physical volume to it. 
+- Expand volume group vg (Lab 14-3) by adding this physical volume to it. 
 ```bash
-[root@localhost ~]# vgextend vg200 /dev/sdd2
+[root@localhost ~]# vgextend vg /dev/sdd2
   Volume group "vg200" successfully extended
 ```
 
 - Create logical volume swapvol of size 180MB. 
 ```bash
-[root@localhost ~]# lvcreate -L 180 -n swapvol vg200
+[root@localhost ~]# lvcreate -L 180 -n swapvol vg
   Logical volume "swapvol" created.
 ```
 
 - Use the `vgs`, `pvs`, `lvs`, and `vgdisplay` commands for verification. 
 - Initialize the logical volume for swap. 
 ```bash
-[root@localhost vg200]# mkswap /dev/vg200/swapvol
+[root@localhost vg200]# mkswap /dev/vg/swapvol
 Setting up swapspace version 1, size = 180 MiB (188739584 bytes)
 no label, UUID=a4b939d0-4b53-4e73-bee5-4c402aff6f9b
 

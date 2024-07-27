@@ -6,30 +6,30 @@
     <meta name="generator" content="Hugo 0.124.1">
     <meta name="generator" content="Relearn 6.0.0+tip">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
-    <meta name="description" content="Boot Grub2 Kernel Labs Lab: Enable Verbose System Boot Remove “quiet” from the end of the value of the variable GRUB_CMDLINE_LINUX in the /etc/default/grub file run grub2-mkconfig to apply the update. Reboot the system and observe that the system now displays verbose information during the boot process. Lab: Reset root User Password reset the root user password by booting the system into emergency mode with SELinux disabled. Try to log in with root and enter the new password after the reboot.">
+    <meta name="description" content="Boot Grub2 Kernel Labs Lab: Enable Verbose System Boot Remove “quiet” from the end of the value of the variable GRUB_CMDLINE_LINUX in the /etc/default/grub file Run grub2-mkconfig to apply the update. Reboot the system and observe that the system now displays verbose information during the boot process. Lab: Reset root User Password Reset the root user password by booting the system into emergency mode with SELinux disabled. Try to log in with root and enter the new password after the reboot.">
     <meta name="author" content="David Vargas">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="Boot Grub2 Kernel Labs Lab: Enable Verbose System Boot Remove “quiet” from the end of the value of the variable GRUB_CMDLINE_LINUX in the /etc/default/grub file run grub2-mkconfig to apply the update. Reboot the system and observe that the system now displays verbose information during the boot process. Lab: Reset root User Password reset the root user password by booting the system into emergency mode with SELinux disabled. Try to log in with root and enter the new password after the reboot.">
+    <meta name="twitter:description" content="Boot Grub2 Kernel Labs Lab: Enable Verbose System Boot Remove “quiet” from the end of the value of the variable GRUB_CMDLINE_LINUX in the /etc/default/grub file Run grub2-mkconfig to apply the update. Reboot the system and observe that the system now displays verbose information during the boot process. Lab: Reset root User Password Reset the root user password by booting the system into emergency mode with SELinux disabled. Try to log in with root and enter the new password after the reboot.">
     <meta property="og:url" content="http://davidvargas.xyz/linux/boot-grub2-kernel-labs/">
-    <meta property="og:description" content="Boot Grub2 Kernel Labs Lab: Enable Verbose System Boot Remove “quiet” from the end of the value of the variable GRUB_CMDLINE_LINUX in the /etc/default/grub file run grub2-mkconfig to apply the update. Reboot the system and observe that the system now displays verbose information during the boot process. Lab: Reset root User Password reset the root user password by booting the system into emergency mode with SELinux disabled. Try to log in with root and enter the new password after the reboot.">
+    <meta property="og:description" content="Boot Grub2 Kernel Labs Lab: Enable Verbose System Boot Remove “quiet” from the end of the value of the variable GRUB_CMDLINE_LINUX in the /etc/default/grub file Run grub2-mkconfig to apply the update. Reboot the system and observe that the system now displays verbose information during the boot process. Lab: Reset root User Password Reset the root user password by booting the system into emergency mode with SELinux disabled. Try to log in with root and enter the new password after the reboot.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Linux">
-    <meta itemprop="description" content="Boot Grub2 Kernel Labs Lab: Enable Verbose System Boot Remove “quiet” from the end of the value of the variable GRUB_CMDLINE_LINUX in the /etc/default/grub file run grub2-mkconfig to apply the update. Reboot the system and observe that the system now displays verbose information during the boot process. Lab: Reset root User Password reset the root user password by booting the system into emergency mode with SELinux disabled. Try to log in with root and enter the new password after the reboot.">
-    <meta itemprop="wordCount" content="420">
+    <meta itemprop="description" content="Boot Grub2 Kernel Labs Lab: Enable Verbose System Boot Remove “quiet” from the end of the value of the variable GRUB_CMDLINE_LINUX in the /etc/default/grub file Run grub2-mkconfig to apply the update. Reboot the system and observe that the system now displays verbose information during the boot process. Lab: Reset root User Password Reset the root user password by booting the system into emergency mode with SELinux disabled. Try to log in with root and enter the new password after the reboot.">
+    <meta itemprop="wordCount" content="423">
     <title></title>
-    <link href="/images/logo.svg?1721305790" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1721305791" rel="stylesheet">
-    <link href="/css/auto-complete.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1721305791" rel="stylesheet">
-    <link href="/css/fonts.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1721305791" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1721305791" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1721305791" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1721305791" rel="stylesheet">
-    <link href="/css/print.css?1721305791" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1721305791"></script>
+    <link href="/images/logo.svg?1722081507" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1722081508" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1722081508" rel="stylesheet">
+    <link href="/css/auto-complete.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1722081508" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1722081508" rel="stylesheet">
+    <link href="/css/fonts.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1722081508" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1722081508" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1722081508" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1722081508" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1722081508" rel="stylesheet">
+    <link href="/css/print.css?1722081508" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1722081508"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -131,24 +131,24 @@
 <h3 id="lab-enable-verbose-system-boot">Lab: Enable Verbose System Boot</h3>
 <ul>
 <li>Remove &ldquo;quiet&rdquo; from the end of the value of the variable GRUB_CMDLINE_LINUX in the /etc/default/grub file</li>
-<li>run <em>grub2-mkconfig</em> to apply the update.</li>
+<li>Run <em>grub2-mkconfig</em> to apply the update.</li>
 <li>Reboot the system and observe that the system now displays verbose information during the boot process.</li>
 </ul>
 <h3 id="lab-reset-root-user-password">Lab: Reset root User Password</h3>
 <ul>
-<li>reset the <em>root</em> user password by booting the system into emergency mode with SELinux disabled.</li>
+<li>Reset the <em>root</em> user password by booting the system into emergency mode with SELinux disabled.</li>
 <li>Try to log in with root and enter the new password after the reboot.</li>
 </ul>
 <h3 id="lab-install-new-kernel">Lab: Install New Kernel</h3>
 <ul>
-<li>check the current version of the kernel using the <em>uname</em> or <em>rpm</em> command.</li>
+<li>Check the current version of the kernel using the <em>uname</em> or <em>rpm</em> command.</li>
 <li>Download a higher version from the Red Hat Customer Portal or <a href="http://rpmfind.net" rel="external" target="_blank">rpmfind.net</a> and install it.</li>
 <li>Reboot the system and ensure the new kernel is listed on the bootloader menu.</li>
 </ul>
 <h3 id="lab-download-and-install-a-new-kernel">Lab: Download and Install a New Kernel</h3>
 <ul>
 <li>download the latest available kernel packages from the Red Hat Customer Portal \</li>
-<li>install them using the dnf command. You will</li>
+<li>install them using the dnf command.</li>
 <li>ensure that the existing kernel and its configuration remain intact.</li>
 </ul>
 <ul>
@@ -206,6 +206,7 @@ confirm the loading of the new kernel:
 `cat /proc/version</p>
 </li>
 </ol>
+<p>Or just <code>dnf install kernel</code></p>
 
             <footer class="footline">
             </footer>
@@ -234,12 +235,12 @@ confirm the loading of the new kernel:
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1721305791" defer></script>
-        <script src="/js/search.js?1721305791" defer></script>
+        <script src="/js/auto-complete.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.min.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1722081508" defer></script>
+        <script src="/js/search.js?1722081508" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -310,8 +311,8 @@ confirm the loading of the new kernel:
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1721305791" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1721305791" defer></script>
+    <script src="/js/clipboard.min.js?1722081508" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1722081508" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -327,20 +328,20 @@ confirm the loading of the new kernel:
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1721305791" defer></script>
-    <script src="/js/js-yaml.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-color.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1722081508" defer></script>
+    <script src="/js/js-yaml.min.js?1722081508" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1721305791" defer></script>
+    <script src="/js/theme.js?1722081508" defer></script>
   </body>
 </html>

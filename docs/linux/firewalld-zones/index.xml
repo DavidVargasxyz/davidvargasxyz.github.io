@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/firewalld-zones/</link>
+    <description>firewalld Zones firewalld The host-based firewall solution employed in RHEL uses a kernel module called netfilter together with a filtering and packet classification framework called nftables for policing the traffic movement. It also supports other advanced features such as Network Address Translation (NAT) and port forwarding. This firewall solution inspects, modifies, drops, or routes incoming, outgoing, and forwarded network packets based on defined rulesets. Default host-based firewall management service in RHEL Ability to add, modify, or delete firewall rules immediately without disrupting current network connections or restarting the service process.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/firewalld-zones/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

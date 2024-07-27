@@ -6,30 +6,30 @@
     <meta name="generator" content="Hugo 0.124.1">
     <meta name="generator" content="Relearn 6.0.0+tip">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
-    <meta name="description" content="Logical Volume Manager (LVM) used for managing block storage in Linux. provides an abstraction layer between the physical storage and the file system enables the file system to be resized, span across multiple disks, use arbitrary disk space, etc. accumulates spaces taken from partitions or entire disks (called Physical Volumes) to form a logical container (called Volume Group) which is then divided into logical partitions (called Logical Volumes). online resizing of volume groups and logical volumes, online data migration between logical volumes and between physical volumes user-defined naming for volume groups and logical volumes mirroring and striping across multiple disks snapshotting of logical volumes.">
+    <meta name="description" content="Logical Volume Manager (LVM) Used for managing block storage in Linux. Provides an abstraction layer between the physical storage and the file system Enables the file system to be resized, span across multiple disks, use arbitrary disk space, etc. Accumulates spaces taken from partitions or entire disks (called Physical Volumes) to form a logical container (called Volume Group) which is then divided into logical partitions (called Logical Volumes). online resizing of volume groups and logical volumes, online data migration between logical volumes and between physical volumes user-defined naming for volume groups and logical volumes mirroring and striping across multiple disks snapshotting of logical volumes.">
     <meta name="author" content="David Vargas">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="Logical Volume Manager (LVM) used for managing block storage in Linux. provides an abstraction layer between the physical storage and the file system enables the file system to be resized, span across multiple disks, use arbitrary disk space, etc. accumulates spaces taken from partitions or entire disks (called Physical Volumes) to form a logical container (called Volume Group) which is then divided into logical partitions (called Logical Volumes). online resizing of volume groups and logical volumes, online data migration between logical volumes and between physical volumes user-defined naming for volume groups and logical volumes mirroring and striping across multiple disks snapshotting of logical volumes.">
+    <meta name="twitter:description" content="Logical Volume Manager (LVM) Used for managing block storage in Linux. Provides an abstraction layer between the physical storage and the file system Enables the file system to be resized, span across multiple disks, use arbitrary disk space, etc. Accumulates spaces taken from partitions or entire disks (called Physical Volumes) to form a logical container (called Volume Group) which is then divided into logical partitions (called Logical Volumes). online resizing of volume groups and logical volumes, online data migration between logical volumes and between physical volumes user-defined naming for volume groups and logical volumes mirroring and striping across multiple disks snapshotting of logical volumes.">
     <meta property="og:url" content="http://davidvargas.xyz/linux/logical-volume-manager-lvm/">
-    <meta property="og:description" content="Logical Volume Manager (LVM) used for managing block storage in Linux. provides an abstraction layer between the physical storage and the file system enables the file system to be resized, span across multiple disks, use arbitrary disk space, etc. accumulates spaces taken from partitions or entire disks (called Physical Volumes) to form a logical container (called Volume Group) which is then divided into logical partitions (called Logical Volumes). online resizing of volume groups and logical volumes, online data migration between logical volumes and between physical volumes user-defined naming for volume groups and logical volumes mirroring and striping across multiple disks snapshotting of logical volumes.">
+    <meta property="og:description" content="Logical Volume Manager (LVM) Used for managing block storage in Linux. Provides an abstraction layer between the physical storage and the file system Enables the file system to be resized, span across multiple disks, use arbitrary disk space, etc. Accumulates spaces taken from partitions or entire disks (called Physical Volumes) to form a logical container (called Volume Group) which is then divided into logical partitions (called Logical Volumes). online resizing of volume groups and logical volumes, online data migration between logical volumes and between physical volumes user-defined naming for volume groups and logical volumes mirroring and striping across multiple disks snapshotting of logical volumes.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Linux">
-    <meta itemprop="description" content="Logical Volume Manager (LVM) used for managing block storage in Linux. provides an abstraction layer between the physical storage and the file system enables the file system to be resized, span across multiple disks, use arbitrary disk space, etc. accumulates spaces taken from partitions or entire disks (called Physical Volumes) to form a logical container (called Volume Group) which is then divided into logical partitions (called Logical Volumes). online resizing of volume groups and logical volumes, online data migration between logical volumes and between physical volumes user-defined naming for volume groups and logical volumes mirroring and striping across multiple disks snapshotting of logical volumes.">
-    <meta itemprop="wordCount" content="4048">
+    <meta itemprop="description" content="Logical Volume Manager (LVM) Used for managing block storage in Linux. Provides an abstraction layer between the physical storage and the file system Enables the file system to be resized, span across multiple disks, use arbitrary disk space, etc. Accumulates spaces taken from partitions or entire disks (called Physical Volumes) to form a logical container (called Volume Group) which is then divided into logical partitions (called Logical Volumes). online resizing of volume groups and logical volumes, online data migration between logical volumes and between physical volumes user-defined naming for volume groups and logical volumes mirroring and striping across multiple disks snapshotting of logical volumes.">
+    <meta itemprop="wordCount" content="4003">
     <title></title>
-    <link href="/images/logo.svg?1721305790" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1721305791" rel="stylesheet">
-    <link href="/css/auto-complete.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1721305791" rel="stylesheet">
-    <link href="/css/fonts.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1721305791" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1721305791" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1721305791" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1721305791" rel="stylesheet">
-    <link href="/css/print.css?1721305791" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1721305791"></script>
+    <link href="/images/logo.svg?1722081507" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1722081508" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1722081508" rel="stylesheet">
+    <link href="/css/auto-complete.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1722081508" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1722081508" rel="stylesheet">
+    <link href="/css/fonts.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1722081508" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1722081508" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1722081508" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1722081508" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1722081508" rel="stylesheet">
+    <link href="/css/print.css?1722081508" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1722081508"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -77,8 +77,6 @@
   <ul>
     <li><a href="#logical-volume-manager-lvm">Logical Volume Manager (LVM)</a>
       <ul>
-        <li><a href="#physical-volumepv">Physical Volume(PV)</a></li>
-        <li><a href="#volume-group">Volume Group</a></li>
         <li><a href="#physical-extent">Physical Extent</a></li>
         <li><a href="#logical-volume">Logical Volume</a></li>
         <li><a href="#logical-extent">Logical Extent</a></li>
@@ -140,117 +138,175 @@
 <h1 id=""></h1>
 
 <h2 id="logical-volume-manager-lvm">Logical Volume Manager (LVM)</h2>
-<p>used for managing block storage in Linux.
-provides an abstraction layer between the physical storage and the file system
-enables the file system to be resized, span across multiple disks, use arbitrary disk space, etc.
-accumulates spaces taken from partitions or entire disks (called Physical Volumes) to form a logical container (called Volume Group) which is then divided into logical partitions (called Logical Volumes).
-online resizing of volume groups and logical volumes,
-online data migration between logical volumes and between physical volumes
-user-defined naming for volume groups and logical volumes
-mirroring and striping across multiple disks
-snapshotting of logical volumes.</p>
-<p><a href="#R-image-083936fbc9a75530e41c520a32e98489" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-0A8W8M1U.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-083936fbc9a75530e41c520a32e98489"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-0A8W8M1U.jpg"></a></p>
-<p>the LVM structure is made up of three key objects called physical volume, volume group, and logical volume.
-These objects are further virtually broken down into Physical Extents (PEs) and Logical Extents (LEs).</p>
-<h3 id="physical-volumepv">Physical Volume(PV)</h3>
-<p>created when a block storage device such as a partition or an entire disk is initialized and brought under LVM
-control. This process constructs LVM data structures on the device, including a label on the second sector and metadata shortly thereafter.</p>
-<p>The label includes the UUID, size, and pointers to the locations of data and metadata areas. Given the criticality of metadata, LVM stores a copy of it at the end of the physical volume as well. The rest of the device space is available for use.</p>
-<p>You can use an LVM command called pvs (physical volume scan or summary) to scan and list available physical volumes on server2:</p>
+<ul>
+<li>Used for managing block storage in Linux.</li>
+<li>Provides an abstraction layer between the physical storage and the file system</li>
+<li>Enables the file system to be resized, span across multiple disks, use arbitrary disk space, etc.</li>
+<li>Accumulates spaces taken from partitions or entire disks (called Physical Volumes) to form a logical container (called Volume Group) which is then divided into logical partitions (called Logical Volumes).</li>
+<li>online resizing of volume groups and logical volumes,</li>
+<li>online data migration between logical volumes and between physical volumes</li>
+<li>user-defined naming for volume groups and logical volumes</li>
+<li>mirroring and striping across multiple disks</li>
+<li>snapshotting of logical volumes.</li>
+</ul>
+<p><a href="#R-image-243db64a3138dfd5025c3da8e3a59571" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-0A8W8M1U.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-243db64a3138dfd5025c3da8e3a59571"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-0A8W8M1U.jpg"></a></p>
+<ul>
+<li>Made up of three key objects called physical volume, volume group, and logical volume.</li>
+<li>These objects are further virtually broken down into Physical Extents (PEs) and Logical Extents (LEs).</li>
+</ul>
+<p><strong>Physical Volume(PV)</strong></p>
+<ul>
+<li>created when a block storage device such as a partition or an entire disk is initialized and brought under LVM control.</li>
+<li>This process constructs LVM data structures on the device, including a label on the second sector and metadata shortly thereafter.</li>
+<li>The label includes the UUID, size, and pointers to the locations of data and metadata areas.</li>
+<li>Given the criticality of metadata, LVM stores a copy of it at the end of the physical volume as well.</li>
+<li>The rest of the device space is available for use.</li>
+</ul>
+<p>You can use an LVM command called <code>pvs</code> (physical volume scan or summary) to scan and list available physical volumes on server2:</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvs</span>
 </span></span><span style="display:flex;"><span>  PV         VG   Fmt  Attr PSize   PFree
-</span></span><span style="display:flex;"><span>  /dev/sda2  rhel lvm2 a--  &lt;19.00g    <span style="color:#ff9f43">0</span></span></span></code></pre></div><p>(a for allocatable under Attr)</p>
+</span></span><span style="display:flex;"><span>  /dev/sda2  rhel lvm2 a--  &lt;19.00g    <span style="color:#ff9f43">0</span></span></span></code></pre></div><ul>
+<li>(a for allocatable under Attr)</li>
+</ul>
 <p>Try running this command again with the -v flag to view more information
 about the physical volume.</p>
-<h3 id="volume-group">Volume Group</h3>
-<p>A Volume Group (VG) is created when at least one physical volume is added to it.
-The space from all physical volumes in a volume group is aggregated to form one large pool of storage, which is then used to
-build logical volumes.
-The physical volumes added to a volume group may be of varying sizes.
-LVM writes volume group metadata on each physical volume that is added to it.
-The volume group metadata contains its name,date and time of creation, how it was created, the extent size used, a list of physical and logical volumes, a mapping of physical and logical extents, etc.
-A volume group can have a custom name assigned to it at the time of its creation.
-A copy of the volume group metadata is stored and maintained at two distinct locations on each physical volume within the volume group.</p>
-<p>You can use an LVM command called vgs (volume group scan or summary) to scan and list available volume groups on server2:</p>
+<p><strong>Volume Group</strong></p>
+<ul>
+<li>Created when at least one physical volume is added to it.</li>
+<li>The space from all physical volumes in a volume group is aggregated to form one large pool of storage, which is then used to build logical volumes.</li>
+<li>Physical volumes added to a volume group may be of varying sizes.</li>
+<li>LVM writes volume group metadata on each physical volume that is added to it.</li>
+<li>The volume group metadata contains its name,date, and time of creation, how it was created, the extent size used, a list of physical and logical volumes, a mapping of physical and logical extents, etc.</li>
+<li>Can have a custom name assigned to it at the time of its creation.</li>
+<li>A copy of the volume group metadata is stored and maintained at two distinct locations on each physical volume within the volume group.</li>
+</ul>
+<p>Use <code>vgs</code> (volume group scan or summary) to scan and list available volume groups on server2:</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgs</span>
 </span></span><span style="display:flex;"><span>  VG   <span style="color:#78787e">#PV #LV #SN Attr   VSize   VFree</span>
-</span></span><span style="display:flex;"><span>  rhel   <span style="color:#ff9f43">1</span>   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">0</span> wz--n- &lt;19.00g    <span style="color:#ff9f43">0</span></span></span></code></pre></div><p>status of the volume group under the Attr column (w for writeable, z for resizable, and n for normal),</p>
+</span></span><span style="display:flex;"><span>  rhel   <span style="color:#ff9f43">1</span>   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">0</span> wz--n- &lt;19.00g    <span style="color:#ff9f43">0</span></span></span></code></pre></div><ul>
+<li>Status of the volume group under the Attr column (w for writeable, z for resizable, and n for normal),</li>
+</ul>
 <p>Try running this command again with the -v flag to view more information
 about the volume group.</p>
 <h3 id="physical-extent">Physical Extent</h3>
-<p>A physical volume is divided into several smaller logical pieces when it is added to a volume group. These logical pieces are known as Physical Extents (PE). An extent is the smallest allocatable unit of space in LVM.
-At the time of volume group creation, you can either define the size of the PE or leave it to the default value of 4MB.
-This implies that a 20GB physical volume would have approximately 5,000 PEs.
-Any physical volumes added to this volume group thereafter will use the same PE size.</p>
-<p>You can use an LVM command called vgdisplay (volume group display) on server2 and grep for &lsquo;PE Size&rsquo; to view the PE size used in the rhel volume group:</p>
+<ul>
+<li>A physical volume is divided into several smaller logical pieces when it is added to a volume group.</li>
+<li>These logical pieces are known as Physical Extents (PE).</li>
+<li>An extent is the smallest allocatable unit of space in LVM.</li>
+<li>At the time of volume group creation, you can either define the size of the PE or leave it to the default value of 4MB.</li>
+<li>This implies that a 20GB physical volume would have approximately 5,000 PEs.</li>
+<li>Any physical volumes added to this volume group thereafter will use the same PE size.</li>
+</ul>
+<p>Use <code>vgdisplay</code> (volume group display) on server2 and grep for &lsquo;PE Size&rsquo; to view the PE size used in the rhel volume group:</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgdisplay rhel | grep &#39;PE Size&#39;</span>
 </span></span><span style="display:flex;"><span>  PE Size               4.00 MiB</span></span></code></pre></div><h3 id="logical-volume">Logical Volume</h3>
-<p>A volume group consists of a pool of storage taken from one or more physical volumes.
-This volume group space is used to create one or more Logical Volumes (LVs).
-A logical volume can be created or weeded out online, expanded or shrunk online, and can use space taken from one or
-multiple physical volumes inside the volume group.</p>
+<ul>
+<li>A volume group consists of a pool of storage taken from one or more physical volumes.</li>
+<li>This volume group space is used to create one or more Logical Volumes (LVs).</li>
+<li>A logical volume can be created or weeded out online, expanded or shrunk online, and can use space taken from one or multiple physical volumes inside the volume group.</li>
+</ul>
 <p>The default naming convention used for logical volumes is lvol0, lvol1,
-lvol2, and so on
-you may assign custom names to them.</p>
-<p>You can use an LVM command called lvs (logical volume scan or summary) to scan and list available logical volumes on server2:</p>
+lvol2, and so on you may assign custom names to them.</p>
+<p>Use <code>lvs</code> (logical volume scan or summary) to scan and list available logical volumes on server2:</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvs</span>
 </span></span><span style="display:flex;"><span>  LV   VG   Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
 </span></span><span style="display:flex;"><span>  root rhel -wi-ao---- &lt;17.00g                                                    
-</span></span><span style="display:flex;"><span>  swap rhel -wi-ao----   2.00g</span></span></code></pre></div><p>Attr column (w for writeable, i for inherited allocation policy, a for active, and o for open) and their sizes.</p>
+</span></span><span style="display:flex;"><span>  swap rhel -wi-ao----   2.00g</span></span></code></pre></div><ul>
+<li>Attr column (w for writeable, i for inherited allocation policy, a for active, and o for open) and their sizes.</li>
+</ul>
 <p>Try running this command again with the -v flag to view more information about the logical volumes.</p>
 <h3 id="logical-extent">Logical Extent</h3>
-<p>A logical volume is made up of Logical Extents (LE).
-Logical extents point to physical extents, and they may be random or contiguous.
-The larger a logical volume is, the more logical extents it will have.
-Logical extents are a set of physical extents allocated to a logical volume.</p>
-<p>The LE size is always the same as the PE size in a volume group.
-The default LE size is 4MB, which corresponds to the default PE size of 4MB.</p>
-<p>You can use an LVM command called <code>lvdisplay</code> (logical volume display) on server2 to view information about the root logical volume in the rhel volume group.</p>
-<p><a href="#R-image-c97fcd117986166c81c8c1132d3701d5" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-E8W3BEYL.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c97fcd117986166c81c8c1132d3701d5"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-E8W3BEYL.jpg"></a></p>
-<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>david@fedora:~/Documents/perfectdarkmode/perfectdarkmode1.github.io$ sudo lvdisplay /dev/rhel/root
-</span></span><span style="display:flex;"><span>Place your right index finger on the fingerprint reader
-</span></span><span style="display:flex;"><span>  Volume group <span style="color:#5af78e">&#34;rhel&#34;</span> not found
-</span></span><span style="display:flex;"><span>  Cannot process volume group rhel</span></span></code></pre></div><p>The output does not disclose the LE size;
-however, you can convert theLV size in MBs (17,000) and then divide the result by the Current LE
-count (4,351) to get the LE size (which comes close to 4MB).</p>
+<ul>
+<li>A logical volume is made up of Logical Extents (LE).</li>
+<li>Logical extents point to physical extents, and they may be random or contiguous.</li>
+<li>The larger a logical volume is, the more logical extents it will have.</li>
+<li>Logical extents are a set of physical extents allocated to a logical volume.</li>
+<li>The LE size is always the same as the PE size in a volume group.</li>
+<li>The default LE size is 4MB, which corresponds to the default PE size of 4MB.</li>
+</ul>
+<p>Use <code>lvdisplay</code> (logical volume display) on server2 to view information about the root logical volume in the rhel volume group.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lvdisplay /dev/rhel/root</span>
+</span></span><span style="display:flex;"><span>  --- Logical volume ---
+</span></span><span style="display:flex;"><span>  LV Path                /dev/rhel/root
+</span></span><span style="display:flex;"><span>  LV Name                root
+</span></span><span style="display:flex;"><span>  VG Name                rhel
+</span></span><span style="display:flex;"><span>  LV UUID                DhHyeI-VgwM-w75t-vRcC-5irj-AuHC-neryQf
+</span></span><span style="display:flex;"><span>  LV Write Access        read/write
+</span></span><span style="display:flex;"><span>  LV Creation host, <span style="color:#ff5c57">time</span> localhost.localdomain, 2024-07-08 17:32:18 -0700
+</span></span><span style="display:flex;"><span>  LV Status              available
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># open                 1</span>
+</span></span><span style="display:flex;"><span>  LV Size                &lt;17.00 GiB
+</span></span><span style="display:flex;"><span>  Current LE             <span style="color:#ff9f43">4351</span>
+</span></span><span style="display:flex;"><span>  Segments               <span style="color:#ff9f43">1</span>
+</span></span><span style="display:flex;"><span>  Allocation             inherit
+</span></span><span style="display:flex;"><span>  Read ahead sectors     auto
+</span></span><span style="display:flex;"><span>  - currently <span style="color:#ff5c57">set</span> to     <span style="color:#ff9f43">8192</span>
+</span></span><span style="display:flex;"><span>  Block device           253:0</span></span></code></pre></div><ul>
+<li>The output does not disclose the LE size;  however, you can convert the LV size in MBs (17,000) and then divide the result by the Current LE count (4,351) to get the LE size (which comes close to 4MB).</li>
+</ul>
 <h3 id="lvm-operations-and-commands">LVM Operations and Commands</h3>
-<p>creating and removing a physical volume, volume group, and logical volume
-extending and reducing a volume group and logical volume
-renaming a volume group and logical volume
-listing and displaying physical volume, volume group, and logical volume
-information.</p>
+<ul>
+<li>Creating and removing a physical volume, volume group, and logical volume</li>
+<li>Extending and reducing a volume group and logical volume</li>
+<li>Renaming a volume group and logical volume</li>
+<li>listing and displaying physical volume, volume group, and logical volume information.</li>
+</ul>
 <h3 id="create-and-remove-operations">Create and Remove Operations</h3>
-<p><strong>pvcreate/pvremove</strong>                <br>
-Initializes/uninitializes a disk or partition for LVM use</p>
-<p><strong>vgcreate/vgremove</strong>               <br>
-Creates/removes a volume group</p>
-<p><strong>lvcreate/lvremove</strong>                <br>
-Creates/removes a logical volume</p>
+<p><code>pvcreate</code>/<code>pvremove</code></p>
+<ul>
+<li>Initializes/uninitializes a disk or partition for LVM use</li>
+</ul>
+<p><code>vgcreate</code>/<code>vgremove</code></p>
+<ul>
+<li>Creates/removes a volume group</li>
+</ul>
+<p><code>lvcreate</code>/<code>lvremove</code></p>
+<ul>
+<li>Creates/removes a logical volume</li>
+</ul>
 <h3 id="extend-and-reduce-operations">Extend and Reduce Operations</h3>
-<p><strong>vgextend/vgreduce</strong>                <br>
-Adds/removes a physical volume to/from a volume group</p>
-<p><strong>lvextend/lvreduce</strong>                <br>
-Extends/reduces the size of a logical volume</p>
-<p><strong>lvresize</strong>                         <br>
-Resizes a logical volume. With the -r option, this command calls the fsadm command to resize the underlying file system as well.</p>
+<p><code>vgextend</code>/<code>vgreduce</code></p>
+<ul>
+<li>Adds/removes a physical volume to/from a volume group</li>
+</ul>
+<p><code>lvextend</code>/<code>lvreduce</code></p>
+<ul>
+<li>Extends/reduces the size of a logical volume</li>
+</ul>
+<p><code>lvresize</code></p>
+<ul>
+<li>Resizes a logical volume. With the <code>-r</code> option, this command calls the <code>fsadm</code> command to resize the underlying file system as well.</li>
+</ul>
 <h3 id="rename-operations">Rename Operations</h3>
-<p><strong>vgrename</strong>                         <br>
-Renames a volume group</p>
-<p><strong>lvrename</strong>                         <br>
-Renames a logical volume</p>
+<p><code>vgrename</code></p>
+<ul>
+<li>Rename a volume group</li>
+</ul>
+<p><code>lvrename</code></p>
+<ul>
+<li>Rename a logical volume</li>
+</ul>
 <h3 id="list-and-display-operations">List and Display Operations</h3>
-<p><strong>pvs/pvdisplay</strong>                    <br>
-Lists/displays physical volume information</p>
-<p><strong>vgs/vgdisplay lvs/lvdisplay</strong>      <br>
-Lists/displays volume group information Lists/displays logical volume information</p>
+<p><code>pvs</code>/<code>pvdisplay</code></p>
+<ul>
+<li>Lists/displays physical volume information</li>
+</ul>
+<p><code>vgs</code>/<code>vgdisplay</code> <code>lvs</code>/<code>lvdisplay</code></p>
+<ul>
+<li>
+<p>Lists/displays volume group information Lists/displays logical volume information</p>
+</li>
+<li>
 <p>All the tools accept the -v switch to support verbosity.</p>
+</li>
+</ul>
 <h3 id="exercise-13-6-create-physical-volume-and-volume-group-server2">Exercise 13-6: Create Physical Volume and Volume Group (server2)</h3>
-<p>initialize one partition sdd1 (90MB) and one disk sde (250MB) for use in LVM.
-create a volume group called vgbook and add both physical volumes to it
-use the PE size of 16MB
-list and display the volume group and the physical volumes.</p>
+<ul>
+<li>initialize one partition sdd1 (90MB) and one disk sde (250MB) for use in LVM.</li>
+<li>create a volume group called vgbook and add both physical volumes to it use the PE size of 16MB</li>
+<li>list and display the volume group and the physical volumes.</li>
+</ul>
 <p>1. Create a partition of size 90MB on sdd using the parted command and confirm. You need to label the disk first, as it is a new disk.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdd mklabel msdos</span>
 </span></span><span style="display:flex;"><span>Information: You may need to update /etc/fstab.
@@ -277,7 +333,7 @@ list and display the volume group and the physical volumes.</p>
 </span></span><span style="display:flex;"><span>  Set up physical volume <span style="color:#ff6ac1">for</span> <span style="color:#5af78e">&#34;/dev/sde&#34;</span> with <span style="color:#ff9f43">512000</span> available sectors.
 </span></span><span style="display:flex;"><span>  Zeroing start of device /dev/sde.
 </span></span><span style="display:flex;"><span>  Writing physical volume data to disk <span style="color:#5af78e">&#34;/dev/sde&#34;</span>.
-</span></span><span style="display:flex;"><span>  Physical volume <span style="color:#5af78e">&#34;/dev/sde&#34;</span> successfully created.</span></span></code></pre></div><p>3. Create vgbook volume group using the vgcreate command and add the two physical volumes to it. Use the -s option to specify the PE size in
+</span></span><span style="display:flex;"><span>  Physical volume <span style="color:#5af78e">&#34;/dev/sde&#34;</span> successfully created.</span></span></code></pre></div><p>3. Create vgbook volume group using the <code>vgcreate</code> command and add the two physical volumes to it. Use the -s option to specify the PE size in
 MBs.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgcreate -vs 16 vgbook /dev/sdd1 /dev/sde</span>
 </span></span><span style="display:flex;"><span>  Wiping signatures on new PV /dev/sdd1.
@@ -325,8 +381,7 @@ MBs.</p>
 </span></span><span style="display:flex;"><span>  PV         VG     Fmt  Attr PSize   PFree  
 </span></span><span style="display:flex;"><span>  /dev/sda2  rhel   lvm2 a--  &lt;19.00g      <span style="color:#ff9f43">0</span> 
 </span></span><span style="display:flex;"><span>  /dev/sdd1  vgbook lvm2 a--   80.00m  80.00m
-</span></span><span style="display:flex;"><span>  /dev/sde   vgbook lvm2 a--  240.00m 240.00m</span></span></code></pre></div><p>The output shows the physical volumes in vgbook, along with their utilization status.</p>
-<p>7. Display detailed information about the physical volumes:</p>
+</span></span><span style="display:flex;"><span>  /dev/sde   vgbook lvm2 a--  240.00m 240.00m</span></span></code></pre></div><p>7. Display detailed information about the physical volumes:</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvdisplay /dev/sdd1</span>
 </span></span><span style="display:flex;"><span>  --- Physical volume ---
 </span></span><span style="display:flex;"><span>  PV Name               /dev/sdd1
@@ -337,14 +392,16 @@ MBs.</p>
 </span></span><span style="display:flex;"><span>  Total PE              <span style="color:#ff9f43">5</span>
 </span></span><span style="display:flex;"><span>  Free PE               <span style="color:#ff9f43">5</span>
 </span></span><span style="display:flex;"><span>  Allocated PE          <span style="color:#ff9f43">0</span>
-</span></span><span style="display:flex;"><span>  PV UUID               8x8IgZ-3z5T-ODA8-dofQ-xk5s-QN7I-KwpQ1e</span></span></code></pre></div><p>Once a partition or disk is initialized and added to a volume group, they are treated identically within the volume group. LVM does not
-prefer one over the other.</p>
+</span></span><span style="display:flex;"><span>  PV UUID               8x8IgZ-3z5T-ODA8-dofQ-xk5s-QN7I-KwpQ1e</span></span></code></pre></div><ul>
+<li>Once a partition or disk is initialized and added to a volume group, they are treated identically within the volume group. LVM does not prefer one over the other.</li>
+</ul>
 <h3 id="exercise-13-7-create-logical-volumesserver2">Exercise 13-7: Create Logical Volumes(server2)</h3>
-<p>create two logical volumes, lvol0 and lvbook1, in the vgbook volume group.
-use 120MB for lvol0 and 192MB for lvbook1 from the available pool of space.
-display the details of the volume group and the logical volumes.</p>
-<p>1. Create a logical volume with the default name lvol0 using the <code>lvcreate</code> command. Use the -L option to specify the logical volume size,
-120MB. You may use the -v, -vv, or -vvv option with the command for verbosity.</p>
+<ul>
+<li>Create two logical volumes, lvol0 and lvbook1, in the vgbook volume group.</li>
+<li>Use 120MB for lvol0 and 192MB for lvbook1 from the available pool of space.</li>
+<li>Display the details of the volume group and the logical volumes.</li>
+</ul>
+<p>1. Create a logical volume with the default name lvol0 using the <code>lvcreate</code> command. Use the -L option to specify the logical volume size, 120MB. You may use the -v, -vv, or -vvv option with the command for verbosity.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvcreate -vL 120 vgbook</span>
 </span></span><span style="display:flex;"><span>  Rounding up size to full physical extent 128.00 MiB
 </span></span><span style="display:flex;"><span>  Creating logical volume lvol0
@@ -357,11 +414,18 @@ display the details of the volume group and the logical volumes.</p>
 </span></span><span style="display:flex;"><span>  Wiping known signatures on logical volume vgbook/lvol0.
 </span></span><span style="display:flex;"><span>  Initializing 4.00 KiB of logical volume vgbook/lvol0 with value 0.
 </span></span><span style="display:flex;"><span>  Logical volume <span style="color:#5af78e">&#34;lvol0&#34;</span> created.
-</span></span><span style="display:flex;"><span>  Creating volume group backup <span style="color:#5af78e">&#34;/etc/lvm/backup/vgbook&#34;</span> <span style="color:#ff6ac1">(</span>seqno 2<span style="color:#ff6ac1">)</span>.</span></span></code></pre></div><p>The size for the logical volume may be specified in units such as MBs, GBs, TBs, or as a count of LEs; however, MB is the default if no unit is
-specified (see the previous command).</p>
-<p>The size of a logical volume is always in multiples of the PE size. For instance, logical volumes created in vgbook with the PE size set at 16MB can be 16MB, 32MB, 48MB,
-64MB, and so on. The output above indicates that the logical volume is 128MB (16x8), and not 120MB as specified.</p>
-<p>2. Create lvbook1 of size 192MB (16x12) using the lvcreate command. Use the -l switch to specify the size in logical extents and -n for the custom name.</p>
+</span></span><span style="display:flex;"><span>  Creating volume group backup <span style="color:#5af78e">&#34;/etc/lvm/backup/vgbook&#34;</span> <span style="color:#ff6ac1">(</span>seqno 2<span style="color:#ff6ac1">)</span>.</span></span></code></pre></div><ul>
+<li>
+<p>Size for the logical volume may be specified in units such as MBs, GBs, TBs, or as a count of LEs</p>
+</li>
+<li>
+<p>MB is the default if no unit is specified</p>
+</li>
+<li>
+<p>The size of a logical volume is always in multiples of the PE size. For instance, logical volumes created in vgbook with the PE size set at 16MB can be 16MB, 32MB, 48MB, 64MB, and so on.</p>
+</li>
+</ul>
+<p>2. Create lvbook1 of size 192MB (16x12) using the <code>lvcreate</code> command. Use the -l switch to specify the size in logical extents and -n for the custom name.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvcreate -l 12 -n lvbook1 vgbook</span>
 </span></span><span style="display:flex;"><span>  Logical volume <span style="color:#5af78e">&#34;lvbook1&#34;</span> created.</span></span></code></pre></div><p>3. List the logical volume information:</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvs</span>
@@ -470,12 +534,16 @@ details:</p>
 </span></span><span style="display:flex;"><span>  Read ahead sectors     auto
 </span></span><span style="display:flex;"><span>  - currently <span style="color:#ff5c57">set</span> to     <span style="color:#ff9f43">8192</span>
 </span></span><span style="display:flex;"><span>  Block device           253:3</span></span></code></pre></div><h3 id="exercise-13-8-extend-a-volume-group-and-a-logical-volumeserver2">Exercise 13-8: Extend a Volume Group and a Logical Volume(server2)</h3>
-<p>add another partition sdd2 of size 158MB to vgbook to increase the pool of allocatable space
-initialize the new partition prior to adding it to the volume group.
-increase the size of lvbook1 to 336MB.
-display basic information for the physical volumes, volume group, and logical volume.</p>
+<ul>
+<li>Add another partition sdd2 of size 158MB to vgbook to increase the pool of allocatable space.</li>
+<li>Initialize the new partition prior to adding it to the volume group.</li>
+<li>Increase the size of lvbook1 to 336MB.</li>
+<li>Display basic information for the physical volumes, volume group, and logical volume.</li>
+</ul>
 <p>1. Create a partition of size 158MB on sdd using the parted command. Display the new partition to confirm the partition number and size.</p>
-<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdd print                              </span>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server20 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># parted /dev/sdd mkpart primary 91 250</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdd print                              </span>
 </span></span><span style="display:flex;"><span>Model: ATA VBOX HARDDISK <span style="color:#ff6ac1">(</span>scsi<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span>Disk /dev/sdd: 262MB
 </span></span><span style="display:flex;"><span>Sector size <span style="color:#ff6ac1">(</span>logical/physical<span style="color:#ff6ac1">)</span>: 512B/512B
@@ -492,7 +560,7 @@ display basic information for the physical volumes, volume group, and logical vo
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgs</span>
 </span></span><span style="display:flex;"><span>  VG     <span style="color:#78787e">#PV #LV #SN Attr   VSize   VFree  </span>
 </span></span><span style="display:flex;"><span>  rhel     <span style="color:#ff9f43">1</span>   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">0</span> wz--n- &lt;19.00g      <span style="color:#ff9f43">0</span> 
-</span></span><span style="display:flex;"><span>  vgbook   <span style="color:#ff9f43">3</span>   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">0</span> wz--n- 464.00m 144.00m</span></span></code></pre></div><p>5. Extend the size of lvbook1 to 340MB by adding 144MB using the lvextend command:</p>
+</span></span><span style="display:flex;"><span>  vgbook   <span style="color:#ff9f43">3</span>   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">0</span> wz--n- 464.00m 144.00m</span></span></code></pre></div><p>5. Extend the size of lvbook1 to 340MB by adding 144MB using the <code>lvextend</code> command:</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvextend -L +144 /dev/vgbook/lvbook1</span>
 </span></span><span style="display:flex;"><span>  Size of logical volume vgbook/lvbook1 changed from 192.00 MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">12</span> extents<span style="color:#ff6ac1">)</span> to 336.00 MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">21</span> extents<span style="color:#ff6ac1">)</span>.
 </span></span><span style="display:flex;"><span>  Logical volume vgbook/lvbook1 successfully resized.</span></span></code></pre></div><p>EXAM TIP: Make sure the expansion of a logical volume does not affect the file system and the data it contains.</p>
@@ -575,22 +643,23 @@ details:</p>
 </span></span><span style="display:flex;"><span>  /dev/sdd1  vgbook lvm2 a--   80.00m    <span style="color:#ff9f43">0</span> 
 </span></span><span style="display:flex;"><span>  /dev/sdd2  vgbook lvm2 a--  144.00m    <span style="color:#ff9f43">0</span> 
 </span></span><span style="display:flex;"><span>  /dev/sde   vgbook lvm2 a--  240.00m    <span style="color:#ff9f43">0</span></span></span></code></pre></div><p>8. View a summary of the logical volumes:</p>
-<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvs</span>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvs</span>
 </span></span><span style="display:flex;"><span>  LV      VG     Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
 </span></span><span style="display:flex;"><span>  root    rhel   -wi-ao---- &lt;17.00g                                                    
 </span></span><span style="display:flex;"><span>  swap    rhel   -wi-ao----   2.00g                                                    
 </span></span><span style="display:flex;"><span>  lvbook1 vgbook -wi-a----- 336.00m                                                    
 </span></span><span style="display:flex;"><span>  lvol0   vgbook -wi-a----- 128.00m </span></span></code></pre></div><h3 id="exercise-13-9-rename-reduce-extend-and-remove-logical-volumesserver2">Exercise 13-9: Rename, Reduce, Extend, and Remove Logical Volumes(server2)</h3>
-<p>rename lvol0 to lvbook2.
-decrease the size of lvbook2 to 50MB using the lvreduce command<br>
-add 32MB with the lvresize command.
-remove both logical volumes.display the summary for the volume groups, logical volumes, and
-physical volumes.</p>
-<p>1. Rename lvol0 to lvbook2 using the lvrename command and confirm with
+<ul>
+<li>Rename lvol0 to lvbook2.</li>
+<li>Decrease the size of lvbook2 to 50MB using the <code>lvreduce</code> command</li>
+<li>Add 32MB with the <code>lvresize command.</code></li>
+<li>remove both logical volumes.</li>
+<li>display the summary for the volume groups, logical volumes, and physical volumes.</li>
+</ul>
+<p>1. Rename lvol0 to lvbook2 using the <code>lvrename</code> command and confirm with
 lvs:</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvrename vgbook lvol0 lvbook2</span>
-</span></span><span style="display:flex;"><span>  Renamed <span style="color:#5af78e">&#34;lvol0&#34;</span> to <span style="color:#5af78e">&#34;lvbook2&#34;</span> in volume group <span style="color:#5af78e">&#34;vgbook&#34;</span></span></span></code></pre></div><p>2. Reduce the size of lvbook2 to 50MB with the <code>lvreduce</code> command. Specify the absolute desired size for the logical volume. Answer &ldquo;Do you
-really want to reduce vgbook/lvbook2?&rdquo; in the affirmative.</p>
+</span></span><span style="display:flex;"><span>  Renamed <span style="color:#5af78e">&#34;lvol0&#34;</span> to <span style="color:#5af78e">&#34;lvbook2&#34;</span> in volume group <span style="color:#5af78e">&#34;vgbook&#34;</span></span></span></code></pre></div><p>2. Reduce the size of lvbook2 to 50MB with the <code>lvreduce</code> command. Specify the absolute desired size for the logical volume. Answer &ldquo;Do you really want to reduce vgbook/lvbook2?&rdquo; in the affirmative.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvreduce -L 50 /dev/vgbook/lvbook2</span>
 </span></span><span style="display:flex;"><span>  Rounding size to boundary between physical extents: 64.00 MiB.
 </span></span><span style="display:flex;"><span>  No file system found on /dev/vgbook/lvbook2.
@@ -660,23 +729,25 @@ allocation.</p>
 </span></span><span style="display:flex;"><span>  Total PE              <span style="color:#ff9f43">4863</span>
 </span></span><span style="display:flex;"><span>  Alloc PE / Size       <span style="color:#ff9f43">4863</span> / &lt;19.00 GiB
 </span></span><span style="display:flex;"><span>  Free  PE / Size       <span style="color:#ff9f43">0</span> / <span style="color:#ff9f43">0</span>   
-</span></span><span style="display:flex;"><span>  VG UUID               UiK3fy-FGOc-2fnP-C1Y6-JS0l-irEe-Sq3c4h</span></span></code></pre></div><p>5. Remove both lvbook1 and lvbook2 logical volumes using the lvremove
-command. Use the -f option to suppress the &ldquo;Do you really want to remove
+</span></span><span style="display:flex;"><span>  VG UUID               UiK3fy-FGOc-2fnP-C1Y6-JS0l-irEe-Sq3c4h</span></span></code></pre></div><p>5. Remove both lvbook1 and lvbook2 logical volumes using the <code>lvremove</code>
+command. Use the <code>-f</code> option to suppress the &ldquo;Do you really want to remove
 active logical volume&rdquo; message.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvremove /dev/vgbook/lvbook1 -f</span>
 </span></span><span style="display:flex;"><span>  Logical volume <span style="color:#5af78e">&#34;lvbook1&#34;</span> successfully removed.
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvremove /dev/vgbook/lvbook2 -f</span>
-</span></span><span style="display:flex;"><span>  Logical volume <span style="color:#5af78e">&#34;lvbook2&#34;</span> successfully removed.</span></span></code></pre></div><p>Removing a logical volume is a destructive task. You need to ensure that you perform a backup of any data in the target logical volume prior to
-deleting it. You will need to unmount the file system or disable swap in the logical volume.</p>
-<p><br>
-6. Execute the <code>vgdisplay</code> command and grep for &ldquo;Cur LV&rdquo; to see the number of logical volumes currently available in vgbook. It should show
-0, as you have removed both logical volumes.</p>
+</span></span><span style="display:flex;"><span>  Logical volume <span style="color:#5af78e">&#34;lvbook2&#34;</span> successfully removed.</span></span></code></pre></div><ul>
+<li>Removing an LV is destructive</li>
+<li>Backup any data in the target LV before deleting it.</li>
+<li>You will need to <code>unmount</code> the file system or disable swap in the logical volume.
+<br>
+6. Execute the <code>vgdisplay</code> command and grep for &ldquo;Cur LV&rdquo; to see the number of logical volumes currently available in vgbook. It should show 0, as you have removed both logical volumes.</li>
+</ul>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgdisplay vgbook | grep &#39;Cur LV&#39;</span>
 </span></span><span style="display:flex;"><span>  Cur LV                <span style="color:#ff9f43">0</span></span></span></code></pre></div><h3 id="exercise-13-10-reduce-and-remove-a-volume-groupserver2">Exercise 13-10: Reduce and Remove a Volume Group(server2)</h3>
 <p>\</p>
 <ul>
-<li>reduce vgbook by removing the sdd1 and sde physical volumes from it</li>
-<li>remove the volume group.</li>
+<li>Reduce vgbook by removing the sdd1 and sde physical volumes from it</li>
+<li>Remove the volume group.</li>
 <li>Confirm the deletion of the volume group and the logical volumes at the end.</li>
 </ul>
 <p>1. Remove sdd1 and sde physical volumes from vgbook by issuing the <code>vgreduce</code> command:</p>
@@ -684,9 +755,10 @@ deleting it. You will need to unmount the file system or disable swap in the log
 </span></span><span style="display:flex;"><span>  Removed <span style="color:#5af78e">&#34;/dev/sdd1&#34;</span> from volume group <span style="color:#5af78e">&#34;vgbook&#34;</span>
 </span></span><span style="display:flex;"><span>  Removed <span style="color:#5af78e">&#34;/dev/sde&#34;</span> from volume group <span style="color:#5af78e">&#34;vgbook&#34;</span></span></span></code></pre></div><p>2. Remove the volume group using the <code>vgremove</code> command. This will also remove the last physical volume, sdd2, from it.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgremove vgbook</span>
-</span></span><span style="display:flex;"><span>  Volume group <span style="color:#5af78e">&#34;vgbook&#34;</span> successfully removed</span></span></code></pre></div><p>You can also use the -f option with the vgremove command to force the volume group removal even if it contains any number of logical and physical volumes in it.</p>
-<p>Remember to proceed with caution whenever you perform reduce and erase operations.</p>
-<p>3. Execute the vgs and lvs commands for confirmation:</p>
+</span></span><span style="display:flex;"><span>  Volume group <span style="color:#5af78e">&#34;vgbook&#34;</span> successfully removed</span></span></code></pre></div><ul>
+<li>Use the <code>-f</code> option with the <code>vgremove</code> command to force the volume group removal even if it contains any number of logical and physical volumes in it.</li>
+</ul>
+<p>3. Execute the <code>vgs</code> and <code>lvs</code> commands for confirmation:</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgs</span>
 </span></span><span style="display:flex;"><span>  VG   <span style="color:#78787e">#PV #LV #SN Attr   VSize   VFree</span>
 </span></span><span style="display:flex;"><span>  rhel   <span style="color:#ff9f43">1</span>   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">0</span> wz--n- &lt;19.00g    <span style="color:#ff9f43">0</span> 
@@ -698,7 +770,7 @@ deleting it. You will need to unmount the file system or disable swap in the log
 <li>Uninitialize all three physical volumes&mdash;sdd1, sdd2, and sde&mdash;by deleting the LVM structural information from them.</li>
 <li>Use the <code>pvs</code> command for confirmation.</li>
 <li>Remove the partitions from the sdd disk and</li>
-<li>verify that all disks used in Exercises 13-6 to 13-10 are now in their original raw state.</li>
+<li>Verify that all disks used in Exercises 13-6 to 13-10 are now in their original raw state.</li>
 </ul>
 <p>1. Remove the LVM structures from sdd1, sdd2, and sde using the <code>pvremove</code> command:</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvremove /dev/sdd1 /dev/sdd2 /dev/sde</span>
@@ -753,12 +825,12 @@ deleting it. You will need to unmount the file system or disable swap in the log
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1721305791" defer></script>
-        <script src="/js/search.js?1721305791" defer></script>
+        <script src="/js/auto-complete.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.min.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1722081508" defer></script>
+        <script src="/js/search.js?1722081508" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -829,8 +901,8 @@ deleting it. You will need to unmount the file system or disable swap in the log
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1721305791" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1721305791" defer></script>
+    <script src="/js/clipboard.min.js?1722081508" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1722081508" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -846,20 +918,20 @@ deleting it. You will need to unmount the file system or disable swap in the log
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1721305791" defer></script>
-    <script src="/js/js-yaml.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-color.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1722081508" defer></script>
+    <script src="/js/js-yaml.min.js?1722081508" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1721305791" defer></script>
+    <script src="/js/theme.js?1722081508" defer></script>
   </body>
 </html>

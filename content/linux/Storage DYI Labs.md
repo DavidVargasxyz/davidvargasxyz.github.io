@@ -133,7 +133,6 @@ The operation has completed successfully.
 
 ### Lab 13-3: Create Volume Group and Logical Volumes
 
-\
 initialize 1x250MB disk for use in LVM (use lsblk to identify available disks). 
 ```bash
 root@server2 ~]# sudo parted /dev/sdd mklabel msdos
@@ -160,9 +159,11 @@ Number  Start   End    Size   Type     File system  Flags
 
 ```
 
+(Can also just use the full disk without making it into a partition first.)
+
 Create volume group vg100 with PE size 16MB and add the physical volume. 
 ```bash
-[root@server2 ~]# sudo vgcreate -vs 15 vg100 /dev/sdd1
+[root@server2 ~]# sudo vgcreate -vs 16 vg100 /dev/sdd1
   Wiping signatures on new PV /dev/sdd1.
   Adding physical volume '/dev/sdd1' to volume group 'vg100'
   Creating volume group backup "/etc/lvm/backup/vg100" (seqno 1).
@@ -261,7 +262,7 @@ Use the vgs, pvs, lvs, and vgdisplay commands for verification.
 
 ### Lab 13-4: Expand Volume Group and Logical Volume
 
-create a partition on an available 250MB disk and initialize it for use in LVM (use lsblk to identify available disks). 
+Create a partition on an available 250MB disk and initialize it for use in LVM (use lsblk to identify available disks). 
 ```bash
 [root@server2 ~]# parted /dev/sdb mklabel msdos
 Warning: The existing disk label on /dev/sdb will be destroyed and all data on this disk will be lost. Do you want to continue?

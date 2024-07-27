@@ -3,7 +3,7 @@
   <channel>
     <title></title>
     <link>http://davidvargas.xyz/linux/history-substitution/</link>
-    <description>History Substitution Command history or history expansion. Can disable and re-enable if required. Values may be altered for individual users by editing .bashrc or .bash_profile in the user’s home directory. Three variables HISTFILE Defines the name and location of the history file to be used to store command history, Default is .bash_history in the user’s home directory. HISTSIZE Size of the history buffer for the current shell. HISTFILESIZE sets the maximum number of commands allowed for storage in the history file at the beginning of the current session and are written to the HISTFILE from memory at the end of the current terminal session.</description>
+    <description>History Substitution Command history or history expansion. Can disable and re-enable if required. Values may be altered for individual users by editing .bashrc or .bash_profile in the user’s home directory. Three variables HISTFILE Defines the name and location of the history file to be used to store command history, Default is .bash_history in the user’s home directory. HISTSIZE Size of the history buffer for the current shell. HISTFILESIZE Sets the maximum number of commands allowed for storage in the history file at the beginning of the current session and are written to the HISTFILE from memory at the end of the current terminal session.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://davidvargas.xyz/linux/history-substitution/index.xml" rel="self" type="application/rss+xml" />

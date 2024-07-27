@@ -92,8 +92,7 @@ A\. The `lvreduce` and `lvresize` commands.
 ---
 
 Q\. A single disk can be used by both parted and LVM solutions at the same time. True or False?
-A\. True. A single disk can be shared between parted-created partitions
-and LVM.
+A\. True. A single disk can be shared between parted-created partitions and LVM.
 
 ---
 
@@ -113,14 +112,12 @@ A\. The default PE size is 4MB.
 ---
 
 Q\. What is the default name for the first logical volume in a volume group?
-A\. lvol0 is the default name for the first logical volume created in a
-volume group.
+A\. lvol0 is the default name for the first logical volume created in a volume group.
 
 ---
 
 Q\. What is one difference between the `pvs` and `pvdisplay` commands?
-A\. The `pvs` command lists basic information about physical volumes
-whereas the `pvdisplay` command shows the details.
+A\. The `pvs` command lists basic information about physical volumes whereas the `pvdisplay` command shows the details.
 
 ---
 

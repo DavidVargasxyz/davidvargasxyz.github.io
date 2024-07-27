@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/bash-labs/</link>
+    <description>Bash Labs Lab: View environment variables env printenvLab: Viewing Environment variable values View the value for the PATH variable echo $PATH View the value for the HOME variable echo $HOME View the value for the SHELL variable echo $SHELL View the value for the TERM variable echo $TERM View the value for the PPID variable echo $PPID View the value for the PS1 variable echo $PS1 View the value for the USER variable echo $USERLab: Setting and Unsetting Variables Define a local variable called VR1: VR1=RHEL9 View the value of VR1: echo $VR1 Type bash at the command prompt to enter a sub-shell and then run echo $VR1 to check whether the variable is visible in the sub-shell.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/bash-labs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

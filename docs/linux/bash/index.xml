@@ -3,7 +3,7 @@
   <channel>
     <title></title>
     <link>http://davidvargas.xyz/linux/bash/</link>
-    <description>Chapter 7 RHCSA Notes - The Bash Shell Introduction to the bash shell&#xA;Understand, set, and unset shell and environment variables Comprehend and use command and variable expansions Grasp and utilize input, output, and error redirections Know and use history substitution, command line editing, tab completion, tilde substitution, and command aliasing Identify and use metacharacters, wildcard characters, pipes, and pipelines Discover the use of quoting mechanisms and regular expressions Run and control jobs in background and foreground Identify and examine shell startup files RHCSA Objectives: 02.</description>
+    <description>Bash Shell and Environment Variables Input, Output, and Error Redirections History Substitution Editing at the Command line Metacharacters and Wildcard Jobs Shell Startup Files Bash Labs Bash Review Questions </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://davidvargas.xyz/linux/bash/index.xml" rel="self" type="application/rss+xml" />

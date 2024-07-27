@@ -1,11 +1,5 @@
 ## Appendix D: Sample RHCSA Exam 4 {.style3}
 
-\
-
-::: {style="border-style: double; border-color: rgb(0, 0, 0); border-top-width: 1px; width: 0.375;"}
-:::
-
-\
 
 Time Duration:3 hours
 
@@ -24,7 +18,7 @@ exam.
 
 \
 
-### Setup for Sample Exam 4: {.style3}
+### Setup for Sample Exam 4: 
 
 Build two virtual machines with RHEL 9 Server with GUI (Exercises 1-1
 and 1-2). Use a 20GB disk for the OS with default partitioning. Add
@@ -80,8 +74,7 @@ assignments based on your lab environment. (Exercise 15-4).
 
 \
 
-Task 03: On VM2, set the system hostname to rhcsa6.example.com and alias
-rhcsa6 using a manual method (modify file by hand). Make sure that the
+Task 03: On VM2, set the system hostname to rhcsa6.example.com and alias rhcsa6 using a manual method (modify file by hand). Make sure that the
 new hostname is reflected in the command prompt. (Exercises 15-1 and
 15-5).
 

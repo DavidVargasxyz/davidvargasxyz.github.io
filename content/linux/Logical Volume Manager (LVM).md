@@ -1,71 +1,72 @@
 ## Logical Volume Manager (LVM)
 
-used for managing block storage in Linux. 
-provides an abstraction layer between the physical storage and the file system
-enables the file system to be resized, span across multiple disks, use arbitrary disk space, etc. 
-accumulates spaces taken from partitions or entire disks (called Physical Volumes) to form a logical container (called Volume Group) which is then divided into logical partitions (called Logical Volumes).
-online resizing of volume groups and logical volumes, 
-online data migration between logical volumes and between physical volumes
-user-defined naming for volume groups and logical volumes
-mirroring and striping across multiple disks
-snapshotting of logical volumes. 
+- Used for managing block storage in Linux. 
+- Provides an abstraction layer between the physical storage and the file system
+- Enables the file system to be resized, span across multiple disks, use arbitrary disk space, etc. 
+- Accumulates spaces taken from partitions or entire disks (called Physical Volumes) to form a logical container (called Volume Group) which is then divided into logical partitions (called Logical Volumes).
+- online resizing of volume groups and logical volumes, 
+- online data migration between logical volumes and between physical volumes
+- user-defined naming for volume groups and logical volumes
+- mirroring and striping across multiple disks
+- snapshotting of logical volumes. 
 
 ![](image-0A8W8M1U.jpg)
 
-the LVM structure is made up of three key objects called physical volume, volume group, and logical volume. 
-These objects are further virtually broken down into Physical Extents (PEs) and Logical Extents (LEs). 
+- Made up of three key objects called physical volume, volume group, and logical volume. 
+- These objects are further virtually broken down into Physical Extents (PEs) and Logical Extents (LEs). 
 
-### Physical Volume(PV)
+**Physical Volume(PV)**
 
-created when a block storage device such as a partition or an entire disk is initialized and brought under LVM
-control. This process constructs LVM data structures on the device, including a label on the second sector and metadata shortly thereafter.
+- created when a block storage device such as a partition or an entire disk is initialized and brought under LVM control. 
+- This process constructs LVM data structures on the device, including a label on the second sector and metadata shortly thereafter.
+- The label includes the UUID, size, and pointers to the locations of data and metadata areas. 
+- Given the criticality of metadata, LVM stores a copy of it at the end of the physical volume as well. 
+- The rest of the device space is available for use.
 
-The label includes the UUID, size, and pointers to the locations of data and metadata areas. Given the criticality of metadata, LVM stores a copy of it at the end of the physical volume as well. The rest of the device space is available for use.
-
-You can use an LVM command called pvs (physical volume scan or summary) to scan and list available physical volumes on server2:
+You can use an LVM command called `pvs` (physical volume scan or summary) to scan and list available physical volumes on server2:
 ```bash
 [root@server2 ~]# sudo pvs
   PV         VG   Fmt  Attr PSize   PFree
   /dev/sda2  rhel lvm2 a--  <19.00g    0
 ```
 
-(a for allocatable under Attr)
-
+- (a for allocatable under Attr)
 
 Try running this command again with the -v flag to view more information
 about the physical volume.
 
-### Volume Group
+**Volume Group**
 
-A Volume Group (VG) is created when at least one physical volume is added to it. 
-The space from all physical volumes in a volume group is aggregated to form one large pool of storage, which is then used to
-build logical volumes. 
-The physical volumes added to a volume group may be of varying sizes. 
-LVM writes volume group metadata on each physical volume that is added to it. 
-The volume group metadata contains its name,date and time of creation, how it was created, the extent size used, a list of physical and logical volumes, a mapping of physical and logical extents, etc. 
-A volume group can have a custom name assigned to it at the time of its creation. 
-A copy of the volume group metadata is stored and maintained at two distinct locations on each physical volume within the volume group.
+- Created when at least one physical volume is added to it. 
+- The space from all physical volumes in a volume group is aggregated to form one large pool of storage, which is then used to build logical volumes. 
+- Physical volumes added to a volume group may be of varying sizes. 
+- LVM writes volume group metadata on each physical volume that is added to it. 
+- The volume group metadata contains its name,date, and time of creation, how it was created, the extent size used, a list of physical and logical volumes, a mapping of physical and logical extents, etc. 
+- Can have a custom name assigned to it at the time of its creation. 
+- A copy of the volume group metadata is stored and maintained at two distinct locations on each physical volume within the volume group.
 
-You can use an LVM command called vgs (volume group scan or summary) to scan and list available volume groups on server2:
+Use `vgs` (volume group scan or summary) to scan and list available volume groups on server2:
 ```bash
 [root@server2 ~]# sudo vgs
   VG   #PV #LV #SN Attr   VSize   VFree
   rhel   1   2   0 wz--n- <19.00g    0
 ```
 
-status of the volume group under the Attr column (w for writeable, z for resizable, and n for normal), 
+- Status of the volume group under the Attr column (w for writeable, z for resizable, and n for normal), 
 
 Try running this command again with the -v flag to view more information
 about the volume group.
 
 ### Physical Extent
 
-A physical volume is divided into several smaller logical pieces when it is added to a volume group. These logical pieces are known as Physical Extents (PE). An extent is the smallest allocatable unit of space in LVM. 
-At the time of volume group creation, you can either define the size of the PE or leave it to the default value of 4MB. 
-This implies that a 20GB physical volume would have approximately 5,000 PEs. 
-Any physical volumes added to this volume group thereafter will use the same PE size.
+- A physical volume is divided into several smaller logical pieces when it is added to a volume group. 
+- These logical pieces are known as Physical Extents (PE). 
+- An extent is the smallest allocatable unit of space in LVM. 
+- At the time of volume group creation, you can either define the size of the PE or leave it to the default value of 4MB. 
+- This implies that a 20GB physical volume would have approximately 5,000 PEs. 
+- Any physical volumes added to this volume group thereafter will use the same PE size.
 
-You can use an LVM command called vgdisplay (volume group display) on server2 and grep for 'PE Size' to view the PE size used in the rhel volume group:
+Use `vgdisplay` (volume group display) on server2 and grep for 'PE Size' to view the PE size used in the rhel volume group:
 ```bash
 [root@server2 ~]# sudo vgdisplay rhel | grep 'PE Size'
   PE Size               4.00 MiB
@@ -73,16 +74,14 @@ You can use an LVM command called vgdisplay (volume group display) on server2 an
 
 ### Logical Volume
 
-A volume group consists of a pool of storage taken from one or more physical volumes. 
-This volume group space is used to create one or more Logical Volumes (LVs). 
-A logical volume can be created or weeded out online, expanded or shrunk online, and can use space taken from one or
-multiple physical volumes inside the volume group.
+- A volume group consists of a pool of storage taken from one or more physical volumes. 
+- This volume group space is used to create one or more Logical Volumes (LVs). 
+- A logical volume can be created or weeded out online, expanded or shrunk online, and can use space taken from one or multiple physical volumes inside the volume group.
 
 The default naming convention used for logical volumes is lvol0, lvol1,
-lvol2, and so on
-you may assign custom names to them. 
+lvol2, and so on you may assign custom names to them. 
 
-You can use an LVM command called lvs (logical volume scan or summary) to scan and list available logical volumes on server2:
+Use `lvs` (logical volume scan or summary) to scan and list available logical volumes on server2:
 ```bash
 [root@server2 ~]# sudo lvs
   LV   VG   Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
@@ -90,94 +89,99 @@ You can use an LVM command called lvs (logical volume scan or summary) to scan a
   swap rhel -wi-ao----   2.00g
 ```
 
-Attr column (w for writeable, i for inherited allocation policy, a for active, and o for open) and their sizes.
+- Attr column (w for writeable, i for inherited allocation policy, a for active, and o for open) and their sizes.
 
 Try running this command again with the -v flag to view more information about the logical volumes.
 
 ### Logical Extent
 
-A logical volume is made up of Logical Extents (LE). 
-Logical extents point to physical extents, and they may be random or contiguous. 
-The larger a logical volume is, the more logical extents it will have.
-Logical extents are a set of physical extents allocated to a logical volume.
+- A logical volume is made up of Logical Extents (LE). 
+- Logical extents point to physical extents, and they may be random or contiguous. 
+- The larger a logical volume is, the more logical extents it will have.
+- Logical extents are a set of physical extents allocated to a logical volume.
+- The LE size is always the same as the PE size in a volume group. 
+- The default LE size is 4MB, which corresponds to the default PE size of 4MB.
 
-The LE size is always the same as the PE size in a volume group. 
-The default LE size is 4MB, which corresponds to the default PE size of 4MB.
-
-You can use an LVM command called `lvdisplay` (logical volume display) on server2 to view information about the root logical volume in the rhel volume group. 
-
-![](image-E8W3BEYL.jpg)
-
+Use `lvdisplay` (logical volume display) on server2 to view information about the root logical volume in the rhel volume group. 
 ```bash
-david@fedora:~/Documents/perfectdarkmode/perfectdarkmode1.github.io$ sudo lvdisplay /dev/rhel/root
-Place your right index finger on the fingerprint reader
-  Volume group "rhel" not found
-  Cannot process volume group rhel
+[root@server30 ~]# lvdisplay /dev/rhel/root
+  --- Logical volume ---
+  LV Path                /dev/rhel/root
+  LV Name                root
+  VG Name                rhel
+  LV UUID                DhHyeI-VgwM-w75t-vRcC-5irj-AuHC-neryQf
+  LV Write Access        read/write
+  LV Creation host, time localhost.localdomain, 2024-07-08 17:32:18 -0700
+  LV Status              available
+  # open                 1
+  LV Size                <17.00 GiB
+  Current LE             4351
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     8192
+  Block device           253:0
 ```
 
-The output does not disclose the LE size; 
-however, you can convert theLV size in MBs (17,000) and then divide the result by the Current LE
-count (4,351) to get the LE size (which comes close to 4MB).
+- The output does not disclose the LE size;  however, you can convert the LV size in MBs (17,000) and then divide the result by the Current LE count (4,351) to get the LE size (which comes close to 4MB).
 
 ### LVM Operations and Commands
 
-creating and removing a physical volume, volume group, and logical volume
-extending and reducing a volume group and logical volume
-renaming a volume group and logical volume
-listing and displaying physical volume, volume group, and logical volume
-information.
+- Creating and removing a physical volume, volume group, and logical volume
+- Extending and reducing a volume group and logical volume
+- Renaming a volume group and logical volume 
+- listing and displaying physical volume, volume group, and logical volume information.
 
 ### Create and Remove Operations        
 
-**pvcreate/pvremove**                   
-  Initializes/uninitializes a disk or partition for LVM use
+`pvcreate`/`pvremove`                 
+  - Initializes/uninitializes a disk or partition for LVM use
 
-**vgcreate/vgremove**                  
-  Creates/removes a volume group
+`vgcreate`/`vgremove`                  
+  - Creates/removes a volume group
 
-**lvcreate/lvremove**                   
-  Creates/removes a logical volume
+`lvcreate`/`lvremove`                  
+  - Creates/removes a logical volume
   
 
 ### Extend and Reduce Operations        
 
-**vgextend/vgreduce**                   
-  Adds/removes a physical volume to/from a volume group
+`vgextend`/`vgreduce`                  
+  - Adds/removes a physical volume to/from a volume group
 
-**lvextend/lvreduce**                   
-  Extends/reduces the size of a logical volume
+`lvextend`/`lvreduce`                  
+  - Extends/reduces the size of a logical volume
 
-**lvresize**                            
-  Resizes a logical volume. With the -r option, this command calls the fsadm command to resize the underlying file system as well.
+`lvresize`                            
+  - Resizes a logical volume. With the `-r` option, this command calls the `fsadm` command to resize the underlying file system as well.
 
 
 ### Rename Operations                   
 
-**vgrename**                            
-  Renames a volume group
+`vgrename`                            
+  - Rename a volume group
 
-**lvrename**                            
-  Renames a logical volume
+`lvrename`                            
+  - Rename a logical volume
   
 
 ### List and Display Operations         
 
-**pvs/pvdisplay**                       
-  Lists/displays physical volume information
+`pvs`/`pvdisplay`                      
+  - Lists/displays physical volume information
 
-**vgs/vgdisplay lvs/lvdisplay**         
-  Lists/displays volume group information Lists/displays logical volume information
+`vgs`/`vgdisplay` `lvs`/`lvdisplay`        
+  - Lists/displays volume group information Lists/displays logical volume information
 
 
-All the tools accept the -v switch to support verbosity. 
+- All the tools accept the -v switch to support verbosity. 
 
 
 ### Exercise 13-6: Create Physical Volume and Volume Group (server2)
 
-initialize one partition sdd1 (90MB) and one disk sde (250MB) for use in LVM.
-create a volume group called vgbook and add both physical volumes to it
-use the PE size of 16MB
-list and display the volume group and the physical volumes.
+- initialize one partition sdd1 (90MB) and one disk sde (250MB) for use in LVM.
+- create a volume group called vgbook and add both physical volumes to it use the PE size of 16MB
+- list and display the volume group and the physical volumes.
 
 1\. Create a partition of size 90MB on sdd using the parted command and confirm. You need to label the disk first, as it is a new disk.
 
@@ -215,7 +219,7 @@ Number  Start   End     Size    Type     File system  Flags
 ```
 
 
-3\. Create vgbook volume group using the vgcreate command and add the two physical volumes to it. Use the -s option to specify the PE size in
+3\. Create vgbook volume group using the `vgcreate` command and add the two physical volumes to it. Use the -s option to specify the PE size in
 MBs.
 ```bash
 [root@server2 ~]# sudo vgcreate -vs 16 vgbook /dev/sdd1 /dev/sde
@@ -279,10 +283,6 @@ MBs.
   /dev/sde   vgbook lvm2 a--  240.00m 240.00m
 ```
 
-
-The output shows the physical volumes in vgbook, along with their utilization status.
-
-
 7\. Display detailed information about the physical volumes:
 ```bash
 [root@server2 ~]# sudo pvdisplay /dev/sdd1
@@ -298,18 +298,15 @@ The output shows the physical volumes in vgbook, along with their utilization st
   PV UUID               8x8IgZ-3z5T-ODA8-dofQ-xk5s-QN7I-KwpQ1e
 ```
 
-Once a partition or disk is initialized and added to a volume group, they are treated identically within the volume group. LVM does not
-prefer one over the other.
+- Once a partition or disk is initialized and added to a volume group, they are treated identically within the volume group. LVM does not prefer one over the other.
 
 ### Exercise 13-7: Create Logical Volumes(server2)
 
-create two logical volumes, lvol0 and lvbook1, in the vgbook volume group.
-use 120MB for lvol0 and 192MB for lvbook1 from the available pool of space. 
-display the details of the volume group and the logical volumes.
+- Create two logical volumes, lvol0 and lvbook1, in the vgbook volume group.
+- Use 120MB for lvol0 and 192MB for lvbook1 from the available pool of space. 
+- Display the details of the volume group and the logical volumes.
 
-
-1\. Create a logical volume with the default name lvol0 using the `lvcreate` command. Use the -L option to specify the logical volume size,
-120MB. You may use the -v, -vv, or -vvv option with the command for verbosity.
+1\. Create a logical volume with the default name lvol0 using the `lvcreate` command. Use the -L option to specify the logical volume size, 120MB. You may use the -v, -vv, or -vvv option with the command for verbosity.
 ```bash
 root@server2 ~]# sudo lvcreate -vL 120 vgbook
   Rounding up size to full physical extent 128.00 MiB
@@ -327,13 +324,12 @@ root@server2 ~]# sudo lvcreate -vL 120 vgbook
 ```
 
 
-The size for the logical volume may be specified in units such as MBs, GBs, TBs, or as a count of LEs; however, MB is the default if no unit is
-specified (see the previous command). 
+- Size for the logical volume may be specified in units such as MBs, GBs, TBs, or as a count of LEs
+- MB is the default if no unit is specified
 
-The size of a logical volume is always in multiples of the PE size. For instance, logical volumes created in vgbook with the PE size set at 16MB can be 16MB, 32MB, 48MB,
-64MB, and so on. The output above indicates that the logical volume is 128MB (16x8), and not 120MB as specified.
+- The size of a logical volume is always in multiples of the PE size. For instance, logical volumes created in vgbook with the PE size set at 16MB can be 16MB, 32MB, 48MB, 64MB, and so on. 
 
-2\. Create lvbook1 of size 192MB (16x12) using the lvcreate command. Use the -l switch to specify the size in logical extents and -n for the custom name. 
+2\. Create lvbook1 of size 192MB (16x12) using the `lvcreate` command. Use the -l switch to specify the size in logical extents and -n for the custom name. 
 ```bash
 [root@server2 ~]# sudo lvcreate -l 12 -n lvbook1 vgbook
   Logical volume "lvbook1" created.
@@ -467,13 +463,15 @@ details:
 
 ### Exercise 13-8: Extend a Volume Group and a Logical Volume(server2)
 
-add another partition sdd2 of size 158MB to vgbook to increase the pool of allocatable space
-initialize the new partition prior to adding it to the volume group. 
-increase the size of lvbook1 to 336MB.
-display basic information for the physical volumes, volume group, and logical volume.
+- Add another partition sdd2 of size 158MB to vgbook to increase the pool of allocatable space.
+- Initialize the new partition prior to adding it to the volume group. 
+- Increase the size of lvbook1 to 336MB.
+- Display basic information for the physical volumes, volume group, and logical volume.
 
 1\. Create a partition of size 158MB on sdd using the parted command. Display the new partition to confirm the partition number and size.
 ```bash
+[root@server20 ~]# parted /dev/sdd mkpart primary 91 250
+
 [root@server2 ~]# sudo parted /dev/sdd print                              
 Model: ATA VBOX HARDDISK (scsi)
 Disk /dev/sdd: 262MB
@@ -506,7 +504,7 @@ Number  Start   End     Size    Type     File system  Flags
   vgbook   3   2   0 wz--n- 464.00m 144.00m
 ```
 
-5\. Extend the size of lvbook1 to 340MB by adding 144MB using the lvextend command:
+5\. Extend the size of lvbook1 to 340MB by adding 144MB using the `lvextend` command:
 ```bash
 [root@server2 ~]# sudo lvextend -L +144 /dev/vgbook/lvbook1
   Size of logical volume vgbook/lvbook1 changed from 192.00 MiB (12 extents) to 336.00 MiB (21 extents).
@@ -603,7 +601,7 @@ root@server2 ~]# sudo pvs
 
 8\. View a summary of the logical volumes:
 ```bash
-root@server2 ~]# sudo lvs
+[root@server2 ~]# sudo lvs
   LV      VG     Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
   root    rhel   -wi-ao---- <17.00g                                                    
   swap    rhel   -wi-ao----   2.00g                                                    
@@ -613,21 +611,20 @@ root@server2 ~]# sudo lvs
 
 ### Exercise 13-9: Rename, Reduce, Extend, and Remove Logical Volumes(server2)
 
-rename lvol0 to lvbook2.
-decrease the size of lvbook2 to 50MB using the lvreduce command  
-add 32MB with the lvresize command. 
-remove both logical volumes.display the summary for the volume groups, logical volumes, and
-physical volumes.
+- Rename lvol0 to lvbook2.
+- Decrease the size of lvbook2 to 50MB using the `lvreduce` command  
+- Add 32MB with the `lvresize command.` 
+- remove both logical volumes.
+- display the summary for the volume groups, logical volumes, and physical volumes.
 
-1\. Rename lvol0 to lvbook2 using the lvrename command and confirm with
+1\. Rename lvol0 to lvbook2 using the `lvrename` command and confirm with
 lvs:
 ```bash
 [root@server2 ~]# sudo lvrename vgbook lvol0 lvbook2
   Renamed "lvol0" to "lvbook2" in volume group "vgbook"
 ```
 
-2\. Reduce the size of lvbook2 to 50MB with the `lvreduce` command. Specify the absolute desired size for the logical volume. Answer "Do you
-really want to reduce vgbook/lvbook2?" in the affirmative.
+2\. Reduce the size of lvbook2 to 50MB with the `lvreduce` command. Specify the absolute desired size for the logical volume. Answer "Do you really want to reduce vgbook/lvbook2?" in the affirmative.
 ```bash
 [root@server2 ~]# sudo lvreduce -L 50 /dev/vgbook/lvbook2
   Rounding size to boundary between physical extents: 64.00 MiB.
@@ -710,8 +707,8 @@ allocation.
 
 ```
 
-5\. Remove both lvbook1 and lvbook2 logical volumes using the lvremove
-command. Use the -f option to suppress the "Do you really want to remove
+5\. Remove both lvbook1 and lvbook2 logical volumes using the `lvremove`
+command. Use the `-f` option to suppress the "Do you really want to remove
 active logical volume" message.
 ```bash
 [root@server2 ~]# sudo lvremove /dev/vgbook/lvbook1 -f
@@ -720,12 +717,11 @@ active logical volume" message.
   Logical volume "lvbook2" successfully removed.
 ```
 
-Removing a logical volume is a destructive task. You need to ensure that you perform a backup of any data in the target logical volume prior to
-deleting it. You will need to unmount the file system or disable swap in the logical volume. 
-
+- Removing an LV is destructive
+- Backup any data in the target LV before deleting it. 
+- You will need to `unmount` the file system or disable swap in the logical volume. 
 \
-6\. Execute the `vgdisplay` command and grep for "Cur LV" to see the number of logical volumes currently available in vgbook. It should show
-0, as you have removed both logical volumes.
+6\. Execute the `vgdisplay` command and grep for "Cur LV" to see the number of logical volumes currently available in vgbook. It should show 0, as you have removed both logical volumes.
 ```bash
 [root@server2 ~]# sudo vgdisplay vgbook | grep 'Cur LV'
   Cur LV                0
@@ -734,8 +730,8 @@ deleting it. You will need to unmount the file system or disable swap in the log
 ### Exercise 13-10: Reduce and Remove a Volume Group(server2)
 \
 
-- reduce vgbook by removing the sdd1 and sde physical volumes from it
-- remove the volume group. 
+- Reduce vgbook by removing the sdd1 and sde physical volumes from it
+- Remove the volume group. 
 - Confirm the deletion of the volume group and the logical volumes at the end.
 
 
@@ -753,11 +749,9 @@ deleting it. You will need to unmount the file system or disable swap in the log
 
 ```
 
-You can also use the -f option with the vgremove command to force the volume group removal even if it contains any number of logical and physical volumes in it.
+- Use the `-f` option with the `vgremove` command to force the volume group removal even if it contains any number of logical and physical volumes in it.
 
-Remember to proceed with caution whenever you perform reduce and erase operations.
-
-3\. Execute the vgs and lvs commands for confirmation:
+3\. Execute the `vgs` and `lvs` commands for confirmation:
 ```bash
 [root@server2 ~]# sudo vgs
   VG   #PV #LV #SN Attr   VSize   VFree
@@ -773,7 +767,7 @@ Remember to proceed with caution whenever you perform reduce and erase operation
 - Uninitialize all three physical volumes---sdd1, sdd2, and sde---by deleting the LVM structural information from them. 
 - Use the `pvs` command for confirmation. 
 - Remove the partitions from the sdd disk and 
-- verify that all disks used in Exercises 13-6 to 13-10 are now in their original raw state.
+- Verify that all disks used in Exercises 13-6 to 13-10 are now in their original raw state.
 
 1\. Remove the LVM structures from sdd1, sdd2, and sde using the `pvremove` command:
 ```bash

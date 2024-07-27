@@ -95,11 +95,11 @@ A. The `xfs_admin` command can be used to create a label for an XFS file system.
 
 
 Q. Which virtual file contains information about the current swap?
-A. The /proc/swaps file contains information about the current swap.
+A. The */proc/swaps* file contains information about the current swap.
 
 ---
 
-Q. The /etc/fstab file can be used to activate swap spaces automatically at system reboots. True or False?
+Q. The */etc/fstab* file can be used to activate swap spaces automatically at system reboots. True or False?
 A. True.
 
 ---
@@ -126,7 +126,7 @@ A. /dev/mapper/vg20-lv1 /ora1 ext4 defaults 0 0
 ---
 
 Q. What is the name of the virtual file that holds currently mounted file system information?
-A. /proc/self/mounts
+A. */proc/self/mounts*
 
 ---
 
@@ -136,7 +136,7 @@ A. True.
 ---
 
 Q. What would the `mount` command do with the `-a` switch?
-A. The command provided will mount all file systems listed in the /etc/fstab file but are not currently mounted.
+A. The command provided will mount all file systems listed in the */etc/fstab* file but are not currently mounted.
 
 ---
 
@@ -153,4 +153,4 @@ A. The `free` command.
 Q. Name three commands that can be employed to view the UUID of an XFS file system?
 A. You can use the `xfs_admin`, `lsblk`, and `blkid` commands to view the UUID of an XFS file system.
 
----
+

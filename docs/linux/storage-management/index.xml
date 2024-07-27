@@ -3,7 +3,7 @@
   <channel>
     <title></title>
     <link>http://davidvargas.xyz/linux/storage-management/</link>
-    <description>Storage Management Data is stored on disks that are logically divided into partitions. A partition can exist on a portion of a disk, on an entire disk, or it may span multiple disks. Each partition is accessed and managed independent of other partitions and may contain a file system or swap space. Partitioning information is stored at special disk locations that the system references at boot time. Partitions created with a combination of most tools can coexist on a single disk.</description>
+    <description>Storage Management Adding Storage for Practice Partition Information (MBR and GPT) Disk Partitions Thin Provisioning Logical Volume Manager (LVM) Virtual Data Optimizer (VDO) Storage Review Questions Storage DYI Labs </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://davidvargas.xyz/linux/storage-management/index.xml" rel="self" type="application/rss+xml" />

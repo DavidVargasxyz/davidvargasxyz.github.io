@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/shell-startup-files/</link>
+    <description>Shell Startup Files Sourced by the shell following user authentication at the time of logging in and before the command prompt appears. Aliases, functions, and scripts can be added to these files as well. two types of startup files: system-wide set the general environment for all users at the time of their login to the system. located in the /etc directory maintained by the Linux admin. system-wide startup files for bash shell users: /etc/bashrc Defines functions and aliases, sets umask for user accounts with a non-login shell, establishes the command prompt, etc.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/shell-startup-files/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

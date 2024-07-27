@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/advanced-user-management-labs/</link>
+    <description>Advanced User Management Labs Lab: Set and Confirm Password Aging with chage (root) Set password aging parameters for user100 to mindays (-m) 7, maxdays (-M) 28, and warndays (-W) 5: chage -m 7 -M 28 -W 5 user100 Confirm chage -l user100 Set the account expiry to January 31, 2020 chage -E 2020-01-31 user100 Verify the new account expiry setting chage -l user100Lab: Set and Confirm Password Aging with passwd (root) Set password aging attributes for user200 to mindays 10, maxdays 90, and warndays 14: passwd -n 10 -x 90 -w 14 user200 Confirm: passwd -S user200 Set the number of inactivity days to 5: passwd -i 5 user200 Confirm: passwd -S user200 Ensure that the user is forced to change their password at next login: passwd -e user200 Confirm: passwd -S user200Lab: Lock and Unlock a User Account with usermod and passwd (root) Obtain the current password information for user200 from the shadow file: grep user200 /etc/shadow Lock the account for user200: usermod -L user200 Confirm: grep user200 /etc/shadow Unlock the account with either of the following: usermod -U user200 or passwd -u user200 confirm grep user200 /etc/shadowLab: Create a Group and Add Members (root) Create the group linuxadm with GID 5000: groupadd -g 5000 linuxadm Create a group called dba with the same GID as that of group linuxadm: groupadd -o -g 5000 dba Confirm: grep linuxadm /etc/group grep dba /etc/group Add user1 as a secondary member of group dba using the usermod command.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/advanced-user-management-labs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,11 +1,5 @@
 ## Appendix A: Sample RHCSA Exam 1 {.style3}
 
-\
-
-::: {style="border-style: double; border-color: rgb(0, 0, 0); border-top-width: 1px; width: 0.375;"}
-:::
-
-\
 
 Time Duration:3 hours
 
@@ -204,11 +198,4 @@ container to auto-start via systemd without the need for user20 to log
 in. Connect to the container and verify variable settings. (Exercises
 22-8 and 22-11).
 
-\
-
-### Reboot the system and validate the configuration. {.style3}
-
-::: {style="page-break-before: always;"}
-:::
-
-[]{#chapter0687.html}
+\Reboot the system and validate the configuration. 

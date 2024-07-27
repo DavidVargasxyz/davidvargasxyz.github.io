@@ -1,7 +1,7 @@
 ## History Substitution
 - Command history or history expansion.
 - Can disable and re-enable if required.
-- Values may be altered for individual users by editing .bashrc or .bash_profile in the user's home directory.
+- Values may be altered for individual users by editing *.bashrc* or *.bash_profile* in the user's home directory.
 - Three variables
 	- **HISTFILE**
 		- Defines the name and location of the history file to be used to store command history,
@@ -9,10 +9,10 @@
 	- **HISTSIZE**
 		- Size of the history buffer for the current shell.
 	- **HISTFILESIZE**
-		- sets the maximum number of commands allowed for storage in the history file at the beginning of the current session and are written to the HISTFILE from memory at the end of the current terminal session.
+		- Sets the maximum number of commands allowed for storage in the history file at the beginning of the current session and are written to the HISTFILE from memory at the end of the current terminal session.
 		- Usually, HISTSIZE and HISTFILESIZE are set to a common value.
 
-### history command
+### `history` command
 - Displays or reruns previously executed commands.
 - Gets the history data from the system memory as well as from the .bash_history file.
 - Shows all entries by default.

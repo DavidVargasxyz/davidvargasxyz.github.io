@@ -6,43 +6,43 @@
     <meta name="generator" content="Hugo 0.124.1">
     <meta name="generator" content="Relearn 6.0.0+tip">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
-    <meta name="description" content="Understanding Hosts Table See Hostname Resolution and Time Synchronization
+    <meta name="description" content="Understanding Hosts Table See DNS and Time Synchronization
 /etc/hosts file)
 Table used to maintain hostname to IP mapping for systems on the local network, allowing us to access a system by simply employing its hostname. Each row in the file contains an IP address in column 1 followed by the official (or canonical) hostname in column 2, and one or more optional aliases thereafter.
 EXAM TIP: In the presence of an active DNS with all hostnamesresolvable, there is no need to worry about updating the hosts file.">
     <meta name="author" content="David Vargas">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="Understanding Hosts Table See Hostname Resolution and Time Synchronization
+    <meta name="twitter:description" content="Understanding Hosts Table See DNS and Time Synchronization
 /etc/hosts file)
 Table used to maintain hostname to IP mapping for systems on the local network, allowing us to access a system by simply employing its hostname. Each row in the file contains an IP address in column 1 followed by the official (or canonical) hostname in column 2, and one or more optional aliases thereafter.
 EXAM TIP: In the presence of an active DNS with all hostnamesresolvable, there is no need to worry about updating the hosts file.">
     <meta property="og:url" content="http://davidvargas.xyz/linux/understanding-hosts-table/">
-    <meta property="og:description" content="Understanding Hosts Table See Hostname Resolution and Time Synchronization
+    <meta property="og:description" content="Understanding Hosts Table See DNS and Time Synchronization
 /etc/hosts file)
 Table used to maintain hostname to IP mapping for systems on the local network, allowing us to access a system by simply employing its hostname. Each row in the file contains an IP address in column 1 followed by the official (or canonical) hostname in column 2, and one or more optional aliases thereafter.
 EXAM TIP: In the presence of an active DNS with all hostnamesresolvable, there is no need to worry about updating the hosts file.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Linux">
-    <meta itemprop="description" content="Understanding Hosts Table See Hostname Resolution and Time Synchronization
+    <meta itemprop="description" content="Understanding Hosts Table See DNS and Time Synchronization
 /etc/hosts file)
 Table used to maintain hostname to IP mapping for systems on the local network, allowing us to access a system by simply employing its hostname. Each row in the file contains an IP address in column 1 followed by the official (or canonical) hostname in column 2, and one or more optional aliases thereafter.
 EXAM TIP: In the presence of an active DNS with all hostnamesresolvable, there is no need to worry about updating the hosts file.">
-    <meta itemprop="wordCount" content="178">
+    <meta itemprop="wordCount" content="177">
     <title></title>
-    <link href="/images/logo.svg?1721305790" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1721305792" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721305792" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1721305792" rel="stylesheet">
-    <link href="/css/auto-complete.css?1721305792" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721305792" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1721305792" rel="stylesheet">
-    <link href="/css/fonts.css?1721305792" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721305792" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1721305792" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1721305792" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1721305792" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1721305792" rel="stylesheet">
-    <link href="/css/print.css?1721305792" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1721305792" rel="stylesheet">
-    <script src="/js/variant.js?1721305792"></script>
+    <link href="/images/logo.svg?1722081507" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1722081510" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1722081510" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1722081510" rel="stylesheet">
+    <link href="/css/auto-complete.css?1722081510" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1722081510" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1722081510" rel="stylesheet">
+    <link href="/css/fonts.css?1722081510" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1722081510" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1722081510" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1722081510" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1722081510" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1722081510" rel="stylesheet">
+    <link href="/css/print.css?1722081510" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1722081510" rel="stylesheet">
+    <script src="/js/variant.js?1722081510"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -120,8 +120,8 @@ EXAM TIP: In the presence of an active DNS with all hostnamesresolvable, there i
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1721305792" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1721305792" defer></script>
+    <script src="/js/clipboard.min.js?1722081510" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1722081510" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -137,20 +137,20 @@ EXAM TIP: In the presence of an active DNS with all hostnamesresolvable, there i
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1721305792" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1721305792" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1721305792" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1721305792" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1721305792" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1721305792" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1721305792" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1721305792" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1721305792" defer></script>
-    <script src="/js/js-yaml.min.js?1721305792" defer></script>
+    <script src="/js/d3/d3-color.min.js?1722081510" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1722081510" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1722081510" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1722081510" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1722081510" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1722081510" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1722081510" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1722081510" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1722081510" defer></script>
+    <script src="/js/js-yaml.min.js?1722081510" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1721305792" defer></script>
+    <script src="/js/theme.js?1722081510" defer></script>
   </body>
 </html>

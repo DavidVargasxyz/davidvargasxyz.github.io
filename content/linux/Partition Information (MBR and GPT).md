@@ -1,78 +1,80 @@
 ## Partition Information (MBR and GPT)
 
 
-Partition information is stored on the disk in a small region, which is read by the operating system at boot time. 
-This region is referred to as the Master Boot Record (MBR) on the BIOS-based systems, and GUID Partition Table (GPT) on the UEFI-based systems. 
-At system boot, the BIOS/UEFI scans all storage devices, detects the presence of MBR/GPT areas, identifies the boot disks, loads the bootloader program in memory from the default boot disk, executes the boot code to read the partition table and identify the /boot partition, loads the kernel in memory, and passes control over to it. 
-Though MBR and GPT store disk partition information and the boot code.
-
+- Partition information is stored on the disk in a small region.
+- Read by the operating system at boot time. 
+- Master Boot Record (MBR) on the BIOS-based systems
+- GUID Partition Table (GPT) on the UEFI-based systems. 
+- At system boot, the BIOS/UEFI:
+	- scans all storage devices, 
+	- detects the presence of MBR/GPT areas, 
+	- identifies the boot disks, 
+	- loads the bootloader program in memory from the default boot disk, 
+	- executes the boot code to read the partition table and identify the /boot partition, 
+	- loads the kernel in memory, and passes control over to it. 
+- MBR and GPT store disk partition information and the boot code.
 
 ### Master Boot Record (MBR) 
 
-
-resides on the first sector of the boot disk. 
-was the preferred choice for saving partition table information on x86-based
-computers.
-with the arrival of bigger and larger hard drives, a new firmware specification (UEFI) was introduced. 
-still widely used, but its use is diminishing in favor of UEFI.
+- Resides on the first sector of the boot disk. 
+- was the preferred choice for saving partition table information on x86-based computers.
+- with the arrival of bigger and larger hard drives, a new firmware specification (UEFI) was introduced. 
+- still widely used, but its use is diminishing in favor of UEFI.
 
 
-allows the creation of three types of partition on a single disk.
-primary, extended, and logical--- 
-only primary and logical can be used for data storage
-extended is a mere enclosure for holding the logical partitions and it is not meant for data storage. 
-supports the creation of up to four primary partitions numbered 1 through 4 at a time. 
-In case additional partitions are required, one of the primary partitions must be deleted and replaced with an extended
-partition to be able to add logical partitions (up to 11) within that extended partition. 
-Numbering for logical partitions begins at 5. 
-supports a maximum of 14 usable partitions (3 primary and 11 logical) on a single disk.
+- allows the creation of three types of partition on a single disk.
+- **primary**, **extended**, and **logica**l
+- only **primary** and **logical** can be used for data storage
+- **extended** is a mere enclosure for holding the logical partitions and it is not meant for data storage. 
+- supports the creation of up to four **primary** partitions numbered 1 through 4 at a time. 
+- In case additional partitions are required, one of the **primary** partitions must be deleted and replaced with an **extended** partition to be able to add logical partitions (up to 11) within that **extended** partition. 
+- Numbering for logical partitions begins at 5. 
+- supports a maximum of 14 usable partitions (3 primary and 11 logical) on a single disk.
 
-Cannot address storage space beyond 2TB ue to its 32-bit nature and its 512-byte disk sector size. 
-non-redundant; the record it contains is not replicated, resulting in an unbootable system in the event of corruption. 
-If your disk is smaller than 2TB and you don't intend to build more than 14 usable partitions, you can use MBR
-without issues. 
+- Cannot address storage space beyond 2TB due to its 32-bit nature and its 512-byte disk sector size. 
+- non-redundant; the record it contains is not replicated, resulting in an unbootable system in the event of corruption. 
+- If your disk is smaller than 2TB and you don't intend to build more than 14 usable partitions, you can use MBR without issues. 
 
 ### GUID Partition Table (GPT) 
 
+- ability to construct up to 128 partitions (no concept of extended or logical partitions)
+- utilize disks larger than 2TB
+- use 4KB sector size
+- store a copy of the partition information before the end of the disk for redundancy
+- allows a BIOS-based system to boot from a GPT disk using the bootloader program stored in a protective MBR at the first disk sector
+- UEFI firmware also supports the secure boot feature, which only allows signed binaries to boot
 
-ability to construct up to 128 partitions (no concept of extended or logical partitions)
-utilize disks larger than 2TB
-use 4KB sector size
-store a copy of the partition information before the end of the disk for redundancy
-
-
-allows a BIOS-based system to boot from a GPT disk using the bootloader program stored in a protective MBR at the first disk sector
-UEFI firmware also supports the secure boot feature, which only allows signed binaries to boot
 ### MBR Storage Management with parted
 
-
-parted (partition editor) 
+**parted** (partition editor) 
 - can be used to partition disks
 - run interactively or directly from the command prompt.
 - understands and supports both MBR and GPT schemes
 - can be used to create up to 128 partitions on a single GPT disk
 - viewing, labeling, adding, naming, and deleting partitions. 
 
+**print**                               
+  Displays the partition table that includes disk geometry and partition number, start and end, size, type, file system type, and relevant flags.
 
-  Subcommand                          Description
+**mklabel**                             
+  Applies a label to the disk. Common labels are gpt and msdos.
 
-  print                               Displays the partition table that includes disk geometry and partition number, start and end, size, type, file system type, and relevant flags.
+**mkpart**                              
+  Makes a new partition
 
-  mklabel                             Applies a label to the disk. Common labels are gpt and msdos.
+**name**                                
+  Assigns a name to a partition
 
-  mkpart                              Makes a new partition
+**rm**                                  
+  Removes the specified partition
 
-  name                                Assigns a name to a partition
+- use the `print` subcommand to ensure you created what you wanted. 
+- /proc/partitions file is also updated to reflect the results of partition management operations.
 
-  rm                                  Removes the specified partition
+### Lab: Create an MBR Partition (server2)
 
-use the print subcommand to ensure you created what you wanted. 
-/proc/partitions file is also updated to reflect the results of partition management operations.
-
-### Exercise 13-2: Create an MBR Partition (server2)
-
-assign partition type "msdos" to /dev/sdb for using it as an MBR disk
-create and confirm a 100MB primary partition on the disk.
+- Assign partition type "msdos" to /dev/sdb for using it as an MBR disk
+- create and confirm a 100MB primary partition on the disk.
 
 1\. Execute parted on /dev/sdb to view the current partition information:
 ```bash
@@ -133,7 +135,7 @@ Number  Start   End    Size    Type     File system  Flags
 
 Partition numbering begins at 1 by default.
 
-5\. Confirm the new partition with the lsblk command:
+5\. Confirm the new partition with the `lsblk` command:
 ```bash
 [root@server2 ~]# lsblk /dev/sdb
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
@@ -145,8 +147,7 @@ sdb      8:16   0  250M  0 disk
 The device file for the first partition on the sdb disk is sdb1 as identified on the bottom line. 
 The partition size is 95MB.
 
-Different tools will have variance in reporting partition sizes. 
-ignore minor differences.
+Different tools will have variance in reporting partition sizes.  ignore minor differences.
 
 6\. Check the /proc/partitions file also:
 ```bash
@@ -186,20 +187,20 @@ Number  Start  End  Size  Type  File system  Flags
    8       16     256000 sdb
 ```
 
-can also run the lsblk command for further verification. T
+can also run the `lsblk` command for further verification. T
 
 EXAM TIP: Knowing either parted or gdisk for the exam is enough.
 
 
 ### GPT Storage Management with gdisk
 
-gdisk (GPT disk)
-partitions disks using the GPT format. 
-text-based, menu-driven program
-show, add, verify, modify, and delete partitions
-can create up to 128 partitions on a single disk on systems with UEFI firmware.
+### `gdisk` (GPT disk) Command
+- partitions disks using the GPT format. 
+- text-based, menu-driven program
+- show, add, verify, modify, and delete partitions
+- can create up to 128 partitions on a single disk on systems with UEFI firmware.
 
-The main interface of gdisk can be invoked by specifying a disk device name such as /dev/sdc with the command. 
+- Main interface of `gdisk` can be invoked by specifying a disk device name such as /dev/sdc with the command. 
 Type help or ? (question mark) at the prompt to view available subcommands.
 
 ```bash
@@ -237,8 +238,8 @@ Command (? for help):
 
 ### Exercise 13-4: Create a GPT Partition (server2)
 
-assign partition type "gpt" to /dev/sdc for using it as a GPT disk.
-create and confirm a 200MB partition on the disk.
+- Assign partition type "gpt" to /dev/sdc for using it as a GPT disk.
+- create and confirm a 200MB partition on the disk.
 
 1\. Execute gdisk on /dev/sdc to view the current partition information:
 ```bash
@@ -288,8 +289,7 @@ Number  Start (sector)    End (sector)  Size       Code  Name
 The output returns the assigned GUID and states that the partition table can hold up to 128 partition entries.
 
 
-4\. Create the first partition of size 200MB starting at the default
-sector with default type "Linux filesystem" using the n subcommand:
+4\. Create the first partition of size 200MB starting at the default sector with default type "Linux filesystem" using the n subcommand:
 ```bash
 Command (? for help): n
 Partition number (1-128, default 1): 
@@ -332,7 +332,7 @@ The operation has completed successfully.
 
 ```
 
-You may need to run the partprobe command after exiting the gdisk utility to inform the kernel of partition table changes.
+You may need to run the `partprobe` command after exiting the gdisk utility to inform the kernel of partition table changes.
 
 7\. Verify the new partition by issuing either of the following at the command prompt:
 ```bash
@@ -349,7 +349,7 @@ sdc      8:32   0  250M  0 disk
 
 ### Exercise 13-5: Delete a GPT Partition(server2)
 
-delete the sdc1 partition that was created in Exercise 13-4 and confirm the removal.
+- Delete the sdc1 partition that was created in Exercise 13-4 and confirm the removal.
 
 1\. Execute gdisk on /dev/sdc and run d1 at the utility's prompt to delete partition number 1:
 ```bash

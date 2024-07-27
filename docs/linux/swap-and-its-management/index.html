@@ -6,30 +6,46 @@
     <meta name="generator" content="Hugo 0.124.1">
     <meta name="generator" content="Relearn 6.0.0+tip">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
-    <meta name="description" content="Swap and its Management The system splits the physical memory into small logical chunks called pages and maps their physical locations to virtual locations on the swap to facilitate access by system processors. This physical-to-virtual mapping of pages is stored in a data structure called page table, and it is maintained by the kernel. When a program or process is spawned, it requires space in the physical memory to run and be processed.">
+    <meta name="description" content="Swap and its Management Move pages of idle data between physical memory and swap.
+Swap areas act as extensions to the physical memory.
+May be activated or deactivated independent of swap spaces located in other partitions and volumes.
+The system splits the physical memory into small logical chunks called pages and maps their physical locations to virtual locations on the swap to facilitate access by system processors.
+This physical-to-virtual mapping of pages is stored in a data structure called page table, and it is maintained by the kernel.">
     <meta name="author" content="David Vargas">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="Swap and its Management The system splits the physical memory into small logical chunks called pages and maps their physical locations to virtual locations on the swap to facilitate access by system processors. This physical-to-virtual mapping of pages is stored in a data structure called page table, and it is maintained by the kernel. When a program or process is spawned, it requires space in the physical memory to run and be processed.">
+    <meta name="twitter:description" content="Swap and its Management Move pages of idle data between physical memory and swap.
+Swap areas act as extensions to the physical memory.
+May be activated or deactivated independent of swap spaces located in other partitions and volumes.
+The system splits the physical memory into small logical chunks called pages and maps their physical locations to virtual locations on the swap to facilitate access by system processors.
+This physical-to-virtual mapping of pages is stored in a data structure called page table, and it is maintained by the kernel.">
     <meta property="og:url" content="http://davidvargas.xyz/linux/swap-and-its-management/">
-    <meta property="og:description" content="Swap and its Management The system splits the physical memory into small logical chunks called pages and maps their physical locations to virtual locations on the swap to facilitate access by system processors. This physical-to-virtual mapping of pages is stored in a data structure called page table, and it is maintained by the kernel. When a program or process is spawned, it requires space in the physical memory to run and be processed.">
+    <meta property="og:description" content="Swap and its Management Move pages of idle data between physical memory and swap.
+Swap areas act as extensions to the physical memory.
+May be activated or deactivated independent of swap spaces located in other partitions and volumes.
+The system splits the physical memory into small logical chunks called pages and maps their physical locations to virtual locations on the swap to facilitate access by system processors.
+This physical-to-virtual mapping of pages is stored in a data structure called page table, and it is maintained by the kernel.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Linux">
-    <meta itemprop="description" content="Swap and its Management The system splits the physical memory into small logical chunks called pages and maps their physical locations to virtual locations on the swap to facilitate access by system processors. This physical-to-virtual mapping of pages is stored in a data structure called page table, and it is maintained by the kernel. When a program or process is spawned, it requires space in the physical memory to run and be processed.">
-    <meta itemprop="wordCount" content="1339">
+    <meta itemprop="description" content="Swap and its Management Move pages of idle data between physical memory and swap.
+Swap areas act as extensions to the physical memory.
+May be activated or deactivated independent of swap spaces located in other partitions and volumes.
+The system splits the physical memory into small logical chunks called pages and maps their physical locations to virtual locations on the swap to facilitate access by system processors.
+This physical-to-virtual mapping of pages is stored in a data structure called page table, and it is maintained by the kernel.">
+    <meta itemprop="wordCount" content="1370">
     <title></title>
-    <link href="/images/logo.svg?1721305790" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1721305791" rel="stylesheet">
-    <link href="/css/auto-complete.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1721305791" rel="stylesheet">
-    <link href="/css/fonts.css?1721305791" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721305791" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1721305791" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1721305791" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1721305791" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1721305791" rel="stylesheet">
-    <link href="/css/print.css?1721305791" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1721305791"></script>
+    <link href="/images/logo.svg?1722081507" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1722081508" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1722081508" rel="stylesheet">
+    <link href="/css/auto-complete.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1722081508" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1722081508" rel="stylesheet">
+    <link href="/css/fonts.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1722081508" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1722081508" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1722081508" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1722081508" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1722081508" rel="stylesheet">
+    <link href="/css/print.css?1722081508" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1722081508"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -81,7 +97,7 @@
         <li><a href="#free-command"><code>free</code> command</a></li>
         <li><a href="#prioritizing-swap-spaces">Prioritizing Swap Spaces</a></li>
         <li><a href="#swap-administration-commands">Swap Administration Commands</a></li>
-        <li><a href="#exercise-14-5-create-and-activate-swap-in-partition-and-logical-volume-server-2">Exercise 14-5: Create and Activate Swap in Partition and Logical Volume (server 2)</a></li>
+        <li><a href="#lab-create-and-activate-swap-in-partition-and-logical-volume-server-2">Lab: Create and Activate Swap in Partition and Logical Volume (server 2)</a></li>
       </ul>
     </li>
   </ul>
@@ -130,36 +146,74 @@
 
 <h2 id="swap-and-its-management">Swap and its Management</h2>
 <ul>
-<li>The system splits the physical memory into small logical chunks called pages and maps their physical locations to virtual locations on the swap to facilitate access by system processors.</li>
-<li>This physical-to-virtual mapping of pages is stored in a data structure called page table, and it is maintained by the kernel.</li>
-<li>When a program or process is spawned, it requires space in the physical memory to run and be processed.</li>
-<li>Although many programs can run concurrently, the physical memory cannot hold all of them at once.</li>
-<li>The kernel monitors the memory usage.</li>
-<li>As long as the free memory remains above a high threshold, nothing happens.</li>
-<li>when the free memory falls below that threshold, the system starts moving selected idle pages of data from physical memory to the swap space to make room to accommodate other programs.</li>
-<li>This piece in the process is referred to as page out.</li>
-<li>Since the system CPU performs the process execution in around-robin fashion, when the system needs this paged-out data for execution, the CPU looks for that data in the physical memory and a pagefault occurs, resulting in moving the pages back to the physical memory from the swap.</li>
-<li>This return of data to the physical memory is referred to as page in.</li>
-<li>The entire process of paging data out and in is known as demand paging.</li>
-</ul>
-<p>\</p>
-<ul>
-<li>RHEL systems with less physical memory but high memory requirements can become over busy with paging out and in.</li>
-<li>When this happens, they do not have enough cycles to carry out other useful tasks, resulting in degraded system performance.</li>
-<li>The excessive amount of paging that affects the system performance is called thrashing.</li>
-<li>When thrashing begins, or when the free physical memory falls below a low threshold, the system deactivates idle processes and prevents new processes from being launched.</li>
-<li>The idle processes are only reactivated, and new processes are only allowed to be started when the system discovers that the available physical memory has climbed above the threshold level and thrashing has ceased.</li>
+<li>
+<p>Move pages of idle data between physical memory and swap.</p>
+</li>
+<li>
+<p>Swap areas act as extensions to the physical memory.</p>
+</li>
+<li>
+<p>May be activated or deactivated independent of swap spaces located in other partitions and volumes.</p>
+</li>
+<li>
+<p>The system splits the physical memory into small logical chunks called pages and maps their physical locations to virtual locations on the swap to facilitate access by system processors.</p>
+</li>
+<li>
+<p>This physical-to-virtual mapping of pages is stored in a data structure called page table, and it is maintained by the kernel.</p>
+</li>
+<li>
+<p>When a program or process is spawned, it requires space in the physical memory to run and be processed.</p>
+</li>
+<li>
+<p>Although many programs can run concurrently, the physical memory cannot hold all of them at once.</p>
+</li>
+<li>
+<p>The kernel monitors the memory usage.</p>
+</li>
+<li>
+<p>As long as the free memory remains above a high threshold, nothing happens.</p>
+</li>
+<li>
+<p>When the free memory falls below that threshold, the system starts moving selected idle pages of data from physical memory to the swap space to make room to accommodate other programs.</p>
+</li>
+<li>
+<p>This piece in the process is referred to as <strong>page out</strong>.</p>
+</li>
+<li>
+<p>Since the system CPU performs the process execution in around-robin fashion, when the system needs this paged-out data for execution, the CPU looks for that data in the physical memory and a <strong>pagefault</strong> occurs, resulting in moving the pages back to the physical memory from the swap.</p>
+</li>
+<li>
+<p>This return of data to the physical memory is referred to as <strong>page in</strong>.</p>
+</li>
+<li>
+<p>The entire process of paging data out and in is known as <strong>demand paging</strong>.</p>
+</li>
+<li>
+<p>RHEL systems with less physical memory but high memory requirements can become over busy with paging out and in.</p>
+</li>
+<li>
+<p>When this happens, they do not have enough cycles to carry out other useful tasks, resulting in degraded system performance.</p>
+</li>
+<li>
+<p>The excessive amount of paging that affects the system performance is called <strong>thrashing</strong>.</p>
+</li>
+<li>
+<p>When thrashing begins, or when the free physical memory falls below a low threshold, the system deactivates idle processes and prevents new processes from being launched.</p>
+</li>
+<li>
+<p>The idle processes are only reactivated, and new processes are only allowed to be started when the system discovers that the available physical memory has climbed above the threshold level and thrashing has ceased.</p>
+</li>
 </ul>
 <h3 id="determining-current-swap-usage">Determining Current Swap Usage</h3>
 <ul>
-<li>The size of a swap area should not be less than the amount of physical memory; however,</li>
-<li>depending on workload requirements, it may be twice the size or larger.</li>
+<li>Size of a swap area should not be less than the amount of physical memory.</li>
+<li>Depending on workload requirements, it may be twice the size or larger.</li>
 <li>It is also not uncommon to see systems with less swap than the actual amount of physical memory.</li>
 <li>This is especially witnessed on systems with a huge physical memory size.</li>
 </ul>
 <h3 id="free-command"><code>free</code> command</h3>
 <ul>
-<li>view memory and swap space utilization.</li>
+<li>View memory and swap space utilization.</li>
 <li>view how much physical memory is installed (total), used (used), available (free), used by shared library routines (shared), holding data before it is written to disk (buffers), and used to store frequently accessed data (cached) on the system. The</li>
 <li><code>-h</code>
 <ul>
@@ -171,12 +225,12 @@
 <li>for KB,</li>
 </ul>
 </li>
-<li>-m
+<li><code>-m</code>
 <ul>
 <li>for MB,</li>
 </ul>
 </li>
-<li>-g
+<li><code>-g</code>
 <ul>
 <li>for GB,</li>
 </ul>
@@ -193,8 +247,8 @@
 </span></span><span style="display:flex;"><span>Swap:          2.0Gi          0B       2.0Gi
 </span></span><span style="display:flex;"><span>Total:         3.7Gi       783Mi       2.7Gi</span></span></code></pre></div><p>Try <code>free -hts 3</code> and <code>free -htc 2</code> to refresh the output every three seconds (-s) and to display the output twice (-c).</p>
 <ul>
-<li>reads memory and swap information from the /proc/meminfo file to produce the report. The values are shown in KBs by
-default, and they are slightly off from what is shown above with free. Here are the relevant fields from this file:</li>
+<li>Reads memory and swap information from the <em>/proc/meminfo</em> file to produce the report. The values are shown in KBs by
+default, and they are slightly off from what is shown above with <code>free</code>. Here are the relevant fields from this file:</li>
 </ul>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat /proc/meminfo | grep -E &#39;Mem|Swap&#39;</span>
 </span></span><span style="display:flex;"><span>MemTotal:        <span style="color:#ff9f43">1818080</span> kB
@@ -204,7 +258,7 @@ default, and they are slightly off from what is shown above with free. Here are 
 </span></span><span style="display:flex;"><span>SwapTotal:       <span style="color:#ff9f43">2097148</span> kB
 </span></span><span style="display:flex;"><span>SwapFree:        <span style="color:#ff9f43">2097148</span> kB</span></span></code></pre></div><h3 id="prioritizing-swap-spaces">Prioritizing Swap Spaces</h3>
 <ul>
-<li>you may find multiple swap areas configured and activated to meet the workload demand.</li>
+<li>You may find multiple swap areas configured and activated to meet the workload demand.</li>
 <li>The default behavior of RHEL is to use the first activated swap area and move on to the next when the first one is exhausted.</li>
 <li>The system allows us to prioritize one area over the other by adding the option &ldquo;pri&rdquo; to the swap entries in the fstab file.</li>
 <li>This flag supports a value between -2 and 32767 with -2 being the default.</li>
@@ -216,16 +270,16 @@ default, and they are slightly off from what is shown above with free. Here are 
 <li>In order to create and manage swap spaces on the system, the <code>mkswap</code>, <code>swapon</code>, and <code>swapoff</code> commands are available.</li>
 <li>Use <code>mkswap</code> to initialize a partition for use as a swap space.</li>
 <li>Once the swap area is ready, you can activate or deactivate it from the command line with the help of the other two commands,</li>
-<li>or set it up for automatic activation by placing an entry in the fstab file.</li>
+<li>Can also set it up for automatic activation by placing an entry in the fstab file.</li>
 <li>The fstab file accepts the swap area&rsquo;s device file, UUID, or label.</li>
 </ul>
-<h3 id="exercise-14-5-create-and-activate-swap-in-partition-and-logical-volume-server-2">Exercise 14-5: Create and Activate Swap in Partition and Logical Volume (server 2)</h3>
+<h3 id="lab-create-and-activate-swap-in-partition-and-logical-volume-server-2">Lab: Create and Activate Swap in Partition and Logical Volume (server 2)</h3>
 <ul>
-<li>create one swap area in a new 40MB partition called sdb3 using the <code>mkswap</code> command.</li>
-<li>create another swap area in a 140MB logical volume called swapvol in vgfs.</li>
-<li>add their entries to the /etc/fstab file for persistence.</li>
-<li>use the UUID and priority 1 for the partition swap and the device file and priority 2 for the logical volume swap.</li>
-<li>activate them and use appropriate tools to validate the activation.</li>
+<li>Create one swap area in a new 40MB partition called <em>sdb3</em> using the <code>mkswap</code> command.</li>
+<li>Create another swap area in a 140MB logical volume called swapvol in vgfs.</li>
+<li>Add their entries to the /etc/fstab file for persistence.</li>
+<li>Use the UUID and priority 1 for the partition swap and the device file and priority 2 for the logical volume swap.</li>
+<li>Activate them and use appropriate tools to validate the activation.</li>
 </ul>
 <p>EXAM TIP: Use the <code>lsblk</code> command to determine available disk space.</p>
 <p>1. Use <code>parted print</code> on the sdb disk and the <code>vgs</code> command on the vgfs volume group to determine available space for a new 40MB partition and a 144MB logical volume:</p>
@@ -243,8 +297,7 @@ default, and they are slightly off from what is shown above with free. Here are 
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgs vgfs</span>
 </span></span><span style="display:flex;"><span>  Devices file sys_wwid t10.ATA_VBOX_HARDDISK_VBa5e3cbf7-10921e08 PVID qeP9dCevNnTy422I8p18NxDKQ2WyDodU last seen on /dev/sdf1 not found.
 </span></span><span style="display:flex;"><span>  VG   <span style="color:#78787e">#PV #LV #SN Attr   VSize   VFree  </span>
-</span></span><span style="display:flex;"><span>  vgfs   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">0</span> wz--n- 400.00m 144.00m</span></span></code></pre></div><p>The outputs show 49MB (250MB minus 201MB) free space on the sdb disk and
-144MB free space in the volume group.</p>
+</span></span><span style="display:flex;"><span>  vgfs   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">0</span> wz--n- 400.00m 144.00m</span></span></code></pre></div><p>The outputs show 49MB (250MB minus 201MB) free space on the sdb disk and 144MB free space in the volume group.</p>
 <p>2. Create a partition called sdb3 of size 40MB using the parted command:</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdb mkpart primary 202 242</span>
 </span></span><span style="display:flex;"><span>Information: You may need to update /etc/fstab.</span></span></code></pre></div><p>3. Create logical volume swapvol of size 144MB in vgs using the <code>lvcreate</code> command:</p>
@@ -308,12 +361,12 @@ default, and they are slightly off from what is shown above with free. Here are 
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1721305791" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1721305791" defer></script>
-        <script src="/js/search.js?1721305791" defer></script>
+        <script src="/js/auto-complete.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.min.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1722081508" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1722081508" defer></script>
+        <script src="/js/search.js?1722081508" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -384,8 +437,8 @@ default, and they are slightly off from what is shown above with free. Here are 
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1721305791" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1721305791" defer></script>
+    <script src="/js/clipboard.min.js?1722081509" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1722081509" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -401,20 +454,20 @@ default, and they are slightly off from what is shown above with free. Here are 
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1721305791" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1721305791" defer></script>
-    <script src="/js/js-yaml.min.js?1721305791" defer></script>
+    <script src="/js/d3/d3-color.min.js?1722081509" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1722081509" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1722081509" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1722081509" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1722081509" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1722081509" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1722081509" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1722081509" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1722081509" defer></script>
+    <script src="/js/js-yaml.min.js?1722081509" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1721305791" defer></script>
+    <script src="/js/theme.js?1722081509" defer></script>
   </body>
 </html>

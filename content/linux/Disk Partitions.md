@@ -1,13 +1,10 @@
 ## Disk Partitions 
 
-Care must be taken when adding a new partition to elude data corruption with overlapping an extant partition or wasting storage by leaving unused space between adjacent partitions. 
+- Be careful when adding a new partition to elude data corruption with overlapping an extant partition or wasting storage by leaving unused space between adjacent partitions. 
+- Disk allocated at the time of installation is recognized as sda (s for SATA, SAS, or SCSI device) disk a,  first partition identified as sda1 and the second partition as sda2. 
+- Any subsequent disks added to the system will be known as sdb, sdc, sdd, and so on, and will use 1, 2, 3, etc. for partition numbering.
 
-disk allocated at the time of installation is recognized as sda (s for SATA, SAS, or SCSI device) disk a, 
-first partition identified as sda1 and the second partition as sda2. 
-Any subsequent disks added to the system will be known as sdb, sdc, sdd, and so on, and will use 1, 2, 3,
-etc. for partition numbering.
-
-RHEL offers a command called `lsblk` to list disk and partition information. 
+Use `lsblk` to list disk and partition information. 
 
 ```bash
 [root@server1 ~]# lsblk
@@ -20,7 +17,7 @@ sda             8:0    0   10G  0 disk
 sr0            11:0    1  9.8G  0 rom  /mnt
 ```
 
-sr0 represents the ISO image mounted as an optical medium
+sr0 represents the ISO image mounted as an optical medium:
 
 ```bash
 [root@server1 ~]# sudo fdisk -l
@@ -53,16 +50,15 @@ identifiers 83 and 8e are hexadecimal values for the partition types
 
 ### Storage Management Tools 
 
-
-parted, gdisk, and LVM
+`parted`, `gdisk`, and `LVM`
 Partitions created with a combination of most of these tools and toolsets can coexist on the same disk.
 
-parted 
+`parted`
 understands both MBR and GPT formats. 
 
-gdisk
-idesigned to support the GPT format only
-may be used as a replacement of parted. 
+`gdisk`
+- support the GPT format only
+- may be used as a replacement of parted. 
 
-LVM
-feature-rich logical volume management solution that gives flexibility in storage management.
+`LVM`
+- feature-rich logical volume management solution that gives flexibility in storage management.

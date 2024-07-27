@@ -3,7 +3,7 @@
   <channel>
     <title></title>
     <link>http://davidvargas.xyz/linux/input-output-and-error-redirections/</link>
-    <description>Input, Output, and Error Redirections Input, output, and error character streams: standard input (or stdin) input redirection &lt; standard output (or stdout) append instead of overwrite $&gt; Redirect standard error and output standard error (or stderr) File descriptors: 0, 1, and 2 1 represents standard output location Can use these to represent character streams instead of &lt;, and &gt; noclobber feature prevent overwriting of the output file set -o noclobber activates the feature set +o noclobber deactivate the feature [root@localhost ~]# vim test.</description>
+    <description>Input, Output, and Error Redirections Input, output, and error character streams: standard input (or stdin) Input redirection &lt; standard output (or stdout) Append instead of overwrite &amp;&gt; Redirect standard error and output standard error (or stderr) 2&gt; File descriptors: 0, 1, and 2 1 Represents standard output location Can use these to represent character streams instead of &lt;, and &gt; noclobber feature prevent overwriting of the output file set -o noclobber activates the feature set +o noclobber deactivate the feature [root@localhost ~]# vim test.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://davidvargas.xyz/linux/input-output-and-error-redirections/index.xml" rel="self" type="application/rss+xml" />

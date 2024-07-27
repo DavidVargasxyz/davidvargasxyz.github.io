@@ -11,4 +11,3 @@ I wanted a category to share what I learn about writing. So i can improve my wri
 
 - [Things I Learned from Dickie Bush and Nicolas Cole's Writing Email Course](Things%20I%20Learned%20from%20Dickie%20Bush%20and%20Nicolas%20Cole's%20Writing%20Email%20Course.md)
 
-

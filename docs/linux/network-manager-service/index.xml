@@ -3,7 +3,7 @@
   <channel>
     <title></title>
     <link>http://davidvargas.xyz/linux/network-manager-service/</link>
-    <description>Network Manager Service Default service in RHEL for network:&#xA;interface and connection configuration. Administration. Monitoring. NetworkManager daemon&#xA;Responsible for keeping interfaces and connection up and active. Includes: nmcli nmtui (text-based) nm-connection-editor (GUI) Does not manage loopback interfaces. Interface Connection Profiles Configuration file on each interface that defines IP assignments and other relevant parameters for it. The networking subsystem reads this file and applies the settings at the time the connection is activated.</description>
+    <description>Network Manager Service Default service in RHEL for network:&#xA;interface and connection configuration. Administration. Monitoring. NetworkManager daemon&#xA;Responsible for keeping interfaces and connection up and active. Includes: nmcli nmtui (text-based) nm-connection-editor (GUI) Does not manage loopback interfaces. Interface Connection Profiles Configuration file on each interface that defines IP assignments and other relevant parameters for it.&#xA;The networking subsystem reads this file and applies the settings at the time the connection is activated.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://davidvargas.xyz/linux/network-manager-service/index.xml" rel="self" type="application/rss+xml" />

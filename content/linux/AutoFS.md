@@ -9,7 +9,7 @@
 - unmounts share if the share hasn't been accessed for a predefined period of time. 
 - Mounts managed with autofs should not be mounted manually via /etc/fstab to avoid inconsistencies.
 - Saves Kernel from having to maintain unused NFS shares. (Improved performance!)
-- NFS shares are defined in config files called maps (/etc/ or /etc/auto.master.d/)
+- NFS shares are defined in config files called maps (*/etc/* or */etc/auto.master.d/*)
 - Does not use /etc/fstab.
 - Does not require root to mount a share (fstab does).
 - Prevents client from hanging if share is down.
@@ -23,7 +23,7 @@
   - Unmounts after set timeframe of inactivity.
 - Use the mount command on a share to verify the path of the AutoFS map, file system type, and options used during mount.
 
-/etc/autofs.conf/ preset Directives:
+*/etc/autofs.conf/* preset Directives:
 master_map_name=auto.master
 timeout = 300
 negative_timeout = 60
@@ -33,16 +33,16 @@ logging = none
 #### Additional directives:
 
 **master_map_name**
-\- Name of the master map. Default is /etc/auto.master
+- Name of the master map. Default is */etc/auto.master*
 **timeout**
-\- time in second to unmount a share.
+- Time in second to unmount a share.
 **negative_timeout**
-\- Timeout (in seconds) value for failed mount attempts. (1 minute default)
+- Timeout (in seconds) value for failed mount attempts. (1 minute default)
 **mount_nfs_default_protocol**
-\- Sets the NFS version used to mount shares.
-logging
-\- Logging level (none, verbose, debug)
-\- Default is none (disabled)
+- Sets the NFS version used to mount shares.
+**logging**
+- Logging level (none, verbose, debug)
+- Default is none (disabled)
 
 - Normally left to their default values.
 
@@ -60,18 +60,20 @@ logging
 
 Define entries for indirect and direct maps. 
 
-- /etc/auto.master is default
-- Default is defined in /etc/autofs.conf with master_map_name directive.
+- */etc/auto.master* is default
+- Default is defined in */etc/autofs.conf* with **master_map_name** directive.
 - May be used to define entries for indirect and direct maps. 
-  - But it is recommended to store user-defined maps in /etc/auto.master.d/ 
+  - But it is recommended to store user-defined maps in */etc/auto.master.d/* 
     - AutoFS service parses this at startup.
 - You can append an option to auto.master but it will apply globally to all subentries in the specified map file.
 
 Map entry format examples:
-  ----------------------- -------------------------------- -----------------------
+```bash
   /-                      /etc/auto.master.d/auto.direct   \# Line 1
 
   /misc                   /etc/auto.misc                   \# Line 2
+```
+
 ### Direct Map
 
 ```
@@ -83,9 +85,9 @@ Mount shares on unrelated mount points
 - Always visible to users
 - Can exist with an indirect share under one parent directory
 - Accessing a directory containing many direct mount points mounts all shares.
-- Each direct map entry places a separate share entry to /etc/mtab 
-  - /etc/mtab maintains a list of all mounted file systems whether they are local or remote.
-  - Updated whenever a local file system, removable file system, or aq network share is mounted or unmounted.
+- Each direct map entry places a separate share entry to */etc/mtab* 
+  - */etc/mtab* maintains a list of all mounted file systems whether they are local or remote.
+  - Updated whenever a local file system, removable file system, or a network share is mounted or unmounted.
 
 ### Indirect Map
 
@@ -95,13 +97,13 @@ Mount shares on unrelated mount points
 
 Automount removable filesystems
 
-- Mount point /misc precedes mount point entries in /etc/auto.miscq
+- Mount point */misc* precedes mount point entries in */etc/auto.miscq*
 - Used to automount removable file systems (CD, DVD, USB disks, etc.)
-- Custom indirect map files should be located in /etc/auto.master.d/
+- Custom indirect map files should be located in */etc/auto.master.d/*
 - Preferred over direct mount for mounting all shares under one common parent directory.
 - Become visible only after they have been accessed.
 - Local and indirect mounted shares cannot coexist under the same parent directory.
-- One entry in /etc/mtab gets added for each indirect map.
+- One entry in */etc/mtab* gets added for each indirect map.
 - Accessing a directory containing many indirect mount points shows only the shares that are already mounted.
 - Usually better to use indirect map for automounting NFS shares.
 
@@ -120,13 +122,13 @@ sudo dnf install -y autofs
 sudo mkdir /autodir
 ```
 
-1. Add an entry to /etc/auto.master to point the AutoFS service to the auto.dir file for more information:
+1. Add an entry to */etc/auto.master* to point the AutoFS service to the auto.dir file for more information:
 
 ```
 /- /etc/auto.master.d/auto.dir
 ```
 
-1. Create /etc/auto.master.d/auto.dir and add the mount point, NFS server, and share info:
+1. Create */etc/auto.master.d/auto.dir* and add the mount point, NFS server, and share info:
 
 ```
 /autodir server20:/common

@@ -33,7 +33,7 @@ A. A set of rules that govern the exchange of information between two network en
 ---
 
 Q. Which directory stores the network connection profiles?
-A. /etc/NetworkManager/system-connections/
+A. */etc/NetworkManager/system-connections/*
 
 ---
 
@@ -48,7 +48,7 @@ A. 128.
 ---
 
 Q. Which file defines the port and protocol mapping?
-A. The /etc/protocols file.
+A. The */etc/protocols* file.
 
 ---
 

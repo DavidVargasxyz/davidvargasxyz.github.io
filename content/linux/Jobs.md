@@ -1,10 +1,10 @@
 ## Jobs
 - job
-	- process that is started in the background and controlled by the terminal where it is spawned.
-	- assigned a PID (process identifier) by the kernel and, additionally, a job ID by the shell.
-	- does not hold the terminal window where it is initiated.
+	- Process that is started in the background and controlled by the terminal where it is spawned.
+	- Assigned a PID (process identifier) by the kernel and, additionally, a job ID by the shell.
+	- Does not hold the terminal window where it is initiated.
 	- Can run multiple job simultaneously.
-	- can be brought to foreground, returned to the background, suspended, or stopped.
+	- Can be brought to foreground, returned to the background, suspended, or stopped.
 - job control
 	- management of multiple jobs within a shell environment
 
@@ -14,10 +14,10 @@ commands and control sequences for administering the jobs.
 	- display jobs.
 - `bg `
 	- Shell built-in command 
-	- move a job to the background or restart a job in the background that was suspended with Ctrl+z.
+	- Move a job to the background or restart a job in the background that was suspended with `Ctrl+z`.
 - `fg `
 	- Shell built-in command 
-	- move a job to the foreground 
+	- Move a job to the foreground 
 - `Ctrl+z `
 	- Suspends a foreground job and allows the terminal window to be used for other purposes
 

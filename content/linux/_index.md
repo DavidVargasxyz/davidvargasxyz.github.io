@@ -23,6 +23,7 @@ alwaysopen = false
 ## Misc
 - [Using Man Pages](Using%20Man%20Pages.md)
 - [wsl2](wsl2.md)
+- [[Bare Metal to Proxmox VM]]
 
 ## Labs
 

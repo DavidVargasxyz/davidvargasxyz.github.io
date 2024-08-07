@@ -16,20 +16,20 @@
     <meta property="og:type" content="article">
     <meta property="article:section" content="Linux">
     <meta itemprop="description" content="Editing at the Command line Common key combinations: Ctrl&#43;a / Home Moves the cursor to the beginning of the command line Ctrl&#43;e / End Moves the cursor to the end of the command line Ctrl&#43;u Erase everything at and before cursor Ctrl&#43;k Erase Everything at cursor and after Alt&#43;f Moves the cursor to the right one word at a time Alt&#43;b Moves the cursor to the left one word at a time Ctrl&#43;f / Right arrow Moves the cursor to the right one character at a time Ctrl&#43;b / Left arrow Moves the cursor to the left one character at a time Tab completion Hitting the Tab key twice automatically completes the entire name.">
-    <meta itemprop="wordCount" content="318">
+    <meta itemprop="wordCount" content="321">
     <title></title>
-    <link href="/images/logo.svg?1722081507" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1722081508" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1722081508" rel="stylesheet">
-    <link href="/css/auto-complete.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1722081508" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1722081508" rel="stylesheet">
-    <link href="/css/fonts.css?1722081508" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1722081508" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1722081508" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1722081508" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1722081508" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1722081508" rel="stylesheet">
-    <link href="/css/print.css?1722081508" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1722081508"></script>
+    <link href="/images/logo.svg?1723051012" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1723051012" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723051012" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1723051012" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723051012" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723051012" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1723051012" rel="stylesheet">
+    <link href="/css/fonts.css?1723051012" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723051012" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1723051012" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1723051012" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1723051012" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1723051012" rel="stylesheet">
+    <link href="/css/print.css?1723051012" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1723051012"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -180,32 +180,23 @@
 </ul>
 <h3 id="tilde-substitution-tilde-expansion">Tilde Substitution (tilde expansion)</h3>
 <ul>
-<li>performed on words that begin with the tilde character (~).</li>
-<li>~
+<li>Performed on words that begin with the tilde character (~).
+~
 <ul>
 <li>refers to user&rsquo;s home directory.</li>
 </ul>
 </li>
-<li>~+
-<ul>
-<li>refers to current directory</li>
 </ul>
-</li>
-<li>~-
-<ul>
-<li>Refers to previous working directory.</li>
-</ul>
-</li>
-<li>~USER
-<ul>
-<li>Refers to specific user&rsquo;s home directory.</li>
-</ul>
-</li>
-</ul>
+<p>~+
+- refers to current directory</p>
+<p>~-
+- Refers to previous working directory.</p>
+<p>~USER
+- Refers to specific user&rsquo;s home directory.</p>
 <h3 id="alias-substitution-command-aliasing-or-alias">Alias Substitution (command aliasing or alias)</h3>
 <ul>
-<li>define shortcuts for commands.</li>
-<li>bash shell includes several predefined aliases that are set during user login.</li>
+<li>Define shortcuts for commands.</li>
+<li>Bash shell includes several predefined aliases that are set during user login.</li>
 <li>Shell gives precedent to an alias if an alias matches a command or program.
 <ul>
 <li>can still run the command without using the alias but preceding command with a backslash. \</li>
@@ -214,34 +205,34 @@
 </ul>
 <h3 id="alias-command">alias command</h3>
 <ul>
-<li>set an alias.</li>
-<li>internal shell command.</li>
+<li>Set an alias.</li>
+<li>Internal shell command.</li>
 </ul>
-<div class="highlight wrap-code"><pre tabindex="0"><code>[root@localhost ~]# alias
-alias cp=&#39;cp -i&#39;
-alias egrep=&#39;egrep --color=auto&#39;
-alias fgrep=&#39;fgrep --color=auto&#39;
-alias grep=&#39;grep --color=auto&#39;
-alias l.=&#39;ls -d .* --color=auto&#39;
-alias ll=&#39;ls -l --color=auto&#39;
-alias ls=&#39;ls --color=auto&#39;
-alias mv=&#39;mv -i&#39;
-alias rm=&#39;rm -i&#39;
-alias xzegrep=&#39;xzegrep --color=auto&#39;
-alias xzfgrep=&#39;xzfgrep --color=auto&#39;
-alias xzgrep=&#39;xzgrep --color=auto&#39;
-alias zegrep=&#39;zegrep --color=auto&#39;
-alias zfgrep=&#39;zfgrep --color=auto&#39;
-alias zgrep=&#39;zgrep --color=auto&#39;</code></pre></div><div class="highlight wrap-code"><pre tabindex="0"><code>[root@localhost ~]# alias frog=&#39;pwd&#39;
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># alias</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">cp</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;cp -i&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">egrep</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;egrep --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">fgrep</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;fgrep --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">grep</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;grep --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> l.<span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;ls -d .* --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">ll</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;ls -l --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">ls</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;ls --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">mv</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;mv -i&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">rm</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;rm -i&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">xzegrep</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;xzegrep --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">xzfgrep</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;xzfgrep --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">xzgrep</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;xzgrep --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">zegrep</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;zegrep --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">zfgrep</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;zfgrep --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">zgrep</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;zgrep --color=auto&#39;</span></span></span></code></pre></div><div class="highlight wrap-code"><pre tabindex="0"><code>[root@localhost ~]# alias frog=&#39;pwd&#39;
 [root@localhost ~]# frog
 /root</code></pre></div><h3 id="unalias-command">unalias command</h3>
 <ul>
-<li>unset an alias.</li>
-<li>internal shell command.</li>
+<li>Unset an alias.</li>
+<li>Internal shell command.</li>
 </ul>
-<div class="highlight wrap-code"><pre tabindex="0"><code>[root@localhost ~]# unalias frog
-[root@localhost ~]# frog
--bash: frog: command not found</code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># unalias frog</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># frog</span>
+</span></span><span style="display:flex;"><span>-bash: frog: <span style="color:#ff5c57">command</span> not found</span></span></code></pre></div>
             <footer class="footline">
             </footer>
           </article>
@@ -269,12 +260,12 @@ alias zgrep=&#39;zgrep --color=auto&#39;</code></pre></div><div class="highlight
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1722081508" defer></script>
-        <script src="/js/lunr/lunr.min.js?1722081508" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1722081508" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1722081508" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1722081508" defer></script>
-        <script src="/js/search.js?1722081508" defer></script>
+        <script src="/js/auto-complete.js?1723051012" defer></script>
+        <script src="/js/lunr/lunr.min.js?1723051012" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1723051012" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1723051012" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1723051012" defer></script>
+        <script src="/js/search.js?1723051012" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -345,8 +336,8 @@ alias zgrep=&#39;zgrep --color=auto&#39;</code></pre></div><div class="highlight
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1722081508" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1722081508" defer></script>
+    <script src="/js/clipboard.min.js?1723051012" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1723051012" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -362,20 +353,20 @@ alias zgrep=&#39;zgrep --color=auto&#39;</code></pre></div><div class="highlight
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1722081508" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1722081508" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1722081508" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1722081508" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1722081508" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1722081508" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1722081508" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1722081508" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1722081508" defer></script>
-    <script src="/js/js-yaml.min.js?1722081508" defer></script>
+    <script src="/js/d3/d3-color.min.js?1723051012" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1723051012" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1723051012" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1723051012" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1723051012" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1723051012" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1723051012" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1723051012" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1723051012" defer></script>
+    <script src="/js/js-yaml.min.js?1723051012" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1722081508" defer></script>
+    <script src="/js/theme.js?1723051012" defer></script>
   </body>
 </html>

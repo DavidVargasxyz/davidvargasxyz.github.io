@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/shell-parameters/</link>
+    <description>Shell Parameters An entity that holds a value such as a name, special character, or number. The parameter that holds a name is referred to as a variable a special character is referred to as a special parameter represents the command or script itself ($0), count of supplied arguments ($* or $@), all arguments ($#), and PID of the process ($$) one or more digits, except for 0 is referred to as a positional parameter (a command line argument).</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/shell-parameters/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

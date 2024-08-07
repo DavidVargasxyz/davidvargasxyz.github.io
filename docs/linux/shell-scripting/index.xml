@@ -3,7 +3,7 @@
   <channel>
     <title></title>
     <link>http://davidvargas.xyz/linux/shell-scripting/</link>
-    <description>Chapter 21 \&#xA;Shell Scripting \&#xA;::: {style=“border-style: double; border-color: rgb(0, 0, 0); border-top-width: 1px; width: 0.375;”} :::&#xA;\&#xA;This chapter describes the following major topics: \&#xA;Overview of shell scripts&#xA;\&#xA;Write scripts to display basic system information, employ shell and environment variables, use command substitution, and manipulate special and positional parameters&#xA;\&#xA;Execute and debug scripts&#xA;\&#xA;Know exit codes and test conditions&#xA;\&#xA;Understand logical constructs: if-then-fi, if-then-else-fi, and if-then-elif-fi</description>
+    <description>Shell Scripting Shell Scripts Shell Parameters Logical Constructs Shell Scripting Review Questions Shell Scripting DIY Labs </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://davidvargas.xyz/linux/shell-scripting/index.xml" rel="self" type="application/rss+xml" />

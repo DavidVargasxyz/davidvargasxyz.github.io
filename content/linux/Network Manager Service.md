@@ -10,21 +10,20 @@ Default service in RHEL for network:
 - Includes:
 	- `nmcli`
 	- `nmtui `(text-based)
-	- nm-connection-editor (GUI)
+	- `nm-connection-editor` (GUI)
 - Does not manage loopback interfaces.
 ### Interface Connection Profiles
 
 - Configuration file on each interface that defines IP assignments and other relevant parameters for it. 
 - The networking subsystem reads this file and applies the settings at the time the connection is activated. 
-- Connection configuration files (or connection profiles) are stored in a central location under the /etc/NetworkManager/system-connections directory. 
--  The filenames are identified by the interface connection names with nmconnection as the extension. 
-- Some instances of connection profiles are: enp0s3.nmconnection, ens160.nmconnection, and em1.nmconnection.
+- Connection configuration files (or **connection profiles**) are stored in a central location under the */etc/NetworkManager/system-connections* directory. 
+-  The filenames are identified by the interface connection names with *nmconnection* as the extension. 
+- Some instances of connection profiles are: *enp0s3.nmconnection*, *ens160.nmconnection*, and *em1.nmconnection*.
 
-On server10 and server20, the device name for the first interface is enp0s3 with connection name enp0s3 and relevant connection information
-stored in the enp0s3.nmconnection file. 
+	On server10 and server20, the device name for the first interface is enp0s3 with connection name enp0s3 and relevant connection information stored in the enp0s3.nmconnection file. 
 
 This connection was established at the time of RHEL installation. The current content of the file from server10 are presented below:
-```
+```bash
 [root@server200 system-connections]# cat /etc/NetworkManager/system-connections/enp0s3.nmconnection 
 [connection]
 id=enp0s3
@@ -76,7 +75,7 @@ Directives
 - Generates an IPv6 address based on the hardware address of the interface.
 
 View additional directives:
-```
+```bash
 man nm-settings
 ```
 

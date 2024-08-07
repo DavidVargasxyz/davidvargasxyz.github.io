@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/advanced-container-management/</link>
+    <description>Advanced Container Management Preset environment variables may be passed when launching containers or new variables may be set for containerized applications to consume for proper operation. Information stored during an application execution is lost when a container is restarted or erased. This behavior can be overridden by making a directory on the host available inside the container for saving data persistently. Containers may be configured to start and stop with the transitioning of the host system via the systemd service.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/advanced-container-management/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

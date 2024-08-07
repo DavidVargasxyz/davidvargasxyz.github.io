@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/selinux-diy-labs/</link>
+    <description>SELinux DIY Labs Lab: Disable and Enable the SELinux Operating Mode Check and make a note of the current SELinux operating mode. [root@server30 ~]# getenforce Enforcing Modify the configuration file and set the mode to disabled. [root@server30 ~]# vim /etc/selinux/config SELINUX=permissive Reboot the system to apply the change. [root@server30 ~]# reboot Run sudo getenforce to confirm the change when the system is up. [root@server30 ~]# getenforce Permissive Restore the directive’s value to enforcing in the configuration file, and reboot to apply the new mode.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/selinux-diy-labs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

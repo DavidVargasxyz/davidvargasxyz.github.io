@@ -44,7 +44,7 @@ PING server40.example.com (192.168.0.40) 56(84) bytes of data.
 rtt min/avg/max/mdev = 0.628/1.516/3.204/1.193 ms
 ```
 
-### Lab 15-2: Add New Interface and Configure Connection Profile Manually (server30)
+### Lab: Add New Interface and Configure Connection Profile Manually (server30)
 
 Add a third network interface to RHEL9server30 in VirtualBox.
  
@@ -83,3 +83,23 @@ rtt min/avg/max/mdev = 0.474/1.032/1.590/0.558 ms
 ```
 
 
+Or create the profile manually and restart network manager:
+```bash
+[connection]
+id=enp0s8
+type=ethernet
+interface-name=enp0s8
+uuid=92db4c65-2f13-4952-b81f-2779b1d24a49
+
+[ethernet]
+
+[ipv4]
+method=manual
+address1=10.1.13.3/24,10.1.13.1
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]
+```

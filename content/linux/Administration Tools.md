@@ -1,17 +1,18 @@
 ## Administration Tools
 
 `ip `
-- display monitor and manage network interfaces, routing, connections, traffic, etc. 
+- Display monitor and manage network interfaces, routing, connections, traffic, etc. 
 
 `ifup`
 - Brings up an interface
 
 `ifdown`
 - Brings down an interface
+
 `nmcli`                               
 - Creates, updates, deletes, activates, and deactivates a connection profile.
 
-### nmcli command
+### `nmcli` command
 
 - Create, view, modify, remove, activate, and deactivate network connections.
 - Control and report network device status.
@@ -26,7 +27,7 @@ Operates on 7 different object categories.
 6. monitor
 7. agent
 
-```
+```bash
 [root@server200 system-connections]# nmcli --help
 Usage: nmcli [OPTIONS] OBJECT { COMMAND | help }
 
@@ -46,10 +47,10 @@ OPTIONS
   -w, --wait <seconds>                     set timeout waiting for finishing operations
 
 OBJECT
-  g[eneral]       NetworkManager's general status and operations
+  g[eneral]       NetworkManager\'s general status and operations
   n[etworking]    overall networking control
   r[adio]         NetworkManager radio switches
-  c[onnection]    NetworkManager's connections
+  c[onnection]    NetworkManager\'s connections
   d[evice]        devices managed by NetworkManager
   a[gent]         NetworkManager secret agent or polkit agent
   m[onitor]       monitor NetworkManager changes
@@ -75,12 +76,12 @@ Options:
 - `show` (Displays info about device(s)
 
 Show all connections, inactive or active:
-```
+```bash
 nmcli c s
 ```
 
 Deactivate the connection enp0s8:
-```
+```bash
 sudo nmcli c down enp0s8
 ```
 
@@ -90,20 +91,20 @@ The connection profile gets detached from the device, disabling the connection.
 ```
 
 Activate the connection enp0s8:
-```
+```bash
 $ sudo nmcli c up enp0s8
 # connection profile re-attaches to the device.
 ```
 
 Display the status of all network devices:
-```
+```bash
 nmcli d s
 ```
 
 ### Lab: Add Network Devices to server10 and one to server20 using VirtualBox
 
 1. Shut down your servers (follow each step for both servers)
-```
+```bash
 sudo shutdown now
 ```
 2. Add network interface in Virtualbox then power on the VMs
@@ -111,19 +112,19 @@ sudo shutdown now
 Select machine > settings > Network > Adapter 2 > Enable Network Adapter > Internal Network > ok
 ```
 3. Verify the new interfaces:
-```
+```bash
 ip a
 ```
 
 ### Lab: Configure New Network Connection Using nmcli (server20)
 
 1. Verify the interface that was added from virtualbox:
-```
+```bash
 nmcli d status | grep enp
 ```
 
 2. Add connection profile and attach it to the interface:
-```
+```bash
 sudo nmcli c a type Ethernet ifname enp0s8 con-name enp0s8 ip4 172.10.10.120/24 gw4 172.10.10.1
 ```
 

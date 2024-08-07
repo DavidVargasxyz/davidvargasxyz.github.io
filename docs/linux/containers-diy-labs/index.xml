@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/containers-diy-labs/</link>
+    <description>Containers DIY Labs Lab: Launch Named Root Container with Port Mapping Create a new user account called conadm on server30 and give them full sudo rights. [root@server30 ~]# adduser conadm [root@server30 ~]# visudoconadm ALL=(ALL) ALL As conadm with sudo (where required) on server30, inspect the latest version of ubi9 and then download it to your computer. [root@server30 ~]# dnf install container-tools [root@server30 ~]# podman login registry.redhat.io [conuser1@server30 ~]$ podman pull ubi9 Resolved &#34;ubi9&#34; as an alias (/etc/containers/registries.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/containers-diy-labs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

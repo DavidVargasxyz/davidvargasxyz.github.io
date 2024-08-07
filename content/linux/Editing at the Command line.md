@@ -23,27 +23,30 @@
 - In case of multiple possibilities matching the entered characters, it completes up to the point they have in common and prints the rest of the possibilities on the screen.
 
 ### Tilde Substitution (tilde expansion)
-- performed on words that begin with the tilde character (~).
-- ~ 
+- Performed on words that begin with the tilde character (~).
+~ 
 	- refers to user's home directory.
-- ~+
+
+~+
 	- refers to current directory
-- ~-
+
+~-
 	- Refers to previous working directory.
-- ~USER
+
+~USER
 	- Refers to specific user's home directory.
 
 ### Alias Substitution (command aliasing or alias)
-- define shortcuts for commands.
-- bash shell includes several predefined aliases that are set during user login.
+- Define shortcuts for commands.
+- Bash shell includes several predefined aliases that are set during user login.
 - Shell gives precedent to an alias if an alias matches a command or program.
 	- can still run the command without using the alias but preceding command with a backslash. \
 
 ### alias command
-- set an alias.
-- internal shell command.
+- Set an alias.
+- Internal shell command.
 
-```
+```bash
 [root@localhost ~]# alias
 alias cp='cp -i'
 alias egrep='egrep --color=auto'
@@ -70,9 +73,9 @@ alias zgrep='zgrep --color=auto'
 ```
 
 ### unalias command
-- unset an alias.
-- internal shell command.
-```
+- Unset an alias.
+- Internal shell command.
+```bash
 [root@localhost ~]# unalias frog
 [root@localhost ~]# frog
 -bash: frog: command not found

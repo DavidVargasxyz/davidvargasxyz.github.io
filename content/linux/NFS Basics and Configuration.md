@@ -26,7 +26,7 @@ Same tools for mounting and unmounting a filesystem.
   - Better scalability
   - Better cross-platform
   - Better system crash handling
-  - use usernames and group names rather than UID and GID.
+  - Use usernames and group names rather than UID and GID.
   - Uses TCP by default.
   - Can use UDP for backwards compatibility.
   - Version 4.2 only supports TCP
@@ -50,12 +50,12 @@ Same tools for mounting and unmounting a filesystem.
 
 ### How to export a share
 
-- Add entry of the share to /etc/exports using exportfs command
+- Add entry of the share to */etc/exports* using `exportfs` command
 - Add firewall rule to allow access
 
 ### Mount a share from the client side
 
-- Use mount and add the filesystem to the fstab file.
+- Use `mount` and add the filesystem to the fstab file.
 
 ### Lab: Export Share on NFS Server
 
@@ -96,13 +96,13 @@ sudo systemctl --now enable nfs-server
 sudo systemctl status nfs-server
 ```
 
-1. Open /etc/exports and add entry for /common to export it to server10 with read/write:
+1. Open */etc/exports* and add entry for */common* to export it to server10 with read/write:
 
 ```
 /common server10(rw)
 ```
 
-1. Export the entry defined in /etc/exports. -a option exports all entries in the file. -v is verbose.
+1. Export the entry defined in */etc/exports*/. -a option exports all entries in the file. -v is verbose.
 
 ```
 sudo exportfs -av

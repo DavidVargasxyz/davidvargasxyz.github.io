@@ -8,18 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f5ad00467143edca",
+            "id": "38eaed06194459c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/Bash.md",
+                "file": "linux/AutoFS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f65f3d48b19b5059",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "linux/Networking DIY Challenge Labs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "eef73aed57b804ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "writing/Nat Elison's SEO course.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fstab",
+                "query": "podman exec",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/Bash.md",
+                "file": "writing/Nat Elison's SEO course.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/Bash.md",
+                "file": "writing/Nat Elison's SEO course.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/Bash.md"
+                "file": "writing/Nat Elison's SEO course.md"
               }
             }
           }
@@ -150,34 +175,38 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "f5ad00467143edca",
+  "active": "eef73aed57b804ff",
   "lastOpenFiles": [
-    "linux/History Substitution.md",
-    "linux/Bash.md",
-    "linux/Input, Output, and Error Redirections.md",
+    "linux/AutoFS.md",
+    "writing/Nat Elison's SEO course.md",
+    "linux/Networking DIY Challenge Labs.md",
+    "linux/Networking Network Devices and Network Connections.md",
+    "linux/Administration Tools.md",
     "linux/RHCSA Study Tracker.md",
-    "linux/Shell and Environment Variables.md",
-    "linux/Bash Review Questions.md",
-    "linux/Bash Labs.md",
-    "linux/Shell Startup Files.md",
-    "linux/Jobs.md",
-    "linux/Metacharacters and Wildcard.md",
-    "linux/Editing at the Command line.md",
-    "linux/Local File Systems and Swap.md",
-    "linux/The Linux Firewall.md",
-    "linux/File System Management.md",
-    "linux/File Systems and File System Types.md",
-    "linux/firewalld Management.md",
-    "linux/Monitoring File System Usage.md",
-    "linux/firewalld Services.md",
-    "linux/`firewalld` Zones.md",
-    "linux/Storage Management.md",
-    "linux/Logical Volume Manager (LVM).md",
-    "linux/The Linux Firewall DIY Labs.md",
-    "linux/The Linux Firewall Review Questions.md",
-    "linux/Virtual Data Optimizer (VDO).md",
-    "linux/Sample Exam 1.md",
-    "linux/RHCSA Notes.md",
+    "linux/_index.md",
+    "linux/Bare Metal to Proxmox VM.md",
+    "images/Pasted image 20240806080538.png",
+    "images/Pasted image 20240806080050.png",
+    "images/Pasted image 20240806075409.png",
+    "linux/Network File System (NFS).md",
+    "linux/NFS Basics and Configuration.md",
+    "linux/Containers.md",
+    "linux/Containers DIY Labs.md",
+    "linux/Advanced Container Management.md",
+    "linux/Working with Images and Containers.md",
+    "linux/Introduction to Containers.md",
+    "_index.md",
+    "linux/Containers Review Questions.md",
+    "linux/Logical Constructs.md",
+    "linux/Shell Scripting.md",
+    "linux/Shell Parameters.md",
+    "linux/Shell Scripts.md",
+    "linux/Shell Scripting DIY Labs.md",
+    "linux/Shell Scripting Review Questions.md",
+    "linux/Networking Review Questions.md",
+    "linux/Understanding Hosts Table.md",
+    "linux/DNS and Time Synchronization.md",
+    "linux/Security Enhanced Linux.md~",
     "images/Pasted image 20240713164339.png",
     "images/Pasted image 20240710073529.png",
     "images/Pasted image 20240710050536.png",
@@ -185,9 +214,6 @@
     "images/Pasted image 20240709212056.png",
     "images/Pasted image 20240709211540.png",
     "images/Pasted image 20240709205705.png",
-    "images/Pasted image 20240709205201.png",
-    "images/Pasted image 20240709205042.png",
-    "images/Pasted image 20240709204152.png",
     "linux/Network File System.md~",
     "linux/rhcsa",
     "linux/Local File Systems and Swap.md~",

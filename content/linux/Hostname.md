@@ -2,8 +2,8 @@
 
 - "-", "_ ", and ". " characters are allowed.
 - Up to 253 characters.
-- Stored in /etc/hostname.
-- can be viewed with several different commands, such as `hostname`, `hostnamectl`, `uname`, and `nmcli`, as well as by displaying the content of the /etc/hostname file. 
+- Stored in */etc/hostname*.
+- Can be viewed with several different commands, such as `hostname`, `hostnamectl`, `uname`, and `nmcli`, as well as by displaying the content of the */etc/hostname* file. 
 
 View the hostname:
 ```
@@ -26,8 +26,8 @@ cat /etc/hostname
 
 Server1
 
-1. Open /etc/hostname and change the entry to server10.example.com
-2. restart the systemd-hostnamed service daemon
+1. Open */etc/hostname* and change the entry to `server10.example.com`
+2. Restart the `systemd-hostnamed` service daemon
 ```
 sudo systemctl restart systemd-hostnamed
 ```
@@ -39,7 +39,7 @@ hostname
 server2
 
 1. Change the hostname with hostnamectl:
-```
+```bah
 sudo hostnamectl set-hostname server21.example.com
 ```
 2. Log out and back in for the prompt to update

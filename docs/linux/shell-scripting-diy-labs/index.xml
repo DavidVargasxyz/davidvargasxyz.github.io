@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/shell-scripting-diy-labs/</link>
+    <description>Shell Scripting DIY Labs Lab: Write Script to Create Logical Volumes Present 2x1GB virtual disks to server40 in VirtualBox Manager. As user1 with sudo on server40, write a single bash script to create 2x400MB partitions on each disk using parted and then bring both partitions into LVM control with the pvcreate command. vim /usr/local/bin/lvscript.sh Create a volume group called vgscript and add both physical volumes to it. Create three logical volumes each of size 200MB and name them lvscript1, lvscript2, and lvscript3.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/shell-scripting-diy-labs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://davidvargas.xyz/linux/creating-a-bootable-and-persistent-fedora-40-usb-drive-from-fedora-40/</link>
+    <description>This process worked at creating an image for me, but resulted in a highly unstable system that crashes. Will revisit this at another time. You will need to download a Fedora Live iso here: https://fedoraproject.org/en/workstation/download Then install livecd-iso-to-mediums to provide livecd-iso-to-disk dnf -y install livecd-iso-to-mediums&#xA;Create a file called livecd-iso-to-disk.f38.patch.txt and add the following text to it:&#xA;--- /usr/bin/livecd-iso-to-disk 2022-06-15 04:49:24.000000000 -0700 +++ livecd-iso-to-disk.patched 2023-04-27 09:11:13.665060837 -0700 @@ -1058,7 +1058,7 @@ createFSLayout() { udevadm settle -E $p2 mkfs.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/linux/creating-a-bootable-and-persistent-fedora-40-usb-drive-from-fedora-40/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

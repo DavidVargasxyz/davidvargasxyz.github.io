@@ -53,3 +53,56 @@ Confirm
 
 ### Copy data to hard drive
 - Create an NFS share on the proxmox server
+
+```bash
+sudo dd if=/dev/sda of=/run/media/liveuser/new\ Volume/laptopHDD.img bs=1M status=progress
+
+```
+
+liveusb 10.10.15.45
+
+proxmox 10.10.15.39
+
+proxmox storage 10.10.15.40
+
+```bash
+sudo dd if=/dev/sd0 of=driveImage.img bs=1M status=progress
+```
+
+Here is dd rescue version:
+```bash
+sudo ddrescue -c 1M -v /dev/sda /proxmox-vms/images/100/host.img /proxmox-vms/images/100/host.log
+```
+
+If the process gets stopped in the middle. You can resume by using the same ddrecue command as long as the log file was specified. 
+
+Rename file to .raw instead of .img with mv command
+
+sample vm config file
+![](Pasted%20image%2020240807124622.png)
+b_samZFS = name of storage pool
+123 = name of vm
+driveImage.raw is name of the image
+
+Then configure the vm to use sata1 (options > boot order)
+
+/mnt/pve/proxmox-vms
+
+Config file located at /etc/pve/qemu-server
+
+Create nfs share on usb:
+```bash
+mkdir /proxmox-vms
+```
+
+```bash
+sudo vim /etc/fstab
+```
+
+```
+10.10.15.40:/mnt/array1/proxmox-vms /proxmox-vms nfs _netdev 0 0
+```
+
+```bash
+sudo mount -a
+```

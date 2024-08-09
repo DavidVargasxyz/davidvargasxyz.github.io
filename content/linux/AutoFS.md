@@ -104,7 +104,7 @@ Automount removable filesystems
 - Become visible only after they have been accessed.
 - Local and indirect mounted shares cannot coexist under the same parent directory.
 - One entry in */etc/mtab* gets added for each indirect map.
-- Accessing a directory containing many indirect mount points shows only the shares that are already mounted.
+- Accessing4
 - Usually better to use indirect map for automounting NFS shares.
 
 
@@ -164,20 +164,20 @@ mount | grep autodir
 
 - configure an indirect map to automount the NFS share /common that is available from server20. 
 - install the relevant software and set up AutoFS maps to support the automatic mounting.
-- observe that the specified mount point "autoindir" is created automatically under /misc.
+- Observe that the specified mount point "autoindir" is created automatically under /misc.
 
 Note that /common is already mounted on the /local mount point via the fstab file and it is also configured via a direct map for automounting on /autodir. There should occur no conflict in configuration or functionality among the three.
 
 1\. Install the autofs software package if it is not already there:
 
-2\. Confirm the entry for the indirect map /misc in the /etc/auto.master
+2\. Confirm the entry for the indirect map */misc* in the */etc/auto.master*
 file exists:
 ```bash
 [root@server30 common]# grep ^/misc /etc/auto.master
 /misc	/etc/auto.misc
 ```
 
-3\. Edit the /etc/auto.misc file and add the mount point, NFS server, and share information to it:
+3\. Edit the */etc/auto.misc* file and add the mount point, NFS server, and share information to it:
 ```bash
 autoindir server30:/common
 ```
@@ -205,15 +205,15 @@ test.text
 server30:/common on /misc/autoindir type nfs4 (rw,relatime,vers=4.2,rsize=262144,wsize=262144,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=192.168.0.40,local_lock=none,addr=192.168.0.30)
 ```
 
-- /misc/autoindir has been auto generated.
-- You can use the ubrella mount point /misc to mount additional auto-generated mount points. 
+- */misc/autoindir* has been auto generated.
+- You can use the umbrella mount point /misc to mount additional auto-generated mount points. 
 
 ### Automounting User Home Directories \
 
 AutoFS allows us to automount user home directories by exploiting two special characters in indirect maps.
 
 **asterisk (\*)**
-- replaces the references to specific mount points and the 
+- Replaces the references to specific mount points
 
 **ampersand (&)** 
 - Substitutes the references to NFS servers and shared subdirectories.
@@ -222,7 +222,7 @@ AutoFS allows us to automount user home directories by exploiting two special ch
 
 - The service will mount only that specific user's home directory rather than the entire /home. 
 
-- The indirect map entry for this type of substitution is defined in an indirect map, such as /etc/auto.master.d/auto.home.
+- The indirect map entry for this type of substitution is defined in an indirect map, such as */etc/auto.master.d/auto.home*.
 
 `* -rw &:/home/&`
 
@@ -287,7 +287,7 @@ This is to ensure that the UID for the user is consistent on the server and the 
 sudo mkdir /nfshome
 ```
 
-4\. Edit the /etc/auto.master file and add the mount point and indirect map location to it:
+4\. Edit the */etc/auto.master* file and add the mount point and indirect map location to it:
 `/nfshome /etc/auto.master.d/auto.home`
 
 5\. Create the /etc/auto.master.d/auto.home file and add the following information to it:

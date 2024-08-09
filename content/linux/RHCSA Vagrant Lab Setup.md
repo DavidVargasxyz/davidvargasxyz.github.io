@@ -1,3 +1,7 @@
+---
+title: RHCSA Vagrant Lab Setup
+---
+
 ![RHCSA Vagrant Lab](/images/vagrantmultivmdeployment.jpg?width=600px)
 
 We are going to use Vagrant to set up two RHEL 8 servers with some custom configuration options. I will include some helpful Vagrant commands at the end if you get stuck.

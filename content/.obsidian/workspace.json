@@ -13,26 +13,52 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/AutoFS.md",
+                "file": "linux/NFS DIY Labs.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f65f3d48b19b5059",
+            "id": "4946d6c1041e13bf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/Networking DIY Challenge Labs.md",
+                "file": "linux/NFS Basics and Configuration.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "eef73aed57b804ff",
+            "id": "a776cd5ece50d6e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d28bfa47577a534b",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_index.md",
+                "mode": "preview",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "aa63522dbbb7d49c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -42,9 +68,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cf57a7109a1c5b38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "linux/RHCSA Vagrant Lab Setup.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -111,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "writing/Nat Elison's SEO course.md",
+                "file": "linux/RHCSA Vagrant Lab Setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "writing/Nat Elison's SEO course.md",
+                "file": "linux/RHCSA Vagrant Lab Setup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "writing/Nat Elison's SEO course.md"
+                "file": "linux/RHCSA Vagrant Lab Setup.md"
               }
             }
           }
@@ -175,45 +213,45 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "eef73aed57b804ff",
+  "active": "cf57a7109a1c5b38",
   "lastOpenFiles": [
-    "linux/AutoFS.md",
+    "linux/_index.md",
+    "linux/RHCSA Notes.md",
+    "_index.md",
+    "linux/Creating a Bootable and Persistent Fedora 40 USB Drive From Fedora 40.md",
+    "images/Pasted image 20240808100730.png",
+    "Untitled.md",
     "writing/Nat Elison's SEO course.md",
+    "linux/NFS Basics and Configuration.md",
+    "linux/NFS DIY Labs.md",
+    "linux/Network File System (NFS).md",
+    "linux/NFS Review Questions.md",
+    "linux/RHCSA Study Tracker.md",
+    "linux/AutoFS.md",
     "linux/Networking DIY Challenge Labs.md",
+    "images/Pasted image 20240807124622.png",
     "linux/Networking Network Devices and Network Connections.md",
     "linux/Administration Tools.md",
-    "linux/RHCSA Study Tracker.md",
-    "linux/_index.md",
     "linux/Bare Metal to Proxmox VM.md",
     "images/Pasted image 20240806080538.png",
     "images/Pasted image 20240806080050.png",
     "images/Pasted image 20240806075409.png",
-    "linux/Network File System (NFS).md",
-    "linux/NFS Basics and Configuration.md",
     "linux/Containers.md",
     "linux/Containers DIY Labs.md",
     "linux/Advanced Container Management.md",
     "linux/Working with Images and Containers.md",
     "linux/Introduction to Containers.md",
-    "_index.md",
     "linux/Containers Review Questions.md",
     "linux/Logical Constructs.md",
     "linux/Shell Scripting.md",
     "linux/Shell Parameters.md",
     "linux/Shell Scripts.md",
-    "linux/Shell Scripting DIY Labs.md",
-    "linux/Shell Scripting Review Questions.md",
-    "linux/Networking Review Questions.md",
-    "linux/Understanding Hosts Table.md",
-    "linux/DNS and Time Synchronization.md",
     "linux/Security Enhanced Linux.md~",
     "images/Pasted image 20240713164339.png",
     "images/Pasted image 20240710073529.png",
     "images/Pasted image 20240710050536.png",
     "images/Pasted image 20240710050240.png",
     "images/Pasted image 20240709212056.png",
-    "images/Pasted image 20240709211540.png",
-    "images/Pasted image 20240709205705.png",
     "linux/Network File System.md~",
     "linux/rhcsa",
     "linux/Local File Systems and Swap.md~",

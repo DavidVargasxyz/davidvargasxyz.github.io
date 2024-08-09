@@ -17,7 +17,13 @@
     <loc>http://davidvargas.xyz/categories/</loc>
   </url>
   <url>
+    <loc>http://davidvargas.xyz/linux/rhcsa-notes/</loc>
+  </url>
+  <url>
     <loc>http://davidvargas.xyz/python/basics/</loc>
+  </url>
+  <url>
+    <loc>http://davidvargas.xyz/linux/rhcsa-vagrant-lab-setup/</loc>
   </url>
   <url>
     <loc>http://davidvargas.xyz/tags/</loc>

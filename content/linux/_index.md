@@ -24,6 +24,7 @@ alwaysopen = false
 - [Using Man Pages](Using%20Man%20Pages.md)
 - [wsl2](wsl2.md)
 - [[Bare Metal to Proxmox VM]]
+- [[Creating a Bootable and Persistent Fedora 40 USB Drive From Fedora 40]]
 
 ## Labs
 

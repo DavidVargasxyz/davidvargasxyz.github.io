@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on My New Hugo Site</title>
-    <link>https://example.org/linux/</link>
+    <link>http://localhost:1313/linux/</link>
     <description>Recent content in Linux on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Nov 2023 06:20:36 -0700</lastBuildDate><atom:link href="https://example.org/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Nov 2023 06:20:36 -0700</lastBuildDate><atom:link href="http://localhost:1313/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://example.org/linux/archive/chapter-08-process-and-task-scheduling/</link>
+      <link>http://localhost:1313/linux/archive/chapter-08-process-and-task-scheduling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/archive/chapter-08-process-and-task-scheduling/</guid>
+      <guid>http://localhost:1313/linux/archive/chapter-08-process-and-task-scheduling/</guid>
       
       <description>&lt;h2 id=&#34;chapter-08-process-and-task-scheduling&#34;&gt;Chapter 08 Process and task scheduling&lt;/h2&gt;
 &lt;p&gt;\&lt;/p&gt;
@@ -41,10 +41,10 @@
     
     <item>
       <title></title>
-      <link>https://example.org/linux/archive/chapters_1-5/</link>
+      <link>http://localhost:1313/linux/archive/chapters_1-5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/archive/chapters_1-5/</guid>
+      <guid>http://localhost:1313/linux/archive/chapters_1-5/</guid>
       
       <description>&lt;p&gt;What is the shell?&lt;/p&gt;
 &lt;p&gt;# prompt = superuser&lt;/p&gt;
@@ -76,10 +76,10 @@
     
     <item>
       <title></title>
-      <link>https://example.org/linux/archive/exploring_the_system/</link>
+      <link>http://localhost:1313/linux/archive/exploring_the_system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/archive/exploring_the_system/</guid>
+      <guid>http://localhost:1313/linux/archive/exploring_the_system/</guid>
       
       <description>&lt;p&gt;cd/ ls/ less/ wildcards/ cp/ mv&lt;/p&gt;
 &lt;p&gt;# prompt = superuser&lt;/p&gt;
@@ -108,10 +108,10 @@
     
     <item>
       <title></title>
-      <link>https://example.org/linux/archive/rhcsa9-asghar-ghori/</link>
+      <link>http://localhost:1313/linux/archive/rhcsa9-asghar-ghori/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/archive/rhcsa9-asghar-ghori/</guid>
+      <guid>http://localhost:1313/linux/archive/rhcsa9-asghar-ghori/</guid>
       
       <description>&lt;p&gt;[&lt;/p&gt;
 &lt;h2 style=&#34;text-align: right&#34; id=&#34;chapter-01&#34;&gt;Chapter 01&lt;/h2&gt;
@@ -145,10 +145,10 @@
     
     <item>
       <title></title>
-      <link>https://example.org/linux/archive/unix-and-linux-system-administration-handbook-fifth-edition-highlights/</link>
+      <link>http://localhost:1313/linux/archive/unix-and-linux-system-administration-handbook-fifth-edition-highlights/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/archive/unix-and-linux-system-administration-handbook-fifth-edition-highlights/</guid>
+      <guid>http://localhost:1313/linux/archive/unix-and-linux-system-administration-handbook-fifth-edition-highlights/</guid>
       
       <description>&lt;h3 id=&#34;controlling-access&#34;&gt;Controlling access&lt;/h3&gt;
 &lt;p&gt;creates accounts for new users, removes the accounts of inactive users, and handles all the account-related issues that come up in between&lt;/p&gt;
@@ -163,10 +163,10 @@
     
     <item>
       <title></title>
-      <link>https://example.org/linux/fedora/my-fedora-setup/</link>
+      <link>http://localhost:1313/linux/fedora/my-fedora-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/fedora/my-fedora-setup/</guid>
+      <guid>http://localhost:1313/linux/fedora/my-fedora-setup/</guid>
       
       <description>&lt;p&gt;When you first download Fedora Workstation, it&amp;rsquo;s going to be a little hard to figure out how to make it usable. Especially if you&amp;rsquo;ve never tinkered with Linux before.&lt;/p&gt;
 &lt;p&gt;This is because Fedora with Gnome desktop is a blank canvas. The point is to let you customize it to your needs. When I first install Fedora, I pull my justfile to install most of the programs I use:&lt;/p&gt;
@@ -179,10 +179,10 @@
     
     <item>
       <title></title>
-      <link>https://example.org/linux/fedora/silverblue/</link>
+      <link>http://localhost:1313/linux/fedora/silverblue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/fedora/silverblue/</guid>
+      <guid>http://localhost:1313/linux/fedora/silverblue/</guid>
       
       <description>&lt;p&gt;Automated setup &lt;a href=&#34;https://universal-blue.org/&#34;&gt;https://universal-blue.org/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;You get all the benefits of using containers
@@ -211,10 +211,10 @@ Separates system level packages from applications.&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/linux/misc-linux/turn-a-file-into-a-block-device/</link>
+      <link>http://localhost:1313/linux/misc-linux/turn-a-file-into-a-block-device/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/misc-linux/turn-a-file-into-a-block-device/</guid>
+      <guid>http://localhost:1313/linux/misc-linux/turn-a-file-into-a-block-device/</guid>
       
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;`dd if=/dev/zero of=./mydisk.img bs=1M count=1024 conv=fsync ` 
   `xxd mydisk.img | less  `
@@ -291,10 +291,10 @@ Separates system level packages from applications.&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/linux/misc-linux/wsl2/</link>
+      <link>http://localhost:1313/linux/misc-linux/wsl2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/misc-linux/wsl2/</guid>
+      <guid>http://localhost:1313/linux/misc-linux/wsl2/</guid>
       
       <description>&lt;h1 id=&#34;add-a-permanent-home-alias-in-wsl2&#34;&gt;Add a permanent home alias in WSL2&lt;/h1&gt;
 &lt;p&gt;Vim&lt;/p&gt;
@@ -316,10 +316,10 @@ $ source ~/.bashrc
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/1.-installation/</link>
+      <link>http://localhost:1313/linux/rhcsa/1.-installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/1.-installation/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/1.-installation/</guid>
       
       <description>&lt;h1 id=&#34;chapter-1-rhcsa-notes---installation&#34;&gt;Chapter 1 RHCSA Notes - Installation&lt;/h1&gt;
 &lt;h2 id=&#34;about-rhel9&#34;&gt;About RHEL9&lt;/h2&gt;
@@ -342,10 +342,10 @@ $ source ~/.bashrc
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/10.-advanced-package-management/</link>
+      <link>http://localhost:1313/linux/rhcsa/10.-advanced-package-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/10.-advanced-package-management/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/10.-advanced-package-management/</guid>
       
       <description>&lt;h2 id=&#34;packagegroups&#34;&gt;Package Groups&lt;/h2&gt;
 &lt;h3 id=&#34;package-group&#34;&gt;package group&lt;/h3&gt;
@@ -371,10 +371,10 @@ $ source ~/.bashrc
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/11.-boot-process-grub2-and-the-linux-kernel/</link>
+      <link>http://localhost:1313/linux/rhcsa/11.-boot-process-grub2-and-the-linux-kernel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/11.-boot-process-grub2-and-the-linux-kernel/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/11.-boot-process-grub2-and-the-linux-kernel/</guid>
       
       <description>&lt;h2 id=&#34;linux-kernel&#34;&gt;Linux Kernel&lt;/h2&gt;
 &lt;ul&gt;
@@ -405,10 +405,10 @@ $ source ~/.bashrc
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/12.-system-initialization-message-logging-and-system-tuning/</link>
+      <link>http://localhost:1313/linux/rhcsa/12.-system-initialization-message-logging-and-system-tuning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/12.-system-initialization-message-logging-and-system-tuning/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/12.-system-initialization-message-logging-and-system-tuning/</guid>
       
       <description>&lt;h2 id=&#34;system-initialization-and-service-management&#34;&gt;System Initialization and Service Management&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;systemd&lt;/strong&gt; (system daemon)&lt;/p&gt;
@@ -443,10 +443,10 @@ $ source ~/.bashrc
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/13.-storage-management/</link>
+      <link>http://localhost:1313/linux/rhcsa/13.-storage-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/13.-storage-management/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/13.-storage-management/</guid>
       
       <description>&lt;h2 id=&#34;adding-storage-for-practice&#34;&gt;Adding Storage for Practice&lt;/h2&gt;
 &lt;h3 id=&#34;lab-add-required-storage-to-server2&#34;&gt;Lab: Add Required Storage to server2&lt;/h3&gt;
@@ -454,21 +454,21 @@ $ source ~/.bashrc
 &lt;li&gt;start VirtualBox and add 4x250MB and 1x5GB disks to server2&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;1. Start VirtualBox on your Windows/Mac computer and highlight the RHEL9-VM2 virtual machine that you created in Lab 1-1. See Figure 13-1.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/Pasted%20image%2020240706043737.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Pasted%20image%2020240706043737.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;2. Click Settings at the top and then Storage on the window that pops
 up. Click on &amp;ldquo;Controller: SATA&amp;rdquo; to select it. Figure 13-2.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/Pasted%20image%2020240706043837.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Pasted%20image%2020240706043837.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;3. Click on the right-side icon next to &amp;ldquo;Controller: SATA&amp;rdquo; to add a hard disk and then click Create (on the Medium Selector screen)
-&lt;img src=&#34;https://example.org/images/Pasted%20image%2020240706043958.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+&lt;img src=&#34;http://localhost:1313/images/Pasted%20image%2020240706043958.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/14.-local-file-systems-and-swap/</link>
+      <link>http://localhost:1313/linux/rhcsa/14.-local-file-systems-and-swap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/14.-local-file-systems-and-swap/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/14.-local-file-systems-and-swap/</guid>
       
       <description>&lt;h2 id=&#34;file-systems-and-file-system-types&#34;&gt;File Systems and File System Types&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;File systems&lt;/strong&gt;&lt;/p&gt;
@@ -489,10 +489,10 @@ up. Click on &amp;ldquo;Controller: SATA&amp;rdquo; to select it. Figure 13-2.&l
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/15.-networking-network-devices-and-network-connections/</link>
+      <link>http://localhost:1313/linux/rhcsa/15.-networking-network-devices-and-network-connections/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/15.-networking-network-devices-and-network-connections/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/15.-networking-network-devices-and-network-connections/</guid>
       
       <description>&lt;h2 id=&#34;hostname&#34;&gt;Hostname&lt;/h2&gt;
 &lt;ul&gt;
@@ -523,10 +523,10 @@ up. Click on &amp;ldquo;Controller: SATA&amp;rdquo; to select it. Figure 13-2.&l
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/16.-network-file-system-nfs/</link>
+      <link>http://localhost:1313/linux/rhcsa/16.-network-file-system-nfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/16.-network-file-system-nfs/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/16.-network-file-system-nfs/</guid>
       
       <description>&lt;h2 id=&#34;nfs-basics-and-configuration&#34;&gt;NFS Basics and Configuration&lt;/h2&gt;
 &lt;p&gt;Same tools for mounting and unmounting a filesystem.&lt;/p&gt;
@@ -672,10 +672,10 @@ sudo firewall-cmd --reload
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/17.-dns-and-time-synchronization/</link>
+      <link>http://localhost:1313/linux/rhcsa/17.-dns-and-time-synchronization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/17.-dns-and-time-synchronization/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/17.-dns-and-time-synchronization/</guid>
       
       <description>&lt;h2 id=&#34;dns-and-name-resolution&#34;&gt;DNS and Name Resolution&lt;/h2&gt;
 &lt;ul&gt;
@@ -708,10 +708,10 @@ sudo firewall-cmd --reload
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/18.-the-secure-shell-service/</link>
+      <link>http://localhost:1313/linux/rhcsa/18.-the-secure-shell-service/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/18.-the-secure-shell-service/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/18.-the-secure-shell-service/</guid>
       
       <description>&lt;h1 id=&#34;the-openssh-service&#34;&gt;The OpenSSH Service&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Secure Shell (SSH)&lt;/strong&gt;&lt;/p&gt;
@@ -736,10 +736,10 @@ sudo firewall-cmd --reload
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/19.-the-linux-firewall/</link>
+      <link>http://localhost:1313/linux/rhcsa/19.-the-linux-firewall/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/19.-the-linux-firewall/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/19.-the-linux-firewall/</guid>
       
       <description>&lt;h2 id=&#34;firewalld-zones&#34;&gt;&lt;code&gt;firewalld&lt;/code&gt; Zones&lt;/h2&gt;
 &lt;h2 id=&#34;firewalld&#34;&gt;&lt;code&gt;firewalld&lt;/code&gt;&lt;/h2&gt;
@@ -770,10 +770,10 @@ sudo firewall-cmd --reload
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/2.-interaction/</link>
+      <link>http://localhost:1313/linux/rhcsa/2.-interaction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/2.-interaction/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/2.-interaction/</guid>
       
       <description>&lt;p&gt;Looking to get started using Fedora or Red Hat operating systems?&lt;/p&gt;
 &lt;p&gt;This guide with get you started with the RHEL Graphical environment, file system, and essential commands to get started using Fedora, Red Hat, or other RHEL based systems.&lt;/p&gt;
@@ -784,10 +784,10 @@ sudo firewall-cmd --reload
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/20.-security-enhanced-linux/</link>
+      <link>http://localhost:1313/linux/rhcsa/20.-security-enhanced-linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/20.-security-enhanced-linux/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/20.-security-enhanced-linux/</guid>
       
       <description>&lt;h2 id=&#34;selinux-terminology&#34;&gt;SELinux Terminology&lt;/h2&gt;
 &lt;ul&gt;
@@ -825,10 +825,10 @@ sudo firewall-cmd --reload
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/21.-shell-scripting/</link>
+      <link>http://localhost:1313/linux/rhcsa/21.-shell-scripting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/21.-shell-scripting/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/21.-shell-scripting/</guid>
       
       <description>&lt;h2 id=&#34;shell-scripts&#34;&gt;Shell Scripts&lt;/h2&gt;
 &lt;ul&gt;
@@ -848,10 +848,10 @@ sudo firewall-cmd --reload
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/22.-containers/</link>
+      <link>http://localhost:1313/linux/rhcsa/22.-containers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/22.-containers/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/22.-containers/</guid>
       
       <description>&lt;h1 id=&#34;introduction-to-containers&#34;&gt;Introduction to Containers&lt;/h1&gt;
 &lt;ul&gt;
@@ -870,10 +870,10 @@ sudo firewall-cmd --reload
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/23.-sample-exam-1/</link>
+      <link>http://localhost:1313/linux/rhcsa/23.-sample-exam-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/23.-sample-exam-1/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/23.-sample-exam-1/</guid>
       
       <description>&lt;h2 class=&#34;style3&#34; id=&#34;appendix-a-sample-rhcsa-exam-1&#34;&gt;Appendix A: Sample RHCSA Exam 1&lt;/h2&gt;
 &lt;p&gt;Time Duration:3 hours&lt;/p&gt;
@@ -893,10 +893,10 @@ exam.&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/24.-sample-exam-2/</link>
+      <link>http://localhost:1313/linux/rhcsa/24.-sample-exam-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/24.-sample-exam-2/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/24.-sample-exam-2/</guid>
       
       <description>&lt;h2 class=&#34;style3&#34; id=&#34;appendix-b-sample-rhcsa-exam-2&#34;&gt;Appendix B: Sample RHCSA Exam 2&lt;/h2&gt;
 &lt;p&gt;\&lt;/p&gt;
@@ -920,10 +920,10 @@ exam.&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/25.-sample-exam-3/</link>
+      <link>http://localhost:1313/linux/rhcsa/25.-sample-exam-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/25.-sample-exam-3/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/25.-sample-exam-3/</guid>
       
       <description>&lt;h2 class=&#34;style3&#34; id=&#34;appendix-c-sample-rhcsa-exam-3&#34;&gt;Appendix C: Sample RHCSA Exam 3&lt;/h2&gt;
 &lt;p&gt;\&lt;/p&gt;
@@ -947,10 +947,10 @@ exam.&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/26.-sample-exam-4/</link>
+      <link>http://localhost:1313/linux/rhcsa/26.-sample-exam-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/26.-sample-exam-4/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/26.-sample-exam-4/</guid>
       
       <description>&lt;h2 class=&#34;style3&#34; id=&#34;appendix-d-sample-rhcsa-exam-4&#34;&gt;Appendix D: Sample RHCSA Exam 4&lt;/h2&gt;
 &lt;p&gt;Time Duration:3 hours&lt;/p&gt;
@@ -970,10 +970,10 @@ exam.&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/3-file-management/</link>
+      <link>http://localhost:1313/linux/rhcsa/3-file-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/3-file-management/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/3-file-management/</guid>
       
       <description>&lt;h1 id=&#34;chapter-3-rhcsa-notes---file-management&#34;&gt;Chapter 3 RHCSA Notes - File Management&lt;/h1&gt;
 &lt;h2 id=&#34;7-file-types&#34;&gt;7 File types&lt;/h2&gt;
@@ -1168,10 +1168,10 @@ ls -l fstab
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/4.-advanced-file-management/</link>
+      <link>http://localhost:1313/linux/rhcsa/4.-advanced-file-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/4.-advanced-file-management/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/4.-advanced-file-management/</guid>
       
       <description>&lt;h2 id=&#34;permission-classes-and-types&#34;&gt;Permission Classes and Types&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Permission classes&lt;/strong&gt;&lt;/p&gt;
@@ -1222,10 +1222,10 @@ chmod -v ::: Verbose.&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/5.-basic-user-management/</link>
+      <link>http://localhost:1313/linux/rhcsa/5.-basic-user-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/5.-basic-user-management/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/5.-basic-user-management/</guid>
       
       <description>&lt;h2 id=&#34;listing-logged-in-users&#34;&gt;Listing Logged-In Users&lt;/h2&gt;
 &lt;p&gt;A list of the users who have successfully signed on to the system with valid credentials can be printed using &lt;code&gt;who&lt;/code&gt; and &lt;code&gt;w&lt;/code&gt;&lt;/p&gt;
@@ -1593,10 +1593,10 @@ chmod -v ::: Verbose.&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/6.-advanced-user-management/</link>
+      <link>http://localhost:1313/linux/rhcsa/6.-advanced-user-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/6.-advanced-user-management/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/6.-advanced-user-management/</guid>
       
       <description>&lt;h2 id=&#34;password-aging-attributes&#34;&gt;Password Aging attributes&lt;/h2&gt;
 &lt;ul&gt;
@@ -1816,10 +1816,10 @@ su -
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/7.-bash/</link>
+      <link>http://localhost:1313/linux/rhcsa/7.-bash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/7.-bash/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/7.-bash/</guid>
       
       <description>&lt;h2 id=&#34;shell-and-environment-variables&#34;&gt;Shell and Environment Variables&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Current shell&lt;/strong&gt;&lt;/p&gt;
@@ -2226,10 +2226,10 @@ su -
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/8.-process-and-task-scheduling/</link>
+      <link>http://localhost:1313/linux/rhcsa/8.-process-and-task-scheduling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/8.-process-and-task-scheduling/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/8.-process-and-task-scheduling/</guid>
       
       <description>&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -2290,10 +2290,10 @@ su -
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/9.-basic-package-management/</link>
+      <link>http://localhost:1313/linux/rhcsa/9.-basic-package-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/9.-basic-package-management/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/9.-basic-package-management/</guid>
       
       <description>&lt;h2 id=&#34;rpm-redhat-package-manager&#34;&gt;RPM (Redhat Package Manager)&lt;/h2&gt;
 &lt;ul&gt;
@@ -2375,10 +2375,10 @@ su -
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/rhcsa-exam-environment/</link>
+      <link>http://localhost:1313/linux/rhcsa/rhcsa-exam-environment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/rhcsa-exam-environment/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/rhcsa-exam-environment/</guid>
       
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Me6Y12-sux8&amp;amp;list=PLz70mC333bic8uSAtRaB31CPUr6Ixi5SX&amp;amp;index=2&#34;&gt;https://www.youtube.com/watch?v=Me6Y12-sux8&amp;amp;list=PLz70mC333bic8uSAtRaB31CPUr6Ixi5SX&amp;amp;index=2&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Be aware of the timer for the exam&lt;/p&gt;
@@ -2393,10 +2393,10 @@ su -
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/rhcsa-study-tracker/</link>
+      <link>http://localhost:1313/linux/rhcsa/rhcsa-study-tracker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/rhcsa-study-tracker/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/rhcsa-study-tracker/</guid>
       
       <description>&lt;table&gt;
   &lt;thead&gt;
@@ -2652,12 +2652,12 @@ su -
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/rhcsa-vagrant-lab-setup/</link>
+      <link>http://localhost:1313/linux/rhcsa/rhcsa-vagrant-lab-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/rhcsa-vagrant-lab-setup/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/rhcsa-vagrant-lab-setup/</guid>
       
-      <description>&lt;p&gt;&lt;img src=&#34;https://example.org/images/vagrantmultivmdeployment.jpg?width=600px&#34; alt=&#34;RHCSA Vagrant Lab&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vagrantmultivmdeployment.jpg?width=600px&#34; alt=&#34;RHCSA Vagrant Lab&#34;&gt;&lt;/p&gt;
 &lt;p&gt;We are going to use Vagrant to set up two RHEL 8 servers with some custom configuration options. I will include some helpful Vagrant commands at the end if you get stuck.&lt;/p&gt;
 &lt;p&gt;In this guide, I will be using Fedora 38 as my main operating system. I use Fedora because it is similar in features to Red Hat Linux Distributions. This will give me even more practice for the RHCSA exam as I use it in day-to-day operations.&lt;/p&gt;</description>
       
@@ -2665,10 +2665,10 @@ su -
     
     <item>
       <title></title>
-      <link>https://example.org/linux/rhcsa/using-man-pages/</link>
+      <link>http://localhost:1313/linux/rhcsa/using-man-pages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/linux/rhcsa/using-man-pages/</guid>
+      <guid>http://localhost:1313/linux/rhcsa/using-man-pages/</guid>
       
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=RzAkjX_9B7E&amp;amp;t=295s&#34;&gt;https://www.youtube.com/watch?v=RzAkjX_9B7E&amp;amp;t=295s&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Man (manual) pages are the built in help system for Linux. They contain documentation for most commands.&lt;/p&gt;

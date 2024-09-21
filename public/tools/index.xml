@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools on My New Hugo Site</title>
-    <link>https://example.org/tools/</link>
+    <link>http://localhost:1313/tools/</link>
     <description>Recent content in Tools on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://example.org/tools/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://localhost:1313/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://example.org/tools/apache/</link>
+      <link>http://localhost:1313/tools/apache/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/apache/</guid>
+      <guid>http://localhost:1313/tools/apache/</guid>
       
       <description>&lt;h4 id=&#34;rhel&#34;&gt;Rhel&lt;/h4&gt;
 &lt;p&gt;Config root: /etc/httpd
@@ -43,10 +43,10 @@ User: apache&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/tools/containers/distrobox/</link>
+      <link>http://localhost:1313/tools/containers/distrobox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/containers/distrobox/</guid>
+      <guid>http://localhost:1313/tools/containers/distrobox/</guid>
       
       <description>&lt;p&gt;Github: &lt;a href=&#34;https://github.com/89luca89/distrobox&#34;&gt;https://github.com/89luca89/distrobox&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Run native containers that have access to the host file system
@@ -63,10 +63,10 @@ Creates an app launcher icon for the container&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/tools/containers/introduction-to-containers/</link>
+      <link>http://localhost:1313/tools/containers/introduction-to-containers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/containers/introduction-to-containers/</guid>
+      <guid>http://localhost:1313/tools/containers/introduction-to-containers/</guid>
       
       <description>&lt;h1 id=&#34;introduction-to-containers&#34;&gt;Introduction to Containers&lt;/h1&gt;
 &lt;ul&gt;
@@ -85,10 +85,10 @@ Creates an app launcher icon for the container&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/tools/containers/skaffold/</link>
+      <link>http://localhost:1313/tools/containers/skaffold/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/containers/skaffold/</guid>
+      <guid>http://localhost:1313/tools/containers/skaffold/</guid>
       
       <description>&lt;p&gt;Last week, we took a look at the &lt;a href=&#34;https://www.travis-ci.com/blog/products/docker-swarm-vs-kubernetes/&#34;&gt;key differences between Docker Swarm and Kubernetes&lt;/a&gt;. You&amp;rsquo;ve built your infrastructure and deployed the first version of your program. How do you make sure that new code and  container images are defect free? And do this automatically to reduce the complexity of your system? Here are two tools to build, test, and deploy code.&lt;/p&gt;
 &lt;p&gt;Once a software engineer has introduced a new bug fix or feature update in a version control system such as Git. You want to run your code through a series of step:&lt;/p&gt;</description>
@@ -97,10 +97,10 @@ Creates an app launcher icon for the container&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/tools/containers/working-with-images-and-containers/</link>
+      <link>http://localhost:1313/tools/containers/working-with-images-and-containers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/containers/working-with-images-and-containers/</guid>
+      <guid>http://localhost:1313/tools/containers/working-with-images-and-containers/</guid>
       
       <description>&lt;h2 id=&#34;working-with-images-and-containers&#34;&gt;Working with Images and Containers&lt;/h2&gt;
 &lt;h3 id=&#34;lab-install-necessary-container-support&#34;&gt;Lab: Install Necessary Container Support&lt;/h3&gt;
@@ -133,10 +133,10 @@ Creates an app launcher icon for the container&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/tools/git/gitguide/</link>
+      <link>http://localhost:1313/tools/git/gitguide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/git/gitguide/</guid>
+      <guid>http://localhost:1313/tools/git/gitguide/</guid>
       
       <description>&lt;h1 id=&#34;commands&#34;&gt;Commands&lt;/h1&gt;
 &lt;h2 id=&#34;version&#34;&gt;Version&lt;/h2&gt;
@@ -172,10 +172,10 @@ D - Deleted files&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/tools/hugo/add-plausible-to-hugo-site/</link>
+      <link>http://localhost:1313/tools/hugo/add-plausible-to-hugo-site/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/hugo/add-plausible-to-hugo-site/</guid>
+      <guid>http://localhost:1313/tools/hugo/add-plausible-to-hugo-site/</guid>
       
       <description>&lt;p&gt;&lt;a href=&#34;https://plausible.io/&#34;&gt;https://plausible.io/&lt;/a&gt;
 &lt;a href=&#34;https://analytics.bookstackapp.com/bookstackapp.com&#34;&gt;https://analytics.bookstackapp.com/bookstackapp.com&lt;/a&gt;&lt;/p&gt;</description>
@@ -184,10 +184,10 @@ D - Deleted files&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/tools/hugo/githubpageshugo/</link>
+      <link>http://localhost:1313/tools/hugo/githubpageshugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/hugo/githubpageshugo/</guid>
+      <guid>http://localhost:1313/tools/hugo/githubpageshugo/</guid>
       
       <description>&lt;p&gt;Go through quick setup here: &lt;a href=&#34;https://pages.github.com/&#34;&gt;https://pages.github.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Hugo Setup: &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;https://gohugo.io/hosting-and-deployment/hosting-on-github/&lt;/a&gt;&lt;/p&gt;
@@ -205,10 +205,10 @@ D - Deleted files&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/tools/iphonemigrate/</link>
+      <link>http://localhost:1313/tools/iphonemigrate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/iphonemigrate/</guid>
+      <guid>http://localhost:1313/tools/iphonemigrate/</guid>
       
       <description>&lt;h2 id=&#34;convert-mov-to-mp4&#34;&gt;Convert .MOV to MP4&lt;/h2&gt;
 &lt;p&gt;All .MOV files in  a folder&lt;/p&gt;
@@ -227,10 +227,10 @@ sudo dnf install libheif-tools
     
     <item>
       <title></title>
-      <link>https://example.org/tools/obsidian/tracker-plugin/</link>
+      <link>http://localhost:1313/tools/obsidian/tracker-plugin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/obsidian/tracker-plugin/</guid>
+      <guid>http://localhost:1313/tools/obsidian/tracker-plugin/</guid>
       
       <description>&lt;h1 id=&#34;three-backtiks--tracker-to-create-a-tracker&#34;&gt;three backtiks + tracker to create a tracker&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/pyrochlore/obsidian-tracker/blob/master/examples/HabitTracker.md&#34;&gt;https://github.com/pyrochlore/obsidian-tracker/blob/master/examples/HabitTracker.md&lt;/a&gt;&lt;/p&gt;
@@ -262,10 +262,10 @@ add name to the chart&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/tools/obsidian/yaml-in-obsidian/</link>
+      <link>http://localhost:1313/tools/obsidian/yaml-in-obsidian/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/obsidian/yaml-in-obsidian/</guid>
+      <guid>http://localhost:1313/tools/obsidian/yaml-in-obsidian/</guid>
       
       <description>&lt;p&gt;three dashes at the first line of the note to enter metadata&lt;/p&gt;
 &lt;p&gt;tags: Evergreen_notes&lt;/p&gt;
@@ -301,10 +301,10 @@ Recording
     
     <item>
       <title></title>
-      <link>https://example.org/tools/pandoc/</link>
+      <link>http://localhost:1313/tools/pandoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/pandoc/</guid>
+      <guid>http://localhost:1313/tools/pandoc/</guid>
       
       <description>&lt;h1 id=&#34;pandoc&#34;&gt;Pandoc&lt;/h1&gt;
 &lt;p&gt;Used for converting file formats&lt;/p&gt;
@@ -324,10 +324,10 @@ Recording
     
     <item>
       <title></title>
-      <link>https://example.org/tools/projects/</link>
+      <link>http://localhost:1313/tools/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/projects/</guid>
+      <guid>http://localhost:1313/tools/projects/</guid>
       
       <description>&lt;p&gt;Fedora SilverBlue
 Vimwiki
@@ -371,10 +371,10 @@ I use starship for the custom prompt and you could also change the colors using 
     
     <item>
       <title></title>
-      <link>https://example.org/tools/rsync/</link>
+      <link>http://localhost:1313/tools/rsync/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/rsync/</guid>
+      <guid>http://localhost:1313/tools/rsync/</guid>
       
       <description>&lt;h1 id=&#34;using-rsync-to-sync-a-folder-between-two-hosts&#34;&gt;Using Rsync to sync a folder between two hosts&lt;/h1&gt;
 &lt;p&gt;I was using github to sync my notebook with my website. But that introduces some extra steps that rsync can easily eliminate.&lt;/p&gt;
@@ -389,10 +389,10 @@ I use starship for the custom prompt and you could also change the colors using 
     
     <item>
       <title></title>
-      <link>https://example.org/tools/serial-in-on-linux/</link>
+      <link>http://localhost:1313/tools/serial-in-on-linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/serial-in-on-linux/</guid>
+      <guid>http://localhost:1313/tools/serial-in-on-linux/</guid>
       
       <description>&lt;p&gt;Using GTKterm app&lt;/p&gt;
 &lt;p&gt;Find out what port your serial cable is plugged into:&lt;/p&gt;
@@ -414,29 +414,29 @@ I use starship for the custom prompt and you could also change the colors using 
     
     <item>
       <title></title>
-      <link>https://example.org/tools/text-editors/process-bookfusion-highlights-with-vim/</link>
+      <link>http://localhost:1313/tools/text-editors/process-bookfusion-highlights-with-vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/text-editors/process-bookfusion-highlights-with-vim/</guid>
+      <guid>http://localhost:1313/tools/text-editors/process-bookfusion-highlights-with-vim/</guid>
       
       <description>&lt;p&gt;Right now, i read all of my books using the Bookfusion app. When you export the highlights, it comes with a lot of metadata such as highlight color, time/date, etc. I don’t need all of that so here is how I get rid of it.&lt;/p&gt;
 &lt;p&gt;My highlights pulled up in the Vim editor:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/Pasted%20image%2020240414034031.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Pasted%20image%2020240414034031.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;As you can see, Bookfusion gives you a lok of extra information when you export highlights. First, let&amp;rsquo;s get rid of the lines that begin with &lt;code&gt;##&lt;/code&gt;&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title></title>
-      <link>https://example.org/tools/text-editors/vim-mode-in-bash/</link>
+      <link>http://localhost:1313/tools/text-editors/vim-mode-in-bash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/text-editors/vim-mode-in-bash/</guid>
+      <guid>http://localhost:1313/tools/text-editors/vim-mode-in-bash/</guid>
       
       <description>&lt;p&gt;in bash.rc&lt;/p&gt;
 &lt;p&gt;set -o vi&lt;/p&gt;
 &lt;p&gt;activate vi mode with &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/Pasted%20image%2020240523173459.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Pasted%20image%2020240523173459.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Now just close your terminal window. Bash will function like normal until you hit the &lt;!-- raw HTML omitted --&gt; key to enter vim mode.&lt;/p&gt;
 &lt;p&gt;Can do normal vim keys and can use yank and buffer.&lt;/p&gt;
 &lt;p&gt;can&amp;rsquo;t use text objects. (Manipulate things in quotes)&lt;/p&gt;
@@ -447,10 +447,10 @@ I use starship for the custom prompt and you could also change the colors using 
     
     <item>
       <title></title>
-      <link>https://example.org/tools/text-editors/vimguide/</link>
+      <link>http://localhost:1313/tools/text-editors/vimguide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/text-editors/vimguide/</guid>
+      <guid>http://localhost:1313/tools/text-editors/vimguide/</guid>
       
       <description>&lt;p&gt;test&lt;/p&gt;
 &lt;p&gt;Vim (Vi Improved)&lt;/p&gt;
@@ -469,10 +469,10 @@ l or right arrow - will move you right one character&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/tools/text-editors/vs_codium/</link>
+      <link>http://localhost:1313/tools/text-editors/vs_codium/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/text-editors/vs_codium/</guid>
+      <guid>http://localhost:1313/tools/text-editors/vs_codium/</guid>
       
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/VSCodium&#34; title=&#34;https://github.com/VSCodium&#34;&gt;https://github.com/VSCodium&lt;/a&gt; VScode but without the Microsoft Telemetry&lt;/p&gt;
 &lt;p&gt;See section about migrating from VScod to VS codium
@@ -483,10 +483,10 @@ l or right arrow - will move you right one character&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/tools/tmuxbook/</link>
+      <link>http://localhost:1313/tools/tmuxbook/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/tmuxbook/</guid>
+      <guid>http://localhost:1313/tools/tmuxbook/</guid>
       
       <description>&lt;p&gt;Links:
 &lt;a href=&#34;https://git.jharmison.com/james/dotfiles/src/branch/master/.tmux.conf&#34;&gt;https://git.jharmison.com/james/dotfiles/src/branch/master/.tmux.conf&lt;/a&gt;
@@ -516,10 +516,10 @@ l or right arrow - will move you right one character&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/tools/virtual-machines/bare-metal-to-proxmox-vm/</link>
+      <link>http://localhost:1313/tools/virtual-machines/bare-metal-to-proxmox-vm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/virtual-machines/bare-metal-to-proxmox-vm/</guid>
+      <guid>http://localhost:1313/tools/virtual-machines/bare-metal-to-proxmox-vm/</guid>
       
       <description>&lt;p&gt;Create a vm in proxmox and copy the physical drive to the vm drive.&lt;/p&gt;
 &lt;ol&gt;
@@ -544,10 +544,10 @@ l or right arrow - will move you right one character&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/tools/virtual-machines/virtual-machine-manager/</link>
+      <link>http://localhost:1313/tools/virtual-machines/virtual-machine-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/virtual-machines/virtual-machine-manager/</guid>
+      <guid>http://localhost:1313/tools/virtual-machines/virtual-machine-manager/</guid>
       
       <description>&lt;h2 id=&#34;remove-password-prompt&#34;&gt;Remove Password Prompt&lt;/h2&gt;
 &lt;p&gt;Add user to libvirt and kvm groups:&lt;/p&gt;
@@ -559,10 +559,10 @@ l or right arrow - will move you right one character&lt;/p&gt;</description>
     
     <item>
       <title>Calibre Web with Docker and NGINX</title>
-      <link>https://example.org/tools/self-hosting/calibre-web-with-docker-and-nginx/</link>
+      <link>http://localhost:1313/tools/self-hosting/calibre-web-with-docker-and-nginx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/self-hosting/calibre-web-with-docker-and-nginx/</guid>
+      <guid>http://localhost:1313/tools/self-hosting/calibre-web-with-docker-and-nginx/</guid>
       
       <description>&lt;p&gt;I couldn’t find a guide on how to set up Calibre web step-by-step as a Docker container. Especially not one that used Nginx as a reverse proxy.&lt;/p&gt;
 &lt;p&gt;The good news is that it is really fast and simple. You’ll need a few tools to get this done:&lt;/p&gt;
@@ -581,10 +581,10 @@ l or right arrow - will move you right one character&lt;/p&gt;</description>
     
     <item>
       <title>How to Build a website With Hugo</title>
-      <link>https://example.org/tools/hugo/how-to-build-a-website-with-hugo/</link>
+      <link>http://localhost:1313/tools/hugo/how-to-build-a-website-with-hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/hugo/how-to-build-a-website-with-hugo/</guid>
+      <guid>http://localhost:1313/tools/hugo/how-to-build-a-website-with-hugo/</guid>
       
       <description>&lt;p&gt;Word Press is great, but it is probably a lot more bloated then you need for a personal website. Enter Hugo, it has less server capacity and storage needs than Word Press. Hugo is a static site generator than takes markdown files and converts them to html.&lt;/p&gt;
 &lt;p&gt;Hosting your own website is also a lot cheaper than having a provider like Bluehost do it for you. Instead of $15 per month, I am currently paying $10 per year.&lt;/p&gt;</description>
@@ -593,10 +593,10 @@ l or right arrow - will move you right one character&lt;/p&gt;</description>
     
     <item>
       <title>How to Set Up Hugo Relearn Theme</title>
-      <link>https://example.org/tools/hugo/how-to-set-up-hugo-relearn-theme/</link>
+      <link>http://localhost:1313/tools/hugo/how-to-set-up-hugo-relearn-theme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/hugo/how-to-set-up-hugo-relearn-theme/</guid>
+      <guid>http://localhost:1313/tools/hugo/how-to-set-up-hugo-relearn-theme/</guid>
       
       <description>&lt;h1 id=&#34;hugo-setup&#34;&gt;Hugo Setup&lt;/h1&gt;
 &lt;h2 id=&#34;adding-a-module-as-a-theme&#34;&gt;Adding a module as a theme&lt;/h2&gt;
@@ -625,10 +625,10 @@ theme = [&amp;#34;github.com/McShelby/hugo-theme-relearn&amp;#34;]
     
     <item>
       <title>Proxmox Stuff</title>
-      <link>https://example.org/tools/virtual-machines/proxmox_setup/</link>
+      <link>http://localhost:1313/tools/virtual-machines/proxmox_setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/virtual-machines/proxmox_setup/</guid>
+      <guid>http://localhost:1313/tools/virtual-machines/proxmox_setup/</guid>
       
       <description>&lt;p&gt;Add the following to the end of /etc/apt/sources.list&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# not for production use
@@ -651,10 +651,10 @@ reboot
     
     <item>
       <title>Setting Up a Self-hosted NextCloud Server</title>
-      <link>https://example.org/tools/self-hosting/setting-up-a-self-hosted-nextcloud-server/</link>
+      <link>http://localhost:1313/tools/self-hosting/setting-up-a-self-hosted-nextcloud-server/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/self-hosting/setting-up-a-self-hosted-nextcloud-server/</guid>
+      <guid>http://localhost:1313/tools/self-hosting/setting-up-a-self-hosted-nextcloud-server/</guid>
       
       <description>&lt;p&gt;This is a step-by-step guide to setting up Nextcloud on a Debian server. You will need a server hosted by a VPS like Vultr. And a Domain hosted by a DNS provider such as Cloudflare&lt;/p&gt;
 &lt;h3 id=&#34;what-is-nextcloud&#34;&gt;What is Nextcloud?&lt;/h3&gt;
@@ -680,10 +680,10 @@ reboot
     
     <item>
       <title>Ultimate Obsidian Setup Guide</title>
-      <link>https://example.org/tools/obsidian/ultimate-obsidian-setup-guide/</link>
+      <link>http://localhost:1313/tools/obsidian/ultimate-obsidian-setup-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/obsidian/ultimate-obsidian-setup-guide/</guid>
+      <guid>http://localhost:1313/tools/obsidian/ultimate-obsidian-setup-guide/</guid>
       
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=AatZl1Z_n-g&amp;amp;list=PL7oLu8NfQd84_gsyqBVSVgUmCCgcvSZMx&amp;amp;index=22&#34;&gt;https://www.youtube.com/watch?v=AatZl1Z_n-g&amp;amp;list=PL7oLu8NfQd84_gsyqBVSVgUmCCgcvSZMx&amp;amp;index=22&lt;/a&gt;
 Settings &amp;gt; appearance &amp;gt; CSS Snippets &amp;gt; folder icon
@@ -759,10 +759,10 @@ enable the snippet.&lt;/p&gt;</description>
     
     <item>
       <title>Using Vagrant on Linux</title>
-      <link>https://example.org/tools/virtual-machines/using-vagrant-on-linux/</link>
+      <link>http://localhost:1313/tools/virtual-machines/using-vagrant-on-linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tools/virtual-machines/using-vagrant-on-linux/</guid>
+      <guid>http://localhost:1313/tools/virtual-machines/using-vagrant-on-linux/</guid>
       
       <description>&lt;p&gt;Vagrant is software that lets you set up multiple, pre-configured virtual machines in a flash. I am going to show you how to do this using Linux and Virtual Box. But you can do this on MacOS and Windows as well.&lt;/p&gt;
 &lt;p&gt;Download Vagrant, VirtualBox and Git.&lt;/p&gt;

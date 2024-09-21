@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on My New Hugo Site</title>
-    <link>https://example.org/python/</link>
+    <link>http://localhost:1313/python/</link>
     <description>Recent content in Python on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://example.org/python/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://localhost:1313/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python Basics</title>
-      <link>https://example.org/python/basics/</link>
+      <link>http://localhost:1313/python/basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/python/basics/</guid>
+      <guid>http://localhost:1313/python/basics/</guid>
       
       <description>&lt;p&gt;Expressions consist of values (such as 2) and operators (such as +), and they can always evaluate (that is, reduce) down to a single value.&lt;/p&gt;
 &lt;p&gt;A single value with no operators is also considered an expression, though it evaluates only to itself, as shown here:&lt;/p&gt;

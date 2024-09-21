@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Obsidians on My New Hugo Site</title>
-    <link>https://example.org/obsidian/</link>
+    <link>http://localhost:1313/obsidian/</link>
     <description>Recent content in Obsidians on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://example.org/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://localhost:1313/obsidian/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://example.org/obsidian/templates/daily-note-template/</link>
+      <link>http://localhost:1313/obsidian/templates/daily-note-template/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/obsidian/templates/daily-note-template/</guid>
+      <guid>http://localhost:1313/obsidian/templates/daily-note-template/</guid>
       
       <description>&lt;h2 id=&#34;to-do&#34;&gt;To Do&lt;/h2&gt;
 &lt;h2 id=&#34;journal&#34;&gt;Journal&lt;/h2&gt;</description>

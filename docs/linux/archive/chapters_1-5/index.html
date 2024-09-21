@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | My New Hugo Site</title>
+<meta property="og:title" content=" | My New Hugo Site" />
+<meta name="twitter:title" content=" | My New Hugo Site" />
+<meta itemprop="name" content=" | My New Hugo Site" />
+<meta name="application-name" content=" | My New Hugo Site" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en" href="https://example.org/linux/archive/chapters_1-5/" title="" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.134.3">
+
+    
+    <meta property="og:url" content="https://example.org/linux/archive/chapters_1-5/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="My New Hugo Site">
+  <meta property="og:description" content="What is the shell?
+# prompt = superuser
+Display current time/date
+$ date Calendar
+$ cal see disk space
+$ df See free memory
+$ free Close Terminal
+$ exit or
+ctrl&#43;d Navigation
+single files tree regardless of drives/ storage devices
+absolute pathnames begins with \ (root) &amp; follows full path
+relative pathnames
+starts from working directory
+how to use a relative pathname
+$ cd ./bin (./ is implied)
+$ cd bin
+cd shortcuts
+$ cd -">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="linux">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My New Hugo Site">
+  <meta name="twitter:description" content="What is the shell?
+# prompt = superuser
+Display current time/date
+$ date Calendar
+$ cal see disk space
+$ df See free memory
+$ free Close Terminal
+$ exit or
+ctrl&#43;d Navigation
+single files tree regardless of drives/ storage devices
+absolute pathnames begins with \ (root) &amp; follows full path
+relative pathnames
+starts from working directory
+how to use a relative pathname
+$ cd ./bin (./ is implied)
+$ cd bin
+cd shortcuts
+$ cd -">
+
+
+    
+
+    <link rel="canonical" href="https://example.org/linux/archive/chapters_1-5/">
+    <link href="/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://example.org/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://example.org/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>What is the shell?</p>
+<p># prompt = superuser</p>
+<p>Display current time/date</p>
+<pre tabindex="0"><code>$ date
+</code></pre><p>Calendar</p>
+<pre tabindex="0"><code>$ cal
+</code></pre><p>see disk space</p>
+<pre tabindex="0"><code>$ df
+</code></pre><p>See free memory</p>
+<pre tabindex="0"><code>$ free
+</code></pre><p>Close Terminal</p>
+<pre tabindex="0"><code>$ exit
+</code></pre><p>or</p>
+<pre tabindex="0"><code>ctrl+d
+</code></pre><p>Navigation</p>
+<p>single files tree regardless of drives/ storage devices</p>
+<h2 id="absolute-pathnames">absolute pathnames</h2>
+<p>begins with \ (root) &amp; follows full path</p>
+<p>relative pathnames</p>
+<p>starts from working directory</p>
+<p>how to use a relative pathname</p>
+<p>$ cd ./bin (./ is implied)</p>
+<p>$ cd bin</p>
+<p>cd shortcuts</p>
+<p>$ cd -</p>
+<p>previous</p>
+<p>$ cd ~username</p>
+<p>home directory of user</p>
+<p>Exploring the system</p>
+<p>specify directory to ls</p>
+<p>$ ls /usr</p>
+<p>multiple directories</p>
+<p>$ ls ~ /usr</p>
+<p>sort by modification time</p>
+<p>$ ls -lt</p>
+<p>reverse order</p>
+<p>$ ls -lt &ndash;reverse</p>
+<p>View all even hidden</p>
+<p>$ ls -a or &ndash;all</p>
+<p>all except for . and ..</p>
+<p>$ ls -A</p>
+<p>view details about the directory itself</p>
+<p>$ ls -d or &ndash;directory (/)</p>
+<p>display file sizes in a human readable format</p>
+<p>$ ls -h or &ndash;human-readable</p>
+<p>reverse order results</p>
+<p>ls -r or &ndash;reverse</p>
+<p>sort by file size</p>
+<p>ls -s</p>
+<p>sort by modification time</p>
+<p>ls -t</p>
+<p>File Access Rights</p>
+<p>- rw- r&ndash; r&ndash;</p>
+<p>type of file | file owner | group | everyone else</p>
+<p>Determine file type</p>
+<p>$ file filename</p>
+<p>- brief description of file&rsquo;s contents</p>
+<p>View text files</p>
+<p>less</p>
+<p>$ lesss /etc/passwd</p>
+<p>- press “q” to quit out of less</p>
+<p>less commands</p>
+<p>PAGE UP or b</p>
+<p>Scroll back one page</p>
+<p>PAGE DOWN or space</p>
+<p>Scroll forward one page</p>
+<p>Up arrow</p>
+<p>Scroll up one line</p>
+<p>Down arrow</p>
+<p>Scroll down one line</p>
+<p>G</p>
+<p>Move to the end of the text file</p>
+<p>1G or g</p>
+<p>Move to the beginning of the text file</p>
+<p>/characters</p>
+<p>Search forward to the next occurance of characters</p>
+<p>n</p>
+<p>Search the next occurance of the previous search</p>
+<p>h</p>
+<p>Display help screen</p>
+<p>q</p>
+<p>Quit less</p>
+<p>pagers</p>
+<p>programs that allow the easy viewing of long text documents in a page-by-page manner</p>
+<p>Take a guided tour</p>
+<p>- you can doubleclick a filename to copy it and middle click to paste</p>
+<p>- enter reset to clear a messy terminal</p>
+<p>Directories</p>
+<p>/</p>
+<p>root</p>
+<p>/bin</p>
+<p>binaries that must be present for the system to boot and run</p>
+<p>/boot</p>
+<p>Linux kernel, initial RAM disk image (for drivers needed at boot time), and the boot loader.</p>
+<p>/boot/grub/grub.conf or /boot/grub/menu.lst</p>
+<p>used to configure the bootloader</p>
+<p>/boot/vmlinuz</p>
+<p>Linux Kernel</p>
+<p>/dev</p>
+<p>device nodes</p>
+<p>list of all devices the kernel understands</p>
+<p>/etc</p>
+<p>Contains all system-wide configuration files</p>
+<p>Contains shell scripts that start system services at boot</p>
+<p>Everything is readable text</p>
+<p>/etc/crontab</p>
+<p>defines when automated jobs will run</p>
+<p>/etc/fstab</p>
+<p>table of storage devices and their associated mount points</p>
+<p>/etc/passwd</p>
+<p>list of user accounts</p>
+<p>/home</p>
+<p>where user home directorie are stored</p>
+<p>/lost+found</p>
+<p>used for recovery</p>
+<p>/media</p>
+<p>Mount points for removable media</p>
+<p>/mnt</p>
+<p>mount point on older systems for manually added removable media</p>
+<p>/opt</p>
+<p>used to install optional (commercial) software</p>
+<p>/proc</p>
+<p>virtual filesystem maintained by the Linux kernel</p>
+<p>files within are peepholes into the Kernel itself</p>
+<p>/root</p>
+<p>home directory of the root account</p>
+<p>/sbin</p>
+<p>contains system binaries</p>
+<p>programs that perform vital system tasks usually reserved for the superuser</p>
+<p>/tmp</p>
+<p>storage of temporary files</p>
+<p>can be configured to empty on every reboot</p>
+<p>/usr</p>
+<p>very large</p>
+<p>programs and support files used by regular users</p>
+<p>/usr/bin</p>
+<p>contains executables installed by your linux distro</p>
+<p>/usr/lib/</p>
+<p>shared libraries for programs in /usr/bin/</p>
+<p>/usr/local</p>
+<p>system wide programs not included with distro</p>
+<p>/usr/local/bin</p>
+<p>programs compiled from source code</p>
+<p>empty unless you put something in it.</p>
+<p>/usr/sbin</p>
+<p>sys admin programs</p>
+<p>/usr/share</p>
+<p>shared data used by programs in /usr/sbin</p>
+<p>default config files</p>
+<p>icons</p>
+<p>backgrounds</p>
+<p>soundfiles</p>
+<p>etc.</p>
+<p>/usr/share/doc</p>
+<p>documentation files organized by package</p>
+<p>/var</p>
+<p>where data likely to change is stored</p>
+<p>databases</p>
+<p>spool files</p>
+<p>user mail</p>
+<p>etc.</p>
+<p>/var/log</p>
+<p>log files</p>
+<p>notable:</p>
+<p>/var/log/messages</p>
+<p>/var/log/syslog</p>
+<p>may need admin to view log files</p>
+<p>Symbolic Links</p>
+<p>soft link (symlink)</p>
+<p>file referenced by multiple names</p>
+<p>- used for version change</p>
+<p>- don&rsquo;t have to point programs to new file</p>
+<p>- can revert link if newer version has a bug</p>
+<p>Hard Links</p>
+<p>- allow files to have multiple names</p>
+<p>Chapter 4: Manipulating Files and Directories</p>
+<p>copy only files that do not exist in the destination directory or are newer than the versions in the destination directory.</p>
+<p>$ cp -u *.html destination</p>
+<h2 id="wildcards">Wildcards</h2>
+<p>using wildcards is also known as globbing</p>
+<p>select filenames based on patterns of characters</p>
+<p>Meanings</p>
+<ul>
+<li></li>
+</ul>
+<p>match any characters</p>
+<p>?</p>
+<p>match any single character</p>
+<p>[characters]</p>
+<p>matches any character that is a member of the set characters</p>
+<p>[!characters]</p>
+<p>matches any character that is not a member of the set characters</p>
+<p>[[:class:]]</p>
+<p>matches any character that is a member of the specified class</p>
+<p>Common character classes</p>
+<p>[:alum:]</p>
+<p>alphanumeric</p>
+<p>[:alpha:]</p>
+<p>alphabetic character</p>
+<p>[:digit:]</p>
+<p>numeral</p>
+<p>[:lower:]</p>
+<p>lowecase letter</p>
+<p>[:upper:]</p>
+<p>uppercase letter</p>
+<p>Wildcard Examples</p>
+<ul>
+<li></li>
+</ul>
+<p>all files</p>
+<p>g*</p>
+<p>any file beginning with g</p>
+<p>b*.txt</p>
+<p>any file begginning with b followed by any characters ending with .txt</p>
+<p>Data???</p>
+<p>begins with data followed by 3 characters</p>
+<p>[abc]*</p>
+<p>begins with a, a b, or a c</p>
+<p>BACKUP.[0-9][0-9][0-9]</p>
+<p>begins with BACKUP followed by exactly 3 numerals</p>
+<p>[[:upper:]]*</p>
+<p>any beginning with an upper case letter</p>
+<p>[![:digit:]]*</p>
+<p>any not beginning with numeral</p>
+<p>*[[:lower:]123]</p>
+<p>any ending with lowercase letter or 1, 2 or 3</p>
+<p>Wildcards work in the GUI</p>
+<p>nautilus (the file manager for GNOME)</p>
+<p>select files by pressing ctrl-S and enter a file selection</p>
+<p>pattern with wildcards and the files in the currently selected directory will be selected</p>
+<p>Dolphin and Konqueror (file managers for KDE)</p>
+<p>enter wildcards on the location bar</p>
+<p>wildcards can be used on any command that accepts filenames as arguments</p>
+<p>mkdir</p>
+<p>$ mkdir dir1 dir2 dir3</p>
+<p>cp</p>
+<p>copy files or directories</p>
+<p>$ cp item1 item2</p>
+<p>$ cp item.. dir</p>
+<p>cp options</p>
+<p>-a, &ndash;archive</p>
+<p>copy files and directories and their attributes</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2024 .
+        
+    </small>
+</footer>
+
+
+
+
+
+
+
+    
+    <script src="https://example.org/js/main.min.4ee188e1744c19816e95a540b2650ed9f033ea0371e74eac8e717355cfca8741.js" integrity="sha256-TuGI4XRMGYFulaVAsmUO2fAz6gNx506sjnFzVc/Kh0E="></script>
+
+    
+
+</body>
+</html>

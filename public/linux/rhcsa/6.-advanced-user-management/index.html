@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us"><head><meta charset="utf-8">
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en-us" />
 <meta name="language" content="en-us" />
 
-  <link rel="alternate" hreflang="en" href="https://example.org/linux/rhcsa/6.-advanced-user-management/" title="" />
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/linux/rhcsa/6.-advanced-user-management/" title="" />
 
 
 
@@ -28,7 +28,7 @@
 <meta name="generator" content="Hugo 0.134.3">
 
     
-    <meta property="og:url" content="https://example.org/linux/rhcsa/6.-advanced-user-management/">
+    <meta property="og:url" content="http://localhost:1313/linux/rhcsa/6.-advanced-user-management/">
   <meta property="og:site_name" content="My New Hugo Site">
   <meta property="og:title" content="My New Hugo Site">
   <meta property="og:description" content="Password Aging attributes Can be done for an individual user or applied to all users. Can prevent users from logging in to the system by locking their access for a period of time or permanently. Must be performed by a user with elevated privileges of the root user. Normal users may be allowed access to privileged commands by defining them appropriately in a configuration file. Each file that exists on the system regardless of its type has an owning user and an owning group. every file that a user creates is in the ownership of that user. ownership may be changed and given to another user by a super user. Password Aging and management settning restrictios on password expiry, account disablement, locking and unlocking users, and password change frequency. Can choose to inactivate it completely for an individual user. Stored in the /etc/shadow file (fields 4 to 8) and its default policies in the /etc/login.defs configuration file. aging management tools—chage and passwd— usermod command can be used to implement two aging attributes (user expiry and password expiry) and lock and unlock user accounts. chage command Set or alter password aging parameters on a user account. Changes various fields in the shadow file Switches -d (–lastday) Specifies an explicit date in the YYYY-MM-DD format, or the number of days since the UNIX time when the password was last modified. With -d 0, the user is forced to change the password at next login. It corresponds to field 3 in the shadow file. -E (–expiredate) Sets an explicit date in the YYYY-MM-DD format, or the number of days since the UNIX time on which the user account is deactivated. This feature can be disabled with -E -1. It corresponds to the eighth field in the shadow file. -I (–inactive) Defines the number of days of inactivity after the password expiry and before the account is locked. The user may be able to log in during this period with their expired password. This feature can be disabled with -I -1. It corresponds to field 7 in the shadow file. -l Lists password aging attributes set on a user account. -m (–mindays) Indicates the minimum number of days that must elapse before the password can be changed. A value of 0 allows the user to change their password at any time. It corresponds to field 4 in the shadow file. -M (–maxdays) Denotes the maximum number of days of password validity before the user password expires and it must be changed. This feature can be disabled with -M -1. It corresponds to field 5 in the shadow file. -W (–warndays) Designates the number of days for which the user gets alerts to change their password before it expires. It corresponds to field 6 in the shadow file. passwd command set or modify a user’s password modify the password aging attributes and lock or unlock account Switches -d (–delete) Deletes a user password does not expire the user account. -e (–expire) Forces a user to change their password upon next logon. sets date to prior to Unix time -i (–inactive) Defines the number of days of inactivity after the password expiry and before the account is locked. (field 7 in shadow file) -l (–lock) Locks a user account. -n (–minimum) Specifies the number of days that must elapse before the password can be changed. (field 4 in shadow file) -S (–status) Displays the status information for a user. -u (–unlock) Unlocks a locked user account. -w (–warning) Designates the number of days for which the user gets alerts to change their password before it actually expires. (field 6 in shadow file) -x (–maximum) Denotes the maximum number of days of password validity before the user password expires and it must be changed. (field 5 in shadow file) usermod command Modify a user’s attribute Lock or unlock their account Switches -L (–lock) Locks a user account by placing a single exclamation mark (!) at the beginning of the password field and before the hashed password string. -U (–unlock) Unlocks a user’s account by removing the exclamation mark (!) from the beginning of the password field. Linux Groups and their Management /etc/group group info /etc/login.defs default policies /etc/gshadow group administrator information and group-level passwords group management tools groupadd, groupmod, and groupdel create, alter, and erase groups groupadd command adds entries to the group and gshadow files for each group added to the system picks up default values from /etc/login.defs Switches -g (–gid) Specifies the GID to be assigned to the group -o (–non-unique) Creates a group with a matching GID of an existing group. When two groups have an identical GID, members of both groups get identical rights on each other’s files. This should only be done in specific situations. -r Creates a system group with a GID below 1000 groupname Specifies a group name groupmod command syntax of this command is very similar to the groupadd with most options identical. Additional flags -n change name of existing group User Management Switching Users su command Ctrl-d - return to previous user su - - switch user with startup scripts -c - issue a command as a user without switching to them.">
@@ -46,7 +46,7 @@
 
     
 
-    <link rel="canonical" href="https://example.org/linux/rhcsa/6.-advanced-user-management/">
+    <link rel="canonical" href="http://localhost:1313/linux/rhcsa/6.-advanced-user-management/">
     <link href="/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -60,7 +60,7 @@
 
 
 
-<link rel="manifest" href="https://example.org/site.webmanifest">
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
 
 <meta name="msapplication-config" content="/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#2d89ef">
@@ -69,15 +69,14 @@
     
     <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
 
-    
     </head>
 <body data-theme = "" class="notransition">
 
-<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+<script src="/js/theme.js"></script>
 
 <div class="navbar" role="navigation">
     <nav class="menu" aria-label="Main Navigation">
-        <a href="https://example.org/" class="logo">
+        <a href="http://localhost:1313/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -718,7 +717,7 @@ A. The command provided will force user60 to change their password at next login
 
 
     
-    <script src="https://example.org/js/main.min.4ee188e1744c19816e95a540b2650ed9f033ea0371e74eac8e717355cfca8741.js" integrity="sha256-TuGI4XRMGYFulaVAsmUO2fAz6gNx506sjnFzVc/Kh0E="></script>
+    <script async src="http://localhost:1313/js/main.js" ></script>
 
     
 

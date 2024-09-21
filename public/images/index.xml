@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>images on My New Hugo Site</title>
-    <link>https://example.org/images/</link>
+    <link>http://localhost:1313/images/</link>
     <description>Recent content in images on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://example.org/images/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://localhost:1313/images/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://example.org/images/spaced/</link>
+      <link>http://localhost:1313/images/spaced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/images/spaced/</guid>
+      <guid>http://localhost:1313/images/spaced/</guid>
       
       <description></description>
       

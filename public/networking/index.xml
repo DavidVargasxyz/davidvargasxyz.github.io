@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Networking on My New Hugo Site</title>
-    <link>https://example.org/networking/</link>
+    <link>http://localhost:1313/networking/</link>
     <description>Recent content in Networking on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://example.org/networking/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://localhost:1313/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/classful-ipv4/</link>
+      <link>http://localhost:1313/networking/cisco/classful-ipv4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/classful-ipv4/</guid>
+      <guid>http://localhost:1313/networking/cisco/classful-ipv4/</guid>
       
       <description>&lt;p&gt;Table 12-2 IPv4 Address Classes Based on First Octet Values&lt;/p&gt;
 &lt;p&gt;Class      First Octet Values      Purpose&lt;/p&gt;
@@ -29,10 +29,10 @@ Divided into a network portion (or network ID/bits) comprising of the Most Signi
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/cli/</link>
+      <link>http://localhost:1313/networking/cisco/cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/cli/</guid>
+      <guid>http://localhost:1313/networking/cisco/cli/</guid>
       
       <description>&lt;h1 id=&#34;commands&#34;&gt;Commands&lt;/h1&gt;
 &lt;p&gt;Tell the system to reboot IOS:&lt;/p&gt;
@@ -94,10 +94,10 @@ Divided into a network portion (or network ID/bits) comprising of the Most Signi
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/device_management_protocols/</link>
+      <link>http://localhost:1313/networking/cisco/device_management_protocols/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/device_management_protocols/</guid>
+      <guid>http://localhost:1313/networking/cisco/device_management_protocols/</guid>
       
       <description>&lt;p&gt;2.0 Network Access&lt;/p&gt;
 &lt;p&gt;2.3 Configure and verify Layer 2 discovery protocols (Cisco Discovery Protocol and LLDP)&lt;/p&gt;
@@ -114,10 +114,10 @@ Divided into a network portion (or network ID/bits) comprising of the Most Signi
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/dhcp_config/</link>
+      <link>http://localhost:1313/networking/cisco/dhcp_config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/dhcp_config/</guid>
+      <guid>http://localhost:1313/networking/cisco/dhcp_config/</guid>
       
       <description>&lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
 &lt;p&gt;1.10 Identify IP parameters for Client OS (Windows, Mac OS, Linux)&lt;/p&gt;
@@ -150,10 +150,10 @@ Divided into a network portion (or network ID/bits) comprising of the Most Signi
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/dhcp_snooping_and_arp_inspection/</link>
+      <link>http://localhost:1313/networking/cisco/dhcp_snooping_and_arp_inspection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/dhcp_snooping_and_arp_inspection/</guid>
+      <guid>http://localhost:1313/networking/cisco/dhcp_snooping_and_arp_inspection/</guid>
       
       <description>&lt;p&gt;5.0 Security Fundamentals&lt;/p&gt;
 &lt;p&gt;5.7 Configure Layer 2 security features (DHCP snooping, dynamic ARP inspection, and port security)&lt;/p&gt;
@@ -170,10 +170,10 @@ Divided into a network portion (or network ID/bits) comprising of the Most Signi
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/ethernet_lans/</link>
+      <link>http://localhost:1313/networking/cisco/ethernet_lans/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/ethernet_lans/</guid>
+      <guid>http://localhost:1313/networking/cisco/ethernet_lans/</guid>
       
       <description>&lt;h1 id=&#34;10-network-fundamentals&#34;&gt;1.0 Network Fundamentals&lt;/h1&gt;
 &lt;h1 id=&#34;11-explain-the-role-and-function-of-network-components&#34;&gt;1.1 Explain the role and function of network components&lt;/h1&gt;
@@ -211,10 +211,10 @@ Divided into a network portion (or network ID/bits) comprising of the Most Signi
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/extended_acls/</link>
+      <link>http://localhost:1313/networking/cisco/extended_acls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/extended_acls/</guid>
+      <guid>http://localhost:1313/networking/cisco/extended_acls/</guid>
       
       <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
 &lt;p&gt;5.0 Security Fundamentals&lt;/p&gt;
@@ -249,12 +249,12 @@ Divided into a network portion (or network ID/bits) comprising of the Most Signi
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/how-to-study-for-ccna-200-301/</link>
+      <link>http://localhost:1313/networking/cisco/how-to-study-for-ccna-200-301/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/how-to-study-for-ccna-200-301/</guid>
+      <guid>http://localhost:1313/networking/cisco/how-to-study-for-ccna-200-301/</guid>
       
-      <description>&lt;p&gt;&lt;img src=&#34;https://example.org/images/CCNA.png&#34; alt=&#34;CCNA Study Calendar&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/CCNA.png&#34; alt=&#34;CCNA Study Calendar&#34;&gt;&lt;/p&gt;
 &lt;p&gt;It took me a whopping 2 years to finish my CCNA! I kept giving up and quitting my studies for months at a time. Why? Because I couldn&amp;rsquo;t remember the massive amount of content covered in the CCNA. It felt hopeless. I could have done it in 6 month (or faster) if I knew how to study.&lt;/p&gt;
 &lt;p&gt;I hadn&amp;rsquo;t taken a test in 10 years before this. So I had completely forgotten how to learn. This post is about the mistakes I made studying for the CCNA and how to avoid them.&lt;/p&gt;</description>
       
@@ -262,10 +262,10 @@ Divided into a network portion (or network ID/bits) comprising of the Most Signi
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/ip_services/</link>
+      <link>http://localhost:1313/networking/cisco/ip_services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/ip_services/</guid>
+      <guid>http://localhost:1313/networking/cisco/ip_services/</guid>
       
       <description>&lt;p&gt;3.0 IP Connectivity&lt;/p&gt;
 &lt;p&gt;3.5 Describe the purpose of First Hop Redundancy Protocol&lt;/p&gt;
@@ -302,10 +302,10 @@ Figure 12-2 Higher Availability but with RI Still as a Single Point of Failure &
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/ipv6/</link>
+      <link>http://localhost:1313/networking/cisco/ipv6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/ipv6/</guid>
+      <guid>http://localhost:1313/networking/cisco/ipv6/</guid>
       
       <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
 &lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
@@ -321,10 +321,10 @@ Figure 12-2 Higher Availability but with RI Still as a Single Point of Failure &
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/ipv6_addressing_and_subnetting/</link>
+      <link>http://localhost:1313/networking/cisco/ipv6_addressing_and_subnetting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/ipv6_addressing_and_subnetting/</guid>
+      <guid>http://localhost:1313/networking/cisco/ipv6_addressing_and_subnetting/</guid>
       
       <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
 &lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
@@ -340,10 +340,10 @@ Figure 12-2 Higher Availability but with RI Still as a Single Point of Failure &
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/ipv6_config/</link>
+      <link>http://localhost:1313/networking/cisco/ipv6_config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/ipv6_config/</guid>
+      <guid>http://localhost:1313/networking/cisco/ipv6_config/</guid>
       
       <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
 &lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
@@ -361,10 +361,10 @@ Figure 12-2 Higher Availability but with RI Still as a Single Point of Failure &
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/ipv6_routing/</link>
+      <link>http://localhost:1313/networking/cisco/ipv6_routing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/ipv6_routing/</guid>
+      <guid>http://localhost:1313/networking/cisco/ipv6_routing/</guid>
       
       <description>&lt;p&gt;3.0 IP Connectivity&lt;/p&gt;
 &lt;p&gt;3.3 Configure and verify IPv4 and IPv6 static routing&lt;/p&gt;
@@ -382,10 +382,10 @@ Figure 12-2 Higher Availability but with RI Still as a Single Point of Failure &
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/l2-etherchannel/</link>
+      <link>http://localhost:1313/networking/cisco/l2-etherchannel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/l2-etherchannel/</guid>
+      <guid>http://localhost:1313/networking/cisco/l2-etherchannel/</guid>
       
       <description>&lt;h1 id=&#34;layer-2-etherchannel&#34;&gt;Layer 2 Etherchannel&lt;/h1&gt;
 &lt;h3 id=&#34;manual-layer-2-etherchannel&#34;&gt;Manual Layer 2 EtherChannel&lt;/h3&gt;
@@ -404,10 +404,10 @@ Figure 12-2 Higher Availability but with RI Still as a Single Point of Failure &
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/lan_architecture/</link>
+      <link>http://localhost:1313/networking/cisco/lan_architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/lan_architecture/</guid>
+      <guid>http://localhost:1313/networking/cisco/lan_architecture/</guid>
       
       <description>&lt;p&gt;1.2 Describe characteristics of network topology architectures&lt;/p&gt;
 &lt;p&gt;1.2.a 2 tier&lt;/p&gt;
@@ -444,10 +444,10 @@ Figure 13-1 Campus LAN with Design Terminology Listed &amp;ldquo;&amp;gt;&lt;/p&
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/management/</link>
+      <link>http://localhost:1313/networking/cisco/management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/management/</guid>
+      <guid>http://localhost:1313/networking/cisco/management/</guid>
       
       <description>&lt;p&gt;Quick Commands&lt;/p&gt;
 &lt;h1 id=&#34;basic-device-management&#34;&gt;Basic Device Management&lt;/h1&gt;
@@ -478,10 +478,10 @@ Figure 13-1 Campus LAN with Design Terminology Listed &amp;ldquo;&amp;gt;&lt;/p&
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/nat/</link>
+      <link>http://localhost:1313/networking/cisco/nat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/nat/</guid>
+      <guid>http://localhost:1313/networking/cisco/nat/</guid>
       
       <description>&lt;p&gt;4.1 Configure and verify inside source NAT using static and pools&lt;/p&gt;
 &lt;h3 id=&#34;cidr&#34;&gt;CIDR&lt;/h3&gt;
@@ -528,10 +528,10 @@ Networks
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/ospf_concepts/</link>
+      <link>http://localhost:1313/networking/cisco/ospf_concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/ospf_concepts/</guid>
+      <guid>http://localhost:1313/networking/cisco/ospf_concepts/</guid>
       
       <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
 &lt;p&gt;3.0 IP Connectivity&lt;/p&gt;
@@ -550,10 +550,10 @@ Networks
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/ospf_config/</link>
+      <link>http://localhost:1313/networking/cisco/ospf_config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/ospf_config/</guid>
+      <guid>http://localhost:1313/networking/cisco/ospf_config/</guid>
       
       <description>&lt;p&gt;OSPF Config&lt;/p&gt;
 &lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
@@ -573,10 +573,10 @@ Networks
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/ospf_lab/</link>
+      <link>http://localhost:1313/networking/cisco/ospf_lab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/ospf_lab/</guid>
+      <guid>http://localhost:1313/networking/cisco/ospf_lab/</guid>
       
       <description>&lt;p&gt;Welcome to the CCNA OSPF lab. You&amp;rsquo;ll need to configure OSPF so that there are full routing capabilities in the network. As well as use show commands to verify your network. Then you will troubleshoot and fix a broken OSPF network.&lt;/p&gt;
 &lt;p&gt;Once again, this will all be done in Packet Tracer. But feel free to do this lab on real equipment, GNS-3, etc.&lt;/p&gt;
@@ -587,10 +587,10 @@ Networks
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/ospf_network_types_and_neighbors/</link>
+      <link>http://localhost:1313/networking/cisco/ospf_network_types_and_neighbors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/ospf_network_types_and_neighbors/</guid>
+      <guid>http://localhost:1313/networking/cisco/ospf_network_types_and_neighbors/</guid>
       
       <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
 &lt;p&gt;3.0 IP Connectivity&lt;/p&gt;
@@ -620,10 +620,10 @@ No &amp;ldquo;&amp;gt;&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/qos/</link>
+      <link>http://localhost:1313/networking/cisco/qos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/qos/</guid>
+      <guid>http://localhost:1313/networking/cisco/qos/</guid>
       
       <description>&lt;p&gt;4.0 IP Services&lt;/p&gt;
 &lt;p&gt;4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping&lt;/p&gt;
@@ -638,12 +638,12 @@ No &amp;ldquo;&amp;gt;&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/resources_for_passing_ccna/</link>
+      <link>http://localhost:1313/networking/cisco/resources_for_passing_ccna/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/resources_for_passing_ccna/</guid>
+      <guid>http://localhost:1313/networking/cisco/resources_for_passing_ccna/</guid>
       
-      <description>&lt;p&gt;&lt;img src=&#34;https://example.org/images/resourcesforccna.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/resourcesforccna.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;There are a lot of great CCNA resources out there. This list does not include all of them. Only the ones that I personally used to pass the CCNA 200-301 exam.&lt;/p&gt;
 &lt;p&gt;Materials for CCNA are generally separated into 5 categories:&lt;/p&gt;
 &lt;ul&gt;
@@ -661,10 +661,10 @@ No &amp;ldquo;&amp;gt;&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/router_operation/</link>
+      <link>http://localhost:1313/networking/cisco/router_operation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/router_operation/</guid>
+      <guid>http://localhost:1313/networking/cisco/router_operation/</guid>
       
       <description>&lt;p&gt;The configuration of IP addresses differs in some ways, with switches using a VLAN interface and routers using an IP address configured on each working interface.&lt;/p&gt;
 &lt;p&gt;switches do not have auxiliary ports.&lt;/p&gt;
@@ -676,10 +676,10 @@ No &amp;ldquo;&amp;gt;&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/routing_in_the_lan/</link>
+      <link>http://localhost:1313/networking/cisco/routing_in_the_lan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/routing_in_the_lan/</guid>
+      <guid>http://localhost:1313/networking/cisco/routing_in_the_lan/</guid>
       
       <description>&lt;p&gt;A. Use the sdm prefer lanbase-routing command (or similar) in global configuration mode to change the switch forwarding ASIC settings to make space for IPv4 routes at the next reload of the switch.&lt;/p&gt;
 &lt;p&gt;B. Use the reload EXEC command in enable mode to reload (reboot) the switch to pick up the new sdm prefer command setting.&lt;/p&gt;
@@ -689,10 +689,10 @@ No &amp;ldquo;&amp;gt;&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/rstp/</link>
+      <link>http://localhost:1313/networking/cisco/rstp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/rstp/</guid>
+      <guid>http://localhost:1313/networking/cisco/rstp/</guid>
       
       <description>&lt;p&gt;2.0 Network Access&lt;/p&gt;
 &lt;p&gt;2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)&lt;/p&gt;
@@ -708,10 +708,10 @@ No &amp;ldquo;&amp;gt;&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/securing_network_devices/</link>
+      <link>http://localhost:1313/networking/cisco/securing_network_devices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/securing_network_devices/</guid>
+      <guid>http://localhost:1313/networking/cisco/securing_network_devices/</guid>
       
       <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
 &lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
@@ -737,10 +737,10 @@ No &amp;ldquo;&amp;gt;&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/security_architectures/</link>
+      <link>http://localhost:1313/networking/cisco/security_architectures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/security_architectures/</guid>
+      <guid>http://localhost:1313/networking/cisco/security_architectures/</guid>
       
       <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
 &lt;p&gt;5.0 Security Fundamentals&lt;/p&gt;
@@ -757,10 +757,10 @@ No &amp;ldquo;&amp;gt;&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/spanning_tree/</link>
+      <link>http://localhost:1313/networking/cisco/spanning_tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/spanning_tree/</guid>
+      <guid>http://localhost:1313/networking/cisco/spanning_tree/</guid>
       
       <description>&lt;h1 id=&#34;spanning-tree-protocol&#34;&gt;Spanning Tree Protocol&lt;/h1&gt;
 &lt;ul&gt;
@@ -785,10 +785,10 @@ No &amp;ldquo;&amp;gt;&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/spanning_tree_protocol_concepts/</link>
+      <link>http://localhost:1313/networking/cisco/spanning_tree_protocol_concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/spanning_tree_protocol_concepts/</guid>
+      <guid>http://localhost:1313/networking/cisco/spanning_tree_protocol_concepts/</guid>
       
       <description>&lt;p&gt;RSTP is the most common spanning tree protocol. And Cisco devices default to using RSTP.&lt;/p&gt;
 &lt;p&gt;MAC table instability&lt;/p&gt;
@@ -813,10 +813,10 @@ No &amp;ldquo;&amp;gt;&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/standard_acls/</link>
+      <link>http://localhost:1313/networking/cisco/standard_acls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/standard_acls/</guid>
+      <guid>http://localhost:1313/networking/cisco/standard_acls/</guid>
       
       <description>&lt;h1 id=&#34;standard-access-control-lists&#34;&gt;Standard Access Control Lists&lt;/h1&gt;
 &lt;p&gt;Can be used to match packets for applying Quality of Service (QoS) features.&lt;/p&gt;
@@ -854,10 +854,10 @@ No &amp;ldquo;&amp;gt;&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/static_routes/</link>
+      <link>http://localhost:1313/networking/cisco/static_routes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/static_routes/</guid>
+      <guid>http://localhost:1313/networking/cisco/static_routes/</guid>
       
       <description>&lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
 &lt;p&gt;1.6 Configure and verify IPv4 addressing and subnetting&lt;/p&gt;
@@ -880,10 +880,10 @@ No &amp;ldquo;&amp;gt;&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/switch_interfaces/</link>
+      <link>http://localhost:1313/networking/cisco/switch_interfaces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/switch_interfaces/</guid>
+      <guid>http://localhost:1313/networking/cisco/switch_interfaces/</guid>
       
       <description>&lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
 &lt;p&gt;1.1 Explain the role and function of network components&lt;/p&gt;
@@ -919,10 +919,10 @@ No &amp;ldquo;&amp;gt;&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/switchport_security_config/</link>
+      <link>http://localhost:1313/networking/cisco/switchport_security_config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/switchport_security_config/</guid>
+      <guid>http://localhost:1313/networking/cisco/switchport_security_config/</guid>
       
       <description>&lt;p&gt;5.0 Security Fundamentals&lt;/p&gt;
 &lt;p&gt;5.7 Configure Layer 2 security features (DHCP snooping, dynamic ARP inspection, and port security)&lt;/p&gt;
@@ -942,10 +942,10 @@ No &amp;ldquo;&amp;gt;&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/t-shoot_routing/</link>
+      <link>http://localhost:1313/networking/cisco/t-shoot_routing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/t-shoot_routing/</guid>
+      <guid>http://localhost:1313/networking/cisco/t-shoot_routing/</guid>
       
       <description>&lt;p&gt;Problem Isolation Using the ping Command&lt;/p&gt;
 &lt;p&gt;functions as part of Layer 3, as a control protocol to assist IP by helping manage the IP network functions.&lt;/p&gt;
@@ -960,10 +960,10 @@ No &amp;ldquo;&amp;gt;&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/tcp_ip_basic/</link>
+      <link>http://localhost:1313/networking/cisco/tcp_ip_basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/tcp_ip_basic/</guid>
+      <guid>http://localhost:1313/networking/cisco/tcp_ip_basic/</guid>
       
       <description>&lt;h2 id=&#34;tcpip-model-layers&#34;&gt;TCP/IP Model Layers&lt;/h2&gt;
 &lt;ul&gt;
@@ -993,10 +993,10 @@ Defenition: Communicate with the same layer on another computer.&lt;/p&gt;</desc
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/tcp_ip_transport_and_applications/</link>
+      <link>http://localhost:1313/networking/cisco/tcp_ip_transport_and_applications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/tcp_ip_transport_and_applications/</guid>
+      <guid>http://localhost:1313/networking/cisco/tcp_ip_transport_and_applications/</guid>
       
       <description>&lt;p&gt;Chapter 1. Introduction to TCP/IP Transport and Applications&lt;/p&gt;
 &lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
@@ -1019,10 +1019,10 @@ Defenition: Communicate with the same layer on another computer.&lt;/p&gt;</desc
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/things_to_learn_after_ccna/</link>
+      <link>http://localhost:1313/networking/cisco/things_to_learn_after_ccna/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/things_to_learn_after_ccna/</guid>
+      <guid>http://localhost:1313/networking/cisco/things_to_learn_after_ccna/</guid>
       
       <description>&lt;h1 id=&#34;what-to-learn-after-ccna&#34;&gt;What to Learn After CCNA&lt;/h1&gt;
 &lt;p&gt;It&amp;rsquo;s easy to get overwhelmed with options after &lt;a href=&#34;resources_for_passing_ccna.md&#34;&gt;completing&lt;/a&gt; your CCNA. What do you learn next? If you are trying to get a job as a Network Engineer, you will want to check this out.&lt;/p&gt;
@@ -1033,10 +1033,10 @@ Defenition: Communicate with the same layer on another computer.&lt;/p&gt;</desc
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/vlans/</link>
+      <link>http://localhost:1313/networking/cisco/vlans/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/vlans/</guid>
+      <guid>http://localhost:1313/networking/cisco/vlans/</guid>
       
       <description>&lt;h2 id=&#34;virtual-lan-vlan-concepts&#34;&gt;Virtual LAN (VLAN) Concepts&lt;/h2&gt;
 &lt;p&gt;Using VLANs creates smaller broadcast domains. There are many reasons why you would want to do this. You reduce CPU overhead on each device. And reduce security risks by using different security policies on each VLAN.&lt;/p&gt;
@@ -1046,10 +1046,10 @@ Defenition: Communicate with the same layer on another computer.&lt;/p&gt;</desc
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/wan_architecture/</link>
+      <link>http://localhost:1313/networking/cisco/wan_architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/wan_architecture/</guid>
+      <guid>http://localhost:1313/networking/cisco/wan_architecture/</guid>
       
       <description>&lt;p&gt;Network Fundamentals&lt;/p&gt;
 &lt;ul&gt;
@@ -1091,10 +1091,10 @@ R2&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/wans_and_ip_routing/</link>
+      <link>http://localhost:1313/networking/cisco/wans_and_ip_routing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/wans_and_ip_routing/</guid>
+      <guid>http://localhost:1313/networking/cisco/wans_and_ip_routing/</guid>
       
       <description>&lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
 &lt;p&gt;1.1 Explain the role and function of network components&lt;/p&gt;
@@ -1128,10 +1128,10 @@ R2&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/what_is_a_vlan_/</link>
+      <link>http://localhost:1313/networking/cisco/what_is_a_vlan_/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/what_is_a_vlan_/</guid>
+      <guid>http://localhost:1313/networking/cisco/what_is_a_vlan_/</guid>
       
       <description>&lt;p&gt;VLANs create smaller broadcast domains. Why create smaller broadcast domains?&lt;/p&gt;
 &lt;ul&gt;
@@ -1155,10 +1155,10 @@ R2&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/wireless/</link>
+      <link>http://localhost:1313/networking/cisco/wireless/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/wireless/</guid>
+      <guid>http://localhost:1313/networking/cisco/wireless/</guid>
       
       <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
 &lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
@@ -1178,10 +1178,10 @@ R2&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/wireless_architectures/</link>
+      <link>http://localhost:1313/networking/cisco/wireless_architectures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/wireless_architectures/</guid>
+      <guid>http://localhost:1313/networking/cisco/wireless_architectures/</guid>
       
       <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
 &lt;p&gt;2.0 Network Access&lt;/p&gt;
@@ -1194,10 +1194,10 @@ R2&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/wireless_lan/</link>
+      <link>http://localhost:1313/networking/cisco/wireless_lan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/wireless_lan/</guid>
+      <guid>http://localhost:1313/networking/cisco/wireless_lan/</guid>
       
       <description>&lt;p&gt;multiple VLANs must be brought to it over a trunk link.&lt;/p&gt;
 &lt;p&gt;The wireless side of an AP inherently trunks 802.11 frames by marking them with the BSSID of the WLAN where they belong.&lt;/p&gt;
@@ -1209,10 +1209,10 @@ R2&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/networking/cisco/wireless_security/</link>
+      <link>http://localhost:1313/networking/cisco/wireless_security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/cisco/wireless_security/</guid>
+      <guid>http://localhost:1313/networking/cisco/wireless_security/</guid>
       
       <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
 &lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
@@ -1232,10 +1232,10 @@ R2&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/networking/juniper/cisco_to_junos_cheat_sheet/</link>
+      <link>http://localhost:1313/networking/juniper/cisco_to_junos_cheat_sheet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/juniper/cisco_to_junos_cheat_sheet/</guid>
+      <guid>http://localhost:1313/networking/juniper/cisco_to_junos_cheat_sheet/</guid>
       
       <description>&lt;h2 id=&#34;basic-cli-and-systems-management&#34;&gt;Basic CLI and Systems Management&lt;/h2&gt;
 &lt;p&gt;Commands&lt;/p&gt;
@@ -1257,10 +1257,10 @@ show mac address-table  &amp;gt; show ethernet-switching table&lt;/p&gt;</descri
     
     <item>
       <title></title>
-      <link>https://example.org/networking/juniper/consoling_in_to_mx80_from_linux/</link>
+      <link>http://localhost:1313/networking/juniper/consoling_in_to_mx80_from_linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/juniper/consoling_in_to_mx80_from_linux/</guid>
+      <guid>http://localhost:1313/networking/juniper/consoling_in_to_mx80_from_linux/</guid>
       
       <description>&lt;p&gt;Plug console cable in&lt;/p&gt;
 &lt;p&gt;find out what your serial line name is:&lt;/p&gt;
@@ -1279,10 +1279,10 @@ show mac address-table  &amp;gt; show ethernet-switching table&lt;/p&gt;</descri
     
     <item>
       <title></title>
-      <link>https://example.org/networking/juniper/juniper_cli_basics/</link>
+      <link>http://localhost:1313/networking/juniper/juniper_cli_basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/juniper/juniper_cli_basics/</guid>
+      <guid>http://localhost:1313/networking/juniper/juniper_cli_basics/</guid>
       
       <description>&lt;p&gt;Connection Methods&lt;/p&gt;
 &lt;p&gt;Factory default:&lt;/p&gt;
@@ -1323,10 +1323,10 @@ CLI Prompt &amp;ldquo;&amp;gt;&lt;/li&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/juniper/junos_fundementals/</link>
+      <link>http://localhost:1313/networking/juniper/junos_fundementals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/juniper/junos_fundementals/</guid>
+      <guid>http://localhost:1313/networking/juniper/junos_fundementals/</guid>
       
       <description>&lt;p&gt;Routing engine = Control Plane&lt;/p&gt;
 &lt;ul&gt;
@@ -1380,10 +1380,10 @@ CLI Prompt &amp;ldquo;&amp;gt;&lt;/li&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/juniper/junos_paste_config/</link>
+      <link>http://localhost:1313/networking/juniper/junos_paste_config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/juniper/junos_paste_config/</guid>
+      <guid>http://localhost:1313/networking/juniper/junos_paste_config/</guid>
       
       <description>&lt;p&gt;cli
 top
@@ -1398,10 +1398,10 @@ commit and-quit&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/networking/juniper/toggle_poe/</link>
+      <link>http://localhost:1313/networking/juniper/toggle_poe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/juniper/toggle_poe/</guid>
+      <guid>http://localhost:1313/networking/juniper/toggle_poe/</guid>
       
       <description>&lt;p&gt;Configure&lt;/p&gt;
 &lt;p&gt;set poe interface ge-0/0/0 disable&lt;/p&gt;
@@ -1413,10 +1413,10 @@ commit and-quit&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/10rstpandetherchannel/</link>
+      <link>http://localhost:1313/networking/newccnanotes/10rstpandetherchannel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/10rstpandetherchannel/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/10rstpandetherchannel/</guid>
       
       <description>&lt;h1 id=&#34;10-rstp-and-etherchannel&#34;&gt;10 RSTP and Etherchannel&lt;/h1&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;2.0 Network Access2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)
@@ -1460,10 +1460,10 @@ the configured priority results in a 16-bit priority that always ends with 12 bi
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/12classfulipv4/</link>
+      <link>http://localhost:1313/networking/newccnanotes/12classfulipv4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/12classfulipv4/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/12classfulipv4/</guid>
       
       <description>&lt;p&gt;Table 12-2 IPv4 Address Classes Based on First Octet Values
 Class First Octet Values Purpose
@@ -1483,10 +1483,10 @@ Friday, July 30, 2021 1:58 PM
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/14wanarchitecture/</link>
+      <link>http://localhost:1313/networking/newccnanotes/14wanarchitecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/14wanarchitecture/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/14wanarchitecture/</guid>
       
       <description>&lt;h1 id=&#34;14-wan-architecture&#34;&gt;14 WAN Architecture&lt;/h1&gt;
 &lt;p&gt;1.0 Network Fundamentals&lt;br&gt;
@@ -1506,10 +1506,10 @@ Friday, July 30, 2021 1:58 PM
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/15cloudarchitecture/</link>
+      <link>http://localhost:1313/networking/newccnanotes/15cloudarchitecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/15cloudarchitecture/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/15cloudarchitecture/</guid>
       
       <description>&lt;h1 id=&#34;15-cloud-architecture&#34;&gt;15 Cloud Architecture&lt;/h1&gt;
 &lt;p&gt;1.0 Network Fundamentals
@@ -1528,10 +1528,10 @@ Server Virtualization Basics&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/15routeroperation/</link>
+      <link>http://localhost:1313/networking/newccnanotes/15routeroperation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/15routeroperation/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/15routeroperation/</guid>
       
       <description>&lt;p&gt;The configuration of IP addresses differs in some ways, with switches using a VLAN interface and routers using an IP address configured on each working interface.&lt;/p&gt;
 &lt;p&gt;switches do not have auxiliary ports.&lt;br&gt;
@@ -1545,10 +1545,10 @@ routers do not)&lt;br&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/16controllerbasednetworking/</link>
+      <link>http://localhost:1313/networking/newccnanotes/16controllerbasednetworking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/16controllerbasednetworking/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/16controllerbasednetworking/</guid>
       
       <description>&lt;h1 id=&#34;16-controller-based-networking&#34;&gt;16 Controller-Based Networking&lt;/h1&gt;
 &lt;p&gt;Friday, October 29, 2021 2:40 PM&lt;/p&gt;
@@ -1570,10 +1570,10 @@ adding to, removing, and changing entries to the tables used by the data plane&l
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/17softwaredefinedaccess/</link>
+      <link>http://localhost:1313/networking/newccnanotes/17softwaredefinedaccess/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/17softwaredefinedaccess/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/17softwaredefinedaccess/</guid>
       
       <description>&lt;h1 id=&#34;17-software-defined-access-sda&#34;&gt;17 Software-Defined Access (SDA)&lt;/h1&gt;
 &lt;p&gt;1.0 Network Fundamentals&lt;br&gt;
@@ -1592,10 +1592,10 @@ management&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/18restandjson/</link>
+      <link>http://localhost:1313/networking/newccnanotes/18restandjson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/18restandjson/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/18restandjson/</guid>
       
       <description>&lt;h1 id=&#34;18-rest-and-json&#34;&gt;18 REST and JSON&lt;/h1&gt;
 &lt;p&gt;6.0 Automation and Programmability&lt;br&gt;
@@ -1609,10 +1609,10 @@ the variable names, their values, and the data structures of those variables.RES
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/19ansiblepuppetchef/</link>
+      <link>http://localhost:1313/networking/newccnanotes/19ansiblepuppetchef/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/19ansiblepuppetchef/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/19ansiblepuppetchef/</guid>
       
       <description>&lt;h1 id=&#34;19-ansible-puppet-and-chef&#34;&gt;19 Ansible, Puppet, and Chef&lt;/h1&gt;
 &lt;p&gt;6.0 Automation and Programmability
@@ -1629,10 +1629,10 @@ Centralized Configuration Files and Version Control&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/1tcpipbasic/</link>
+      <link>http://localhost:1313/networking/newccnanotes/1tcpipbasic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/1tcpipbasic/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/1tcpipbasic/</guid>
       
       <description>&lt;h1 id=&#34;1-tcpip-basic&#34;&gt;1 TCP/IP basic&lt;/h1&gt;
 &lt;p&gt;Exam Topics:&lt;br&gt;
@@ -1669,10 +1669,10 @@ Encapsulation&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/2ethernetlans/</link>
+      <link>http://localhost:1313/networking/newccnanotes/2ethernetlans/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/2ethernetlans/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/2ethernetlans/</guid>
       
       <description>&lt;h1 id=&#34;2-ethernet-lans&#34;&gt;2 Ethernet LANs&lt;/h1&gt;
 &lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
@@ -1726,10 +1726,10 @@ Encapsulation&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/3wansandiprouting/</link>
+      <link>http://localhost:1313/networking/newccnanotes/3wansandiprouting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/3wansandiprouting/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/3wansandiprouting/</guid>
       
       <description>&lt;h1 id=&#34;3-wans-and-ip-routing&#34;&gt;3 WANs and IP Routing&lt;/h1&gt;
 &lt;p&gt;1.0 Network Fundamentals1.1 Explain the role and function of network components&lt;br&gt;
@@ -1774,10 +1774,10 @@ HDLC&lt;/li&gt;
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/4cli/</link>
+      <link>http://localhost:1313/networking/newccnanotes/4cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/4cli/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/4cli/</guid>
       
       <description>&lt;h1 id=&#34;4-cli&#34;&gt;4 CLI&lt;/h1&gt;
 &lt;p&gt;Reload&lt;/p&gt;
@@ -1811,10 +1811,10 @@ RAM- Stores Running config&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/5switching/</link>
+      <link>http://localhost:1313/networking/newccnanotes/5switching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/5switching/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/5switching/</guid>
       
       <description>&lt;h1 id=&#34;5-switching&#34;&gt;5 Switching&lt;/h1&gt;
 &lt;p&gt;Thursday, June 17, 2021 12:53 PM&lt;/p&gt;
@@ -1873,10 +1873,10 @@ Managing theMAC Address Table (Aging, Clearing)&lt;/p&gt;</description>
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/6management/</link>
+      <link>http://localhost:1313/networking/newccnanotes/6management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/6management/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/6management/</guid>
       
       <description>&lt;h1 id=&#34;6-management&#34;&gt;6 Management&lt;/h1&gt;
 &lt;p&gt;1.0 Network Fundamentals1.6 Configure and verify IPv4 addressing and subnetting&lt;br&gt;
@@ -1891,10 +1891,10 @@ management plane- deals with managing the device itself, rather than controlling
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/7switchinterfaces/</link>
+      <link>http://localhost:1313/networking/newccnanotes/7switchinterfaces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/7switchinterfaces/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/7switchinterfaces/</guid>
       
       <description>&lt;h1 id=&#34;7switchinterfaces&#34;&gt;7switchinterfaces&lt;/h1&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1.0 Network Fundamentals1.1 Explain the role and function of network components
@@ -1965,10 +1965,10 @@ How to identify duplex mismatch problems, --check the duplex setting on each end
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/8vlans/</link>
+      <link>http://localhost:1313/networking/newccnanotes/8vlans/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/8vlans/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/8vlans/</guid>
       
       <description>&lt;p&gt;1.0 Network Fundamentals1.13 Describe switching concepts&lt;br&gt;
 1.13.a MAC learning and aging1.13.b Frame switching&lt;br&gt;
@@ -2029,10 +2029,10 @@ dynamic auto-passively waits to receive trunk negotiation messages
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/9spanningtreeprotocolconcepts/</link>
+      <link>http://localhost:1313/networking/newccnanotes/9spanningtreeprotocolconcepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/9spanningtreeprotocolconcepts/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/9spanningtreeprotocolconcepts/</guid>
       
       <description>&lt;h1 id=&#34;9-spanning-tree-protocol-concepts&#34;&gt;9 Spanning Tree Protocol Concepts&lt;/h1&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;2.0 Network Access
@@ -2086,10 +2086,10 @@ three criteria to choose whether to put and interface in forwarding state:&lt;/l
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/part1/</link>
+      <link>http://localhost:1313/networking/newccnanotes/part1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/part1/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/part1/</guid>
       
       <description>&lt;p&gt;1.0 Network Fundamentals
 1.6 Configure and verify IPv4 addressing and subnetting
@@ -2115,10 +2115,10 @@ three criteria to choose whether to put and interface in forwarding state:&lt;/l
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/part2/</link>
+      <link>http://localhost:1313/networking/newccnanotes/part2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/part2/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/part2/</guid>
       
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;This chapter covers the following exam topics:
 3.0 IP Connectivity
@@ -2152,10 +2152,10 @@ metric.
     
     <item>
       <title></title>
-      <link>https://example.org/networking/newccnanotes/part3/</link>
+      <link>http://localhost:1313/networking/newccnanotes/part3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/networking/newccnanotes/part3/</guid>
+      <guid>http://localhost:1313/networking/newccnanotes/part3/</guid>
       
       <description>&lt;p&gt;1.0 Network Fundamentals&lt;br&gt;
 1.10 Identify IP parameters for Client OS (Windows, Mac OS, Linux)&lt;br&gt;

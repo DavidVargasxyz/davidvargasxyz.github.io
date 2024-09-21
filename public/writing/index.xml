@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Writing on My New Hugo Site</title>
-    <link>https://example.org/writing/</link>
+    <link>http://localhost:1313/writing/</link>
     <description>Recent content in Writing on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Nov 2023 06:20:36 -0700</lastBuildDate><atom:link href="https://example.org/writing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Nov 2023 06:20:36 -0700</lastBuildDate><atom:link href="http://localhost:1313/writing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Writing off the Cuff</title>
-      <link>https://example.org/writing/writing-off-the-cuff/</link>
+      <link>http://localhost:1313/writing/writing-off-the-cuff/</link>
       <pubDate>Mon, 06 Nov 2023 06:20:36 -0700</pubDate>
       
-      <guid>https://example.org/writing/writing-off-the-cuff/</guid>
+      <guid>http://localhost:1313/writing/writing-off-the-cuff/</guid>
       
       <description>&lt;p&gt;My favorite and by far easiest method of writing is writing off the cuff. You get your thoughts down and spring new thoughts to life. You are finding out what you know without referencing materials.&lt;/p&gt;
 &lt;p&gt;You are creating out of nothing. It is pure writing and creativity folded into one. We all have a “Muse” that will give to us whenever we ask.&lt;/p&gt;
@@ -22,10 +22,10 @@
     
     <item>
       <title></title>
-      <link>https://example.org/writing/19-biggest-lessons-from-reading-100-books./</link>
+      <link>http://localhost:1313/writing/19-biggest-lessons-from-reading-100-books./</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/writing/19-biggest-lessons-from-reading-100-books./</guid>
+      <guid>http://localhost:1313/writing/19-biggest-lessons-from-reading-100-books./</guid>
       
       <description>&lt;p&gt;I started reading non-fiction after hitting my rock bottom. I found people to look up to and saw that they were reading and learning constantly to better themselves. This inspired me to develop a reading and self improvement habit that I have continued for more than 10 years.&lt;/p&gt;
 &lt;p&gt;No single book has the ability to change your life. But the things you do, good or bad, over time, compound to extraordinary changes.&lt;/p&gt;</description>
@@ -34,10 +34,10 @@
     
     <item>
       <title></title>
-      <link>https://example.org/writing/7-steps-to-get-back-on-a-nofap-streak-immediately/</link>
+      <link>http://localhost:1313/writing/7-steps-to-get-back-on-a-nofap-streak-immediately/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/writing/7-steps-to-get-back-on-a-nofap-streak-immediately/</guid>
+      <guid>http://localhost:1313/writing/7-steps-to-get-back-on-a-nofap-streak-immediately/</guid>
       
       <description>&lt;ol&gt;
 &lt;li&gt;
@@ -50,10 +50,10 @@
     
     <item>
       <title></title>
-      <link>https://example.org/writing/austerities/</link>
+      <link>http://localhost:1313/writing/austerities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/writing/austerities/</guid>
+      <guid>http://localhost:1313/writing/austerities/</guid>
       
       <description>&lt;p&gt;There are austerities you should avoid all together. Such as any poison to the body. (Drugs, alcohol, caffeine, etc.) &lt;/p&gt;
 &lt;p&gt;There may be drugs or chemicals perscribed by a doctor that are life saving. Choose your doctor wisely.&lt;/p&gt;
@@ -64,10 +64,10 @@
     
     <item>
       <title></title>
-      <link>https://example.org/writing/caffeine-and-weightloss/</link>
+      <link>http://localhost:1313/writing/caffeine-and-weightloss/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/writing/caffeine-and-weightloss/</guid>
+      <guid>http://localhost:1313/writing/caffeine-and-weightloss/</guid>
       
       <description>&lt;p&gt;Any claim you make regarding caffeine is going to be filled with hot takes. For example, I could say that quitting caffeine should, in theory, promote healthy testosterone levels.&lt;/p&gt;
 &lt;p&gt;The immediate response from many would be: &amp;ldquo;There is no scientific evidence for this.&amp;rdquo; or &amp;ldquo;Actually, here is a study showing caffeine use spikes testosterone levels.&amp;rdquo;&lt;/p&gt;
@@ -77,10 +77,10 @@
     
     <item>
       <title></title>
-      <link>https://example.org/writing/caffeine-bird/</link>
+      <link>http://localhost:1313/writing/caffeine-bird/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/writing/caffeine-bird/</guid>
+      <guid>http://localhost:1313/writing/caffeine-bird/</guid>
       
       <description>&lt;p&gt;No seriously. Look at this bird.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=HUngLgGRJpo&#34;&gt;https://www.youtube.com/watch?v=HUngLgGRJpo&lt;/a&gt;&lt;/p&gt;
@@ -94,10 +94,10 @@
     
     <item>
       <title></title>
-      <link>https://example.org/writing/how-i-earned-my-first-penny-on-medium.com/</link>
+      <link>http://localhost:1313/writing/how-i-earned-my-first-penny-on-medium.com/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/writing/how-i-earned-my-first-penny-on-medium.com/</guid>
+      <guid>http://localhost:1313/writing/how-i-earned-my-first-penny-on-medium.com/</guid>
       
       <description>&lt;p&gt;Boys and girls..&lt;/p&gt;
 &lt;p&gt;We made it!&lt;/p&gt;
@@ -114,23 +114,23 @@
     
     <item>
       <title></title>
-      <link>https://example.org/writing/my-journey-with-addiction/</link>
+      <link>http://localhost:1313/writing/my-journey-with-addiction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/writing/my-journey-with-addiction/</guid>
+      <guid>http://localhost:1313/writing/my-journey-with-addiction/</guid>
       
       <description>&lt;p&gt;In 2010, I was facing felony charges for distribution of drugs. I was a drug addict. Hook line and sinker. But never admitted that to myself. My drug of choice? Anything I could get my hands on. Cocaine, ecstasy, weed, Xanax, Oxycontin, ciggys, alcohol, ativan, seroquil, spice, mushrooms.. You name it.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/full%20(3).jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/full%20(3).jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Desperately wanting to avoid prison time, I did whatever I could to turn my life around. The potential pain in carrying on was too great to tolerate. This was my rock bottom.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title></title>
-      <link>https://example.org/writing/nat-elisons-seo-course/</link>
+      <link>http://localhost:1313/writing/nat-elisons-seo-course/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/writing/nat-elisons-seo-course/</guid>
+      <guid>http://localhost:1313/writing/nat-elisons-seo-course/</guid>
       
       <description>&lt;p&gt;Leveling up&lt;/p&gt;
 &lt;ul&gt;
@@ -148,10 +148,10 @@ You can rank for keywords that aren&amp;rsquo;t even IN your articles. You don&a
     
     <item>
       <title></title>
-      <link>https://example.org/writing/the-journey/</link>
+      <link>http://localhost:1313/writing/the-journey/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/writing/the-journey/</guid>
+      <guid>http://localhost:1313/writing/the-journey/</guid>
       
       <description>&lt;p&gt;The journey you are on is about self discovery, growth, and redemption.&lt;/p&gt;
 &lt;p&gt;You are on the path. Do not cling to the past or in the future.&lt;/p&gt;
@@ -163,10 +163,10 @@ You can rank for keywords that aren&amp;rsquo;t even IN your articles. You don&a
     
     <item>
       <title></title>
-      <link>https://example.org/writing/things-i-learned-from-dickie-bush-and-nicolas-coles-writing-email-course/</link>
+      <link>http://localhost:1313/writing/things-i-learned-from-dickie-bush-and-nicolas-coles-writing-email-course/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/writing/things-i-learned-from-dickie-bush-and-nicolas-coles-writing-email-course/</guid>
+      <guid>http://localhost:1313/writing/things-i-learned-from-dickie-bush-and-nicolas-coles-writing-email-course/</guid>
       
       <description>&lt;p&gt;I went through Dickie Bush and Nicolas Cole&amp;rsquo;s email course on writing online. This course was great overall. Short and concise and has given me the motivation, by providing good reasons, to commit to consistently writing online.&lt;/p&gt;
 &lt;p&gt;Here are my key takeaways:&lt;/p&gt;
@@ -198,10 +198,10 @@ You can rank for keywords that aren&amp;rsquo;t even IN your articles. You don&a
     
     <item>
       <title></title>
-      <link>https://example.org/writing/writing-on-twitter/</link>
+      <link>http://localhost:1313/writing/writing-on-twitter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/writing/writing-on-twitter/</guid>
+      <guid>http://localhost:1313/writing/writing-on-twitter/</guid>
       
       <description>&lt;p&gt;Why is writing on Twitter worth it?&lt;/p&gt;
 &lt;p&gt;If you write a post that resonates with people. it can go viral because of the Twitter flywheel.&lt;/p&gt;
@@ -229,10 +229,10 @@ You can rank for keywords that aren&amp;rsquo;t even IN your articles. You don&a
     
     <item>
       <title>4 Ways to Quit Caffeine</title>
-      <link>https://example.org/writing/4-ways-to-quit-caffeine/</link>
+      <link>http://localhost:1313/writing/4-ways-to-quit-caffeine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/writing/4-ways-to-quit-caffeine/</guid>
+      <guid>http://localhost:1313/writing/4-ways-to-quit-caffeine/</guid>
       
       <description>&lt;p&gt;The cycle of caffeine addiction can be vicious. Just like any other drug.&lt;/p&gt;
 &lt;p&gt;The cycle goes like this:&lt;/p&gt;

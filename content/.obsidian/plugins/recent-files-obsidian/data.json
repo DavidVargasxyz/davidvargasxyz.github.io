@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Dopamine Nation",
-      "path": "booknotes/Dopamine Nation.md"
+      "basename": "index",
+      "path": "booknotes/index.md"
     },
     {
-      "basename": "booknotes",
-      "path": "booknotes/booknotes.md"
+      "basename": "Bliss of the Celibate",
+      "path": "booknotes/Bliss of the Celibate.md"
+    },
+    {
+      "basename": "Dopamine Nation",
+      "path": "booknotes/Dopamine Nation.md"
     },
     {
       "basename": "_index",
@@ -195,10 +199,6 @@
     {
       "basename": "Daily Note Template",
       "path": "obsidian/Templates/Daily Note Template.md"
-    },
-    {
-      "basename": "The Power of Positive Dog Training",
-      "path": "booknotes/The Power of Positive Dog Training.md"
     }
   ],
   "omittedPaths": [],

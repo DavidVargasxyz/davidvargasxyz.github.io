@@ -1,5 +1,5 @@
 ---
-title: booknotes
+title: index
 draft: false
 weight: 1
 ---

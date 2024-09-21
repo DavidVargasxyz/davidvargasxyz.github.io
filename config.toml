@@ -33,7 +33,7 @@ defaultContentLanguage = "en-gb"
   [[menu.main]]
     pageRef = "booknotes"
     name = "Notes"
-    url = "/booknotes"
+    url = "/booknotes/index"
     weight = 20
   #[[menu.main]]
    # pageRef = "notes"

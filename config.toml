@@ -31,15 +31,15 @@ defaultContentLanguage = "en-gb"
     url = "/"
     weight = 10
   [[menu.main]]
-    pageRef = "posts"
-    name = "posts"
-    url = "/posts/"
+    pageRef = "booknotes"
+    name = "Notes"
+    url = "/booknotes/"
     weight = 20
-  [[menu.main]]
-    pageRef = "notes"
-    name = "notes"
-    url = "/notes/"
-    weight = 30
+  #[[menu.main]]
+   # pageRef = "notes"
+   # name = "notes"
+   # url = "/notes/"
+   # weight = 30
   [[menu.main]]
     pageRef = "readings"
     name = "readings"

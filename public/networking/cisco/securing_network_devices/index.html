@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | My New Hugo Site</title>
+<meta property="og:title" content=" | My New Hugo Site" />
+<meta name="twitter:title" content=" | My New Hugo Site" />
+<meta itemprop="name" content=" | My New Hugo Site" />
+<meta name="application-name" content=" | My New Hugo Site" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en" href="https://example.org/networking/cisco/securing_network_devices/" title="" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.134.3">
+
+    
+    <meta property="og:url" content="https://example.org/networking/cisco/securing_network_devices/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="My New Hugo Site">
+  <meta property="og:description" content="This chapter covers the following exam topics:
+1.0 Network Fundamentals
+1.1 Explain the Role of Network Components
+1.1.c Next-generation Firewalls and IPS
+4.0 IP Services
+4.8 Configure network devices for remote access using SSH
+5.0 Security Fundamentals
+5.3 Configure device access control using local passwords
+Encrypting Older IOS Passwords with service password-encryption
+service password-encryption
+encrypts passwords that are normally held as clear text
+password password (console or vty mode)
+username name password password">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="networking">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My New Hugo Site">
+  <meta name="twitter:description" content="This chapter covers the following exam topics:
+1.0 Network Fundamentals
+1.1 Explain the Role of Network Components
+1.1.c Next-generation Firewalls and IPS
+4.0 IP Services
+4.8 Configure network devices for remote access using SSH
+5.0 Security Fundamentals
+5.3 Configure device access control using local passwords
+Encrypting Older IOS Passwords with service password-encryption
+service password-encryption
+encrypts passwords that are normally held as clear text
+password password (console or vty mode)
+username name password password">
+
+
+    
+
+    <link rel="canonical" href="https://example.org/networking/cisco/securing_network_devices/">
+    <link href="/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://example.org/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://example.org/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>This chapter covers the following exam topics:</p>
+<p>1.0 Network Fundamentals</p>
+<p>1.1 Explain the Role of Network Components</p>
+<p>1.1.c Next-generation Firewalls and IPS</p>
+<p>4.0 IP Services</p>
+<p>4.8 Configure network devices for remote access using SSH</p>
+<p>5.0 Security Fundamentals</p>
+<p>5.3 Configure device access control using local passwords</p>
+<p>Encrypting Older IOS Passwords with service password-encryption</p>
+<p>service password-encryption</p>
+<ul>
+<li>
+<p>encrypts passwords that are normally held as clear text</p>
+</li>
+<li>
+<p>password password (console or vty mode)</p>
+</li>
+<li>
+<p>username name password password</p>
+</li>
+<li>
+<p>enable password password</p>
+</li>
+<li>
+<p>encoding type of “7”</p>
+</li>
+</ul>
+<p>no service password-encryption</p>
+<ul>
+<li>passwords remain encrypted until password is changed</li>
+</ul>
+<p>Hashing the enable secret</p>
+<ul>
+<li>never stores the clear-text password</li>
+<li>IOS computes the MD5 hash of the password in the enable secret command and stores the hash of the password in the configuration.</li>
+<li>IOS hashes the clear-text password as typed by the user.</li>
+<li>IOS compares the two hashed values</li>
+</ul>
+<p>no enable secret</p>
+<ul>
+<li>Can be used without having to enter the password</li>
+</ul>
+<p>Improved Hashes for Cisco’s Enable Secret</p>
+<p>The two newer alternative algorithm types</p>
+<ul>
+<li>Both use an SHA-256 hash instead of MD5</li>
+</ul>
+<p>enable [algorithm-type5] secret password</p>
+<ul>
+<li>Type 5</li>
+<li>MD5</li>
+</ul>
+<p>enable algorithm-type sha256 secret password</p>
+<ul>
+<li>Type 8</li>
+<li>SHA-256</li>
+</ul>
+<p>enable algorithm-type scrypt secret password</p>
+<ul>
+<li>
+<p>Type 9</p>
+</li>
+<li>
+<p>SHA-256</p>
+</li>
+<li>
+<p>New enable secret commands with different algorithm types replace any existing enable secret command.</p>
+</li>
+</ul>
+<p>Encoding the Passwords for Local Usernames</p>
+<p>Username secret command Encoding</p>
+<p>username name [algorithm-type5] secret password</p>
+<p>username name algorithm-type sha-256 secret password</p>
+<p>username name algorithm-type scrypt secret password</p>
+<p>Controlling Password Attacks with ACLs</p>
+<p>(line vty)# access-class 3 in</p>
+<ul>
+<li>Bond ACL 3 to a vty line</li>
+</ul>
+<p>(line vty)# access-class 3 out</p>
+<ul>
+<li>looks at the destination IP address instead of the source</li>
+<li>filters based on the device to which the telnet or ssh command is trying to connect.</li>
+</ul>
+<p>Traditional Firewalls</p>
+<ul>
+<li>
+<p>match the source and destination IP addresses</p>
+</li>
+<li>
+<p>matching their static well-known TCP and UDP ports</p>
+</li>
+<li>
+<p>additional TCP and UDP ports </p>
+</li>
+<li>
+<p>Match the text in the URI of an HTTP request</p>
+</li>
+<li>
+<p>state information (stateful firewall)</p>
+</li>
+<li>
+<p>storing information about each packet</p>
+</li>
+<li>
+<p>make decisions about filtering future packets based on the historical state information (stateful inspection)</p>
+</li>
+<li>
+<p>could be tracking the number of TCP connections per second</p>
+</li>
+<li>
+<p>recording state information based on earlier packets</p>
+</li>
+<li>
+<p>stateless firewall or a router ACL</p>
+</li>
+<li>
+<p>would not have had the historical state information to realize that a DoS attack was occurring.</p>
+</li>
+</ul>
+<p>Security Zones</p>
+<ul>
+<li>
+<p>defining which hosts can initiate new connections.</p>
+</li>
+<li>
+<p>Zone Inside</p>
+</li>
+<li>
+<p>Secure</p>
+</li>
+<li>
+<p>Zone Outside</p>
+</li>
+<li>
+<p>Not secure</p>
+</li>
+<li>
+<p>DMZ</p>
+</li>
+<li>
+<p>Access by public</p>
+</li>
+</ul>
+<p>Intrusion Prevention Systems (IPS</p>
+<ul>
+<li>IPS first downloads a database of exploit signatures</li>
+<li>IPS can log the event, discard packets, or even redirect the packets to another security application for further examination.</li>
+<li>needs to download and keep updating its signature database.</li>
+</ul>
+<p>Cisco Next-Generation Firewalls</p>
+<p>Cisco  firewall</p>
+<ul>
+<li>
+<p>Cisco Adaptive Security Appliance (ASA).</p>
+</li>
+<li>
+<p>stateful filtering</p>
+</li>
+<li>
+<p>comparing fields in the IP, TCP, and UDP headers, and using security zones when defining firewall rules</p>
+</li>
+</ul>
+<p>Application Visibility and Control (AVC)</p>
+<p>looks at the application layer data to identify the application</p>
+<ul>
+<li>deep packet inspection</li>
+<li>can identify many applications based on the data sent (application layer headers plus application data structures far past the TCP and UDP headers).</li>
+</ul>
+<p>Duties of a NGFW</p>
+<p>Traditional firewall:</p>
+<p>stateful firewall filtering, NAT/PAT, and VPN termination.</p>
+<p>Application Visibility and Control (AVC)</p>
+<p>Advanced Malware Protection:</p>
+<ul>
+<li>A network-based antimalware function can run on the firewall itself, blocking file transfers that would install malware, and saving copies of files for later analysis.</li>
+</ul>
+<p>URL Filtering: This feature</p>
+<ul>
+<li>examines the URLs in each web request, categorizes the URLs, and either filters or rate limits the traffic based on rules. The Cisco Talos security group monitors and creates reputation scores for each domain known in the Internet, with URL filtering being able to use those scores in its decision to categorize, filter, or rate limit.</li>
+</ul>
+<p>NGIPS</p>
+<p>Cisco Next-Generation IPS</p>
+<ul>
+<li>examines the context by gathering data from all the hosts and the users of those hosts.</li>
+<li>will know the OS, software revision levels, what apps are running, open ports, the transport protocols and port numbers in use, and so on.</li>
+<li>Armed with that data, the NGIPS can make much more intelligent choices about what events to log.</li>
+</ul>
+<p>NGIPS Duties</p>
+<p>Traditional IPS:</p>
+<ul>
+<li>using exploit signatures to compare packet flows, creating a log of events, and possibly discarding and/or redirecting packets.</li>
+</ul>
+<p>Application Visibility and Control (AVC):</p>
+<p>Contextual Awareness:</p>
+<ul>
+<li>gather data from hosts—OS, software version/level, patches applied, applications running, open ports, applications currently sending data, and so on. Those facts inform the NGIPS as to the often more limited vulnerabilities in a portion of the network so that the NGIPS can focus on actual vulnerabilities while greatly reducing the number of logged events.</li>
+</ul>
+<p>Reputation-Based Filtering:</p>
+<p>can perform reputation-based filtering, taking the scores into account.</p>
+<p>Event Impact Level:</p>
+<p>provides an assessment based on impact levels</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2024 .
+        
+    </small>
+</footer>
+
+
+
+
+
+
+
+    
+    <script src="https://example.org/js/main.min.4ee188e1744c19816e95a540b2650ed9f033ea0371e74eac8e717355cfca8741.js" integrity="sha256-TuGI4XRMGYFulaVAsmUO2fAz6gNx506sjnFzVc/Kh0E="></script>
+
+    
+
+</body>
+</html>

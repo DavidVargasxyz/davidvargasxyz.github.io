@@ -1,0 +1,13 @@
+{
+  "readableLineLength": false,
+  "alwaysUpdateLinks": true,
+  "vimMode": false,
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "images",
+  "newFileLocation": "current",
+  "promptDelete": false,
+  "autoPairBrackets": false,
+  "autoPairMarkdown": false,
+  "propertiesInDocument": "source",
+  "showUnsupportedFiles": true
+}

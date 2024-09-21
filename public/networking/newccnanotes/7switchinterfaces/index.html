@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | My New Hugo Site</title>
+<meta property="og:title" content=" | My New Hugo Site" />
+<meta name="twitter:title" content=" | My New Hugo Site" />
+<meta itemprop="name" content=" | My New Hugo Site" />
+<meta name="application-name" content=" | My New Hugo Site" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en" href="https://example.org/networking/newccnanotes/7switchinterfaces/" title="" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.134.3">
+
+    
+    <meta property="og:url" content="https://example.org/networking/newccnanotes/7switchinterfaces/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="My New Hugo Site">
+  <meta property="og:description" content="7switchinterfaces 1.0 Network Fundamentals1.1 Explain the role and function of network components 1.1.b L2 and L3 switches1.4 Describe switching concepts Configuring Speed, Duplex, and Description autonegotiate○○What speed to useenabled by default
+duplex {auto | full | half} and speed {auto | 10 | 100 | 1000} ○configure the speed and duplex settings
+(config - add a text description to the interface - int) # description text
+show interfaces status - lists port #, Name, status, vlan, duplex, speed, and type
+a-full and aa-means that the listed speed and duplex values were autonegotiated.- 100 IEEE autonegotiation (IEEE standard 802.3u) each node states what it can do, and then each node picks the best options that both nodes support: -the fastest speed and the best duplex setting, with full duplex being better than half duplex. disable autonegotiation-Configure both the speed and duplex on a switch interface when a node tries to use autonegotiation but hears nothing from the device.
+Speed: Use your slowest supported speed (often 10 Mbps).Duplex: If your speed = 10 or 100, use half duplex; otherwise, use full duplex.
+Cisco switches can actually sense the speed used by other nodes, even without IEEE autonegotiation. -Cisco switches use this slightly different logic to choose the speed when autonegotiation fails: Speed: Sense the speed (without using autonegotiation), but if that fails, use the IEEE default (slowest supported speed, often 10 Mbps). Duplex: Use the IEEE defaults: If speed = 10 or 100, use half duplex; otherwise, use full duplex. -Ethernet interfaces using speeds faster than 1 Gbps always use full duplex.hubs do not react to autonegotiation messages Autonegotiation show interfaces and show interfaces description -Line status = administratively downProtocol status = down Interface status = disabled Shutdown command is configured -Line status = downProtocol status = down Interface status = notconnect Cable, speed mismatch, neighbor device is off , shutdown, or err-disabled -Line status = upProtocol status = down Interface status = notconnect Not expected on LAN switch physical interfaces -Line status = downProtocol status = down (err-disabled) Interface status = err-disabled Port security has disabled the interface -Line status = upProtocol status = up Interface status = connected the interface is working show interfaces fa0/13 - -lists the speed and duplex for interface Fast Ethernet 0/13with nothing implying that the values were learned through autonegotiation.(without the status option) speed manually set 10 Mbps on one switch and 100 Mbps on the other Quick Commands Speed/ duplex #duplex auto/full/half#speed auto/10/100/1000 Description #description (text) Interface #show interfaces status#show interfaces fa0/3 7. Switch InterfacesWednesday, June 30, 2021 8:01 AM speed manually set 10 Mbps on one switch and 100 Mbps on the other-both switches would list the port in a down/down or notconnect state if the duplex settings do not match-the switch interface will still be in a connected (up/up) or connected state. How to identify duplex mismatch problems, --check the duplex setting on each end of the link to see if the values mismatch.watch for incrementing collision and late collision counters Common Layer 1 problems">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="networking">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My New Hugo Site">
+  <meta name="twitter:description" content="7switchinterfaces 1.0 Network Fundamentals1.1 Explain the role and function of network components 1.1.b L2 and L3 switches1.4 Describe switching concepts Configuring Speed, Duplex, and Description autonegotiate○○What speed to useenabled by default
+duplex {auto | full | half} and speed {auto | 10 | 100 | 1000} ○configure the speed and duplex settings
+(config - add a text description to the interface - int) # description text
+show interfaces status - lists port #, Name, status, vlan, duplex, speed, and type
+a-full and aa-means that the listed speed and duplex values were autonegotiated.- 100 IEEE autonegotiation (IEEE standard 802.3u) each node states what it can do, and then each node picks the best options that both nodes support: -the fastest speed and the best duplex setting, with full duplex being better than half duplex. disable autonegotiation-Configure both the speed and duplex on a switch interface when a node tries to use autonegotiation but hears nothing from the device.
+Speed: Use your slowest supported speed (often 10 Mbps).Duplex: If your speed = 10 or 100, use half duplex; otherwise, use full duplex.
+Cisco switches can actually sense the speed used by other nodes, even without IEEE autonegotiation. -Cisco switches use this slightly different logic to choose the speed when autonegotiation fails: Speed: Sense the speed (without using autonegotiation), but if that fails, use the IEEE default (slowest supported speed, often 10 Mbps). Duplex: Use the IEEE defaults: If speed = 10 or 100, use half duplex; otherwise, use full duplex. -Ethernet interfaces using speeds faster than 1 Gbps always use full duplex.hubs do not react to autonegotiation messages Autonegotiation show interfaces and show interfaces description -Line status = administratively downProtocol status = down Interface status = disabled Shutdown command is configured -Line status = downProtocol status = down Interface status = notconnect Cable, speed mismatch, neighbor device is off , shutdown, or err-disabled -Line status = upProtocol status = down Interface status = notconnect Not expected on LAN switch physical interfaces -Line status = downProtocol status = down (err-disabled) Interface status = err-disabled Port security has disabled the interface -Line status = upProtocol status = up Interface status = connected the interface is working show interfaces fa0/13 - -lists the speed and duplex for interface Fast Ethernet 0/13with nothing implying that the values were learned through autonegotiation.(without the status option) speed manually set 10 Mbps on one switch and 100 Mbps on the other Quick Commands Speed/ duplex #duplex auto/full/half#speed auto/10/100/1000 Description #description (text) Interface #show interfaces status#show interfaces fa0/3 7. Switch InterfacesWednesday, June 30, 2021 8:01 AM speed manually set 10 Mbps on one switch and 100 Mbps on the other-both switches would list the port in a down/down or notconnect state if the duplex settings do not match-the switch interface will still be in a connected (up/up) or connected state. How to identify duplex mismatch problems, --check the duplex setting on each end of the link to see if the values mismatch.watch for incrementing collision and late collision counters Common Layer 1 problems">
+
+
+    
+
+    <link rel="canonical" href="https://example.org/networking/newccnanotes/7switchinterfaces/">
+    <link href="/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://example.org/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://example.org/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            
+            <div class="page-content">
+                <h1 id="7switchinterfaces">7switchinterfaces</h1>
+<pre tabindex="0"><code>1.0 Network Fundamentals1.1 Explain the role and function of network components
+1.1.b L2 and L3 switches1.4 Describe switching concepts
+Configuring Speed, Duplex, and Description
+</code></pre><ul>
+<li>autonegotiate○○What speed to useenabled by default<br>
+<strong>duplex {auto | full | half} and speed {auto | 10 | 100 | 1000}</strong> ○configure the speed and duplex settings<br>
+<strong>(config</strong> - add a text description to the interface <strong>- int) # description</strong> <em>text</em><br>
+<strong>show interfaces status</strong> - lists port #, Name, status, vlan, duplex, speed, and type<br>
+a-full and aa-means that the listed speed and duplex values were autonegotiated.- 100</li>
+</ul>
+<pre tabindex="0"><code>IEEE autonegotiation (IEEE standard 802.3u)
+</code></pre><ul>
+<li>each node states what it can do, and</li>
+<li>then each node picks the best options that both nodes support: -the fastest speed and the best duplex setting, with full duplex being better than half duplex.</li>
+<li>disable autonegotiation-Configure both the speed and duplex on a switch interface</li>
+<li>when a node tries to use autonegotiation but hears nothing from the device.<br>
+Speed: Use your slowest supported speed (often 10 Mbps).Duplex: If your speed = 10 or 100, use half duplex; otherwise, use full duplex.<br>
+Cisco switches can actually sense the speed used by other nodes, even without IEEE autonegotiation. -Cisco switches use this slightly different logic to choose the speed when autonegotiation fails:</li>
+<li>Speed: Sense the speed (without using autonegotiation), but if that fails, use the IEEE default (slowest supported speed, often 10 Mbps).</li>
+<li>Duplex: Use the IEEE defaults: If speed = 10 or 100, use half duplex; otherwise, use full duplex.</li>
+<li>-Ethernet interfaces using speeds faster than 1 Gbps always use full duplex.hubs do not react to autonegotiation messages</li>
+</ul>
+<pre tabindex="0"><code>Autonegotiation
+</code></pre><pre tabindex="0"><code>show interfaces and show interfaces description
+</code></pre><ul>
+<li>-Line status = administratively downProtocol status = down</li>
+<li>Interface status = disabled</li>
+</ul>
+<pre tabindex="0"><code>Shutdown command is configured
+</code></pre><ul>
+<li>-Line status = downProtocol status = down</li>
+<li>Interface status = notconnect</li>
+</ul>
+<pre tabindex="0"><code>Cable, speed mismatch, neighbor device is off , shutdown, or err-disabled
+</code></pre><ul>
+<li>-Line status = upProtocol status = down</li>
+<li>Interface status = notconnect</li>
+</ul>
+<pre tabindex="0"><code>Not expected on LAN switch physical interfaces
+</code></pre><ul>
+<li>-Line status = downProtocol status = down (err-disabled)</li>
+<li>Interface status = err-disabled</li>
+</ul>
+<pre tabindex="0"><code>Port security has disabled the interface
+</code></pre><ul>
+<li>-Line status = upProtocol status = up</li>
+<li>Interface status = connected</li>
+</ul>
+<pre tabindex="0"><code>the interface is working
+</code></pre><pre tabindex="0"><code>show interfaces fa0/13 - -lists the speed and duplex for interface Fast Ethernet 0/13with nothing implying that the values were learned through autonegotiation.(without the status option)
+speed manually set 10 Mbps on one switch and 100 Mbps on the other
+</code></pre><pre tabindex="0"><code>Quick Commands
+Speed/ duplex
+#duplex auto/full/half#speed auto/10/100/1000
+Description
+#description (text)
+Interface
+#show interfaces status#show interfaces fa0/3
+</code></pre><h6 id="7-switch-interfaceswednesday-june-30-2021-801-am">7. Switch InterfacesWednesday, June 30, 2021 8:01 AM</h6>
+<pre tabindex="0"><code>speed manually set 10 Mbps on one switch and 100 Mbps on the other-both switches would list the port in a down/down or notconnect state
+if the duplex settings do not match-the switch interface will still be in a connected (up/up) or connected state.
+How to identify duplex mismatch problems, --check the duplex setting on each end of the link to see if the values mismatch.watch for incrementing collision and late collision counters
+</code></pre><p>Common Layer 1 problems</p>
+<ul>
+<li>-receiving device might receive a frame whose bits have changed values.These frames do not pass the error detection logic as implemented in the FCS field in the Ethernet trailer,</li>
+<li>-The receiving device discards the frame and counts it as some kind of input error.Cisco switches list this error as a CRC error
+<ul>
+<li>-Frames that did not meet the minimum frame size requirement Can be caused by collisions.-(64 bytes, including the 18-byte destination MAC, source MAC, type, and FCS).<br>
+Runts:</li>
+</ul>
+</li>
+<li>Frames that exceed the maximum frame size requirement -(1518 bytes, including the 18-byte destination MAC, source MAC, type, and FCS)<br>
+Giants:<br>
+Input Errors: -A total of many counters, including runts, giants, no buffer, CRC, frame, overrun, and ignored counts.<br>
+CRC: &ndash;Received frames that did not pass the FCS mathcan be caused by collisions</li>
+<li>-Received frames that have an illegal formatcan be caused by collisions.-(like ending with a partial byte)<br>
+Frame:</li>
+</ul>
+<pre tabindex="0"><code>Packets Output: -Total number of packets (frames) forwarded out the interface.
+Output Errors: -Total number of packets (frames) that the switch port tried to transmit, but for which some problem occurred.
+Collisions: -Counter of all collisions that occur when the interface is transmitting a frame
+</code></pre><ul>
+<li>-The subset of all collisions that happen after the 64th byteOften point to a duplex mismatch-(In a properly working Ethernet LAN, collisions should occur within the first 64 bytes<br>
+Late Collisions:</li>
+</ul>
+<pre tabindex="0"><code>Collisions occur as a normal part of the halfa switch interface with an increasing collisions counter might not even have a problem. -duplex logic imposed by CSMA/CD
+</code></pre><ul>
+<li>if the CRC errors grow, but the collisions counters do not, the problem might simply be interference on the cable.</li>
+</ul>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2024 .
+        
+    </small>
+</footer>
+
+
+
+
+
+
+
+    
+    <script src="https://example.org/js/main.min.4ee188e1744c19816e95a540b2650ed9f033ea0371e74eac8e717355cfca8741.js" integrity="sha256-TuGI4XRMGYFulaVAsmUO2fAz6gNx506sjnFzVc/Kh0E="></script>
+
+    
+
+</body>
+</html>

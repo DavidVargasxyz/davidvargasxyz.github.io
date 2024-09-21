@@ -1,10 +1,6 @@
 {
   "recentFiles": [
     {
-      "basename": "Dopamine Nation",
-      "path": "booknotes/Dopamine Nation.md"
-    },
-    {
       "basename": "booknotes",
       "path": "booknotes/booknotes.md"
     },
@@ -199,6 +195,10 @@
     {
       "basename": "The Power of Positive Dog Training",
       "path": "booknotes/The Power of Positive Dog Training.md"
+    },
+    {
+      "basename": "The Blog Startup",
+      "path": "booknotes/The Blog Startup.md"
     }
   ],
   "omittedPaths": [],

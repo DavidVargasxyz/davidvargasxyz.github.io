@@ -5,6 +5,8 @@
     <loc>https://davidvargas.xyz/linux/</loc>
     <lastmod>2023-11-06T06:20:36-07:00</lastmod>
   </url><url>
+    <loc>https://davidvargas.xyz/booknotes/booknotes/</loc>
+  </url><url>
     <loc>https://davidvargas.xyz/networking/</loc>
   </url><url>
     <loc>https://davidvargas.xyz/tools/</loc>
@@ -21,8 +23,6 @@
     <loc>https://davidvargas.xyz/booknotes/anything-you-want/</loc>
   </url><url>
     <loc>https://davidvargas.xyz/booknotes/bliss-of-the-celibate/</loc>
-  </url><url>
-    <loc>https://davidvargas.xyz/booknotes/dopamine-nation/</loc>
   </url><url>
     <loc>https://davidvargas.xyz/booknotes/i-will-teach-you-to-be-rich/</loc>
   </url><url>
@@ -355,6 +355,8 @@
     <loc>https://davidvargas.xyz/tools/self-hosting/calibre-web-with-docker-and-nginx/</loc>
   </url><url>
     <loc>https://davidvargas.xyz/categories/</loc>
+  </url><url>
+    <loc>https://davidvargas.xyz/booknotes/dopamine-nation/</loc>
   </url><url>
     <loc>https://davidvargas.xyz/tools/hugo/how-to-build-a-website-with-hugo/</loc>
   </url><url>

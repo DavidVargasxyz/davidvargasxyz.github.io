@@ -59,14 +59,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "booknotes/_index.md",
+                "file": "booknotes/booknotes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0a8a9e01e5bd960f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "booknotes/Dopamine Nation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -140,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "booknotes/_index.md",
+                "file": "booknotes/Dopamine Nation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "booknotes/_index.md",
+                "file": "booknotes/Dopamine Nation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "booknotes/_index.md"
+                "file": "booknotes/Dopamine Nation.md"
               }
             }
           },
@@ -237,8 +249,9 @@
       "post-medium-draft:Post Medium draft": false
     }
   },
-  "active": "39a96b77efd92896",
+  "active": "0a8a9e01e5bd960f",
   "lastOpenFiles": [
+    "booknotes/booknotes.md",
     "tools/_index.md",
     "booknotes/Dopamine Nation.md",
     "Dopamine Nation.md",
@@ -264,7 +277,6 @@
     "linux/_index.md",
     "tools/Containers/distrobox.md",
     "tools/Containers/Introduction to Containers.md",
-    "tools/Containers/Skaffold.md",
     "Untitled 2.table",
     "Untitled 1.table",
     "Untitled.table",

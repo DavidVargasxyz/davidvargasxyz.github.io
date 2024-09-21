@@ -1,6 +1,7 @@
 ---
 title: booknotes
 draft: false
+weight: 1
 ---
 # Book Notes
 

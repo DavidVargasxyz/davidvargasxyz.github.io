@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>booknotes on David Vargas</title>
+    <title>Booknotes on David Vargas</title>
     <link>https://davidvargas.xyz/booknotes/</link>
-    <description>Recent content in booknotes on David Vargas</description>
+    <description>Recent content in Booknotes on David Vargas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://davidvargas.xyz/booknotes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>booknotes</title>
+      <link>https://davidvargas.xyz/booknotes/booknotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidvargas.xyz/booknotes/booknotes/</guid>
+      
+      <description>&lt;h1 id=&#34;book-notes&#34;&gt;Book Notes&lt;/h1&gt;
+&lt;p&gt;These are the summaries and notes of books I have read. These notes are the result of wanting to further process books and retain information. After years of reading books one time and then forgetting most of them.&lt;/p&gt;
+&lt;h2 id=&#34;my-current-reading-process&#34;&gt;My current reading process&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Give the book a quick read through.&lt;/li&gt;
+&lt;li&gt;Read the book a second time, highlighting anything I want to remember along the way.&lt;/li&gt;
+&lt;li&gt;Read through highlights and try to distill key points in my own words, or just writing down words straight from the book that I want to remember.&lt;/li&gt;
+&lt;li&gt;Share.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can use these notes to remember key points. Or to help decide if a book is going to help you with a specific problem. Books are sorted by highest rated. Click the titled link for each book to see my detailed notes.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title></title>
       <link>https://davidvargas.xyz/booknotes/anything-you-want/</link>
@@ -168,19 +188,6 @@ quick glance and common sense should tell you if the numbers will work. The rest
     
     <item>
       <title></title>
-      <link>https://davidvargas.xyz/booknotes/dopamine-nation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidvargas.xyz/booknotes/dopamine-nation/</guid>
-      
-      <description>&lt;h1 id=&#34;dopamine-nation-1010&#34;&gt;Dopamine Nation (10/10)&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;https://m.media-amazon.com/images/I/91lcJzqYNtL._SL1500_.jpg?classes=inline&amp;amp;height=175px&#34; alt=&#34;Dopamine Nation&#34;&gt;&lt;/p&gt;
-&lt;p&gt;This was a very insightful book. Knowing the balance between pain and pleasure is essential to living in modern day society. Where scarcity is no longer an issue. Our brains are not adapted for a world of abundance. So the forces that kept us alive for thousands of years, are now making us miserable. Consider this a primer into understanding addiction and over consumption. And steps you can take to mitigate this.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://davidvargas.xyz/booknotes/i-will-teach-you-to-be-rich/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -332,6 +339,19 @@ real bad guy, is insecurity&lt;/p&gt;</description>
       
       <description>&lt;h1 id=&#34;the-truth-710&#34;&gt;The Truth (7/10)&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&#34;https://m.media-amazon.com/images/I/61IVFSjZE5L._SL1500_.jpg?classes=inline&amp;amp;height=175px&#34; alt=&#34;The Truth&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This was a very insightful book. Knowing the balance between pain and pleasure is essential to living in modern day society. Where scarcity is no longer an issue. Our brains are not adapted for a world of abundance. So the forces that kept us alive for thousands of years, are now making us miserable. Consider this a primer into understanding addiction and over consumption. And steps you can take to mitigate this.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Dopamine Nation</title>
+      <link>https://davidvargas.xyz/booknotes/dopamine-nation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidvargas.xyz/booknotes/dopamine-nation/</guid>
+      
+      <description>&lt;h1 id=&#34;dopamine-nation-1010&#34;&gt;Dopamine Nation (10/10)&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://m.media-amazon.com/images/I/91lcJzqYNtL._SL1500_.jpg?classes=inline&amp;amp;height=175px&#34; alt=&#34;Dopamine Nation&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This was a very insightful book. Knowing the balance between pain and pleasure is essential to living in modern day society. Where scarcity is no longer an issue. Our brains are not adapted for a world of abundance. So the forces that kept us alive for thousands of years, are now making us miserable. Consider this a primer into understanding addiction and over consumption. And steps you can take to mitigate this.&lt;/p&gt;</description>
       
     </item>

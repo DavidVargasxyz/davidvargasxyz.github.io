@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | David Vargas</title>
+<meta property="og:title" content=" | David Vargas" />
+<meta name="twitter:title" content=" | David Vargas" />
+<meta itemprop="name" content=" | David Vargas" />
+<meta name="application-name" content=" | David Vargas" />
+<meta property="og:site_name" content="davidvargas.xyz" />
+
+<meta name="description" content="David Vargas&#39;s blog">
+<meta itemprop="description" content="David Vargas&#39;s blog" />
+<meta property="og:description" content="David Vargas&#39;s blog" />
+<meta name="twitter:description" content="David Vargas&#39;s blog" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/linux/rhcsa/17.-dns-and-time-synchronization/" title="" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.134.3">
+
+    
+    <meta property="og:url" content="http://localhost:1313/linux/rhcsa/17.-dns-and-time-synchronization/">
+  <meta property="og:site_name" content="David Vargas">
+  <meta property="og:title" content="David Vargas">
+  <meta property="og:description" content="DNS and Name Resolution DNS is also referred to as BIND (Berkeley Internet Name Domain) An implementation of DNS, most popular DNS application in use. Name resolution is the technique that uses DNS/BIND for hostname lookups. DNS Name Space and Domains DNS name space is a Hierarchical organization of all the domains on the Internet. Root of the name space is represented by a period (.) Hierarchy below the root (.) denotes the top-level domains (TLDs) with names such as .com, .net, .edu, .org, .gov, .ca, and .de. A DNS domain is a collection of one or more systems. Subdomains fall under their parent domains and are separated by a period (.). redhat.com is a second-level subdomain that falls under .com, and bugzilla.redhat.com is a third-level subdomain that falls under redhat.com. ">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="linux">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="David Vargas">
+  <meta name="twitter:description" content="DNS and Name Resolution DNS is also referred to as BIND (Berkeley Internet Name Domain) An implementation of DNS, most popular DNS application in use. Name resolution is the technique that uses DNS/BIND for hostname lookups. DNS Name Space and Domains DNS name space is a Hierarchical organization of all the domains on the Internet. Root of the name space is represented by a period (.) Hierarchy below the root (.) denotes the top-level domains (TLDs) with names such as .com, .net, .edu, .org, .gov, .ca, and .de. A DNS domain is a collection of one or more systems. Subdomains fall under their parent domains and are separated by a period (.). redhat.com is a second-level subdomain that falls under .com, and bugzilla.redhat.com is a third-level subdomain that falls under redhat.com. ">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/linux/rhcsa/17.-dns-and-time-synchronization/">
+    <link href="/style.min.1915b95fdbf4046da0032dde0fb966271ed904fa9c019f9a326d7ce001902895.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/notes/">
+                        notes
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/readings/">
+                        readings
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about">
+                        about
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            
+            <div class="page-content">
+                <h2 id="dns-and-name-resolution">DNS and Name Resolution</h2>
+<ul>
+<li>DNS is also referred to as BIND (Berkeley Internet Name Domain)
+<ul>
+<li>An implementation of DNS,</li>
+<li>most popular DNS application in use.</li>
+<li>Name resolution is the technique that uses DNS/BIND for hostname lookups.</li>
+</ul>
+</li>
+</ul>
+<h3 id="dns-name-space-and-domains">DNS Name Space and Domains</h3>
+<ul>
+<li>DNS name space is a
+<ul>
+<li>Hierarchical organization of all the domains on the Internet.</li>
+<li>Root of the name space is represented by a period (.)</li>
+<li>Hierarchy below the root (.) denotes the top-level domains (TLDs) with names such as .com, .net, .edu, .org, .gov, .ca, and .de.</li>
+<li>A DNS domain is a collection of one or more systems. Subdomains fall under their parent domains and are separated by a period (.).
+<ul>
+<li>redhat.com is a second-level subdomain that falls under .com, and bugzilla.redhat.com is a third-level subdomain that falls under redhat.com.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="davidvargasxyz.github.io/docs/images/image-TJ7OW7U5.jpg" alt=""></p>
+<ul>
+<li>Deepest level of the hierarchy are the leaves (systems, nodes, or any device with an IP address) of the name space.
+<ul>
+<li>a network switch net01 in .travel.gc.ca subdomain will be known as net01.travel.gc.ca.</li>
+<li>If a period (.) is added to the end of this name to look like net01.travel.gc.ca., it will be referred to as the Fully Qualified Domain Name (FQDN) for net01.</li>
+</ul>
+</li>
+</ul>
+<h3 id="dns-roles">DNS Roles</h3>
+<p>A DNS system or nameserver can be a</p>
+<ul>
+<li>primary server</li>
+<li>secondary server</li>
+<li>or client</li>
+</ul>
+<p><strong>Primary server</strong></p>
+<ul>
+<li>Responsible for its domain (or subdomain).</li>
+<li>Maintains a master database of all the hostnames and their associated IP addresses that are included in that domain.</li>
+<li>All changes in the database are done on this server.</li>
+<li>Each domain must have one primary server with one or more optional secondary servers for load balancing and redundancy. A</li>
+</ul>
+<p><strong>Secondary server</strong></p>
+<ul>
+<li>Atores an updated copy of the master database</li>
+<li>Provide name resolution service in the event the primary server goes down.</li>
+</ul>
+<p><strong>Client</strong></p>
+<ul>
+<li>Queries nameservers for name lookups.</li>
+<li>DNS client on Linux involves two text files.
+<ul>
+<li>/etc/resolv.conf</li>
+</ul>
+</li>
+</ul>
+<h3 id="etcresolvconf">/etc/resolv.conf</h3>
+<ul>
+<li>DNS resolver configuration file where information to support hostname lookups is defined.</li>
+<li>May be edited manually with a text editor.</li>
+<li>Referenced by resolver utilities to construct and transmit queries.</li>
+</ul>
+<p><strong>Key directives</strong></p>
+<ul>
+<li>
+<p>domain</p>
+</li>
+<li>
+<p>nameserver</p>
+</li>
+<li>
+<p>search</p>
+<p>Directive                           Description</p>
+</li>
+</ul>
+<p><strong>domain</strong></p>
+<ul>
+<li>Identifies the default domain name to be searched for queries</li>
+</ul>
+<p><strong>nameserver</strong></p>
+<ul>
+<li>Declares up to three DNS server IP addresses to be queried one at a time in the order in which they are listed. Nameserver entries may be defined as separate line items with the directive or on a single line.</li>
+</ul>
+<p><strong>search</strong></p>
+<ul>
+<li>Specifies up to six domain names, of which the first must be the local domain. No need to define the domain directive if the search directive is used.</li>
+</ul>
+<p><strong>Sample entry</strong></p>
+<pre tabindex="0"><code>  domain                              example.com
+
+  search                              example.net example.org example.edu example.gov
+
+  nameserver                          192.168.0.1 8.8.8.8 8.8.4.4
+</code></pre><p><strong>Variation</strong></p>
+<pre tabindex="0"><code>  domain                              example.com
+
+  search                              example.net example.org example.edu example.gov
+
+  nameserver                          192.168.0.1
+
+  nameserver                          8.8.8.8
+
+  nameserver                          8.8.4.4
+</code></pre><ul>
+<li>Entries are automatically placed by the NetworkManager service.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 tmp<span class="o">]</span><span class="c1"># cat /etc/resolv.conf</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Generated by NetworkManager</span>
+</span></span><span class="line"><span class="cl">nameserver 2001:578:3f::30
+</span></span><span class="line"><span class="cl">nameserver 2001:578:3f:1::30
+</span></span></code></pre></div><ul>
+<li>If this file is absent, the resolver utilities only query the nameserver configured on the localhost, determine the domain name from the hostname of the system, and construct the search path based on the domain name.</li>
+</ul>
+<h3 id="viewing-and-adjusting-name-resolution-sources-and-order">Viewing and Adjusting Name Resolution Sources and Order</h3>
+<p><strong>/etc/nsswitch.conf</strong></p>
+<ul>
+<li>
+<p>Directs the lookup utilities to the correct source to get hostname information.</p>
+</li>
+<li>
+<p>Also identifies the order in which to consult source and an action to be taken next.</p>
+</li>
+<li>
+<p>Four keywords oversee this behavior</p>
+<ul>
+<li>success</li>
+<li>notfound</li>
+<li>unavail</li>
+<li>tryagain</li>
+</ul>
+<p>Keyword                 Meaning                 Default Action</p>
+</li>
+</ul>
+<p><strong>success</strong></p>
+<ul>
+<li>Information found in return (do not try the source and provided to next source) the requester.</li>
+</ul>
+<p><strong>notfound</strong></p>
+<ul>
+<li>Information not found continue (try the next in source source).</li>
+</ul>
+<p><strong>unavail</strong></p>
+<ul>
+<li>Source down or not continue (try the next responding; service source) disabled or not configured.</li>
+</ul>
+<p><strong>tryagain</strong></p>
+<ul>
+<li>Source busy, retry continue (try the next later source).</li>
+</ul>
+<p>Example shows two sources for name resolution: files (/etc/hosts) and DNS (/etc/resolv.conf).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hosts:files    dns
+</span></span></code></pre></div><ul>
+<li>Default behavior</li>
+<li>Search will terminate if the requested information is found in the hosts table.</li>
+</ul>
+<p>Instruct the lookup programs to return if the requested information is not found there:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hosts:files <span class="o">[</span><span class="nv">notfound</span><span class="o">=</span><span class="k">return</span><span class="o">]</span> dns
+</span></span></code></pre></div><ul>
+<li>Query tools available in RHEL 9:
+<ul>
+<li><code>dig</code></li>
+<li><code>host</code></li>
+<li><code>nslookup</code></li>
+<li><code>getent</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="dig-command-domain-information-groper">dig command (domain information groper)</h3>
+<ul>
+<li>DNS lookup utility.</li>
+<li>Queries the nameserver specified at the command line or consults the resolv.conf file to determine the nameservers to be queried.</li>
+<li>May be used to troubleshoot DNS issues due to its flexibility and verbosity.</li>
+</ul>
+<p>To get the IP for redhat.com using the nameserver listed in the resolv.conf file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># dig redhat.com</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;</span> &lt;&lt;&gt;&gt; DiG 9.16.23-RH &lt;&lt;&gt;&gt; redhat.com
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> global options: +cmd
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> Got answer:
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> -&gt;&gt;HEADER<span class="s">&lt;&lt;- opco</span>de: QUERY, status: NOERROR, id: <span class="m">9017</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> flags: qr rd ra<span class="p">;</span> QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: <span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> OPT PSEUDOSECTION:
+</span></span><span class="line"><span class="cl"><span class="p">;</span> EDNS: version: 0, flags:<span class="p">;</span> udp: <span class="m">4000</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> QUESTION SECTION:
+</span></span><span class="line"><span class="cl"><span class="p">;</span>redhat.com.			IN	A
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> ANSWER SECTION:
+</span></span><span class="line"><span class="cl">redhat.com.		3599	IN	A	52.200.142.250
+</span></span><span class="line"><span class="cl">redhat.com.		3599	IN	A	34.235.198.240
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> Query time: <span class="m">94</span> msec
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> SERVER: 172.16.10.150#53<span class="o">(</span>172.16.10.150<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> WHEN: Fri Jul <span class="m">19</span> 13:12:13 MST <span class="m">2024</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> MSG SIZE  rcvd: <span class="m">71</span>
+</span></span></code></pre></div><p>To perform a reverse lookup on the redhat.com IP (52.200.142.250), use the -x option with the command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># dig -x 52.200.142.250</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;</span> &lt;&lt;&gt;&gt; DiG 9.16.23-RH &lt;&lt;&gt;&gt; -x 52.200.142.250
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> global options: +cmd
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> Got answer:
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> -&gt;&gt;HEADER<span class="s">&lt;&lt;- opco</span>de: QUERY, status: NOERROR, id: <span class="m">23057</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> flags: qr rd ra<span class="p">;</span> QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: <span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> OPT PSEUDOSECTION:
+</span></span><span class="line"><span class="cl"><span class="p">;</span> EDNS: version: 0, flags:<span class="p">;</span> udp: <span class="m">4000</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> QUESTION SECTION:
+</span></span><span class="line"><span class="cl"><span class="p">;</span>250.142.200.52.in-addr.arpa.	IN	PTR
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> ANSWER SECTION:
+</span></span><span class="line"><span class="cl">250.142.200.52.in-addr.arpa. <span class="m">299</span> IN	PTR	ec2-52-200-142-250.compute-1.amazonaws.com.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> Query time: <span class="m">421</span> msec
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> SERVER: 172.16.10.150#53<span class="o">(</span>172.16.10.150<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> WHEN: Fri Jul <span class="m">19</span> 14:22:52 MST <span class="m">2024</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> MSG SIZE  rcvd: <span class="m">112</span>
+</span></span></code></pre></div><h3 id="host-command">host Command</h3>
+<ul>
+<li>works on the same principles as the <code>dig</code> command in terms of nameserver determination.</li>
+<li>Produces less data in the output by default</li>
+<li>-v option if you want more info</li>
+</ul>
+<p>Perform a lookup on redhat.com:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># host redhat.com</span>
+</span></span><span class="line"><span class="cl">redhat.com has address 34.235.198.240
+</span></span><span class="line"><span class="cl">redhat.com has address 52.200.142.250
+</span></span><span class="line"><span class="cl">redhat.com mail is handled by <span class="m">10</span> us-smtp-inbound-2.mimecast.com.
+</span></span><span class="line"><span class="cl">redhat.com mail is handled by <span class="m">10</span> us-smtp-inbound-1.mimecast.com.
+</span></span></code></pre></div><p>Rerun with -v added:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># host -v redhat.com</span>
+</span></span><span class="line"><span class="cl">Trying <span class="s2">&#34;redhat.com&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> -&gt;&gt;HEADER<span class="s">&lt;&lt;- opcode: QUERY, status: NOERROR, id: 28687
+</span></span></span><span class="line"><span class="cl"><span class="s">;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">;; QUESTION SECTION:
+</span></span></span><span class="line"><span class="cl"><span class="s">;redhat.com.			IN	A
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">;; ANSWER SECTION:
+</span></span></span><span class="line"><span class="cl"><span class="s">redhat.com.		3127	IN	A	52.200.142.250
+</span></span></span><span class="line"><span class="cl"><span class="s">redhat.com.		3127	IN	A	34.235.198.240
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">Received 60 bytes from 172.16.1.19#53 in 8 ms
+</span></span></span><span class="line"><span class="cl"><span class="s">Trying &#34;redhat.com&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">;; -&gt;&gt;HEADER&lt;&lt;- opcode</span>: QUERY, status: NOERROR, id: <span class="m">47268</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> flags: qr rd ra<span class="p">;</span> QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: <span class="m">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> QUESTION SECTION:
+</span></span><span class="line"><span class="cl"><span class="p">;</span>redhat.com.			IN	AAAA
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> AUTHORITY SECTION:
+</span></span><span class="line"><span class="cl">redhat.com.		869	IN	SOA	dns1.p01.nsone.net. hostmaster.nsone.net. <span class="m">1684376201</span> <span class="m">200</span> <span class="m">7200</span> <span class="m">1209600</span> <span class="m">3600</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Received <span class="m">93</span> bytes from 172.16.1.19#53 in <span class="m">5</span> ms
+</span></span><span class="line"><span class="cl">Trying <span class="s2">&#34;redhat.com&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> -&gt;&gt;HEADER<span class="s">&lt;&lt;- opco</span>de: QUERY, status: NOERROR, id: <span class="m">61563</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> flags: qr rd ra<span class="p">;</span> QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: <span class="m">12</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> QUESTION SECTION:
+</span></span><span class="line"><span class="cl"><span class="p">;</span>redhat.com.			IN	MX
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> ANSWER SECTION:
+</span></span><span class="line"><span class="cl">redhat.com.		3570	IN	MX	<span class="m">10</span> us-smtp-inbound-1.mimecast.com.
+</span></span><span class="line"><span class="cl">redhat.com.		3570	IN	MX	<span class="m">10</span> us-smtp-inbound-2.mimecast.com.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> ADDITIONAL SECTION:
+</span></span><span class="line"><span class="cl">us-smtp-inbound-1.mimecast.com.	<span class="m">270</span> IN	A	205.139.110.242
+</span></span><span class="line"><span class="cl">us-smtp-inbound-1.mimecast.com.	<span class="m">270</span> IN	A	170.10.128.242
+</span></span><span class="line"><span class="cl">us-smtp-inbound-1.mimecast.com.	<span class="m">270</span> IN	A	170.10.128.221
+</span></span><span class="line"><span class="cl">us-smtp-inbound-1.mimecast.com.	<span class="m">270</span> IN	A	170.10.128.141
+</span></span><span class="line"><span class="cl">us-smtp-inbound-1.mimecast.com.	<span class="m">270</span> IN	A	205.139.110.221
+</span></span><span class="line"><span class="cl">us-smtp-inbound-1.mimecast.com.	<span class="m">270</span> IN	A	205.139.110.141
+</span></span><span class="line"><span class="cl">us-smtp-inbound-2.mimecast.com.	<span class="m">270</span> IN	A	170.10.128.221
+</span></span><span class="line"><span class="cl">us-smtp-inbound-2.mimecast.com.	<span class="m">270</span> IN	A	205.139.110.141
+</span></span><span class="line"><span class="cl">us-smtp-inbound-2.mimecast.com.	<span class="m">270</span> IN	A	205.139.110.221
+</span></span><span class="line"><span class="cl">us-smtp-inbound-2.mimecast.com.	<span class="m">270</span> IN	A	205.139.110.242
+</span></span><span class="line"><span class="cl">us-smtp-inbound-2.mimecast.com.	<span class="m">270</span> IN	A	170.10.128.141
+</span></span><span class="line"><span class="cl">us-smtp-inbound-2.mimecast.com.	<span class="m">270</span> IN	A	170.10.128.242
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Received <span class="m">297</span> bytes from 172.16.10.150#53 in <span class="m">12</span> ms
+</span></span></code></pre></div><p>Perform a reverse lookup on the IP of redhat.com with verbosity:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># host -v 52.200.142.250</span>
+</span></span><span class="line"><span class="cl">Trying <span class="s2">&#34;250.142.200.52.in-addr.arpa&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> -&gt;&gt;HEADER<span class="s">&lt;&lt;- opco</span>de: QUERY, status: NOERROR, id: <span class="m">62219</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> flags: qr rd ra<span class="p">;</span> QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: <span class="m">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> QUESTION SECTION:
+</span></span><span class="line"><span class="cl"><span class="p">;</span>250.142.200.52.in-addr.arpa.	IN	PTR
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> ANSWER SECTION:
+</span></span><span class="line"><span class="cl">250.142.200.52.in-addr.arpa. <span class="m">300</span> IN	PTR	ec2-52-200-142-250.compute-1.amazonaws.com.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Received <span class="m">101</span> bytes from 172.16.10.150#53 in <span class="m">430</span> ms
+</span></span></code></pre></div><h3 id="nslookup-command">nslookup Command</h3>
+<ul>
+<li>Queries the nameservers listed in the resolv.conf file or specified at the command line.</li>
+<li>See man pages for interactive mode</li>
+</ul>
+<p>Get the IP for redhat.com using nameserver 8.8.8.8 instead of the nameserver defined in resolv.conf:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># nslookup redhat.com 8.8.8.8</span>
+</span></span><span class="line"><span class="cl">Server:		8.8.8.8
+</span></span><span class="line"><span class="cl">Address:	8.8.8.8#53
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Non-authoritative answer:
+</span></span><span class="line"><span class="cl">Name:	redhat.com
+</span></span><span class="line"><span class="cl">Address: 34.235.198.240
+</span></span><span class="line"><span class="cl">Name:	redhat.com
+</span></span><span class="line"><span class="cl">Address: 52.200.142.250
+</span></span></code></pre></div><p>Perform a reverse lookup on the IP of redhat.com using the nameserver from the resolver configuration file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># nslookup 52.200.142.250</span>
+</span></span><span class="line"><span class="cl">250.142.200.52.in-addr.arpa	<span class="nv">name</span> <span class="o">=</span> ec2-52-200-142-250.compute-1.amazonaws.com.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Authoritative answers can be found from:
+</span></span></code></pre></div><h3 id="getent-command">getent Command</h3>
+<ul>
+<li>Fetch matching entries from the databases defined in the nsswitch.conf file.</li>
+<li>Reads the corresponding database and displays the information if found.</li>
+<li>For name resolution, use the hosts database and <code>getent</code> will attempt to resolve the specified hostname or IP address.</li>
+</ul>
+<p>Run the following for forward and reverse lookups:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># getent hosts redhat.com</span>
+</span></span><span class="line"><span class="cl">34.235.198.240  redhat.com
+</span></span><span class="line"><span class="cl">52.200.142.250  redhat.com
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># getent hosts 34.235.198.240</span>
+</span></span><span class="line"><span class="cl">34.235.198.240  ec2-34-235-198-240.compute-1.amazonaws.com
+</span></span></code></pre></div><h3 id="hostname">Hostname</h3>
+<ul>
+<li>&ldquo;-&rdquo;, &ldquo;_ &ldquo;, and &ldquo;. &quot; characters are allowed.</li>
+<li>Up to 253 characters.</li>
+<li>Stored in /etc/hostname.</li>
+<li>Can be viewed with several different commands, such as <code>hostname</code>, <code>hostnamectl</code>, <code>uname</code>, and <code>nmcli</code>, as well as by displaying the content of the /etc/hostname file.</li>
+</ul>
+<p>View the hostname:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hostnamectl --static
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hostname
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">uname -n
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat /etc/hostname
+</span></span></code></pre></div><h3 id="lab-change-the-hostname">Lab: Change the Hostname</h3>
+<p>Server1</p>
+<ol>
+<li>Open /etc/hostname and change the entry to server10.example.com</li>
+<li>restart the systemd-hostnamed service daemon</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl restart systemd-hostnamed
+</span></span></code></pre></div><ol start="3">
+<li>confirm</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hostname
+</span></span></code></pre></div><p>server2</p>
+<ol>
+<li>Change the hostname with hostnamectl:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo hostnamectl set-hostname server21.example.com
+</span></span></code></pre></div><ol start="2">
+<li>
+<p>Log out and back in for the prompt to update</p>
+</li>
+<li>
+<p>Change the hostname using nmcli</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nmcli general hostname server20.example.com
+</span></span></code></pre></div><h2 id="time-synchronization">Time Synchronization</h2>
+<h3 id="network-time-protocol-ntp">Network Time Protocol (NTP)</h3>
+<ul>
+<li>Networking protocol for synchronizing the system clock with remote time servers for accuracy and reliability.</li>
+<li>Having steady and exact time on networked systems allows time-sensitive applications, such as authentication and email applications, backup and scheduling tools, financial and billing systems, logging and monitoring software, and file and storage sharing protocols, to function with precision.</li>
+<li>Sends a stream of messages to configured time servers and binds itself to the one with least amount of delay in its responses, the most accurate, and may or may not be the closest distance-wise.</li>
+<li>Client system maintains a drift in time in a file and references this file for gradual drop in inaccuracy.</li>
+</ul>
+<h3 id="chrony">Chrony</h3>
+<ul>
+<li>RHEL 9 implementation of NTP</li>
+<li>Uses the UDP port 123.</li>
+<li>If enabled, it starts at system boot and continuously operates to keep the system clock in sync with a more accurate source of time.</li>
+<li>Performs well on computers that are occasionally connected to the network, attached to busy networks, do not run all the time, or have variations in temperature.</li>
+</ul>
+<h3 id="time-sources">Time Sources</h3>
+<ul>
+<li>A time source is any reference device that acts as a provider of time to other devices.</li>
+<li>The most precise sources of time are the atomic clocks.</li>
+<li>They use Universal Time Coordinated (UTC) for time accuracy.</li>
+<li>They produce radio signals that radio clocks use for time propagation to computer servers and other devices that require correctness in time.</li>
+<li>When choosing a time source for a network, preference should be given to the one that takes the least amount of time to respond.</li>
+<li>This server may or may not be closest physically.</li>
+</ul>
+<p>The common sources of time employed on computer networks are:</p>
+<ul>
+<li>The local system clock</li>
+<li>Internet-based public time server</li>
+<li>Radio clock.</li>
+</ul>
+<p><strong>local system clock</strong></p>
+<ul>
+<li>Can be used as a provider of time.</li>
+<li>This requires the maintenance of correct time on the server either manually or automatically via cron.</li>
+<li>Keep in mind that this server has no way of synchronizing itself with a more reliable and precise external time source.</li>
+<li>Using the local system clock as a time server is the least recommended option.</li>
+</ul>
+<p><strong>Public time server</strong></p>
+<ul>
+<li>Several public time servers are available over the Internet for general use (visit <a href="https://www.ntp.org">www.ntp.org</a> for a list).</li>
+<li>These servers are typically operated by government agencies, research and scientific organizations, large software vendors, and universities around the world.</li>
+<li>One of the systems on the local network is identified and configured to receive time from one or more public time servers.</li>
+<li>Preferred over the use of the local system clock.</li>
+</ul>
+<p>The official ntp.org site also provides a common pool called pool.ntp.org for vendors and organizations to register their own NTP
+servers voluntarily for public use.
+Examples:</p>
+<ul>
+<li>rhel.pool.ntp.org and ubuntu.pool.ntp.org for distribution-specific pools,</li>
+<li>ca.pool.ntp.org and oceania.pool.ntp.org for country and continent/region-specific pools.</li>
+</ul>
+<p>Under these sub-pools, the owners maintain multiple time servers with enumerated hostnames such as 0.rhel.pool.ntp.org, 1.rhel.pool.ntp.org, 2.rhel.pool.ntp.org, and so on.</p>
+<p><strong>Radio clock</strong></p>
+<ul>
+<li>Regarded as the perfect provider of time</li>
+<li>Receives time updates straight from an atomic clock.</li>
+<li>Global Positioning System (GPS), WWVB, and DCF77 are some popular radio clock methods.</li>
+<li>A direct use of signals from these sources requires connectivity of some hardware to the computer identified to act as an organizational or site-wide time server.</li>
+</ul>
+<h3 id="ntp-roles">NTP Roles</h3>
+<ul>
+<li>A system can be configured to operate as a primary server, secondary server, peer, or client.</li>
+</ul>
+<p><strong>Primary server</strong></p>
+<ul>
+<li>Gets time from a time source and provides time to secondary servers or directly to clients.</li>
+</ul>
+<p><strong>secondary server</strong></p>
+<ul>
+<li>Receives time from a primary server and can be configured to furnish time to a set of clients to offload the primary or for redundancy.</li>
+<li>The presence of a secondary server on the network is optional but highly recommended.</li>
+</ul>
+<p><strong>peer</strong></p>
+<ul>
+<li>Reciprocates time with an NTP server.</li>
+<li>All peers work at the same stratum level, and all of them are considered equally reliable.</li>
+</ul>
+<p><strong>client</strong></p>
+<ul>
+<li>Receives time from a primary or a secondary server and adjusts its clock accordingly.</li>
+</ul>
+<h3 id="stratum-levels">Stratum Levels</h3>
+<ul>
+<li>
+<p>Time sources are categorized hierarchically into several levels that are referred to as stratum levels based on their distance from the reference clocks (atomic, radio, and GPS).</p>
+</li>
+<li>
+<p>The reference clocks operate at stratum level 0 and are the most accurate provider of time with little to no delay.</p>
+</li>
+<li>
+<p>Besides stratum 0, there are fifteen additional levels that range from 1 to 15.</p>
+</li>
+<li>
+<p>Of these, servers operating at stratum 1 are considered perfect, as they get time updates directly from a stratum 0 device.</p>
+</li>
+<li>
+<p>A stratum 0 device cannot be used on the network directly. It is attached to a computer, which is then configured to operate at stratum 1.</p>
+</li>
+<li>
+<p>Servers functioning at stratum 1 are called time servers and they can be set up to deliver time to stratum 2 servers.</p>
+</li>
+<li>
+<p>Similarly, a stratum 3 server can be configured to synchronize its time with a stratum 2 server and deliver time to the next lower-level servers, and so on.</p>
+</li>
+<li>
+<p>Servers sharing the same stratum can be configured as peers to exchange time updates with one another.</p>
+</li>
+</ul>
+<p><img src="davidvargasxyz.github.io/docs/images/image-OOGYXDFA.jpg" alt=""></p>
+<p>There are numerous public NTP servers available for free that synchronize time.
+They normally operate at higher stratum levels such as 2 and 3.</p>
+<h3 id="chrony-configuration-file">Chrony Configuration File</h3>
+<p><strong>/etc/chrony.conf</strong></p>
+<ul>
+<li>key configuration file for the Chrony service</li>
+<li>Referenced by the Chrony daemon at startup to determine the sources to synchronize the clock, the log file location, and other details.</li>
+<li>Can be modified by hand to set or alter directives as required.</li>
+<li>Common directives used in this file along with real or mock values:</li>
+</ul>
+<p><strong>driftfile</strong></p>
+<ul>
+<li>/var/lib/chrony/drift</li>
+<li>Indicates the location and name of the drift file to be used to record the rate at which the system clockgains or losses time. This data is used by Chrony to maintain local system clock accuracy.</li>
+</ul>
+<p><strong>logdir</strong></p>
+<ul>
+<li>/var/log/chrony</li>
+<li>Sets the directory location to store the log files in</li>
+</ul>
+<p><strong>pool</strong></p>
+<ul>
+<li>0.rhel.pool.ntp.org iburst</li>
+<li>Defines the hostname that represents a pool of time servers. Chrony binds itself with one of the servers to get updates. In case of a failure of that server, it automatically switches the binding to another server within the pool.</li>
+<li>The iburst option dictates the Chrony service to send the first four update requests to the time server every 2 seconds. This allows the daemon to quickly bring the local clock closer to the time server at startup.</li>
+</ul>
+<p><strong>server</strong></p>
+<ul>
+<li>server20s8.example.com iburst</li>
+<li>Defines the hostname or IP address of a single time server.</li>
+</ul>
+<p><strong>server</strong></p>
+<ul>
+<li>127.127.1.0</li>
+<li>The IP 127.127.1.0 is a special address that epitomizes the local system clock.</li>
+</ul>
+<p><strong>peer</strong></p>
+<ul>
+<li>prodntp1.abc.net</li>
+<li>Identifies the hostname or IP address of a time server running at the same stratum level. A peer provides time to a server as well as receives time from the same server</li>
+</ul>
+<p><code>man chrony.conf</code> for details.</p>
+<h3 id="chrony-daemon-and-command">Chrony Daemon and Command</h3>
+<ul>
+<li>Chrony service runs as a daemon program called chronyd that handles time synchronization in the background.</li>
+<li>Uses /etc/chrony.conf file at startup and sets its behavior accordingly.</li>
+<li>If the local clock requires a time adjustment, Chrony takes multiple small steps toward minimizing the gap rather than doing it abruptly in a single step.</li>
+</ul>
+<p>The Chrony service has a command line program called</p>
+<h3 id="chronyc-command">chronyc command</h3>
+<ul>
+<li>monitor the performance of the service and control its runtime behavior.
+Subcommands:</li>
+</ul>
+<p><code>sources</code></p>
+<ul>
+<li>List current sources of time</li>
+</ul>
+<p><code>tracking</code></p>
+<ul>
+<li>view performance statistics</li>
+</ul>
+<h3 id="lab-configure-ntp-client-server10">Lab: Configure NTP Client (server10)</h3>
+<ul>
+<li>Install the Chrony software package and activate the service without making any changes to the default configuration.</li>
+<li>Validate the binding and operation.</li>
+</ul>
+<p>1. Install the Chrony package using the dnf command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># sudo dnf -y install chrony</span>
+</span></span></code></pre></div><p>2. Ensure that preconfigured public time server entries are present in the /etc/chrony.conf file:</p>
+<pre tabindex="0"><code>[root@server1 ~]# grep -E &#39;pool|server&#39; /etc/chrony.conf | grep -v ^#
+pool 2.rhel.pool.ntp.org iburst
+</code></pre><p>There is a single pool entry set in the file by default. This pool name is backed by multiple NTP servers behind the scenes.</p>
+<p>3. Start the Chrony service and set it to autostart at reboots:
+<code>sudo systemctl --now enable chronyd</code></p>
+<p>4. Examine the operational status of Chrony:
+<code>sudo systemctl status chronyd --no-pager -l</code></p>
+<p>5. Inspect the binding status using the sources subcommand with chronyc:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server1 ~<span class="o">]</span><span class="c1"># chronyc sources</span>
+</span></span><span class="line"><span class="cl">MS Name/IP address         Stratum Poll Reach LastRx Last <span class="nv">sample</span>               
+</span></span><span class="line"><span class="cl"><span class="o">===============================================================================</span>
+</span></span><span class="line"><span class="cl">^+ ntp7-2.mattnordhoffdns.n&gt;     <span class="m">2</span>   <span class="m">8</span>   <span class="m">377</span>   <span class="m">324</span>  -3641us<span class="o">[</span>-3641us<span class="o">]</span> +/-   53ms
+</span></span><span class="line"><span class="cl">^* 2600:1700:4e60:b983::123      <span class="m">1</span>   <span class="m">8</span>   <span class="m">377</span>   <span class="m">430</span>   +581us<span class="o">[</span>  +84us<span class="o">]</span> +/-   36ms
+</span></span><span class="line"><span class="cl">^- 2600:1700:5a0f:ee00::314&gt;     <span class="m">2</span>   <span class="m">8</span>   <span class="m">377</span>    <span class="m">58</span>  -1226us<span class="o">[</span>-1226us<span class="o">]</span> +/-   50ms
+</span></span><span class="line"><span class="cl">^- 2603:c020:6:b900:ed2f:b4&gt;     <span class="m">2</span>   <span class="m">9</span>   <span class="m">377</span>   <span class="m">320</span>   +142us<span class="o">[</span> +142us<span class="o">]</span> +/-   73ms
+</span></span></code></pre></div><p>^ means the source is a server
+* implies current association with the source.</p>
+<p>Poll</p>
+<ul>
+<li>polling rate (6 means 64 seconds),
+Reach</li>
+<li>reachability register (377 indicates a valid response was received),
+Last sample</li>
+<li>how long ago the last sample was received, and the offset between the local clock and the source at the last measurement</li>
+</ul>
+<p>6. Display the clock performance using the tracking subcommand with chronyc:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server1 ~<span class="o">]</span><span class="c1"># chronyc tracking</span>
+</span></span><span class="line"><span class="cl">Reference ID    : 2EA39303 <span class="o">(</span>2600:1700:4e60:b983::123<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Stratum         : <span class="m">2</span>
+</span></span><span class="line"><span class="cl">Ref <span class="nb">time</span> <span class="o">(</span>UTC<span class="o">)</span>  : Sun Jun <span class="m">16</span> 12:05:45 <span class="m">2024</span>
+</span></span><span class="line"><span class="cl">System <span class="nb">time</span>     : 286930.187500000 seconds slow of NTP <span class="nb">time</span>
+</span></span><span class="line"><span class="cl">Last offset     : -0.000297195 seconds
+</span></span><span class="line"><span class="cl">RMS offset      : 2486.306152344 seconds
+</span></span><span class="line"><span class="cl">Frequency       : 3.435 ppm slow
+</span></span><span class="line"><span class="cl">Residual freq   : -0.034 ppm
+</span></span><span class="line"><span class="cl">Skew            : 0.998 ppm
+</span></span><span class="line"><span class="cl">Root delay      : 0.064471066 seconds
+</span></span><span class="line"><span class="cl">Root dispersion : 0.003769779 seconds
+</span></span><span class="line"><span class="cl">Update interval : 517.9 seconds
+</span></span><span class="line"><span class="cl">Leap status     : Normal
+</span></span></code></pre></div><p>EXAM TIP: You will not have access to the outside network during the exam. You will need to point your system to an NTP server available on the exam network. Simply comment the default server/pool directive(s) and add a single directive &ldquo;server &lt;hostname&gt;&rdquo; to the file. Replace &lt;hostname&gt; with the NTP server name or its IP address as provided.</p>
+<h3 id="timedatectl-command"><code>timedatectl</code> command.</h3>
+<ul>
+<li>Modify the date, time, and time zone.</li>
+<li>Outputs the local time, Universal time, RTC time (real-time clock, a battery-backed hardware clock located on the system board), time zone, and the status of the NTP service by default:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl</span>
+</span></span><span class="line"><span class="cl">               Local time: Mon 2024-07-22 10:55:11 MST
+</span></span><span class="line"><span class="cl">           Universal time: Mon 2024-07-22 17:55:11 UTC
+</span></span><span class="line"><span class="cl">                 RTC time: Mon 2024-07-22 17:55:10
+</span></span><span class="line"><span class="cl">                Time zone: America/Phoenix <span class="o">(</span>MST, -0700<span class="o">)</span>
+</span></span><span class="line"><span class="cl">System clock synchronized: yes
+</span></span><span class="line"><span class="cl">              NTP service: active
+</span></span><span class="line"><span class="cl">          RTC in <span class="nb">local</span> TZ: no
+</span></span></code></pre></div><ul>
+<li>Requires that the NTP/Chrony service is deactivated in order to make time adjustments.</li>
+</ul>
+<p>Turn off NTP and verify:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl set-ntp false</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl | grep NTP</span>
+</span></span><span class="line"><span class="cl">              NTP service: inactive
+</span></span></code></pre></div><p>Modify the current date and confirm:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl set-time 2024-07-22</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl</span>
+</span></span><span class="line"><span class="cl">               Local time: Mon 2024-07-22 00:00:30 MST
+</span></span><span class="line"><span class="cl">           Universal time: Mon 2024-07-22 07:00:30 UTC
+</span></span><span class="line"><span class="cl">                 RTC time: Mon 2024-07-22 07:00:30
+</span></span><span class="line"><span class="cl">                Time zone: America/Phoenix <span class="o">(</span>MST, -0700<span class="o">)</span>
+</span></span><span class="line"><span class="cl">System clock synchronized: no
+</span></span><span class="line"><span class="cl">              NTP service: inactive
+</span></span><span class="line"><span class="cl">          RTC in <span class="nb">local</span> TZ: no
+</span></span></code></pre></div><p>Change both date and time in one go:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl set-time &#34;2024-07-22 11:00&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl</span>
+</span></span><span class="line"><span class="cl">               Local time: Mon 2024-07-22 11:00:06 MST
+</span></span><span class="line"><span class="cl">           Universal time: Mon 2024-07-22 18:00:06 UTC
+</span></span><span class="line"><span class="cl">                 RTC time: Mon 2024-07-22 18:00:06
+</span></span><span class="line"><span class="cl">                Time zone: America/Phoenix <span class="o">(</span>MST, -0700<span class="o">)</span>
+</span></span><span class="line"><span class="cl">System clock synchronized: no
+</span></span><span class="line"><span class="cl">              NTP service: inactive
+</span></span><span class="line"><span class="cl">          RTC in <span class="nb">local</span> TZ: no
+</span></span></code></pre></div><p>Reactivate NTP:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl set-ntp true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl | grep NTP</span>
+</span></span><span class="line"><span class="cl">              NTP service: active
+</span></span></code></pre></div><h3 id="date-command"><code>date</code> command</h3>
+<ul>
+<li>view or modify the system date and time.</li>
+</ul>
+<p>View current date and time:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># date</span>
+</span></span><span class="line"><span class="cl">Mon Jul <span class="m">22</span> 11:03:00 AM MST <span class="m">2024</span>
+</span></span></code></pre></div><p>Change the date and time:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># date --set &#34;2024-07-22 11:05&#34;</span>
+</span></span><span class="line"><span class="cl">Mon Jul <span class="m">22</span> 11:05:00 AM MST <span class="m">2024</span>
+</span></span></code></pre></div><p>Return the system to the current date and time:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl set-ntp false</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl set-ntp true</span>
+</span></span></code></pre></div><h2 id="dns-and-time-sync-review-questions">DNS and Time Sync Review Questions</h2>
+<p>Q. Maximum number of nameservers that can be defined in the resolver configuration file?
+A. Three.</p>
+<hr>
+<p>Q. What is the purpose of a drift file in Chrony/NTP?
+A. The purpose of a drift file is to keep track of the rate at which the system clock gains or losses time.</p>
+<hr>
+<p>Q. The Chrony client is preconfigured when the chrony software package is installed. You just need to start the service to synchronize the clock. True or False?
+A. True.</p>
+<hr>
+<p>Q. List any three DNS lookup tools.
+A. <code>dig</code>, <code>host</code>, <code>getent</code>, and <code>nslookup</code>.</p>
+<hr>
+<p>Q. List two utilities that you can use to change system time.
+A. The <code>timedatectl</code> and <code>date</code> utilities can be used to modify the system time.</p>
+<hr>
+<p>Q. What is a relative distinguished name in a DNS hierarchy?
+A. A relative distinguished name represents individual components of a distinguished name.</p>
+<hr>
+<p>Q. What would you add to the Chrony configuration file if you want to use the local system clock as the provider of time?
+A. You will add &ldquo;server 127.127.1.0&rdquo; to the Chrony configuration file and restart the service.</p>
+<hr>
+<p>Q. BIND is an implementation of Domain Name System. True or False?
+A. True.</p>
+<hr>
+<p>Q. Define time source.
+A. A time source is a reference device that provides time to other devices.</p>
+<hr>
+<p>Q. Name the three DNS roles that a RHEL system can play.
+A. From a DNS perspective, a RHEL machine can be a primary server, a secondary server, or a client.</p>
+<hr>
+<p>Q. Chrony is an implementation of the Network Time Protocol. True or False?
+A. True.</p>
+<hr>
+<p>Q. What is the name and location of the DNS resolver file?
+A. The DNS resolver file is called resolv.conf and it is located in the /etc directory.</p>
+<hr>
+<p>Q. What stratum level do two peer time sources operate on a network?
+A. Two peers on a network operate at the same stratum level.</p>
+<hr>
+<p>Q. What would you run to check the NTP bind status with time servers?
+A. You will run <code>chronyc sources</code> to check the binding status.</p>
+<hr>
+<p>Q. Define DNS name space.
+A. DNS name space is a hierarchical organization of all the domains on the Internet.</p>
+<hr>
+<p>Q. Name the four Chrony/NTP roles that a RHEL system can play.
+A. From a Chrony/NTP standpoint, a RHEL machine can be a primary server, a secondary server, a peer, or a client.</p>
+<hr>
+<p>Q. Which file defines the name resolution sources and controls the order in which they are consulted?
+A. The /etc/nsswitch.conf file.</p>
+<hr>
+<p>Q. What is the filename and directory location for the Chrony configuration file?
+A. The name of the Chrony configuration file is chrony.conf and it is located in the /etc directory.</p>
+<h2 id="dns-and-time-sync-diy-labs">DNS and Time Sync DIY Labs</h2>
+<h3 id="lab-configure-chrony">Lab: Configure Chrony</h3>
+<ul>
+<li>
+<p>Install Chrony and mark the service for autostart on reboots.
+<code>systemctl enable --now chronyd</code></p>
+</li>
+<li>
+<p>Edit the Chrony configuration file and comment all line entries that begin with &ldquo;pool&rdquo; or &ldquo;server&rdquo;.</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># vim /etc/chrony.conf</span>
+</span></span></code></pre></div><ul>
+<li>
+<p>Go to the end of the file, and add a new line &ldquo;server 127.127.1.0&rdquo;.</p>
+</li>
+<li>
+<p>Start the Chrony service and run chronyc sources to confirm the binding.</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># systemctl restart chronyd</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># chronyc sources</span>
+</span></span><span class="line"><span class="cl">MS Name/IP address         Stratum Poll Reach LastRx Last <span class="nv">sample</span>               
+</span></span><span class="line"><span class="cl"><span class="o">===============================================================================</span>
+</span></span><span class="line"><span class="cl">^? 127.127.1.0                   <span class="m">0</span>   <span class="m">6</span>     <span class="m">0</span>     -     +0ns<span class="o">[</span>   +0ns<span class="o">]</span> +/-    0ns
+</span></span></code></pre></div><h3 id="lab-modify-system-date-and-time">Lab: Modify System Date and Time</h3>
+<ul>
+<li>Execute the date and timedatectl commands to check the current system date and time.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># date</span>
+</span></span><span class="line"><span class="cl">Mon Jul <span class="m">22</span> 11:37:54 AM MST <span class="m">2024</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl</span>
+</span></span><span class="line"><span class="cl">               Local time: Mon 2024-07-22 11:37:59 MST
+</span></span><span class="line"><span class="cl">           Universal time: Mon 2024-07-22 18:37:59 UTC
+</span></span><span class="line"><span class="cl">                 RTC time: Mon 2024-07-22 18:37:59
+</span></span><span class="line"><span class="cl">                Time zone: America/Phoenix <span class="o">(</span>MST, -0700<span class="o">)</span>
+</span></span><span class="line"><span class="cl">System clock synchronized: no
+</span></span><span class="line"><span class="cl">              NTP service: active
+</span></span><span class="line"><span class="cl">          RTC in <span class="nb">local</span> TZ: no
+</span></span></code></pre></div><ul>
+<li>
+<p>Identify the distinctions between the two outputs.</p>
+</li>
+<li>
+<p>Use <code>timedatectl</code> and change the system date to a future date.</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl set-time 2024-07-23</span>
+</span></span><span class="line"><span class="cl">Failed to <span class="nb">set</span> time: Automatic <span class="nb">time</span> synchronization is enabled
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl set-ntp false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl set-time &#34;2024-07-23&#34;</span>
+</span></span></code></pre></div><ul>
+<li>Issue the <code>date</code> command and change the system time to one hour ahead of the current time.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># date -s &#34;2024-07-22 12:41&#34;</span>
+</span></span><span class="line"><span class="cl">Mon Jul <span class="m">22</span> 12:41:00 PM MST <span class="m">2024</span>
+</span></span></code></pre></div><ul>
+<li>Observe the new date and time with both commands.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># date -s &#34;2024-07-22 12:41&#34;</span>
+</span></span><span class="line"><span class="cl">Mon Jul <span class="m">22</span> 12:41:00 PM MST <span class="m">2024</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># date</span>
+</span></span><span class="line"><span class="cl">Mon Jul <span class="m">22</span> 12:41:39 PM MST <span class="m">2024</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl</span>
+</span></span><span class="line"><span class="cl">               Local time: Mon 2024-07-22 12:41:41 MST
+</span></span><span class="line"><span class="cl">           Universal time: Mon 2024-07-22 19:41:41 UTC
+</span></span><span class="line"><span class="cl">                 RTC time: Tue 2024-07-23 07:01:41
+</span></span><span class="line"><span class="cl">                Time zone: America/Phoenix <span class="o">(</span>MST, -0700<span class="o">)</span>
+</span></span><span class="line"><span class="cl">System clock synchronized: no
+</span></span><span class="line"><span class="cl">              NTP service: inactive
+</span></span><span class="line"><span class="cl">          RTC in <span class="nb">local</span> TZ: no
+</span></span></code></pre></div><ul>
+<li>Reset the date and time to the current actual time by disabling and re-enabling the NTP service using the <code>timedatectl</code> command.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server10 ~<span class="o">]</span><span class="c1"># timedatectl set-ntp true</span>
+</span></span></code></pre></div>
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/davidvargasxyz" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://keybase.io/" target="_blank" rel="noopener noreferrer me"
+    title="Keybase">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 76.3" version="1.1" fill="currentColor" stroke="none">
+    <path
+        d="M6.68 73.99c-.6-1.3-1.4-3.1-1.8-4l-.6-1.7-2 2.2-2 2.2-.2-4.2c-.3-6 .2-12.2 1.2-16.6 2.3-9.8 9.5-18.7 18.8-23.4l2.1-1-.5-1.5c-.3-.8-.6-2.5-.7-3.6l-.2-2.1-2.1-.2c-3.2-.3-4.9-1.2-6-3.5-.6-1.2-.6-1.4-.4-4.6.2-4.2.5-5.1 1.8-6.5 1.6-1.8 2.7-2.1 6.7-1.9 2.9.2 3.5.3 4.8.9.8.4 1.5.8 1.6.8.1 0 1-1.1 2.1-2.6l1.9-2.7 1.2.7c.7.4 1.5.9 1.9 1.1l.7.4-.6 1.5c-.3.8-.7 2.2-.8 2.9l-.2 1.4 1.7.2c6.1.6 10.7 4.3 12.4 9.9.5 1.8.5 5.3 0 7-.5 1.6-.5 1.7-.1 1.7.7 0 5.4 2.3 7.3 3.5 3.7 2.4 8 6.6 10.4 10.2 4.5 6.7 6.4 14 5.6 22-.4 4.8-1.3 8.6-2.9 12.3l-.6 1.4h-5l1.2-2.4c1.3-2.6 2.3-6.2 2.8-9.4.3-2.2.4-8.2.1-9.3l-.2-.7-1.3 1.4c-3.2 3.5-7.9 4.5-14.2 2.8-5.4-1.4-7.6-1.7-12.7-1.7-3.9 0-5.2.1-7.3.6-5.8 1.3-9.9 3.2-15.6 7.3-2.1 1.5-3.8 2.7-3.9 2.7-.1 0 .2-1 .6-2.3.4-1.3 1.1-3.4 1.5-4.8l.8-2.5-.9.9c-.5.5-1.9 1.9-3.1 3.2l-2.1 2.3.5 1.9c.6 2.5 2 5.6 3.5 7.9.6 1 1.1 1.8 1.1 1.9s-1.2.1-2.6.1h-2.6l-1.1-2.1zm8.8-24.2c4.8-5.1 8.7-9.2 8.8-9.2.1.1-.4 1.6-.9 3.3-3.3 10.4-4 12.4-3.9 12.5 0 0 1.2-.4 2.5-.9 8.5-3.7 18.4-4.2 28.9-1.4 4.7 1.2 6.5 1.2 8.8 0 1.3-.7 1.8-1.1 2.4-2.1 1.1-1.7 1.2-4.1.5-6.3-1.7-4.8-8.3-11-14.5-13.7-3.2-1.4-3.4-1.4-4.1-.7l-.6.6 2.6 3.2c1.4 1.7 2.9 3.6 3.1 4.1.6 1.2.7 3.1.1 4.3-.8 1.7-3.2 2.9-5.1 2.5-.8-.2-1.1-.1-1.9.5-2.2 1.6-4.6 1.2-6.6-1.2-1.6-1.8-2-2.7-2.1-4.5 0-.9-.3-2-.5-2.4-.3-.6-.4-1.3-.4-2.2l.1-1.4-1.3-.3c-1.8-.5-3.9-1.5-5.1-2.4-.6-.4-1.1-.8-1.3-.8s-1.5.6-2.9 1.3c-9.7 5-16 14.3-17 24.8-.1 1-.2 2.3-.3 2.8l-.1.9 1.1-1.1c.5-.5 4.9-5.1 9.7-10.2zm25.9-7.4c.9-.7 1.7-1.3 1.9-1.3.1 0 .4.3.7.7.5.8 1.4.8 1.8.1.3-.5.3-.6-5.6-7.8-3.5-4.3-4.2-5-4.7-5-1.2.1-.9 1 1 3.3l1.8 2.2-1 .8c-1.1 1-1.2 1.2-.5 1.8.5.5.6.4 1.6-.3l1.1-.7.7.6c.4.3.6.8.6.9 0 .2-.8.9-1.7 1.7-.9.7-1.6 1.5-1.6 1.7 0 .3.5 1.1 1.4 2.2.3.6.8.4 2.5-.9zm-10.3-14.2c.6-1.8 2.6-3.2 4.6-3.2 1.1 0 2.7.9 3.8 2.1l1 1.2.9-1.1c2.5-2.8 2.8-6.7.8-10.1-1.5-2.5-4.3-4-8.2-4.4-2.1-.2-2.6-.4-3.7-1.5l-.8-.8-.4.6c-.8 1.2-2.5 5.1-3 6.6-.7 2.3-.4 5.9.5 7.7.9 1.7 3.3 4 4 3.7.1.1.3-.3.5-.8zm-8.9-13.6c.2-.5.7-1.8 1.2-2.8.5-1 .9-2 .9-2.3 0-.9-1-1.3-3.7-1.5-2.4-.2-2.6-.1-3.1.4-.4.4-.6.9-.6 1.6 0 .6-.1 1.7-.2 2.6-.2 2.1.1 2.5 2.2 2.8 3.1.2 3 .2 3.3-.8zm-3.1-2.4c0-1.7.2-1.9 1.6-1.9h1.3v2.8h-2.8v-.9zm6.3 58.3c-.6-.6-.8-1-.8-2 0-1.9 1.1-3 2.9-3 1.7 0 2.9 1.2 2.9 2.9 0 1.8-1.1 2.8-3 2.9-1 0-1.4-.2-2-.8zm19.3.3a2.93 2.93 0 011.8-5.3c1.8 0 2.8 1.1 2.9 3 0 1.1-.1 1.4-.8 2s-1 .8-2 .8c-.9 0-1.5-.2-1.9-.5z" />
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2024 David Vargas.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

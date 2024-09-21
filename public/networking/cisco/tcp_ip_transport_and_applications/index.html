@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | David Vargas</title>
+<meta property="og:title" content=" | David Vargas" />
+<meta name="twitter:title" content=" | David Vargas" />
+<meta itemprop="name" content=" | David Vargas" />
+<meta name="application-name" content=" | David Vargas" />
+<meta property="og:site_name" content="davidvargas.xyz" />
+
+<meta name="description" content="David Vargas&#39;s blog">
+<meta itemprop="description" content="David Vargas&#39;s blog" />
+<meta property="og:description" content="David Vargas&#39;s blog" />
+<meta name="twitter:description" content="David Vargas&#39;s blog" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/networking/cisco/tcp_ip_transport_and_applications/" title="" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.134.3">
+
+    
+    <meta property="og:url" content="http://localhost:1313/networking/cisco/tcp_ip_transport_and_applications/">
+  <meta property="og:site_name" content="David Vargas">
+  <meta property="og:title" content="David Vargas">
+  <meta property="og:description" content="Chapter 1. Introduction to TCP/IP Transport and Applications
+This chapter covers the following exam topics:
+1.0 Network Fundamentals
+1.5 Compare TCP to UDP
+4.0 IP Services
+4.3 Explain the role of DHCP and DNS in the network
+TCP/IP Layer 4 Protocols: TCP and UDP
+TCP provides retransmission (error recovery) and TCP helps to avoid congestion (flow control), UDP needs fewer bytes in its header (less overhead) UDP software does not slow down data transfer TCP can purposefully slow down data transfer Voice over IP (VoIP) and video over IP, do not need error recovery, so they use UDP UDP Supports:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="networking">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="David Vargas">
+  <meta name="twitter:description" content="Chapter 1. Introduction to TCP/IP Transport and Applications
+This chapter covers the following exam topics:
+1.0 Network Fundamentals
+1.5 Compare TCP to UDP
+4.0 IP Services
+4.3 Explain the role of DHCP and DNS in the network
+TCP/IP Layer 4 Protocols: TCP and UDP
+TCP provides retransmission (error recovery) and TCP helps to avoid congestion (flow control), UDP needs fewer bytes in its header (less overhead) UDP software does not slow down data transfer TCP can purposefully slow down data transfer Voice over IP (VoIP) and video over IP, do not need error recovery, so they use UDP UDP Supports:">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/networking/cisco/tcp_ip_transport_and_applications/">
+    <link href="/style.min.1915b95fdbf4046da0032dde0fb966271ed904fa9c019f9a326d7ce001902895.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/notes/">
+                        notes
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/readings/">
+                        readings
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about">
+                        about
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>Chapter 1. Introduction to TCP/IP Transport and Applications</p>
+<p>This chapter covers the following exam topics:</p>
+<p>1.0 Network Fundamentals</p>
+<p>1.5 Compare TCP to UDP</p>
+<p>4.0 IP Services</p>
+<p>4.3 Explain the role of DHCP and DNS in the network</p>
+<p>TCP/IP Layer 4 Protocols: TCP and UDP</p>
+<ul>
+<li>TCP provides retransmission (error recovery) and</li>
+<li>TCP helps to avoid congestion (flow control),</li>
+<li>UDP needs fewer bytes in its header (less overhead)</li>
+<li>UDP software does not slow down data transfer</li>
+<li>TCP can purposefully slow down data transfer</li>
+<li>Voice over IP (VoIP) and video over IP, do not need error recovery, so they use UDP</li>
+</ul>
+<p>UDP Supports:</p>
+<ul>
+<li>Multiplexing using ports</li>
+</ul>
+<p>TCP Supports:</p>
+<ul>
+<li>
+<p>Multiplexing using ports</p>
+</li>
+<li>
+<p>Error recovery (reliability)</p>
+</li>
+<li>
+<p>numbering and acknowledging data with sequence and acknowledgment header fields</p>
+</li>
+<li>
+<p>Flow control using windowing</p>
+</li>
+<li>
+<p>use window sizes to protect buffer space</p>
+</li>
+<li>
+<p>Connection establishment and termination</p>
+</li>
+<li>
+<p>initialize port numbers and sequence and acknowledgment fields</p>
+</li>
+<li>
+<p>Ordered data transfer and segmentation</p>
+</li>
+</ul>
+<p>Transmission Control Protocol</p>
+<ul>
+<li>
+<p>TCP header is 20 bytes (without options)</p>
+</li>
+<li>
+<p>source port/ destination port</p>
+</li>
+<li>
+<p>Sequence Number</p>
+</li>
+<li>
+<p>Acknowledgement Number</p>
+</li>
+<li>
+<p>Offset, Reserved, Flag bits, Window</p>
+</li>
+<li>
+<p>Checksum, Urgent</p>
+</li>
+</ul>
+<p>*TCP segment, Layer 4 PDU, or L4PDU</p>
+<p>Multiplexing</p>
+<p>example</p>
+<p>All open on one computer:</p>
+<p>Port 80 Web Server</p>
+<p>Port 800 Ad Server</p>
+<p>Port 9876 Wire Application</p>
+<p>Socket</p>
+<ul>
+<li>
+<p>Includes IP address, transport protocol, and port number</p>
+</li>
+<li>
+<p>(10.1.1.2, TCP, port 80)</p>
+</li>
+</ul>
+<p>Well Known (System) Ports:</p>
+<ul>
+<li>0 to 1023</li>
+</ul>
+<p>User (Registered) Ports:</p>
+<ul>
+<li>1024 to 49151</li>
+</ul>
+<p>Ephemeral (Dynamic, Private) Ports:</p>
+<ul>
+<li>
+<p>49152 to 65535,</p>
+</li>
+<li>
+<p>not assigned</p>
+</li>
+<li>
+<p>Servers use well-known ports (or user ports), whereas clients use dynamic ports</p>
+</li>
+<li>
+<p>uses the same port number for all connections. For example,</p>
+</li>
+<li>
+<p>web server with 100 clients would have only one socket (one port number)</p>
+</li>
+<li>
+<p>server looks at source port of received TCP segments.</p>
+</li>
+</ul>
+<p>Popular TCP/IP Applications</p>
+<p>Simple Network Management Protocol (SNMP)</p>
+<ul>
+<li>query, compile, store, and display information about a network’s operation</li>
+<li>Cisco Prime software</li>
+</ul>
+<p>FTP/ TFTP</p>
+<ul>
+<li>FTP allows many more features</li>
+<li>TFTPis very simple, good tools for embedded parts of networking devices.</li>
+</ul>
+<p>SMTP/ POP3</p>
+<ul>
+<li>Simple Mail Transfer Protocol (SMTP) and Post Office Protocol version 3 (POP3)</li>
+<li>both used for transferring mail (TCP).</li>
+</ul>
+<p>Port numbers and protocols</p>
+<ul>
+<li>FTP Data TCP 20</li>
+<li>FTP Control TCP 21</li>
+<li>SSH TCP 22</li>
+<li>Telnet TCP 23</li>
+<li>SMTP TCP 25</li>
+<li>DNS UDP/TCP 53</li>
+<li>DHCP Server UDP 67</li>
+<li>DHCP Client UDP 68</li>
+<li>TFTP UDP 69</li>
+<li>HTTP TCP 80</li>
+<li>POP2 TCP 110</li>
+<li>SNMP UDP 161</li>
+<li>SSL TCP 443</li>
+<li>Syslog UDP 514</li>
+</ul>
+<p>Connection Establishment and Termination</p>
+<p>TCP connection establishment (3 way handshake) occurs 1st</p>
+<ul>
+<li>
+<p>SYN, DPORT=80, SPORT=49145</p>
+</li>
+<li>
+<p>SYN ACK , DPORT= 49145, SPORT=80</p>
+</li>
+<li>
+<p>ACK DPORT=80, SPORT=49145</p>
+</li>
+<li>
+<p>initializing Sequence and Acknowledgment fields</p>
+</li>
+<li>
+<p>agreeing on the port numbers</p>
+</li>
+<li>
+<p>2 bits inside the flag fields of the TCP header. Called the SYN and ACK flags</p>
+</li>
+</ul>
+<p>TCP connection termination. (four-way)</p>
+<p>- uses an additional flag, called the FIN bit</p>
+<ul>
+<li>ACK, FIN &gt;</li>
+<li>&lt; ACK</li>
+<li>ACK, FIN &lt;</li>
+<li>&lt; ACK</li>
+</ul>
+<p>Error Recovery and Reliability</p>
+<ul>
+<li>
+<p>reliability in both directions</p>
+</li>
+<li>
+<p>Sequence Number field of one direction and Acknowledgment field in the other direction</p>
+</li>
+<li>
+<p>1000 bytes, Seq = 1000 &gt;</p>
+</li>
+<li>
+<p>1000 bytes, Seq = 2000 &gt;</p>
+</li>
+<li>
+<p>1000 bytes, Seq = 3000 &gt;</p>
+</li>
+<li>
+<p>&lt; no data, ACK = 4000</p>
+</li>
+<li>
+<p>received all data with sequence numbers up through one less than 4000</p>
+</li>
+<li>
+<p>ready to receive your byte 4000 next.</p>
+</li>
+<li>
+<p>ack by listing the next expected byte (forward acknowledgment)</p>
+</li>
+<li>
+<p>sequence number field identifies the data (sender)</p>
+</li>
+<li>
+<p>forward acknowledgments acknowledge the data (receiver)</p>
+</li>
+<li>
+<p>Sequence and Acknowledgment fields let the receiving host can notice lost data</p>
+</li>
+<li>
+<p>ask the sending host to resend</p>
+</li>
+<li>
+<p>acknowledge that the re-sent data arrived</p>
+</li>
+<li>
+<p>1000 bytes, SEQ 1000 &gt;</p>
+</li>
+<li>
+<p>1000 bytes, SEQ 2000 X &gt;</p>
+</li>
+<li>
+<p>1000 bytes, SEQ 3000 &gt;</p>
+</li>
+<li>
+<p>&lt; no data, ACK = 2000</p>
+</li>
+<li>
+<p>(received 1000 - 1999 and 3000 - 3999, asking for 2000)</p>
+</li>
+<li>
+<p>1000 bytes, SEQ 2000 &gt;</p>
+</li>
+<li>
+<p>&lt; no data, ACK 4000</p>
+</li>
+<li>
+<p>Retransmission timer</p>
+</li>
+<li>
+<p>Sender may wait a few moments to make sure no other acknowledgments arrive</p>
+</li>
+</ul>
+<p>Flow Control Using Windowing</p>
+<p>Sliding window (dynamic window</p>
+<ul>
+<li>
+<p>Receiver slides the window size up and down</p>
+</li>
+<li>
+<p>&lt; ACK=1000, Window=3000</p>
+</li>
+<li>
+<p>SEQ=1000, SEQ=2000, SEQ=3000 &gt;</p>
+</li>
+<li>
+<p>&lt; ACK=4000, Window=4000</p>
+</li>
+</ul>
+<p>User Datagram Protocol</p>
+<ul>
+<li>
+<p>connectionless</p>
+</li>
+<li>
+<p>no reliability,</p>
+</li>
+<li>
+<p>no windowing,</p>
+</li>
+<li>
+<p>no reordering of the received data, and</p>
+</li>
+<li>
+<p>no segmentation of large chunks of data into the right size for transmission</p>
+</li>
+<li>
+<p>provides data transfer and multiplexing using port numbers</p>
+</li>
+<li>
+<p>Less overhead and processing than TCP.</p>
+</li>
+<li>
+<p>no reordering or recovery</p>
+</li>
+<li>
+<p>DNS requests use UDP, user will retry an operation if the DNS resolution fails</p>
+</li>
+<li>
+<p>Network File System (NFS), a remote file system application, performs recovery with application layer code, so UDP features are acceptable to NFS.</p>
+</li>
+<li>
+<p>8 byte header</p>
+</li>
+<li>
+<p>Source port, Destination Port</p>
+</li>
+<li>
+<p>Length, Checksum</p>
+</li>
+</ul>
+<p>TCP/IP Applications</p>
+<p>Uniform Resource Identifiers (URI)</p>
+<ul>
+<li>
+<p>clicking a link and typing a URI—refer to a URI</p>
+</li>
+<li>
+<p>referred to as web address or  Universal (uniform) Resource Locator [URL]</p>
+</li>
+<li>
+<p>three key components</p>
+</li>
+<li>
+<p>before the :// identifies the protocol</p>
+</li>
+<li>
+<p>between the // and / identifies the server by name</p>
+</li>
+<li>
+<p>after the / identifies the web page.</p>
+</li>
+<li>
+<p>http:// (Scheme)</p>
+</li>
+<li>
+<p><a href="http://www.certskills.com">www.certskills.com</a> (Authority)</p>
+</li>
+<li>
+<p>/blog (path)</p>
+</li>
+</ul>
+<p>DNS</p>
+<ul>
+<li>
+<p>&lt; Name Resolution Request (IP Header, UDP Header, DNS Request)</p>
+</li>
+<li>
+<p>Name resolution Reply (Ip Header, UDP Header, DNS Request (IP address) &gt;</p>
+</li>
+<li>
+<p>&lt; TCP connection to requested web server</p>
+</li>
+<li>
+<p>DNS requests can be cached by hosts and servers</p>
+</li>
+<li>
+<p>Local DNS may need to ask for help</p>
+</li>
+<li>
+<p>The enterprise DNS acts as a recursive DNS server</p>
+</li>
+<li>
+<p>Sends repeated DNS messages to find the authoritative DNS server.</p>
+</li>
+<li>
+<p>Recursive DNS lookup</p>
+</li>
+<li>
+<p>host &gt; Enterprise DNS &gt;</p>
+</li>
+<li>
+<p>Root DNS</p>
+</li>
+<li>
+<p>.com TLD DNS</p>
+</li>
+<li>
+<p>Authoritative cisco.com DNS</p>
+</li>
+</ul>
+<p>Transferring Files with HTTP</p>
+<ul>
+<li>
+<p>HTTP GET request lists file it needs</p>
+</li>
+<li>
+<p>HTTP GET response from server with a return code of 200 (meaning OK) and file’s contents.</p>
+</li>
+<li>
+<p>Server may issue a return code of 404, (file not found)</p>
+</li>
+<li>
+<p>Web pages consist of multiple files, called objects</p>
+</li>
+<li>
+<p>Objects are stored as different files on the web server</p>
+</li>
+<li>
+<p>Web browser gets the first file which can include references to other URIs that the browser also requests</p>
+</li>
+<li>
+<p>&lt; HTTP GET /go/ccna</p>
+</li>
+<li>
+<p>HTTP OK data &gt;</p>
+</li>
+<li>
+<p>&lt; HTTP GET /graphics/logo1.gif</p>
+</li>
+<li>
+<p>HTTP OK data &gt;</p>
+</li>
+<li>
+<p>&lt; HTTP GET /graphics/ad1.gif</p>
+</li>
+<li>
+<p>HTTP OK data &gt;</p>
+</li>
+<li>
+<p>Flow over one or more TCP connection between the client and the server.</p>
+</li>
+</ul>
+<p>Identifying the Correct Receiving Application</p>
+<ul>
+<li>tracks which port opened which request</li>
+</ul>
+<p>Fields that identify next header</p>
+<p>&lt; Ethernet (Type) (0x0800)</p>
+<p>&lt; IPv4 (Protocol) (6)</p>
+<p>&lt; TCP (Destination port) (49124)</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/davidvargasxyz" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://keybase.io/" target="_blank" rel="noopener noreferrer me"
+    title="Keybase">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 76.3" version="1.1" fill="currentColor" stroke="none">
+    <path
+        d="M6.68 73.99c-.6-1.3-1.4-3.1-1.8-4l-.6-1.7-2 2.2-2 2.2-.2-4.2c-.3-6 .2-12.2 1.2-16.6 2.3-9.8 9.5-18.7 18.8-23.4l2.1-1-.5-1.5c-.3-.8-.6-2.5-.7-3.6l-.2-2.1-2.1-.2c-3.2-.3-4.9-1.2-6-3.5-.6-1.2-.6-1.4-.4-4.6.2-4.2.5-5.1 1.8-6.5 1.6-1.8 2.7-2.1 6.7-1.9 2.9.2 3.5.3 4.8.9.8.4 1.5.8 1.6.8.1 0 1-1.1 2.1-2.6l1.9-2.7 1.2.7c.7.4 1.5.9 1.9 1.1l.7.4-.6 1.5c-.3.8-.7 2.2-.8 2.9l-.2 1.4 1.7.2c6.1.6 10.7 4.3 12.4 9.9.5 1.8.5 5.3 0 7-.5 1.6-.5 1.7-.1 1.7.7 0 5.4 2.3 7.3 3.5 3.7 2.4 8 6.6 10.4 10.2 4.5 6.7 6.4 14 5.6 22-.4 4.8-1.3 8.6-2.9 12.3l-.6 1.4h-5l1.2-2.4c1.3-2.6 2.3-6.2 2.8-9.4.3-2.2.4-8.2.1-9.3l-.2-.7-1.3 1.4c-3.2 3.5-7.9 4.5-14.2 2.8-5.4-1.4-7.6-1.7-12.7-1.7-3.9 0-5.2.1-7.3.6-5.8 1.3-9.9 3.2-15.6 7.3-2.1 1.5-3.8 2.7-3.9 2.7-.1 0 .2-1 .6-2.3.4-1.3 1.1-3.4 1.5-4.8l.8-2.5-.9.9c-.5.5-1.9 1.9-3.1 3.2l-2.1 2.3.5 1.9c.6 2.5 2 5.6 3.5 7.9.6 1 1.1 1.8 1.1 1.9s-1.2.1-2.6.1h-2.6l-1.1-2.1zm8.8-24.2c4.8-5.1 8.7-9.2 8.8-9.2.1.1-.4 1.6-.9 3.3-3.3 10.4-4 12.4-3.9 12.5 0 0 1.2-.4 2.5-.9 8.5-3.7 18.4-4.2 28.9-1.4 4.7 1.2 6.5 1.2 8.8 0 1.3-.7 1.8-1.1 2.4-2.1 1.1-1.7 1.2-4.1.5-6.3-1.7-4.8-8.3-11-14.5-13.7-3.2-1.4-3.4-1.4-4.1-.7l-.6.6 2.6 3.2c1.4 1.7 2.9 3.6 3.1 4.1.6 1.2.7 3.1.1 4.3-.8 1.7-3.2 2.9-5.1 2.5-.8-.2-1.1-.1-1.9.5-2.2 1.6-4.6 1.2-6.6-1.2-1.6-1.8-2-2.7-2.1-4.5 0-.9-.3-2-.5-2.4-.3-.6-.4-1.3-.4-2.2l.1-1.4-1.3-.3c-1.8-.5-3.9-1.5-5.1-2.4-.6-.4-1.1-.8-1.3-.8s-1.5.6-2.9 1.3c-9.7 5-16 14.3-17 24.8-.1 1-.2 2.3-.3 2.8l-.1.9 1.1-1.1c.5-.5 4.9-5.1 9.7-10.2zm25.9-7.4c.9-.7 1.7-1.3 1.9-1.3.1 0 .4.3.7.7.5.8 1.4.8 1.8.1.3-.5.3-.6-5.6-7.8-3.5-4.3-4.2-5-4.7-5-1.2.1-.9 1 1 3.3l1.8 2.2-1 .8c-1.1 1-1.2 1.2-.5 1.8.5.5.6.4 1.6-.3l1.1-.7.7.6c.4.3.6.8.6.9 0 .2-.8.9-1.7 1.7-.9.7-1.6 1.5-1.6 1.7 0 .3.5 1.1 1.4 2.2.3.6.8.4 2.5-.9zm-10.3-14.2c.6-1.8 2.6-3.2 4.6-3.2 1.1 0 2.7.9 3.8 2.1l1 1.2.9-1.1c2.5-2.8 2.8-6.7.8-10.1-1.5-2.5-4.3-4-8.2-4.4-2.1-.2-2.6-.4-3.7-1.5l-.8-.8-.4.6c-.8 1.2-2.5 5.1-3 6.6-.7 2.3-.4 5.9.5 7.7.9 1.7 3.3 4 4 3.7.1.1.3-.3.5-.8zm-8.9-13.6c.2-.5.7-1.8 1.2-2.8.5-1 .9-2 .9-2.3 0-.9-1-1.3-3.7-1.5-2.4-.2-2.6-.1-3.1.4-.4.4-.6.9-.6 1.6 0 .6-.1 1.7-.2 2.6-.2 2.1.1 2.5 2.2 2.8 3.1.2 3 .2 3.3-.8zm-3.1-2.4c0-1.7.2-1.9 1.6-1.9h1.3v2.8h-2.8v-.9zm6.3 58.3c-.6-.6-.8-1-.8-2 0-1.9 1.1-3 2.9-3 1.7 0 2.9 1.2 2.9 2.9 0 1.8-1.1 2.8-3 2.9-1 0-1.4-.2-2-.8zm19.3.3a2.93 2.93 0 011.8-5.3c1.8 0 2.8 1.1 2.9 3 0 1.1-.1 1.4-.8 2s-1 .8-2 .8c-.9 0-1.5-.2-1.9-.5z" />
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2024 David Vargas.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

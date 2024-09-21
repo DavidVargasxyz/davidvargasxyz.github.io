@@ -1,0 +1,2191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networking on David Vargas</title>
+    <link>http://localhost:1313/networking/</link>
+    <description>Recent content in Networking on David Vargas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://localhost:1313/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/classful-ipv4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/classful-ipv4/</guid>
+      
+      <description>&lt;p&gt;Table 12-2 IPv4 Address Classes Based on First Octet Values&lt;/p&gt;
+&lt;p&gt;Class      First Octet Values      Purpose&lt;/p&gt;
+&lt;p&gt;A            1–126                         Unicast (large networks)&lt;/p&gt;
+&lt;p&gt;B            128–191                     Unicast (medium-sized networks)&lt;/p&gt;
+&lt;p&gt;C            192–223                     Unicast (small networks)&lt;/p&gt;
+&lt;p&gt;D            224–239                     Multicast&lt;/p&gt;
+&lt;p&gt;E            240–255                     Reserved (formerly experimental)&lt;/p&gt;
+&lt;p&gt;Address ranges of all addresses that begin with 0 and all addresses that begin with 127 are reserved&lt;/p&gt;
+&lt;p&gt;An IPv4 address is comprised of four period-separated octets (4 x 8 = 32-bit address)
+Divided into a network portion (or network ID/bits) comprising of the Most Significant Bits (MSBs) and a node portion (or node/host ID/bits) containing the Least Significant Bits (LSBs).
+0 and 255 are network and broadcast addresses, and they are always reserved.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/cli/</guid>
+      
+      <description>&lt;h1 id=&#34;commands&#34;&gt;Commands&lt;/h1&gt;
+&lt;p&gt;Tell the system to reboot IOS:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;reload
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&#34;keyboard-shortcuts&#34;&gt;Keyboard Shortcuts&lt;/h2&gt;
+&lt;hr&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Key&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Function&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;up arrow/Ctrl+P&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Recently used commands (previous)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Down arrow/Ctrl+N&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Recently used commands (next)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Left arrow/Ctrl+B&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Move cursor back&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Right Arrow/Ctrl+F&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Move cursor forward&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Back Space&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Delete&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Debug&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tells user details about the operation of the switch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Navigation&lt;/p&gt;
+&lt;p&gt;End or Ctrl+Z&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Global Config &amp;gt; Enable Mode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Exit&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Line or VLAN modes &amp;gt; Global config&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Memory&lt;/p&gt;
+&lt;p&gt;RAM&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stores Running config&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Flash Memory&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/device_management_protocols/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/device_management_protocols/</guid>
+      
+      <description>&lt;p&gt;2.0 Network Access&lt;/p&gt;
+&lt;p&gt;2.3 Configure and verify Layer 2 discovery protocols (Cisco Discovery Protocol and LLDP)&lt;/p&gt;
+&lt;p&gt;4.0 IP Services&lt;/p&gt;
+&lt;p&gt;4.2 Configure and verify NTP operating in a client and server mode&lt;/p&gt;
+&lt;p&gt;4.5 Describe the use of syslog features including facilities and levels&lt;/p&gt;
+&lt;h1 id=&#34;system-message-logging-syslog&#34;&gt;System Message Logging (Syslog)&lt;/h1&gt;
+&lt;p&gt;Sending Messages in Real Time to Current Users&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Telnet and SSH users, the device requires a two-step process before the user sees the messages.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/dhcp_config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/dhcp_config/</guid>
+      
+      <description>&lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
+&lt;p&gt;1.10 Identify IP parameters for Client OS (Windows, Mac OS, Linux)&lt;/p&gt;
+&lt;p&gt;4.0 IP Services&lt;/p&gt;
+&lt;p&gt;4.3 Explain the role of DHCP and DNS within the network&lt;/p&gt;
+&lt;p&gt;4.6 Configure and verify DHCP client and relay&lt;/p&gt;
+&lt;p&gt;DHCP Concepts&lt;/p&gt;
+&lt;p&gt;Four messages between the client and server (DORA):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Discover:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sent by the DHCP client to find a willing DHCP server&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Offer:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sent by a DHCP server to offer to lease&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Request:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sent by the DHCP client to ask the server to lease the IPv4 address listed in the Offer message&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Acknowledgment:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/dhcp_snooping_and_arp_inspection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/dhcp_snooping_and_arp_inspection/</guid>
+      
+      <description>&lt;p&gt;5.0 Security Fundamentals&lt;/p&gt;
+&lt;p&gt;5.7 Configure Layer 2 security features (DHCP snooping, dynamic ARP inspection, and port security)&lt;/p&gt;
+&lt;p&gt;DHCP Snooping&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;notices DHCP messages that fall outside the normal use of DHCP&lt;/li&gt;
+&lt;li&gt;watches the DHCP messages that flow through a LAN switch&lt;/li&gt;
+&lt;li&gt;builds a table that lists the details of legitimate DHCP flows&lt;/li&gt;
+&lt;li&gt;other switch features can know what legitimate DHCP leases exist for devices connected to the switch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dynamic ARP Inspection (DAI)&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/ethernet_lans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/ethernet_lans/</guid>
+      
+      <description>&lt;h1 id=&#34;10-network-fundamentals&#34;&gt;1.0 Network Fundamentals&lt;/h1&gt;
+&lt;h1 id=&#34;11-explain-the-role-and-function-of-network-components&#34;&gt;1.1 Explain the role and function of network components&lt;/h1&gt;
+&lt;h1 id=&#34;11b-l2-and-l3-switches&#34;&gt;1.1.b L2 and L3 Switches&lt;/h1&gt;
+&lt;h1 id=&#34;12-describe-characteristics-of-network-topology-architectures&#34;&gt;1.2 Describe characteristics of network topology architectures&lt;/h1&gt;
+&lt;h1 id=&#34;12e-small-officehome-office-soho&#34;&gt;1.2.e Small office/home office (SOHO)&lt;/h1&gt;
+&lt;h1 id=&#34;13-compare-physical-interface-and-cabling-types&#34;&gt;1.3 Compare physical interface and cabling types&lt;/h1&gt;
+&lt;h1 id=&#34;13a-single-mode-fiber-multimode-fiber-copper&#34;&gt;1.3.a Single-mode fiber, multimode fiber, copper&lt;/h1&gt;
+&lt;h1 id=&#34;13b-connections-ethernet-shared-media-and-point-to-point&#34;&gt;1.3.b Connections (Ethernet shared media and point-to-point)&lt;/h1&gt;
+&lt;p&gt;802.3 (Ethernet Standards&lt;/p&gt;
+&lt;p&gt;10BASE-T&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;10 Mbps&lt;/li&gt;
+&lt;li&gt;Ethernet&lt;/li&gt;
+&lt;li&gt;802.3&lt;/li&gt;
+&lt;li&gt;Copper/ 100 m&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;100BASE-T&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;100 Mbps&lt;/li&gt;
+&lt;li&gt;Fast Ethernet&lt;/li&gt;
+&lt;li&gt;802.3u&lt;/li&gt;
+&lt;li&gt;Copper/ 100m&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1000BASE-LX&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1000 Mbps&lt;/li&gt;
+&lt;li&gt;Gigabit Ethernet&lt;/li&gt;
+&lt;li&gt;802.3z&lt;/li&gt;
+&lt;li&gt;Fiber, 5000 m&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1000BASE-T&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/extended_acls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/extended_acls/</guid>
+      
+      <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
+&lt;p&gt;5.0 Security Fundamentals&lt;/p&gt;
+&lt;p&gt;5.6 Configure and verify access control lists&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;all the parameters must be matched correctly to match that one ACE. .&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Matching the Protocol, Source IP, and Destination IP 9Extended)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Uses the access-list global command. The&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;syntax is identical up until permit or deny keyword&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Requires three matching parameters:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IP protocol type&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;source IP address&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;destination IP address.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;IP header’s Protocol Type field&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/how-to-study-for-ccna-200-301/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/how-to-study-for-ccna-200-301/</guid>
+      
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/CCNA.png&#34; alt=&#34;CCNA Study Calendar&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It took me a whopping 2 years to finish my CCNA! I kept giving up and quitting my studies for months at a time. Why? Because I couldn&amp;rsquo;t remember the massive amount of content covered in the CCNA. It felt hopeless. I could have done it in 6 month (or faster) if I knew how to study.&lt;/p&gt;
+&lt;p&gt;I hadn&amp;rsquo;t taken a test in 10 years before this. So I had completely forgotten how to learn. This post is about the mistakes I made studying for the CCNA and how to avoid them.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/ip_services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/ip_services/</guid>
+      
+      <description>&lt;p&gt;3.0 IP Connectivity&lt;/p&gt;
+&lt;p&gt;3.5 Describe the purpose of First Hop Redundancy Protocol&lt;/p&gt;
+&lt;p&gt;4.0 Infrastructure Services&lt;/p&gt;
+&lt;p&gt;4.4 Explain the function of SNMP in network operations&lt;/p&gt;
+&lt;p&gt;4.9 Describe the capabilities and function of TFTP/FTP in the network&lt;/p&gt;
+&lt;h2 id=&#34;first-hop-redundancy-protocol&#34;&gt;First Hop Redundancy Protocol&lt;/h2&gt;
+&lt;p&gt;Subnet 10.1.1.0/24
+SW3
+Default
+GW=.9
+SW4
+SWI
+SW2
+.9
+Single Points of Failure
+RI
+Figure 12-1 RI and the One WAN Link as Single Points of Failure &amp;ldquo;&amp;gt;&lt;/p&gt;
+&lt;p&gt;Subnet 10. I .1.0/24
+SW3
+Default
+GW=.9
+SW4
+Remote
+Single Points of Failure
+SWI
+SW2
+.9
+R4
+Main Site
+Figure 12-2 Higher Availability but with RI Still as a Single Point of Failure &amp;ldquo;&amp;gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/ipv6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/ipv6/</guid>
+      
+      <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
+&lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
+&lt;p&gt;1.8 Configure and verify IPv6 addressing and prefix&lt;/p&gt;
+&lt;p&gt;Introduction to IPv6&lt;/p&gt;
+&lt;p&gt;IPv6 increases the address to 128 bits in length.&lt;/p&gt;
+&lt;p&gt;Older OSPF Version 2 Upgraded to OSPF Version 3:&lt;/p&gt;
+&lt;p&gt;a newer version, OSPF version 3, was created to support IPv6. (Note: OSPFv3 was later upgraded to support advertising both IPv4 and IPv6 routes.)&lt;/p&gt;
+&lt;p&gt;ICMP Upgraded to ICMP Version 6:&lt;/p&gt;
+&lt;p&gt;ARP Replaced by Neighbor Discovery Protocol:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/ipv6_addressing_and_subnetting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/ipv6_addressing_and_subnetting/</guid>
+      
+      <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
+&lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
+&lt;p&gt;1.8 Configure and verify IPv6 addressing and prefix&lt;/p&gt;
+&lt;p&gt;1.9 Compare and contrast IPv6 address types&lt;/p&gt;
+&lt;p&gt;1.9.a Global unicast&lt;/p&gt;
+&lt;p&gt;1.9.b Unique local&lt;/p&gt;
+&lt;p&gt;IPv6 does not use any concept like the classful network concept used by IPv4. However, IANA does still reserve some IPv6 address ranges for specific purposes.&lt;/p&gt;
+&lt;p&gt;Public and Private IPv6 Addresses&lt;/p&gt;
+&lt;p&gt;global unicast addresses as the public IPv6 address space.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/ipv6_config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/ipv6_config/</guid>
+      
+      <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
+&lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
+&lt;p&gt;1.9 Compare and contrast IPv6 address types&lt;/p&gt;
+&lt;p&gt;1.9.a Global unicast&lt;/p&gt;
+&lt;p&gt;1.9.b Unique local&lt;/p&gt;
+&lt;p&gt;1.9.c Link local&lt;/p&gt;
+&lt;p&gt;1.9.d Anycast&lt;/p&gt;
+&lt;p&gt;1.9.e Multicast&lt;/p&gt;
+&lt;p&gt;1.9.f Modified EUI 64&lt;/p&gt;
+&lt;p&gt;Configuring the Full 128-Bit Address&lt;/p&gt;
+&lt;p&gt;To statically configure the full 128-bit unicast address—either global unicast or unique local—the router needs an ipv6 address address/prefix-length interface subcommand on each interface. The address can be an abbreviated IPv6 address or the full 32-digit hex address. The command includes the prefix length value, at the end, with no space between the address and prefix length.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/ipv6_routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/ipv6_routing/</guid>
+      
+      <description>&lt;p&gt;3.0 IP Connectivity&lt;/p&gt;
+&lt;p&gt;3.3 Configure and verify IPv4 and IPv6 static routing&lt;/p&gt;
+&lt;p&gt;3.3.a Default route&lt;/p&gt;
+&lt;p&gt;3.3.b Network route&lt;/p&gt;
+&lt;p&gt;3.3.c Host route&lt;/p&gt;
+&lt;p&gt;3.3.d Floating static&lt;/p&gt;
+&lt;p&gt;Connected and Local IPv6 Routes&lt;/p&gt;
+&lt;p&gt;a router adds IPv6 routes based on the following:&lt;/p&gt;
+&lt;p&gt;The configuration of IPv6 addresses on working interfaces (connected and local routes)&lt;/p&gt;
+&lt;p&gt;The direct configuration of a static route (static routes)&lt;/p&gt;
+&lt;p&gt;The configuration of a routing protocol, like OSPFv3, on routers that share the same data link (dynamic routes)&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/l2-etherchannel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/l2-etherchannel/</guid>
+      
+      <description>&lt;h1 id=&#34;layer-2-etherchannel&#34;&gt;Layer 2 Etherchannel&lt;/h1&gt;
+&lt;h3 id=&#34;manual-layer-2-etherchannel&#34;&gt;Manual Layer 2 EtherChannel&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add the correct channel-group configuration command to each physical interface on each switch, all with the on keyword, and all with the same number.&lt;/li&gt;
+&lt;li&gt;The on keyword tells the switches to place a physical interface into an EtherChannel, and&lt;/li&gt;
+&lt;li&gt;The number identifies the PortChannel interface number that the interface should be a part of.&lt;/li&gt;
+&lt;li&gt;EtherChannel, PortChannel, and Channel-group basically mean the same thing.&lt;/li&gt;
+&lt;li&gt;channel-group number on the neighboring switch can differ.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Po1&amp;rdquo; is short for PortChannel1&lt;/li&gt;
+&lt;li&gt;Channel-group command cannot override the channel-protocol command&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Create the port channel:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/lan_architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/lan_architecture/</guid>
+      
+      <description>&lt;p&gt;1.2 Describe characteristics of network topology architectures&lt;/p&gt;
+&lt;p&gt;1.2.a 2 tier&lt;/p&gt;
+&lt;p&gt;1.2.b 3 tier&lt;/p&gt;
+&lt;p&gt;1.2.e Small office/home office (SOHO)&lt;/p&gt;
+&lt;p&gt;1.3 Compare physical interface and cabling types&lt;/p&gt;
+&lt;p&gt;1.3.c Concepts of PoE&lt;/p&gt;
+&lt;p&gt;Two-Tier Campus Design (Collapsed Core)&lt;/p&gt;
+&lt;p&gt;access, distribution, and core.&lt;/p&gt;
+&lt;p&gt;I
+GigE
+A2
+10/100/1000 10/100/1000
+To WAN
+2x 10 GbE
+Uplinks
+Distribution
+2 Distribution
+DI
+A39
+Switches
+GigE
+40 Access
+A40
+Switches
+1000 pcs
+Layer
+Access
+Layer
+10/100/1000 10/100/1000
+Figure 13-1 Campus LAN with Design Terminology Listed &amp;ldquo;&amp;gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/management/</guid>
+      
+      <description>&lt;p&gt;Quick Commands&lt;/p&gt;
+&lt;h1 id=&#34;basic-device-management&#34;&gt;Basic Device Management&lt;/h1&gt;
+&lt;h2 id=&#34;ssh&#34;&gt;SSH&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;crypto key generate rsa modulus (modulus value)
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;show ip ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;show ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;dhcp&#34;&gt;DHCP&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ip address dhcp
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;show dhcp lease
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;show interfaces vlan 1
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;show ip default-gateway
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;history&#34;&gt;History&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;show history
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;terminal history size x
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;history size x
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;logging-and-domain-lookup&#34;&gt;Logging and Domain Lookup&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;no logging console
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;no ip domain-lookup
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;exec timeout (minutes)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;data plane&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;work a switch does to forward frames generated by the devices connected to the switch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;control plane&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/nat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/nat/</guid>
+      
+      <description>&lt;p&gt;4.1 Configure and verify inside source NAT using static and pools&lt;/p&gt;
+&lt;h3 id=&#34;cidr&#34;&gt;CIDR&lt;/h3&gt;
+&lt;p&gt;ISP3
+ISP4
+To 198.
+To 198.&lt;em&gt;—&lt;/em&gt;
+To 198.
+Customer A
+198.8.3.0124
+Customer B
+198.0.o.o -
+198.4.2.0124
+198.255.255.0
+198.4.3.0124
+Customer C
+198.1.0.0/24
+Figure 10-1 Typical Use of CIDR &amp;ldquo;&amp;gt;&lt;/p&gt;
+&lt;p&gt;most public address assignments for the last 20 years have been a CIDR block rather than an entire class A, B, or C network.&lt;/p&gt;
+&lt;h3 id=&#34;private-addressing&#34;&gt;Private Addressing&lt;/h3&gt;
+&lt;p&gt;Addresses
+10.0.0.0 to
+10.255.255.255
+172.16.O.O to
+172.31.255.255
+192.168.0.0 to
+192.168.255.255
+Network(s)
+10.0.0.0
+172.16.o.o -
+172.31.o.o
+192.168.0.0 -
+192.168.255.0
+Class of
+Networks
+c
+Number of
+Networks
+1
+16
+256 &amp;ldquo;&amp;gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/ospf_concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/ospf_concepts/</guid>
+      
+      <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
+&lt;p&gt;3.0 IP Connectivity&lt;/p&gt;
+&lt;p&gt;3.2 Determine how a router makes a forwarding decision by default&lt;/p&gt;
+&lt;p&gt;3.2.b Administrative distance&lt;/p&gt;
+&lt;p&gt;3.2.c Routing protocol metric&lt;/p&gt;
+&lt;p&gt;3.4 Configure and verify single area OSPFv2&lt;/p&gt;
+&lt;p&gt;3.4.a Neighbor adjacencies&lt;/p&gt;
+&lt;p&gt;3.4.b Point-to-point&lt;/p&gt;
+&lt;p&gt;3.4.c Broadcast (DR/BR selection)&lt;/p&gt;
+&lt;p&gt;3.4.d Router ID&lt;/p&gt;
+&lt;p&gt;Comparing Dynamic Routing Protocol Features&lt;/p&gt;
+&lt;p&gt;Routers add IP routes to their routing tables using three methods: connected routes, static routes, and routes learned by using dynamic routing protocols.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/ospf_config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/ospf_config/</guid>
+      
+      <description>&lt;p&gt;OSPF Config&lt;/p&gt;
+&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
+&lt;p&gt;3.0 IP Connectivity&lt;/p&gt;
+&lt;p&gt;3.2 Determine how a router makes a forwarding decision by default&lt;/p&gt;
+&lt;p&gt;3.2.b Administrative distance&lt;/p&gt;
+&lt;p&gt;3.2.c Routing protocol metric&lt;/p&gt;
+&lt;p&gt;3.4 Configure and verify single area OSPFv2&lt;/p&gt;
+&lt;p&gt;3.4.a Neighbor adjacencies&lt;/p&gt;
+&lt;p&gt;3.4.b Point-to-point&lt;/p&gt;
+&lt;p&gt;3.4.c Broadcast (DR/BR selection)&lt;/p&gt;
+&lt;p&gt;3.4.d Router ID&lt;/p&gt;
+&lt;p&gt;Implementing Single-Area OSPFv2&lt;/p&gt;
+&lt;p&gt;Step 1. Use the router ospf process-id global command to enter OSPF configuration mode for a particular OSPF process.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/ospf_lab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/ospf_lab/</guid>
+      
+      <description>&lt;p&gt;Welcome to the CCNA OSPF lab. You&amp;rsquo;ll need to configure OSPF so that there are full routing capabilities in the network. As well as use show commands to verify your network. Then you will troubleshoot and fix a broken OSPF network.&lt;/p&gt;
+&lt;p&gt;Once again, this will all be done in Packet Tracer. But feel free to do this lab on real equipment, GNS-3, etc.&lt;/p&gt;
+&lt;h2 id=&#34;ospf-setup&#34;&gt;OSPF Setup&lt;/h2&gt;
+&lt;p&gt;There are two main ways to configure OSPF. You can go into OSPF configuration mode. Or you can configure OSPF in Interface configuration mode. I will show you how to configure router1. You will need to configure the other routers as well.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/ospf_network_types_and_neighbors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/ospf_network_types_and_neighbors/</guid>
+      
+      <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
+&lt;p&gt;3.0 IP Connectivity&lt;/p&gt;
+&lt;p&gt;3.4 Configure and verify single area OSPFv2&lt;/p&gt;
+&lt;p&gt;3.4.a Neighbor adjacencies&lt;/p&gt;
+&lt;p&gt;3.4.b Point-to-point&lt;/p&gt;
+&lt;p&gt;3.4.c Broadcast (DR/BDR selection)&lt;/p&gt;
+&lt;p&gt;3.4.d Router ID&lt;/p&gt;
+&lt;p&gt;OSPF Network Types&lt;/p&gt;
+&lt;p&gt;Network Type
+Keyword
+broadcast
+point-to-point
+Dynamically Discovers
+Neighbors
+Yes
+Yes
+Uses a
+DR/BDR
+Yes
+No &amp;ldquo;&amp;gt;&lt;/p&gt;
+&lt;p&gt;The OSPF Broadcast Network Type&lt;/p&gt;
+&lt;p&gt;default to use network type broadcast&lt;/p&gt;
+&lt;p&gt;Attempt to discover neighbors by sending OSPF Hellos to the 224.0.0.5 multicast address (an address reserved for sending packets to all OSPF routers in the subnet)&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/qos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/qos/</guid>
+      
+      <description>&lt;p&gt;4.0 IP Services&lt;/p&gt;
+&lt;p&gt;4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping&lt;/p&gt;
+&lt;p&gt;QoS defines these actions as per-hop behaviors (PHBs), which is a formal term to refer to actions other than storing and forwarding a message.&lt;/p&gt;
+&lt;h2 id=&#34;qos-managing-bandwidth-delay-jitter-and-loss&#34;&gt;QoS: Managing Bandwidth, Delay, Jitter, and Loss&lt;/h2&gt;
+&lt;p&gt;four characteristics of network traffic:&lt;/p&gt;
+&lt;p&gt;Bandwidth&lt;/p&gt;
+&lt;p&gt;refers to the speed of a link, in bits per second (bps)&lt;/p&gt;
+&lt;p&gt;helps to also think of bandwidth as the capacity of the link, in terms of how many bits can be sent over the link per second.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/resources_for_passing_ccna/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/resources_for_passing_ccna/</guid>
+      
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/resourcesforccna.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;There are a lot of great CCNA resources out there. This list does not include all of them. Only the ones that I personally used to pass the CCNA 200-301 exam.&lt;/p&gt;
+&lt;p&gt;Materials for CCNA are generally separated into 5 categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Books&lt;/li&gt;
+&lt;li&gt;Video courses&lt;/li&gt;
+&lt;li&gt;Labs&lt;/li&gt;
+&lt;li&gt;Practice test&lt;/li&gt;
+&lt;li&gt;Flashcards&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;books&#34;&gt;Books&lt;/h2&gt;
+&lt;h3 id=&#34;wendell-odom-ocg-official-cert-guide-library&#34;&gt;Wendell Odom OCG Official cert guide library&lt;/h3&gt;
+&lt;p&gt;To me, this is the king of CCNA study materials. Some people do not like reading but this will give you more depth than any other resource on this list. &lt;a href=&#34;https://www.amazon.com/CCNA-200-301-Official-Guide-Library/dp/1587147149/ref=sr_1_1?keywords=ccna+200-301&amp;amp;sr=8-1&#34;&gt;Link.&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/router_operation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/router_operation/</guid>
+      
+      <description>&lt;p&gt;The configuration of IP addresses differs in some ways, with switches using a VLAN interface and routers using an IP address configured on each working interface.&lt;/p&gt;
+&lt;p&gt;switches do not have auxiliary ports.&lt;/p&gt;
+&lt;p&gt;Layer 2 switches support the show mac address-table command, while Cisco routers do not.&lt;/p&gt;
+&lt;p&gt;routers support the show ip route command, while Cisco Layer 2 switches do not.&lt;/p&gt;
+&lt;p&gt;Layer 2 switches use the show interfaces status command to list one line of output per interface (and routers do not)&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/routing_in_the_lan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/routing_in_the_lan/</guid>
+      
+      <description>&lt;p&gt;A. Use the sdm prefer lanbase-routing command (or similar) in global configuration mode to change the switch forwarding ASIC settings to make space for IPv4 routes at the next reload of the switch.&lt;/p&gt;
+&lt;p&gt;B. Use the reload EXEC command in enable mode to reload (reboot) the switch to pick up the new sdm prefer command setting.&lt;/p&gt;
+&lt;p&gt;C. Once reloaded, use the ip routing command in global configuration mode to enable the IPv4 routing function in IOS software and to enable key commands like show ip route.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/rstp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/rstp/</guid>
+      
+      <description>&lt;p&gt;2.0 Network Access&lt;/p&gt;
+&lt;p&gt;2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)&lt;/p&gt;
+&lt;p&gt;2.5 Describe the need for and basic operations of Rapid PVST+ Spanning Tree Protocol and identify basic operations&lt;/p&gt;
+&lt;p&gt;2.5.a Root port, root bridge (primary/secondary), and other port names&lt;/p&gt;
+&lt;p&gt;2.5.b Port states (forwarding/blocking)&lt;/p&gt;
+&lt;p&gt;2.5.c PortFast benefits&lt;/p&gt;
+&lt;p&gt;Most network engineers make the distribution layer switches be the root.&lt;/p&gt;
+&lt;p&gt;STP Modes and Standards&lt;/p&gt;
+&lt;p&gt;Three options to configure on the spanning-tree mode command, which tells the switch which type of STP to use&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/securing_network_devices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/securing_network_devices/</guid>
+      
+      <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
+&lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
+&lt;p&gt;1.1 Explain the Role of Network Components&lt;/p&gt;
+&lt;p&gt;1.1.c Next-generation Firewalls and IPS&lt;/p&gt;
+&lt;p&gt;4.0 IP Services&lt;/p&gt;
+&lt;p&gt;4.8 Configure network devices for remote access using SSH&lt;/p&gt;
+&lt;p&gt;5.0 Security Fundamentals&lt;/p&gt;
+&lt;p&gt;5.3 Configure device access control using local passwords&lt;/p&gt;
+&lt;p&gt;Encrypting Older IOS Passwords with service password-encryption&lt;/p&gt;
+&lt;p&gt;service password-encryption&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;encrypts passwords that are normally held as clear text&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;password password (console or vty mode)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;username name password password&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/security_architectures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/security_architectures/</guid>
+      
+      <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
+&lt;p&gt;5.0 Security Fundamentals&lt;/p&gt;
+&lt;p&gt;5.1 Define key security concepts (threats, vulnerabilities, exploits, and mitigation techniques)&lt;/p&gt;
+&lt;p&gt;5.2 Describe security program elements (user awareness, training, and physical access control)&lt;/p&gt;
+&lt;p&gt;5.4 Describe security password policies elements, such as management, complexity, and password alternatives (multifactor authentication, certificates, and biometrics)&lt;/p&gt;
+&lt;p&gt;5.8 Differentiate authentication, authorization, and accounting concepts&lt;/p&gt;
+&lt;p&gt;Attacks That Spoof Addresses&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;attacker sends packets with a spoofed source IP address&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/spanning_tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/spanning_tree/</guid>
+      
+      <description>&lt;h1 id=&#34;spanning-tree-protocol&#34;&gt;Spanning Tree Protocol&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Prevents loops in a network.&lt;/li&gt;
+&lt;li&gt;Loops can create Broadcast storms, Mac table instability, and Multiple frame transmission.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;broadcast-storms&#34;&gt;Broadcast Storms&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Switch receives a broadcast frame.&lt;/li&gt;
+&lt;li&gt;Switch transmits that frame out of all ports.&lt;/li&gt;
+&lt;li&gt;The broadcast frames will keep being received on each switch then broadcasted again.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;mac-table-instability&#34;&gt;Mac Table instability&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Broadcast storm is causing broadcast packets going in and out of every port, the&lt;/li&gt;
+&lt;li&gt;Switch has to keep updating the source mac address of those packets.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;multiple-frame-transmission&#34;&gt;Multiple frame transmission&lt;/h2&gt;
+&lt;p&gt;Issues can be cause when multiples of the same frame are received on a port.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/spanning_tree_protocol_concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/spanning_tree_protocol_concepts/</guid>
+      
+      <description>&lt;p&gt;RSTP is the most common spanning tree protocol. And Cisco devices default to using RSTP.&lt;/p&gt;
+&lt;p&gt;MAC table instability&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The switches MAC address tables keep changing because frames with the same source MAC arrive on different ports.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Broadcast storms&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;forwarding of a frame repeatedly on the same links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Multiple frame transmission&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;side effect of looping frames&lt;/li&gt;
+&lt;li&gt;Multiple copies are delivered to a host, confusing the host.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What Spanning Tree Does&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;blocking state&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/standard_acls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/standard_acls/</guid>
+      
+      <description>&lt;h1 id=&#34;standard-access-control-lists&#34;&gt;Standard Access Control Lists&lt;/h1&gt;
+&lt;p&gt;Can be used to match packets for applying Quality of Service (QoS) features.&lt;/p&gt;
+&lt;h3 id=&#34;acl-location-and-direction&#34;&gt;ACL location and direction&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;inbound to the router, before the router makes its forwarding (routing) decision&lt;/li&gt;
+&lt;li&gt;outbound, after the router makes its forwarding decision and has determined the exit interface to use.&lt;/li&gt;
+&lt;li&gt;enable an ACL on an interface that processes the packet, in the direction the packet flows through that interface.&lt;/li&gt;
+&lt;li&gt;the router then processes every inbound or outbound IP packet using that ACL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;actions-when-a-match-occurs&#34;&gt;Actions when a match occurs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;deny or permit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;types-of-ip-acls&#34;&gt;Types of IP ACLs&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Standard numbered ACLs (1–99) or (1300-1999)&lt;/li&gt;
+&lt;li&gt;Extended numbered ACLs (100–199) or (2000-2699)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;named-acls&#34;&gt;Named ACLs&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Editing with sequence numbers&lt;/li&gt;
+&lt;li&gt;configuration identifies the ACL either using a number or a name. ACLs will also be&lt;/li&gt;
+&lt;li&gt;either standard or extended&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;standard-numbered-ipv4-acls&#34;&gt;Standard Numbered IPv4 ACLs&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;matches only the source IP address&lt;/li&gt;
+&lt;li&gt;identify the ACL using numbers rather than names (numbered)&lt;/li&gt;
+&lt;li&gt;Looks at IPv4 packets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;List Logic with IP ACLs&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/static_routes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/static_routes/</guid>
+      
+      <description>&lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
+&lt;p&gt;1.6 Configure and verify IPv4 addressing and subnetting&lt;/p&gt;
+&lt;p&gt;3.0 IP Connectivity&lt;/p&gt;
+&lt;p&gt;3.1 Interpret the components of routing table&lt;/p&gt;
+&lt;p&gt;3.1.a Routing protocol code&lt;/p&gt;
+&lt;p&gt;3.1.b Prefix&lt;/p&gt;
+&lt;p&gt;3.1.c Network mask&lt;/p&gt;
+&lt;p&gt;3.1.d Next hop&lt;/p&gt;
+&lt;p&gt;3.1.e Administrative distance&lt;/p&gt;
+&lt;p&gt;3.1.f Metric&lt;/p&gt;
+&lt;p&gt;3.1.g Gateway of last resort&lt;/p&gt;
+&lt;p&gt;3.2 Determine how a router makes a forwarding decision by default&lt;/p&gt;
+&lt;p&gt;3.2.a Longest match&lt;/p&gt;
+&lt;p&gt;3.2.b Administrative distance&lt;/p&gt;
+&lt;p&gt;3.3 Configure and verify IPv4 and IPv6 static routing&lt;/p&gt;
+&lt;p&gt;3.3.a Default route&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/switch_interfaces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/switch_interfaces/</guid>
+      
+      <description>&lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
+&lt;p&gt;1.1 Explain the role and function of network components&lt;/p&gt;
+&lt;p&gt;1.1.b L2 and L3 switches&lt;/p&gt;
+&lt;p&gt;1.4 Describe switching concepts&lt;/p&gt;
+&lt;p&gt;Configuring Speed, Duplex, and Description&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;autonegotiate&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What speed to use&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;enabled by default&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;duplex {auto | full | half} and speed {auto | 10 | 100 | 1000}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;configure the speed and duplex settings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(config-int) # description text&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;add a text description to the interface&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;show interfaces status&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;lists port #, Name, status, vlan, duplex, speed, and type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;a-full and a-100&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/switchport_security_config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/switchport_security_config/</guid>
+      
+      <description>&lt;p&gt;5.0 Security Fundamentals&lt;/p&gt;
+&lt;p&gt;5.7 Configure Layer 2 security features (DHCP snooping, dynamic ARP inspection, and port security)&lt;/p&gt;
+&lt;p&gt;Port Security Concepts and Configuration&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;identifies devices based on the source MAC address of Ethernet frames that the devices send.&lt;/li&gt;
+&lt;li&gt;no restrictions on whether the frame came from a local device or was forwarded through other switches&lt;/li&gt;
+&lt;li&gt;examines frames received on the interface to determine if a violation has occurred.&lt;/li&gt;
+&lt;li&gt;defines a maximum number of unique source MAC addresses allowed for all frames coming in the interface.&lt;/li&gt;
+&lt;li&gt;keeps a list and counter of all unique source MAC addresses on the interface.&lt;/li&gt;
+&lt;li&gt;monitors newly learned MAC addresses, considering those MAC addresses to cause a violation if the newly learned MAC address would push the total number of MAC table entries for the interface past the configured maximum allowed MAC addresses for that port.&lt;/li&gt;
+&lt;li&gt;takes action to discard frames from the violating MAC addresses, plus other actions depending on the configured violation mode.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Other port security options&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/t-shoot_routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/t-shoot_routing/</guid>
+      
+      <description>&lt;p&gt;Problem Isolation Using the ping Command&lt;/p&gt;
+&lt;p&gt;functions as part of Layer 3, as a control protocol to assist IP by helping manage the IP network functions.&lt;/p&gt;
+&lt;p&gt;Ping options&lt;/p&gt;
+&lt;p&gt;The name or IP address of the destination,&lt;/p&gt;
+&lt;p&gt;how many times the command should send an echo request,&lt;/p&gt;
+&lt;p&gt;how long the command should wait (timeout) for an echo reply,&lt;/p&gt;
+&lt;p&gt;how big to make the packets, and many other options.&lt;/p&gt;
+&lt;p&gt;Extended ping allows R1’s ping command to use R1’s LAN IP address from within subnet 172.16.1.0/24.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/tcp_ip_basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/tcp_ip_basic/</guid>
+      
+      <description>&lt;h2 id=&#34;tcpip-model-layers&#34;&gt;TCP/IP Model Layers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Application&lt;/li&gt;
+&lt;li&gt;Transport&lt;/li&gt;
+&lt;li&gt;Network&lt;/li&gt;
+&lt;li&gt;Data Link&lt;/li&gt;
+&lt;li&gt;Physical&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;application-layer&#34;&gt;Application Layer&lt;/h3&gt;
+&lt;p&gt;The application level layer controls services for the applications themselves. Including:&lt;/p&gt;
+&lt;h4 id=&#34;http&#34;&gt;HTTP&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTP provides interface between software and the network.&lt;/li&gt;
+&lt;li&gt;HTTP traffic
+&lt;ul&gt;
+&lt;li&gt;PC &amp;gt; | HTTP Header | GET home.html | &amp;gt; Web server&lt;/li&gt;
+&lt;li&gt;Web server &amp;gt; | HTTP Header | OK | Data | home.html | &amp;gt; PC&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;key-terms&#34;&gt;Key terms&lt;/h2&gt;
+&lt;p&gt;Term: Same layer interaction on different computers.
+Defenition: Communicate with the same layer on another computer.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/tcp_ip_transport_and_applications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/tcp_ip_transport_and_applications/</guid>
+      
+      <description>&lt;p&gt;Chapter 1. Introduction to TCP/IP Transport and Applications&lt;/p&gt;
+&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
+&lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
+&lt;p&gt;1.5 Compare TCP to UDP&lt;/p&gt;
+&lt;p&gt;4.0 IP Services&lt;/p&gt;
+&lt;p&gt;4.3 Explain the role of DHCP and DNS in the network&lt;/p&gt;
+&lt;p&gt;TCP/IP Layer 4 Protocols: TCP and UDP&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TCP provides retransmission (error recovery) and&lt;/li&gt;
+&lt;li&gt;TCP helps to avoid congestion (flow control),&lt;/li&gt;
+&lt;li&gt;UDP needs fewer bytes in its header (less overhead)&lt;/li&gt;
+&lt;li&gt;UDP software does not slow down data transfer&lt;/li&gt;
+&lt;li&gt;TCP can purposefully slow down data transfer&lt;/li&gt;
+&lt;li&gt;Voice over IP (VoIP) and video over IP, do not need error recovery, so they use UDP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;UDP Supports:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/things_to_learn_after_ccna/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/things_to_learn_after_ccna/</guid>
+      
+      <description>&lt;h1 id=&#34;what-to-learn-after-ccna&#34;&gt;What to Learn After CCNA&lt;/h1&gt;
+&lt;p&gt;It&amp;rsquo;s easy to get overwhelmed with options after &lt;a href=&#34;resources_for_passing_ccna.md&#34;&gt;completing&lt;/a&gt; your CCNA. What do you learn next? If you are trying to get a job as a Network Engineer, you will want to check this out.&lt;/p&gt;
+&lt;p&gt;I went through dozens of job listings that mentioned CCNA. Then, tallied up the main devices/vendors, certifications, and technologies mentioned. And left out anything that wasn&amp;rsquo;t mentioned more than twice.&lt;/p&gt;
+&lt;p&gt;Core CCNA technologies such as LAN, WAN, OSPF, Spanning Tree, VLANs, etc. have been left out. The point here is to target the most sought after technologies and skills by employers. I also left out soft skills and any job that wasn&amp;rsquo;t a networking specific role.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/vlans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/vlans/</guid>
+      
+      <description>&lt;h2 id=&#34;virtual-lan-vlan-concepts&#34;&gt;Virtual LAN (VLAN) Concepts&lt;/h2&gt;
+&lt;p&gt;Using VLANs creates smaller broadcast domains. There are many reasons why you would want to do this. You reduce CPU overhead on each device. And reduce security risks by using different security policies on each VLAN.&lt;/p&gt;
+&lt;p&gt;You can also use more flexible designs that group users by department instead of by physical location. Using VLANs helps you solve problems more quickly. As the failure point for many problems would include devices in a single broadcast domain.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/wan_architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/wan_architecture/</guid>
+      
+      <description>&lt;p&gt;Network Fundamentals&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;network topology architecture&lt;/li&gt;
+&lt;li&gt;WAN&lt;/li&gt;
+&lt;li&gt;Security Fundamentals&lt;/li&gt;
+&lt;li&gt;remote access and site-to-site VPNs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Metro Ethernet&lt;/p&gt;
+&lt;p&gt;Customer Router
+SWI
+Customer Router
+Layer
+2
+Customer Router
+Customer Router&lt;/p&gt;
+&lt;p&gt;customers connect to a Metro Ethernet service with either routers or Layer 3 switches&lt;/p&gt;
+&lt;h3 id=&#34;metro-ethernet-physical-design-and-topology&#34;&gt;Metro Ethernet Physical Design and Topology&lt;/h3&gt;
+&lt;p&gt;a device physically near to customer sites is called a point of presence (PoP)&lt;/p&gt;
+&lt;p&gt;UNI
+Ethernet
+Access Link
+Network
+SP Network -
+Details Hidden
+Located in SP
+Point of Presence (POP)
+Distances Set
+by Ethernet Standards
+Ethernet
+Access Link
+UNI
+Ethernet
+Access Link
+UNI
+R2&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/wans_and_ip_routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/wans_and_ip_routing/</guid>
+      
+      <description>&lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
+&lt;p&gt;1.1 Explain the role and function of network components&lt;/p&gt;
+&lt;p&gt;1.1.a Routers&lt;/p&gt;
+&lt;p&gt;1.2 Describe characteristics of network topology architectures&lt;/p&gt;
+&lt;p&gt;1.2.d WAN&lt;/p&gt;
+&lt;p&gt;Leased-Line WANs&lt;/p&gt;
+&lt;p&gt;Physical Details of Leased Lines&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;predetermined speed&lt;/li&gt;
+&lt;li&gt;Full Duplex&lt;/li&gt;
+&lt;li&gt;Uses two pairs of wires one for each direction&lt;/li&gt;
+&lt;li&gt;Conceptually crossover&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Leased Circuit&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Electrical circuit (line) between 2 endpoints&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Serial Link (line)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bits flow serially&lt;/li&gt;
+&lt;li&gt;Routers use serial interfaces&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Point to point link (line)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;two points only&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;T1&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/what_is_a_vlan_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/what_is_a_vlan_/</guid>
+      
+      <description>&lt;p&gt;VLANs create smaller broadcast domains. Why create smaller broadcast domains?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Device have to do less stuff (process less broadcasts)&lt;/li&gt;
+&lt;li&gt;Better security&lt;/li&gt;
+&lt;li&gt;Group different departments together&lt;/li&gt;
+&lt;li&gt;Narrow down problems&lt;/li&gt;
+&lt;li&gt;Less spanning tree if you reduce vlan to a single switch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;802.1q tagging&lt;/p&gt;
+&lt;p&gt;Frames are tagged with an 802.1q header as they leave the switch. So the receiving switch knows what vlan the frame is part of.&lt;/p&gt;
+&lt;p&gt;802.1q header&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;4 bytes&lt;/li&gt;
+&lt;li&gt;Includes 12 bit vlan id field that supports 4096 vlans. (0 and 5 are reserved so make that 4094)&lt;/li&gt;
+&lt;li&gt;Also include type, priority, and flag fields&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;VLAN numbers and what they mean&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/wireless/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/wireless/</guid>
+      
+      <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
+&lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
+&lt;p&gt;1.1 Explain the role and function of network components&lt;/p&gt;
+&lt;p&gt;1.1.d Access Points&lt;/p&gt;
+&lt;p&gt;1.11 Describe wireless principles&lt;/p&gt;
+&lt;p&gt;1.11.a Nonoverlapping Wi-Fi channels&lt;/p&gt;
+&lt;p&gt;1.11.b SSID&lt;/p&gt;
+&lt;p&gt;1.11.c RF&lt;/p&gt;
+&lt;p&gt;Comparing Wired and Wireless Networks&lt;/p&gt;
+&lt;p&gt;Wireless devices must adhere to a common standard (IEEE 802.11).&lt;/p&gt;
+&lt;p&gt;Wireless coverage must exist in the area where devices are expected to use it.&lt;/p&gt;
+&lt;p&gt;Wireless LAN Topologies&lt;/p&gt;
+&lt;p&gt;IEEE 802.11 WLANs are always half duplex because transmissions between stations use the same frequency or channel.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/wireless_architectures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/wireless_architectures/</guid>
+      
+      <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
+&lt;p&gt;2.0 Network Access&lt;/p&gt;
+&lt;p&gt;2.6 Compare Cisco Wireless Architectures and AP modes&lt;/p&gt;
+&lt;p&gt;Autonomous AP Architecture&lt;/p&gt;
+&lt;p&gt;VLANs must be trunked from the distribution layer switch (where routing commonly takes place) to the access layer, where they are extended further over a trunk link to the AP.&lt;/p&gt;
+&lt;p&gt;Two wireless users that are associated to the same autonomous AP can reach each other through the AP without having to pass up into the wired network&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/wireless_lan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/wireless_lan/</guid>
+      
+      <description>&lt;p&gt;multiple VLANs must be brought to it over a trunk link.&lt;/p&gt;
+&lt;p&gt;The wireless side of an AP inherently trunks 802.11 frames by marking them with the BSSID of the WLAN where they belong.&lt;/p&gt;
+&lt;p&gt;lightweight AP&lt;/p&gt;
+&lt;p&gt;Wired VLANs that terminate at the WLC can be mapped to WLANs that emerge at the AP.&lt;/p&gt;
+&lt;p&gt;The AP needs only an access link to connect to the network infrastructure and terminate its end of the tunnel&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/cisco/wireless_security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/cisco/wireless_security/</guid>
+      
+      <description>&lt;p&gt;This chapter covers the following exam topics:&lt;/p&gt;
+&lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
+&lt;p&gt;1.11 Describe wireless principles&lt;/p&gt;
+&lt;p&gt;1.11.d Encryption&lt;/p&gt;
+&lt;p&gt;5.0 Security Fundamentals&lt;/p&gt;
+&lt;p&gt;5.9 Describe wireless security protocols (WPA, WPA2, and WPA3)&lt;/p&gt;
+&lt;p&gt;A comprehensive approach to wireless security focuses on the following areas:&lt;/p&gt;
+&lt;p&gt;Identifying the endpoints of a wireless connection&lt;/p&gt;
+&lt;p&gt;Identifying the end user (authentication)&lt;/p&gt;
+&lt;p&gt;Protecting the wireless data from eavesdroppers (encryption)&lt;/p&gt;
+&lt;p&gt;Protecting the wireless data from tampering (integrity)&lt;/p&gt;
+&lt;p&gt;Authentication&lt;/p&gt;
+&lt;p&gt;To use a wireless network, clients must first discover a basic service set (BSS) and then request permission to associate with it. Clients should be authenticated by some means before they can become functioning members of the wireless LAN.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/juniper/cisco_to_junos_cheat_sheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/juniper/cisco_to_junos_cheat_sheet/</guid>
+      
+      <description>&lt;h2 id=&#34;basic-cli-and-systems-management&#34;&gt;Basic CLI and Systems Management&lt;/h2&gt;
+&lt;p&gt;Commands&lt;/p&gt;
+&lt;p&gt;clock set  &amp;gt; set date&lt;br&gt;
+reload  &amp;gt; request system reboot&lt;br&gt;
+show history  &amp;gt; show cli history&lt;br&gt;
+show logging  &amp;gt;  show log messages | last
+show processes  &amp;gt; show system processes&lt;br&gt;
+show running config  &amp;gt; show configuration&lt;br&gt;
+show users  &amp;gt; show system users&lt;br&gt;
+show version  &amp;gt; show version | show chassis hardware &lt;br&gt;
+trace  &amp;gt; traceroute&lt;/p&gt;
+&lt;h2 id=&#34;switching-commands&#34;&gt;Switching Commands&lt;/h2&gt;
+&lt;p&gt;show ethernet-switching interfaces&lt;br&gt;
+show spanning-tree  &amp;gt; show spanning-tree bridge&lt;br&gt;
+show mac address-table  &amp;gt; show ethernet-switching table&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/juniper/consoling_in_to_mx80_from_linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/juniper/consoling_in_to_mx80_from_linux/</guid>
+      
+      <description>&lt;p&gt;Plug console cable in&lt;/p&gt;
+&lt;p&gt;find out what your serial line name is:&lt;/p&gt;
+&lt;p&gt;$ dmesg | grep -i FTDI&lt;/p&gt;
+&lt;p&gt;Open putty &amp;gt; change to serial &amp;gt; change the tty line name&lt;/p&gt;
+&lt;p&gt;Make sure your serial settings are correct&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.juniper.net/documentation/us/en/hardware/mx5-mx10-mx40-mx80/topics/task/management-devices-mx5-mx10-mx40-mx80-connecting.html&#34;&gt;https://www.juniper.net/documentation/us/en/hardware/mx5-mx10-mx40-mx80/topics/task/management-devices-mx5-mx10-mx40-mx80-connecting.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Press open &amp;gt; when terminal appears press enter&lt;/p&gt;
+&lt;p&gt;Juniper Password recovery&lt;/p&gt;
+&lt;p&gt;ttps://www.juniper.net/documentation/en_US/junos/topics/task/configuration/authentication-root-password-recovering-mx80.html&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.juniper.net/documentation/us/en/software/junos/junos-install-upgrade/topics/topic-map/rescue-and-recovery-config-file.html#load-commit-configuration&#34;&gt;https://www.juniper.net/documentation/us/en/software/junos/junos-install-upgrade/topics/topic-map/rescue-and-recovery-config-file.html#load-commit-configuration&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;accidentally deleted the wrong line in Juniper.conf file ? failing over to juniper.conf&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.juniper.net/documentation/en_US/junos/topics/concept/junos-configuration-files.html&#34;&gt;https://www.juniper.net/documentation/en_US/junos/topics/concept/junos-configuration-files.html&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/juniper/juniper_cli_basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/juniper/juniper_cli_basics/</guid>
+      
+      <description>&lt;p&gt;Connection Methods&lt;/p&gt;
+&lt;p&gt;Factory default:&lt;/p&gt;
+&lt;p&gt;User: root&lt;/p&gt;
+&lt;p&gt;No password&lt;/p&gt;
+&lt;p&gt;Fxpo = ethernet management interface&lt;/p&gt;
+&lt;p&gt;SSH, FTP. Telnet, http(s)&lt;/p&gt;
+&lt;p&gt;Cannot route traffic&lt;/p&gt;
+&lt;p&gt;Management purposes only&lt;/p&gt;
+&lt;p&gt;Initial Login&lt;/p&gt;
+&lt;p&gt;Logging for the First Time&lt;br&gt;
+• Nonroot users are placed into the CLI automatically&lt;br&gt;
+• Root user SSH login requires explicit config&lt;br&gt;
+router (ttyu0)&lt;br&gt;
+Serial console&lt;br&gt;
+login :&lt;br&gt;
+user&lt;br&gt;
+Password:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JUNOS 15.1X49-DIOO.6 built 2017-06-28 07:33:31 UTC&lt;br&gt;
+• The root user must start the CLI from the shell&lt;br&gt;
+• Remember to exit the root shell after logging out of the CLI!&lt;br&gt;
+router (ttyuO)&lt;/li&gt;
+&lt;li&gt;JUNOS 15.1X49-DIOO&lt;br&gt;
+2017-06-28&lt;br&gt;
+UTC&lt;br&gt;
+login:&lt;br&gt;
+Password:&lt;br&gt;
+root@router&amp;gt;&lt;br&gt;
+.6 built&lt;br&gt;
+cli&lt;br&gt;
+Shell Prompt&lt;br&gt;
+CLI Prompt &amp;ldquo;&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CLI Modes&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/juniper/junos_fundementals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/juniper/junos_fundementals/</guid>
+      
+      <description>&lt;p&gt;Routing engine = Control Plane&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OSPF&lt;/li&gt;
+&lt;li&gt;BGP&lt;/li&gt;
+&lt;li&gt;Telenet session&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Daemons&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;RPD&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Most important Protocol&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Routing Protocol Daemon&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Works with all routing protocols&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Inet.0&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Routing tables&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MG-D&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DCD&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ChassisD&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;VRRPD/ SNMPD&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Packet forwarding Engine = Forwarding Plane&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Traffic&lt;/li&gt;
+&lt;li&gt;Line cards (forwarding tables)&lt;/li&gt;
+&lt;li&gt;Switch fabric&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;junos-software-architecture&#34;&gt;Junos Software architecture&lt;/h1&gt;
+&lt;p&gt;One daemon crashing in the Routing Engine will not crash other Daemons&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/juniper/junos_paste_config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/juniper/junos_paste_config/</guid>
+      
+      <description>&lt;p&gt;cli
+top
+delete
+configure
+load set terminal
+ctrl+shift +D to exit
+commit check
+commit and-quit&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/juniper/toggle_poe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/juniper/toggle_poe/</guid>
+      
+      <description>&lt;p&gt;Configure&lt;/p&gt;
+&lt;p&gt;set poe interface ge-0/0/0 disable&lt;/p&gt;
+&lt;p&gt;commit&lt;/p&gt;
+&lt;p&gt;rollback 1&lt;/p&gt;
+&lt;p&gt;commit&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/10rstpandetherchannel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/10rstpandetherchannel/</guid>
+      
+      <description>&lt;h1 id=&#34;10-rstp-and-etherchannel&#34;&gt;10 RSTP and Etherchannel&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;2.0 Network Access2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)
+2.5 Describe the need for and basic operations of Rapid PVST+ Spanning Tree Protocol and identify basic operations2.5.a Root port, root bridge (primary/secondary), and other port names
+2.5.b Port states (forwarding/blocking)2.5.c PortFast benefits
+Most network engineers make the distribution layer switches be the root.
+STP Modes and Standards
+Three options to configure on the spanninguse -tree mode command, which tells the switch which type of STP to
+and STPtheswitches do not support STP or RSTP with the single tree (CST)-based PVST+, Cisco-proprietary and RSTP-based RPVST+, or the IEEE standard MSTP.. They can use either the Cisco-proprietary
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;MSTP allows the definition of as many instances (multiple spanning tree instances, or MSTIs) as chosen by the network designer but does not require one per VLAN.
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;STP and MSTP now exist as part of the 802.1Q standard, which defines VLANs and VLAN trunking.
+The revised rules divide the original priority field into two separate fields, as shown in Figure 10priority field and a 12-bit subfield called the system ID extension (which represents the VLAN ID-4: a 4-bit
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Cisco switches let you configure the BID, but only the priority part.
+The switch fills in its universal (burnedin the 12-bit system ID extension field; you cannot change that behavior either. -in) MAC address as the system ID. It also plugs in the VLAN ID of a VLAN The only part configurable by
+the network engineer is the 4-bit priority field.
+the configuration command (65,535. But not just any number in that range will suffice; it must be a multiple of 4096spanning-tree vlan vlan-id priority x) requires a decimal number between 0 and ,as emphasized in the
+help text shown in Example 10-2.
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command Guide
+RSTP
+#spanning#spanning--tree vlan vlantree vlan x root primary-id priority x
+#spanning#show spanning-tree vlan x root secondary-tree vlan 9
+EtherChannel
+(int)#channel#show etherchannel 1 summary-group 1 mode on
+#show etherchannel summary#show etherchannel 1 port-channel
+#show etherchannel load#channel-group 1 mode desirable/auto (PAgP)-balance
+#channel#port-channel load-group 1 mode active/passive (LACP)-balance src-dst-mac
+&lt;/code&gt;&lt;/pre&gt;&lt;h6 id=&#34;10-rstp-and-etherchanneltuesday-july-27-2021-1204-pm&#34;&gt;10. RSTP and EtherChannelTuesday, July 27, 2021 12:04 PM&lt;/h6&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;help text shown in Example 10-2.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;#spanning-tree vlan x root primary(on the switch that should be primary)&lt;br&gt;
+#spanning-tree vlan x root secondary(on the switch that should be secondary)&lt;br&gt;
+These two commands cause the switch to make a choice of priority value but then store the chosen priority value in thespanning-tree vlan x priority valuecommand.The command with root primary or root secondary&lt;br&gt;
+does not appear in the configurationcurrent root switch and chooses either (a) 24,576 or (b) 4096 less than the current root’s priority (if the current. When configuring root primary, the switch looks at the priority of the&lt;br&gt;
+root’s priority is 24,576 or less) to the configuration instead. When configuring, root secondary always results in that switch using a priority of 28,672, with the assumption that the value will be less than other switches that&lt;br&gt;
+use the default of 32,768, and higher than any switch configured as root primary.&lt;br&gt;
+How Switches Use the Priority and System ID Extension&lt;br&gt;
+Cisco Catalyst switches configure the priority value using a number that represents a 16system ID extension exists as the low-order 12 bits of that same number. -bit value; however, the&lt;br&gt;
+When the switch builds its BID to use for RSTP in a VLAN, it must combine the configured priority with the VLAN ID of that VLAN.&lt;br&gt;
+the configured priority results in a 16-bit priority that always ends with 12 binary 0s.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/12classfulipv4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/12classfulipv4/</guid>
+      
+      <description>&lt;p&gt;Table 12-2 IPv4 Address Classes Based on First Octet Values
+Class First Octet Values Purpose
+A 1 – 126 Unicast (large networks)
+B 128 – 191 Unicast (medium-sized networks)
+C 192 – 223 Unicast (small networks)
+D 224 – 239 Multicast
+E 240 – 255 Reserved(formerly experimental)
+address ranges of all addresses that begin with 0 and all addresses that begin with 127 are reserved&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+# 12. Classful IPv4
+
+Friday, July 30, 2021 1:58 PM
+&lt;/code&gt;&lt;/pre&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/14wanarchitecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/14wanarchitecture/</guid>
+      
+      <description>&lt;h1 id=&#34;14-wan-architecture&#34;&gt;14 WAN Architecture&lt;/h1&gt;
+&lt;p&gt;1.0 Network Fundamentals&lt;br&gt;
+1.2 Describe the characteristics of network topology architecture&lt;br&gt;
+1.2.d WAN&lt;br&gt;
+5.0 Security Fundamentals&lt;br&gt;
+5.5 Describe remote access and site-to-site VPNs&lt;/p&gt;
+&lt;p&gt;Metro Ethernet&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;davidvargasxyz.github.io/docs/Pasted%20image%2020231205144234.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Customers connect to a Metro Ethernet service with either routers or Layer 3 switches.&lt;/p&gt;
+&lt;h5 id=&#34;metro-ethernet-physical-design-and-topology&#34;&gt;Metro Ethernet Physical Design and Topology&lt;/h5&gt;
+&lt;p&gt;A device physically near to customer sites is called a point of presence (PoP).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;davidvargasxyz.github.io/docs/Pasted%20image%2020231205144543.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The physical link between the customer and the SP is called an access link.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/15cloudarchitecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/15cloudarchitecture/</guid>
+      
+      <description>&lt;h1 id=&#34;15-cloud-architecture&#34;&gt;15 Cloud Architecture&lt;/h1&gt;
+&lt;p&gt;1.0 Network Fundamentals
+1.1 Explain the role and function of network components
+1.1.g Servers
+1.2 Describe the characteristics of network topology architectures
+1.2.f On-premises and cloud
+1.12 Explain virtualization fundamentals (virtual machines)&lt;/p&gt;
+&lt;p&gt;It it has a variety of network access options; and it can be measured and billed back to the user based on can be requested on-demand; it can dynamically scale (that is, it is elastic); it uses a pool of resources;
+the amount used.
+Cisco Server Hardware
+Cisco expanded its product line into the server market, with the Cisco Unified Computing System (UCS) product line
+Server Virtualization Basics&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/15routeroperation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/15routeroperation/</guid>
+      
+      <description>&lt;p&gt;The configuration of IP addresses differs in some ways, with switches using a VLAN interface and routers using an IP address configured on each working interface.&lt;/p&gt;
+&lt;p&gt;switches do not have auxiliary ports.&lt;br&gt;
+Layer 2 switches support the &lt;strong&gt;show mac address-table&lt;/strong&gt; command, while Cisco routers do not.&lt;br&gt;
+routers support the &lt;strong&gt;show ip route&lt;/strong&gt; command, while Cisco Layer 2 switches do not.&lt;br&gt;
+Layer 2 switches use the &lt;strong&gt;show interfaces status&lt;/strong&gt; command to list one line of output per interface (and&lt;br&gt;
+routers do not)&lt;br&gt;
+&lt;strong&gt;show protocols&lt;/strong&gt; 15 - 6 and the IP address and mask configured on those same interfaces.command. This command confirms the state of each of the three R1 interfaces in Figure&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/16controllerbasednetworking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/16controllerbasednetworking/</guid>
+      
+      <description>&lt;h1 id=&#34;16-controller-based-networking&#34;&gt;16 Controller-Based Networking&lt;/h1&gt;
+&lt;p&gt;Friday, October 29, 2021 2:40 PM&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;○ Matching an Ethernet frame’s destination Media Access Control (MAC) address to the MAC address table (Layer 2 switches)
+Matching an IP packet’s destination IP address to the IP routing table (routers, Layer 3
+switches)
+&lt;/code&gt;&lt;/pre&gt;&lt;h6 id=&#34;heading&#34;&gt;○&lt;/h6&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Encrypting the data and adding a new IP header (for virtual private network [VPN]
+processing)
+&lt;/code&gt;&lt;/pre&gt;&lt;h6 id=&#34;heading-1&#34;&gt;○&lt;/h6&gt;
+&lt;p&gt;○ Changing the source or destination IP address (for Network Address Translation [NAT] processing)&lt;br&gt;
+○ Discarding a message due to a filter (access control lists [ACLs], port security)&lt;br&gt;
+The Control Plane&lt;br&gt;
+any action that controls the data plane.&lt;br&gt;
+creating the tables used by the data plane, tables like the IP routing table, an IP Address Resolution Protocol (ARP) table, a switch MAC address table, and so on.&lt;br&gt;
+adding to, removing, and changing entries to the tables used by the data plane&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/17softwaredefinedaccess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/17softwaredefinedaccess/</guid>
+      
+      <description>&lt;h1 id=&#34;17-software-defined-access-sda&#34;&gt;17 Software-Defined Access (SDA)&lt;/h1&gt;
+&lt;p&gt;1.0 Network Fundamentals&lt;br&gt;
+1.1 Explain the role and function of network components&lt;br&gt;
+1.1.e Controllers (Cisco DNA Center and WLC)&lt;br&gt;
+6.0 Automation and Programmability&lt;br&gt;
+6.1 Explain how automation impacts network management&lt;br&gt;
+6.2 Compare traditional networks with controller-based networking&lt;br&gt;
+6.3 Describe controller-based and software defined architectures (overlay, underlay, and fabric)&lt;br&gt;
+6.3.a Separation of control plane and data plane&lt;br&gt;
+6.3.b Northbound and southbound APIs&lt;br&gt;
+6.4 Compare traditional campus device management with Cisco DNA Center enabled device&lt;br&gt;
+management&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/18restandjson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/18restandjson/</guid>
+      
+      <description>&lt;h1 id=&#34;18-rest-and-json&#34;&gt;18 REST and JSON&lt;/h1&gt;
+&lt;p&gt;6.0 Automation and Programmability&lt;br&gt;
+6.5 Describe characteristics of REST-based APIs (CRUD, HTTP verbs, and data encoding)&lt;br&gt;
+6.7 Interpret JSON encoded data&lt;/p&gt;
+&lt;p&gt;The configuration of network devices or report facts about the state of the network.software analyzes data in the form of variables,makes decisions based on that analysis, and then may take action to change the&lt;/p&gt;
+&lt;p&gt;If communicate the variables used by a program:
+the variable names, their values, and the data structures of those variables.REST provides one standard method of how two automation programs should communicate over a network, JSON then defines how to&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/19ansiblepuppetchef/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/19ansiblepuppetchef/</guid>
+      
+      <description>&lt;h1 id=&#34;19-ansible-puppet-and-chef&#34;&gt;19 Ansible, Puppet, and Chef&lt;/h1&gt;
+&lt;p&gt;6.0 Automation and Programmability
+6.6 Recognize the capabilities of configuration mechanisms Puppet, Chef, and Ansible&lt;/p&gt;
+&lt;p&gt;Configuration Drift&lt;/p&gt;
+&lt;p&gt;The on-device manual configuration process does not track change history: which lines changed, what changed on each line, what old configuration was removed, who changed the configuration, when each change was made.
+External systems used by good systems management processes, like trouble ticketing and change management software, may record details. However, those sit outside the configuration and
+require analysis to figure out what changed. They also rely on humans to follow the operational processes consistently and correctly; otherwise, an engineer cannot find the entire history of
+changes to a configuration.
+Referring to historical data in change management systems works poorly if a device has gone through multiple configuration changes over a period of time.
+Centralized Configuration Files and Version Control&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/1tcpipbasic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/1tcpipbasic/</guid>
+      
+      <description>&lt;h1 id=&#34;1-tcpip-basic&#34;&gt;1 TCP/IP basic&lt;/h1&gt;
+&lt;p&gt;Exam Topics:&lt;br&gt;
+1.0 Network Fundamentals&lt;br&gt;
+1.3 Compare physical interface and cabling types&lt;br&gt;
+1.3a Single-mode fiber, multimode fiber, copper&lt;br&gt;
+1.3b Connections (Ethernet shared media and point-to-point)&lt;br&gt;
+TCP/IP Model&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-ApplicationTransport&lt;/li&gt;
+&lt;li&gt;-NetworkData Link&lt;/li&gt;
+&lt;li&gt;Physical&lt;br&gt;
+Application Layer&lt;/li&gt;
+&lt;li&gt;services for applications&lt;/li&gt;
+&lt;li&gt;http provides interface between software and the network&lt;br&gt;
+○ HTTP Header GET home.html&lt;br&gt;
+○ HTTP Header OK/ Data&lt;/li&gt;
+&lt;li&gt;HTTP overview&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Same layer interaction on different computers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Communicate with the same layer on another computer.&lt;br&gt;
+Adjacent layer interaction on the same computer&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;One lower layer provides a service to the layer just above. The higher layer makes the next lower layer perform a function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;*Wireless protocols are Layer 2&lt;br&gt;
+Encapsulation&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/2ethernetlans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/2ethernetlans/</guid>
+      
+      <description>&lt;h1 id=&#34;2-ethernet-lans&#34;&gt;2 Ethernet LANs&lt;/h1&gt;
+&lt;p&gt;1.0 Network Fundamentals&lt;/p&gt;
+&lt;h2 id=&#34;11-explain-the-role-and-function-of-network-components&#34;&gt;1.1 Explain the role and function of network components&lt;/h2&gt;
+&lt;h2 id=&#34;11b-l2-and-l3-switches&#34;&gt;1.1.b L2 and L3 Switches&lt;/h2&gt;
+&lt;h2 id=&#34;12-describe-characteristics-of-network-topology-architectures&#34;&gt;1.2 Describe characteristics of network topology architectures&lt;/h2&gt;
+&lt;h2 id=&#34;12e-small-officehome-office-soho&#34;&gt;1.2.e Small office/home office (SOHO)&lt;/h2&gt;
+&lt;h2 id=&#34;13-compare-physical-interface-and-cabling-types&#34;&gt;1.3 Compare physical interface and cabling types&lt;/h2&gt;
+&lt;h2 id=&#34;13a-single-mode-fiber-multimode-fiber-copper&#34;&gt;1.3.a Single-mode fiber, multimode fiber, copper&lt;/h2&gt;
+&lt;h2 id=&#34;13b-connections-ethernet-shared-media-and-point-to-point&#34;&gt;1.3.b Connections (Ethernet shared media and point-to-point)&lt;/h2&gt;
+&lt;p&gt;802.3 (Ethernet Standards&lt;br&gt;
+10BASE-T&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;10 MbpsEthernet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;802.3Copper/ 100 m&lt;br&gt;
+100BASE-T&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;100 MbpsFast Ethernet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;802.3uCopper/ 100m&lt;br&gt;
+1000BASE-LX&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;1000 MbpsGigabit Ethernet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;Gigabit Ethernet802.3z&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fiber, 5000 m&lt;br&gt;
+1000BASE-T&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/3wansandiprouting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/3wansandiprouting/</guid>
+      
+      <description>&lt;h1 id=&#34;3-wans-and-ip-routing&#34;&gt;3 WANs and IP Routing&lt;/h1&gt;
+&lt;p&gt;1.0 Network Fundamentals1.1 Explain the role and function of network components&lt;br&gt;
+1.1.a Routers&lt;br&gt;
+1.2 Describe characteristics of network topology architectures1.2.d WAN&lt;/p&gt;
+&lt;p&gt;Leased-Line WANs&lt;br&gt;
+Physical Details of Leased Lines&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;predetermined speed&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;Full DuplexUses two pairs of wires one for each direction&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Conceptually crossover&lt;br&gt;
+Leased Circuit&lt;/li&gt;
+&lt;li&gt;Electrical circuit (line) between 2 endpoints&lt;br&gt;
+Serial Link (line)&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;Bits flow seriallyRouters use serial interfaces&lt;br&gt;
+Point to point link (line)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;two points only&lt;br&gt;
+T&lt;/li&gt;
+&lt;li&gt;1.544 Mbps&lt;br&gt;
+WAN link&lt;/li&gt;
+&lt;li&gt;General term&lt;br&gt;
+Private Line&lt;/li&gt;
+&lt;li&gt;Data is private&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;Leased line specifies layer 1HDLC and PPP are the most popular Layer 2 protocols used on leased lines&lt;br&gt;
+HDLC&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;HDLC Data-Link Details of Leased Lines&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/4cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/4cli/</guid>
+      
+      <description>&lt;h1 id=&#34;4-cli&#34;&gt;4 CLI&lt;/h1&gt;
+&lt;p&gt;Reload&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tells the system to reboot IOS&lt;br&gt;
+Keyboard Shortcuts&lt;/li&gt;
+&lt;li&gt;Recently used (Previous)&lt;br&gt;
+up arrow or &lt;strong&gt;Ctrl+P&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Go back up from the above command (next)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Down arrow or Ctrl+N
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Left arrow or - Move cursor (back) Ctrl+B
+Right Arrow or Ctrl+F- Move cursor (forward)
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Delete&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Back Space
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Debug&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tells user details about the operation of the switch&lt;br&gt;
+Navigation&lt;/li&gt;
+&lt;li&gt;Global Config &amp;gt; Enable Mode&lt;br&gt;
+End or Ctrl+Z&lt;/li&gt;
+&lt;li&gt;Line or VLAN modes &amp;gt; Global config&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Exit
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Memory&lt;br&gt;
+RAM- Stores Running config&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/5switching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/5switching/</guid>
+      
+      <description>&lt;h1 id=&#34;5-switching&#34;&gt;5 Switching&lt;/h1&gt;
+&lt;p&gt;Thursday, June 17, 2021 12:53 PM&lt;/p&gt;
+&lt;p&gt;1.0 Network Fundamentals1.1 Explain the role and function of network components&lt;br&gt;
+1.1.b L2 and L3 Switches1.13 Describe switching concepts&lt;br&gt;
+1.13.a MAC learning and aging1.13.b Frame switching&lt;br&gt;
+1.13.c Frame flooding1.13.d MAC address table&lt;br&gt;
+2.0 Network Access2.5 Describe the need for and basic operations of Rapid PVST+ Spanning Tree Protocol and identify basic operations&lt;br&gt;
+Overview of Switching Logic&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-Forward or filter frame based on destination MAC AddressExamine source MAC address of each frame received&lt;br&gt;
+Learning MAC Addresses&lt;/li&gt;
+&lt;li&gt;If a frame enters the switch and the source MAC address is not in the MAC address table, the switch creates an entry in the table&lt;/li&gt;
+&lt;li&gt;when there is no matching entry in the table, switches forward the frame out all interfaces (except the incoming interface) (Flooding)&lt;br&gt;
+STP&lt;/li&gt;
+&lt;li&gt;either a blocking state or a forwarding state.&lt;/li&gt;
+&lt;li&gt;Blocking ○interface cannot forward or receive data frames&lt;/li&gt;
+&lt;li&gt;forwarding○interface can send and receive data frames.&lt;br&gt;
+LAN Switching Summary&lt;br&gt;
+Forward Frames based on destination MAC address&lt;/li&gt;
+&lt;li&gt;If the destination MAC address is a broadcast, multicast, or unknown destination unicast (a unicast not listed in the MAC table), the switch floods the frame.&lt;/li&gt;
+&lt;li&gt;If the destination MAC address is a known unicast address (a unicast address found in the MAC table):&lt;/li&gt;
+&lt;li&gt;the switch forwards the frame out the outgoing interface.If the outgoing interface is the same as the interface in which the frame was received, the switch&lt;/li&gt;
+&lt;li&gt;filters the frame&lt;br&gt;
+learning MAC address table entries:&lt;/li&gt;
+&lt;li&gt;examine the source MAC address on each frame received and note the interface from which the frame was received.&lt;/li&gt;
+&lt;li&gt;If it is not already in the table, add the MAC address and interface it was learned on.&lt;br&gt;
+Verifying and Analyzing Ethernet Switching&lt;/li&gt;
+&lt;li&gt;-interfaces are enabled by default10/100 and 10/100/1000 interfaces use autonegotiation by default.&lt;br&gt;
+Demonstrating MAC Learning&lt;br&gt;
+&lt;strong&gt;#show mac address&lt;/strong&gt; - View mac address table &lt;strong&gt;- table&lt;br&gt;
+#show mac address&lt;/strong&gt; - Show only dynamically learned MAC addresses &lt;strong&gt;- table dynamic&lt;br&gt;
+#show interfaces status&lt;/strong&gt; - status of all interfaces (connected or disconnected)&lt;br&gt;
+&lt;strong&gt;#show interfaces f0/1 status&lt;/strong&gt; - interface status of f0/&lt;br&gt;
+&lt;strong&gt;#show interfaces f0/1&lt;/strong&gt; - Displays detailed set of messages about the interface&lt;br&gt;
+&lt;strong&gt;#show interfaces f0/1 counters&lt;/strong&gt; - Lists the number of unicast, multicast, and broadcast frames (inbound and outbound), and total byte count for those frames&lt;br&gt;
+&lt;strong&gt;#show mac address&lt;/strong&gt; - Shows MAC entry for a single MAC address &lt;strong&gt;- table dynamic address 0200.1111.&lt;br&gt;
+#show mac address&lt;/strong&gt; - Shows MAC entries for a single interface &lt;strong&gt;- table dynamic interface fastEthernet 0/&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Quick Commands
+MAC Addresses
+#show mac address#show mac address--tabletable dynamic
+#show interfaces status#show interfaces f0/1 status
+#show interfaces f0/1show interfaces f0/1 counters
+#show mac address#show mac address--table dynamic address 0200.1111.1111table dynamic interface fastEthernet 0/
+#show mac address-table dynamic vlan 1
+Managing MAC tables
+#show mac address#show mac address--table agingtable count-time
+#(en)clear mac address#(en)clear mac address--table dynamictable dynamic vlan 1
+#(en)clear mac address#(en)clear mac address--table dynamic interface fa0/1table dynamic address 3d44.2aab.12c
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;5-switchingfriday-june-18-2021-707-am&#34;&gt;5. SwitchingFriday, June 18, 2021 7:07 AM&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;#show mac address&lt;/strong&gt; - Shows mac entries for vlan 1 &lt;strong&gt;- table dynamic vlan 1&lt;/strong&gt;&lt;br&gt;
+Managing theMAC Address Table (Aging, Clearing)&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/6management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/6management/</guid>
+      
+      <description>&lt;h1 id=&#34;6-management&#34;&gt;6 Management&lt;/h1&gt;
+&lt;p&gt;1.0 Network Fundamentals1.6 Configure and verify IPv4 addressing and subnetting&lt;br&gt;
+4.0 IP Services4.6 Configure and verify DHCP client and relay&lt;br&gt;
+4.8 Configure network devices for remote access using SSH5.0 Security Fundamentals&lt;br&gt;
+5.3 Configure device access control using local passwords&lt;br&gt;
+data plane- work a switch does to forward frames generated by the devices connected to the switch&lt;br&gt;
+control plane - configuration and processes that control and change the choices made by the switch’s data plane&lt;br&gt;
+management plane- deals with managing the device itself, rather than controlling what the device is doing&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/7switchinterfaces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/7switchinterfaces/</guid>
+      
+      <description>&lt;h1 id=&#34;7switchinterfaces&#34;&gt;7switchinterfaces&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1.0 Network Fundamentals1.1 Explain the role and function of network components
+1.1.b L2 and L3 switches1.4 Describe switching concepts
+Configuring Speed, Duplex, and Description
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;autonegotiate○○What speed to useenabled by default&lt;br&gt;
+&lt;strong&gt;duplex {auto | full | half} and speed {auto | 10 | 100 | 1000}&lt;/strong&gt; ○configure the speed and duplex settings&lt;br&gt;
+&lt;strong&gt;(config&lt;/strong&gt; - add a text description to the interface &lt;strong&gt;- int) # description&lt;/strong&gt; &lt;em&gt;text&lt;/em&gt;&lt;br&gt;
+&lt;strong&gt;show interfaces status&lt;/strong&gt; - lists port #, Name, status, vlan, duplex, speed, and type&lt;br&gt;
+a-full and aa-means that the listed speed and duplex values were autonegotiated.- 100&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;IEEE autonegotiation (IEEE standard 802.3u)
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;each node states what it can do, and&lt;/li&gt;
+&lt;li&gt;then each node picks the best options that both nodes support: -the fastest speed and the best duplex setting, with full duplex being better than half duplex.&lt;/li&gt;
+&lt;li&gt;disable autonegotiation-Configure both the speed and duplex on a switch interface&lt;/li&gt;
+&lt;li&gt;when a node tries to use autonegotiation but hears nothing from the device.&lt;br&gt;
+Speed: Use your slowest supported speed (often 10 Mbps).Duplex: If your speed = 10 or 100, use half duplex; otherwise, use full duplex.&lt;br&gt;
+Cisco switches can actually sense the speed used by other nodes, even without IEEE autonegotiation. -Cisco switches use this slightly different logic to choose the speed when autonegotiation fails:&lt;/li&gt;
+&lt;li&gt;Speed: Sense the speed (without using autonegotiation), but if that fails, use the IEEE default (slowest supported speed, often 10 Mbps).&lt;/li&gt;
+&lt;li&gt;Duplex: Use the IEEE defaults: If speed = 10 or 100, use half duplex; otherwise, use full duplex.&lt;/li&gt;
+&lt;li&gt;-Ethernet interfaces using speeds faster than 1 Gbps always use full duplex.hubs do not react to autonegotiation messages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Autonegotiation
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;show interfaces and show interfaces description
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;-Line status = administratively downProtocol status = down&lt;/li&gt;
+&lt;li&gt;Interface status = disabled&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Shutdown command is configured
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;-Line status = downProtocol status = down&lt;/li&gt;
+&lt;li&gt;Interface status = notconnect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Cable, speed mismatch, neighbor device is off , shutdown, or err-disabled
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;-Line status = upProtocol status = down&lt;/li&gt;
+&lt;li&gt;Interface status = notconnect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Not expected on LAN switch physical interfaces
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;-Line status = downProtocol status = down (err-disabled)&lt;/li&gt;
+&lt;li&gt;Interface status = err-disabled&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Port security has disabled the interface
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;-Line status = upProtocol status = up&lt;/li&gt;
+&lt;li&gt;Interface status = connected&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;the interface is working
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;show interfaces fa0/13 - -lists the speed and duplex for interface Fast Ethernet 0/13with nothing implying that the values were learned through autonegotiation.(without the status option)
+speed manually set 10 Mbps on one switch and 100 Mbps on the other
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Quick Commands
+Speed/ duplex
+#duplex auto/full/half#speed auto/10/100/1000
+Description
+#description (text)
+Interface
+#show interfaces status#show interfaces fa0/3
+&lt;/code&gt;&lt;/pre&gt;&lt;h6 id=&#34;7-switch-interfaceswednesday-june-30-2021-801-am&#34;&gt;7. Switch InterfacesWednesday, June 30, 2021 8:01 AM&lt;/h6&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;speed manually set 10 Mbps on one switch and 100 Mbps on the other-both switches would list the port in a down/down or notconnect state
+if the duplex settings do not match-the switch interface will still be in a connected (up/up) or connected state.
+How to identify duplex mismatch problems, --check the duplex setting on each end of the link to see if the values mismatch.watch for incrementing collision and late collision counters
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Common Layer 1 problems&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/8vlans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/8vlans/</guid>
+      
+      <description>&lt;p&gt;1.0 Network Fundamentals1.13 Describe switching concepts&lt;br&gt;
+1.13.a MAC learning and aging1.13.b Frame switching&lt;br&gt;
+1.13.c Frame flooding1.13.d MAC address table&lt;br&gt;
+2.0 Network Access2.1 Configure and verify VLANs (normal range) spanning multiple switches&lt;br&gt;
+2.1.a Access ports (data and voice)2.1.b Default VLAN2.1.c Connectivity&lt;br&gt;
+2.2 Configure and verify interswitch connectivity2.2.a Trunk ports&lt;br&gt;
+2.2.b 802.1Q2.2.c Native VLAN&lt;br&gt;
+Virtual LAN Concepts&lt;br&gt;
+reasons for choosing to create smaller broadcast domains (VLANs):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-reduce CPU overhead on each devicereduce security risks&lt;/li&gt;
+&lt;li&gt;different security policies per VLAN&lt;/li&gt;
+&lt;li&gt;more flexible designs that -group users by department, or by groups that work together, instead of by physical location&lt;/li&gt;
+&lt;li&gt;solve problems more quickly-failure domain for many problems is the same set of devices as those in the same broadcast domain&lt;/li&gt;
+&lt;li&gt;reduce the workload for the Spanning Tree Protocol (STP) -by limiting a VLAN to a single access switch&lt;br&gt;
+802.1q and ISL&lt;br&gt;
+802.1Q -inserts a 4-byte 802.1Q VLAN header into the Ethernet header&lt;br&gt;
+12 - bit VLAN ID field inside the 802.1Q header &amp;ndash;supports a theoretical maximum of 212 (4096) VLANs, but in practice it supports a maximum of 4094. Both 802.1Q and ISL use 12 bits to tag the VLAN ID, withtwo reserved values [0 and 4095].&lt;/li&gt;
+&lt;li&gt;802.1q header includes Type, priority, Flag, Vlan ID&lt;br&gt;
+normal&amp;ndash;1 to 1005. all switches can use-range&lt;br&gt;
+Only some switches can use 1006 to 4094&lt;br&gt;
+depends on the configuration of the VLAN Trunking Protocol (VTP)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Extended range
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Cisco switches break the range of VLAN IDs (1–4094) into the normal range and the extended range.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;231852+
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;802.1Q simply does not add an 802.1Q header to frames in the native VLAN&lt;br&gt;
+&lt;strong&gt;#show vlan brief&lt;/strong&gt;&lt;br&gt;
+VLAN Trunking Protocol (VTP)&lt;br&gt;
+&lt;strong&gt;vtp mode transparent vtp mode off&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;-The server switches can configure VLANs in the standard range only (1The client switches cannot configure VLANs. –1005).&lt;/li&gt;
+&lt;li&gt;Both servers and clients may be learning new VLANs from other switches and seeing their VLANs deleted by other switches because of VTP.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;If your switch usesVTP server or client mode
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;show running - does not list any vlan commands - confi g
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;show vtp status
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;If possible to learn more about VTP for other purposes.in the lab, switch to disable VTP and ignore VTP for your switch configuration practice until you decide
+&lt;ul&gt;
+&lt;li&gt;negotiate ISL or 802.1q&lt;/li&gt;
+&lt;li&gt;If both switches support both protocols, they use ISL; -otherwise, they use the protocol that both support.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Dynamic Trunking Protocol (DTP).
+switchport trunk encapsulation {dot1q | isl | negotiate} - configure the type or allow DTP to negotiate the type.
+Access-always access
+trunk-always trunk
+dynamic desirable--initiates negotiation messages and responds to negotiation messagesAccess if other side is access, otherwise trunk
+dynamic auto-passively waits to receive trunk negotiation messages
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;VLAN Trunking Configuration&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/9spanningtreeprotocolconcepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/9spanningtreeprotocolconcepts/</guid>
+      
+      <description>&lt;h1 id=&#34;9-spanning-tree-protocol-concepts&#34;&gt;9 Spanning Tree Protocol Concepts&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;2.0 Network Access
+2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)2.5 Describe the need for and basic operations of Rapid PVST+ Spanning Tree Protocol and identify
+basic operations
+2.5.a Root port, root bridge (primary/secondary), and other port names2.5.b Port states (forwarding/blocking)
+2.5.c PortFast benefits
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;RSTP is most common nowCisco defaults to RSTP&lt;br&gt;
+MAC table instability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The switches arrive on different ports.MAC address tables keep changing because frames with the same source MAC&lt;br&gt;
+Broadcast storms&lt;/li&gt;
+&lt;li&gt;forwarding of a frame repeatedly on the same links&lt;br&gt;
+Multiple frame transmission&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;side effect of looping framesMultiple copies are delivered to a host, confusing the host.&lt;br&gt;
+What Spanning Tree Does&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;interfaces does not process any frames&lt;/li&gt;
+&lt;li&gt;except STP/RSTP messages and some other overhead messages&lt;/li&gt;
+&lt;li&gt;blocking state&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;STP Convergence
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;switches collectively realize that something has changed in the LAN topology&lt;/li&gt;
+&lt;li&gt;determine whether they need to change which ports block and which port forward&lt;br&gt;
+How Spanning Tree works&lt;br&gt;
+three criteria to choose whether to put and interface in forwarding state:&lt;/li&gt;
+&lt;li&gt;STP puts all working interfaces on the root switch in forwarding state&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;elect a root switch.
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;select the port with the least administrative cost (root port)&amp;ndash; cost between itself and the root switch (root cost) (root cost path)root port (RP) gets put in a forwarding state
+&lt;ul&gt;
+&lt;li&gt;That switch is the designated switch, and that switch&amp;rsquo;s interface, attached to that&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The switch with the lowest root cost, as compared with the other switches attached to the same link, is placed in forwarding state.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nonroot switches
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;9-spanning-tree-protocol-concepts-1&#34;&gt;9. Spanning Tree Protocol Concepts&lt;/h1&gt;
+&lt;p&gt;Monday, July 26, 2021 11:27 AM&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/part1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/part1/</guid>
+      
+      <description>&lt;p&gt;1.0 Network Fundamentals
+1.6 Configure and verify IPv4 addressing and subnetting
+3.0 IP Connectivity
+3.1 Interpret the components of routing table
+3.1.a Routing protocol code
+3.1.b Prefix
+3.1.c Network mask
+3.1.d Next hop
+3.1.e Administrative distance
+3.1.f Metric
+3.1.g Gateway of last resort
+3.2 Determine how a router makes a forwarding decision by default
+3.2.a Longest match
+3.2.b Administrative distance
+3.3 Configure and verify IPv4 and IPv6 static routing
+3.3.a Default route
+3.3.b Network route
+3.3.c Host route
+3.3.d Floating static&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/part2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/part2/</guid>
+      
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;This chapter covers the following exam topics:
+3.0 IP Connectivity
+3.2 Determine how a router makes a forwarding decision by default
+3.2.b Administrative distance
+3.2.c Routing protocol metric
+3.4 Configure and verify single area OSPFv
+3.4.a Neighbor adjacencies
+3.4.b Point-to-point
+3.4.c Broadcast (DR/BR selection)
+3.4.d Router ID
+Comparing Dynamic Routing Protocol Features
+Routers add IP routes to their routing tables using routes, and routes learned by using dynamic routing protocols.three methods: connected routes, static
+Routing protocol:overall purpose of learning routes. This process includesA set of messages, rules, and algorithms used by routers for the the exchange and analysis of
+routing information. Each router chooses the best route to each subnet (path selection) and finally places those best routes in its IP routing table. Examples include RIP, EIGRP,
+OSPF, and BGP.
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;heading&#34;&gt;•&lt;/h5&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Routed protocol and routable protocolpacket structure and logical addressing, allowing routers to forward or route the packets. :Both terms refer to a protocol that defines a
+Routers forward packets defined by routed and routable protocols. Examples includeVersion 4 (IPv4) and IP Version 6 (IPv6). IP
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;heading-1&#34;&gt;•&lt;/h5&gt;
+&lt;h4 id=&#34;path-selectionthe-routing-protocol-chooses-the-best-routesometimes-refers-to-part-of-the-job-of-a-routing-protocol-in-which&#34;&gt;path selectionthe routing protocol chooses the best route.sometimes refers to part of the job of a routing protocol, in which&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Routing Protocol Functions
+Learn routing information about IP subnets from neighboring routers.
+Advertise routing information about IP subnets to neighboring routers.
+If more than one possible route exists to reach one subnet, pick the best route based on a
+metric.
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;19-ospf-concepts&#34;&gt;19 OSPF Concepts&lt;/h1&gt;
+&lt;p&gt;Thursday, August 26, 2021 1:37 PM&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/networking/newccnanotes/part3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/networking/newccnanotes/part3/</guid>
+      
+      <description>&lt;p&gt;1.0 Network Fundamentals&lt;br&gt;
+1.10 Identify IP parameters for Client OS (Windows, Mac OS, Linux)&lt;br&gt;
+4.0 IP Services&lt;br&gt;
+4.3 Explain the role of DHCP and DNS within the network&lt;br&gt;
+4.6 Configure and verify DHCP client and relay&lt;br&gt;
+DHCP Concepts&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Four messages between the client and server (DORA):
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Discover: - Sent by the DHCP client to find a willing DHCP server&lt;/li&gt;
+&lt;li&gt;Offer: - Sent by a DHCP server to offer to lease&lt;br&gt;
+Request: - Sent by the DHCP client to ask the server to lease the IPv4 address listed in the Offer message&lt;br&gt;
+Acknowledgment: - Sent by the DHCP server to assign the address and to list the mask, default router, and DNS server IP addresses&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;IPv4 addresses that allow a host that has no IP address to still be able to send and receive messages on the local subnet:
+0.0.0.0: - An address reserved for use as a source IPv4 address for hosts that do not yet have an IP address.
+255.255.255.255: - The local broadcast IP address. Packets sent to this destination address are broadcast on the local data link, but routers do not forward them.
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;a client, sends a Discover message, with source IP address of 0.0.0.0Host A sends the packet to destination 255.255.255.255 router R1 will not forward this packet.
+- - assuming the DHCP client chooses to use a DHCP option called the broadcast flag; all examples in this book assume the broadcast flag is used.
+- all hosts in the subnet receive the Offer message
+- the original Discover message lists a number called the client ID□□ includes the host’s MAC address, that identifies the original host (host A in this case).As a result, host A knows that the Offer message is meant for host A, which.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Supporting DHCP for Remote Subnets with DHCP Relay&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

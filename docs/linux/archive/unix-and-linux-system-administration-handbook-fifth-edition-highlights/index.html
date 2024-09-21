@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | David Vargas</title>
+<meta property="og:title" content=" | David Vargas" />
+<meta name="twitter:title" content=" | David Vargas" />
+<meta itemprop="name" content=" | David Vargas" />
+<meta name="application-name" content=" | David Vargas" />
+<meta property="og:site_name" content="davidvargas.xyz" />
+
+<meta name="description" content="David Vargas&#39;s blog">
+<meta itemprop="description" content="David Vargas&#39;s blog" />
+<meta property="og:description" content="David Vargas&#39;s blog" />
+<meta name="twitter:description" content="David Vargas&#39;s blog" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en-gb" href="https://davidvargas.xyz/linux/archive/unix-and-linux-system-administration-handbook-fifth-edition-highlights/" title="" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.134.3">
+
+    
+    <meta property="og:url" content="https://davidvargas.xyz/linux/archive/unix-and-linux-system-administration-handbook-fifth-edition-highlights/">
+  <meta property="og:site_name" content="David Vargas">
+  <meta property="og:title" content="David Vargas">
+  <meta property="og:description" content="Controlling access creates accounts for new users, removes the accounts of inactive users, and handles all the account-related issues that come up in between
+process of actually adding and removing accounts is typically automated by a configuration management system or centralized directory service
+Adding hardware Automating tasks increases your efficiency, reduces the likelihood of errors caused by humans, and improves your ability to respond rapidly to changing equirements
+Overseeing backups Backups must be executed on a regular schedule and restores must be tested periodically to ensure that they are functioning correctly.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="linux">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="David Vargas">
+  <meta name="twitter:description" content="Controlling access creates accounts for new users, removes the accounts of inactive users, and handles all the account-related issues that come up in between
+process of actually adding and removing accounts is typically automated by a configuration management system or centralized directory service
+Adding hardware Automating tasks increases your efficiency, reduces the likelihood of errors caused by humans, and improves your ability to respond rapidly to changing equirements
+Overseeing backups Backups must be executed on a regular schedule and restores must be tested periodically to ensure that they are functioning correctly.">
+
+
+    
+
+    <link rel="canonical" href="https://davidvargas.xyz/linux/archive/unix-and-linux-system-administration-handbook-fifth-edition-highlights/">
+    <link href="/style.min.1915b95fdbf4046da0032dde0fb966271ed904fa9c019f9a326d7ce001902895.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://davidvargas.xyz/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://davidvargas.xyz/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/notes/">
+                        notes
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/readings/">
+                        readings
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about">
+                        about
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            
+            <div class="page-content">
+                <h3 id="controlling-access">Controlling access</h3>
+<p>creates accounts for new users, removes the accounts of inactive users, and handles all the account-related issues that come up in between</p>
+<p>process of actually adding and removing accounts is typically automated by a configuration management system or centralized directory service</p>
+<h3 id="adding-hardware">Adding hardware</h3>
+<h3 id="automating-tasks">Automating tasks</h3>
+<p>increases your efficiency, reduces the likelihood of errors caused by humans, and improves your ability to respond rapidly to changing equirements</p>
+<h3 id="overseeing-backups">Overseeing backups</h3>
+<p>Backups must be executed on a regular schedule and restores must be tested periodically to ensure that they are functioning correctly.</p>
+<h3 id="installing-and-upgrading-software">Installing and upgrading software</h3>
+<p>As patches and security updates are released, they must be tested, reviewed, and incorporated into the local environment without endangering the stability of production systems</p>
+<p>software delivery” refers to the process of releasing updated versions of software</p>
+<p>Continuous delivery” takes this process to the next level by automatically releasing software to users at a regular cadence as it is developed</p>
+<h3 id="monitoring">Monitoring</h3>
+<p>detecting problems and fixing them before public failures occur.</p>
+<p>monitoring tasks include ensuring that web services respond quickly and correctly, collecting and analyzing log files, and keeping tabs on the availability of server resources such as disk space</p>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<h3 id="maintaining-local-documentation">Maintaining local documentation</h3>
+<p>Thorough and accurate documentation is a blessing for team members who would otherwise need to reverse-engineer a system to resolve problems in the middle of the night</p>
+<h2 id="vigilantly-monitoring-security">Vigilantly monitoring security</h2>
+<p>must implement a security policy and set up procedures to prevent systems from being breached</p>
+<p>might include only a few basic checks for unauthorized access, or it might involve an elaborate network of traps and auditing programs, depending on the context</p>
+<h3 id="tuning-performance">Tuning performance</h3>
+<p>tailor systems for optimal performance in accord with the needs of users, the available infrastructure, and the services the systems provide</p>
+<p>When a server is performing poorly, it is the administrator’s job to investigate its operation and identify areas that need improvement.</p>
+<h3 id="developing-site-policies">Developing site policies</h3>
+<p>most sites need policies that govern the acceptable use of computer systems, the management and retention of data, the privacy and security of networks and systems, and other areas of regulatory interest</p>
+<p>develop sensible policies that meet the letter and</p>
+<p>intent of the law and yet still promote progress and productivity</p>
+<h3 id="working-with-vendors">Working with vendors</h3>
+<h3 id="fire-fighting">Fire fighting</h3>
+<p>your response to these issues affects your perceived value as an administrator far more than does any actual technical skill you might possess a single well-handled trouble ticket scores more brownie points than five hours of midnight debugging</p>
+<h3 id="vim">Vim</h3>
+<p>Mastering vim is perhaps the single best productivity enhancement available to administrators
+Use the vimtutor command for an excellent, interactive introduction.</p>
+<h3 id="programming">Programming</h3>
+<p>Capable administrators are usually polyglot programmers who don’t mind picking up a new language when the need arises</p>
+<p>we recommend Bash (aka bash, aka sh), Ruby, or Python</p>
+<p>We also suggest that you learn expect, which is not a programming language so much as a front end for driving interactive programs. It’s an efficient glue technology that can replace some complex scripting and is easy to learn.</p>
+<h3 id="distributions">Distributions</h3>
+<p>A Linux distribution comprises the Linux kernel, which is the core of the operating system, and packages that make up all the commands you can run on the system</p>
+<p>All distributions share the same kernel lineage, but the format, type, and number of packages
+differ quite a bit</p>
+<p>distributions derived from the Debian and Red Hat lineages will predominate in production environments in the years ahead</p>
+<p>Virtually all leading distributions are cluttered with scores of unused software packages; security vulnerabilities and administrative anguish often come along for the ride</p>
+<blockquote>
+<p>By adopting a distribution, you are making an investment in a
+particular vendor’s way of doing things. Instead of looking only at
+the features of the installed software, it’s wise to consider how your
+organization and that vendor are going to work with each other. Some
+important questions to ask are:</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Is this distribution going to be around in five years?</li>
+<li>Is this distribution going to stay on top of the latest security
+patches?</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>Does this distribution have an active community and sufficient
+documentation</p>
+</blockquote>
+<blockquote>
+<p>If I have problems, will the vendor talk to me, and how much will that
+cost</p>
+</blockquote>
+<blockquote>
+<p>A comprehensive list of distributions, including many non-English
+distributions, can be found at lwn.net/Distributions or
+distrowatch.com</p>
+</blockquote>
+<blockquote>
+<p>Debian GNU/Linux, Ubuntu Linux, Red</p>
+</blockquote>
+<blockquote>
+<p>Hat Enterprise Linux (and its dopplegänger CentOS), and FreeBSD</p>
+</blockquote>
+<blockquote>
+<p>Debian defines three releases that are maintained simultaneously:
+stable, targeting production servers; unstable, with current packages
+that may</p>
+</blockquote>
+<blockquote>
+<p>have bugs and security vulnerabilities; and testing, which is
+somewhere in between.</p>
+</blockquote>
+<blockquote>
+<p>Ubuntu version numbers derive from the</p>
+</blockquote>
+<blockquote>
+<p>year and month of release, so version 16.10 is from October, 2016.
+Each release also has an alliterative code name such as Vivid Vervet
+or Wily Werewolf.</p>
+</blockquote>
+<blockquote>
+<p>Two versions of Ubuntu are released annually: one in April and one in
+October. The April releases</p>
+</blockquote>
+<blockquote>
+<p>in even-numbered years are long-term support (LTS) editions that
+promise five years of maintenance updates. These are the releases
+recommended for production use</p>
+</blockquote>
+<blockquote>
+<p>RHEL is open source but requires a license. If you’re not willing to
+pay for the license, you’re not going to be running Red Hat.</p>
+</blockquote>
+<blockquote>
+<p>Fedora, a community-based distribution that serves as an incubator for
+bleeding-edge software not considered stable enough for RHEL</p>
+</blockquote>
+<blockquote>
+<p>Fedora is used as the initial test bed for software and configurations
+that later find their way to RHEL</p>
+</blockquote>
+<blockquote>
+<p>CentOS is an excellent choice for sites that want to deploy a
+production-oriented distribution without paying tithes to Red Hat. A
+hybrid approach is also feasible: front-line servers can run Red Hat
+Enterprise</p>
+</blockquote>
+<blockquote>
+<p>Linux and avail themselves of Red Hat’s excellent support, even as
+nonproduction systems run CentOS</p>
+</blockquote>
+<blockquote>
+<p>This arrangement covers the important bases in terms of risk and
+support while also minimizing cost and administrative complexity</p>
+</blockquote>
+<blockquote>
+<p>CentOS aspires to full binary and bug-for-bug compatibility with Red
+Hat Enterprise Linux</p>
+</blockquote>
+<blockquote>
+<p>Apple’s macOS has a BSD heritage</p>
+</blockquote>
+<blockquote>
+<p>FreeBSD</p>
+</blockquote>
+<blockquote>
+<p>commands a 70% market share among BSD variants</p>
+</blockquote>
+<blockquote>
+<p>Unlike Linux, FreeBSD is a complete operating system, not just a
+kernel</p>
+</blockquote>
+<blockquote>
+<p>We use $ to denote the shell prompt for a normal, unprivileged user,
+and # for the root user</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>A star (*) matches zero or more characters.</li>
+<li>A question mark (?) matches one character.</li>
+<li>A tilde or “twiddle” (~) means the home directory of the current
+user</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>~user means the home directory of user.</p>
+</blockquote>
+<blockquote>
+<p>one “megabyte” of memory is really 220 or 1,048,576 bytes</p>
+</blockquote>
+<blockquote>
+<p>RAM is always denominated in powers of 2, but network bandwidth</p>
+</blockquote>
+<blockquote>
+<p>is always a power of 10. Storage space is usually quoted in
+power-of-10 units, but block and page sizes are in fact powers of 2</p>
+</blockquote>
+<blockquote>
+<p>Unit decoding examples</p>
+</blockquote>
+<blockquote>
+<p>see wiki.ubuntu.com/UnitsPolicy for some additional details</p>
+</blockquote>
+<blockquote>
+<p>Man pages and other on-line documentatio</p>
+</blockquote>
+<blockquote>
+<p>consult man pages as an authoritative resource because they are
+accessible from the command line</p>
+</blockquote>
+<blockquote>
+<p>details on a program’s options, and show helpful examples and related
+commands</p>
+</blockquote>
+<blockquote>
+<p>concise descriptions of individual commands, drivers, file formats, or
+library routines</p>
+</blockquote>
+<blockquote>
+<p>FreeBSD and Linux divide the man pages into sections.</p>
+</blockquote>
+<blockquote>
+<p>Sections of the man pages</p>
+</blockquote>
+<blockquote>
+<p>be aware of the section definitions when a topic with the same name
+appears in multiple sections</p>
+</blockquote>
+<blockquote>
+<p>man title formats a specific manual page and sends it to your terminal
+through more, less, or whatever program is specified in your PAGER
+environment variable</p>
+</blockquote>
+<blockquote>
+<p>title is usually a command, device, filename, or name of a library
+routine</p>
+</blockquote>
+<blockquote>
+<p>sections of the manual are searched in roughly numeric order, although
+sections that describe commands (sections 1 and 8) are usually
+searched first.</p>
+</blockquote>
+<blockquote>
+<p>man section title gets you a man page from a particular section</p>
+</blockquote>
+<blockquote>
+<p>man sync gets you the man page for the sync command, and man 2 sync
+gets you the man page for the sync system call</p>
+</blockquote>
+<blockquote>
+<p>man -k keyword or apropos keyword prints a list of man pages that have
+keyword in their one-line synopses</p>
+</blockquote>
+<blockquote>
+<p>The keywords database can become outdated. If you add additional man
+pages to your system</p>
+</blockquote>
+<blockquote>
+<p>you may need to rebuild this file with makewhatis (Red Hat and
+FreeBSD) or mandb (Ubuntu).</p>
+</blockquote>
+<blockquote>
+<p>nroff input for man pages (i.e., the man page source code) is stored
+in directories under /usr/share/man and compressed with gzip to save
+space</p>
+</blockquote>
+<blockquote>
+<p>man maintains a cache of formatted pages in /var/cache/man or
+/usr/share/man if the appropriate directories are writable; however,
+this is a security risk. Most systems preformat the man pages once at
+installation time (see catman) or not at all.</p>
+</blockquote>
+<blockquote>
+<p>The man command can search several man page repositories to find the
+manual pages you request. On Linux systems, you can find out the
+current default search path with the manpath command. This path (from
+Ubuntu) is typical</p>
+</blockquote>
+<blockquote>
+<p>If necessary, you can set your MANPATH environment variable to
+override the default path</p>
+</blockquote>
+<blockquote>
+<p>Some systems let you set a custom system-wide default search path for
+man pages, which can be useful if you need to maintain a parallel tree
+of man pages such as those generated by OpenPKG</p>
+</blockquote>
+<blockquote>
+<p>Where to find OS</p>
+</blockquote>
+<blockquote>
+<p>Pro Git from git-scm.com/book make the hunt worthwhile</p>
+</blockquote>
+<blockquote>
+<p>Many pieces of software have both a man page and a long-form article</p>
+</blockquote>
+<blockquote>
+<p>Most software projects have user and developer mailing lists and IRC
+channels</p>
+</blockquote>
+<blockquote>
+<p>if you have questions</p>
+</blockquote>
+<blockquote>
+<p>Request for Comments documents describe the protocols and procedures
+used on the Internet</p>
+</blockquote>
+<blockquote>
+<p>The phrase “reference implementation” applied to software</p>
+</blockquote>
+<blockquote>
+<p>usually translates to “implemented by a trusted source according to
+the RFC specification</p>
+</blockquote>
+<blockquote>
+<p>When stuck, search the web.</p>
+</blockquote>
+<blockquote>
+<p>Resources for keeping up to date</p>
+</blockquote>
+<blockquote>
+<div>
+<div>
+<div></div>
+</div>
+</div>
+<p>Social media are also useful. Twitter and reddit in particular have
+strong, engaged communities with a lot to offer, though the
+signal-to-noise ratio can sometimes be quite bad. On reddit, join the
+sysadmin, linux, linuxadmin, and netsec subreddits.</p>
+</blockquote>
+<blockquote>
+<p>Task-specific forums and reference sites</p>
+</blockquote>
+<blockquote>
+<p>Stack Overflow and Server Fault</p>
+</blockquote>
+<blockquote>
+<p>It’s worth creating an account and joining this large community</p>
+</blockquote>
+<blockquote>
+<p>Conferences relevant to system administrators</p>
+</blockquote>
+<blockquote>
+<p>Meetups (meetup.com) are another way to network and engage with
+like-minded people. Most urban areas in the United States and around
+the world have a Linux user group or DevOps meetup that sponsors
+speakers, discussions, and hack days.</p>
+</blockquote>
+<blockquote>
+<p>When adding software, don your security hat and remember that
+additional software creates additional attack surface</p>
+</blockquote>
+<blockquote>
+<p>Most software is developed by independent groups that release the
+software in the form of source code. Package repositories then pick up
+the source code, compile it appropriately for the conventions in use
+on the systems they serve, and package the resulting</p>
+</blockquote>
+<blockquote>
+<p>binaries. It’s usually easier to install a system-specific binary
+package than to fetch and compile the original source code. However,
+packagers are sometimes a release or two behind the current version.</p>
+</blockquote>
+<blockquote>
+<p>two systems use the same package format doesn’t necessarily mean that
+packages for the two systems are interchangeable</p>
+</blockquote>
+<blockquote>
+<p>Red Hat and SUSE both use RPM</p>
+</blockquote>
+<blockquote>
+<p>When the packaged format is insufficient, administrators must install
+software the old-fashioned way: by downloading a tar archive of the
+source code and manually configuring, compiling, and installing it.
+Depending on the software and the operating system, this process can
+range from trivial to nightmarish</p>
+</blockquote>
+<blockquote>
+<p>use the shell’s which command to find out if a relevant binary is
+already</p>
+</blockquote>
+<blockquote>
+<p>reveals that the GNU C compiler has already been installed on this
+machine</p>
+</blockquote>
+<blockquote>
+<p>If which can’t find the command you’re looking for, try whereis; it
+searches a broader range of system directories and is independent of
+your shell’s search path</p>
+</blockquote>
+<blockquote>
+<p>locate command, which consults a precompiled index</p>
+</blockquote>
+<blockquote>
+<p>the filesystem to locate filenames that match a particular pattern.</p>
+</blockquote>
+<blockquote>
+<p>FreeBSD includes locate as part of the base system. In Linux, the
+current implementation of locate is in the mlocate package</p>
+</blockquote>
+<blockquote>
+<p>On Red Hat</p>
+</blockquote>
+<blockquote>
+<p>and CentOS, install the mlocate package with yum; see this page.</p>
+</blockquote>
+<blockquote>
+<p>locate can find any type of file; it is not specific to commands or
+packages. For example, if you weren’t sure where to find the signal.h
+include file, you could try</p>
+</blockquote>
+<blockquote>
+<p>locate’s database is updated periodically by the updatedb command (in
+FreeBSD</p>
+</blockquote>
+<blockquote>
+<p>locate.updatedb), which runs periodically out of cron.</p>
+</blockquote>
+<blockquote>
+<p>Therefore, the results of a locate don’t always reflect recent changes
+to the filesystem</p>
+</blockquote>
+<blockquote>
+<p>you can also use your system’s packaging utilities to check directly
+for the package’s presence</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#45|1713)
+</code></pre>
+<blockquote>
+<p>checks for the presence (and installed version) of the Python
+interpreter</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#45|1828)
+</code></pre>
+<blockquote>
+<p>find out which package a particular file belongs to:</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#46|557)
+</code></pre>
+<blockquote>
+<p>installation of the tcpdump command on each of our example systems.
+tcpdump is a packet capture tool that lets you view the raw packets
+being sent to and from the system on the network.</p>
+<div>
+<div></div>
+</div>
+<div>
+<div></div>
+</div>
+<p>Debian and Ubuntu use APT, the Debian Advanced Package Tool:</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#46|931)
+</code></pre>
+<blockquote>
+<p>The Red Hat and CentOS version is</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#46|1016)
+</code></pre>
+<blockquote>
+<p>The package manager for FreeBSD is pkg.</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#47|75)
+</code></pre>
+<blockquote>
+<p>build a version of tcpdump from the source code.</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#47|150)
+</code></pre>
+<blockquote>
+<p>identify the code.</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#47|169)
+</code></pre>
+<blockquote>
+<p>Software maintainers sometimes keep an index of releases on the
+project’s web site that are downloadable as tarballs. For open source
+projects, you’re most likely to find the code in a Git repository.</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#47|373)
+</code></pre>
+<blockquote>
+<p>The tcpdump source is kept on GitHub. Clone the repository in the /tmp
+directory, create a branch of the tagged version you want to build,
+then unpack, configure, build, and install it:</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#47|590)
+</code></pre>
+<blockquote>
+<p>configure/make/make install sequence is common to most software
+written in C and works on all UNIX and Linux systems.</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#47|736)
+</code></pre>
+<blockquote>
+<p>check the package’s INSTALL or README file for specifics</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#47|798)
+</code></pre>
+<blockquote>
+<p>must have the development environment and any package-specific
+prerequisites installed. (In the case of tcpdump, libpcap and its
+libraries are prerequisites.)</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#47|960)
+</code></pre>
+<blockquote>
+<p>You’ll often need to tweak the build configuration, so use ./configure
+&ndash;help to see the options available for each particular package.
+Another useful configure option is &ndash;prefix=directory, which lets you
+compile the software for installation somewhere other than /usr/local,
+which is usually the default.</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#48|34)
+</code></pre>
+<blockquote>
+<p>Cross-platform software bundles increasingly offer an expedited
+installation process that’s driven by a shell script you download from
+the web with curl, fetch, or wget.</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#48|204)
+</code></pre>
+<blockquote>
+<p>These are all simple HTTP clients that download the contents of a URL
+to a local file or, optionally, print the contents to their standard
+output. For example, to set up a machine as a Salt client, you can run
+the following commands:</p>
+<div>
+<div></div>
+</div>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#48|465)
+</code></pre>
+<blockquote>
+<p>The bootstrap script investigates the local environment, then
+downloads, installs, and configures an appropriate version of the
+software. This type of installation is particularly common in cases
+where the process itself is somewhat complex, but the vendor is highly
+motivated to make things easy for users. (Another good example is RVM;
+see this page.)</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#48|908)
+</code></pre>
+<blockquote>
+<p>This installation method</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#48|1030)
+</code></pre>
+<blockquote>
+<p>leaves no proper record of the installation for future reference. If
+your operating system offers a packagized version of the software,
+it’s usually preferable to install the package instead of running a
+web installer.</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#48|1249)
+</code></pre>
+<blockquote>
+<p>Packages are easy to track, upgrade, and remove. (On the other hand,
+most OS-level packages are out of date. You probably won’t end up with
+the most current version of the software.)</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#48|1511)
+</code></pre>
+<blockquote>
+<p>Be very suspicious if the URL of the boot script is not secure (that
+is, it does not start with https:). Unsecured HTTP is trivial to
+hijack, and installation URLs are of particular interest to hackers
+because they know you’re likely to run, as root, whatever code comes
+back. By contrast, HTTPS validates the identity of the server through
+a cryptographic chain of trust. Not foolproof, but reliable enough.</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#48|1923)
+</code></pre>
+<blockquote>
+<p>A few vendors publicize an HTTP installation URL that automatically
+redirects to an HTTPS version. This is dumb and is in fact no more
+secure than straight-up HTTP. There’s nothing to prevent the initial
+HTTP exchange from being intercepted, so you might never reach the
+vendor’s redirect</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#48|2213)
+</code></pre>
+<blockquote>
+<p>However, the existence of such redirects does mean it’s worth trying
+your own substitution of https for http in insecure URLs. More often
+than not, it works just fine.</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#48|2618)
+</code></pre>
+<blockquote>
+<p>he root shell still runs even if curl outputs a partial script and
+then fails—say, because of a transient network glitch. The end result
+is unpredictable and potentially not good.</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#48|2947)
+</code></pre>
+<blockquote>
+<p>piping the output of curl to a shell has entered the collective
+sysadmin unconscious as a prototypical rookie blunder, so if you must
+do it, at least keep it on the sly.</p>
+</blockquote>
+<pre><code>      1.10 Ways to find and install software
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#48|3138)
+</code></pre>
+<blockquote>
+<p>ust save the script to a temporary file, then run the script in a
+separate step after the download successfully completes.</p>
+</blockquote>
+<pre><code>      1.11 Where to host
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#49|326)
+</code></pre>
+<blockquote>
+<p>The most practical choice, and our recommendation for new projects, is
+a public cloud provider. These facilities offer numerous advantages
+over data centers:</p>
+<ul>
+<li>No capital expenses and low initial operating costs</li>
+<li>No need to install, secure, and manage hardware</li>
+<li>On-demand adjustment of storage, bandwidth, and compute capacity</li>
+<li>Ready-made solutions for common ancillary needs such as databases,
+load balancers, queues, monitoring, and more</li>
+<li>Cheaper and simpler implementation of highly available/redundant
+systems</li>
+</ul>
+</blockquote>
+<pre><code>      1.11 Where to host
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#49|1106)
+</code></pre>
+<blockquote>
+<p>Our preferred cloud platform is the leader in the space: Amazon Web
+Services (AWS)</p>
+</blockquote>
+<pre><code>      1.11 Where to host
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#49|1246)
+</code></pre>
+<blockquote>
+<p>AWS is ten times the size of all competitors combined</p>
+</blockquote>
+<pre><code>      1.11 Where to host
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#49|1301)
+</code></pre>
+<blockquote>
+<p>AWS innovates rapidly and offers a much broader array of services than
+does any other provider.</p>
+</blockquote>
+<pre><code>      1.11 Where to host
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#49|1510)
+</code></pre>
+<blockquote>
+<p>free service tier to cut your teeth on, including a year’s use of a
+low powered cloud server.</p>
+</blockquote>
+<pre><code>      1.11 Where to host
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#49|1607)
+</code></pre>
+<blockquote>
+<p>Google Cloud Platform (GCP</p>
+</blockquote>
+<pre><code>      1.11 Where to host
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#49|1805)
+</code></pre>
+<blockquote>
+<p>reputation for dropping support for popular offerings.</p>
+</blockquote>
+<pre><code>      1.11 Where to host
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#49|1873)
+</code></pre>
+<blockquote>
+<p>customer-friendly pricing terms</p>
+</blockquote>
+<pre><code>      1.11 Where to host
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#49|1959)
+</code></pre>
+<blockquote>
+<p>DigitalOcean</p>
+</blockquote>
+<pre><code>      1.11 Where to host
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#49|1977)
+</code></pre>
+<blockquote>
+<p>simpler service with a stated goal of high performance.</p>
+</blockquote>
+<pre><code>      1.11 Where to host
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#49|2037)
+</code></pre>
+<blockquote>
+<p>target market is developers, whom it woos with a clean API, low
+pricing, and extremely fast boot times</p>
+</blockquote>
+<pre><code>      1.11 Where to host
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#49|2159)
+</code></pre>
+<blockquote>
+<p>strong proponent of open source software, and their tutorials and
+guides for popular Internet technologies are some of the best
+available.</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#50|347)
+</code></pre>
+<blockquote>
+<p>Your goal as a system administrator, or as a professional working in
+any of these related areas, is to achieve the objectives of the
+organization. Avoid letting politics or hierarchy interfere with
+progress. The best administrators solve problems and share information
+freely with others.</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#51|78)
+</code></pre>
+<blockquote>
+<p>DevOps</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#51|163)
+</code></pre>
+<blockquote>
+<p>aims to improve the efficiency of building and delivering software,
+especially at large sites that have many interrelated services and
+teams. Organizations with a DevOps practice promote integration among
+engineering teams and may draw little or no distinction between
+development and operations. Experts who work in this area seek out
+inefficient processes and replace them with small shell scripts or
+large and unwieldy Chef repositories.</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#52|32)
+</code></pre>
+<blockquote>
+<p>Site reliability engineers value uptime and correctness above all else</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#52|104)
+</code></pre>
+<blockquote>
+<p>Monitoring networks, deploying production software, taking pager duty,
+planning future expansion, and debugging outages</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#52|282)
+</code></pre>
+<blockquote>
+<p>Single points of failure are site reliability engineers’ nemeses.</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#53|35)
+</code></pre>
+<blockquote>
+<p>Security operations engineers</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#53|65)
+</code></pre>
+<blockquote>
+<p>focus on the practical, day-to-day side of an information security
+program</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#53|153)
+</code></pre>
+<blockquote>
+<p>install and operate tools that search for vulnerabilities and monitor
+for attacks on the network. They also participate in attack
+simulations to gauge the effectiveness of their prevention and
+detection techniques.</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#54|28)
+</code></pre>
+<blockquote>
+<p>Network administrators design, install, configure, and operate
+networks. Sites that operate data centers are most likely to employ
+network administrators; that’s because these facilities have a variety
+of physical switches, routers, firewalls, and other devices that need
+management. Cloud platforms also offer a variety of networking
+options, but these usually don’t require a dedicated administrator
+because most of the work is handled by the provider.</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#55|2)
+</code></pre>
+<blockquote>
+<p>Database administrators</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#55|83)
+</code></pre>
+<blockquote>
+<p>experts at installing and managing database software.</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#55|142)
+</code></pre>
+<blockquote>
+<p>manage database schemas, perform installations and upgrades, configure
+clustering, tune settings for optimal performance, and help users
+formulate efficient queries.</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#55|317)
+</code></pre>
+<blockquote>
+<p>usually wizards with one or more query languages and have experience
+with both relational and nonrelational (NoSQL) databases.</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#56|47)
+</code></pre>
+<blockquote>
+<p>NOC engineers monitor the real-time health of large sites and track
+incidents and outages.</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#56|143)
+</code></pre>
+<blockquote>
+<p>troubleshoot tickets from users, perform routine upgrades, and
+coordinate actions among other teams. They can most often be found
+watching a wall of monitors that show graphs and measurements.</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#57|2)
+</code></pre>
+<blockquote>
+<p>Data center technicians</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#57|53)
+</code></pre>
+<blockquote>
+<p>work with hardware. They receive new equipment, track equipment
+inventory and life cycles, install servers in racks, run cabling,
+maintain power and air conditioning, and handle the daily operations
+of a data center</p>
+</blockquote>
+<pre><code>      1.12 Specialization and adjacent disciplines
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#58|16)
+</code></pre>
+<blockquote>
+<p>Systems architects have deep expertise in more than one area. They use
+their experience to design distributed systems. Their job descriptions
+may include defining security zones and segmentation, eliminating
+single points of failure, planning for future growth, ensuring
+connectivity among multiple networks and third parties, and other
+site-wide decision making. Good architects are technically proficient
+and generally prefer to implement and test their own designs.</p>
+</blockquote>
+<pre><code>      1.13 Recommended reading
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#59|30)
+</code></pre>
+<blockquote>
+<p>Abbott, Martin L., and Michael T. Fisher. The Art of Scalability:
+Scalable Web Architecture, Processes, and Organizations for the Modern
+Enterprise (2nd Edition). Addison-Wesley Professional, 2015.</p>
+<p>Gancarz, Mike. Linux and the Unix Philosophy. Boston: Digital Press,
+2003.</p>
+<p>Limoncelli, Thomas A., and Peter Salus. The Complete April Fools’ Day
+RFCs. Peer-to-Peer Communications LLC. 2007. Engineering humor. You
+can read this collection on-line for free at rfc-humor.com.</p>
+<p>Raymond, Eric S. The Cathedral &amp; The Bazaar: Musings on Linux and
+Open Source by an Accidental Revolutionary. Sebastopol, CA: O’Reilly
+Media, 2001.</p>
+<p>Salus, Peter H. The Daemon, the GNU &amp; the Penguin: How Free and
+Open Software is Changing the World. Reed Media Services, 2008. This
+fascinating history of the open source movement by UNIX’s best-known
+historian is also available at groklaw.com under the Creative Commons
+license. The URL for the book itself is quite long; look for a current
+link at groklaw.com or try this compressed equivalent:
+tinyurl.com/d6u7j.</p>
+<p>Siever, Ellen, Stephen Figgins, Robert Love, and Arnold Robbins. Linux
+in a Nutshell (6th Edition). Sebastopol, CA: O’Reilly Media, 2009.</p>
+</blockquote>
+<pre><code>      1.13 Recommended reading
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#60|2)
+</code></pre>
+<blockquote>
+<p>Kim, Gene, Kevin Behr, and George Spafford. The Phoenix Project: A
+Novel about IT, DevOps, and Helping Your Business Win. Portland, OR:
+IT Revolution Press, 2014. A guide to the philosophy and mindset
+needed to run a modern IT organization, written as a narrative. An
+instant classic.</p>
+<p>Kim, Gene, Jez Humble, Patrick Debois, and John Willis. The DevOps
+Handbook: How to Create World-Class Agility, Reliability, and Security
+in Technology Organizations. Portland, OR: IT Revolution Press, 2016.</p>
+<p>Limoncelli, Thomas A., Christina J. Hogan, and Strata R. Chalup. The
+Practice of System and Network Administration (2nd Edition). Reading,
+MA: Addison-Wesley, 2008. This is a good book with particularly strong
+coverage of the policy and procedural aspects of system
+administration. The authors maintain a system administration blog at
+everythingsysadmin.com.</p>
+<p>Limoncelli, Thomas A., Christina J. Hogan, and Strata R. Chalup. The
+Practice of Cloud System Administration. Reading, MA: Addison-Wesley,
+2014. From the same authors as the previous title, now with a focus on
+distributed systems and cloud computing.</p>
+</blockquote>
+<pre><code>      1.13 Recommended reading
+    ](https://reader.bookfusion.com/books/4031036-unix-and-linux-system-administration-handbook-fifth-edition?type=epub_reflowable#61|2)
+</code></pre>
+<blockquote>
+<p>Blum, Richard, and Christine Bresnahan. Linux Command Line and Shell
+Scripting Bible (3rd Edition). Wiley, 2015.</p>
+<p>Dougherty, Dale, and Arnold Robins. Sed &amp; Awk (2nd Edition).
+Sebastopol, CA: O’Reilly Media, 1997. Classic O’Reilly book on the
+powerful, indispensable text processors sed and awk.</p>
+<p>Kim, Peter. The Hacker Playbook 2: Practical Guide To Penetration
+Testing. CreateSpace Independent Publishing Platform, 2015.</p>
+<p>Neil, Drew. Practical Vim: Edit Text at the Speed of Thought.
+Pragmatic Bookshelf, 2012.</p>
+<p>Shotts, William E. The Linux Command Line: A Complete Introduction.
+San Francisco, CA: No Starch Press, 2012.</p>
+<p>Sweigart, Al. Automate the Boring Stuff with Python: Practical
+Programming for Total Beginners. San Francisco, CA: No Starch Press,
+2015.</p>
+</blockquote>
+<h2 id="autofs">AutoFS</h2>
+<ul>
+<li>Automatically mount and unmount on clients during runtime and system reboots.</li>
+<li>Triggers mount or unmount action based on mount point activity.</li>
+<li>Client-side service</li>
+<li>Mount an NFS share on demand</li>
+<li>Entry placed in AutoFS config files.</li>
+<li>Automatically mounts share upon detecting activity in it&rsquo;s mount point. (touch, ls, cd)</li>
+<li>unmounts share if the share hasn&rsquo;t been accessed for a predefined period of time.</li>
+<li>Mounts managed with autofs should not be mounted manually via /etc/fstab to avoid inconsistencies.</li>
+<li>Saves Kernel from having to maintain unused NFS shares. (Improved performance!)</li>
+<li>NFS shares are defined in config files called maps (/etc/ or /etc/auto.master.d/)</li>
+<li>Does not use /etc/fstab.</li>
+<li>Does not require root to mount a share (fstab does).</li>
+<li>Prevents client from hanging if share is down.</li>
+<li>Share is unmounted if not accessed for 5 minutes (default)</li>
+<li>Supports wildcard characters or environment variables.</li>
+<li>Automount daemond
+<ul>
+<li>in the userland mounts configured shares automatically upon access.</li>
+<li>invoked at system boot.</li>
+<li>Reads AutoFS master map and create inititial mount point entries. (not mounting yet)</li>
+<li>Does not mount shares until user activity is detected.</li>
+<li>Unmounts after set timeframe of inactivity.</li>
+</ul>
+</li>
+<li>Use the mount command on a share to verify the path of the AutoFS map, file system type, and options used during mount.</li>
+</ul>
+<p>/etc/autofs.conf/ preset Directives:
+master_map_name=auto.master
+timeout = 300
+negative_timeout = 60
+mount_nfs_default_protocol = 4
+logging = none</p>
+<p>Additional directives:
+<strong>master_map_name</strong>
+- Name of the master map. Default is /etc/auto.master
+<strong>timeout</strong>
+- time in second to unmount a share.
+<strong>negative_timeout</strong>
+- Timeout (in seconds) value for failed mount attempts. (1 minute default)
+<strong>mount_nfs_default_protocol</strong>
+- Sets the NFS version used to mount shares.
+logging
+- Logging level (none, verbose, debug)
+- Default is none (disabled)</p>
+<ul>
+<li>Normally left to their default values.</li>
+</ul>
+<h3 id="autofs-maps">AutoFS Maps</h3>
+<ul>
+<li>Where AutoFS finds the shares to mount and their locations.</li>
+<li>Also tells Autofs what options to use. Map Types</li>
+<li>master</li>
+<li>direct</li>
+<li>indirect</li>
+</ul>
+<p><strong>Master Map</strong></p>
+<p>Define entries for indirect and direct maps.</p>
+<ul>
+<li>/etc/auto.master is default</li>
+<li>Default is defined in /etc/autofs.conf with master_map_name directive.</li>
+<li>May be used to define entries for indirect and direct maps.
+<ul>
+<li>But it is recommended to store user-defined maps in /etc/auto.master.d/
+<ul>
+<li>AutoFS service parses this at startup.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can append an option to auto.master but it will apply globally to all subentries in the specified map file.</li>
+</ul>
+<p>Map entry format examples:</p>
+<hr>
+<p>/-                      /etc/auto.master.d/auto.direct   # Line 1</p>
+<p>/misc                   /etc/auto.misc                   # Line 2</p>
+<h3 id="direct-map">Direct Map</h3>
+<pre tabindex="0"><code>/- /etc/auto.master.d/auto.direct &lt;-- defines direct map and points to auto.direct for details
+</code></pre><p>Mount shares on unrelated mount points</p>
+<ul>
+<li>Always visible to users</li>
+<li>Can exist with an indirect share under one parent directory</li>
+<li>Accessing a directory containing many direct mount points mounts all shares.</li>
+<li>Each direct map entry places a separate share entry to /etc/mtab
+<ul>
+<li>/etc/mtab maintains a list of all mounted file systems whether they are local or remote.</li>
+<li>Updated whenever a local file system, removable file system, or aq network share is mounted or unmounted.</li>
+</ul>
+</li>
+</ul>
+<h3 id="indirect-map">Indirect Map</h3>
+<pre tabindex="0"><code>/misc /etc/auto.misc &lt;-- indirect map and points to auto.misc for details
+</code></pre><p>Automount removable filesystems</p>
+<ul>
+<li>Mount point /misc precedes mount point entries in /etc/auto.miscq</li>
+<li>Used to automount removable file systems (CD, DVD, USB disks, etc.)</li>
+<li>Custom indirect map files should be located in /etc/auto.master.d/</li>
+<li>Preferred over direct mount for mounting all shares under one common parent directory.</li>
+<li>Become visible only after they have been accessed.</li>
+<li>Local and indirect mounted shares cannot coexist under the same parent directory.</li>
+<li>One entry in /etc/mtab gets added for each indirect map.</li>
+<li>Accessing a directory containing many indirect mount points shows only the shares that are already mounted.</li>
+<li>Usually better to use indirect map for automounting NFS shares.</li>
+</ul>
+<h3 id="lab-access-nfs-share-using-direct-map-server10">Lab: Access NFS Share Using Direct Map (server10)</h3>
+<ol>
+<li>Install Autofs</li>
+</ol>
+<pre tabindex="0"><code>sudo dnf install -y autofs
+</code></pre><ol>
+<li>Create mount point /autodir using mkdir</li>
+</ol>
+<pre tabindex="0"><code>sudo mkdir /autodir
+</code></pre><ol>
+<li>Add an entry to /etc/auto.master to point the AutoFS service to the auto.dir file for more information:</li>
+</ol>
+<pre tabindex="0"><code>/- /etc/auto.master.d/auto.dir
+</code></pre><ol>
+<li>Create /etc/auto.master.d/auto.dir and add the mount point, NFS server, and share info:</li>
+</ol>
+<pre tabindex="0"><code>/autodir server20:/common
+</code></pre><ol>
+<li>Start AutoFS service and enable it at startup:</li>
+</ol>
+<pre tabindex="0"><code>sudo systemctl enable --now autofs
+</code></pre><ol>
+<li>Make sure AUtoFS service is running. Use -l and &ndash;no-pager options to show full details without piping the output to a pager program (pg)</li>
+</ol>
+<pre tabindex="0"><code>sudo systemctl status autofs -l --no-pager
+</code></pre><ol>
+<li>Run ls on the mount point then verify the share is automounted and accessible with mount.</li>
+</ol>
+<pre tabindex="0"><code>ls /autodir
+mount | grep autodir
+</code></pre><ol>
+<li>Wait 5 minutes and run the mount command again to see it has disappeared.</li>
+</ol>
+<pre tabindex="0"><code>mount | grep autodir
+</code></pre><h3 id="exercise-16-4-access-nfs-share-using-indirect-map">Exercise 16-4: Access NFS Share Using Indirect Map</h3>
+<ul>
+<li>configure an indirect map to automount the NFS share /common that is available from server20.</li>
+<li>install the relevant software and set up AutoFS maps to support the automatic mounting.</li>
+<li>observe that the specified mount point &ldquo;autoindir&rdquo; is created automatically under /misc.</li>
+</ul>
+<p>Note that /common is already mounted on the /local mount point via the fstab file and it is also configured via a direct map for automounting on /autodir. There should occur no conflict in configuration or functionality among the three.</p>
+<p>1. Install the autofs software package if it is not already there:</p>
+<p>2. Confirm the entry for the indirect map /misc in the /etc/auto.master
+file exists:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 common<span class="o">]</span><span class="c1"># grep ^/misc /etc/auto.master</span>
+</span></span><span class="line"><span class="cl">/misc	/etc/auto.misc
+</span></span></code></pre></div><p>3. Edit the /etc/auto.misc file and add the mount point, NFS server, and share information to it:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">autoindir server30:/common
+</span></span></code></pre></div><p>4. Start the AutoFS service now and set it to autostart at system reboots:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server40 /<span class="o">]</span><span class="c1"># systemctl enable --now autofs</span>
+</span></span></code></pre></div><p>5. Verify the operational status of the AutoFS service. Use the -l and --no-pager options to show full details without piping the output to a pager program (the pg command in this case):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server40 /<span class="o">]</span><span class="c1"># systemctl status autofs -l --no-pager</span>
+</span></span></code></pre></div><p><br>
+6. Run the ls command on the mount point /misc/autoindir and then grep for both auto.misc and autoindir on the mount command output to verify that the share is automounted and accessible:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server40 /<span class="o">]</span><span class="c1"># ls /misc/autoindir</span>
+</span></span><span class="line"><span class="cl">test.text
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server40 /<span class="o">]</span><span class="c1"># mount | egrep &#39;auto.misc|autoindir&#39;</span>
+</span></span><span class="line"><span class="cl">/etc/auto.misc on /misc <span class="nb">type</span> autofs <span class="o">(</span>rw,relatime,fd<span class="o">=</span>7,pgrp<span class="o">=</span>3321,timeout<span class="o">=</span>300,minproto<span class="o">=</span>5,maxproto<span class="o">=</span>5,indirect,pipe_ino<span class="o">=</span>31779<span class="o">)</span>
+</span></span><span class="line"><span class="cl">server30:/common on /misc/autoindir <span class="nb">type</span> nfs4 <span class="o">(</span>rw,relatime,vers<span class="o">=</span>4.2,rsize<span class="o">=</span>262144,wsize<span class="o">=</span>262144,namlen<span class="o">=</span>255,hard,proto<span class="o">=</span>tcp,timeo<span class="o">=</span>600,retrans<span class="o">=</span>2,sec<span class="o">=</span>sys,clientaddr<span class="o">=</span>192.168.0.40,local_lock<span class="o">=</span>none,addr<span class="o">=</span>192.168.0.30<span class="o">)</span>
+</span></span></code></pre></div><ul>
+<li>/misc/autoindir has been auto generated.</li>
+<li>You can use the ubrella mount point /misc to mount additional auto-generated mount points.</li>
+</ul>
+<h3 id="automounting-user-home-directories-">Automounting User Home Directories \</h3>
+<p>AutoFS allows us to automount user home directories by exploiting two special characters in indirect maps.</p>
+<p><strong>asterisk (*)</strong></p>
+<ul>
+<li>replaces the references to specific mount points and the</li>
+</ul>
+<p><strong>ampersand (&amp;)</strong></p>
+<ul>
+<li>
+<p>Substitutes the references to NFS servers and shared subdirectories.</p>
+</li>
+<li>
+<p>With user home directories located under /home, on one or more NFS servers, the AutoFS service will connect with all of them simultaneously when a user attempts to log on to a client.</p>
+</li>
+<li>
+<p>The service will mount only that specific user&rsquo;s home directory rather than the entire /home.</p>
+</li>
+<li>
+<p>The indirect map entry for this type of substitution is defined in an indirect map, such as /etc/auto.master.d/auto.home.</p>
+</li>
+</ul>
+<p><code>* -rw &amp;:/home/&amp;</code></p>
+<ul>
+<li>
+<p>With this entry in place, there is no need to update any AutoFS configuration files if additional NFS servers with /home shared are added or removed.</p>
+</li>
+<li>
+<p>If user home directories are added or deleted, there will be no impact on the functionality of AutoFS.</p>
+</li>
+<li>
+<p>If there is only one NFS server sharing the home directories, you can simply specify its name in lieu of the first &amp; symbol in the above entry.</p>
+</li>
+</ul>
+<h3 id="exercise-16-5-automount-user-home-directories-using-indirect-map">Exercise 16-5: Automount User Home Directories Using Indirect Map</h3>
+<p>There are two portions for this exercise. The first portion should be done on server20 (NFS server) and the second portion on server10 (NFS client) as user1 with sudo where required.</p>
+<p>first portion</p>
+<ul>
+<li>create a user account called user30 with UID 3000.</li>
+<li>add the /home directory to the list of NFS shares so that it becomes available for remote mount.</li>
+</ul>
+<p>second portion</p>
+<ul>
+<li>create a user account called user30 with UID 3000, base directory /nfshome, and no home directory.</li>
+<li>create an umbrella mount point called /nfshome for mounting the user home directory from the NFS server.</li>
+<li>install the relevant software and establish an indirect map to automount the remote home directory of user30 under /nfshome.</li>
+<li>observe that the home directory is automounted under /nfshome when you sign in as user30.</li>
+</ul>
+<p>On NFS server server20:</p>
+<p>1. Create a user account called user30 with UID 3000 (-u) and assign
+password &ldquo;password1&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 common<span class="o">]</span><span class="c1"># useradd -u 3000 user30</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server30 common<span class="o">]</span><span class="c1"># echo password1 | sudo passwd --stdin user30</span>
+</span></span><span class="line"><span class="cl">Changing password <span class="k">for</span> user user30.
+</span></span><span class="line"><span class="cl">passwd: all authentication tokens updated successfully.
+</span></span></code></pre></div><p>2. Edit the /etc/exports file and add an entry for /home (do not modify or remove the previous entry):
+<code>/home server40(rw)</code></p>
+<p>3. Export all the shares listed in the /etc/exports file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 common<span class="o">]</span><span class="c1"># sudo exportfs -avr</span>
+</span></span><span class="line"><span class="cl">exporting server40.example.com:/home
+</span></span><span class="line"><span class="cl">exporting server40.example.com:/common
+</span></span></code></pre></div><p>On NFS client server10:</p>
+<p>1. Install the autofs software package if it is not already there:
+<code>dnf install autofs</code></p>
+<p>2. Create a user account called user30 with UID 3000 (-u), base home directory location /nfshome (-b), no home directory (-M), and password &ldquo;password1&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server40 misc<span class="o">]</span><span class="c1"># sudo useradd -u 3000 -b /nfshome -M user30</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server40 misc<span class="o">]</span><span class="c1"># echo password1 | sudo passwd --stdin user30</span>
+</span></span></code></pre></div><p>This is to ensure that the UID for the user is consistent on the server and the client to avoid access issues.</p>
+<p>3. Create the umbrella mount point /nfshome to automount the user&rsquo;s home directory:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo mkdir /nfshome
+</span></span></code></pre></div><p>4. Edit the /etc/auto.master file and add the mount point and indirect map location to it:
+<code>/nfshome /etc/auto.master.d/auto.home</code></p>
+<p>5. Create the /etc/auto.master.d/auto.home file and add the following information to it:
+<code>* -rw server30:/home/&amp;</code></p>
+<p>For multiple user setup, you can replace &ldquo;user30&rdquo; with the &amp; character, but ensure that those users exist on both the server and the client with consistent UIDs.</p>
+<p>6. Start the AutoFS service now and set it to autostart at system reboots. This step is not required if AutoFS is already running and enabled.
+<code>systemctl enable --now autofs</code></p>
+<p>7. Verify the operational status of the AutoFS service. Use the -l and --no-pager options to show full details without piping the output to a pager program (the pg command):
+<code>systemctl status autofs -l --no-pager</code></p>
+<p>8. Log in as user30 and run the pwd, ls, and df commands for verification:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server40 nfshome<span class="o">]</span><span class="c1"># su - user30</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>user30@server40 ~<span class="o">]</span>$ ls
+</span></span><span class="line"><span class="cl">user30.txt
+</span></span><span class="line"><span class="cl"><span class="o">[</span>user30@server40 ~<span class="o">]</span>$ <span class="nb">pwd</span>
+</span></span><span class="line"><span class="cl">/nfshome/user30
+</span></span><span class="line"><span class="cl"><span class="o">[</span>user30@server40 ~<span class="o">]</span>$ df -h
+</span></span><span class="line"><span class="cl">Filesystem             Size  Used Avail Use% Mounted on
+</span></span><span class="line"><span class="cl">devtmpfs               4.0M     <span class="m">0</span>  4.0M   0% /dev
+</span></span><span class="line"><span class="cl">tmpfs                  888M     <span class="m">0</span>  888M   0% /dev/shm
+</span></span><span class="line"><span class="cl">tmpfs                  356M  5.1M  351M   2% /run
+</span></span><span class="line"><span class="cl">/dev/mapper/rhel-root   17G  2.2G   15G  13% /
+</span></span><span class="line"><span class="cl">/dev/sda1              960M  344M  617M  36% /boot
+</span></span><span class="line"><span class="cl">tmpfs                  178M     <span class="m">0</span>  178M   0% /run/user/0
+</span></span><span class="line"><span class="cl">server30:/common        17G  2.2G   15G  13% /local
+</span></span><span class="line"><span class="cl">server30:/home/user30   17G  2.2G   15G  13% /nfshome/user30
+</span></span></code></pre></div><p>EXAM TIP: You may need to configure AutoFS for mounting a remote user
+home directory.</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/davidvargasxyz" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://keybase.io/" target="_blank" rel="noopener noreferrer me"
+    title="Keybase">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 76.3" version="1.1" fill="currentColor" stroke="none">
+    <path
+        d="M6.68 73.99c-.6-1.3-1.4-3.1-1.8-4l-.6-1.7-2 2.2-2 2.2-.2-4.2c-.3-6 .2-12.2 1.2-16.6 2.3-9.8 9.5-18.7 18.8-23.4l2.1-1-.5-1.5c-.3-.8-.6-2.5-.7-3.6l-.2-2.1-2.1-.2c-3.2-.3-4.9-1.2-6-3.5-.6-1.2-.6-1.4-.4-4.6.2-4.2.5-5.1 1.8-6.5 1.6-1.8 2.7-2.1 6.7-1.9 2.9.2 3.5.3 4.8.9.8.4 1.5.8 1.6.8.1 0 1-1.1 2.1-2.6l1.9-2.7 1.2.7c.7.4 1.5.9 1.9 1.1l.7.4-.6 1.5c-.3.8-.7 2.2-.8 2.9l-.2 1.4 1.7.2c6.1.6 10.7 4.3 12.4 9.9.5 1.8.5 5.3 0 7-.5 1.6-.5 1.7-.1 1.7.7 0 5.4 2.3 7.3 3.5 3.7 2.4 8 6.6 10.4 10.2 4.5 6.7 6.4 14 5.6 22-.4 4.8-1.3 8.6-2.9 12.3l-.6 1.4h-5l1.2-2.4c1.3-2.6 2.3-6.2 2.8-9.4.3-2.2.4-8.2.1-9.3l-.2-.7-1.3 1.4c-3.2 3.5-7.9 4.5-14.2 2.8-5.4-1.4-7.6-1.7-12.7-1.7-3.9 0-5.2.1-7.3.6-5.8 1.3-9.9 3.2-15.6 7.3-2.1 1.5-3.8 2.7-3.9 2.7-.1 0 .2-1 .6-2.3.4-1.3 1.1-3.4 1.5-4.8l.8-2.5-.9.9c-.5.5-1.9 1.9-3.1 3.2l-2.1 2.3.5 1.9c.6 2.5 2 5.6 3.5 7.9.6 1 1.1 1.8 1.1 1.9s-1.2.1-2.6.1h-2.6l-1.1-2.1zm8.8-24.2c4.8-5.1 8.7-9.2 8.8-9.2.1.1-.4 1.6-.9 3.3-3.3 10.4-4 12.4-3.9 12.5 0 0 1.2-.4 2.5-.9 8.5-3.7 18.4-4.2 28.9-1.4 4.7 1.2 6.5 1.2 8.8 0 1.3-.7 1.8-1.1 2.4-2.1 1.1-1.7 1.2-4.1.5-6.3-1.7-4.8-8.3-11-14.5-13.7-3.2-1.4-3.4-1.4-4.1-.7l-.6.6 2.6 3.2c1.4 1.7 2.9 3.6 3.1 4.1.6 1.2.7 3.1.1 4.3-.8 1.7-3.2 2.9-5.1 2.5-.8-.2-1.1-.1-1.9.5-2.2 1.6-4.6 1.2-6.6-1.2-1.6-1.8-2-2.7-2.1-4.5 0-.9-.3-2-.5-2.4-.3-.6-.4-1.3-.4-2.2l.1-1.4-1.3-.3c-1.8-.5-3.9-1.5-5.1-2.4-.6-.4-1.1-.8-1.3-.8s-1.5.6-2.9 1.3c-9.7 5-16 14.3-17 24.8-.1 1-.2 2.3-.3 2.8l-.1.9 1.1-1.1c.5-.5 4.9-5.1 9.7-10.2zm25.9-7.4c.9-.7 1.7-1.3 1.9-1.3.1 0 .4.3.7.7.5.8 1.4.8 1.8.1.3-.5.3-.6-5.6-7.8-3.5-4.3-4.2-5-4.7-5-1.2.1-.9 1 1 3.3l1.8 2.2-1 .8c-1.1 1-1.2 1.2-.5 1.8.5.5.6.4 1.6-.3l1.1-.7.7.6c.4.3.6.8.6.9 0 .2-.8.9-1.7 1.7-.9.7-1.6 1.5-1.6 1.7 0 .3.5 1.1 1.4 2.2.3.6.8.4 2.5-.9zm-10.3-14.2c.6-1.8 2.6-3.2 4.6-3.2 1.1 0 2.7.9 3.8 2.1l1 1.2.9-1.1c2.5-2.8 2.8-6.7.8-10.1-1.5-2.5-4.3-4-8.2-4.4-2.1-.2-2.6-.4-3.7-1.5l-.8-.8-.4.6c-.8 1.2-2.5 5.1-3 6.6-.7 2.3-.4 5.9.5 7.7.9 1.7 3.3 4 4 3.7.1.1.3-.3.5-.8zm-8.9-13.6c.2-.5.7-1.8 1.2-2.8.5-1 .9-2 .9-2.3 0-.9-1-1.3-3.7-1.5-2.4-.2-2.6-.1-3.1.4-.4.4-.6.9-.6 1.6 0 .6-.1 1.7-.2 2.6-.2 2.1.1 2.5 2.2 2.8 3.1.2 3 .2 3.3-.8zm-3.1-2.4c0-1.7.2-1.9 1.6-1.9h1.3v2.8h-2.8v-.9zm6.3 58.3c-.6-.6-.8-1-.8-2 0-1.9 1.1-3 2.9-3 1.7 0 2.9 1.2 2.9 2.9 0 1.8-1.1 2.8-3 2.9-1 0-1.4-.2-2-.8zm19.3.3a2.93 2.93 0 011.8-5.3c1.8 0 2.8 1.1 2.9 3 0 1.1-.1 1.4-.8 2s-1 .8-2 .8c-.9 0-1.5-.2-1.9-.5z" />
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2024 David Vargas.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script src="https://davidvargas.xyz/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>

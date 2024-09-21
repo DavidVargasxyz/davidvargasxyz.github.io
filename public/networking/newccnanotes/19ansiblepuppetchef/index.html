@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | David Vargas</title>
+<meta property="og:title" content=" | David Vargas" />
+<meta name="twitter:title" content=" | David Vargas" />
+<meta itemprop="name" content=" | David Vargas" />
+<meta name="application-name" content=" | David Vargas" />
+<meta property="og:site_name" content="davidvargas.xyz" />
+
+<meta name="description" content="David Vargas&#39;s blog">
+<meta itemprop="description" content="David Vargas&#39;s blog" />
+<meta property="og:description" content="David Vargas&#39;s blog" />
+<meta name="twitter:description" content="David Vargas&#39;s blog" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/networking/newccnanotes/19ansiblepuppetchef/" title="" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.134.3">
+
+    
+    <meta property="og:url" content="http://localhost:1313/networking/newccnanotes/19ansiblepuppetchef/">
+  <meta property="og:site_name" content="David Vargas">
+  <meta property="og:title" content="David Vargas">
+  <meta property="og:description" content="19 Ansible, Puppet, and Chef 6.0 Automation and Programmability 6.6 Recognize the capabilities of configuration mechanisms Puppet, Chef, and Ansible
+Configuration Drift
+The on-device manual configuration process does not track change history: which lines changed, what changed on each line, what old configuration was removed, who changed the configuration, when each change was made. External systems used by good systems management processes, like trouble ticketing and change management software, may record details. However, those sit outside the configuration and require analysis to figure out what changed. They also rely on humans to follow the operational processes consistently and correctly; otherwise, an engineer cannot find the entire history of changes to a configuration. Referring to historical data in change management systems works poorly if a device has gone through multiple configuration changes over a period of time. Centralized Configuration Files and Version Control">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="networking">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="David Vargas">
+  <meta name="twitter:description" content="19 Ansible, Puppet, and Chef 6.0 Automation and Programmability 6.6 Recognize the capabilities of configuration mechanisms Puppet, Chef, and Ansible
+Configuration Drift
+The on-device manual configuration process does not track change history: which lines changed, what changed on each line, what old configuration was removed, who changed the configuration, when each change was made. External systems used by good systems management processes, like trouble ticketing and change management software, may record details. However, those sit outside the configuration and require analysis to figure out what changed. They also rely on humans to follow the operational processes consistently and correctly; otherwise, an engineer cannot find the entire history of changes to a configuration. Referring to historical data in change management systems works poorly if a device has gone through multiple configuration changes over a period of time. Centralized Configuration Files and Version Control">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/networking/newccnanotes/19ansiblepuppetchef/">
+    <link href="/style.min.1915b95fdbf4046da0032dde0fb966271ed904fa9c019f9a326d7ce001902895.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/notes/">
+                        notes
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/readings/">
+                        readings
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about">
+                        about
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            
+            <div class="page-content">
+                <h1 id="19-ansible-puppet-and-chef">19 Ansible, Puppet, and Chef</h1>
+<p>6.0 Automation and Programmability
+6.6 Recognize the capabilities of configuration mechanisms Puppet, Chef, and Ansible</p>
+<p>Configuration Drift</p>
+<p>The on-device manual configuration process does not track change history: which lines changed, what changed on each line, what old configuration was removed, who changed the configuration, when each change was made.
+External systems used by good systems management processes, like trouble ticketing and change management software, may record details. However, those sit outside the configuration and
+require analysis to figure out what changed. They also rely on humans to follow the operational processes consistently and correctly; otherwise, an engineer cannot find the entire history of
+changes to a configuration.
+Referring to historical data in change management systems works poorly if a device has gone through multiple configuration changes over a period of time.
+Centralized Configuration Files and Version Control</p>
+<pre tabindex="0"><code></code></pre><p>configuration management tools use version control software to track the changes to centralized configuration files, noting who changes a file, what lines and specific characters changed, when
+the change occurred, and so on.
+also allow you to compare the differences between versions of the files over time</p>
+<pre tabindex="0"><code>
+Configuration Monitoring and Enforcement  
+With this new modelin the centralized repository. The configuration management tool can then be directed to copy or , engineers should make changes by editing the associated configuration files  
+apply the configuration to the device  
+the central config file and the device’s running-config (and startup-config) should be identical.
+</code></pre><p>eventually someone will change the devices directly
+eventually, some configuration drift can occur.
+Configuration management toolsconfiguration differs from the intended ideal configuration, and then either reconfigure the can monitor device configurations to discover when the device
+device or notify the network engineering staff to make the changeconfiguration monitoring or configuration enforcement, particularly if the tool automatically. This feature might be called
+changes the device configuration.
+The automated configuration management software asks for a copy of the device’s runningconfig file, as shown in steps 1 and 2. At step 3, the config management software compares the -
+ideal config file with the just-arrived running-config file to check whether they have any
+differences (configuration drift). Per the configuration of the tool, it either fixes the configuration or notifies the staff about the configuration drift.</p>
+<pre tabindex="0"><code>
+Configuration Provisioning  
+how to provision or deploy changes to the configuration once made by changing files in the  
+configuration management system.  
+some of the majorfeatures included in all of the configuration management tools  
+The core function toimplement configuration changes in one device after someone has  
+edited the device’s centralized configuration file  
+The ability to attribute (such as those of a particular role), or just one device, based on attributes and choose which subset of devices to configure: all devices, types with a given
+
+attribute (such as those of a particular role), or just one device, based on attributes and logic  
+The ability to determine if each change was accepted or rejected, and to use logic to react  
+differently in each case depending on the result  
+For each change, the ability to revert to the original configuration if even one configuration  
+command is rejected on a device  
+Thewhether the change will work or not when attemptedability to validate the change now (without actually making the change) to determine  
+The ability to configuration management tool’s intended configuration does match the device’s check the configuration after the process completes to confirm that the  
+configuration  
+The ability tonot use logic to choose whether to save the running-config to startup-config or  
+The ability to similar roles can use the same template but with different valuesrepresent configuration files as templates and variables so that devices with  
+The ability to store the logic steps in a file, scheduled to execute, so that the changes can be  
+implemented by the automation tool without the engineer being present  
+Configuration Templates and Variables
+</code></pre><p>Configuration management tools can separate the components of a configuration into the parts
+in common to all devices in that role (the variables) (the template)versus the parts unique to any one device</p>
+<pre tabindex="0"><code></code></pre><p>Ansible using the Jinja2 language for templates</p>
+<pre tabindex="0"><code>
+To supply the values for a device,Ansible calls for defining variable files using YAML  
+The file shows the Example 19-1, but now defined as variables.syntax for defining the variables shown in the complete configuration in
+
+the engineer would create and edit one template filethat looks like Example 19- 2
+
+the engineer would create and edit one template filethat looks like Example 19- 2  
+then create and edit one variable file like Example 19would process the files to create complete configuration files like the text shown in Example 19-3 for each branch office router. Ansible -1.  
+using templates has some big advantages.  
+Templates helping to avoid snowflakes (uniquely configured devices).increase the focus on having a standard configuration for each device role,  
+New devices with an existing role can be deployed easily by simply copying an existing per-  
+device variable file and changing the values.  
+Templatesallow for easier troubleshooting because troubleshooting issues with one  
+standard template should find and fix issues with all devices that use the same template.  
+Tracking the file versions for the template versus the variables files allows for easier troubleshooting as well. Issues with a device can be investigated to find changes in the  
+device’s settings separately from the standard configuration template.  
+Files That Control Configuration Automation  
+Configuration management tools provide methods that tell the tool what changes to make, to  
+which devices, and when  
+the files you could see in any of the configuration management tools.
+
+Ansible, Puppet, and Chef Basics  
+some of the tools do not run in a Windows OS
+</code></pre><p>you need to install Ansible on some computer: Mac, Linux, or a Linux VM
+free open-source version or use the paid Ansible Tower serverversion
+Once it is installed, you create several text files, such as the following:</p>
+<pre tabindex="0"><code></code></pre><p>Ansible</p>
+<pre tabindex="0"><code></code></pre><p>Playbooks:These files provide actions and logic about what Ansible should do.
+Inventory:These files provide device hostnames along with information about each
+device, like device roles, so Ansible can perform functions for subsets of the inventory
+Templates: Using Jinja2 language, the templates represent a device’s configuration
+but with variables(see Example 19-2).
+Variablestemplates: Using YAML, a file can list variables that Ansible will substitute into (see Example 19-3).
+uses an agentlessarchitecture
+Ansible does not rely on any code (agent) running on the network device
+Ansiblemake changes and extract information.relies on features typical in network devices, namely SSH and/or NETCONF, to
+using apush model(per Figure 19-8) rather than a pull model (like Puppet and Chef)</p>
+<pre tabindex="0"><code>
+Ansible can do both configuration provisioning (configuring devices after changes are made in the files) and configuration monitoring (checking to find out whether the device config  
+matches the ideal configuration on the control node).  
+To do configuration monitoring, Ansible uses logic modules that detect and list configuration differences, after which the playbook defines what action to take (reconfigure  
+or notify).  
+Puppet  
+installing Puppet on aLinuxhost  
+install it on aLinux server called a Puppet master  
+free open-source version with paid versions available  
+Puppet also uses several important text files with different components
+</code></pre><p>Manifest: This is a human-readable text file on the Puppet master, using a language
+defined by Puppet, used to define the desired configuration state of a device.
+Resource, Class, Modulelargest component (module) being composed of smaller classes, which are in turn : These terms refer to components of the manifest, with the
+composed of resources.
+Templates: Using a Puppet domain-specific language, these files allow Puppet to
+generate manifests (and modules, classes, and resources) by substituting variables into the template.</p>
+<pre tabindex="0"><code>
+Ansible’s playbooks use an imperative language, whereas Puppet uses a declarative language
+
+with Ansible, the playbook will list tasks and choices based on those results, like  
+“Configure all branch routers in these locations, and if errors occur for any device, do these extra tasks for that device.” Puppet manifests instead declare the end state that  
+a device should have: “This branch router should have the configuration in this file by the end of the process.” The manifest, built by the engineer, defines the end state,  
+and Puppet has the job to cause the device to have that configuration, without being  
+told the specific set of steps to take.  
+uses an agent-based architecture for network device support.  
+Some network devices enable Puppet support via an on-device agent  
+not every Cisco OS supports Puppet agents, so Puppet solves that problem usinga proxy  
+agent running on some external hostuses SSH to communicate with the network device(calledagentless operation). The external agent then
+
+uses a pull model to make that configuration appear in the device  
+Step 1. The engineer creates and edits all the files on the Puppet server.  
+Step 2. The engineereach device. configures and enables the on-device agent or a proxy agent for  
+Step 3. The agent pulls manifest details from the server, which tells the agent what its  
+configuration should be.
+</code></pre><p>configuration should be.
+Step 4. performs additional pulls to get all required detail, with the agent updating the device If the agent device’s configuration should be updated, the Puppet agent
+configuration.</p>
+<pre tabindex="0"><code>
+Chef  
+Chef Automatebeing the product that most people refer to simply as Chef  
+you probablyrun Chef as a server (called server-client mode  
+Chef files that are stored on the Chef server  
+you can also run Chef in standalone mode(calledChef Zero), which is helpful when you’re  
+just getting started and learning in the lab.  
+you create several text files with different components,  
+Resource:The configuration objects whose state is managed by Chef; for instance, a  
+set of configuration commands for a network devicea recipe in a cookbook —analogous to the ingredients in  
+Recipe:TheChef logic applied to resources to determine when, how, and whether to  
+act against the resources—analogous to a recipe in a cookbook  
+Cookbooks: A set of recipes about the same kinds of work, grouped together for  
+easier management and sharing  
+Runlist: Anordered list of recipes that should be run against a given device  
+each managed device (called a Chef node or Chef client) runs an agent. configuration monitoring in that the client pulls recipes and resources from the Chef server The agent performs  
+and then adjusts its configuration to stay in sync with the details in those recipes and runlists  
+Chef requires on-device Chef client code, and many Cisco devices do not support a Chef
+
+Chef requires onclient, so you will likely see more use of Ansible and Puppet for Cisco device configuration -device Chef client code, and many Cisco devices do not support a Chef  
+management.  
+Summary of Configuration Management Tools  
+Ansible appears to have the most interest, then Puppet, and then Chef. Ansible’s agentless  
+architecture and the use of SSH provides support for a wide range of Cisco devices. Puppet’s agentless model also creates wide support for Cisco devices.  
+the column for Puppet assumes an on-device agent.
+
+###### R2 G0/1
+
+2001:DB8:0:1:201:63FF:FEb0:b802  
+R1 G0/1  
+2001:DB8::230:f2FF:FE36:4502
+
+###### 0 1
+
+###### 2 3
+
+###### 4 5
+
+###### 6 7
+
+Wireless  
+It is not possible to configure Layer 2 security on a Guest WLAN
+
+- - WPA + WPA2802.1X
+- - Static WEPStatic WEP + 802.1X
+- - CKIPNone + EAP Passthrough
+</code></pre><p>Layer 2 security</p>
+<pre tabindex="0"><code>
+- - IPSecVPN Pass-Through
+- - Web Authentication (guest)Web Passthrough (guest)
+</code></pre><p>Layer 3 security</p>
+<pre tabindex="0"><code></code></pre><p>Not all layer 2 is compatible with layer 3 so configure layer 2 first
+FlexConnect ACLs</p>
+<pre tabindex="0"><code>
+- - Applied per VLAN and per APConfigured on lightweight AP VLAN interfaces-(if the AP is in flexconnect mode)
+- - Name flexconnect ACLs differently than other ACLs on the WLANSupported on the native vlan
+- - Applied at engress or igress as a whole (each rule cannot be configured differently.Support Implicit deny
+        - - management framescontain SSID
+        - Can be disabled to hide the presence of a wireless network
+</code></pre><p>Beacons</p>
+<pre tabindex="0"><code></code></pre><p>Management Frames</p>
+<pre tabindex="0"><code></code></pre><p>Association Requests&ndash; Sent from wireless client to AP to request wireless accessComes after the client has been authenticated by AP or authentication server</p>
+<pre tabindex="0"><code>
+## Exam Missed
+
+Tuesday, November 30, 2021 8:14 PM
+</code></pre><p>Association Response- Provides answer to Association request</p>
+<pre tabindex="0"><code>
+- - not management frames that contain the SSID of a networkSent by AP or wireless client to terminate an authorized connection
+- Can also end connections between rogue clients and rogue Aps
+</code></pre><p>Deauthentication Frame</p>
+<pre tabindex="0"><code>
+- - Not management frames that contain an SSIDSent by wireless clients to request network information from any ap within transmission range
+- AP the can provide a probe response with the info
+</code></pre><p>Probe Requests</p>
+<pre tabindex="0"><code></code></pre><p>□□ IP and default gatewayDNS server address
+□□ Subnetmask configured on the APAP Identifier
+□ MAC Address</p>
+<pre tabindex="0"><code></code></pre><p>Show ap config general MyLAP - produces general AP configuration output</p>
+<pre tabindex="0"><code></code></pre><p>show ap config global - syslog server settings</p>
+<pre tabindex="0"><code></code></pre><p>Commands</p>
+<pre tabindex="0"><code></code></pre><p>Cisco Autonomous WLAN Solution</p>
+<pre tabindex="0"><code>
+- - Simplifies management and deployment of WAPs in a Cisco Autonomous WLAN solutionDynamic RF management
+- - network securityintrusion detection
+- - selfMonitoring and reporting services-healing capabilities
+</code></pre><p>CiscoWorks Wireless LAN Solution Engine (WLSE)</p>
+<pre tabindex="0"><code></code></pre><p>Wireless Domain Services (WDS)&ndash; IOS feature that can be installed on Aps to allow them to interact with a WLSECollects and aggregates radio info and forwards it to the WLSE</p>
+<pre tabindex="0"><code></code></pre><p>Cisco Unified Wireless Network
+WLC
+Cisco Wireless Services Module (WiSM)&ndash; used on a cisco unified wireless networkInstalled on a certain series of router and/or switch</p>
+<pre tabindex="0"><code>
+Ip arp inspection
+
+- DAI ports are untrusted by default  
+    Automation and Programmability
+- - installed on desktop workstationFree Java based application
+- Does not support SDA
+- Cisco Network assistant
+- DNA Center- Accessed via browser
+- Prime infastructure-- Does not support SDABrowser based GUI
+    - - used to communicate with an SDN application planeEncode data in XML or JSON
+    - Can be northbound or southbound APIs
+- REST APIs
+
+IP Connectivity
+</code></pre><p>▪▪ cost = reference bandwidth / interface bandwidthdefault reference bandwidth is 100 mbps
+▪ 100 mbps or higher will default to a cost of 1 because of this formula</p>
+<pre tabindex="0"><code>
+- OSPF- Formula to determine cost
+</code></pre><p>Five OSPF Network types</p>
+<pre tabindex="0"><code>
+- - Enabled on Fiber Distributed Data Interface (FDDI)Enabled on Ethernet Interfaces
+- - DR and BDR elections are performedMulticast updates are sent
+- - Manual configuration of neighbor routers with the **ip ospf network broadcast** command to configure **neighbor** command is not needed
+- Broadcast
+- - Enabled on frame Relay and X.25 InterfacesDR and BDR elections are performed
+- - No multicastsneeds manual configurations of neighbor routers with the **neighbor** command
+- - Hello 30 dead 120Non broadcast Multi Access network (NBMA)
+- Nonbroadcast
+
+- - Non broadcast Multi Access network (NBMA) **ip ospf network non-broadcast** to configure
+- - DR and BDR elections are not performed10 hello 40 dead
+- - **ip ospf network pointHDLC and PPP -to-point**
+- point-to-point
+- - DR and BDR elections are not performedMulticast updates are sent
+- - manual configurations with hello 30 dead 120 **neighbor** command are not required
+- **ip ospf network point-to-multipoint**
+- point-to-multipoint
+- - DR and BDR elections are not performedno multicasts
+- - manual configuration with the Hello 30 Dead 120 **neighbor** command is needed
+- ip ospf network point-to-multipoint nonbroadcast
+- Point-to-multipoint nonbroadcast
+</code></pre><p>FHRPs</p>
+<pre tabindex="0"><code>
+- - RFC 2281Multiple routers are assigned an HSRP group
+- - Routers function as a single gatewayOne active router (highest priority) and one standby router (second highest priority)
+- - Other routers in the group are in the listen state (new elections if active router fails)VMAC: 0000:5E00:0101
+
+###### HSRP
+
+- - Configure multiple routers as a GLBP groupRouters in group receive traffic that is sent to a virtual IP address configured for the group
+- - Each group contains a Active Virtual Gateway (AVG) (highest priority or highest IP)Other routers in group are configured as primary (up to 4) or secondary active virtual forwarders (AVFs)
+- - Primary AVfs can participate in forwarding traffic (load balancing)VMAC: 0007:B400:0102
+
+###### GLBP
+
+- - Virtual MAC: 0000.5E00.01xx (xx would be the group number)Supported by Cisco and non cisco devices
+- - Routers are assigned to a VRRP groupOne master router (highest priority)□ group functions as a single gateway for clients
+- - All other routers in group are backup routersVMAC: 0000:5E00:0101
+
+###### VRRP
+
+Network Access  
+IP Phone Class of Service (CoS) value
+
+- Cisco IP phones assign CoS priority value of 0 (worst) to traffic received from a host on a access port (changing the value that the host sent the data with)
+- Voice traffic is vulnerable to degradation and deterioration if traffic is sent unevenly
+
+- - Voice traffic is vulnerable to degradation and deterioration if traffic is sent unevenly802.1p
+- - Ip Phones support QoSQos uses the CoS value to prioritize the forwarding of voice and data packets
+- if the data packets from the node connected to the phone have a higher priority than voice traffic on the phone, data packets could take precedence
+- - Voice data traffic on phones is 5 by defaultVoice signaling traffic is 3 by default
+- Can configure the phone so that it does not override CoS values coming from the host for mission critical data
+    - any VTP advertisements received by transparentregardless of domain name configuration -mode switches will be forwarded on all trunk ports
+    - **vtp version 2**
+
+###### - VTP V2
+
+###### VTP
+
+Network Fundamentals
+
+- - Uses spine and leaf topologyNetwork application policies are defines on APIC and implemented by spine and leaf nodes
+- Spine and leaf- optimized for east-west data transfer
+
+###### - ACI
+
+- **power inline police** □ when PD attempts to draw more that the cutoff power the interface will errdisable and a log message will be sent to the console.command
+- errdisable recovery cause inline-power
+- **power inline police action log** □ Interface will restart if there is a PD issue and send a log to the console
+</code></pre><p>PoE- Power policing</p>
+<pre tabindex="0"><code>
+Security Fundementals  
+VPN IPSec encryption process (site-to-site)
+
+- - session key is added to data portion of packetVPN and IP headers are encapsulated onto the packet
+- - The packet is sentreceiving device decrypts the device with the session key
+</code></pre>
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/davidvargasxyz" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://keybase.io/" target="_blank" rel="noopener noreferrer me"
+    title="Keybase">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 76.3" version="1.1" fill="currentColor" stroke="none">
+    <path
+        d="M6.68 73.99c-.6-1.3-1.4-3.1-1.8-4l-.6-1.7-2 2.2-2 2.2-.2-4.2c-.3-6 .2-12.2 1.2-16.6 2.3-9.8 9.5-18.7 18.8-23.4l2.1-1-.5-1.5c-.3-.8-.6-2.5-.7-3.6l-.2-2.1-2.1-.2c-3.2-.3-4.9-1.2-6-3.5-.6-1.2-.6-1.4-.4-4.6.2-4.2.5-5.1 1.8-6.5 1.6-1.8 2.7-2.1 6.7-1.9 2.9.2 3.5.3 4.8.9.8.4 1.5.8 1.6.8.1 0 1-1.1 2.1-2.6l1.9-2.7 1.2.7c.7.4 1.5.9 1.9 1.1l.7.4-.6 1.5c-.3.8-.7 2.2-.8 2.9l-.2 1.4 1.7.2c6.1.6 10.7 4.3 12.4 9.9.5 1.8.5 5.3 0 7-.5 1.6-.5 1.7-.1 1.7.7 0 5.4 2.3 7.3 3.5 3.7 2.4 8 6.6 10.4 10.2 4.5 6.7 6.4 14 5.6 22-.4 4.8-1.3 8.6-2.9 12.3l-.6 1.4h-5l1.2-2.4c1.3-2.6 2.3-6.2 2.8-9.4.3-2.2.4-8.2.1-9.3l-.2-.7-1.3 1.4c-3.2 3.5-7.9 4.5-14.2 2.8-5.4-1.4-7.6-1.7-12.7-1.7-3.9 0-5.2.1-7.3.6-5.8 1.3-9.9 3.2-15.6 7.3-2.1 1.5-3.8 2.7-3.9 2.7-.1 0 .2-1 .6-2.3.4-1.3 1.1-3.4 1.5-4.8l.8-2.5-.9.9c-.5.5-1.9 1.9-3.1 3.2l-2.1 2.3.5 1.9c.6 2.5 2 5.6 3.5 7.9.6 1 1.1 1.8 1.1 1.9s-1.2.1-2.6.1h-2.6l-1.1-2.1zm8.8-24.2c4.8-5.1 8.7-9.2 8.8-9.2.1.1-.4 1.6-.9 3.3-3.3 10.4-4 12.4-3.9 12.5 0 0 1.2-.4 2.5-.9 8.5-3.7 18.4-4.2 28.9-1.4 4.7 1.2 6.5 1.2 8.8 0 1.3-.7 1.8-1.1 2.4-2.1 1.1-1.7 1.2-4.1.5-6.3-1.7-4.8-8.3-11-14.5-13.7-3.2-1.4-3.4-1.4-4.1-.7l-.6.6 2.6 3.2c1.4 1.7 2.9 3.6 3.1 4.1.6 1.2.7 3.1.1 4.3-.8 1.7-3.2 2.9-5.1 2.5-.8-.2-1.1-.1-1.9.5-2.2 1.6-4.6 1.2-6.6-1.2-1.6-1.8-2-2.7-2.1-4.5 0-.9-.3-2-.5-2.4-.3-.6-.4-1.3-.4-2.2l.1-1.4-1.3-.3c-1.8-.5-3.9-1.5-5.1-2.4-.6-.4-1.1-.8-1.3-.8s-1.5.6-2.9 1.3c-9.7 5-16 14.3-17 24.8-.1 1-.2 2.3-.3 2.8l-.1.9 1.1-1.1c.5-.5 4.9-5.1 9.7-10.2zm25.9-7.4c.9-.7 1.7-1.3 1.9-1.3.1 0 .4.3.7.7.5.8 1.4.8 1.8.1.3-.5.3-.6-5.6-7.8-3.5-4.3-4.2-5-4.7-5-1.2.1-.9 1 1 3.3l1.8 2.2-1 .8c-1.1 1-1.2 1.2-.5 1.8.5.5.6.4 1.6-.3l1.1-.7.7.6c.4.3.6.8.6.9 0 .2-.8.9-1.7 1.7-.9.7-1.6 1.5-1.6 1.7 0 .3.5 1.1 1.4 2.2.3.6.8.4 2.5-.9zm-10.3-14.2c.6-1.8 2.6-3.2 4.6-3.2 1.1 0 2.7.9 3.8 2.1l1 1.2.9-1.1c2.5-2.8 2.8-6.7.8-10.1-1.5-2.5-4.3-4-8.2-4.4-2.1-.2-2.6-.4-3.7-1.5l-.8-.8-.4.6c-.8 1.2-2.5 5.1-3 6.6-.7 2.3-.4 5.9.5 7.7.9 1.7 3.3 4 4 3.7.1.1.3-.3.5-.8zm-8.9-13.6c.2-.5.7-1.8 1.2-2.8.5-1 .9-2 .9-2.3 0-.9-1-1.3-3.7-1.5-2.4-.2-2.6-.1-3.1.4-.4.4-.6.9-.6 1.6 0 .6-.1 1.7-.2 2.6-.2 2.1.1 2.5 2.2 2.8 3.1.2 3 .2 3.3-.8zm-3.1-2.4c0-1.7.2-1.9 1.6-1.9h1.3v2.8h-2.8v-.9zm6.3 58.3c-.6-.6-.8-1-.8-2 0-1.9 1.1-3 2.9-3 1.7 0 2.9 1.2 2.9 2.9 0 1.8-1.1 2.8-3 2.9-1 0-1.4-.2-2-.8zm19.3.3a2.93 2.93 0 011.8-5.3c1.8 0 2.8 1.1 2.9 3 0 1.1-.1 1.4-.8 2s-1 .8-2 .8c-.9 0-1.5-.2-1.9-.5z" />
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2024 David Vargas.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

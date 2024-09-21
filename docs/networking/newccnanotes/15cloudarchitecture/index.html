@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | David Vargas</title>
+<meta property="og:title" content=" | David Vargas" />
+<meta name="twitter:title" content=" | David Vargas" />
+<meta itemprop="name" content=" | David Vargas" />
+<meta name="application-name" content=" | David Vargas" />
+<meta property="og:site_name" content="davidvargas.xyz" />
+
+<meta name="description" content="David Vargas&#39;s blog">
+<meta itemprop="description" content="David Vargas&#39;s blog" />
+<meta property="og:description" content="David Vargas&#39;s blog" />
+<meta name="twitter:description" content="David Vargas&#39;s blog" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en-gb" href="https://davidvargas.xyz/networking/newccnanotes/15cloudarchitecture/" title="" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.134.3">
+
+    
+    <meta property="og:url" content="https://davidvargas.xyz/networking/newccnanotes/15cloudarchitecture/">
+  <meta property="og:site_name" content="David Vargas">
+  <meta property="og:title" content="David Vargas">
+  <meta property="og:description" content="15 Cloud Architecture 1.0 Network Fundamentals 1.1 Explain the role and function of network components 1.1.g Servers 1.2 Describe the characteristics of network topology architectures 1.2.f On-premises and cloud 1.12 Explain virtualization fundamentals (virtual machines)
+It it has a variety of network access options; and it can be measured and billed back to the user based on can be requested on-demand; it can dynamically scale (that is, it is elastic); it uses a pool of resources; the amount used. Cisco Server Hardware Cisco expanded its product line into the server market, with the Cisco Unified Computing System (UCS) product line Server Virtualization Basics">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="networking">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="David Vargas">
+  <meta name="twitter:description" content="15 Cloud Architecture 1.0 Network Fundamentals 1.1 Explain the role and function of network components 1.1.g Servers 1.2 Describe the characteristics of network topology architectures 1.2.f On-premises and cloud 1.12 Explain virtualization fundamentals (virtual machines)
+It it has a variety of network access options; and it can be measured and billed back to the user based on can be requested on-demand; it can dynamically scale (that is, it is elastic); it uses a pool of resources; the amount used. Cisco Server Hardware Cisco expanded its product line into the server market, with the Cisco Unified Computing System (UCS) product line Server Virtualization Basics">
+
+
+    
+
+    <link rel="canonical" href="https://davidvargas.xyz/networking/newccnanotes/15cloudarchitecture/">
+    <link href="/style.min.1915b95fdbf4046da0032dde0fb966271ed904fa9c019f9a326d7ce001902895.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://davidvargas.xyz/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://davidvargas.xyz/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/notes/">
+                        notes
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/readings/">
+                        readings
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about">
+                        about
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            
+            <div class="page-content">
+                <h1 id="15-cloud-architecture">15 Cloud Architecture</h1>
+<p>1.0 Network Fundamentals
+1.1 Explain the role and function of network components
+1.1.g Servers
+1.2 Describe the characteristics of network topology architectures
+1.2.f On-premises and cloud
+1.12 Explain virtualization fundamentals (virtual machines)</p>
+<p>It it has a variety of network access options; and it can be measured and billed back to the user based on can be requested on-demand; it can dynamically scale (that is, it is elastic); it uses a pool of resources;
+the amount used.
+Cisco Server Hardware
+Cisco expanded its product line into the server market, with the Cisco Unified Computing System (UCS) product line
+Server Virtualization Basics</p>
+<pre tabindex="0"><code></code></pre><p>The the settings for the VMhypervisor manages and allocates the host hardware (CPU, RAM, etc.) to each VM based on
+few of the vendors and product family names associated with virtualized data centers:
+○ VMware vCenter
+○ Microsoft HyperV</p>
+<pre tabindex="0"><code>
+### 15 Cloud Architecture
+
+Thursday, October 28, 2021 6:57 AM
+
+○ Citrix XenServer  
+○ Red Hat KVM  
+Networking with Virtual Switches on a Virtualized Host  
+in VMware’s virtualization systems, the VM’s virtual NIC goes by the name vNIC.)  
+virtual switch, or vSwitch
+</code></pre><p>Ports connected to VMs or share the same VLAN with other VMs, or even use VLAN trunking to the VM itself.: The vSwitch can configure a port so that the VM will be in its own VLAN,
+Ports connected to physical NICs: that the switch is adjacent to the external physical LAN switch. The vSwitch can (and likely does) The vSwitch uses the physical NICs in the server hardware so
+use VLAN trunking.
+Automated configuration: virtualization software that controls the VMs. That programmability allows the virtualization The configuration can be easily done from within the same
+software to move VMs between hosts (servers) and reprogram the vSwitches so that the VM has the same networking capabilities no matter where the VM is running.</p>
+<pre tabindex="0"><code>
+The Physical Data Center Network
+</code></pre><p>each host is cabled to two different switches in the top of the rackswitches—to provide redundant paths into the LAN. Each ToR switch acts as an access layer —called Top of Rack (ToR)
+switch from a design perspective. Each ToR switch is then cabled to an End of Row (EoR) switch, which acts as a distribution switch and also connects to the rest of the network.</p>
+<pre tabindex="0"><code>
+Cisco Application Centric Infrastructure (ACI). ACI places the server and switch hardware into racks, but cables the switches with a different topology—a topology required for proper operation  
+of the ACI fabric  
+Workflow with a Virtualized Data Center
+
+Cloud Computing Services  
+five criteria for a cloud computing service  
+**On** without any direct interaction with the provider of the service. **- demand self-service:** The IT consumer chooses when to start and stop using the service,  
+**Broad network access** many types of networks (including the Internet).: The service must be available from many types of devices and over  
+**Resource pooling:** servers for use only by certain consumers) and dynamically allocates resources from that The provider creates a pool of resources (rather than dedicating specific  
+pool for each new request from a consumer.  
+**Rapid elasticity:** expands quickly, so it is called elastic), and the requests for new service are filled quickly.To the consumer, the resource pool appears to be unlimited (that is, it  
+**Measured service:** consumer, both for transparency and for billing.The provider can measure the usage and report that usage to the  
+Private Cloud (On-Premise)  
+cloud services catalog. That catalog exists for the user as a web application that lists anything that can be requested via the company’s cloud infrastructure.
+</code></pre><p>Public Cloud</p>
+<pre tabindex="0"><code>
+Cloud and the “As a Service” Model  
+Infrastructure as a Service
+</code></pre><p>Software as a Service</p>
+<pre tabindex="0"><code></code></pre><p>(Development) Platform as a Service
+like IaaS in some ways. Both supply the consumer with one or more VMs, with a configurable amount of CPU, RAM, and other resources.
+includes many more software tools beyond the basic OS.</p>
+<pre tabindex="0"><code></code></pre><p>often include an integrated development environment (IDE)
+include continuous integration tools that allow the developer to update code and have that code automatically tested and integrated into a larger software project. Examples include
+Google’s App Engine PaaS offering (integrated development environment (see <a href="https://cloud.google.com/appenginewww.eclipse.org)">https://cloud.google.com/appenginewww.eclipse.org)</a>, and the Jenkins continuous ), the Eclipse
+integration and automation tool (see <a href="https://jenkins.io">https://jenkins.io</a>).</p>
+<pre tabindex="0"><code>
+WAN Traffic Paths to Reach Cloud Services  
+Accessing Public Cloud Services Using the Internet
+</code></pre><p>Pros and Cons with Connecting to Public Cloud with Internet
+good reasons to use the Internet as the WAN connection to a public cloud service:
+Agility to order a private WAN connection to the cloud provider because cloud : An enterprise can get started using public cloud without having to wait
+providers support Internet connectivity.
+Migration another more easily because cloud providers all connect to the Internet.: An enterprise can switch its workload from one cloud provider to
+Distributed user Internet with their devices (as in the sales SaaS app example).s: The enterprise’s users are distributed and connect to the
+negatives for using the Internet for public cloud access
+Security “man in the middle” can attempt to read the contents of data that passes : The Internet is less secure than private WAN connections in that a
+to/from the public cloud.
+Capacity traffic, so the question of whether the enterprise’s Internet links can handle the : Moving an internal application to the public cloud increases network
+additional load needs to be considered.
+Quality of Service (QoS): WANs can. Using the Internet may result in a worse user experience than The Internet does not provide QoS, whereas private
+desired because of higher delay (latency), jitter, and packet loss.</p>
+<pre tabindex="0"><code>
+**No WAN SLA:** WAN performance and availability to all destinations of a network. WAN service ISPs typically will not provide a service-level agreement (SLA) for  
+providers are much more likely to offer performance and availability SLAs  
+Private WAN and Internet VPN Access to Public Cloud
+</code></pre><p>Cisco makes the that runs as a VM in a cloud service, controlled by the cloud consumer, to do various Cloud Services Router (CSR )to do exactly that: to be a router, but a router
+functions that routers do, including terminating VPNs.
+Pros and Cons of Connecting to Cloud with Private WANs</p>
+<pre tabindex="0"><code></code></pre><p>more secure</p>
+<pre tabindex="0"><code></code></pre><p>Pros</p>
+<pre tabindex="0"><code></code></pre><p>Cons
+Installing the new private WAN connections takes time, delaying when a company gets started in cloud computing
+cost more than using the Internet
+migrating to a new cloud provider can require another round of private WAN installation, again delaying work projects</p>
+<pre tabindex="0"><code>
+Intercloud Exchanges  
+a cloud consumer can move his workload from one cloud provider to another  
+using a private WAN for the cloud is that it adds another barrier to migrating to a new public cloud provider. One solution adds easier migration to the use of a private WAN through a  
+cloud service called an intercloud exchange (or simply an intercloud)  
+a company that creates a private network as a service
+</code></pre><p>you get the same benefits as when connecting with a private WAN connection to a public cloud, but with the additional pro of easier migration to a new cloud provider. The main con
+is that using an intercloud exchange introduces another company into the mix.</p>
+<p>Migrating Traffic Flows When Migrating to Email SaaS</p>
+<p>Branch Offices with Internet and Private WAN</p>
+<h1 id="16-controller-based-networking">16 Controller-Based Networking</h1>
+<p>1.0 Network Fundamentals<br>
+1.1 Explain the role and function of network components<br>
+1.1.f Endpoints<br>
+1.1.g Servers<br>
+1.2 Describe characteristics of network topology architectures<br>
+1.2.c Spine-leaf<br>
+6.0 Automation and Programmability<br>
+6.1 Explain how automation impacts network management<br>
+6.2 Compare traditional networks with controller-based networking<br>
+6.3 Describe controller-based and software defined architectures (overlay, underlay, and fabric)<br>
+6.3.a Separation of control plane and data plane<br>
+6.3.b Northbound and southbound APIs</p>
+<p>SDN makes use of a controller that centralizes some network functions.<br>
+controllers enable programs to automatically configure and operate networks through power application programming interfaces (APIs).</p>
+<p>The Data Plane<br>
+the tasks that a networking device does to forward a message.<br>
+anything to do with receiving data, processing it, and forwarding that same data<br>
+frame, a packet, or, more generically, a message<br>
+often called the forwarding plane.<br>
+actions that a networking device does that fit into the data plane:<br>
+De-encapsulating and re-encapsulating a packet in a data-link frame (routers, Layer 3<br>
+switches)</p>
+<h6 id="heading">○</h6>
+<pre tabindex="0"><code>○ Adding or removing an 802.1Q trunking header (routers and switches)
+Matching an Ethernet frame’s destination Media Access Control (MAC) address to the MAC
+</code></pre>
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/davidvargasxyz" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://keybase.io/" target="_blank" rel="noopener noreferrer me"
+    title="Keybase">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 76.3" version="1.1" fill="currentColor" stroke="none">
+    <path
+        d="M6.68 73.99c-.6-1.3-1.4-3.1-1.8-4l-.6-1.7-2 2.2-2 2.2-.2-4.2c-.3-6 .2-12.2 1.2-16.6 2.3-9.8 9.5-18.7 18.8-23.4l2.1-1-.5-1.5c-.3-.8-.6-2.5-.7-3.6l-.2-2.1-2.1-.2c-3.2-.3-4.9-1.2-6-3.5-.6-1.2-.6-1.4-.4-4.6.2-4.2.5-5.1 1.8-6.5 1.6-1.8 2.7-2.1 6.7-1.9 2.9.2 3.5.3 4.8.9.8.4 1.5.8 1.6.8.1 0 1-1.1 2.1-2.6l1.9-2.7 1.2.7c.7.4 1.5.9 1.9 1.1l.7.4-.6 1.5c-.3.8-.7 2.2-.8 2.9l-.2 1.4 1.7.2c6.1.6 10.7 4.3 12.4 9.9.5 1.8.5 5.3 0 7-.5 1.6-.5 1.7-.1 1.7.7 0 5.4 2.3 7.3 3.5 3.7 2.4 8 6.6 10.4 10.2 4.5 6.7 6.4 14 5.6 22-.4 4.8-1.3 8.6-2.9 12.3l-.6 1.4h-5l1.2-2.4c1.3-2.6 2.3-6.2 2.8-9.4.3-2.2.4-8.2.1-9.3l-.2-.7-1.3 1.4c-3.2 3.5-7.9 4.5-14.2 2.8-5.4-1.4-7.6-1.7-12.7-1.7-3.9 0-5.2.1-7.3.6-5.8 1.3-9.9 3.2-15.6 7.3-2.1 1.5-3.8 2.7-3.9 2.7-.1 0 .2-1 .6-2.3.4-1.3 1.1-3.4 1.5-4.8l.8-2.5-.9.9c-.5.5-1.9 1.9-3.1 3.2l-2.1 2.3.5 1.9c.6 2.5 2 5.6 3.5 7.9.6 1 1.1 1.8 1.1 1.9s-1.2.1-2.6.1h-2.6l-1.1-2.1zm8.8-24.2c4.8-5.1 8.7-9.2 8.8-9.2.1.1-.4 1.6-.9 3.3-3.3 10.4-4 12.4-3.9 12.5 0 0 1.2-.4 2.5-.9 8.5-3.7 18.4-4.2 28.9-1.4 4.7 1.2 6.5 1.2 8.8 0 1.3-.7 1.8-1.1 2.4-2.1 1.1-1.7 1.2-4.1.5-6.3-1.7-4.8-8.3-11-14.5-13.7-3.2-1.4-3.4-1.4-4.1-.7l-.6.6 2.6 3.2c1.4 1.7 2.9 3.6 3.1 4.1.6 1.2.7 3.1.1 4.3-.8 1.7-3.2 2.9-5.1 2.5-.8-.2-1.1-.1-1.9.5-2.2 1.6-4.6 1.2-6.6-1.2-1.6-1.8-2-2.7-2.1-4.5 0-.9-.3-2-.5-2.4-.3-.6-.4-1.3-.4-2.2l.1-1.4-1.3-.3c-1.8-.5-3.9-1.5-5.1-2.4-.6-.4-1.1-.8-1.3-.8s-1.5.6-2.9 1.3c-9.7 5-16 14.3-17 24.8-.1 1-.2 2.3-.3 2.8l-.1.9 1.1-1.1c.5-.5 4.9-5.1 9.7-10.2zm25.9-7.4c.9-.7 1.7-1.3 1.9-1.3.1 0 .4.3.7.7.5.8 1.4.8 1.8.1.3-.5.3-.6-5.6-7.8-3.5-4.3-4.2-5-4.7-5-1.2.1-.9 1 1 3.3l1.8 2.2-1 .8c-1.1 1-1.2 1.2-.5 1.8.5.5.6.4 1.6-.3l1.1-.7.7.6c.4.3.6.8.6.9 0 .2-.8.9-1.7 1.7-.9.7-1.6 1.5-1.6 1.7 0 .3.5 1.1 1.4 2.2.3.6.8.4 2.5-.9zm-10.3-14.2c.6-1.8 2.6-3.2 4.6-3.2 1.1 0 2.7.9 3.8 2.1l1 1.2.9-1.1c2.5-2.8 2.8-6.7.8-10.1-1.5-2.5-4.3-4-8.2-4.4-2.1-.2-2.6-.4-3.7-1.5l-.8-.8-.4.6c-.8 1.2-2.5 5.1-3 6.6-.7 2.3-.4 5.9.5 7.7.9 1.7 3.3 4 4 3.7.1.1.3-.3.5-.8zm-8.9-13.6c.2-.5.7-1.8 1.2-2.8.5-1 .9-2 .9-2.3 0-.9-1-1.3-3.7-1.5-2.4-.2-2.6-.1-3.1.4-.4.4-.6.9-.6 1.6 0 .6-.1 1.7-.2 2.6-.2 2.1.1 2.5 2.2 2.8 3.1.2 3 .2 3.3-.8zm-3.1-2.4c0-1.7.2-1.9 1.6-1.9h1.3v2.8h-2.8v-.9zm6.3 58.3c-.6-.6-.8-1-.8-2 0-1.9 1.1-3 2.9-3 1.7 0 2.9 1.2 2.9 2.9 0 1.8-1.1 2.8-3 2.9-1 0-1.4-.2-2-.8zm19.3.3a2.93 2.93 0 011.8-5.3c1.8 0 2.8 1.1 2.9 3 0 1.1-.1 1.4-.8 2s-1 .8-2 .8c-.9 0-1.5-.2-1.9-.5z" />
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2024 David Vargas.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script src="https://davidvargas.xyz/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>

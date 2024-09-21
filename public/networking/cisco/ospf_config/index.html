@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | David Vargas</title>
+<meta property="og:title" content=" | David Vargas" />
+<meta name="twitter:title" content=" | David Vargas" />
+<meta itemprop="name" content=" | David Vargas" />
+<meta name="application-name" content=" | David Vargas" />
+<meta property="og:site_name" content="davidvargas.xyz" />
+
+<meta name="description" content="David Vargas&#39;s blog">
+<meta itemprop="description" content="David Vargas&#39;s blog" />
+<meta property="og:description" content="David Vargas&#39;s blog" />
+<meta name="twitter:description" content="David Vargas&#39;s blog" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/networking/cisco/ospf_config/" title="" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.134.3">
+
+    
+    <meta property="og:url" content="http://localhost:1313/networking/cisco/ospf_config/">
+  <meta property="og:site_name" content="David Vargas">
+  <meta property="og:title" content="David Vargas">
+  <meta property="og:description" content="OSPF Config
+This chapter covers the following exam topics:
+3.0 IP Connectivity
+3.2 Determine how a router makes a forwarding decision by default
+3.2.b Administrative distance
+3.2.c Routing protocol metric
+3.4 Configure and verify single area OSPFv2
+3.4.a Neighbor adjacencies
+3.4.b Point-to-point
+3.4.c Broadcast (DR/BR selection)
+3.4.d Router ID
+Implementing Single-Area OSPFv2
+Step 1. Use the router ospf process-id global command to enter OSPF configuration mode for a particular OSPF process.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="networking">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="David Vargas">
+  <meta name="twitter:description" content="OSPF Config
+This chapter covers the following exam topics:
+3.0 IP Connectivity
+3.2 Determine how a router makes a forwarding decision by default
+3.2.b Administrative distance
+3.2.c Routing protocol metric
+3.4 Configure and verify single area OSPFv2
+3.4.a Neighbor adjacencies
+3.4.b Point-to-point
+3.4.c Broadcast (DR/BR selection)
+3.4.d Router ID
+Implementing Single-Area OSPFv2
+Step 1. Use the router ospf process-id global command to enter OSPF configuration mode for a particular OSPF process.">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/networking/cisco/ospf_config/">
+    <link href="/style.min.1915b95fdbf4046da0032dde0fb966271ed904fa9c019f9a326d7ce001902895.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/notes/">
+                        notes
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/readings/">
+                        readings
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about">
+                        about
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>OSPF Config</p>
+<p>This chapter covers the following exam topics:</p>
+<p>3.0 IP Connectivity</p>
+<p>3.2 Determine how a router makes a forwarding decision by default</p>
+<p>3.2.b Administrative distance</p>
+<p>3.2.c Routing protocol metric</p>
+<p>3.4 Configure and verify single area OSPFv2</p>
+<p>3.4.a Neighbor adjacencies</p>
+<p>3.4.b Point-to-point</p>
+<p>3.4.c Broadcast (DR/BR selection)</p>
+<p>3.4.d Router ID</p>
+<p>Implementing Single-Area OSPFv2</p>
+<p>Step 1. Use the router ospf process-id global command to enter OSPF configuration mode for a particular OSPF process.</p>
+<p>Step 2. (Optional) Configure the OSPF router ID by doing the following:</p>
+<p>A. Use the router-id id-value router subcommand to define the router ID, or</p>
+<p>B. Use the interface loopback number global command, along with an ip address address mask command, to configure an IP address on a loopback interface (chooses the highest IP address of all working loopbacks), or</p>
+<p>C. Rely on an interface IP address (chooses the highest IP address of all working nonloopbacks).</p>
+<p>Step 3. Use one or more network ip-address wildcard-mask area area-id router subcommands to enable OSPFv2 on any interfaces matched by the configured address and mask, enabling OSPF on the interface for the listed area.</p>
+<p>OSPF Single-Area Configuration</p>
+<p>for each matched interface, the router enables OSPF on those interfaces, discovers neighbors, creates neighbor relationships, and assigns the interface to the area listed in the network command.</p>
+<p>Verifying OSPF Operation</p>
+<p>The show ip ospf neighbor, show ip ospf database, and show ip route commands display information to match each of these three steps, respectively.</p>
+<p>network and
+ip ospf Commands
+s Enabled</p>
+<ul>
+<li>Interfaces
+Discover
+with Hello
+Neighbors
+Flood LSAs
+LSDB
+SPF Calculation
+RIB
+Admin Distance
+Routes
+Figure 20-3 OSPF Verification Commands
+show
+show
+show
+show
+Show
+show
+show
+show
+show
+show
+show
+show
+show
+running —config
+protocol s
+ip
+ip
+ip
+ip
+ip
+ip
+ip
+ospf
+ospf
+ospf
+ospf
+ospf
+ospf
+ospf
+interface
+interface type number
+interface brief
+neighbor
+neighbor type number
+database
+rib
+route
+route
+route
+ospf
+subnet mask
+section subnet &ldquo;&gt;</li>
+</ul>
+<p>FULL/  -: The neighbor state is full, with the “-“ instead of letters meaning that the link does not use a DR/BDR.</p>
+<p>FULL/DR: The neighbor state is full, and the neighbor is the DR.</p>
+<p>FULL/BDR: The neighbor state is full, and the neighbor is the backup DR (BDR).</p>
+<p>FULL/DROTHER: The neighbor state is full, and the neighbor is neither the DR nor BDR. (It also implies that the local router is a DR or BDR because the state is FULL.)</p>
+<p>2WAY/DROTHER: The neighbor state is 2-way, and the neighbor is neither the DR nor BDR—that is, a DROther router. (It also implies that the local router is also a DROther router because otherwise the state would reach a full state.)</p>
+<p>Verifying OSPF Configuration</p>
+<p>If you have enable mode access, use the show running-config command to examine the configuration.</p>
+<p>If you have only user mode access, use the show ip protocols command to re-create the OSPF configuration.</p>
+<p>Use the show ip ospf interface [brief] command to determine whether the router enabled OSPF on the correct interfaces or not based on the configuration.</p>
+<p>show ip ospf interface brief command shown here. It lists one line per interface, with the list showing all the interfaces on which OSPF has been enabled</p>
+<p>the show ip ospf interface command with the brief keyword at the end lists a single line of output per interface, but the show ip ospf interface command (without the brief keyword) displays about 20 lines of output per interface</p>
+<p>Configuring the OSPF Router ID</p>
+<p>most enterprise networks that use OSPF choose to configure each router’s OSPF router ID</p>
+<p>If the router-id rid OSPF subcommand is configured, this value is used as the RID.</p>
+<p>If any loopback interfaces have an IP address configured, and the interface has an interface status of up, the router picks the highest numeric IP address among these loopback interfaces.</p>
+<p>The router picks the highest numeric IP address from all other interfaces whose interface status code (first status code) is up. (In other words, an interface in up/down state will be included by OSPF when choosing its router ID.)</p>
+<p>stops and restarts the OSPF process (with the clear ip ospf process command). So, if OSPF comes up, and later the configuration changes in a way that would impact the OSPF RID, OSPF does not change the RID immediately. Instead, IOS waits until the next time the OSPF process is restarted.</p>
+<p>OSPF Interface Configuration Example</p>
+<p>Step 1. Use the no network network-id area area-id subcommands in OSPF configuration mode to remove the network commands.</p>
+<p>Step 2. Add one ip ospf process-id area area-id command in interface configuration mode under each interface on which OSPF should operate, with the correct OSPF process (process-id) and the correct OSPF area number.</p>
+<p>Verifying OSPF Interface Configuration</p>
+<p>The show ip protocols command relists most of the routing protocol configuration, so it does list some different details if you use interface configuration versus the network command</p>
+<p>face Configuration
+Click here to view code image
+! First, with the new interface configuration
+RI* show ip ospf interface ge/0/0
+GigabitEthernete/0/e is up, line protocol is up
+Internet Address 10.1.12.1/24, Area e, Attached via Interface Enab
+! Lines omitted for brevity
+! For comparison, the old results with the use of the OSPF network c
+RI* show ip ospf interface ge/0/0
+GigabitEthernete/0/e is up, line protocol is up
+Internet Address 10.1.12.1/24, Area e, Attached via Network Statem
+. ending line omitted for brevity &ldquo;&gt;</p>
+<p>Additional OSPFv2 Features</p>
+<p>Passive interfaces</p>
+<p>Default routes</p>
+<p>Metrics</p>
+<p>Load balancing</p>
+<p>OSPF Passive Interfaces</p>
+<p>When no routers exist on a link</p>
+<p>OSPF continues to advertise about the subnet that is connected to the interface.</p>
+<p>OSPF no longer sends OSPF Hellos on the interface.</p>
+<p>OSPF no longer processes any received Hellos on the interface.</p>
+<p>OSPF still advertises about the connected subnet, but OSPF also does not form neighbor relationships over the interface.</p>
+<p>First, you can add the following command to the configuration of the OSPF process, in router configuration mode:</p>
+<p>passive-interface type number</p>
+<p>Alternately, the configuration can change the default setting so that all interfaces are passive by default and then add a no passive-interface command for all interfaces that need to not be passive:</p>
+<p>passive-interface default</p>
+<p>no passive-interface type number</p>
+<p>Click here to view code image
+! First, make each subinterface passive directly
+router ospf 1
+passive-interface GigabitEthernetø/ø.1
+passive-interface GigabitEthernetø/0.2
+! Or, change the default to passive, and make the other interfaces n
+router ospf 1
+passive-interface default
+no passive-interface GigabitEthernetØ/Ø/0
+no passive-interface GigabitEthernetØ/1/0
+no passive-interface GigabitEthernetØ/2/0 &ldquo;&gt;</p>
+<p>The show ip ospf interface brief command lists all interfaces on which OSPF is enabled, including passive interfaces.</p>
+<p>The show ip ospf interface command lists a single line that mentions that the interface is passive.</p>
+<p>OSPF Default Routes</p>
+<p>All routers learn specific (nondefault) routes for subnets inside the company; a default route is not needed when forwarding packets to these destinations.</p>
+<p>One router connects to the Internet, and it has a default route that points toward the Internet.</p>
+<p>All routers should dynamically learn a default route, used for all traffic going to the Internet, so that all packets destined to locations in the Internet go to the one router connected to the Internet.</p>
+<dl>
+<dt>default-information originate command (Step 2) makes the router advertise a default route using OSPF to the remote routers (B1 and B2).</dt>
+<dd>
+<p>default-information originate
+GO/I/O
+GO/O/O
+GO/O/O
+GO/I/O
+GO/3/0
+RI
+192.0.2.1
+Internet
+ISP 1
+ip route 0.0-0.0 0.O.O.0 192.0.2.1</p>
+</dd>
+<dd>default-information originate
+OSPFv2 Advertises Default
+Figure 20-6 Using OSPF to Create and Flood a Default Route &ldquo;&gt;</dd>
+</dl>
+<p>The default-information originate always router subcommand tells the router to always advertise the default route, no matter whether the router’s default route is working or not.</p>
+<p>RI* show ip route static
+static,
+Codes: L -
+local, C -
+connected, S -
+! Rest of the legend omitted for brevity
+RIP, M
+mobile, B
+Gateway of last resort is 192.e.2.1 to network e. e. e. e
+e.e.e.e/e [254/0] via 192.0.2.1 &ldquo;&gt;</p>
+<p>Bl# show ip route ospf
+Codes: L -
+D
+NI -
+El -
+static, R -
+local, C -
+connected, S -</p>
+<ul>
+<li>EIGRP, EX - EIGRP external, O - OSPF,
+RIP, M - mobile, B
+IA - OSPF inter are
+OSPF NSSA external type 1, N2 - OSPF NSSA external type
+OSPF external type 1, E2 - OSPF external type 2
+! Rest of the legend omitted for brevity
+Gateway of last resort is 10.1.12.1 to network e. e. e. e
+O*E2
+o
+o
+e.e.e.e/e [110/1] via le.1.12.1, GigabitEthernete/1
+le.e.e.e/8 is variably subnetted, 6 subnets, 2 masks
+10.1.3.e/24 [lie/3] via le.1.12.1, GigabitEthern
+10.1.13.e/24 [110/2] via 10.1.12.1, GigabitEther &ldquo;&gt;</li>
+</ul>
+<p>OSPF Metrics (Cost)</p>
+<p>Cisco routers allow three different ways to change the OSPF interface cost:</p>
+<p>Directly, using the interface subcommand ip ospf cost x.</p>
+<p>Using the default calculation per interface, and changing the interface bandwidth setting, which changes the calculated value.</p>
+<p>Using the default calculation per interface, and changing the OSPF reference bandwidth setting, which changes the calculated value.</p>
+<p>Click here to view code image
+RI* conf t
+Enter configuration commands, one per
+RI (config)# interface gø,&lsquo;0/0
+RI (config-if)# ip ospf cost 4
+RI (config-if)# interface go/ 1/0
+RI (config-if)# ip ospf cost 5
+RI (config-if)# AZ
+RI* show ip ospf interface brief
+line.
+End with CNTL/Z.
+Interface
+Gie/e.2
+Gie/e.l
+Gie/e/e
+Gie/l/e
+Gie/2/e
+PID
+1
+1
+1
+1
+1
+Area
+e
+e
+e
+e
+e
+IP
+le.
+Address/Mask
+Cost
+1
+1
+4
+5
+1
+State Nb
+le.1.2.1/24
+le.1.1.1/24
+le.1.12.1/24
+le.1.13.1/24
+14.1/24
+DR
+DR
+DR
+BDR
+DR
+1/
+1/
+1/ &ldquo;&gt;</p>
+<p>The output also shows a cost value of 1 for the other Gigabit interfaces, which is the default OSPF cost for any interface faster than 100 Mbps.</p>
+<p>Setting the Cost Based on Interface and Reference Bandwidth</p>
+<p>interface bandwidth setting does not influence the actual transmission speed. Instead, the interface bandwidth acts as a configurable setting to represent the speed of the interface, with the option to configure the bandwidth to match the actual transmission speed…or not</p>
+<p>configuration of the interface bandwidth using bandwidth speed interface subcommand.</p>
+<p>Reference_bandwidth / Interface_bandwidth</p>
+<p>you should avoid changing the interface bandwidth as a means to influence the default OSPF cost.</p>
+<p>any interface with an interface bandwidth of 100 Mbps or faster ties with a calculated OSPF cost of 1 when using the default reference bandwidth. So, when relying on the default OSPF cost calculation, it helps to configure the reference bandwidth to another value.</p>
+<p>Interface
+Serial
+Ethernet
+Fast Ethernet
+Gigabit
+Ethernet
+10 Gigabit
+Ethernet
+100 Gigabit
+Ethernet
+Interface Default Band-
+width (Kbps)
+1544 Kbps
+10,000 Kbps
+100,000 Kbps
+Kbps
+Kbps
+Kbps
+Formula (Kbps)
+100,000 / 1544
+100,000 / 10,000
+OSPF
+Cost
+64
+10
+1
+1
+1
+1 &ldquo;&gt;</p>
+<p>You can still use OSPF’s default cost calculation (and many do) just by changing the reference bandwidth with the auto-cost reference-bandwidth speed OSPF mode subcommand</p>
+<p>For instance, in an enterprise whose fastest links are 10 Gbps (10,000 Mbps), you could set all routers to use auto-cost reference-bandwidth 10000, meaning 10,000 Mbps or 10 Gbps. In that case, by default, a 10-Gbps link would have an OSPF cost of 1, while a 1-Gbps link would have a cost of 10, and a 100-MBps link a cost of 100.</p>
+<p>Set the cost explicitly, using the ip ospf cost x interface subcommand, to a value between 1 and 65,535, inclusive.</p>
+<p>Although it should be avoided, change the interface bandwidth with the bandwidth speed command, with speed being a number in kilobits per second (Kbps).</p>
+<p>Change the reference bandwidth, using router OSPF subcommand auto-cost reference-bandwidth ref-bw, with a unit of megabits per second (Mbps).</p>
+<p>OSPF Load Balancing</p>
+<p>when the metrics tie for multiple routes to the same subnet, the router can put multiple equal-cost routes in the routing table (the default is four different routes) based on the setting of the maximum-paths number router subcommand</p>
+<p>the default (and better) method, the load balancing could be on a per-destination IP address basis.</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/davidvargasxyz" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://keybase.io/" target="_blank" rel="noopener noreferrer me"
+    title="Keybase">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 76.3" version="1.1" fill="currentColor" stroke="none">
+    <path
+        d="M6.68 73.99c-.6-1.3-1.4-3.1-1.8-4l-.6-1.7-2 2.2-2 2.2-.2-4.2c-.3-6 .2-12.2 1.2-16.6 2.3-9.8 9.5-18.7 18.8-23.4l2.1-1-.5-1.5c-.3-.8-.6-2.5-.7-3.6l-.2-2.1-2.1-.2c-3.2-.3-4.9-1.2-6-3.5-.6-1.2-.6-1.4-.4-4.6.2-4.2.5-5.1 1.8-6.5 1.6-1.8 2.7-2.1 6.7-1.9 2.9.2 3.5.3 4.8.9.8.4 1.5.8 1.6.8.1 0 1-1.1 2.1-2.6l1.9-2.7 1.2.7c.7.4 1.5.9 1.9 1.1l.7.4-.6 1.5c-.3.8-.7 2.2-.8 2.9l-.2 1.4 1.7.2c6.1.6 10.7 4.3 12.4 9.9.5 1.8.5 5.3 0 7-.5 1.6-.5 1.7-.1 1.7.7 0 5.4 2.3 7.3 3.5 3.7 2.4 8 6.6 10.4 10.2 4.5 6.7 6.4 14 5.6 22-.4 4.8-1.3 8.6-2.9 12.3l-.6 1.4h-5l1.2-2.4c1.3-2.6 2.3-6.2 2.8-9.4.3-2.2.4-8.2.1-9.3l-.2-.7-1.3 1.4c-3.2 3.5-7.9 4.5-14.2 2.8-5.4-1.4-7.6-1.7-12.7-1.7-3.9 0-5.2.1-7.3.6-5.8 1.3-9.9 3.2-15.6 7.3-2.1 1.5-3.8 2.7-3.9 2.7-.1 0 .2-1 .6-2.3.4-1.3 1.1-3.4 1.5-4.8l.8-2.5-.9.9c-.5.5-1.9 1.9-3.1 3.2l-2.1 2.3.5 1.9c.6 2.5 2 5.6 3.5 7.9.6 1 1.1 1.8 1.1 1.9s-1.2.1-2.6.1h-2.6l-1.1-2.1zm8.8-24.2c4.8-5.1 8.7-9.2 8.8-9.2.1.1-.4 1.6-.9 3.3-3.3 10.4-4 12.4-3.9 12.5 0 0 1.2-.4 2.5-.9 8.5-3.7 18.4-4.2 28.9-1.4 4.7 1.2 6.5 1.2 8.8 0 1.3-.7 1.8-1.1 2.4-2.1 1.1-1.7 1.2-4.1.5-6.3-1.7-4.8-8.3-11-14.5-13.7-3.2-1.4-3.4-1.4-4.1-.7l-.6.6 2.6 3.2c1.4 1.7 2.9 3.6 3.1 4.1.6 1.2.7 3.1.1 4.3-.8 1.7-3.2 2.9-5.1 2.5-.8-.2-1.1-.1-1.9.5-2.2 1.6-4.6 1.2-6.6-1.2-1.6-1.8-2-2.7-2.1-4.5 0-.9-.3-2-.5-2.4-.3-.6-.4-1.3-.4-2.2l.1-1.4-1.3-.3c-1.8-.5-3.9-1.5-5.1-2.4-.6-.4-1.1-.8-1.3-.8s-1.5.6-2.9 1.3c-9.7 5-16 14.3-17 24.8-.1 1-.2 2.3-.3 2.8l-.1.9 1.1-1.1c.5-.5 4.9-5.1 9.7-10.2zm25.9-7.4c.9-.7 1.7-1.3 1.9-1.3.1 0 .4.3.7.7.5.8 1.4.8 1.8.1.3-.5.3-.6-5.6-7.8-3.5-4.3-4.2-5-4.7-5-1.2.1-.9 1 1 3.3l1.8 2.2-1 .8c-1.1 1-1.2 1.2-.5 1.8.5.5.6.4 1.6-.3l1.1-.7.7.6c.4.3.6.8.6.9 0 .2-.8.9-1.7 1.7-.9.7-1.6 1.5-1.6 1.7 0 .3.5 1.1 1.4 2.2.3.6.8.4 2.5-.9zm-10.3-14.2c.6-1.8 2.6-3.2 4.6-3.2 1.1 0 2.7.9 3.8 2.1l1 1.2.9-1.1c2.5-2.8 2.8-6.7.8-10.1-1.5-2.5-4.3-4-8.2-4.4-2.1-.2-2.6-.4-3.7-1.5l-.8-.8-.4.6c-.8 1.2-2.5 5.1-3 6.6-.7 2.3-.4 5.9.5 7.7.9 1.7 3.3 4 4 3.7.1.1.3-.3.5-.8zm-8.9-13.6c.2-.5.7-1.8 1.2-2.8.5-1 .9-2 .9-2.3 0-.9-1-1.3-3.7-1.5-2.4-.2-2.6-.1-3.1.4-.4.4-.6.9-.6 1.6 0 .6-.1 1.7-.2 2.6-.2 2.1.1 2.5 2.2 2.8 3.1.2 3 .2 3.3-.8zm-3.1-2.4c0-1.7.2-1.9 1.6-1.9h1.3v2.8h-2.8v-.9zm6.3 58.3c-.6-.6-.8-1-.8-2 0-1.9 1.1-3 2.9-3 1.7 0 2.9 1.2 2.9 2.9 0 1.8-1.1 2.8-3 2.9-1 0-1.4-.2-2-.8zm19.3.3a2.93 2.93 0 011.8-5.3c1.8 0 2.8 1.1 2.9 3 0 1.1-.1 1.4-.8 2s-1 .8-2 .8c-.9 0-1.5-.2-1.9-.5z" />
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2024 David Vargas.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

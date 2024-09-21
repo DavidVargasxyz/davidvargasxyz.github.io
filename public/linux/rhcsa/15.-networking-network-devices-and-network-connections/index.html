@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | David Vargas</title>
+<meta property="og:title" content=" | David Vargas" />
+<meta name="twitter:title" content=" | David Vargas" />
+<meta itemprop="name" content=" | David Vargas" />
+<meta name="application-name" content=" | David Vargas" />
+<meta property="og:site_name" content="davidvargas.xyz" />
+
+<meta name="description" content="David Vargas&#39;s blog">
+<meta itemprop="description" content="David Vargas&#39;s blog" />
+<meta property="og:description" content="David Vargas&#39;s blog" />
+<meta name="twitter:description" content="David Vargas&#39;s blog" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/linux/rhcsa/15.-networking-network-devices-and-network-connections/" title="" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.134.3">
+
+    
+    <meta property="og:url" content="http://localhost:1313/linux/rhcsa/15.-networking-network-devices-and-network-connections/">
+  <meta property="og:site_name" content="David Vargas">
+  <meta property="og:title" content="David Vargas">
+  <meta property="og:description" content="Hostname “-”, “_ “, and “. &#34; characters are allowed. Up to 253 characters. Stored in /etc/hostname. Can be viewed with several different commands, such as hostname, hostnamectl, uname, and nmcli, as well as by displaying the content of the /etc/hostname file. View the hostname:
+hostnamectl --static hostname uname -n cat /etc/hostname Lab: Change the Hostname Server1
+Open /etc/hostname and change the entry to server10.example.com Restart the systemd-hostnamed service daemon sudo systemctl restart systemd-hostnamed confirm hostname server2">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="linux">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="David Vargas">
+  <meta name="twitter:description" content="Hostname “-”, “_ “, and “. &#34; characters are allowed. Up to 253 characters. Stored in /etc/hostname. Can be viewed with several different commands, such as hostname, hostnamectl, uname, and nmcli, as well as by displaying the content of the /etc/hostname file. View the hostname:
+hostnamectl --static hostname uname -n cat /etc/hostname Lab: Change the Hostname Server1
+Open /etc/hostname and change the entry to server10.example.com Restart the systemd-hostnamed service daemon sudo systemctl restart systemd-hostnamed confirm hostname server2">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/linux/rhcsa/15.-networking-network-devices-and-network-connections/">
+    <link href="/style.min.1915b95fdbf4046da0032dde0fb966271ed904fa9c019f9a326d7ce001902895.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/notes/">
+                        notes
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/readings/">
+                        readings
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about">
+                        about
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            
+            <div class="page-content">
+                <h2 id="hostname">Hostname</h2>
+<ul>
+<li>&ldquo;-&rdquo;, &ldquo;_ &ldquo;, and &ldquo;. &quot; characters are allowed.</li>
+<li>Up to 253 characters.</li>
+<li>Stored in <em>/etc/hostname</em>.</li>
+<li>Can be viewed with several different commands, such as <code>hostname</code>, <code>hostnamectl</code>, <code>uname</code>, and <code>nmcli</code>, as well as by displaying the content of the <em>/etc/hostname</em> file.</li>
+</ul>
+<p>View the hostname:</p>
+<pre tabindex="0"><code>hostnamectl --static
+</code></pre><pre tabindex="0"><code>hostname
+</code></pre><pre tabindex="0"><code>uname -n
+</code></pre><pre tabindex="0"><code>cat /etc/hostname
+</code></pre><h3 id="lab-change-the-hostname">Lab: Change the Hostname</h3>
+<p>Server1</p>
+<ol>
+<li>Open <em>/etc/hostname</em> and change the entry to <code>server10.example.com</code></li>
+<li>Restart the <code>systemd-hostnamed</code> service daemon</li>
+</ol>
+<pre tabindex="0"><code>sudo systemctl restart systemd-hostnamed
+</code></pre><ol start="3">
+<li>confirm</li>
+</ol>
+<pre tabindex="0"><code>hostname
+</code></pre><p>server2</p>
+<ol>
+<li>Change the hostname with hostnamectl:</li>
+</ol>
+<pre tabindex="0"><code class="language-bah" data-lang="bah">sudo hostnamectl set-hostname server21.example.com
+</code></pre><ol start="2">
+<li>
+<p>Log out and back in for the prompt to update</p>
+</li>
+<li>
+<p>Change the hostname using nmcli</p>
+</li>
+</ol>
+<pre tabindex="0"><code>nmcli general hostname server20.example.com
+</code></pre><h1 id="hardware-and-ip-addressing">Hardware and IP Addressing</h1>
+<h3 id="ethernet-address">Ethernet Address</h3>
+<ul>
+<li>48-bit address that is used to identify the correct destination node for data packets transmitted from the source node.</li>
+<li>The data packets include hardware addresses for the source and the destination node.</li>
+<li>Also referred to as the hardware, physical, link layer, or MAC address.</li>
+</ul>
+<p>List all network interfaces with their ethernet addresses:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ip addr <span class="p">|</span> grep ether
+</span></span></code></pre></div><h3 id="subnetting">Subnetting</h3>
+<ul>
+<li>Network address space is divided into several smaller and more manageable logical subnetworks (subnets).</li>
+<li>Benefits:
+<ul>
+<li>Reduced network traffic</li>
+<li>Improved network performance</li>
+<li>de-centralized and easier administration</li>
+<li>uses the node bits only</li>
+</ul>
+</li>
+<li>Results in the reduction of usable addresses.</li>
+<li>All nodes in a given subnet have the same subnet mask.</li>
+<li>Each subnet acts as an isolated network and requires a router to talk to other subnets.</li>
+<li>The first and the last IP address in a subnet are reserved. The first address points to the subnet itself, and the last address is the broadcast address.</li>
+</ul>
+<h3 id="ipv4">IPv4</h3>
+<p>View current ipv4 address:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ip addr
+</span></span></code></pre></div><h3 id="classful-network-addressing">Classful Network Addressing</h3>
+<p>See <a href="Classful%20ipv4.md">Classful ipv4</a></p>
+<h3 id="ipv6-address">IPv6 Address</h3>
+<p>See <a href="ipv6.md">ipv6</a></p>
+<p>The <code>ip addr</code> command also shows IPv6 addresses for the interfaces:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server200 ~<span class="o">]</span><span class="c1"># ip addr</span>
+</span></span><span class="line"><span class="cl">1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu <span class="m">65536</span> qdisc noqueue state UNKNOWN group default qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+</span></span><span class="line"><span class="cl">    inet 127.0.0.1/8 scope host lo
+</span></span><span class="line"><span class="cl">       valid_lft forever preferred_lft forever
+</span></span><span class="line"><span class="cl">    inet6 ::1/128 scope host 
+</span></span><span class="line"><span class="cl">       valid_lft forever preferred_lft forever
+</span></span><span class="line"><span class="cl">2: enp0s3: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu <span class="m">1500</span> qdisc fq_codel state UP group default qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">    link/ether 08:00:27:b9:4e:ef brd ff:ff:ff:ff:ff:ff
+</span></span><span class="line"><span class="cl">    inet 172.16.1.155/20 brd 172.16.15.255 scope global dynamic noprefixroute enp0s3
+</span></span><span class="line"><span class="cl">       valid_lft 79061sec preferred_lft 79061sec
+</span></span><span class="line"><span class="cl">    inet6 fe80::a00:27ff:feb9:4eef/64 scope link noprefixroute 
+</span></span><span class="line"><span class="cl">       valid_lft forever preferred_lft forever
+</span></span></code></pre></div><p>Tools:</p>
+<ul>
+<li><code>ping6</code></li>
+<li><code>traceroute6</code></li>
+<li><code>tracepath6</code></li>
+</ul>
+<h2 id="protocols">Protocols</h2>
+<ul>
+<li>Defined in <em>/etc/protocols</em></li>
+<li>Well known ports are defined in <em>/etc/services</em></li>
+</ul>
+<p><code>cat /etc/protocols</code></p>
+<h3 id="tcp-and-udp-protocols">TCP and UDP Protocols</h3>
+<p>See <a href="tcp_ip_transport_and_applications.md">tcp_ip_transport_and_applications</a> and <a href="tcp_ip_basic.md">tcp_ip_basic</a></p>
+<h3 id="icmp">ICMP</h3>
+<p>Send two pings to server 20</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ping -c2 192.168.0.120
+</span></span></code></pre></div><p>Ping the server&rsquo;s loopback interface:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ping 127.0.0.1
+</span></span></code></pre></div><p>Send a traceroute to server 20</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">traceroute 192.168.0.120
+</span></span></code></pre></div><p>Or:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tracepath 192.168.0.120
+</span></span></code></pre></div><h3 id="icmpv6">ICMPv6</h3>
+<ul>
+<li>IPv6 version of ICMP</li>
+<li>enabled by default</li>
+</ul>
+<p>Ping and ipv6 address:</p>
+<pre tabindex="0"><code>ping6 
+</code></pre><p>Trace a route to an IPv6 address:</p>
+<pre tabindex="0"><code>tracepath6
+</code></pre><pre tabindex="0"><code>traceroute6
+</code></pre><p>Show IPv6 addresses:</p>
+<pre tabindex="0"><code>ip addr | grep inet6
+</code></pre><h2 id="network-manager-service">Network Manager Service</h2>
+<p>Default service in RHEL for network:</p>
+<ul>
+<li>interface and connection configuration.</li>
+<li>Administration.</li>
+<li>Monitoring.</li>
+</ul>
+<p><strong>NetworkManager daemon</strong></p>
+<ul>
+<li>Responsible for keeping interfaces and connection up and active.</li>
+<li>Includes:
+<ul>
+<li><code>nmcli</code></li>
+<li><code>nmtui </code>(text-based)</li>
+<li><code>nm-connection-editor</code> (GUI)</li>
+</ul>
+</li>
+<li>Does not manage loopback interfaces.</li>
+</ul>
+<h3 id="interface-connection-profiles">Interface Connection Profiles</h3>
+<ul>
+<li>
+<p>Configuration file on each interface that defines IP assignments and other relevant parameters for it.</p>
+</li>
+<li>
+<p>The networking subsystem reads this file and applies the settings at the time the connection is activated.</p>
+</li>
+<li>
+<p>Connection configuration files (or <strong>connection profiles</strong>) are stored in a central location under the <em>/etc/NetworkManager/system-connections</em> directory.</p>
+</li>
+<li>
+<p>The filenames are identified by the interface connection names with <em>nmconnection</em> as the extension.</p>
+</li>
+<li>
+<p>Some instances of connection profiles are: <em>enp0s3.nmconnection</em>, <em>ens160.nmconnection</em>, and <em>em1.nmconnection</em>.</p>
+<p>On server10 and server20, the device name for the first interface is enp0s3 with connection name enp0s3 and relevant connection information stored in the enp0s3.nmconnection file.</p>
+</li>
+</ul>
+<p>This connection was established at the time of RHEL installation. The current content of the file from server10 are presented below:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server200 system-connections<span class="o">]</span><span class="c1"># cat /etc/NetworkManager/system-connections/enp0s3.nmconnection </span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>connection<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">id</span><span class="o">=</span>enp0s3
+</span></span><span class="line"><span class="cl"><span class="nv">uuid</span><span class="o">=</span>45d6a8ea-6bd7-38e0-8219-8c7a1b90afde
+</span></span><span class="line"><span class="cl"><span class="nv">type</span><span class="o">=</span>ethernet
+</span></span><span class="line"><span class="cl">autoconnect-priority<span class="o">=</span>-999
+</span></span><span class="line"><span class="cl">interface-name<span class="o">=</span>enp0s3
+</span></span><span class="line"><span class="cl"><span class="nv">timestamp</span><span class="o">=</span><span class="m">1710367323</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ethernet<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ipv4<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">method</span><span class="o">=</span>auto
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ipv6<span class="o">]</span>
+</span></span><span class="line"><span class="cl">addr-gen-mode<span class="o">=</span>eui64
+</span></span><span class="line"><span class="cl"><span class="nv">method</span><span class="o">=</span>auto
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>proxy<span class="o">]</span>
+</span></span></code></pre></div><ul>
+<li>Each section defines a set of networking properties for the connection.</li>
+</ul>
+<p>Directives</p>
+<p><strong>id</strong></p>
+<ul>
+<li>Any description given to this connection. The default matches the interface name.</li>
+</ul>
+<p><strong>uuid</strong></p>
+<ul>
+<li>The UUID associated with this connection</li>
+</ul>
+<p><strong>type</strong></p>
+<ul>
+<li>Specifies the type of this connection</li>
+</ul>
+<p><strong>autoconnect-priority</strong></p>
+<ul>
+<li>If the connection is set to autoconnect, connections with higher priority will be preferred. A higher number means higher priority. The range is between -999 and 999 with 0 being the default.</li>
+</ul>
+<p><strong>interface_name</strong></p>
+<ul>
+<li>Specifies the device name for the network interface</li>
+</ul>
+<p><strong>timestamp</strong></p>
+<ul>
+<li>The time, in seconds since the Unix Epoch that the connection was last activated successfully. This field is automatically populated each time the connection is activated.</li>
+</ul>
+<p><strong>address1/method</strong></p>
+<ul>
+<li>Specifies the static IP for the connection if the method property is set to manual. /24 represents  the subnet mask.</li>
+</ul>
+<p><strong>addr-gen-mode/method</strong></p>
+<ul>
+<li>Generates an IPv6 address based on the hardware address of the interface.</li>
+</ul>
+<p>View additional directives:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">man nm-settings
+</span></span></code></pre></div><p>Naming rules for devices are governed by udevd service based on:</p>
+<ul>
+<li>Device location</li>
+<li>Topology</li>
+<li>setting in firmware</li>
+<li>virtualization layer</li>
+</ul>
+<h2 id="administration-tools">Administration Tools</h2>
+<p><code>ip </code></p>
+<ul>
+<li>Display monitor and manage network interfaces, routing, connections, traffic, etc.</li>
+</ul>
+<p><code>ifup</code></p>
+<ul>
+<li>Brings up an interface</li>
+</ul>
+<p><code>ifdown</code></p>
+<ul>
+<li>Brings down an interface</li>
+</ul>
+<p><code>nmcli</code></p>
+<ul>
+<li>Creates, updates, deletes, activates, and deactivates a connection profile.</li>
+</ul>
+<h3 id="nmcli-command"><code>nmcli</code> command</h3>
+<ul>
+<li>Create, view, modify, remove, activate, and deactivate network connections.</li>
+<li>Control and report network device status.</li>
+<li>Supports abbreviation of commands.</li>
+</ul>
+<p>Operates on 7 different object categories.</p>
+<ol>
+<li>general</li>
+<li>networking</li>
+<li>connection (c)(con)</li>
+<li>device (d)(dev)</li>
+<li>radio</li>
+<li>monitor</li>
+<li>agent</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server200 system-connections<span class="o">]</span><span class="c1"># nmcli --help</span>
+</span></span><span class="line"><span class="cl">Usage: nmcli <span class="o">[</span>OPTIONS<span class="o">]</span> OBJECT <span class="o">{</span> COMMAND <span class="p">|</span> <span class="nb">help</span> <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">OPTIONS
+</span></span><span class="line"><span class="cl">  -a, --ask                                ask <span class="k">for</span> missing parameters
+</span></span><span class="line"><span class="cl">  -c, --colors auto<span class="p">|</span>yes<span class="p">|</span>no                 whether to use colors in output
+</span></span><span class="line"><span class="cl">  -e, --escape yes<span class="p">|</span>no                      escape columns separators in values
+</span></span><span class="line"><span class="cl">  -f, --fields &lt;field,...&gt;<span class="p">|</span>all<span class="p">|</span>common      specify fields to output
+</span></span><span class="line"><span class="cl">  -g, --get-values &lt;field,...&gt;<span class="p">|</span>all<span class="p">|</span>common  shortcut <span class="k">for</span> -m tabular -t -f
+</span></span><span class="line"><span class="cl">  -h, --help                               print this <span class="nb">help</span>
+</span></span><span class="line"><span class="cl">  -m, --mode tabular<span class="p">|</span>multiline             output mode
+</span></span><span class="line"><span class="cl">  -o, --overview                           overview mode
+</span></span><span class="line"><span class="cl">  -p, --pretty                             pretty output
+</span></span><span class="line"><span class="cl">  -s, --show-secrets                       allow displaying passwords
+</span></span><span class="line"><span class="cl">  -t, --terse                              terse output
+</span></span><span class="line"><span class="cl">  -v, --version                            show program version
+</span></span><span class="line"><span class="cl">  -w, --wait &lt;seconds&gt;                     <span class="nb">set</span> timeout waiting <span class="k">for</span> finishing operations
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">OBJECT
+</span></span><span class="line"><span class="cl">  g<span class="o">[</span>eneral<span class="o">]</span>       NetworkManager<span class="se">\&#39;</span>s general status and operations
+</span></span><span class="line"><span class="cl">  n<span class="o">[</span>etworking<span class="o">]</span>    overall networking control
+</span></span><span class="line"><span class="cl">  r<span class="o">[</span>adio<span class="o">]</span>         NetworkManager radio switches
+</span></span><span class="line"><span class="cl">  c<span class="o">[</span>onnection<span class="o">]</span>    NetworkManager<span class="se">\&#39;</span>s connections
+</span></span><span class="line"><span class="cl">  d<span class="o">[</span>evice<span class="o">]</span>        devices managed by NetworkManager
+</span></span><span class="line"><span class="cl">  a<span class="o">[</span>gent<span class="o">]</span>         NetworkManager secret agent or polkit agent
+</span></span><span class="line"><span class="cl">  m<span class="o">[</span>onitor<span class="o">]</span>       monitor NetworkManager changes
+</span></span></code></pre></div><h3 id="3-connection">3. connection</h3>
+<ul>
+<li>Activates, deactivates, and administers network connections.</li>
+</ul>
+<p>Options:</p>
+<ul>
+<li><code>show</code> (list connections)</li>
+<li><code>up</code>/<code>down</code> (Brings connection up or down)</li>
+<li><code>add(a)</code> (adds a connection)</li>
+<li><code>edit</code> (edit connection or add a new one)</li>
+<li><code>modify</code> (modify properties of a connection)</li>
+<li><code>delete(d)</code> (delete a connection)</li>
+<li><code>reload</code> (re-read all connection profiles)</li>
+<li><code>load</code> (re-read a connection profile)</li>
+</ul>
+<h3 id="4-device">4. Device</h3>
+<p>Options:</p>
+<ul>
+<li><code>status</code> (Displays device status)</li>
+<li><code>show</code> (Displays info about device(s)</li>
+</ul>
+<p>Show all connections, inactive or active:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nmcli c s
+</span></span></code></pre></div><p>Deactivate the connection enp0s8:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nmcli c down enp0s8
+</span></span></code></pre></div><p>Note:</p>
+<pre tabindex="0"><code>The connection profile gets detached from the device, disabling the connection.
+</code></pre><p>Activate the connection enp0s8:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo nmcli c up enp0s8
+</span></span><span class="line"><span class="cl"><span class="c1"># connection profile re-attaches to the device.</span>
+</span></span></code></pre></div><p>Display the status of all network devices:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nmcli d s
+</span></span></code></pre></div><h3 id="lab-add-network-devices-to-server10-and-one-to-server20-using-virtualbox">Lab: Add Network Devices to server10 and one to server20 using VirtualBox</h3>
+<ol>
+<li>Shut down your servers (follow each step for both servers)</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo shutdown now
+</span></span></code></pre></div><ol start="2">
+<li>Add network interface in Virtualbox then power on the VMs</li>
+</ol>
+<pre tabindex="0"><code>Select machine &gt; settings &gt; Network &gt; Adapter 2 &gt; Enable Network Adapter &gt; Internal Network &gt; ok
+</code></pre><ol start="3">
+<li>Verify the new interfaces:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ip a
+</span></span></code></pre></div><h3 id="lab-configure-new-network-connection-using-nmcli-server20">Lab: Configure New Network Connection Using nmcli (server20)</h3>
+<ol>
+<li>Verify the interface that was added from virtualbox:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nmcli d status <span class="p">|</span> grep enp
+</span></span></code></pre></div><ol start="2">
+<li>Add connection profile and attach it to the interface:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nmcli c a <span class="nb">type</span> Ethernet ifname enp0s8 con-name enp0s8 ip4 172.10.10.120/24 gw4 172.10.10.1
+</span></span></code></pre></div><ol start="3">
+<li>Confirm connection status</li>
+</ol>
+<pre tabindex="0"><code>nmcli d status | grep enp
+</code></pre><ol start="4">
+<li>Verify ip address</li>
+</ol>
+<pre tabindex="0"><code>ip a
+</code></pre><ol start="5">
+<li>Check the content of the connection profile</li>
+</ol>
+<pre tabindex="0"><code>cat /etc/NetworkManager/system-connections/enp0s8.nmconnection
+</code></pre><h2 id="understanding-hosts-table">Understanding Hosts Table</h2>
+<p>See <a href="XDNS%20and%20Time%20Synchronization.md">XDNS and Time Synchronization</a></p>
+<p><em>/etc/hosts</em> file</p>
+<ul>
+<li>Table used to maintain hostname to IP mapping for systems on the local network, allowing us to access a system by simply employing its hostname.</li>
+</ul>
+<p>Each row in the file contains an IP address in column 1 followed by the official (or canonical) hostname in column 2, and one or more optional aliases thereafter.</p>
+<p>EXAM TIP: In the presence of an active DNS with all hostnames resolvable, there is no need to worry about updating the hosts file.</p>
+<p>As expressed above, the use of the hosts file is common on small networks, and it should be updated on each individual system to reflect any changes for best inter-system connectivity experience.</p>
+<h3 id="lab-update-hosts-table-and-test-connectivity">Lab: Update Hosts Table and Test Connectivity.</h3>
+<ol>
+<li>Add both server10 and server20&rsquo;s interfaces to both server&rsquo;s <em>/etc/host</em> files:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">192.168.0.110  server10.example.com  server10 &lt;-- This is an <span class="nb">alias</span>
+</span></span><span class="line"><span class="cl">192.168.0.120  server20.example.com  server20   
+</span></span><span class="line"><span class="cl">172.10.10.110  server10s8.example.com   server10s8
+</span></span><span class="line"><span class="cl">172.10.10.120  server20s8.example.com   server20s8
+</span></span></code></pre></div><ol start="2">
+<li>Send 2 packets from server10 to server20&rsquo;s IP address:</li>
+</ol>
+<pre tabindex="0"><code>ping -c2 192.168.0.120
+</code></pre><ol start="3">
+<li>Send 2 pings from server10 to server20&rsquo;s hostname:</li>
+</ol>
+<pre tabindex="0"><code>ping -c2 server20
+</code></pre><h2 id="networking-diy-challenge-labs">Networking DIY Challenge Labs</h2>
+<h3 id="lab-15-1-add-new-interface-and-configure-connection-profile-with-nmcli">Lab 15-1: Add New Interface and Configure Connection Profile with nmcli</h3>
+<ul>
+<li>Add a third network interface to rhel9server40 in VirtualBox.</li>
+<li>As user1 with sudo on server40, run <code>ip a</code> and verify the addition of the new interface.</li>
+<li>Use the <code>nmcli</code> command and assign IP 192.168.0.40/24 and gateway 192.168.0.1</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server40 ~<span class="o">]</span><span class="c1"># nmcli c a type Ethernet ifname enp0s8 con-name enp0s8 ip4 192.168.0.40/24 gw4 192.168.0.1</span>
+</span></span></code></pre></div><ul>
+<li>Deactivate and reactivate this connection manually.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server40 ~<span class="o">]</span><span class="c1"># nmcli c d enp0s8</span>
+</span></span><span class="line"><span class="cl">Connection <span class="s1">&#39;enp0s8&#39;</span> successfully deactivated <span class="o">(</span>D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/3<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server40 ~<span class="o">]</span><span class="c1"># nmcli c s</span>
+</span></span><span class="line"><span class="cl">NAME    UUID                                  TYPE      DEVICE 
+</span></span><span class="line"><span class="cl">enp0s3  6e75a5e4-869b-3ed1-bdc4-c55d2d268285  ethernet  enp0s3 
+</span></span><span class="line"><span class="cl">lo      66809437-d3fa-4104-9777-7c3364b943a9  loopback  lo     
+</span></span><span class="line"><span class="cl">enp0s8  9a32e279-84c2-4bba-b5c5-82a04f40a7df  ethernet  --     
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server40 ~<span class="o">]</span><span class="c1"># nmcli c u enp0s8</span>
+</span></span><span class="line"><span class="cl">Connection successfully activated <span class="o">(</span>D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/4<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server40 ~<span class="o">]</span><span class="c1"># nmcli c s</span>
+</span></span><span class="line"><span class="cl">NAME    UUID                                  TYPE      DEVICE 
+</span></span><span class="line"><span class="cl">enp0s3  6e75a5e4-869b-3ed1-bdc4-c55d2d268285  ethernet  enp0s3 
+</span></span><span class="line"><span class="cl">enp0s8  9a32e279-84c2-4bba-b5c5-82a04f40a7df  ethernet  enp0s8 
+</span></span><span class="line"><span class="cl">lo      66809437-d3fa-4104-9777-7c3364b943a9  loopback  lo   
+</span></span></code></pre></div><ul>
+<li>Add entry server40 to server30&rsquo;s hosts table.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># vim /etc/hosts</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># ping server40</span>
+</span></span><span class="line"><span class="cl">PING server40.example.com <span class="o">(</span>192.168.0.40<span class="o">)</span> 56<span class="o">(</span>84<span class="o">)</span> bytes of data.
+</span></span><span class="line"><span class="cl"><span class="m">64</span> bytes from server40.example.com <span class="o">(</span>192.168.0.40<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span><span class="m">1</span> <span class="nv">ttl</span><span class="o">=</span><span class="m">64</span> <span class="nv">time</span><span class="o">=</span>3.20 ms
+</span></span><span class="line"><span class="cl"><span class="m">64</span> bytes from server40.example.com <span class="o">(</span>192.168.0.40<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span><span class="m">2</span> <span class="nv">ttl</span><span class="o">=</span><span class="m">64</span> <span class="nv">time</span><span class="o">=</span>0.628 ms
+</span></span><span class="line"><span class="cl"><span class="m">64</span> bytes from server40.example.com <span class="o">(</span>192.168.0.40<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span><span class="m">3</span> <span class="nv">ttl</span><span class="o">=</span><span class="m">64</span> <span class="nv">time</span><span class="o">=</span>0.717 ms
+</span></span><span class="line"><span class="cl">^C
+</span></span><span class="line"><span class="cl">--- server40.example.com ping statistics ---
+</span></span><span class="line"><span class="cl"><span class="m">3</span> packets transmitted, <span class="m">3</span> received, 0% packet loss, <span class="nb">time</span> 2009ms
+</span></span><span class="line"><span class="cl">rtt min/avg/max/mdev <span class="o">=</span> 0.628/1.516/3.204/1.193 ms
+</span></span></code></pre></div><h3 id="lab-add-new-interface-and-configure-connection-profile-manually-server30">Lab: Add New Interface and Configure Connection Profile Manually (server30)</h3>
+<p>Add a third network interface to RHEL9server30 in VirtualBox.</p>
+<p>run <code>ip a</code> and verify the addition of the new interface.</p>
+<p>Use the <code>nmcli</code> command and assign IP 192.168.0.30/24 and gateway 192.168.0.1</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nmcli c a <span class="nb">type</span> Ethernet ifname enp0s8 con-name enp0s8 ip4 192.168.0.30/24 gw4 192.168.0.1
+</span></span></code></pre></div><p>Deactivate and reactivate this connection manually. Add entry server30 to the hosts table of server 40</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 system-connections<span class="o">]</span><span class="c1"># nmcli c d enp0s8</span>
+</span></span><span class="line"><span class="cl">Connection <span class="s1">&#39;enp0s8&#39;</span> successfully deactivated <span class="o">(</span>D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/3<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server30 system-connections<span class="o">]</span><span class="c1"># nmcli c u enp0s8</span>
+</span></span><span class="line"><span class="cl">Connection successfully activated <span class="o">(</span>D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/4<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">/etc/hosts
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">192.168.0.30 server30.example.com server30
+</span></span></code></pre></div><p>ping tests to server30 from server 40</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server40 ~<span class="o">]</span><span class="c1"># ping server30</span>
+</span></span><span class="line"><span class="cl">PING server30.example.com <span class="o">(</span>192.168.0.30<span class="o">)</span> 56<span class="o">(</span>84<span class="o">)</span> bytes of data.
+</span></span><span class="line"><span class="cl"><span class="m">64</span> bytes from server30.example.com <span class="o">(</span>192.168.0.30<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span><span class="m">1</span> <span class="nv">ttl</span><span class="o">=</span><span class="m">64</span> <span class="nv">time</span><span class="o">=</span>1.59 ms
+</span></span><span class="line"><span class="cl"><span class="m">64</span> bytes from server30.example.com <span class="o">(</span>192.168.0.30<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span><span class="m">2</span> <span class="nv">ttl</span><span class="o">=</span><span class="m">64</span> <span class="nv">time</span><span class="o">=</span>0.474 ms
+</span></span><span class="line"><span class="cl">^C
+</span></span><span class="line"><span class="cl">--- server30.example.com ping statistics ---
+</span></span><span class="line"><span class="cl"><span class="m">2</span> packets transmitted, <span class="m">2</span> received, 0% packet loss, <span class="nb">time</span> 999ms
+</span></span><span class="line"><span class="cl">rtt min/avg/max/mdev <span class="o">=</span> 0.474/1.032/1.590/0.558 ms
+</span></span></code></pre></div><p>Or create the profile manually and restart network manager:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>connection<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">id</span><span class="o">=</span>enp0s8
+</span></span><span class="line"><span class="cl"><span class="nv">type</span><span class="o">=</span>ethernet
+</span></span><span class="line"><span class="cl">interface-name<span class="o">=</span>enp0s8
+</span></span><span class="line"><span class="cl"><span class="nv">uuid</span><span class="o">=</span>92db4c65-2f13-4952-b81f-2779b1d24a49
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ethernet<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ipv4<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">method</span><span class="o">=</span>manual
+</span></span><span class="line"><span class="cl"><span class="nv">address1</span><span class="o">=</span>10.1.13.3/24,10.1.13.1
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ipv6<span class="o">]</span>
+</span></span><span class="line"><span class="cl">addr-gen-mode<span class="o">=</span>default
+</span></span><span class="line"><span class="cl"><span class="nv">method</span><span class="o">=</span>auto
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>proxy<span class="o">]</span>
+</span></span></code></pre></div><h2 id="networking-review-questions">Networking Review Questions</h2>
+<p>Q. Which service is responsible for maintaining consistent device naming?
+A. The udevd service handles consistent naming of network devices.</p>
+<hr>
+<p>Q. List three key differences between TCP and UDP protocols.
+A. TCP is connection-oriented, reliable, and point-to-point; UDP is connectionless, unreliable, and multi-point.</p>
+<hr>
+<p>Q. What is the significance of the <strong>NAME</strong> and <strong>DEVICE</strong> directives in a connection profile?
+A. The <strong>NAME</strong> directive sets the name for the network connection and the <strong>DEVICE</strong> directive defines the network device the connection is associated
+with.</p>
+<hr>
+<p>Q. Which class of IP addresses has the least number of node addresses?
+A. The C class supports the least number of node addresses.</p>
+<hr>
+<p>Q. Which command can you use to display the hardware address of a network device?
+A. The <code>ip</code> command.</p>
+<hr>
+<p>Q. Define protocol.
+A. A set of rules that govern the exchange of information between two network entities.</p>
+<hr>
+<p>Q. Which directory stores the network connection profiles?
+A. <em>/etc/NetworkManager/system-connections/</em></p>
+<hr>
+<p>Q. True or False. A network device is a physical or virtual network port and a network connection is a configuration file attached to it.
+A. True.</p>
+<hr>
+<p>Q. IPv4 is a 32-bit software address. How many bits does an IPv6 address have?
+A. 128.</p>
+<hr>
+<p>Q. Which file defines the port and protocol mapping?
+A. The <em>/etc/protocols</em> file.</p>
+<hr>
+<p>Q. What would the command <code>hostnamectl set-hostname host20</code> do?
+A. The command provided will update the /etc/hostname file with the specified hostname and restart the systemd-hostnamed daemon for the
+change to take effect.</p>
+<hr>
+<p>Q. Name the file that stores the hostname of the system.
+A. The /etc/hostname file.</p>
+<hr>
+<p>Q. What would the command <code>nmcli cs</code> do?
+A. The command provided will display the status information for all network connections.</p>
+<hr>
+<p>Q. The /etc/hosts file maintains hostname to hardware address mappings. True or False?
+A. False. This file maintains hostname to IP address mapping.</p>
+<hr>
+<p>Q. Which file contains service, port, and protocol mappings?
+A. The /etc/services file.</p>
+<hr>
+<p>Q. What would the <code>ip addr</code> command produce?
+A. This command provided will display information about network connections including IP assignments and hardware address.</p>
+<hr>
+<p>Q. Which file would you consult to identify the port number and protocol associated with a network service?
+A. The /etc/services file.</p>
+<hr>
+<p>Q. Name four commands that can be used to display the hostname.
+A. The <code>hostname</code>, <code>uname</code>, <code>hostnamectl</code>, and <code>nmcli</code> commands can be used to view the system hostname.</p>
+<hr>
+<p>Q. List any two benefits of subnetting.
+A. Better manageability and less traffic.</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/davidvargasxyz" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://keybase.io/" target="_blank" rel="noopener noreferrer me"
+    title="Keybase">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 76.3" version="1.1" fill="currentColor" stroke="none">
+    <path
+        d="M6.68 73.99c-.6-1.3-1.4-3.1-1.8-4l-.6-1.7-2 2.2-2 2.2-.2-4.2c-.3-6 .2-12.2 1.2-16.6 2.3-9.8 9.5-18.7 18.8-23.4l2.1-1-.5-1.5c-.3-.8-.6-2.5-.7-3.6l-.2-2.1-2.1-.2c-3.2-.3-4.9-1.2-6-3.5-.6-1.2-.6-1.4-.4-4.6.2-4.2.5-5.1 1.8-6.5 1.6-1.8 2.7-2.1 6.7-1.9 2.9.2 3.5.3 4.8.9.8.4 1.5.8 1.6.8.1 0 1-1.1 2.1-2.6l1.9-2.7 1.2.7c.7.4 1.5.9 1.9 1.1l.7.4-.6 1.5c-.3.8-.7 2.2-.8 2.9l-.2 1.4 1.7.2c6.1.6 10.7 4.3 12.4 9.9.5 1.8.5 5.3 0 7-.5 1.6-.5 1.7-.1 1.7.7 0 5.4 2.3 7.3 3.5 3.7 2.4 8 6.6 10.4 10.2 4.5 6.7 6.4 14 5.6 22-.4 4.8-1.3 8.6-2.9 12.3l-.6 1.4h-5l1.2-2.4c1.3-2.6 2.3-6.2 2.8-9.4.3-2.2.4-8.2.1-9.3l-.2-.7-1.3 1.4c-3.2 3.5-7.9 4.5-14.2 2.8-5.4-1.4-7.6-1.7-12.7-1.7-3.9 0-5.2.1-7.3.6-5.8 1.3-9.9 3.2-15.6 7.3-2.1 1.5-3.8 2.7-3.9 2.7-.1 0 .2-1 .6-2.3.4-1.3 1.1-3.4 1.5-4.8l.8-2.5-.9.9c-.5.5-1.9 1.9-3.1 3.2l-2.1 2.3.5 1.9c.6 2.5 2 5.6 3.5 7.9.6 1 1.1 1.8 1.1 1.9s-1.2.1-2.6.1h-2.6l-1.1-2.1zm8.8-24.2c4.8-5.1 8.7-9.2 8.8-9.2.1.1-.4 1.6-.9 3.3-3.3 10.4-4 12.4-3.9 12.5 0 0 1.2-.4 2.5-.9 8.5-3.7 18.4-4.2 28.9-1.4 4.7 1.2 6.5 1.2 8.8 0 1.3-.7 1.8-1.1 2.4-2.1 1.1-1.7 1.2-4.1.5-6.3-1.7-4.8-8.3-11-14.5-13.7-3.2-1.4-3.4-1.4-4.1-.7l-.6.6 2.6 3.2c1.4 1.7 2.9 3.6 3.1 4.1.6 1.2.7 3.1.1 4.3-.8 1.7-3.2 2.9-5.1 2.5-.8-.2-1.1-.1-1.9.5-2.2 1.6-4.6 1.2-6.6-1.2-1.6-1.8-2-2.7-2.1-4.5 0-.9-.3-2-.5-2.4-.3-.6-.4-1.3-.4-2.2l.1-1.4-1.3-.3c-1.8-.5-3.9-1.5-5.1-2.4-.6-.4-1.1-.8-1.3-.8s-1.5.6-2.9 1.3c-9.7 5-16 14.3-17 24.8-.1 1-.2 2.3-.3 2.8l-.1.9 1.1-1.1c.5-.5 4.9-5.1 9.7-10.2zm25.9-7.4c.9-.7 1.7-1.3 1.9-1.3.1 0 .4.3.7.7.5.8 1.4.8 1.8.1.3-.5.3-.6-5.6-7.8-3.5-4.3-4.2-5-4.7-5-1.2.1-.9 1 1 3.3l1.8 2.2-1 .8c-1.1 1-1.2 1.2-.5 1.8.5.5.6.4 1.6-.3l1.1-.7.7.6c.4.3.6.8.6.9 0 .2-.8.9-1.7 1.7-.9.7-1.6 1.5-1.6 1.7 0 .3.5 1.1 1.4 2.2.3.6.8.4 2.5-.9zm-10.3-14.2c.6-1.8 2.6-3.2 4.6-3.2 1.1 0 2.7.9 3.8 2.1l1 1.2.9-1.1c2.5-2.8 2.8-6.7.8-10.1-1.5-2.5-4.3-4-8.2-4.4-2.1-.2-2.6-.4-3.7-1.5l-.8-.8-.4.6c-.8 1.2-2.5 5.1-3 6.6-.7 2.3-.4 5.9.5 7.7.9 1.7 3.3 4 4 3.7.1.1.3-.3.5-.8zm-8.9-13.6c.2-.5.7-1.8 1.2-2.8.5-1 .9-2 .9-2.3 0-.9-1-1.3-3.7-1.5-2.4-.2-2.6-.1-3.1.4-.4.4-.6.9-.6 1.6 0 .6-.1 1.7-.2 2.6-.2 2.1.1 2.5 2.2 2.8 3.1.2 3 .2 3.3-.8zm-3.1-2.4c0-1.7.2-1.9 1.6-1.9h1.3v2.8h-2.8v-.9zm6.3 58.3c-.6-.6-.8-1-.8-2 0-1.9 1.1-3 2.9-3 1.7 0 2.9 1.2 2.9 2.9 0 1.8-1.1 2.8-3 2.9-1 0-1.4-.2-2-.8zm19.3.3a2.93 2.93 0 011.8-5.3c1.8 0 2.8 1.1 2.9 3 0 1.1-.1 1.4-.8 2s-1 .8-2 .8c-.9 0-1.5-.2-1.9-.5z" />
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2024 David Vargas.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

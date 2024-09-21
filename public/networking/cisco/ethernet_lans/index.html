@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | David Vargas</title>
+<meta property="og:title" content=" | David Vargas" />
+<meta name="twitter:title" content=" | David Vargas" />
+<meta itemprop="name" content=" | David Vargas" />
+<meta name="application-name" content=" | David Vargas" />
+<meta property="og:site_name" content="davidvargas.xyz" />
+
+<meta name="description" content="David Vargas&#39;s blog">
+<meta itemprop="description" content="David Vargas&#39;s blog" />
+<meta property="og:description" content="David Vargas&#39;s blog" />
+<meta name="twitter:description" content="David Vargas&#39;s blog" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/networking/cisco/ethernet_lans/" title="" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.134.3">
+
+    
+    <meta property="og:url" content="http://localhost:1313/networking/cisco/ethernet_lans/">
+  <meta property="og:site_name" content="David Vargas">
+  <meta property="og:title" content="David Vargas">
+  <meta property="og:description" content="1.0 Network Fundamentals 1.1 Explain the role and function of network components 1.1.b L2 and L3 Switches 1.2 Describe characteristics of network topology architectures 1.2.e Small office/home office (SOHO) 1.3 Compare physical interface and cabling types 1.3.a Single-mode fiber, multimode fiber, copper 1.3.b Connections (Ethernet shared media and point-to-point) 802.3 (Ethernet Standards
+10BASE-T
+10 Mbps Ethernet 802.3 Copper/ 100 m 100BASE-T
+100 Mbps Fast Ethernet 802.3u Copper/ 100m 1000BASE-LX
+1000 Mbps Gigabit Ethernet 802.3z Fiber, 5000 m 1000BASE-T">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="networking">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="David Vargas">
+  <meta name="twitter:description" content="1.0 Network Fundamentals 1.1 Explain the role and function of network components 1.1.b L2 and L3 Switches 1.2 Describe characteristics of network topology architectures 1.2.e Small office/home office (SOHO) 1.3 Compare physical interface and cabling types 1.3.a Single-mode fiber, multimode fiber, copper 1.3.b Connections (Ethernet shared media and point-to-point) 802.3 (Ethernet Standards
+10BASE-T
+10 Mbps Ethernet 802.3 Copper/ 100 m 100BASE-T
+100 Mbps Fast Ethernet 802.3u Copper/ 100m 1000BASE-LX
+1000 Mbps Gigabit Ethernet 802.3z Fiber, 5000 m 1000BASE-T">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/networking/cisco/ethernet_lans/">
+    <link href="/style.min.1915b95fdbf4046da0032dde0fb966271ed904fa9c019f9a326d7ce001902895.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/notes/">
+                        notes
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/readings/">
+                        readings
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about">
+                        about
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            
+            <div class="page-content">
+                <h1 id="10-network-fundamentals">1.0 Network Fundamentals</h1>
+<h1 id="11-explain-the-role-and-function-of-network-components">1.1 Explain the role and function of network components</h1>
+<h1 id="11b-l2-and-l3-switches">1.1.b L2 and L3 Switches</h1>
+<h1 id="12-describe-characteristics-of-network-topology-architectures">1.2 Describe characteristics of network topology architectures</h1>
+<h1 id="12e-small-officehome-office-soho">1.2.e Small office/home office (SOHO)</h1>
+<h1 id="13-compare-physical-interface-and-cabling-types">1.3 Compare physical interface and cabling types</h1>
+<h1 id="13a-single-mode-fiber-multimode-fiber-copper">1.3.a Single-mode fiber, multimode fiber, copper</h1>
+<h1 id="13b-connections-ethernet-shared-media-and-point-to-point">1.3.b Connections (Ethernet shared media and point-to-point)</h1>
+<p>802.3 (Ethernet Standards</p>
+<p>10BASE-T</p>
+<ul>
+<li>10 Mbps</li>
+<li>Ethernet</li>
+<li>802.3</li>
+<li>Copper/ 100 m</li>
+</ul>
+<p>100BASE-T</p>
+<ul>
+<li>100 Mbps</li>
+<li>Fast Ethernet</li>
+<li>802.3u</li>
+<li>Copper/ 100m</li>
+</ul>
+<p>1000BASE-LX</p>
+<ul>
+<li>1000 Mbps</li>
+<li>Gigabit Ethernet</li>
+<li>802.3z</li>
+<li>Fiber, 5000 m</li>
+</ul>
+<p>1000BASE-T</p>
+<ul>
+<li>1000 Mbps</li>
+<li>Gigabit Ethernet</li>
+<li>802.3ab</li>
+<li>Copper, 100m</li>
+</ul>
+<p>10GBASE-T</p>
+<ul>
+<li>10 Gbps</li>
+<li>10 Gig Ethernet</li>
+<li>802.3an</li>
+<li>Copper 100m</li>
+</ul>
+<p>Three most common</p>
+<ul>
+<li>10BASE-T, 100BASE-T, and 1000BASE-T</li>
+</ul>
+<p>Twisting of the wires helps reduce EMI.</p>
+<p>Crosstalk</p>
+<p>-EMI between wire pairs</p>
+<p>Gigabit Ethernet interface Converter (GBIC)</p>
+<ul>
+<li>The original form factor for a removeable transceiver for Gigabit interfaces; larger than SFPs</li>
+</ul>
+<p>Small Form Pluggable (SFP)</p>
+<ul>
+<li>The replacement for GBICs, used on gigabit interfaces, with a smaller size, taking less space on the side of the networking card or switch.</li>
+</ul>
+<p>Small Form Pluggable Plus (SFP+)</p>
+<ul>
+<li>Same size as the SFP, but used on 10-Gbps interfaces</li>
+</ul>
+<p>UTP Cabling Pinouts for 10BASE-T and 100BASE-T</p>
+<p>10BASE-T and 100BASE-T</p>
+<ul>
+<li>2 wire pairs,</li>
+<li>one pair for each direction</li>
+</ul>
+<p>Crossover</p>
+<p>PC/ Router/ AP</p>
+<ul>
+<li>transmits on pins 1/2</li>
+<li>RECEIVES ON PINS 3/6</li>
+</ul>
+<p>Switch/ Hub</p>
+<ul>
+<li>Transmits on pins 3/6</li>
+<li>receives on pins 1/2</li>
+</ul>
+<p>Ethernet NIC transmitters send on pins 1 and 2</p>
+<p>NIC receivers receive on pins 3 and 6</p>
+<p>Straight through cable</p>
+<ul>
+<li>Pins 1/2 &gt; 1/2</li>
+<li>Pins 3/6 &gt; 3/6</li>
+</ul>
+<p>autoix (cisco)</p>
+<ul>
+<li>Notices when a wrong cable is used</li>
+<li>automatically changes it&rsquo;s logic to make the link work.</li>
+</ul>
+<p>1000BASE-T</p>
+<ul>
+<li>4 wire pairs</li>
+<li>Both ends transmit and receive simultaneously on each wire pair.</li>
+<li>pairs 1/2, 3/6, 4/5, 7/8</li>
+<li>Crossover cable crosses the pairs at pins 1/2 and 3/6, it also crosses pairs 4/5 with 7/8</li>
+</ul>
+<p>Fiber Cabling Transmission Concepts</p>
+<p>Physical cable</p>
+<ul>
+<li>Core &gt;</li>
+<li>Cladding &gt;</li>
+<li>Buffer &gt;</li>
+<li>Strengthener &gt;</li>
+<li>Outer Jacket</li>
+</ul>
+<p>Optical Transmitter</p>
+<ul>
+<li>Shines light into the core</li>
+</ul>
+<p>Multimode fiber</p>
+<ul>
+<li>multiple angles (modes) of light waves</li>
+<li>Less expensive</li>
+<li>10 gigabit over ethernet allows for distance up to 400m</li>
+</ul>
+<p>Single mode fiber</p>
+<ul>
+<li>Smaller diameter (around 1/5 of multimode) core</li>
+<li>laser-based transmitter</li>
+<li>single angle</li>
+</ul>
+<p>More expensive SFP/ SFP+ hardware</p>
+<p>Distances up to tens of kilometers</p>
+<p>Transmit port on one end of the fiber connects to the receive port on the other end (Tx and Rx)</p>
+<p>10Gbps Fiber Standards</p>
+<ul>
+<li>10GBASE-S/ MM/ 400m</li>
+<li>10GBASE-LX4/ MM/ 300m</li>
+<li>10GBASE-LR/ SM/ 10km</li>
+<li>10GBASE-E/ SM/ 30km</li>
+</ul>
+<p>UTP, MM, and SM comparisons</p>
+<p>UTP</p>
+<ul>
+<li>low cable cost</li>
+<li>low switch port cost</li>
+<li>100m Max Distance</li>
+<li>Some susceptibility to interference</li>
+<li>Some risk of copying from cable emissions</li>
+</ul>
+<p>Multimode</p>
+<ul>
+<li>Medium cable cost</li>
+<li>Medium switch port cost</li>
+<li>500m Max Distance</li>
+<li>No susceptibility to interference</li>
+<li>No risk of copying from cable emissions</li>
+</ul>
+<p>Single-Mode</p>
+<ul>
+<li>Medium cable cost</li>
+<li>High switch port cost</li>
+<li>40Km Max Distance</li>
+<li>No susceptibility to interference</li>
+<li>No risk of copying from cable emissions</li>
+</ul>
+<p>Sending Data In Ethernet Networks</p>
+<p>Ethernet Header (preamble/sfd/Destination/Source/Type/Dataandpad/FCS)</p>
+<p>Header</p>
+<ul>
+<li>
+<p>Preamble</p>
+</li>
+<li>
+<p>7 bites</p>
+</li>
+<li>
+<p>Synchronization</p>
+</li>
+<li>
+<p>Start Frame Delimiter (SFD)</p>
+</li>
+<li>
+<p>1 Byte</p>
+</li>
+<li>
+<p>Signifies next byte begins the Destination MAC Address Field</p>
+</li>
+<li>
+<p>Destination MAC Address</p>
+</li>
+<li>
+<p>6 Bytes</p>
+</li>
+<li>
+<p>Source MAC Address</p>
+</li>
+<li>
+<p>6 Bytes</p>
+</li>
+<li>
+<p>Type</p>
+</li>
+<li>
+<p>2 bytes</p>
+</li>
+<li>
+<p>Type of protocol listed in the frame (IPv4 or IPv6)</p>
+</li>
+<li>
+<p>Data and Pad</p>
+</li>
+<li>
+<p>46-1500Bytes</p>
+</li>
+<li>
+<p>padding can be added to meet the minimum length requirement</p>
+</li>
+</ul>
+<p>Trailer</p>
+<ul>
+<li>Frame Check Sequence (FCS)</li>
+<li>Used to determine if the frame experienced transmission errors</li>
+</ul>
+<p>Maximum Transmission Unit (MTU)</p>
+<ul>
+<li>Maximum layer 3 packet that can be sent</li>
+</ul>
+<p>Ethernet Addressing</p>
+<ul>
+<li>
+<p>6 bytes long (48 bits)</p>
+</li>
+<li>
+<p>12 digit hexadecimal</p>
+</li>
+<li>
+<p>Cisco switch may list a mac address with periods: 0000.0C12.3456</p>
+</li>
+<li>
+<p>Unicast address</p>
+</li>
+<li>
+<p>an address for a single NIC or port</p>
+</li>
+</ul>
+<p>OUI (Organizationally unique indentifier)</p>
+<ul>
+<li>Universally unique manufacturer code</li>
+<li>24 Bits</li>
+<li>6 Hex Digits</li>
+</ul>
+<p>Vendor Assigned</p>
+<ul>
+<li>24 Bits</li>
+<li>6 Hex Digits</li>
+</ul>
+<p>Group addresses</p>
+<p>Broadcast Address</p>
+<ul>
+<li>Delivered to all devices on the Ethernet LAN.</li>
+<li>FFFF.FFFF.FFFF</li>
+</ul>
+<p>Multicast Address</p>
+<ul>
+<li>Copied and forwarded to a subset of devices on the LAN</li>
+</ul>
+<p>Identifying Network Layer Protocols with the Ethernet Type Field</p>
+<p>The type field identifies which type of layer 3 packet exists within the ethernet frame (IPv6 or IPv4)</p>
+<p>Ethertype is the term used for the type field in an ethernet frame</p>
+<p>Error Detection with FCS</p>
+<ul>
+<li>Error detection does not mean error recovery</li>
+<li>Ethernet decide whether the frame should be discarded and does not attempt to recover the lost frame.</li>
+</ul>
+<p>Sending Ethernet frames with switches and hubs</p>
+<ul>
+<li>Switches allow the use of Full Duplex Logic</li>
+<li>Hubs use half-duplex logic</li>
+</ul>
+<p>Sending in Modern Ethernet LANs Using Full Duplex</p>
+<p>Half duplex</p>
+<ul>
+<li>must wait to send if it is currently receiving a frame</li>
+<li>cannot send and receive at the same time</li>
+</ul>
+<p>Full Duplex</p>
+<ul>
+<li>Does not have to wait before sending,</li>
+<li>send and receive at the same time.</li>
+</ul>
+<p>Hubs</p>
+<ul>
+<li>Uses physical link standards instead of data link standards and are considered layer 1 devices</li>
+</ul>
+<p>Carrier Sense multiple access with Collision Detection (CSMA/CD)</p>
+<ol>
+<li>
+<p>Listen until line is not busy</p>
+</li>
+<li>
+<p>Send frame</p>
+</li>
+<li>
+<p>Listen for a collision while sending if a collision occurs:</p>
+</li>
+<li>
+<p>Send jamming signal telling all nodes a collision has occurred</p>
+</li>
+<li>
+<p>each node waits a random time then tries to send again</p>
+</li>
+<li>
+<p>Back to step one</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>All links between PCs and switches use full duplex</p>
+</li>
+<li>
+<p>A link connected to a hub should be half duplex</p>
+</li>
+<li>
+<p>Ethernet Shared media</p>
+</li>
+<li>
+<p>refers to hubs that use CSMA/CD and share bandwidth</p>
+</li>
+<li>
+<p>Ethernet point-to-point</p>
+</li>
+<li>
+<p>network built with switches where links work independently of others</p>
+</li>
+<li>
+<p>A frame can be sent on every Point-to-point link in an ethernet at the same time.</p>
+</li>
+</ul>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/davidvargasxyz" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://keybase.io/" target="_blank" rel="noopener noreferrer me"
+    title="Keybase">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 76.3" version="1.1" fill="currentColor" stroke="none">
+    <path
+        d="M6.68 73.99c-.6-1.3-1.4-3.1-1.8-4l-.6-1.7-2 2.2-2 2.2-.2-4.2c-.3-6 .2-12.2 1.2-16.6 2.3-9.8 9.5-18.7 18.8-23.4l2.1-1-.5-1.5c-.3-.8-.6-2.5-.7-3.6l-.2-2.1-2.1-.2c-3.2-.3-4.9-1.2-6-3.5-.6-1.2-.6-1.4-.4-4.6.2-4.2.5-5.1 1.8-6.5 1.6-1.8 2.7-2.1 6.7-1.9 2.9.2 3.5.3 4.8.9.8.4 1.5.8 1.6.8.1 0 1-1.1 2.1-2.6l1.9-2.7 1.2.7c.7.4 1.5.9 1.9 1.1l.7.4-.6 1.5c-.3.8-.7 2.2-.8 2.9l-.2 1.4 1.7.2c6.1.6 10.7 4.3 12.4 9.9.5 1.8.5 5.3 0 7-.5 1.6-.5 1.7-.1 1.7.7 0 5.4 2.3 7.3 3.5 3.7 2.4 8 6.6 10.4 10.2 4.5 6.7 6.4 14 5.6 22-.4 4.8-1.3 8.6-2.9 12.3l-.6 1.4h-5l1.2-2.4c1.3-2.6 2.3-6.2 2.8-9.4.3-2.2.4-8.2.1-9.3l-.2-.7-1.3 1.4c-3.2 3.5-7.9 4.5-14.2 2.8-5.4-1.4-7.6-1.7-12.7-1.7-3.9 0-5.2.1-7.3.6-5.8 1.3-9.9 3.2-15.6 7.3-2.1 1.5-3.8 2.7-3.9 2.7-.1 0 .2-1 .6-2.3.4-1.3 1.1-3.4 1.5-4.8l.8-2.5-.9.9c-.5.5-1.9 1.9-3.1 3.2l-2.1 2.3.5 1.9c.6 2.5 2 5.6 3.5 7.9.6 1 1.1 1.8 1.1 1.9s-1.2.1-2.6.1h-2.6l-1.1-2.1zm8.8-24.2c4.8-5.1 8.7-9.2 8.8-9.2.1.1-.4 1.6-.9 3.3-3.3 10.4-4 12.4-3.9 12.5 0 0 1.2-.4 2.5-.9 8.5-3.7 18.4-4.2 28.9-1.4 4.7 1.2 6.5 1.2 8.8 0 1.3-.7 1.8-1.1 2.4-2.1 1.1-1.7 1.2-4.1.5-6.3-1.7-4.8-8.3-11-14.5-13.7-3.2-1.4-3.4-1.4-4.1-.7l-.6.6 2.6 3.2c1.4 1.7 2.9 3.6 3.1 4.1.6 1.2.7 3.1.1 4.3-.8 1.7-3.2 2.9-5.1 2.5-.8-.2-1.1-.1-1.9.5-2.2 1.6-4.6 1.2-6.6-1.2-1.6-1.8-2-2.7-2.1-4.5 0-.9-.3-2-.5-2.4-.3-.6-.4-1.3-.4-2.2l.1-1.4-1.3-.3c-1.8-.5-3.9-1.5-5.1-2.4-.6-.4-1.1-.8-1.3-.8s-1.5.6-2.9 1.3c-9.7 5-16 14.3-17 24.8-.1 1-.2 2.3-.3 2.8l-.1.9 1.1-1.1c.5-.5 4.9-5.1 9.7-10.2zm25.9-7.4c.9-.7 1.7-1.3 1.9-1.3.1 0 .4.3.7.7.5.8 1.4.8 1.8.1.3-.5.3-.6-5.6-7.8-3.5-4.3-4.2-5-4.7-5-1.2.1-.9 1 1 3.3l1.8 2.2-1 .8c-1.1 1-1.2 1.2-.5 1.8.5.5.6.4 1.6-.3l1.1-.7.7.6c.4.3.6.8.6.9 0 .2-.8.9-1.7 1.7-.9.7-1.6 1.5-1.6 1.7 0 .3.5 1.1 1.4 2.2.3.6.8.4 2.5-.9zm-10.3-14.2c.6-1.8 2.6-3.2 4.6-3.2 1.1 0 2.7.9 3.8 2.1l1 1.2.9-1.1c2.5-2.8 2.8-6.7.8-10.1-1.5-2.5-4.3-4-8.2-4.4-2.1-.2-2.6-.4-3.7-1.5l-.8-.8-.4.6c-.8 1.2-2.5 5.1-3 6.6-.7 2.3-.4 5.9.5 7.7.9 1.7 3.3 4 4 3.7.1.1.3-.3.5-.8zm-8.9-13.6c.2-.5.7-1.8 1.2-2.8.5-1 .9-2 .9-2.3 0-.9-1-1.3-3.7-1.5-2.4-.2-2.6-.1-3.1.4-.4.4-.6.9-.6 1.6 0 .6-.1 1.7-.2 2.6-.2 2.1.1 2.5 2.2 2.8 3.1.2 3 .2 3.3-.8zm-3.1-2.4c0-1.7.2-1.9 1.6-1.9h1.3v2.8h-2.8v-.9zm6.3 58.3c-.6-.6-.8-1-.8-2 0-1.9 1.1-3 2.9-3 1.7 0 2.9 1.2 2.9 2.9 0 1.8-1.1 2.8-3 2.9-1 0-1.4-.2-2-.8zm19.3.3a2.93 2.93 0 011.8-5.3c1.8 0 2.8 1.1 2.9 3 0 1.1-.1 1.4-.8 2s-1 .8-2 .8c-.9 0-1.5-.2-1.9-.5z" />
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2024 David Vargas.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

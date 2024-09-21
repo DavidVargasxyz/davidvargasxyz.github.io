@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | David Vargas</title>
+<meta property="og:title" content=" | David Vargas" />
+<meta name="twitter:title" content=" | David Vargas" />
+<meta itemprop="name" content=" | David Vargas" />
+<meta name="application-name" content=" | David Vargas" />
+<meta property="og:site_name" content="davidvargas.xyz" />
+
+<meta name="description" content="David Vargas&#39;s blog">
+<meta itemprop="description" content="David Vargas&#39;s blog" />
+<meta property="og:description" content="David Vargas&#39;s blog" />
+<meta name="twitter:description" content="David Vargas&#39;s blog" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en-gb" href="https://davidvargas.xyz/networking/cisco/ospf_network_types_and_neighbors/" title="" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.134.3">
+
+    
+    <meta property="og:url" content="https://davidvargas.xyz/networking/cisco/ospf_network_types_and_neighbors/">
+  <meta property="og:site_name" content="David Vargas">
+  <meta property="og:title" content="David Vargas">
+  <meta property="og:description" content="This chapter covers the following exam topics:
+3.0 IP Connectivity
+3.4 Configure and verify single area OSPFv2
+3.4.a Neighbor adjacencies
+3.4.b Point-to-point
+3.4.c Broadcast (DR/BDR selection)
+3.4.d Router ID
+OSPF Network Types
+Network Type Keyword broadcast point-to-point Dynamically Discovers Neighbors Yes Yes Uses a DR/BDR Yes No “&gt;
+The OSPF Broadcast Network Type
+default to use network type broadcast
+Attempt to discover neighbors by sending OSPF Hellos to the 224.0.0.5 multicast address (an address reserved for sending packets to all OSPF routers in the subnet)">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="networking">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="David Vargas">
+  <meta name="twitter:description" content="This chapter covers the following exam topics:
+3.0 IP Connectivity
+3.4 Configure and verify single area OSPFv2
+3.4.a Neighbor adjacencies
+3.4.b Point-to-point
+3.4.c Broadcast (DR/BDR selection)
+3.4.d Router ID
+OSPF Network Types
+Network Type Keyword broadcast point-to-point Dynamically Discovers Neighbors Yes Yes Uses a DR/BDR Yes No “&gt;
+The OSPF Broadcast Network Type
+default to use network type broadcast
+Attempt to discover neighbors by sending OSPF Hellos to the 224.0.0.5 multicast address (an address reserved for sending packets to all OSPF routers in the subnet)">
+
+
+    
+
+    <link rel="canonical" href="https://davidvargas.xyz/networking/cisco/ospf_network_types_and_neighbors/">
+    <link href="/style.min.1915b95fdbf4046da0032dde0fb966271ed904fa9c019f9a326d7ce001902895.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://davidvargas.xyz/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://davidvargas.xyz/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/notes/">
+                        notes
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/readings/">
+                        readings
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about">
+                        about
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>This chapter covers the following exam topics:</p>
+<p>3.0 IP Connectivity</p>
+<p>3.4 Configure and verify single area OSPFv2</p>
+<p>3.4.a Neighbor adjacencies</p>
+<p>3.4.b Point-to-point</p>
+<p>3.4.c Broadcast (DR/BDR selection)</p>
+<p>3.4.d Router ID</p>
+<p>OSPF Network Types</p>
+<p>Network Type
+Keyword
+broadcast
+point-to-point
+Dynamically Discovers
+Neighbors
+Yes
+Yes
+Uses a
+DR/BDR
+Yes
+No &ldquo;&gt;</p>
+<p>The OSPF Broadcast Network Type</p>
+<p>default to use network type broadcast</p>
+<p>Attempt to discover neighbors by sending OSPF Hellos to the 224.0.0.5 multicast address (an address reserved for sending packets to all OSPF routers in the subnet)</p>
+<p>Attempt to elect a DR and BDR on each subnet</p>
+<p>On the interface with no other routers on the subnet (G0/1), become the DR</p>
+<p>On the interface with three other routers on the subnet (G0/0), be either DR, BDR, or a DROther router</p>
+<p>all discovered routers on the link should become neighbors and at least reach the 2-way state. For all neighbor relationships that include the DR and/or BDR, the neighbor relationship should further reach the full state. That section defined the term fully adjacent as a special term that refers to neighbors that reach this full state.</p>
+<p>To see the setting, use the show ip ospf interface command, as shown in Example 21-4. The first highlighted item identifies the network type</p>
+<p>Click here to view code image
+RI* show ip ospf interface ge/ø
+GigabitEthernete/e is up, line protocol is up
+Internet Address 10.1.1.1/24, Area e, Attached via Interface Enabl
+Process ID 1, Router ID 1.1.1.1, Network Type BROADCAST, cost: 1
+Topology-MTID
+e
+Cost
+1
+Disabled
+no
+Shutdown
+no
+Topology Name
+Base
+Enabled by interface config, including secondary ip addresses
+Transmit Delay is 1 sec, State DROTHER, Priority 1
+Designated Router (ID) 4.4.4.4, Interface address 10.1.1.4
+Backup Designated router (ID) 3.3.3.3, Interface address 10.1.1.3
+Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit
+oob-resync timeout 40
+Hello due in ee:ee:ee
+Supports Link-local Signaling (LLS)
+Cisco NSF helper support enabled
+IETF NSF helper support enabled
+Index 1/1/1, flood queue length e
+Next
+Last flood scan length is e, maximum is 1
+Last flood scan time is e msec, maximum is e
+Nei ghhnr r Olin* i e R Ad-iarpnt- nei ghhnr c-nllnt-
+msec &ldquo;&gt;</p>
+<p>Adjacent with neighbor 4.4.4.4 (Designated Router)
+Suppress hello for e neighbor(s) &ldquo;&gt;</p>
+<p>ip ospf network broadcast interface subcommand would configure the setting.</p>
+<p>Configuring to Influence the DR/BDR Election</p>
+<p>If the DR fails, the BDR becomes the DR, and a new BDR is elected.</p>
+<p>When a better router enters the subnet, no preemption of the existing DR or BDR occurs.</p>
+<ul>
+<li>Preemption: If a new router is configured to be the DR, it will not become the DR until the OSPF process is reset.</li>
+</ul>
+<p>As a result of these rules, while you can configure a router to be the best (highest priority) router to become the DR in an election, doing so only increases that router’s statistical chances of being the DR at a given point in time. If the router fails, other routers will become DR and BDR, and the best router will not be DR again until the current DR and BDR fail.</p>
+<p>The highest OSPF interface priority: The highest value wins during an election, with values ranging from 0 to 255.</p>
+<p>The highest OSPF Router ID: If the priority ties, the election chooses the router with the highest OSPF RID.</p>
+<p>If an engineer preferred that R1 be the DR, the engineer could add the configuration in Example 21-5 to set R1’s interface priority to 99. (default of 1)</p>
+<p>RI* configure terminal
+Configuring from terminal, memory, or network [terminal]?
+Enter configuration commands, one per line.
+End with CNTL/Z.
+RI (config)# interface gø,&lsquo;ø
+RI (config-if)# ip ospf priority 99
+RI (config-if)# AZ
+RI* show ip ospf interface ge/ø I include Priority
+Transmit Delay is 1 sec, State DROTHER, Priority 99
+10.1.1.2
+10.1.1.3
+10.1.
+1.4
+RI* show ip
+Neighbor ID
+2.2. 2.2
+3.3. 3.3
+4.4.4.4
+RI* show ip
+Interface
+Gie/l
+Gie/e
+ospf neighbor
+pri
+1
+1
+1
+State
+2WAY/DROTHER
+FULL/BDR
+FULL/DR
+Dead Time
+ospf
+PID
+1
+1
+interface brief
+Area
+e
+e
+Address/Mask
+IP
+le.1.11.1/24
+le.1.1.1/24
+Address
+Cost
+1
+1
+State
+DR
+DROTH
+In
+2/ &ldquo;&gt;</p>
+<p>show that the DR and BDR have not changed at all</p>
+<p>The OSPF Point-to-Point Network Type</p>
+<p>(HDLC and PPP) do not support data-link broadcasts.</p>
+<p>to use OSPF network type point-to-point. R2, on the other end of the WAN link, would need the same configuration command on its matching interface.</p>
+<p>RI
+Click here to view code image
+RI* configure terminal
+Enter configuration commands, one per line.
+End with CNTL/Z.
+RI (config)# interface ge/Ø/0
+RI (config-if)# ip ospf network point-to-point
+RI (config-if)#
+RI* show ip ospf interface ge/0/0
+GigabitEthernete/0/e is up, line protocol is up
+Internet Address 10.1.12.1/24, Area e, Attached via Interface Enab
+Process ID 1, Router ID 1.1.1.1, Network Type POINT TO POINT, cost
+Topology-MT ID
+e
+Cost
+4
+Disabled
+no
+Shutdown
+no
+Topology Name
+Base
+Enabled by interface config, including secondary ip addresses
+Transmit Delay is 1 sec, State POINT TO POINT
+Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit
+oob-resync timeout 40
+Hello due in ee:ee:el
+Supports Link-local Signaling (LLS)
+Cisco NSF helper support enabled &ldquo;&gt;</p>
+<p>Index 1/3/3, flood queue length e
+Next
+Last flood scan length is 1, maximum is 3
+Last flood scan time is e msec, maximum is e msec
+Neighbor Count is 1, Adjacent neighbor count is 1
+Adjacent with neighbor 2.2.2.2
+Suppress hello for e neighbor(s) &ldquo;&gt;</p>
+<p>RI
+Click here to view code image
+show ip ospf neighbor
+eighbor ID
+.2.2.2
+pri
+e
+State
+FULL/
+Dead Time
+lines omitted for brevity
+show ip ospf interface brief
+nterface
+ie/e/e
+PID
+1
+Area
+e
+Address/Mask
+IP
+le.1.12.1/24
+Address
+10.1. 12.2
+Cost
+4
+Interfac
+GigabitE
+State Nbrs F
+1/1
+P2P
+lines omitted for brevity &ldquo;&gt;</p>
+<p>OSPF Neighbor Relationships</p>
+<p>They must have compatible values for several settings as listed in the Hellos exchanged between the two routers</p>
+<p>Requirement
+Interfaces must be in an up/up state.
+Access control lists (ACL) must not filter
+routing protocol messages.
+Interfaces must be in the same subnet.
+They must pass routing protocol neigh-
+bor authentication (if configured).
+Hello and hold/dead timers must match.
+Router IDs (RID) must be unique.
+They must be in the same area.
+OSPF process must not be shut down.
+Required
+for OSPF
+Yes
+Yes
+Yes
+Yes
+Yes
+Yes
+Yes
+Yes
+Neighbor Missing
+if Incorrect
+Yes
+Yes
+Yes
+Yes
+Yes
+Yes
+Yes
+Yes &ldquo;&gt;</p>
+<p>MTU setting.
+Neighboring interfaces must use same
+OSPF network type.
+Yes
+Yes
+No
+No &ldquo;&gt;</p>
+<p>For items listing a “yes” in this column, if that item is configured incorrectly, the neighbor will not appear in lists of OSPF neighbors—for instance, with the show ip ospf neighbor command.</p>
+<p>the last section (shaded) lists a couple of OSPF settings that give a different symptom when incorrect</p>
+<p>for these two items, when incorrect, a router can list the other router as a neighbor, but the neighbor relationship does not work properly in that the routers do not exchange LSAs as they should</p>
+<p>Requirement
+Hello and dead timers must match.
+They must be in the same area.
+RIDs must be unique.
+They must pass any neighbor
+authentication.
+OSPF process must not be shut down.
+Best show Command
+show ip ospf interface
+show ip ospf interface brief
+show ip ospf
+show ip ospf interface
+show ip ospf, show ip ospf
+interface &ldquo;&gt;</p>
+<p>10/40 is the default hello/dead timer</p>
+<p>Finding Area Mismatches</p>
+<p>Check the output of show running-config to look for</p>
+<p>ip ospf process-id area area-number interface subcommands</p>
+<p>network commands in OSPF configuration mode</p>
+<p>Use the show ip ospf interface [brief] command to list the area number</p>
+<p>Finding Duplicate OSPF Router IDs</p>
+<p>both routers automatically generate a log message for the duplicate OSPF RID problem between R1 and R3;</p>
+<p>show ip ospf commands on both R3 and R1 to easily list the RID on each router,</p>
+<p>use the router-id 3.3.3.3 OSPF subcommand and use the EXEC mode command clear ip ospf process. (OSPF will not begin using a new RID value until the process restarts, either via command or reload.)</p>
+<p>Finding OSPF Hello and Dead Timer Mismatches</p>
+<p>Hello interval/timer: The per-interface timer that tells a router how often to send OSPF Hello messages on an interface.</p>
+<p>Dead interval/timer: The per-interface timer that tells the router how long to wait without having received a Hello from a neighbor before believing that neighbor has failed. (Defaults to four times the Hello timer.)</p>
+<p>Click here to view code image
+RI* show ip ospf interface GO/O
+GigabitEthernete/e is up, line protocol is up
+Internet Address 10.1.1.1/24, Area e, Attached via Network Stateme
+Process ID 1, Router ID 1.1.1.1, Network Type BROADCAST, cost: 1
+Topology-MT ID Cost Disabled Shutdown
+e
+1
+no
+no
+Topology Name
+Base
+Transmit Delay is 1 sec, State DR, Priority 1
+Designated Router (ID) 1.1.1.1, Interface address 10.1.1.1
+No backup designated router on this network
+Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit
+lines omitted for brevity &ldquo;&gt;</p>
+<p>R4# show ip ospf interface Gi€/€
+GigabitEthernete/e is up, line protocol is up
+Internet Address le.1.1.4/24, Area e, Attached via Network Statem
+Process ID 4, Router ID le.1.44.4, Network Type BROADCAST, cost:
+Topology-MT ID Cost Disabled Shutdown
+e
+1
+no
+no
+Topology Name
+Base
+Transmit Delay is 1 sec, State DR, Priority 1
+Transmit Delay is 1 sec, State DR, Priority 1
+Designated Router (ID) 10.1
+No backup designated router
+Timer intervals configured,
+lines omitted for brevity
+.44.4, Interface address 10.1.1.4
+on this network
+Hello 5, Dead 20, Wait 2e, Retransmit &ldquo;&gt;</p>
+<p>Shutting Down the OSPF Process</p>
+<p>When a routing protocol process is shut down, IOS does the following:</p>
+<p>Brings down all neighbor relationships and clears the OSPF neighbor table</p>
+<p>Clears the LSDB</p>
+<p>Clears the IP routing table of any OSPF-learned routes</p>
+<p>IOS retains all OSPF configuration.</p>
+<p>IOS still lists all OSPF-enabled interfaces in the OSPF interface list (show ip ospf interface) but in a DOWN state.</p>
+<p>Mismatched MTU Settings</p>
+<p>defining the largest network layer packet that the router will forward out each interface.</p>
+<p>default MTU size of 1500 bytes,</p>
+<p>The ip mtu size interface subcommand defines the IPv4 MTU setting, and the ipv6 mtu size command sets the equivalent for IPv6 packets.</p>
+<p>Symptom: they fail to exchange their LSDBs. Eventually, after trying and failing to exchange their LSDBs, the neighbor relationship also fails.</p>
+<p>show interfaces command (which lists the IP MTU).</p>
+<p>Mismatched OSPF Network Types</p>
+<p>one router uses broadcast, and the other uses point-to-point, the following occurs:</p>
+<p>The two routers become fully adjacent neighbors (that is, they reach a full state).</p>
+<p>They exchange their LSDBs.</p>
+<p>They do not add IP routes to the IP routing table.</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/davidvargasxyz" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://keybase.io/" target="_blank" rel="noopener noreferrer me"
+    title="Keybase">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 76.3" version="1.1" fill="currentColor" stroke="none">
+    <path
+        d="M6.68 73.99c-.6-1.3-1.4-3.1-1.8-4l-.6-1.7-2 2.2-2 2.2-.2-4.2c-.3-6 .2-12.2 1.2-16.6 2.3-9.8 9.5-18.7 18.8-23.4l2.1-1-.5-1.5c-.3-.8-.6-2.5-.7-3.6l-.2-2.1-2.1-.2c-3.2-.3-4.9-1.2-6-3.5-.6-1.2-.6-1.4-.4-4.6.2-4.2.5-5.1 1.8-6.5 1.6-1.8 2.7-2.1 6.7-1.9 2.9.2 3.5.3 4.8.9.8.4 1.5.8 1.6.8.1 0 1-1.1 2.1-2.6l1.9-2.7 1.2.7c.7.4 1.5.9 1.9 1.1l.7.4-.6 1.5c-.3.8-.7 2.2-.8 2.9l-.2 1.4 1.7.2c6.1.6 10.7 4.3 12.4 9.9.5 1.8.5 5.3 0 7-.5 1.6-.5 1.7-.1 1.7.7 0 5.4 2.3 7.3 3.5 3.7 2.4 8 6.6 10.4 10.2 4.5 6.7 6.4 14 5.6 22-.4 4.8-1.3 8.6-2.9 12.3l-.6 1.4h-5l1.2-2.4c1.3-2.6 2.3-6.2 2.8-9.4.3-2.2.4-8.2.1-9.3l-.2-.7-1.3 1.4c-3.2 3.5-7.9 4.5-14.2 2.8-5.4-1.4-7.6-1.7-12.7-1.7-3.9 0-5.2.1-7.3.6-5.8 1.3-9.9 3.2-15.6 7.3-2.1 1.5-3.8 2.7-3.9 2.7-.1 0 .2-1 .6-2.3.4-1.3 1.1-3.4 1.5-4.8l.8-2.5-.9.9c-.5.5-1.9 1.9-3.1 3.2l-2.1 2.3.5 1.9c.6 2.5 2 5.6 3.5 7.9.6 1 1.1 1.8 1.1 1.9s-1.2.1-2.6.1h-2.6l-1.1-2.1zm8.8-24.2c4.8-5.1 8.7-9.2 8.8-9.2.1.1-.4 1.6-.9 3.3-3.3 10.4-4 12.4-3.9 12.5 0 0 1.2-.4 2.5-.9 8.5-3.7 18.4-4.2 28.9-1.4 4.7 1.2 6.5 1.2 8.8 0 1.3-.7 1.8-1.1 2.4-2.1 1.1-1.7 1.2-4.1.5-6.3-1.7-4.8-8.3-11-14.5-13.7-3.2-1.4-3.4-1.4-4.1-.7l-.6.6 2.6 3.2c1.4 1.7 2.9 3.6 3.1 4.1.6 1.2.7 3.1.1 4.3-.8 1.7-3.2 2.9-5.1 2.5-.8-.2-1.1-.1-1.9.5-2.2 1.6-4.6 1.2-6.6-1.2-1.6-1.8-2-2.7-2.1-4.5 0-.9-.3-2-.5-2.4-.3-.6-.4-1.3-.4-2.2l.1-1.4-1.3-.3c-1.8-.5-3.9-1.5-5.1-2.4-.6-.4-1.1-.8-1.3-.8s-1.5.6-2.9 1.3c-9.7 5-16 14.3-17 24.8-.1 1-.2 2.3-.3 2.8l-.1.9 1.1-1.1c.5-.5 4.9-5.1 9.7-10.2zm25.9-7.4c.9-.7 1.7-1.3 1.9-1.3.1 0 .4.3.7.7.5.8 1.4.8 1.8.1.3-.5.3-.6-5.6-7.8-3.5-4.3-4.2-5-4.7-5-1.2.1-.9 1 1 3.3l1.8 2.2-1 .8c-1.1 1-1.2 1.2-.5 1.8.5.5.6.4 1.6-.3l1.1-.7.7.6c.4.3.6.8.6.9 0 .2-.8.9-1.7 1.7-.9.7-1.6 1.5-1.6 1.7 0 .3.5 1.1 1.4 2.2.3.6.8.4 2.5-.9zm-10.3-14.2c.6-1.8 2.6-3.2 4.6-3.2 1.1 0 2.7.9 3.8 2.1l1 1.2.9-1.1c2.5-2.8 2.8-6.7.8-10.1-1.5-2.5-4.3-4-8.2-4.4-2.1-.2-2.6-.4-3.7-1.5l-.8-.8-.4.6c-.8 1.2-2.5 5.1-3 6.6-.7 2.3-.4 5.9.5 7.7.9 1.7 3.3 4 4 3.7.1.1.3-.3.5-.8zm-8.9-13.6c.2-.5.7-1.8 1.2-2.8.5-1 .9-2 .9-2.3 0-.9-1-1.3-3.7-1.5-2.4-.2-2.6-.1-3.1.4-.4.4-.6.9-.6 1.6 0 .6-.1 1.7-.2 2.6-.2 2.1.1 2.5 2.2 2.8 3.1.2 3 .2 3.3-.8zm-3.1-2.4c0-1.7.2-1.9 1.6-1.9h1.3v2.8h-2.8v-.9zm6.3 58.3c-.6-.6-.8-1-.8-2 0-1.9 1.1-3 2.9-3 1.7 0 2.9 1.2 2.9 2.9 0 1.8-1.1 2.8-3 2.9-1 0-1.4-.2-2-.8zm19.3.3a2.93 2.93 0 011.8-5.3c1.8 0 2.8 1.1 2.9 3 0 1.1-.1 1.4-.8 2s-1 .8-2 .8c-.9 0-1.5-.2-1.9-.5z" />
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2024 David Vargas.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script src="https://davidvargas.xyz/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>

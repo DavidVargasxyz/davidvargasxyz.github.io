@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on David Vargas</title>
+    <link>http://localhost:1313/python/</link>
+    <description>Recent content in Python on David Vargas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://localhost:1313/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python Basics</title>
+      <link>http://localhost:1313/python/basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/python/basics/</guid>
+      
+      <description>&lt;p&gt;Expressions consist of values (such as 2) and operators (such as +), and they can always evaluate (that is, reduce) down to a single value.&lt;/p&gt;
+&lt;p&gt;A single value with no operators is also considered an expression, though it evaluates only to itself, as shown here:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2&lt;/p&gt;
+&lt;p&gt;Table 1-1: Math Operators from Highest to Lowest Precedence&lt;/p&gt;
+&lt;p&gt;Operator&lt;/p&gt;
+&lt;p&gt;Operation&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;p&gt;Evaluates to . . .&lt;/p&gt;
+&lt;p&gt;**&lt;/p&gt;
+&lt;p&gt;Exponent&lt;/p&gt;
+&lt;p&gt;2 ** 3&lt;/p&gt;
+&lt;p&gt;8&lt;/p&gt;
+&lt;p&gt;%&lt;/p&gt;
+&lt;p&gt;Modulus/remainder&lt;/p&gt;
+&lt;p&gt;22 % 8&lt;/p&gt;
+&lt;p&gt;6&lt;/p&gt;
+&lt;p&gt;//&lt;/p&gt;
+&lt;p&gt;Integer division/floored quotient&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

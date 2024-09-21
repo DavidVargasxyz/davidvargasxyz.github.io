@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | David Vargas</title>
+<meta property="og:title" content=" | David Vargas" />
+<meta name="twitter:title" content=" | David Vargas" />
+<meta itemprop="name" content=" | David Vargas" />
+<meta name="application-name" content=" | David Vargas" />
+<meta property="og:site_name" content="davidvargas.xyz" />
+
+<meta name="description" content="David Vargas&#39;s blog">
+<meta itemprop="description" content="David Vargas&#39;s blog" />
+<meta property="og:description" content="David Vargas&#39;s blog" />
+<meta name="twitter:description" content="David Vargas&#39;s blog" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/linux/rhcsa/21.-shell-scripting/" title="" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.134.3">
+
+    
+    <meta property="og:url" content="http://localhost:1313/linux/rhcsa/21.-shell-scripting/">
+  <meta property="og:site_name" content="David Vargas">
+  <meta property="og:title" content="David Vargas">
+  <meta property="og:description" content="Shell Scripts A group of Linux commands along with control structures and optional comments stored in a text file.
+Can be executed directly at the Linux command prompt.
+Do not need to be compiled as they are interpreted by the shell line by line.
+managing packages and users, administering partitions and file systems, monitoring file system utilization, trimming log files, archiving and compressing files, finding and removing unnecessary files, starting and stopping database services and applications, and producing reports.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="linux">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="David Vargas">
+  <meta name="twitter:description" content="Shell Scripts A group of Linux commands along with control structures and optional comments stored in a text file.
+Can be executed directly at the Linux command prompt.
+Do not need to be compiled as they are interpreted by the shell line by line.
+managing packages and users, administering partitions and file systems, monitoring file system utilization, trimming log files, archiving and compressing files, finding and removing unnecessary files, starting and stopping database services and applications, and producing reports.">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/linux/rhcsa/21.-shell-scripting/">
+    <link href="/style.min.1915b95fdbf4046da0032dde0fb966271ed904fa9c019f9a326d7ce001902895.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/notes/">
+                        notes
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/readings/">
+                        readings
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about">
+                        about
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            
+            <div class="page-content">
+                <h2 id="shell-scripts">Shell Scripts</h2>
+<ul>
+<li>
+<p>A group of Linux commands along with control structures and optional comments stored in a text file.</p>
+</li>
+<li>
+<p>Can be executed directly at the Linux command prompt.</p>
+</li>
+<li>
+<p>Do not need to be compiled as they are interpreted by the shell line by line.</p>
+</li>
+<li>
+<p>managing packages and users, administering partitions and file systems, monitoring file system utilization, trimming log files, archiving and compressing files, finding and removing unnecessary files, starting and stopping database services and applications, and producing reports.</p>
+</li>
+<li>
+<p>Run by the shell one at a time in the order in which they are listed.</p>
+</li>
+<li>
+<p>Each line is executed as if it is typed and run at the command prompt.</p>
+</li>
+<li>
+<p>Control structures are utilized for creating and managing conditional and looping constructs.</p>
+</li>
+<li>
+<p>Comments are also generally included to add information about the script such as the author name, creation date, previous modification dates, purpose, and usage.</p>
+</li>
+<li>
+<p>If the script encounters an error during execution, the error message is printed on the screen.</p>
+</li>
+<li>
+<p>Can use the nl command to enumerate the lines for troubleshooting.</p>
+</li>
+<li>
+<p>Can store your scripts in the <em>/usr/local/bin</em> directory, which is included in the PATH of all users by default.</p>
+</li>
+</ul>
+<h3 id="script01-displaying-system-information">Script01: Displaying System Information</h3>
+<ul>
+<li>Create the first script called <em>sys_info.sh</em> in <em>/usr/local/bin/</em></li>
+<li>Use the vim editor with sudo to write the script.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nb">echo</span> <span class="s2">&#34;Display Basic System Information&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;==================================&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The hostname, hardware, and OS information is:&#34;</span>
+</span></span><span class="line"><span class="cl">/usr/bin/hostnamectl
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The Following users are currently logged in:&#34;</span>
+</span></span><span class="line"><span class="cl">/usr/bin/who
+</span></span></code></pre></div><ul>
+<li>Within vim, press the ESC key and then type :set nu to view line numbers associated with each line entry.</li>
+<li>Must add execute bit to run the script</li>
+</ul>
+<h3 id="executing-a-script">Executing a Script</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>chmod +x /usr/local/bin/sys_info.sh<span class="o">](</span>&lt;<span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># chmod +x /usr/local/bin/sys_info.sh</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># ll /usr/local/bin/sys_info.sh</span>
+</span></span><span class="line"><span class="cl">-rwxr-xr-x. <span class="m">1</span> root root <span class="m">244</span> Jul <span class="m">30</span> 09:47 /usr/local/bin/sys_info.sh&gt;<span class="o">)</span>
+</span></span></code></pre></div><ul>
+<li>Any user on the system can now run this script using either its name or the full path.</li>
+</ul>
+<p>Let&rsquo;s run the script and see what the output will look like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># /usr/local/bin/sys_info.sh</span>
+</span></span><span class="line"><span class="cl">Display Basic System <span class="nv">Information</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================================</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">The hostname, hardware, and OS information is:
+</span></span><span class="line"><span class="cl"> Static hostname: server30
+</span></span><span class="line"><span class="cl">       Icon name: computer-vm
+</span></span><span class="line"><span class="cl">         Chassis: vm 🖴
+</span></span><span class="line"><span class="cl">      Machine ID: eaa6174e108d4a27bd619754…
+</span></span><span class="line"><span class="cl">         Boot ID: 13d8b3c167b24757b3678e4f…
+</span></span><span class="line"><span class="cl">  Virtualization: oracle
+</span></span><span class="line"><span class="cl">Operating System: Red Hat Enterprise Linux…
+</span></span><span class="line"><span class="cl">     CPE OS Name: cpe:/o:redhat:enterprise…
+</span></span><span class="line"><span class="cl">          Kernel: Linux 5.14.0-362.24.1.el…
+</span></span><span class="line"><span class="cl">    Architecture: x86-64
+</span></span><span class="line"><span class="cl"> Hardware Vendor: innotek GmbH
+</span></span><span class="line"><span class="cl">  Hardware Model: VirtualBox
+</span></span><span class="line"><span class="cl">Firmware Version: VirtualBox
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">The Following users are currently logged in:
+</span></span><span class="line"><span class="cl">root     pts/0        2024-07-30 07:22 <span class="o">(</span>172.16.7.95<span class="o">)</span>
+</span></span></code></pre></div><h3 id="debugging-a-script">Debugging a Script</h3>
+<p>Can either append the <code>-x</code> option to the &ldquo;<code>#!/bin/bash</code>&rdquo; at the beginning of the script to look like &ldquo;<code>#!/bin/bash -x</code>&rdquo;, or execute the script as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># bash -x sys_info.sh</span>
+</span></span><span class="line"><span class="cl">+ <span class="nb">echo</span> <span class="s1">&#39;Display Basic System Information&#39;</span>
+</span></span><span class="line"><span class="cl">Display Basic System Information
+</span></span><span class="line"><span class="cl">+ <span class="nb">echo</span> <span class="o">==================================</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================================</span>
+</span></span><span class="line"><span class="cl">+ <span class="nb">echo</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">+ <span class="nb">echo</span> <span class="s1">&#39;The hostname, hardware, and OS information is:&#39;</span>
+</span></span><span class="line"><span class="cl">The hostname, hardware, and OS information is:
+</span></span><span class="line"><span class="cl">+ /usr/bin/hostnamectl
+</span></span><span class="line"><span class="cl"> Static hostname: server30
+</span></span><span class="line"><span class="cl">       Icon name: computer-vm
+</span></span><span class="line"><span class="cl">         Chassis: vm 🖴
+</span></span><span class="line"><span class="cl">      Machine ID: eaa6174e108d4a27bd6197548ce77270
+</span></span><span class="line"><span class="cl">         Boot ID: 13d8b3c167b24757b3678e4fd3fe19ee
+</span></span><span class="line"><span class="cl">  Virtualization: oracle
+</span></span><span class="line"><span class="cl">Operating System: Red Hat Enterprise Linux 9.3 <span class="o">(</span>Plow<span class="o">)</span>     
+</span></span><span class="line"><span class="cl">     CPE OS Name: cpe:/o:redhat:enterprise_linux:9::baseos
+</span></span><span class="line"><span class="cl">          Kernel: Linux 5.14.0-362.24.1.el9_3.x86_64
+</span></span><span class="line"><span class="cl">    Architecture: x86-64
+</span></span><span class="line"><span class="cl"> Hardware Vendor: innotek GmbH
+</span></span><span class="line"><span class="cl">  Hardware Model: VirtualBox
+</span></span><span class="line"><span class="cl">Firmware Version: VirtualBox
+</span></span><span class="line"><span class="cl">+ <span class="nb">echo</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">+ <span class="nb">echo</span> <span class="s1">&#39;The Following users are currently logged in:&#39;</span>
+</span></span><span class="line"><span class="cl">The Following users are currently logged in:
+</span></span><span class="line"><span class="cl">+ /usr/bin/who
+</span></span><span class="line"><span class="cl">root     pts/0        2024-07-30 07:22 <span class="o">(</span>172.16.7.95<span class="o">)</span>
+</span></span></code></pre></div><ul>
+<li>Actual lines from the script prefixed by the + sign and followed by the command execution result.</li>
+<li>Shows the line number of the problem line in the output if there is any.</li>
+<li>This way you can identify any issues pertaining to the path, command name, use of special characters, etc., and address it quickly.</li>
+</ul>
+<p>Change one of the echo commands in the script to &ldquo;iecho&rdquo; and re-run the script in the debug mode to see the error:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># bash -x sys_info.sh</span>
+</span></span><span class="line"><span class="cl">+ <span class="nb">echo</span> <span class="s1">&#39;Display Basic System Information&#39;</span>
+</span></span><span class="line"><span class="cl">Display Basic System Information
+</span></span><span class="line"><span class="cl">+ <span class="nb">echo</span> <span class="o">==================================</span>
+</span></span><span class="line"><span class="cl"><span class="o">==================================</span>
+</span></span><span class="line"><span class="cl">+ iecho
+</span></span><span class="line"><span class="cl">/usr/local/bin/sys_info.sh: line 4: iecho: <span class="nb">command</span> not found
+</span></span><span class="line"><span class="cl">+ <span class="nb">echo</span> <span class="s1">&#39;The hostname, hardware, and OS information is:&#39;</span>
+</span></span><span class="line"><span class="cl">The hostname, hardware, and OS information is:
+</span></span><span class="line"><span class="cl">+ /usr/bin/hostnamectl
+</span></span><span class="line"><span class="cl"> Static hostname: server30
+</span></span><span class="line"><span class="cl">       Icon name: computer-vm
+</span></span><span class="line"><span class="cl">         Chassis: vm 🖴
+</span></span><span class="line"><span class="cl">      Machine ID: eaa6174e108d4a27bd6197548ce77270
+</span></span><span class="line"><span class="cl">         Boot ID: 13d8b3c167b24757b3678e4fd3fe19ee
+</span></span><span class="line"><span class="cl">  Virtualization: oracle
+</span></span><span class="line"><span class="cl">Operating System: Red Hat Enterprise Linux 9.3 <span class="o">(</span>Plow<span class="o">)</span>     
+</span></span><span class="line"><span class="cl">     CPE OS Name: cpe:/o:redhat:enterprise_linux:9::baseos
+</span></span><span class="line"><span class="cl">          Kernel: Linux 5.14.0-362.24.1.el9_3.x86_64
+</span></span><span class="line"><span class="cl">    Architecture: x86-64
+</span></span><span class="line"><span class="cl"> Hardware Vendor: innotek GmbH
+</span></span><span class="line"><span class="cl">  Hardware Model: VirtualBox
+</span></span><span class="line"><span class="cl">Firmware Version: VirtualBox
+</span></span><span class="line"><span class="cl">+ <span class="nb">echo</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">+ <span class="nb">echo</span> <span class="s1">&#39;The Following users are currently logged in:&#39;</span>
+</span></span><span class="line"><span class="cl">The Following users are currently logged in:
+</span></span><span class="line"><span class="cl">+ /usr/bin/who
+</span></span><span class="line"><span class="cl">root     pts/0        2024-07-30 07:22 <span class="o">(</span>172.16.7.95<span class="o">)</span>
+</span></span></code></pre></div><h3 id="script02-using-local-variables">Script02: Using Local Variables</h3>
+<ul>
+<li>Create a script called <em>use_var.sh</em> will</li>
+<li>Define a local variable and display its value on the screen.</li>
+<li>Re-check the value of the variable after the script execution has completed.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># vim /usr/local/bin/use_var.sh</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#!/bin/bash</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Setting a Local Variable&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;========================&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">SYSNAME</span><span class="o">=</span>server30.example.com
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The hostname of this system is </span><span class="nv">$SYSNAME</span><span class="s2">&#34;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># chmod +x /usr/local/bin/use_var.sh</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># use_var.sh</span>
+</span></span><span class="line"><span class="cl">Setting a Local <span class="nv">Variable</span>
+</span></span><span class="line"><span class="cl"><span class="o">========================</span>
+</span></span><span class="line"><span class="cl">The hostname of this system is server30.example.com
+</span></span></code></pre></div><p>If you run the echo command to see what is stored in the SYSNAME
+variable, you will get nothing:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># echo $SYSNAME</span>
+</span></span></code></pre></div><h3 id="script03-using-pre-defined-environment-variables">Script03: Using Pre-Defined Environment Variables</h3>
+<p>The following script called pre_env.sh will display the values of SHELL and LOGNAME environment variables:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># vim /usr/local/bin/pre_env.sh</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#!/bin/bash</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The location of my shell command is:&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="nv">$SHELL</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;I am logged in as </span><span class="nv">$LOGNAME</span><span class="s2">&#34;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># chmod +x /usr/local/bin/pre_env.sh</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># pre_env.sh</span>
+</span></span><span class="line"><span class="cl">The location of my shell <span class="nb">command</span> is:
+</span></span><span class="line"><span class="cl">/bin/bash
+</span></span><span class="line"><span class="cl">I am logged in as root
+</span></span></code></pre></div><h3 id="script04-using-command-substitution">Script04: Using Command Substitution</h3>
+<ul>
+<li>
+<p>Can use the command substitution feature of the bash shell and store the output generated by the command
+into a variable.</p>
+</li>
+<li>
+<p>Two different ways to use command substitution: Backtics or subshell</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">SYSNAME</span><span class="o">=</span><span class="k">$(</span>hostname<span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">KERNVER</span><span class="o">=</span><span class="sb">`</span>uname -r<span class="sb">`</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The hostname is </span><span class="nv">$SYSNAME</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The kernel version is </span><span class="nv">$KERNVER</span><span class="s2">&#34;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># vim /usr/local/bin/cmd_out.sh</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># chmod +x /usr/local/bin/cmd_out.sh</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># cmd_out.sh</span>
+</span></span><span class="line"><span class="cl">The hostname is server30
+</span></span><span class="line"><span class="cl">The kernel version is 5.14.0-362.24.1.el9_3.x86_64
+</span></span></code></pre></div><h1 id="shell-parameters">Shell Parameters</h1>
+<ul>
+<li>An entity that holds a value such as a name, special character, or number.</li>
+<li>The parameter that holds a <strong>name</strong> is referred to as a <strong>variable</strong></li>
+<li>a <strong>special character</strong> is referred to as a <strong>special parameter</strong>
+<ul>
+<li>represents the command or script itself ($0), count of supplied arguments ($* or $@), all arguments ($#), and PID of the process ($$)</li>
+</ul>
+</li>
+<li>one or more digits, except for 0 is referred to as a <strong>positional parameter</strong> (a command line argument).
+<ul>
+<li>($1, $2, $3 . . .) is an argument supplied to a script at the time of its invocation</li>
+<li>position is determined by the shell based on its location with respect to the calling script.</li>
+<li>Positional parameters beyond 9 are to be enclosed in curly brackets.</li>
+</ul>
+</li>
+</ul>
+<p><img src="/images/image-G1VF6C4I.jpg" alt=""></p>
+<ul>
+<li>Just like the variable and command substitutions, the shell uses the dollar ($) sign for special and positional parameter expansions as well.</li>
+</ul>
+<h3 id="script05-using-special-and-positional-parameters">Script05: Using Special and Positional Parameters</h3>
+<p>Create <em>com_line_arg.sh</em> to show the supplied arguments, total count, value of the first argument, and PID of the script:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># vim /usr/local/bin/com_line_arg.sh</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#!/bin/bash</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;There are </span><span class="nv">$#</span><span class="s2"> arguments specified at the command line&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The arguments supplied are: </span><span class="nv">$*</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The first argument is: </span><span class="nv">$1</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The Process ID of the script is: </span><span class="nv">$$</span><span class="s2">&#34;</span>                                          
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># chmod +x /usr/local/bin/com_line_arg.sh</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># com_line_arg.sh</span>
+</span></span><span class="line"><span class="cl">There are <span class="m">0</span> arguments specified at the <span class="nb">command</span> line
+</span></span><span class="line"><span class="cl">The arguments supplied are: 
+</span></span><span class="line"><span class="cl">The first argument is: 
+</span></span><span class="line"><span class="cl">The Process ID of the script is: <span class="m">1935</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># com_line_arg.sh the dog jumped over the frog</span>
+</span></span><span class="line"><span class="cl">There are <span class="m">6</span> arguments specified at the <span class="nb">command</span> line
+</span></span><span class="line"><span class="cl">The arguments supplied are: the dog jumped over the frog
+</span></span><span class="line"><span class="cl">The first argument is: the
+</span></span><span class="line"><span class="cl">The Process ID of the script is: <span class="m">1936</span>
+</span></span></code></pre></div><h3 id="script06-shifting-command-line-arguments">Script06: Shifting Command Line Arguments</h3>
+<p><code>shift</code> command</p>
+<ul>
+<li>Used to move arguments one position to the left.</li>
+<li>During this move, the value of the first argument is lost.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># vim /usr/local/bin/com_line_arg_shift.sh</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#!/bin/bash</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;There are </span><span class="nv">$#</span><span class="s2"> arguments specified at the command line&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The arguments supplied are: </span><span class="nv">$*</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The first argument is: </span><span class="nv">$1</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The Process ID of the script is: </span><span class="nv">$$</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">shift</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The new first argument after the first shift is: </span><span class="nv">$1</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">shift</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The new first argument after the second shift is: </span><span class="nv">$1</span><span class="s2">&#34;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># chmod +x /usr/local/bin/com_line_arg_shift.sh</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># com_line_arg_shift.sh</span>
+</span></span><span class="line"><span class="cl">There are <span class="m">0</span> arguments specified at the <span class="nb">command</span> line
+</span></span><span class="line"><span class="cl">The arguments supplied are: 
+</span></span><span class="line"><span class="cl">The first argument is: 
+</span></span><span class="line"><span class="cl">The Process ID of the script is: <span class="m">1941</span>
+</span></span><span class="line"><span class="cl">The new first argument after the first <span class="nb">shift</span> is: 
+</span></span><span class="line"><span class="cl">The new first argument after the second <span class="nb">shift</span> is: 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># com_line_arg_shift.sh the dog jumped over the frog</span>
+</span></span><span class="line"><span class="cl">There are <span class="m">6</span> arguments specified at the <span class="nb">command</span> line
+</span></span><span class="line"><span class="cl">The arguments supplied are: the dog jumped over the frog
+</span></span><span class="line"><span class="cl">The first argument is: the
+</span></span><span class="line"><span class="cl">The Process ID of the script is: <span class="m">1942</span>
+</span></span><span class="line"><span class="cl">The new first argument after the first <span class="nb">shift</span> is: dog
+</span></span><span class="line"><span class="cl">The new first argument after the second <span class="nb">shift</span> is: jumped
+</span></span></code></pre></div><ul>
+<li>Multiple shifts in a single attempt may be performed by furnishing a count of desired shifts to the shift command as an argument. For example, &ldquo;shift 2&rdquo; will carry out two shifts, &ldquo;shift 3&rdquo; will make three shifts, and so on.</li>
+</ul>
+<h1 id="shell-parameters-1">Shell Parameters</h1>
+<ul>
+<li>An entity that holds a value such as a name, special character, or number.</li>
+<li>The parameter that holds a <strong>name</strong> is referred to as a <strong>variable</strong></li>
+<li>a <strong>special character</strong> is referred to as a <strong>special parameter</strong>
+<ul>
+<li>represents the command or script itself ($0), count of supplied arguments ($* or $@), all arguments ($#), and PID of the process ($$)</li>
+</ul>
+</li>
+<li>one or more digits, except for 0 is referred to as a <strong>positional parameter</strong> (a command line argument).
+<ul>
+<li>($1, $2, $3 . . .) is an argument supplied to a script at the time of its invocation</li>
+<li>position is determined by the shell based on its location with respect to the calling script.</li>
+<li>Positional parameters beyond 9 are to be enclosed in curly brackets.</li>
+</ul>
+</li>
+</ul>
+<p><img src="/images/image-G1VF6C4I.jpg" alt=""></p>
+<ul>
+<li>Just like the variable and command substitutions, the shell uses the dollar ($) sign for special and positional parameter expansions as well.</li>
+</ul>
+<h3 id="script05-using-special-and-positional-parameters-1">Script05: Using Special and Positional Parameters</h3>
+<p>Create <em>com_line_arg.sh</em> to show the supplied arguments, total count, value of the first argument, and PID of the script:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># vim /usr/local/bin/com_line_arg.sh</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#!/bin/bash</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;There are </span><span class="nv">$#</span><span class="s2"> arguments specified at the command line&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The arguments supplied are: </span><span class="nv">$*</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The first argument is: </span><span class="nv">$1</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The Process ID of the script is: </span><span class="nv">$$</span><span class="s2">&#34;</span>                                          
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># chmod +x /usr/local/bin/com_line_arg.sh</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># com_line_arg.sh</span>
+</span></span><span class="line"><span class="cl">There are <span class="m">0</span> arguments specified at the <span class="nb">command</span> line
+</span></span><span class="line"><span class="cl">The arguments supplied are: 
+</span></span><span class="line"><span class="cl">The first argument is: 
+</span></span><span class="line"><span class="cl">The Process ID of the script is: <span class="m">1935</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># com_line_arg.sh the dog jumped over the frog</span>
+</span></span><span class="line"><span class="cl">There are <span class="m">6</span> arguments specified at the <span class="nb">command</span> line
+</span></span><span class="line"><span class="cl">The arguments supplied are: the dog jumped over the frog
+</span></span><span class="line"><span class="cl">The first argument is: the
+</span></span><span class="line"><span class="cl">The Process ID of the script is: <span class="m">1936</span>
+</span></span></code></pre></div><h3 id="script06-shifting-command-line-arguments-1">Script06: Shifting Command Line Arguments</h3>
+<p><code>shift</code> command</p>
+<ul>
+<li>Used to move arguments one position to the left.</li>
+<li>During this move, the value of the first argument is lost.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># vim /usr/local/bin/com_line_arg_shift.sh</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#!/bin/bash</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;There are </span><span class="nv">$#</span><span class="s2"> arguments specified at the command line&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The arguments supplied are: </span><span class="nv">$*</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The first argument is: </span><span class="nv">$1</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The Process ID of the script is: </span><span class="nv">$$</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">shift</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The new first argument after the first shift is: </span><span class="nv">$1</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">shift</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;The new first argument after the second shift is: </span><span class="nv">$1</span><span class="s2">&#34;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># chmod +x /usr/local/bin/com_line_arg_shift.sh</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># com_line_arg_shift.sh</span>
+</span></span><span class="line"><span class="cl">There are <span class="m">0</span> arguments specified at the <span class="nb">command</span> line
+</span></span><span class="line"><span class="cl">The arguments supplied are: 
+</span></span><span class="line"><span class="cl">The first argument is: 
+</span></span><span class="line"><span class="cl">The Process ID of the script is: <span class="m">1941</span>
+</span></span><span class="line"><span class="cl">The new first argument after the first <span class="nb">shift</span> is: 
+</span></span><span class="line"><span class="cl">The new first argument after the second <span class="nb">shift</span> is: 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server30 ~<span class="o">]</span><span class="c1"># com_line_arg_shift.sh the dog jumped over the frog</span>
+</span></span><span class="line"><span class="cl">There are <span class="m">6</span> arguments specified at the <span class="nb">command</span> line
+</span></span><span class="line"><span class="cl">The arguments supplied are: the dog jumped over the frog
+</span></span><span class="line"><span class="cl">The first argument is: the
+</span></span><span class="line"><span class="cl">The Process ID of the script is: <span class="m">1942</span>
+</span></span><span class="line"><span class="cl">The new first argument after the first <span class="nb">shift</span> is: dog
+</span></span><span class="line"><span class="cl">The new first argument after the second <span class="nb">shift</span> is: jumped
+</span></span></code></pre></div><ul>
+<li>Multiple shifts in a single attempt may be performed by furnishing a count of desired shifts to the shift command as an argument. For example, &ldquo;shift 2&rdquo; will carry out two shifts, &ldquo;shift 3&rdquo; will make three shifts, and so on.</li>
+</ul>
+<h2 id="shell-scripting-review-questions">Shell Scripting Review Questions</h2>
+<p>Q. What are the two types of logical constructs mentioned in this chapter?
+A. The if and case constructs.</p>
+<hr>
+<p>Q. What would != imply in a looping condition?
+A. != would check the value for non-equality.</p>
+<hr>
+<p>Q. What is the function of the <code>shift</code> command?
+A. The shift command moves an argument to the left.</p>
+<hr>
+<p>Q. You can script the startup and shutdown of a database. True or False?
+A. True.</p>
+<hr>
+<p>Q. What is the difference between a line in a script starting with a &ldquo;#&rdquo; and a &ldquo;#!&rdquo;?
+A. The former is used to include general comments in the script and the latter combination dictates the full path to the shell file that is to be used to execute the script.</p>
+<hr>
+<p>Q. What comments may you want to include in a shell script? Write any six.
+6. The author name, creation date, last modification date, location, purpose, and usage.</p>
+<hr>
+<p>Q. What is one benefit of writing shell scripts?
+7. One major benefit of writing shell scripts is to automate lengthy and repetitive tasks.</p>
+<hr>
+<p>Q. What are the three major components in a shell script?
+8. The three major components in a shell script are commands, control structures, and comments.</p>
+<hr>
+<p>Q. Which looping construct can be used to perform an action on listed items?
+9. The for loop.</p>
+<hr>
+<p>Q. What does the <code>echo</code> command do without any arguments?
+10. The echo command inserts an empty line in the output when used without arguments.</p>
+<hr>
+<p>Q. What would the command echo $? do?
+11. This command will display the exit code of the last command executed.</p>
+<hr>
+<p>Q. When would you want to use an exit code in your script?
+12. The purpose of using an exit code is to determine exactly where the script quits.</p>
+<hr>
+<p>Q. What would you modify in a shell script to run it in the debug mode?
+13. We would specify -x as an argument to the shell path.</p>
+<hr>
+<p>Q. What would the command <code>bash -x /usr/local/bin/script1.sh</code> do?
+14. This command will execute script1.sh in debug mode.</p>
+<h2 id="shell-scripting-diy-labs">Shell Scripting DIY Labs</h2>
+<h3 id="lab-write-script-to-create-logical-volumes">Lab: Write Script to Create Logical Volumes</h3>
+<ul>
+<li>Present 2x1GB virtual disks to server40 in VirtualBox Manager.</li>
+<li>As user1 with sudo on server40, write a single bash script to create 2x400MB partitions on each disk using parted and then bring both partitions into LVM control with the <code>pvcreate</code> command.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"> vim /usr/local/bin/lvscript.sh
+</span></span></code></pre></div><ul>
+<li>Create a volume group called <code>vgscript</code> and add both physical volumes to it.</li>
+<li>Create three logical volumes each of size 200MB and name them lvscript1, lvscript2, and lvscript3.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">for</span> DEVICE in <span class="s2">&#34;/dev/sd&#34;</span><span class="o">{</span>b..c<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;Creating partition 1 with the size of 400MB on </span><span class="nv">$DEVICE</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">        parted <span class="nv">$DEVICE</span> mklabel msdos
+</span></span><span class="line"><span class="cl">        parted <span class="nv">$DEVICE</span> mkpart primary <span class="m">1</span> <span class="m">401</span>
+</span></span><span class="line"><span class="cl">        pvcreate <span class="nv">$DEVICE</span><span class="o">[</span>1<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;Creating partition 2 with the size of 400MB on </span><span class="nv">$DEVICE</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">        parted <span class="nv">$DEVICE</span> mkpart primary <span class="m">402</span> <span class="m">802</span>
+</span></span><span class="line"><span class="cl">        pvcreate <span class="nv">$DEVICE</span><span class="o">[</span>2<span class="o">]</span>
+</span></span><span class="line"><span class="cl">        vgcreate vgscript <span class="nv">$DEVICE</span><span class="o">[</span>1<span class="o">]</span> <span class="nv">$DEVICE</span><span class="o">[</span>2<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> LV in <span class="s2">&#34;lvscript&#34;</span><span class="o">{</span>1..3<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;Creating logical volume </span><span class="nv">$LV</span><span class="s2"> in volume group vgscript with the size of 200MB&#34;</span>
+</span></span><span class="line"><span class="cl">        lvcreate vgscript -L 200MB -n <span class="nv">$LV</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></div><h3 id="lab-write-script-to-create-file-systems">Lab: Write Script to Create File Systems</h3>
+<ul>
+<li>Write another bash script to create xfs, ext4, and vfat file system structures in the logical volumes, respectively.</li>
+<li>Create mount points /mnt/xfs, /mnt/ext4, and /mnt/vfat, and mount the file systems.</li>
+<li>Include the df command with -h in the script to list the mounted file systems.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim /usr/local/bin/fsscript.sh
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server40 ~<span class="o">]</span><span class="c1"># chmod +x /usr/local/bin/fsscript.sh</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">for</span> DEVICE in lvscript<span class="o">{</span>1..3<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$DEVICE</span><span class="s2">&#34;</span> <span class="o">=</span> lvscript1 <span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;Creating xfs filesystem on logical volume lvscript1&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span>
+</span></span><span class="line"><span class="cl">        mkfs.xfs /dev/vgscript/lvscript1
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;Creating /mnt/xfs&#34;</span>
+</span></span><span class="line"><span class="cl">        mkdir /mnt/xfs
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;Mounting filesystem&#34;</span>
+</span></span><span class="line"><span class="cl">        mount /dev/vgscript/lvscript1 /mnt/xfs
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$DEVICE</span><span class="s2">&#34;</span> <span class="o">=</span> lvscript2 <span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>    
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;Creating ext4 filesystem on logical volume lvscript2&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span>
+</span></span><span class="line"><span class="cl">        mkfs.ext4 /dev/vgscript/lvscript2
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;Creating /mnt/ext4&#34;</span>
+</span></span><span class="line"><span class="cl">        mkdir /mnt/ext4
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;Mounting filesystem&#34;</span>
+</span></span><span class="line"><span class="cl">        mount /dev/vgscript/lvscript2 /mnt/ext4
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$DEVICE</span><span class="s2">&#34;</span> <span class="o">=</span> lvscript3 <span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>    
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;Creating vfat filesystem on logical volume lvscript3&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span>
+</span></span><span class="line"><span class="cl">        mkfs.vfat /dev/vgscript/lvscript3
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;Creating /mnt/vfat&#34;</span>
+</span></span><span class="line"><span class="cl">        mkdir /mnt/vfat
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;Mounting filesystem&#34;</span>
+</span></span><span class="line"><span class="cl">        mount /dev/vgscript/lvscript3 /mnt/vfat
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;Done!&#34;</span>
+</span></span><span class="line"><span class="cl">                df -h
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server40 ~<span class="o">]</span><span class="c1"># fsscript.sh</span>
+</span></span><span class="line"><span class="cl">Creating xfs filesystem on logical volume lvscript1
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Filesystem should be larger than 300MB.
+</span></span><span class="line"><span class="cl">Log size should be at least 64MB.
+</span></span><span class="line"><span class="cl">Support <span class="k">for</span> filesystems like this one is deprecated and they will not be supported in future releases.
+</span></span><span class="line"><span class="cl">meta-data<span class="o">=</span>/dev/vgscript/lvscript1 <span class="nv">isize</span><span class="o">=</span><span class="m">512</span>    <span class="nv">agcount</span><span class="o">=</span>4, <span class="nv">agsize</span><span class="o">=</span><span class="m">12800</span> <span class="nv">blks</span>
+</span></span><span class="line"><span class="cl">         <span class="o">=</span>                       <span class="nv">sectsz</span><span class="o">=</span><span class="m">512</span>   <span class="nv">attr</span><span class="o">=</span>2, <span class="nv">projid32bit</span><span class="o">=</span><span class="nv">1</span>
+</span></span><span class="line"><span class="cl">         <span class="o">=</span>                       <span class="nv">crc</span><span class="o">=</span><span class="m">1</span>        <span class="nv">finobt</span><span class="o">=</span>1, <span class="nv">sparse</span><span class="o">=</span>1, <span class="nv">rmapbt</span><span class="o">=</span><span class="nv">0</span>
+</span></span><span class="line"><span class="cl">         <span class="o">=</span>                       <span class="nv">reflink</span><span class="o">=</span><span class="m">1</span>    <span class="nv">bigtime</span><span class="o">=</span><span class="m">1</span> <span class="nv">inobtcount</span><span class="o">=</span><span class="m">1</span> <span class="nv">nrext64</span><span class="o">=</span><span class="m">0</span>
+</span></span><span class="line"><span class="cl"><span class="nv">data</span>     <span class="o">=</span>                       <span class="nv">bsize</span><span class="o">=</span><span class="m">4096</span>   <span class="nv">blocks</span><span class="o">=</span>51200, <span class="nv">imaxpct</span><span class="o">=</span><span class="nv">25</span>
+</span></span><span class="line"><span class="cl">         <span class="o">=</span>                       <span class="nv">sunit</span><span class="o">=</span><span class="m">0</span>      <span class="nv">swidth</span><span class="o">=</span><span class="m">0</span> blks
+</span></span><span class="line"><span class="cl"><span class="nv">naming</span>   <span class="o">=</span>version <span class="m">2</span>              <span class="nv">bsize</span><span class="o">=</span><span class="m">4096</span>   ascii-ci<span class="o">=</span>0, <span class="nv">ftype</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="nv">log</span>      <span class="o">=</span>internal log           <span class="nv">bsize</span><span class="o">=</span><span class="m">4096</span>   <span class="nv">blocks</span><span class="o">=</span>1368, <span class="nv">version</span><span class="o">=</span><span class="nv">2</span>
+</span></span><span class="line"><span class="cl">         <span class="o">=</span>                       <span class="nv">sectsz</span><span class="o">=</span><span class="m">512</span>   <span class="nv">sunit</span><span class="o">=</span><span class="m">0</span> blks, lazy-count<span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="nv">realtime</span> <span class="o">=</span>none                   <span class="nv">extsz</span><span class="o">=</span><span class="m">4096</span>   <span class="nv">blocks</span><span class="o">=</span>0, <span class="nv">rtextents</span><span class="o">=</span><span class="m">0</span>
+</span></span><span class="line"><span class="cl">Creating /mnt/xfs
+</span></span><span class="line"><span class="cl">Mounting filesystem
+</span></span><span class="line"><span class="cl">Creating ext4 filesystem on logical volume lvscript2
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mke2fs 1.46.5 <span class="o">(</span>30-Dec-2021<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Creating filesystem with <span class="m">204800</span> 1k blocks and <span class="m">51200</span> inodes
+</span></span><span class="line"><span class="cl">Filesystem UUID: b16383bf-7b65-4a00-bb6d-c297733f60b3
+</span></span><span class="line"><span class="cl">Superblock backups stored on blocks: 
+</span></span><span class="line"><span class="cl">	8193, 24577, 40961, 57345, <span class="m">73729</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Allocating group tables: <span class="k">done</span>                            
+</span></span><span class="line"><span class="cl">Writing inode tables: <span class="k">done</span>                            
+</span></span><span class="line"><span class="cl">Creating journal <span class="o">(</span><span class="m">4096</span> blocks<span class="o">)</span>: <span class="k">done</span>
+</span></span><span class="line"><span class="cl">Writing superblocks and filesystem accounting information: <span class="k">done</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Creating /mnt/ext4
+</span></span><span class="line"><span class="cl">Mounting filesystem
+</span></span><span class="line"><span class="cl">Creating vfat filesystem on logical volume lvscript3
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mkfs.fat 4.2 <span class="o">(</span>2021-01-31<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Creating /mnt/vfat
+</span></span><span class="line"><span class="cl">Mounting filesystem
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Done!
+</span></span></code></pre></div><h3 id="lab-21-3-write-script-to-configure-new-network-connection-profile">Lab 21-3: Write Script to Configure New Network Connection Profile</h3>
+<ul>
+<li>Present a new network interface to server40 in VirtualBox Manager.</li>
+<li>As user1 with sudo on server40, write a single bash script to run the nmcli command to configure custom IP assignments (choose your own settings) on the new network device.</li>
+<li>Make a copy of the /etc/hosts file as part of this script.</li>
+<li>Choose a hostname of your choice and add a mapping to the /etc/hosts file without overwriting existing file content.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server40 ~<span class="o">]</span><span class="c1"># vim /usr/local/bin/network.sh</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>cp /etc/hosts /etc/hosts.bak <span class="o">&amp;&amp;</span>
+</span></span><span class="line"><span class="cl">nmcli c a <span class="nb">type</span> Ethernet con-name enp0s9 ifname enp0s9 ip4 10.32.32.2/24 gw4 10.32.32.1
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;10.32.33.14 frog.example.com frog&#34;</span> &gt;&gt; /etc/hosts
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server40 ~<span class="o">]</span><span class="c1"># chmod +x /usr/local/bin/network.sh</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@server40 ~<span class="o">]</span><span class="c1"># network.sh</span>
+</span></span><span class="line"><span class="cl">Connection <span class="s1">&#39;enp0s9&#39;</span> <span class="o">(</span>5a342243-e77b-452e-88e2-8838d3ecea6d<span class="o">)</span> successfully added.
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server40 ~<span class="o">]</span><span class="c1"># cat /etc/hosts</span>
+</span></span><span class="line"><span class="cl">127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+</span></span><span class="line"><span class="cl">::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+</span></span><span class="line"><span class="cl">10.32.33.14 frog.example.com frog
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server40 ~<span class="o">]</span><span class="c1"># ip a</span>
+</span></span><span class="line"><span class="cl">enp0s9: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu <span class="m">1500</span> qdisc fq_codel state UP group default qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">    link/ether 08:00:27:1d:f4:c1 brd ff:ff:ff:ff:ff:ff
+</span></span><span class="line"><span class="cl">    inet 10.32.32.2/24 brd 10.32.32.255 scope global noprefixroute enp0s9
+</span></span><span class="line"><span class="cl">       valid_lft forever preferred_lft forever
+</span></span><span class="line"><span class="cl">    inet6 fe80::2c5d:31cc:1d79:6b43/64 scope link noprefixroute 
+</span></span><span class="line"><span class="cl">       valid_lft forever preferred_lft forever
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server40 ~<span class="o">]</span><span class="c1"># nmcli d s</span>
+</span></span><span class="line"><span class="cl">DEVICE  TYPE      STATE                   CONNECTION 
+</span></span><span class="line"><span class="cl">enp0s3  ethernet  connected               enp0s3     
+</span></span><span class="line"><span class="cl">enp0s8  ethernet  connected               enp0s8     
+</span></span><span class="line"><span class="cl">enp0s9  ethernet  connected               enp0s9     
+</span></span><span class="line"><span class="cl">lo      loopback  connected <span class="o">(</span>externally<span class="o">)</span>  lo  
+</span></span></code></pre></div>
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/davidvargasxyz" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://keybase.io/" target="_blank" rel="noopener noreferrer me"
+    title="Keybase">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 76.3" version="1.1" fill="currentColor" stroke="none">
+    <path
+        d="M6.68 73.99c-.6-1.3-1.4-3.1-1.8-4l-.6-1.7-2 2.2-2 2.2-.2-4.2c-.3-6 .2-12.2 1.2-16.6 2.3-9.8 9.5-18.7 18.8-23.4l2.1-1-.5-1.5c-.3-.8-.6-2.5-.7-3.6l-.2-2.1-2.1-.2c-3.2-.3-4.9-1.2-6-3.5-.6-1.2-.6-1.4-.4-4.6.2-4.2.5-5.1 1.8-6.5 1.6-1.8 2.7-2.1 6.7-1.9 2.9.2 3.5.3 4.8.9.8.4 1.5.8 1.6.8.1 0 1-1.1 2.1-2.6l1.9-2.7 1.2.7c.7.4 1.5.9 1.9 1.1l.7.4-.6 1.5c-.3.8-.7 2.2-.8 2.9l-.2 1.4 1.7.2c6.1.6 10.7 4.3 12.4 9.9.5 1.8.5 5.3 0 7-.5 1.6-.5 1.7-.1 1.7.7 0 5.4 2.3 7.3 3.5 3.7 2.4 8 6.6 10.4 10.2 4.5 6.7 6.4 14 5.6 22-.4 4.8-1.3 8.6-2.9 12.3l-.6 1.4h-5l1.2-2.4c1.3-2.6 2.3-6.2 2.8-9.4.3-2.2.4-8.2.1-9.3l-.2-.7-1.3 1.4c-3.2 3.5-7.9 4.5-14.2 2.8-5.4-1.4-7.6-1.7-12.7-1.7-3.9 0-5.2.1-7.3.6-5.8 1.3-9.9 3.2-15.6 7.3-2.1 1.5-3.8 2.7-3.9 2.7-.1 0 .2-1 .6-2.3.4-1.3 1.1-3.4 1.5-4.8l.8-2.5-.9.9c-.5.5-1.9 1.9-3.1 3.2l-2.1 2.3.5 1.9c.6 2.5 2 5.6 3.5 7.9.6 1 1.1 1.8 1.1 1.9s-1.2.1-2.6.1h-2.6l-1.1-2.1zm8.8-24.2c4.8-5.1 8.7-9.2 8.8-9.2.1.1-.4 1.6-.9 3.3-3.3 10.4-4 12.4-3.9 12.5 0 0 1.2-.4 2.5-.9 8.5-3.7 18.4-4.2 28.9-1.4 4.7 1.2 6.5 1.2 8.8 0 1.3-.7 1.8-1.1 2.4-2.1 1.1-1.7 1.2-4.1.5-6.3-1.7-4.8-8.3-11-14.5-13.7-3.2-1.4-3.4-1.4-4.1-.7l-.6.6 2.6 3.2c1.4 1.7 2.9 3.6 3.1 4.1.6 1.2.7 3.1.1 4.3-.8 1.7-3.2 2.9-5.1 2.5-.8-.2-1.1-.1-1.9.5-2.2 1.6-4.6 1.2-6.6-1.2-1.6-1.8-2-2.7-2.1-4.5 0-.9-.3-2-.5-2.4-.3-.6-.4-1.3-.4-2.2l.1-1.4-1.3-.3c-1.8-.5-3.9-1.5-5.1-2.4-.6-.4-1.1-.8-1.3-.8s-1.5.6-2.9 1.3c-9.7 5-16 14.3-17 24.8-.1 1-.2 2.3-.3 2.8l-.1.9 1.1-1.1c.5-.5 4.9-5.1 9.7-10.2zm25.9-7.4c.9-.7 1.7-1.3 1.9-1.3.1 0 .4.3.7.7.5.8 1.4.8 1.8.1.3-.5.3-.6-5.6-7.8-3.5-4.3-4.2-5-4.7-5-1.2.1-.9 1 1 3.3l1.8 2.2-1 .8c-1.1 1-1.2 1.2-.5 1.8.5.5.6.4 1.6-.3l1.1-.7.7.6c.4.3.6.8.6.9 0 .2-.8.9-1.7 1.7-.9.7-1.6 1.5-1.6 1.7 0 .3.5 1.1 1.4 2.2.3.6.8.4 2.5-.9zm-10.3-14.2c.6-1.8 2.6-3.2 4.6-3.2 1.1 0 2.7.9 3.8 2.1l1 1.2.9-1.1c2.5-2.8 2.8-6.7.8-10.1-1.5-2.5-4.3-4-8.2-4.4-2.1-.2-2.6-.4-3.7-1.5l-.8-.8-.4.6c-.8 1.2-2.5 5.1-3 6.6-.7 2.3-.4 5.9.5 7.7.9 1.7 3.3 4 4 3.7.1.1.3-.3.5-.8zm-8.9-13.6c.2-.5.7-1.8 1.2-2.8.5-1 .9-2 .9-2.3 0-.9-1-1.3-3.7-1.5-2.4-.2-2.6-.1-3.1.4-.4.4-.6.9-.6 1.6 0 .6-.1 1.7-.2 2.6-.2 2.1.1 2.5 2.2 2.8 3.1.2 3 .2 3.3-.8zm-3.1-2.4c0-1.7.2-1.9 1.6-1.9h1.3v2.8h-2.8v-.9zm6.3 58.3c-.6-.6-.8-1-.8-2 0-1.9 1.1-3 2.9-3 1.7 0 2.9 1.2 2.9 2.9 0 1.8-1.1 2.8-3 2.9-1 0-1.4-.2-2-.8zm19.3.3a2.93 2.93 0 011.8-5.3c1.8 0 2.8 1.1 2.9 3 0 1.1-.1 1.4-.8 2s-1 .8-2 .8c-.9 0-1.5-.2-1.9-.5z" />
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2024 David Vargas.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

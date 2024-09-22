@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux</title>
+    <link>http://davidvargas.xyz/linux/</link>
+    <description>RHCSA Stuff RHCSA Notes RHCSA Study Tracker Redhat Exam Environment How to Study for RHCSA RHCSA Study Points RHCSA Vagrant Lab Setup Fedora My Fedora Setup Misc Using Man Pages wsl2 [[XBare Metal to Proxmox VM]] [[Creating a Bootable and Persistent Fedora 40 USB Drive From Fedora 40]] Labs Turn a file into a block device </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://davidvargas.xyz/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My RHCSA 9 Notes</title>
+      <link>http://davidvargas.xyz/linux/rhcsa-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://davidvargas.xyz/linux/rhcsa-notes/</guid>
+      <description> Here are my notes from Asghar Gori’s RHCSA book. Buy the book or read the reviews here.&#xA;Track my RHCSA progress: RHCSA Study Tracker&#xA;Installation Interaction File Management Advanced File Management Basic User Management Advanced User Management Bash Process and Task Scheduling Basic Package Management Advanced Package Management Boot Process, Grub2, and Kernel System Initialization, Message Logging, and System Tuning Storage Management Local File Systems and Swap Networking Network Devices and Network Connections Network File System (NFS) DNS and Time Synchronization The Secure Shell Service The Linux Firewall Security Enhanced Linux Shell Scripting Containers Sample Exam 1 Sample exam 2 Sample Exam 3 Sample Exam 4 Extra Resourses Using Man Pages RHCSA Exam Environment </description>
+    </item>
+    <item>
+      <title>RHCSA Vagrant Lab Setup</title>
+      <link>http://davidvargas.xyz/linux/rhcsa-vagrant-lab-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://davidvargas.xyz/linux/rhcsa-vagrant-lab-setup/</guid>
+      <description> We are going to use Vagrant to set up two RHEL 8 servers with some custom configuration options. I will include some helpful Vagrant commands at the end if you get stuck.&#xA;In this guide, I will be using Fedora 38 as my main operating system. I use Fedora because it is similar in features to Red Hat Linux Distributions. This will give me even more practice for the RHCSA exam as I use it in day-to-day operations.</description>
+    </item>
+  </channel>
+</rss>

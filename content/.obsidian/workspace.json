@@ -1,0 +1,190 @@
+{
+  "main": {
+    "id": "8b39d529d214c16a",
+    "type": "split",
+    "children": [
+      {
+        "id": "f5f42f9d4ab4c8b8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "49e43c752dc46500",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fdb1a5f78187ee3e",
+    "type": "split",
+    "children": [
+      {
+        "id": "7295bafcdd968aa6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e6e4cd88a2f8fa05",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "03e2515e86c4395c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "716106d05814c192",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "38fb9458b16f9f37",
+    "type": "split",
+    "children": [
+      {
+        "id": "5921ccd2736c56a1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "00de31435ca476de",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1e5ced7dd1ffe130",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3626077e0ba9ce9e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "03f6b9f32563a45d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "49e43c752dc46500",
+  "lastOpenFiles": [
+    "linux/XBare Metal to Proxmox VM.md",
+    "Untitled.md",
+    "images/Pasted image 20240826070638.png",
+    "Skaffold.md",
+    "linux/Process and Task Scheduling Review Questions.md",
+    "booknotes/Playful Parenting.md",
+    "proxmox install.md",
+    "Proxmox HA Cluster.md",
+    "images/Pasted image 20240821111355.png",
+    "linux/Job Scheduling.md",
+    "images/Pasted image 20240815080652.png",
+    "linux/Processes and Priorities.md",
+    "networking/How to Study for CCNA 200-301.md",
+    "images/CCNA.png",
+    "images/Spaced.md",
+    "networking/_index.md",
+    "now/_index.md",
+    "tools/Using Vagrant on Linux.md",
+    "tools/_index.md",
+    "tools/Setting Up a Self-hosted NextCloud Server.md",
+    "tools/How to Set Up Hugo Relearn Theme.md",
+    "tools/Calibre Web with Docker and NGINX.md",
+    "tools/How to Build a website With Hugo.md",
+    "writing/4 Ways to Quit caffeine.md",
+    "linux/Process and Task Scheduling.md",
+    "linux/RHCSA Study Tracker.md",
+    "linux/Bare Metal to Proxmox VM.md",
+    "linux/Advanced Package Management DIY Labs.md",
+    "linux/The dnf Command.md",
+    "linux/The OpenSSH Service.md",
+    "images/Pasted image 20240808100730.png",
+    "images/Pasted image 20240807124622.png",
+    "images/Pasted image 20240806080538.png",
+    "images/Pasted image 20240806080050.png",
+    "images/Pasted image 20240806075409.png",
+    "images/Pasted image 20240713164339.png",
+    "tools/LEGO_BRICK_LABELS-CONTACT_SHEET.pdf",
+    "python/Python Crash Course",
+    "networking/newccnanotes",
+    "tools/Archive",
+    "linux/Archive",
+    "Recommended",
+    "networking",
+    "booknotes",
+    "writing",
+    "contact"
+  ]
+}

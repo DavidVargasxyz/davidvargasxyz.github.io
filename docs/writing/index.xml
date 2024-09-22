@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writing</title>
+    <link>http://davidvargas.xyz/writing/</link>
+    <description>I wanted a category to share what I learn about writing. So i can improve my writing skills and become a better thinker and better at helping others.&#xA;Things I Learned from Dickie Bush and Nicolas Cole’s Writing Email Course </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://davidvargas.xyz/writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4 Ways to Quit Caffeine</title>
+      <link>http://davidvargas.xyz/writing/4-ways-to-quit-caffeine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://davidvargas.xyz/writing/4-ways-to-quit-caffeine/</guid>
+      <description>The cycle of caffeine addiction can be vicious. Just like any other drug.&#xA;The cycle goes like this:&#xA;Caffeine causes a variety of pains and withdrawal symptoms. &gt; You use caffeine to relieve these pains and withdrawal symptoms. &gt; Caffeine causes pains and withdrawal symptoms.&#xA;Unless you can break this pattern. You will be trapped in this cycle forever. How do you break the cycle?&#xA;Here are 4 options for breaking the cycle. Along with the benefits and drawbacks for each.</description>
+    </item>
+  </channel>
+</rss>

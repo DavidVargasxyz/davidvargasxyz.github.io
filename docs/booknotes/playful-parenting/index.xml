@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://localhost:42823/booknotes/playful-parenting/</link>
+    <description>Joining children in their world, focusing on connection and confidence, giggling and roughhousing, reversing the roles and following your child&#39;s lead.&#xA;A little playfulness turned the tide.&#xA;Pretending to be mad helped me not to be really mad, and playing instead of shouting helped her get ready faster!&#xA;Play is also children&#39;s main way of communicating, of experimenting, and of learning&#xA;A child who won&#39;t or can&#39;t play is instantly recognizable as being in significant emotional distress</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:42823/booknotes/playful-parenting/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

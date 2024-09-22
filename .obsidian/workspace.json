@@ -1,0 +1,190 @@
+{
+  "main": {
+    "id": "fd49ccdb0c3a2943",
+    "type": "split",
+    "children": [
+      {
+        "id": "d8dd3c4487cd7dfd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "43ef3faf23e65106",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8520fb27fd046a9f",
+    "type": "split",
+    "children": [
+      {
+        "id": "c97a876b4357c1d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "09b3905f594bdb5d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7561bd4b969fb98f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "714e1ecf71c6625f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "42de852fb78fd934",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f7b6df8ca0fd6d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "caa8f9f24aa14733",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c1f813943f9a2947",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "07f639adc13a4ce4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5832f0a7ef8f5dde",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "43ef3faf23e65106",
+  "lastOpenFiles": [
+    "content/booknotes/index.md",
+    "content/booknotes/The Truth.md",
+    "content/booknotes/The Relationship Handbook.md",
+    "content/booknotes/The Psychology of Money.md",
+    "content/booknotes/The Blog Startup.md",
+    "content/booknotes/The Power of Positive Dog Training.md",
+    "content/booknotes/The 12 Week Year.md",
+    "content/booknotes/Reading List.md",
+    "content/booknotes/Playful Parenting.md",
+    "content/booknotes/Million Dollar Weekend.md",
+    "content/booknotes/Master Reading List.md",
+    "content/booknotes/I Will Teach You to Be Rich.md",
+    "content/booknotes/Dopamine Nation.md",
+    "content/booknotes/Bliss of the Celibate.md",
+    "content/booknotes/Anything You Want.md",
+    "content/booknotes/123 Magic.md",
+    "content/booknotes",
+    "docs/linux/xbare-metal-to-proxmox-vm/index.xml",
+    "docs/tools/setting-up-a-self-hosted-nextcloud-server/index.print.html",
+    "docs/tools/how-to-build-a-website-with-hugo/index.print.html",
+    "docs/tools/how-to-set-up-hugo-relearn-theme/index.print.html",
+    "docs/linux/working-with-images-and-containers/index.print.html",
+    "docs/linux/xbare-metal-to-proxmox-vm/index.print.html",
+    "docs/linux/virtual-data-optimizer-vdo/index.print.html",
+    "docs/linux/time-synchronization/index.print.html",
+    "docs/linux/the-openssh-service/index.print.html",
+    "docs/images/Pasted image 20240826070638.png",
+    "docs/images/Pasted image 20240821111355.png",
+    "docs/images/Pasted image 20240815080652.png",
+    "docs/images/Pasted image 20240808100730.png",
+    "docs/images/Pasted image 20240807124622.png",
+    "docs/images/Pasted image 20240806080538.png",
+    "docs/images/Pasted image 20240806080050.png",
+    "docs/images/Pasted image 20240806075409.png",
+    "docs/images/Pasted image 20240713164339.png",
+    "docs/images/Pasted image 20240710073529.png",
+    "content/networking/newccnanotes/part3.md",
+    "content/networking/newccnanotes/part2.md",
+    "content/networking/newccnanotes/part1.md",
+    "content/networking/newccnanotes/9spanningtreeprotocolconcepts.md",
+    "content/networking/newccnanotes/8vlans.md",
+    "content/networking/newccnanotes/7switchinterfaces.md",
+    "content/networking/newccnanotes/6management.md",
+    "content/networking/newccnanotes/5switching.md",
+    "content/networking/newccnanotes/4cli.md",
+    "content/networking/newccnanotes/3wansandiprouting.md"
+  ]
+}

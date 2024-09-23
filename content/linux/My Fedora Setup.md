@@ -1,9 +1,139 @@
 When you first download Fedora Workstation, it's going to be a little hard to figure out how to make it usable. Especially if you've never tinkered with Linux before.
 
-Here is how to set up Fedora.
+This is because Fedora with Gnome desktop is a blank canvas. The point is to let you customize it to your needs. When I first install Fedora, I pull my justfile to install most of the programs I use:
+
+	`curl -O https://raw.githubusercontent.com/davidvargasxyz/dotfiles/main/dot_justfile >> ~/.justfile`
+
+## Install just and run the justfile
+
+To run the just file, I then install the just program and run it on the justfile:
+
+`dnf install just`
+
+`just ~/.justfile`
+
+This is my current .justfile:
+```bash
+first-install:
+# Install flatpacks
+	flatpak install --noninteractive \
+      flathub com.bitwarden.desktop \
+      flathub com.brave.Browser \
+      flathub com.discordapp.Discord \
+      flathub org.gimp.GIMP \
+      flathub org.gnome.Snapshot \
+      flathub org.libreoffice.LibreOffice \
+      flathub org.remmina.Remmina \
+      flathub com.termius.Termius \
+      flathub net.devolutions.RDM \
+      flathub com.slack.Slack \
+      flathub org.keepassxc.KeePassXC \
+      flathub md.obsidian.Obsidian \
+      flathub com.calibre_ebook.calibre \
+      flathub org.mozilla.Thunderbird \
+      flathub us.zoom.Zoom \
+      flathub org.wireshark.Wireshark \
+      flathub com.nextcloud.desktopclient.nextcloud \
+      flathub com.google.Chrome \
+      flathub io.github.shiftey.Desktop \
+      flathub io.github.dvlv.boxbuddyrs \
+      flathub com.github.tchx84.Flatseal \
+      flathub io.github.flattool.Warehouse \
+      flathub io.missioncenter.MissionCenter \
+      flathub org.gnome.World.PikaBackup \
+      flathub com.github.rafostar.Clapper \
+      flathub com.mattjakeman.ExtensionManager \
+      flathub com.jgraph.drawio.desktop
+
+# Install Homebrew
+    sudo dnf -y groupinstall \
+      "Development Tools"
+
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bash_profile
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# Configure dnf for faster speeds
+    sudo bash -c 'echo "fastestmirror=True" >> /etc/dnf/dnf.conf'
+    sudo bash -c 'echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf'
+    sudo bash -c 'echo "defaultyes=True" >> /etc/dnf/dnf.conf'
+    sudo bash -c 'echo "keepcache=True" >> /etc/dnf/dnf.conf'
+
+# Other software, updates, etc. 
+    sudo dnf -y update
+    sudo dnf install -y gnome-screenshot
+    sudo dnf -y groupupdate core
+    sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    sudo dnf install -y wireguard-tools
+    sudo dnf install gnome-tweaks
+    sudo dnf -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+    https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+    sudo dnf -y update
+    sudo dnf install gnome-themes-extra
+    gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+    sudo dnf install -y go
+    echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+    source ~/.bashrc
+    gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+```
+
+## Virt Manager
+```bash
+sudo dnf install @virtualization
+```
+
+```bash
+sudo vi /etc/libvirt/libvirtd.conf
+```
+
+uncomment: `unix_sock_group = "libvirt"`
+
+Adjust the UNIX socket permissions for the R/W socket
+
+`unix_sock_rw_perms = "0770"`
+
+Start the service `systemctl enable --now libvirtd`
+
+Add user to group:
+```bash
+sudo usermod -a -G libvirt $(whoami) && sudo usermod -a -G kvm $(whoami)
+```
 
 
-## Add badname user
+# Configure Howdy 
+
+```bash
+sudo dnf copr enable principis/howdy
+sudo dnf --refresh install -y howdy
+```
+https://copr.fedorainfracloud.org/coprs/principis/howdy/
+https://github.com/boltgolt/howdy
+
+
+# Seahorse
+To fix Login Keyring error
+https://itsfoss.com/seahorse/
+`sudo dnf -y install seahorse && seahorse`
+
+Applications > Passwords and Keys > Passwords > Right-click Login > Change Password to blank
+
+# then run `just homebrew` after a reboot to install packages with brew
+homebrew:
+    brew install \
+      chezmoi \
+      onedrive \
+      hugo \
+      virt-manager
+
+## Initialize Chezmoi
+
+Chezmoi let's you easy sync your dotfiles with github and your other computers. Just init chezmoi and add your github ussername. This assumes your dotfiles in github are saved in the proper format. 
+
+`chezmoi init --apply davidvargasxyz`
+
+## Add badname user (if needed)
+
+This is just here
 
 `$ adduser --badname firstname.lastname`
 `$ sudo usermod -aG wheel username`
@@ -26,7 +156,7 @@ The official doc is [Here](https://dnf.readthedocs.io/en/latest/conf_ref.html#de
 Just open up your DNF config file with your favorite text editor.
 
 ```
-sudo nano /etc/dnf/dnf.conf
+sudo vim /etc/dnf/dnf.conf
 ```
 
 Then add the following:
@@ -92,45 +222,52 @@ in the software center
 
 add minimize and maximize
 
-## extentions (by gnome) (green puzzle piece)
+## Flatseal
 
-## Add a Dock
+![](/images/Pasted%20image%2020240905105809.png)
 
-[https://extensions.gnome.org/extension/307/dash-to-dock/](https://extensions.gnome.org/extension/307/dash-to-dock/ "https://extensions.gnome.org/extension/307/dash-to-dock/")
+## Input Leap
 
-## Window is Ready - Notification Remover
+![](/images/Pasted%20image%2020240905105932.png)
 
-https://extensions.gnome.org/extension/1007/window-is-ready-notification-remover/
+sudo dnf install git cmake make gcc-c++ xorg-x11-server-devel \
+                 libcurl-devel avahi-compat-libdns_sd-devel \
+                 libXtst-devel qt5-qtbase qt5-qtbase-devel  \
+                 qt5-qttools-devel libICE-devel libSM-devel \
+                 openssl-devel libXrandr-devel libXinerama-devel
+
+## Virtual machine Manager
+
+![](/images/Pasted%20image%2020240905110024.png)
+
+## Box Buddy
+
+![](/images/Pasted%20image%2020240905110223.png)
+## Warehouse
+
+![](/images/Pasted%20image%2020240905110143.png)
+
+## Mission Center 
+
+![](/images/Pasted%20image%2020240905110500.png)
+
+## Pika Backup
+
+![](/images/Pasted%20image%2020240905110555.png)
+## Clapper
+
+![](/images/Pasted%20image%2020240905110319.png)
+
+## Extentions Manager (blue puzzle piece)
+
+![](/images/Pasted%20image%2020240905105624.png)
+
+![](/images/Pasted%20image%2020240905105517.png)
 
 
-## Vitals
-
-[https://extensions.gnome.org/extension/1460/vitals/](https://extensions.gnome.org/extension/1460/vitals/ "https://extensions.gnome.org/extension/1460/vitals/")
-
-## Arch Menu
-
-[https://extensions.gnome.org/extension/3628/arcmenu/](https://extensions.gnome.org/extension/3628/arcmenu/ "https://extensions.gnome.org/extension/3628/arcmenu/")
-
-## Dash to Panel
-
-[https://extensions.gnome.org/extension/1160/dash-to-panel/](https://extensions.gnome.org/extension/1160/dash-to-panel/ "https://extensions.gnome.org/extension/1160/dash-to-panel/")
-
-## Screenshot tool
-
-[https://extensions.gnome.org/extension/1112/screenshot-tool/](https://extensions.gnome.org/extension/1112/screenshot-tool/ "https://extensions.gnome.org/extension/1112/screenshot-tool/")
+s.gnome.org/extension/1112/screenshot-tool/](https://extensions.gnome.org/extension/1112/screenshot-tool/ "https://extensions.gnome.org/extension/1112/screenshot-tool/")
 
 ran gnome-screenshot tool in command prompt and it asked to install
-
-## l2tp VPN
-```
-sudo dnf install xl2tpd
-
-sudo dnf install NetworkManager-l2tp
-
-sudo dnf install NetworkManager-l2tp-gnome
-
-service NetworkManager restart
-```
 
 ## Airpods not pairing Issue
 
@@ -172,6 +309,13 @@ run:
 
 then Reboot
 
+## Remove pasted characters ^[](200~')
+`vim ~/.inputrc`
+
+```bash
+"\C-v": ""
+```
+
 ## Install gimp
 
 $ sudo dnf install gimp
@@ -193,27 +337,6 @@ From Tools menu, select Arrow
 
 = h.265 main 10 profile media codec error =
 
-## Keypassxc
-
-```
-sudo dnf install snapd
-sudo ln -s /var/lib/snapd/snap /snap
-sudo snap install keepassxc
-```
-
-
-## Install Obsidian using Flatpak
-
-1. In your terminal, run the following command to install Obsidian:
-
-   ```bash
-   flatpak install flathub.obsidian.Obsidian
-   ```
-2. Open Obsidian by running the following command:
-
-   ```bash
-   flatpak run.obsidian.Obsidian
-   ```
 
 ## Distrobox
 
@@ -227,10 +350,7 @@ See [distrobox](distrobox.md)
 
 https://www.youtube.com/watch?v=eefsL9K2w4k
 
-# Starcraft 2 install on Fedora Workstation 38
-
-
-## Install your latest gpu driver https://github.com/lutris/docs/blob/master/InstallingDrivers.md
+ 1. Install your latest gpu driver https://github.com/lutris/docs/blob/master/InstallingDrivers.md
 
 I am just running off of built in AMD graphics. So we just need to install support for Vulkan API
 `sudo dnf install vulkan-loader vulkan-loader.i686`
@@ -242,7 +362,7 @@ Install Wine
 Install Lutris
 Install the Flatpak version in software center.
 
-# Fedora Hotkeys
+## Fedora Hotkeys
 
 ## Terminal
 
@@ -306,3 +426,24 @@ Ctrl _ Shift _ Space
 
 Reattach Tab
 Ctrl + Shift + v
+
+## Slack
+
+Installing via package manager because of screen sharing issue. 
+
+Upgrade dnf and download the slack rpm from the website. 
+
+**Screen Sharing in Slack:**
+
+```bash
+vim /usr/share/applications/slack.desktop
+```
+
+Update the exec line to:
+```bash
+Exec=/usr/bin/slack --enable-features=WebRTCPipeWireCapturer %U
+```
+
+## Actual Budget
+
+https://github.com/actualbudget/actual

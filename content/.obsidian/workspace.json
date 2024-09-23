@@ -11,8 +11,12 @@
             "id": "49e43c752dc46500",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "linux/_index.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "linux/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "linux/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "linux/_index.md"
+              }
             }
           }
         ]
@@ -135,28 +143,43 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "homepage:Open homepage": false,
+      "obsidian-file-cleaner:Clean files": false
     }
   },
   "active": "49e43c752dc46500",
   "lastOpenFiles": [
-    "linux/XBare Metal to Proxmox VM.md",
-    "Untitled.md",
-    "images/Pasted image 20240826070638.png",
-    "Skaffold.md",
-    "linux/Process and Task Scheduling Review Questions.md",
-    "booknotes/Playful Parenting.md",
+    "_index.md",
     "proxmox install.md",
     "Proxmox HA Cluster.md",
-    "images/Pasted image 20240821111355.png",
+    "linux/Turn a file into a block device.md",
+    "booknotes/_index.md",
+    "now/Projects (Copy).md",
+    "linux/Silverblue.md",
+    "now/_index.md",
+    "Recommended/_index.md",
+    "Skaffold.md",
+    "images/Pasted image 20240911050841.png",
+    "images/Pasted image 20240911045521.png",
+    "images/Pasted image 20240905110555.png",
+    "images/Pasted image 20240905110500.png",
+    "images/Pasted image 20240905110319.png",
+    "images/Pasted image 20240905110223.png",
+    "images/Pasted image 20240905110143.png",
+    "images/Pasted image 20240905110024.png",
+    "images/Pasted image 20240905105932.png",
+    "images/Pasted image 20240905105809.png",
+    "Untitled.md",
+    "linux/XBare Metal to Proxmox VM.md",
+    "linux/Process and Task Scheduling Review Questions.md",
+    "booknotes/Playful Parenting.md",
     "linux/Job Scheduling.md",
-    "images/Pasted image 20240815080652.png",
     "linux/Processes and Priorities.md",
     "networking/How to Study for CCNA 200-301.md",
-    "images/CCNA.png",
     "images/Spaced.md",
     "networking/_index.md",
-    "now/_index.md",
     "tools/Using Vagrant on Linux.md",
     "tools/_index.md",
     "tools/Setting Up a Self-hosted NextCloud Server.md",
@@ -164,18 +187,6 @@
     "tools/Calibre Web with Docker and NGINX.md",
     "tools/How to Build a website With Hugo.md",
     "writing/4 Ways to Quit caffeine.md",
-    "linux/Process and Task Scheduling.md",
-    "linux/RHCSA Study Tracker.md",
-    "linux/Bare Metal to Proxmox VM.md",
-    "linux/Advanced Package Management DIY Labs.md",
-    "linux/The dnf Command.md",
-    "linux/The OpenSSH Service.md",
-    "images/Pasted image 20240808100730.png",
-    "images/Pasted image 20240807124622.png",
-    "images/Pasted image 20240806080538.png",
-    "images/Pasted image 20240806080050.png",
-    "images/Pasted image 20240806075409.png",
-    "images/Pasted image 20240713164339.png",
     "tools/LEGO_BRICK_LABELS-CONTACT_SHEET.pdf",
     "python/Python Crash Course",
     "networking/newccnanotes",

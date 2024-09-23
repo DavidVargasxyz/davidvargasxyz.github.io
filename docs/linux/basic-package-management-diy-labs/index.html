@@ -22,18 +22,18 @@ make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm co
 make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm command and install the zsh package by specifying its full path. [root@server30 Packages]# rpm -ivh /mnt/BaseOS/Packages/zsh-5.8-9.el9.x86_64.rpm Verifying... ################################# [100%]) Preparing... ################################# [100%]) package zsh-5.8-9.el9.x86_64 is already installed Run the rpm command again and perform the following on the zsh package: (1) show information [root@server30 Packages]# rpm -qi zsh Name : zsh Version : 5.8 Release : 9.el9 Architecture: x86_64 Install Date: Sat 13 Jul 2024 06:49:40 PM MST Group : Unspecified Size : 8018363 License : MIT Signature : RSA/SHA256, Thu 24 Feb 2022 08:59:15 AM MST, Key ID 199e2f91fd431d51 Source RPM : zsh-5.8-9.el9.src.rpm Build Date : Wed 23 Feb 2022 07:10:14 AM MST Build Host : x86-vm-56.build.eng.bos.redhat.com Packager : Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt; Vendor : Red Hat, Inc. URL : http://zsh.sourceforge.net/ Summary : Powerful interactive shell Description : The zsh shell is a command interpreter usable as an interactive login shell and as a shell script command processor. Zsh resembles the ksh shell (the Korn shell), but includes many enhancements. Zsh supports command line editing, built-in spelling correction, programmable command completion, shell functions (with autoloading), a history mechanism, and more. (2) validate integrity [root@server30 Packages]# rpm -K zsh-5.8-9.el9.x86_64.rpm zsh-5.8-9.el9.x86_64.rpm: digests signatures OK (3) display attributes [root@server30 Packages]# rpm -V zsh Lab 9-2: Query and Erase Packages As user1 with sudo on server3,">
     <meta itemprop="wordCount" content="485">
     <title></title>
-    <link href="/images/logo.svg?1727008401" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1727008401" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1727008401" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1727008401" rel="stylesheet">
-    <link href="/css/auto-complete.css?1727008401" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1727008401" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1727008401" rel="stylesheet">
-    <link href="/css/fonts.css?1727008401" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1727008401" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1727008401" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1727008401" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1727008401" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1727008401" rel="stylesheet">
-    <link href="/css/print.css?1727008401" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1727008401"></script>
+    <link href="/images/logo.svg?1727093232" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1727093232" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1727093232" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1727093232" rel="stylesheet">
+    <link href="/css/auto-complete.css?1727093232" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1727093232" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1727093232" rel="stylesheet">
+    <link href="/css/fonts.css?1727093232" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1727093232" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1727093232" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1727093232" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1727093232" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1727093232" rel="stylesheet">
+    <link href="/css/print.css?1727093232" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1727093232"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -273,12 +273,12 @@ make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm co
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1727008401" defer></script>
-        <script src="/js/lunr/lunr.min.js?1727008401" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1727008401" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1727008401" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1727008401" defer></script>
-        <script src="/js/search.js?1727008401" defer></script>
+        <script src="/js/auto-complete.js?1727093232" defer></script>
+        <script src="/js/lunr/lunr.min.js?1727093232" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1727093232" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1727093232" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1727093232" defer></script>
+        <script src="/js/search.js?1727093232" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -290,7 +290,6 @@ make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm co
           <li data-nav-id="/linux/basic-package-management-diy-labs/" class="active"><a class="padding" href="/linux/basic-package-management-diy-labs/"><i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/linux/rhcsa-notes/" class=""><a class="padding" href="/linux/rhcsa-notes/">My RHCSA 9 Notes<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/linux/rhcsa-vagrant-lab-setup/" class=""><a class="padding" href="/linux/rhcsa-vagrant-lab-setup/">RHCSA Vagrant Lab Setup<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/booknotes/" class=""><a class="padding" href="/booknotes/">Book Notes<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/networking/" class=""><input type="checkbox" id="R-section-ec0ce2ce30f7ea4f73b681ec6981b84f" aria-controls="R-subsections-ec0ce2ce30f7ea4f73b681ec6981b84f"><label for="R-section-ec0ce2ce30f7ea4f73b681ec6981b84f"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Networking</span></label><a class="padding" href="/networking/">Networking<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-ec0ce2ce30f7ea4f73b681ec6981b84f" class="morespace collapsible-menu">
           <li data-nav-id="/networking/how-to-study-for-ccna-200-301/" class=""><a class="padding" href="/networking/how-to-study-for-ccna-200-301/">How to Study for CCNA 200-301<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/tools/" class=""><input type="checkbox" id="R-section-cff67d57e00d6d598d882def3568f700" aria-controls="R-subsections-cff67d57e00d6d598d882def3568f700"><label for="R-section-cff67d57e00d6d598d882def3568f700"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Tools</span></label><a class="padding" href="/tools/">Tools<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-cff67d57e00d6d598d882def3568f700" class="morespace collapsible-menu">
@@ -359,8 +358,8 @@ make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm co
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1727008401" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1727008401" defer></script>
+    <script src="/js/clipboard.min.js?1727093232" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1727093232" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -376,20 +375,20 @@ make sure the RHEL 9 ISO image is attached to the VM and mounted. Use the rpm co
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1727008401" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1727008401" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1727008401" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1727008401" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1727008401" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1727008401" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1727008401" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1727008401" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1727008401" defer></script>
-    <script src="/js/js-yaml.min.js?1727008401" defer></script>
+    <script src="/js/d3/d3-color.min.js?1727093232" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1727093232" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1727093232" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1727093232" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1727093232" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1727093232" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1727093232" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1727093232" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1727093232" defer></script>
+    <script src="/js/js-yaml.min.js?1727093232" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1727008401" defer></script>
+    <script src="/js/theme.js?1727093232" defer></script>
   </body>
 </html>

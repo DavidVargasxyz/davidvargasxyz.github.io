@@ -50,18 +50,18 @@ Request: - Sent by the DHCP client to ask the server to lease the IPv4 address l
 Acknowledgment: - Sent by the DHCP server to assign the address and to list the mask, default router, and DNS server IP addresses IPv4 addresses that allow a host that has no IP address to still be able to send and receive messages on the local subnet: 0.0.0.0: - An address reserved for use as a source IPv4 address for hosts that do not yet have an IP address. 255.255.255.255: - The local broadcast IP address. Packets sent to this destination address are broadcast on the local data link, but routers do not forward them. a client, sends a Discover message, with source IP address of 0.0.0.0Host A sends the packet to destination 255.255.255.255 router R1 will not forward this packet. - - assuming the DHCP client chooses to use a DHCP option called the broadcast flag; all examples in this book assume the broadcast flag is used. - all hosts in the subnet receive the Offer message - the original Discover message lists a number called the client ID□□ includes the host’s MAC address, that identifies the original host (host A in this case).As a result, host A knows that the Offer message is meant for host A, which. Supporting DHCP for Remote Subnets with DHCP Relay">
     <meta itemprop="wordCount" content="13457">
     <title></title>
-    <link href="/images/logo.svg?1727008401" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1727008403" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1727008403" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1727008403" rel="stylesheet">
-    <link href="/css/auto-complete.css?1727008403" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1727008403" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1727008403" rel="stylesheet">
-    <link href="/css/fonts.css?1727008403" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1727008403" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1727008403" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1727008403" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1727008403" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1727008403" rel="stylesheet">
-    <link href="/css/print.css?1727008403" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1727008403"></script>
+    <link href="/images/logo.svg?1727093232" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1727093233" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1727093233" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1727093233" rel="stylesheet">
+    <link href="/css/auto-complete.css?1727093233" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1727093233" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1727093233" rel="stylesheet">
+    <link href="/css/fonts.css?1727093233" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1727093233" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1727093233" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1727093233" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1727093233" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1727093233" rel="stylesheet">
+    <link href="/css/print.css?1727093233" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1727093233"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..\/..';
@@ -1478,12 +1478,12 @@ devices.</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1727008403" defer></script>
-        <script src="/js/lunr/lunr.min.js?1727008403" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1727008403" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1727008403" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1727008403" defer></script>
-        <script src="/js/search.js?1727008403" defer></script>
+        <script src="/js/auto-complete.js?1727093233" defer></script>
+        <script src="/js/lunr/lunr.min.js?1727093233" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1727093233" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1727093233" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1727093233" defer></script>
+        <script src="/js/search.js?1727093233" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -1494,7 +1494,6 @@ devices.</p>
           <li data-nav-id="/linux/" class=""><input type="checkbox" id="R-section-9e5aaccdf48687824ccd3b3097af8e41" aria-controls="R-subsections-9e5aaccdf48687824ccd3b3097af8e41"><label for="R-section-9e5aaccdf48687824ccd3b3097af8e41"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Linux</span></label><a class="padding" href="/linux/">Linux<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-9e5aaccdf48687824ccd3b3097af8e41" class="morespace collapsible-menu">
           <li data-nav-id="/linux/rhcsa-notes/" class=""><a class="padding" href="/linux/rhcsa-notes/">My RHCSA 9 Notes<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/linux/rhcsa-vagrant-lab-setup/" class=""><a class="padding" href="/linux/rhcsa-vagrant-lab-setup/">RHCSA Vagrant Lab Setup<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/booknotes/" class=""><a class="padding" href="/booknotes/">Book Notes<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/networking/" class="parent "><input type="checkbox" id="R-section-ec0ce2ce30f7ea4f73b681ec6981b84f" aria-controls="R-subsections-ec0ce2ce30f7ea4f73b681ec6981b84f" checked><label for="R-section-ec0ce2ce30f7ea4f73b681ec6981b84f"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Networking</span></label><a class="padding" href="/networking/">Networking<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-ec0ce2ce30f7ea4f73b681ec6981b84f" class="morespace collapsible-menu">
           <li data-nav-id="/networking/newccnanotes/part3/" class="active"><a class="padding" href="/networking/newccnanotes/part3/"><i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/networking/how-to-study-for-ccna-200-301/" class=""><a class="padding" href="/networking/how-to-study-for-ccna-200-301/">How to Study for CCNA 200-301<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
@@ -1564,8 +1563,8 @@ devices.</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1727008403" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1727008403" defer></script>
+    <script src="/js/clipboard.min.js?1727093234" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1727093234" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -1581,20 +1580,20 @@ devices.</p>
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1727008403" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1727008403" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1727008403" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1727008403" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1727008403" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1727008403" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1727008403" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1727008403" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1727008403" defer></script>
-    <script src="/js/js-yaml.min.js?1727008403" defer></script>
+    <script src="/js/d3/d3-color.min.js?1727093234" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1727093234" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1727093234" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1727093234" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1727093234" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1727093234" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1727093234" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1727093234" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1727093234" defer></script>
+    <script src="/js/js-yaml.min.js?1727093234" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1727008403" defer></script>
+    <script src="/js/theme.js?1727093234" defer></script>
   </body>
 </html>

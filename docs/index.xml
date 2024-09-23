@@ -16,13 +16,6 @@
       <description>RHCSA Stuff RHCSA Notes RHCSA Study Tracker Redhat Exam Environment How to Study for RHCSA RHCSA Study Points RHCSA Vagrant Lab Setup Fedora My Fedora Setup Misc Using Man Pages wsl2 [[XBare Metal to Proxmox VM]] [[Creating a Bootable and Persistent Fedora 40 USB Drive From Fedora 40]] Labs Turn a file into a block device </description>
     </item>
     <item>
-      <title>Book Notes</title>
-      <link>http://davidvargas.xyz/booknotes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://davidvargas.xyz/booknotes/</guid>
-      <description>These are the summaries and notes of books I have read. These notes are the result of wanting to further process books and retain information. After years of reading books one time and then forgetting most of them.&#xA;My current reading process Give the book a quick read through. Read the book a second time, highlighting anything I want to remember along the way. Read through highlights and try to distill key points in my own words, or just writing down words straight from the book that I want to remember. Share. You can use these notes to remember key points. Or to help decide if a book is going to help you with a specific problem. Books are sorted by highest rated. Click the titled link for each book to see my detailed notes.</description>
-    </item>
-    <item>
       <title>Networking</title>
       <link>http://davidvargas.xyz/networking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

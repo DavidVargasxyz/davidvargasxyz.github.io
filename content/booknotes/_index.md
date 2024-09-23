@@ -1,8 +1,11 @@
----
-title: Book Notes
-draft: false
-weight: 1
----
++++
+title = "Book Notes"
+[_build]
+  render = "always"
+  list = "never"
+  publishResources = true
++++
+
 
 These are the summaries and notes of books I have read. These notes are the result of wanting to further process books and retain information. After years of reading books one time and then forgetting most of them. 
 

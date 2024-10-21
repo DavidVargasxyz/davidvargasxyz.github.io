@@ -1,7 +1,7 @@
 ---
 title: Easy Mango Salsa Quinoa Bowl
 ---
-
+![](/images/Pasted%20image%2020241021100911.png)
 ## Ingredients
 
 - Quinoa
@@ -9,4 +9,5 @@ title: Easy Mango Salsa Quinoa Bowl
 - Guacamole
 - Micro greens
 - Black Beans
+- [Creamy Jalepeno Sauce](Creamy%20Jalepeno%20Sauce.md)
 

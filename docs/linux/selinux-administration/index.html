@@ -34,18 +34,18 @@ Part of the setroubleshoot-server package.
 In order to fully manage SELinux, you need to ensure that all these packages are installed on the system.">
     <meta itemprop="wordCount" content="2501">
     <title></title>
-    <link href="/images/logo.svg?1729528923" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1729528925" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729528925" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1729528925" rel="stylesheet">
-    <link href="/css/auto-complete.css?1729528925" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729528925" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1729528925" rel="stylesheet">
-    <link href="/css/fonts.css?1729528925" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729528925" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1729528925" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1729528925" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1729528925" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1729528925" rel="stylesheet">
-    <link href="/css/print.css?1729528925" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1729528925"></script>
+    <link href="/images/logo.svg?1729530802" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1729530804" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729530804" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729530804" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729530804" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729530804" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729530804" rel="stylesheet">
+    <link href="/css/fonts.css?1729530804" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729530804" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729530804" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1729530804" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1729530804" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1729530804" rel="stylesheet">
+    <link href="/css/print.css?1729530804" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729530804"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -606,8 +606,8 @@ command:</li>
 </span></span><span style="display:flex;"><span>Changing password <span style="color:#ff6ac1">for</span> user user1.
 </span></span><span style="display:flex;"><span>Current password: 
 </span></span><span style="display:flex;"><span>roopasswd: Authentication token manipulation error</span></span></code></pre></div><p>The following is a sample denial record from the same file in raw format:</p>
-<p><a href="#R-image-024f153058d3016858c749809af5b4b0" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-C7TMRBJO%201.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-024f153058d3016858c749809af5b4b0"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-C7TMRBJO%201.jpg"></a></p>
+<p><a href="#R-image-f9a3fbc7843f0403d90d61cd01fc19d5" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-C7TMRBJO%201.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f9a3fbc7843f0403d90d61cd01fc19d5"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-C7TMRBJO%201.jpg"></a></p>
 <p>I got this for some reason:</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">type</span><span style="color:#ff6ac1">=</span>USER_CHAUTHTOK <span style="color:#ff5c57">msg</span><span style="color:#ff6ac1">=</span>audit<span style="color:#ff6ac1">(</span>1722275037.346:97<span style="color:#ff6ac1">)</span>: <span style="color:#ff5c57">pid</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1452</span> <span style="color:#ff5c57">uid</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1000</span> <span style="color:#ff5c57">auid</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span> <span style="color:#ff5c57">ses</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1</span> <span style="color:#ff5c57">subj</span><span style="color:#ff6ac1">=</span>unconfined_u:unconfined_r:passwd_t:s0-s0:c0.c1023 <span style="color:#ff5c57">msg</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;op=PAM:chauthtok grantors=? acct=&#34;user1&#34; exe=&#34;/usr/bin/passwd&#34; hostname=server10 addr=? terminal=pts/0 res=failed&#39;</span><span style="color:#ff5c57">UID</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;user1&#34;</span> <span style="color:#ff5c57">AUID</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;root&#34;</span></span></span></code></pre></div><ul>
 <li>AVC type</li>
@@ -619,8 +619,8 @@ command:</li>
 <li>This message indicates that the <em>/etc/shadow</em> file does not have the correct context set on it, and that&rsquo;s why SELinux prevented the <code>passwd</code> command from updating the user&rsquo;s password.</li>
 </ul>
 <p>Use <code>sealert</code> to analyze (<code>-a</code>) all <strong>AVC</strong> records in the <em>audit.log</em> file. This command produces a formatted report with all relevant details:</p>
-<p><a href="#R-image-eaffe941f6f9a29cc71991248a989f0a" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-WYWDQX1V%201.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-eaffe941f6f9a29cc71991248a989f0a"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-WYWDQX1V%201.jpg"></a></p>
+<p><a href="#R-image-2a20217c967f4e0f0f05d37ba780372f" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="image-WYWDQX1V%201.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2a20217c967f4e0f0f05d37ba780372f"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="image-WYWDQX1V%201.jpg"></a></p>
 <ul>
 <li>Will try this again, I think a previous labbing is messing me up</li>
 </ul>
@@ -652,12 +652,12 @@ command:</li>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1729528925" defer></script>
-        <script src="/js/lunr/lunr.min.js?1729528925" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1729528925" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1729528925" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1729528925" defer></script>
-        <script src="/js/search.js?1729528925" defer></script>
+        <script src="/js/auto-complete.js?1729530804" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729530804" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729530804" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729530804" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729530804" defer></script>
+        <script src="/js/search.js?1729530804" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -740,8 +740,8 @@ command:</li>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1729528925" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1729528925" defer></script>
+    <script src="/js/clipboard.min.js?1729530804" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729530804" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -757,20 +757,20 @@ command:</li>
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1729528925" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1729528925" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1729528925" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1729528925" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1729528925" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1729528925" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1729528925" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1729528925" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1729528925" defer></script>
-    <script src="/js/js-yaml.min.js?1729528925" defer></script>
+    <script src="/js/d3/d3-color.min.js?1729530804" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1729530804" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1729530804" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1729530804" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1729530804" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1729530804" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1729530804" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1729530804" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1729530804" defer></script>
+    <script src="/js/js-yaml.min.js?1729530804" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1729528925" defer></script>
+    <script src="/js/theme.js?1729530804" defer></script>
   </body>
 </html>

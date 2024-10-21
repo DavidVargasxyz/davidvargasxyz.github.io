@@ -28,18 +28,7 @@ let it sit for 30 minutes
 Cook tofu
 - add some oil and cook on griddle
 
-## Creamy Jalepeno Sauce
-- 1 cup vegan mayo
-- 1 tsp onion powder
-- 1 tsp garlic powder
-- 1 tsp smoked paprika
-- 1 tsp chipotle powder
-- 2 tbps pickled jalepeno brine
-- 8 slices pickled jelepenos finely diced
-- Can add citric acid or lime juice for more zip
-- 2-4 tablespoons vegan sour cream
-
-Blend ingredients and add to sauce bottle.
+[Creamy Jalepeno Sauce](Creamy%20Jalepeno%20Sauce.md)
 
 Cook:
 

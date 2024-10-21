@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "Easy Mango Salsa Quinoa Bowl",
+      "path": "Recipes/Easy Mango Salsa Quinoa Bowl.md"
+    },
+    {
       "basename": "Vegan Tofu Quesadilla",
       "path": "Recipes/Vegan Tofu Quesadilla.md"
     },
     {
-      "basename": "Easy Mango Salsa Quinoa Bowl",
-      "path": "Recipes/Easy Mango Salsa Quinoa Bowl.md"
+      "basename": "RHCSA Notes",
+      "path": "linux/RHCSA Notes.md"
+    },
+    {
+      "basename": "_index",
+      "path": "linux/_index.md"
     },
     {
       "basename": "4 Ways to Quit caffeine",
@@ -15,10 +23,6 @@
     {
       "basename": "_index",
       "path": "Recipes/_index.md"
-    },
-    {
-      "basename": "_index",
-      "path": "linux/_index.md"
     },
     {
       "basename": "_index",
@@ -51,10 +55,6 @@
     {
       "basename": "Booting into Specific Targets",
       "path": "linux/Booting into Specific Targets.md"
-    },
-    {
-      "basename": "RHCSA Notes",
-      "path": "linux/RHCSA Notes.md"
     },
     {
       "basename": "Advanced Package Management",

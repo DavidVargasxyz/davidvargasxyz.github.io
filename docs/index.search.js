@@ -73,8 +73,8 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "Recipes",
-    "content": "Ingredients Quinoa Mango Salsa Guacamole Micro greens Black Beans ",
-    "description": "Ingredients Quinoa Mango Salsa Guacamole Micro greens Black Beans ",
+    "content": " Ingredients Quinoa Mango Salsa Guacamole Micro greens Black Beans Creamy Jalepeno Sauce ",
+    "description": " Ingredients Quinoa Mango Salsa Guacamole Micro greens Black Beans Creamy Jalepeno Sauce ",
     "tags": [],
     "title": "Easy Mango Salsa Quinoa Bowl",
     "uri": "/recipes/easy-mango-salsa-quinoa-bowl/"
@@ -153,7 +153,7 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "Recipes",
-    "content": " Super firm tofu\nRough chop tofu\nMarinade: 2 Tbsp soy sauce 2 Tbsp Nooch 1 tsp chilli powder 1/2 tsp garlic powder 1/2 tsp onion powder 1/2 tsp smoked paprika or chipotle powder 1/2 tsp cumin 1/2 tsp oregano 1/4 tsp ground coriander 1 tbsp taco bell hot sauce 2 tbsp vegan mayo 1 tbsp water Mix and blend marinade ingredients Add in chopped tofu and mix let it sit for 30 minutes\nCook tofu\nadd some oil and cook on griddle Creamy Jalepeno Sauce 1 cup vegan mayo 1 tsp onion powder 1 tsp garlic powder 1 tsp smoked paprika 1 tsp chipotle powder 2 tbps pickled jalepeno brine 8 slices pickled jelepenos finely diced Can add citric acid or lime juice for more zip 2-4 tablespoons vegan sour cream Blend ingredients and add to sauce bottle.\nCook:\nOil pan and heat \u003e coat the tortilla in it by smearing it around add vegan moz and cheddar shreds and the tofu and some creamy jalepeno sauce\n1/2 cup cheese and 1/2 cup tofu let some cheeze sneak out",
+    "content": " Super firm tofu\nRough chop tofu\nMarinade: 2 Tbsp soy sauce 2 Tbsp Nooch 1 tsp chilli powder 1/2 tsp garlic powder 1/2 tsp onion powder 1/2 tsp smoked paprika or chipotle powder 1/2 tsp cumin 1/2 tsp oregano 1/4 tsp ground coriander 1 tbsp taco bell hot sauce 2 tbsp vegan mayo 1 tbsp water Mix and blend marinade ingredients Add in chopped tofu and mix let it sit for 30 minutes\nCook tofu\nadd some oil and cook on griddle Creamy Jalepeno Sauce\nCook:\nOil pan and heat \u003e coat the tortilla in it by smearing it around add vegan moz and cheddar shreds and the tofu and some creamy jalepeno sauce\n1/2 cup cheese and 1/2 cup tofu let some cheeze sneak out",
     "description": " Super firm tofu\nRough chop tofu\nMarinade: 2 Tbsp soy sauce 2 Tbsp Nooch 1 tsp chilli powder 1/2 tsp garlic powder 1/2 tsp onion powder 1/2 tsp smoked paprika or chipotle powder 1/2 tsp cumin 1/2 tsp oregano 1/4 tsp ground coriander 1 tbsp taco bell hot sauce 2 tbsp vegan mayo 1 tbsp water Mix and blend marinade ingredients Add in chopped tofu and mix let it sit for 30 minutes",
     "tags": [],
     "title": "Vegan Tofu Quesadilla",

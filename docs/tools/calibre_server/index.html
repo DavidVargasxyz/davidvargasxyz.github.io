@@ -42,18 +42,18 @@ Creating a service Create a new file /etc/systemd/system/calibre-server.service
 [Unit] Description=Calibre library server After=network.target [Service] Type=simple User=root Group=root ExecStart=/usr/bin/calibre-server --enable-auth --enable-local-write /opt/calibre/your_library --listen-on 127.0.0.1 [Install] WantedBy=multi-user.targetYou can change the port with the --port prefix. Additional information man calibre-server.">
     <meta itemprop="wordCount" content="219">
     <title></title>
-    <link href="/images/logo.svg?1729517593" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1729517596" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729517596" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1729517596" rel="stylesheet">
-    <link href="/css/auto-complete.css?1729517596" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729517596" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1729517596" rel="stylesheet">
-    <link href="/css/fonts.css?1729517596" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729517596" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1729517596" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1729517596" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1729517596" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1729517596" rel="stylesheet">
-    <link href="/css/print.css?1729517596" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1729517596"></script>
+    <link href="/images/logo.svg?1729528923" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1729528927" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729528927" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729528927" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729528927" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729528927" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729528927" rel="stylesheet">
+    <link href="/css/fonts.css?1729528927" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729528927" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729528927" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1729528927" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1729528927" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1729528927" rel="stylesheet">
+    <link href="/css/print.css?1729528927" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729528927"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -183,11 +183,11 @@ Creating a service Create a new file /etc/systemd/system/calibre-server.service
 </span></span><span style="display:flex;"><span>systemctl reload nginx</span></span></code></pre></div><p>Issue a Let&rsquo;s Encrypt certificate. <a href="https://landchad.net/certbot" rel="external" target="_blank">Detailed instructions and additional information</a>.</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>certbot --nginx</span></span></code></pre></div><p>Add CNAME record</p>
 <p>Now just go to <strong>calibre.example.org</strong>. The server will request an username and a password.</p>
-<p><a href="#R-image-7c84d501d9a685a35523de9a2e356e43" class="lightbox-link"><img alt="calibre" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://landchad.net/pix/calibre/calibre-1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7c84d501d9a685a35523de9a2e356e43"><img alt="calibre" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://landchad.net/pix/calibre/calibre-1.png"></a></p>
+<p><a href="#R-image-0b3dbce34877cfe1cf3d245d11e76209" class="lightbox-link"><img alt="calibre" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://landchad.net/pix/calibre/calibre-1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0b3dbce34877cfe1cf3d245d11e76209"><img alt="calibre" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://landchad.net/pix/calibre/calibre-1.png"></a></p>
 <p>After login you will see something like this.</p>
-<p><a href="#R-image-0debf120db0a07f8339621a87d89da2a" class="lightbox-link"><img alt="calibre" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://landchad.net/pix/calibre/calibre-2.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0debf120db0a07f8339621a87d89da2a"><img alt="calibre" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://landchad.net/pix/calibre/calibre-2.png"></a></p>
+<p><a href="#R-image-fef701a990cfe6b7bcd2587e496f2fe9" class="lightbox-link"><img alt="calibre" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://landchad.net/pix/calibre/calibre-2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fef701a990cfe6b7bcd2587e496f2fe9"><img alt="calibre" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://landchad.net/pix/calibre/calibre-2.png"></a></p>
 <p>De DRM Books</p>
 <p>Download kindle verion 1.26 <a href="https://www.filehorse.com/download-kindle-for-pc/40502/download/" rel="external" target="_blank">https://www.filehorse.com/download-kindle-for-pc/40502/download/</a></p>
 <p>filename: KindleForPC-installer-1.26.55076.exe<br>
@@ -227,12 +227,12 @@ Found here: <a href="https://www.mobileread.com/forums/showthread.php?t=283371" 
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1729517596" defer></script>
-        <script src="/js/lunr/lunr.min.js?1729517596" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1729517596" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1729517596" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1729517596" defer></script>
-        <script src="/js/search.js?1729517596" defer></script>
+        <script src="/js/auto-complete.js?1729528927" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729528927" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729528927" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729528927" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729528927" defer></script>
+        <script src="/js/search.js?1729528927" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -254,7 +254,9 @@ Found here: <a href="https://www.mobileread.com/forums/showthread.php?t=283371" 
           <li data-nav-id="/tools/using-vagrant-on-linux/" class=""><a class="padding" href="/tools/using-vagrant-on-linux/">Using Vagrant on Linux<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/writing/" class=""><input type="checkbox" id="R-section-e557a922d533a171e9a204b7e50265e2" aria-controls="R-subsections-e557a922d533a171e9a204b7e50265e2"><label for="R-section-e557a922d533a171e9a204b7e50265e2"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Writing</span></label><a class="padding" href="/writing/">Writing<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e557a922d533a171e9a204b7e50265e2" class="morespace collapsible-menu">
           <li data-nav-id="/writing/4-ways-to-quit-caffeine/" class=""><a class="padding" href="/writing/4-ways-to-quit-caffeine/">4 Ways to Quit Caffeine<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/recipes/" class=""><a class="padding" href="/recipes/">Recipes<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/recipes/" class=""><input type="checkbox" id="R-section-a3e5255845a36048a8a1a9a771ebf825" aria-controls="R-subsections-a3e5255845a36048a8a1a9a771ebf825"><label for="R-section-a3e5255845a36048a8a1a9a771ebf825"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Recipes</span></label><a class="padding" href="/recipes/">Recipes<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-a3e5255845a36048a8a1a9a771ebf825" class="morespace collapsible-menu">
+          <li data-nav-id="/recipes/easy-mango-salsa-quinoa-bowl/" class=""><a class="padding" href="/recipes/easy-mango-salsa-quinoa-bowl/">Easy Mango Salsa Quinoa Bowl<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/recipes/vegan-tofu-quesadilla/" class=""><a class="padding" href="/recipes/vegan-tofu-quesadilla/">Vegan Tofu Quesadilla<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           </ul>
         </div>
         <div id="R-shortcuts">
@@ -313,8 +315,8 @@ Found here: <a href="https://www.mobileread.com/forums/showthread.php?t=283371" 
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1729517596" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1729517596" defer></script>
+    <script src="/js/clipboard.min.js?1729528927" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729528927" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -330,20 +332,20 @@ Found here: <a href="https://www.mobileread.com/forums/showthread.php?t=283371" 
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1729517596" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1729517596" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1729517596" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1729517596" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1729517596" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1729517596" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1729517596" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1729517596" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1729517596" defer></script>
-    <script src="/js/js-yaml.min.js?1729517596" defer></script>
+    <script src="/js/d3/d3-color.min.js?1729528927" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1729528927" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1729528927" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1729528927" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1729528927" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1729528927" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1729528927" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1729528927" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1729528927" defer></script>
+    <script src="/js/js-yaml.min.js?1729528927" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1729517596" defer></script>
+    <script src="/js/theme.js?1729528927" defer></script>
   </body>
 </html>

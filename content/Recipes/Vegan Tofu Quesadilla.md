@@ -1,3 +1,8 @@
+---
+title: Vegan Tofu Quesadilla
+---
+![](/images/Pasted%20image%2020241021094000.png)
+
 Super firm tofu
 
 Rough chop tofu
@@ -33,7 +38,6 @@ Cook tofu
 - 8 slices pickled jelepenos finely diced
 - Can add citric acid or lime juice for more zip
 - 2-4 tablespoons vegan sour cream
-- 
 
 Blend ingredients and add to sauce bottle.
 

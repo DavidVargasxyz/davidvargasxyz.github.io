@@ -18,6 +18,9 @@
     <loc>http://davidvargas.xyz/writing/</loc>
   </url>
   <url>
+    <loc>http://davidvargas.xyz/recipes/</loc>
+  </url>
+  <url>
     <loc>http://davidvargas.xyz/writing/4-ways-to-quit-caffeine/</loc>
   </url>
   <url>
@@ -25,6 +28,9 @@
   </url>
   <url>
     <loc>http://davidvargas.xyz/categories/</loc>
+  </url>
+  <url>
+    <loc>http://davidvargas.xyz/recipes/easy-mango-salsa-quinoa-bowl/</loc>
   </url>
   <url>
     <loc>http://davidvargas.xyz/tools/how-to-build-a-website-with-hugo/</loc>
@@ -42,9 +48,6 @@
     <loc>http://davidvargas.xyz/python/basics/</loc>
   </url>
   <url>
-    <loc>http://davidvargas.xyz/recipes/</loc>
-  </url>
-  <url>
     <loc>http://davidvargas.xyz/linux/rhcsa-vagrant-lab-setup/</loc>
   </url>
   <url>
@@ -55,5 +58,8 @@
   </url>
   <url>
     <loc>http://davidvargas.xyz/tools/using-vagrant-on-linux/</loc>
+  </url>
+  <url>
+    <loc>http://davidvargas.xyz/recipes/vegan-tofu-quesadilla/</loc>
   </url>
 </urlset>

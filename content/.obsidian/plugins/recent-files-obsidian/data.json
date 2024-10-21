@@ -1,80 +1,44 @@
 {
   "recentFiles": [
     {
+      "basename": "Vegan Tofu Quesadilla",
+      "path": "Recipes/Vegan Tofu Quesadilla.md"
+    },
+    {
+      "basename": "Easy Mango Salsa Quinoa Bowl",
+      "path": "Recipes/Easy Mango Salsa Quinoa Bowl.md"
+    },
+    {
+      "basename": "4 Ways to Quit caffeine",
+      "path": "writing/4 Ways to Quit caffeine.md"
+    },
+    {
       "basename": "_index",
-      "path": "booknotes/_index.md"
-    },
-    {
-      "basename": "Why I Read Physical Books",
-      "path": "booknotes/Why I Read Physical Books.md"
-    },
-    {
-      "basename": "test34",
-      "path": "booknotes/test34.md"
-    },
-    {
-      "basename": "_index",
-      "path": "_index.md"
-    },
-    {
-      "basename": "Sample Exam 1",
-      "path": "linux/Sample Exam 1.md"
-    },
-    {
-      "basename": "RHCSA Study Tracker",
-      "path": "linux/RHCSA Study Tracker.md"
-    },
-    {
-      "basename": "Reset the root User Password",
-      "path": "linux/Reset the root User Password.md"
+      "path": "Recipes/_index.md"
     },
     {
       "basename": "_index",
       "path": "linux/_index.md"
     },
     {
-      "basename": "Meditations",
-      "path": "booknotes/Meditations.md"
+      "basename": "_index",
+      "path": "python/_index.md"
     },
     {
-      "basename": "The Psychology of Money",
-      "path": "booknotes/The Psychology of Money.md"
+      "basename": "DNS and Name Resolution",
+      "path": "linux/DNS and Name Resolution.md"
     },
     {
-      "basename": "The Power of Positive Dog Training",
-      "path": "booknotes/The Power of Positive Dog Training.md"
+      "basename": "DNS and Time Synchronization",
+      "path": "linux/DNS and Time Synchronization.md"
     },
     {
-      "basename": "The Relationship Handbook",
-      "path": "booknotes/The Relationship Handbook.md"
-    },
-    {
-      "basename": "Dopamine Nation",
-      "path": "booknotes/Dopamine Nation.md"
-    },
-    {
-      "basename": "Process-bookfusion-highlights",
-      "path": "tools/Process-bookfusion-highlights.md"
+      "basename": "RHCSA Study Tracker",
+      "path": "linux/RHCSA Study Tracker.md"
     },
     {
       "basename": "_index",
-      "path": "tools/_index.md"
-    },
-    {
-      "basename": "123 Magic",
-      "path": "booknotes/123 Magic.md"
-    },
-    {
-      "basename": "Bliss of the Celibate",
-      "path": "booknotes/Bliss of the Celibate.md"
-    },
-    {
-      "basename": "Playful Parenting",
-      "path": "booknotes/Playful Parenting.md"
-    },
-    {
-      "basename": "The 12 Week Year",
-      "path": "booknotes/The 12 Week Year.md"
+      "path": "_index.md"
     },
     {
       "basename": "Boot Process, Grub2, and Kernel",
@@ -105,6 +69,10 @@
       "path": "linux/Package Groups.md"
     },
     {
+      "basename": "Sample Exam 1",
+      "path": "linux/Sample Exam 1.md"
+    },
+    {
       "basename": "Networking DIY Challenge Labs",
       "path": "linux/Networking DIY Challenge Labs.md"
     },
@@ -113,20 +81,36 @@
       "path": "linux/Networking Network Devices and Network Connections.md"
     },
     {
-      "basename": "DNS and Name Resolution",
-      "path": "linux/DNS and Name Resolution.md"
-    },
-    {
       "basename": "Advanced User Management Labs",
       "path": "linux/Advanced User Management Labs.md"
     },
     {
-      "basename": "DNS and Time Synchronization",
-      "path": "linux/DNS and Time Synchronization.md"
+      "basename": "The Relationship Handbook",
+      "path": "booknotes/The Relationship Handbook.md"
+    },
+    {
+      "basename": "_index",
+      "path": "booknotes/_index.md"
+    },
+    {
+      "basename": "The Psychology of Money",
+      "path": "booknotes/The Psychology of Money.md"
+    },
+    {
+      "basename": "The Power of Positive Dog Training",
+      "path": "booknotes/The Power of Positive Dog Training.md"
     },
     {
       "basename": "The Blog Startup",
       "path": "booknotes/The Blog Startup.md"
+    },
+    {
+      "basename": "The 12 Week Year",
+      "path": "booknotes/The 12 Week Year.md"
+    },
+    {
+      "basename": "Playful Parenting",
+      "path": "booknotes/Playful Parenting.md"
     },
     {
       "basename": "I Will Teach You to Be Rich",
@@ -139,6 +123,10 @@
     {
       "basename": "IP Transport and Applications",
       "path": "networking/IP Transport and Applications.md"
+    },
+    {
+      "basename": "Bliss of the Celibate",
+      "path": "booknotes/Bliss of the Celibate.md"
     },
     {
       "basename": "Master Reading List",
@@ -165,6 +153,10 @@
       "path": "linux/User Account Management.md"
     },
     {
+      "basename": "Reset the root User Password",
+      "path": "linux/Reset the root User Password.md"
+    },
+    {
       "basename": "CCNA",
       "path": "images/CCNA.png"
     },
@@ -185,10 +177,6 @@
       "path": "writing/7 Steps to Get Back on a NoFap Streak Immediately.md"
     },
     {
-      "basename": "4 Ways to Quit caffeine",
-      "path": "writing/4 Ways to Quit caffeine.md"
-    },
-    {
       "basename": "YAML In Obsidian",
       "path": "tools/YAML In Obsidian.md"
     },
@@ -199,6 +187,18 @@
     {
       "basename": "vimguide",
       "path": "tools/vimguide.md"
+    },
+    {
+      "basename": "Vim mode in bash",
+      "path": "tools/Vim mode in bash.md"
+    },
+    {
+      "basename": "Using Vagrant on Linux",
+      "path": "tools/Using Vagrant on Linux.md"
+    },
+    {
+      "basename": "Tracker Plugin",
+      "path": "tools/Tracker Plugin.md"
     }
   ],
   "omittedPaths": [],

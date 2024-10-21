@@ -18,18 +18,18 @@
     <meta itemprop="description" content="This chapter covers the following exam topics: 3.0 IP Connectivity 3.2 Determine how a router makes a forwarding decision by default 3.2.b Administrative distance 3.2.c Routing protocol metric 3.4 Configure and verify single area OSPFv 3.4.a Neighbor adjacencies 3.4.b Point-to-point 3.4.c Broadcast (DR/BR selection) 3.4.d Router ID Comparing Dynamic Routing Protocol Features Routers add IP routes to their routing tables using routes, and routes learned by using dynamic routing protocols.three methods: connected routes, static Routing protocol:overall purpose of learning routes. This process includesA set of messages, rules, and algorithms used by routers for the the exchange and analysis of routing information. Each router chooses the best route to each subnet (path selection) and finally places those best routes in its IP routing table. Examples include RIP, EIGRP, OSPF, and BGP.• Routed protocol and routable protocolpacket structure and logical addressing, allowing routers to forward or route the packets. :Both terms refer to a protocol that defines a Routers forward packets defined by routed and routable protocols. Examples includeVersion 4 (IPv4) and IP Version 6 (IPv6). IP• path selectionthe routing protocol chooses the best route.sometimes refers to part of the job of a routing protocol, in which Routing Protocol Functions Learn routing information about IP subnets from neighboring routers. Advertise routing information about IP subnets to neighboring routers. If more than one possible route exists to reach one subnet, pick the best route based on a metric.19 OSPF Concepts 20 OSPF config 21 OSPF Network Types and Neighbors 22. IPv6 23 IPv6 Addressing and Subnetting 24 IPv6 config 25 IPv6 Routing 26 Wireless 27 Wireless Architectures IP Transport and Applications 2 ACLs 3 Extended ACLs 4 Security Architectures 5 Securing Network Devices 6 Switchport security config">
     <meta itemprop="wordCount" content="284">
     <title></title>
-    <link href="/images/logo.svg?1729517593" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1729517595" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729517595" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1729517595" rel="stylesheet">
-    <link href="/css/auto-complete.css?1729517595" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729517595" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1729517595" rel="stylesheet">
-    <link href="/css/fonts.css?1729517595" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729517595" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1729517595" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1729517595" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1729517595" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1729517595" rel="stylesheet">
-    <link href="/css/print.css?1729517595" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1729517595"></script>
+    <link href="/images/logo.svg?1729528923" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1729528926" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729528926" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729528926" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729528926" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729528926" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729528926" rel="stylesheet">
+    <link href="/css/fonts.css?1729528926" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729528926" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729528926" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1729528926" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1729528926" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1729528926" rel="stylesheet">
+    <link href="/css/print.css?1729528926" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729528926"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..\/..';
@@ -189,12 +189,12 @@ metric.</code></pre></div><p><a href="/networking/newccnanotes/19-ospf-concepts/
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1729517595" defer></script>
-        <script src="/js/lunr/lunr.min.js?1729517595" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1729517595" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1729517595" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1729517595" defer></script>
-        <script src="/js/search.js?1729517595" defer></script>
+        <script src="/js/auto-complete.js?1729528926" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729528926" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729528926" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729528926" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729528926" defer></script>
+        <script src="/js/search.js?1729528926" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -216,7 +216,9 @@ metric.</code></pre></div><p><a href="/networking/newccnanotes/19-ospf-concepts/
           <li data-nav-id="/tools/using-vagrant-on-linux/" class=""><a class="padding" href="/tools/using-vagrant-on-linux/">Using Vagrant on Linux<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/writing/" class=""><input type="checkbox" id="R-section-e557a922d533a171e9a204b7e50265e2" aria-controls="R-subsections-e557a922d533a171e9a204b7e50265e2"><label for="R-section-e557a922d533a171e9a204b7e50265e2"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Writing</span></label><a class="padding" href="/writing/">Writing<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e557a922d533a171e9a204b7e50265e2" class="morespace collapsible-menu">
           <li data-nav-id="/writing/4-ways-to-quit-caffeine/" class=""><a class="padding" href="/writing/4-ways-to-quit-caffeine/">4 Ways to Quit Caffeine<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/recipes/" class=""><a class="padding" href="/recipes/">Recipes<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/recipes/" class=""><input type="checkbox" id="R-section-a3e5255845a36048a8a1a9a771ebf825" aria-controls="R-subsections-a3e5255845a36048a8a1a9a771ebf825"><label for="R-section-a3e5255845a36048a8a1a9a771ebf825"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Recipes</span></label><a class="padding" href="/recipes/">Recipes<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-a3e5255845a36048a8a1a9a771ebf825" class="morespace collapsible-menu">
+          <li data-nav-id="/recipes/easy-mango-salsa-quinoa-bowl/" class=""><a class="padding" href="/recipes/easy-mango-salsa-quinoa-bowl/">Easy Mango Salsa Quinoa Bowl<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/recipes/vegan-tofu-quesadilla/" class=""><a class="padding" href="/recipes/vegan-tofu-quesadilla/">Vegan Tofu Quesadilla<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           </ul>
         </div>
         <div id="R-shortcuts">
@@ -275,8 +277,8 @@ metric.</code></pre></div><p><a href="/networking/newccnanotes/19-ospf-concepts/
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1729517596" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1729517596" defer></script>
+    <script src="/js/clipboard.min.js?1729528926" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729528926" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -292,20 +294,20 @@ metric.</code></pre></div><p><a href="/networking/newccnanotes/19-ospf-concepts/
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1729517596" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1729517596" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1729517596" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1729517596" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1729517596" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1729517596" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1729517596" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1729517596" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1729517596" defer></script>
-    <script src="/js/js-yaml.min.js?1729517596" defer></script>
+    <script src="/js/d3/d3-color.min.js?1729528926" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1729528926" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1729528926" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1729528926" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1729528926" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1729528926" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1729528926" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1729528926" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1729528926" defer></script>
+    <script src="/js/js-yaml.min.js?1729528926" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1729517596" defer></script>
+    <script src="/js/theme.js?1729528926" defer></script>
   </body>
 </html>

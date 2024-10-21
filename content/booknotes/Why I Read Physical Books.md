@@ -2,8 +2,8 @@ There are a bunch of reasons.
 
 I like the restrictions that physical books place on me: 
 - I can't read them all the time (forces me to be alone with my thoughts more), 
-- can't highlight too many things, 
-- can't download 1,000s of books and jump back and fourth between books (I only own one book that I haven't read at a time, this helps me focus on one thing). 
+- Can't highlight too many things, 
+- Can't download 1,000s of books and jump back and fourth between books (I only own one book that I haven't read at a time, this helps me focus on one thing). 
 
 And the things I like about them: 
 - I own them, 

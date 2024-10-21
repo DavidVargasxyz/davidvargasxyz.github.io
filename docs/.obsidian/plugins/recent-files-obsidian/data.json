@@ -1,100 +1,112 @@
 {
   "recentFiles": [
     {
-      "basename": "part3",
-      "path": "networking/newccnanotes/part3.md"
+      "basename": "_index",
+      "path": "booknotes/_index.md"
     },
     {
-      "basename": "15cloudarchitecture",
-      "path": "networking/newccnanotes/15cloudarchitecture.md"
+      "basename": "Dopamine Nation",
+      "path": "booknotes/Dopamine Nation.md"
     },
     {
-      "basename": "15routeroperation",
-      "path": "networking/newccnanotes/15routeroperation.md"
+      "basename": "Meditations",
+      "path": "booknotes/Meditations.md"
     },
     {
-      "basename": "7switchinterfaces",
-      "path": "networking/newccnanotes/7switchinterfaces.md"
+      "basename": "The Relationship Handbook",
+      "path": "booknotes/The Relationship Handbook.md"
     },
     {
-      "basename": "part2",
-      "path": "networking/newccnanotes/part2.md"
+      "basename": "Process-bookfusion-highlights",
+      "path": "tools/Process-bookfusion-highlights.md"
     },
     {
-      "basename": "part1",
-      "path": "networking/newccnanotes/part1.md"
+      "basename": "_index",
+      "path": "tools/_index.md"
     },
     {
-      "basename": "14wanarchitecture",
-      "path": "networking/newccnanotes/14wanarchitecture.md"
+      "basename": "123 Magic",
+      "path": "booknotes/123 Magic.md"
     },
     {
-      "basename": "wan_architecture",
-      "path": "networking/wan_architecture.md"
+      "basename": "Why I Read Physical Books",
+      "path": "booknotes/Why I Read Physical Books.md"
     },
     {
-      "basename": "dhcp_config",
-      "path": "networking/dhcp_config.md"
+      "basename": "_index",
+      "path": "_index.md"
     },
     {
-      "basename": "6management",
-      "path": "networking/newccnanotes/6management.md"
+      "basename": "Bliss of the Celibate",
+      "path": "booknotes/Bliss of the Celibate.md"
     },
     {
-      "basename": "5switching",
-      "path": "networking/newccnanotes/5switching.md"
+      "basename": "Playful Parenting",
+      "path": "booknotes/Playful Parenting.md"
     },
     {
-      "basename": "4cli",
-      "path": "networking/newccnanotes/4cli.md"
+      "basename": "The 12 Week Year",
+      "path": "booknotes/The 12 Week Year.md"
     },
     {
-      "basename": "3wansandiprouting",
-      "path": "networking/newccnanotes/3wansandiprouting.md"
+      "basename": "Boot Process, Grub2, and Kernel",
+      "path": "linux/Boot Process, Grub2, and Kernel.md"
     },
     {
-      "basename": "2ethernetlans",
-      "path": "networking/newccnanotes/2ethernetlans.md"
+      "basename": "Boot Grub2 Kernel Labs",
+      "path": "linux/Boot Grub2 Kernel Labs.md"
     },
     {
-      "basename": "cisco_to_junos_cheat_sheet",
-      "path": "networking/cisco_to_junos_cheat_sheet.md"
-    },
-    {
-      "basename": "1tcpipbasic",
-      "path": "networking/newccnanotes/1tcpipbasic.md"
-    },
-    {
-      "basename": "Adding Storage for Practice",
-      "path": "linux/Adding Storage for Practice.md"
-    },
-    {
-      "basename": "Storage Management",
-      "path": "linux/Storage Management.md"
+      "basename": "Booting into Specific Targets",
+      "path": "linux/Booting into Specific Targets.md"
     },
     {
       "basename": "RHCSA Notes",
       "path": "linux/RHCSA Notes.md"
     },
     {
+      "basename": "Advanced Package Management",
+      "path": "linux/Advanced Package Management.md"
+    },
+    {
+      "basename": "Advanced Package Management DIY Labs",
+      "path": "linux/Advanced Package Management DIY Labs.md"
+    },
+    {
+      "basename": "Package Groups",
+      "path": "linux/Package Groups.md"
+    },
+    {
       "basename": "_index",
       "path": "linux/_index.md"
     },
     {
-      "basename": "Access Control Lists (ACLs)",
-      "path": "linux/Access Control Lists (ACLs).md"
+      "basename": "Sample Exam 1",
+      "path": "linux/Sample Exam 1.md"
     },
     {
-      "basename": "`firewalld` Zones",
-      "path": "linux/`firewalld` Zones.md"
+      "basename": "Networking DIY Challenge Labs",
+      "path": "linux/Networking DIY Challenge Labs.md"
     },
     {
-      "basename": "The Truth",
-      "path": "booknotes/The Truth.md"
+      "basename": "Networking Network Devices and Network Connections",
+      "path": "linux/Networking Network Devices and Network Connections.md"
     },
     {
-      "basename": "The Relationship Handbook",
-      "path": "booknotes/The Relationship Handbook.md"
+      "basename": "RHCSA Study Tracker",
+      "path": "linux/RHCSA Study Tracker.md"
+    },
+    {
+      "basename": "DNS and Name Resolution",
+      "path": "linux/DNS and Name Resolution.md"
+    },
+    {
+      "basename": "Advanced User Management Labs",
+      "path": "linux/Advanced User Management Labs.md"
+    },
+    {
+      "basename": "DNS and Time Synchronization",
+      "path": "linux/DNS and Time Synchronization.md"
     },
     {
       "basename": "The Psychology of Money",
@@ -109,96 +121,80 @@
       "path": "booknotes/The Blog Startup.md"
     },
     {
-      "basename": "The 12 Week Year",
-      "path": "booknotes/The 12 Week Year.md"
+      "basename": "I Will Teach You to Be Rich",
+      "path": "booknotes/I Will Teach You to Be Rich.md"
     },
     {
-      "basename": "Playful Parenting",
-      "path": "booknotes/Playful Parenting.md"
+      "basename": "_index",
+      "path": "now/_index.md"
     },
     {
-      "basename": "Million Dollar Weekend",
-      "path": "booknotes/Million Dollar Weekend.md"
+      "basename": "IP Transport and Applications",
+      "path": "networking/IP Transport and Applications.md"
     },
     {
       "basename": "Master Reading List",
       "path": "booknotes/Master Reading List.md"
     },
     {
-      "basename": "I Will Teach You to Be Rich",
-      "path": "booknotes/I Will Teach You to Be Rich.md"
+      "basename": "Advanced User Management",
+      "path": "linux/Advanced User Management.md"
     },
     {
-      "basename": "Dopamine Nation",
-      "path": "booknotes/Dopamine Nation.md"
+      "basename": "User Management",
+      "path": "linux/User Management.md"
     },
     {
-      "basename": "Bliss of the Celibate",
-      "path": "booknotes/Bliss of the Celibate.md"
+      "basename": "Linux Groups and their Management",
+      "path": "linux/Linux Groups and their Management.md"
     },
     {
-      "basename": "Anything You Want",
-      "path": "booknotes/Anything You Want.md"
+      "basename": "Basic User Management",
+      "path": "linux/Basic User Management.md"
     },
     {
-      "basename": "123 Magic",
-      "path": "booknotes/123 Magic.md"
+      "basename": "User Account Management",
+      "path": "linux/User Account Management.md"
     },
     {
-      "basename": "_index",
-      "path": "about/_index.md"
-    },
-    {
-      "basename": "_index",
-      "path": "_index.md"
+      "basename": "Reset the root User Password",
+      "path": "linux/Reset the root User Password.md"
     },
     {
       "basename": "CCNA",
       "path": "images/CCNA.png"
     },
     {
-      "basename": "_index",
-      "path": "davidvargasxyz.github.io/content/about/_index.md"
+      "basename": "Process and Task Scheduling Labs",
+      "path": "linux/Process and Task Scheduling Labs.md"
     },
     {
-      "basename": "My Journey With Addiction",
-      "path": "davidvargasxyz.github.io/content/writing/My Journey With Addiction.md"
+      "basename": "Process and Task Scheduling",
+      "path": "linux/Process and Task Scheduling.md"
     },
     {
-      "basename": "_index",
-      "path": "davidvargasxyz.github.io/content/_index.md"
+      "basename": "19 Biggest Lessons From Reading 100 Books.",
+      "path": "writing/19 Biggest Lessons From Reading 100 Books..md"
     },
     {
-      "basename": "Pasted image 20240710050240",
-      "path": "davidvargasxyz.github.io/content/images/Pasted image 20240710050240.png"
+      "basename": "7 Steps to Get Back on a NoFap Streak Immediately",
+      "path": "writing/7 Steps to Get Back on a NoFap Streak Immediately.md"
     },
     {
-      "basename": "00005",
-      "path": "davidvargasxyz.github.io/content/images/00005.jpeg"
+      "basename": "4 Ways to Quit caffeine",
+      "path": "writing/4 Ways to Quit caffeine.md"
     },
     {
-      "basename": "_index",
-      "path": "davidvargasxyz.github.io/content/images/_index.md"
+      "basename": "YAML In Obsidian",
+      "path": "tools/YAML In Obsidian.md"
     },
     {
-      "basename": "Bliss of the Celibate",
-      "path": "davidvargasxyz.github.io/content/booknotes/Bliss of the Celibate.md"
+      "basename": "VS_Codium",
+      "path": "tools/VS_Codium.md"
     },
     {
-      "basename": "Anything You Want",
-      "path": "davidvargasxyz.github.io/content/booknotes/Anything You Want.md"
-    },
-    {
-      "basename": "I Will Teach You to Be Rich",
-      "path": "davidvargasxyz.github.io/content/booknotes/I Will Teach You to Be Rich.md"
-    },
-    {
-      "basename": "image-WOL7VX6L",
-      "path": "davidvargasxyz.github.io/content/images/image-WOL7VX6L.jpg"
-    },
-    {
-      "basename": "image-PUT5F8WL",
-      "path": "davidvargasxyz.github.io/content/images/image-PUT5F8WL.jpg"
+      "basename": "vimguide",
+      "path": "tools/vimguide.md"
     }
   ],
   "omittedPaths": [],

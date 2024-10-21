@@ -15,7 +15,7 @@ These are the summaries and notes of books I have read. These notes are the resu
 3. Read through highlights and try to distill key points in my own words, or just writing down words straight from the book that I want to remember. 
 4. Share.
 
-[[Why I Read Physical Books]]
+[Why I Read Physical Books](Why%20I%20Read%20Physical%20Books.md)
 
 You can use these notes to remember key points. Or to help decide if a book is going to help you with a specific problem. Books are sorted by highest rated. Click the titled link for each book to see my detailed notes. 
 

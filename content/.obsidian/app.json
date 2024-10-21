@@ -9,5 +9,6 @@
   "autoPairBrackets": false,
   "autoPairMarkdown": false,
   "propertiesInDocument": "source",
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "newLinkFormat": "relative"
 }

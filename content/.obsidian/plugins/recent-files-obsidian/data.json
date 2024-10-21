@@ -5,6 +5,14 @@
       "path": "booknotes/_index.md"
     },
     {
+      "basename": "Why I Read Physical Books",
+      "path": "booknotes/Why I Read Physical Books.md"
+    },
+    {
+      "basename": "test34",
+      "path": "booknotes/test34.md"
+    },
+    {
       "basename": "_index",
       "path": "_index.md"
     },
@@ -39,10 +47,6 @@
     {
       "basename": "The Relationship Handbook",
       "path": "booknotes/The Relationship Handbook.md"
-    },
-    {
-      "basename": "Why I Read Physical Books",
-      "path": "booknotes/Why I Read Physical Books.md"
     },
     {
       "basename": "Dopamine Nation",

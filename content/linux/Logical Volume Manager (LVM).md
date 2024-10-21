@@ -10,7 +10,7 @@
 - mirroring and striping across multiple disks
 - snapshotting of logical volumes. 
 
-![](image-0A8W8M1U.jpg)
+![](image-0A8W8M1U%201.jpg)
 
 - Made up of three key objects called physical volume, volume group, and logical volume. 
 - These objects are further virtually broken down into Physical Extents (PEs) and Logical Extents (LEs). 

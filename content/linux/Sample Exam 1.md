@@ -1,77 +1,42 @@
-## Appendix A: Sample RHCSA Exam 1 {.style3}
-
+## Appendix A: Sample RHCSA Exam 1
 
 Time Duration:3 hours
 
 Passing Score:70% (210 out of 300)
 
-Instructions: The RHCSA exam, EX200, is offered electronically on a
-physical computer running RHEL 9 as the base operating system. The
-computer has two virtual machines with RHEL 9 running in each one of
-them. The exam presents two sets of tasks that are to be completed
-within the stipulated time in the identified virtual machine. Firewall
-and SELinux must be taken into consideration for all network services.
-All settings performed in the virtual machines must survive system
-reboots, or you will lose marks. Access to the Internet, printed and
-electronic material, and electronic devices is prohibited during the
-exam.
+Instructions: The RHCSA exam, EX200, is offered electronically on a physical computer running RHEL 9 as the base operating system. The computer has two virtual machines with RHEL 9 running in each one of them. The exam presents two sets of tasks that are to be completed within the stipulated time in the identified virtual machine. Firewall and SELinux must be taken into consideration for all network services.
+All settings performed in the virtual machines must survive system reboots, or you will lose marks. Access to the Internet, printed and electronic material, and electronic devices is prohibited during the exam.
 
 \
 
-### Setup for Sample Exam 1: {.style3}
+### Setup for Sample Exam 1:
 
-Build a virtual machine with RHEL 9 Server with GUI (Exercises 1-1 and
-1-2). Use a 20GB disk for the OS with default partitioning. Add 2x300MB
-disks and a network interface. Do not configure the network interface or
-create a normal user account during installation.
+Build a virtual machine with RHEL 9 Server with GUI (Exercises 1-1 and 1-2).
+Use a 20GB disk for the OS with default partitioning. 
+Add 2x300MB disks and a network interface. (.293GiB for virt-manager)
+Do not configure the network interface or create a normal user account during installation.
 
+
+### Tasks:
+
+**Task 01:** 
+Assuming the root user password is lost, and your system is running in multi-user target with no current root session open. Reboot the system into an appropriate target level and reset the root user password to root1234. (Exercise 11-2). After completing this task, log in as the root user and perform the remaining tasks presented below.
+
+home pc
+* used guide
+
+work pc
+- no guide needed
 \
 
-### Instructions: {.style3}
+**Task 02:** 
+Using a manual method (create/modify files by hand), 
+- configure a network connection on the primary network device with:
+- IP address 192.168.0.241/24
+- gateway 192.168.0.1
+- nameserver 192.168.0.1
 
-01: The following tasks are in addition to the exercises and labs
-presented in the book. No solutions are furnished, but hints to
-applicable exercises, chapters, or topics are provided in parentheses
-for reference.
-
-\
-
-02: Do not browse the Internet or seek help from other sources. However,
-you can refer to the manual pages, and the documentation under the
-/usr/share/doc directory. This rule does not apply to the kernel
-download task if included.
-
-\
-
-03: All exam tasks must be executed in a terminal window using only the
-command line interface (no GUI).
-
-\
-
-04: You can reboot the VM whenever you want during this exam but retest
-the configuration after each reboot for verification.
-
-\
-
-05: Use your knowledge and judgement for any missing configuration in
-task description.
-
-\
-
-### Tasks: {.style3}
-
-Task 01: Assuming the root user password is lost, and your system is
-running in multi-user target with no current root session open. Reboot
-the system into an appropriate target level and reset the root user
-password to root1234. (Exercise 11-2). After completing this task, log
-in as the root user and perform the remaining tasks presented below.
-
-\
-
-Task 02: Using a manual method (create/modify files by hand), configure
-a network connection on the primary network device with IP address
-192.168.0.241/24, gateway 192.168.0.1, and nameserver 192.168.0.1. Use
-different IP assignments based on your lab setup. (Exercise 15-3).
+Use different IP assignments based on your lab setup.
 
 \
 
@@ -184,13 +149,9 @@ three usernames from the /etc/passwd file and redirect them into
 /var/tmp/newusers. (Chapter 21, topic: Script12; Chapter 07, topic:
 Regular Expressions, and Input, Output, and Error Redirections).
 
-\
-
 Task 21: Launch a container as user20 using the latest version of ubi8
 image. Configure the container to auto-start at system reboots without
 the need for user20 to log in. (Exercise 22-11).
-
-\
 
 Task 22: Launch a container as user20 using the latest version of ubi9
 image with two environment variables SHELL and HOSTNAME. Configure the

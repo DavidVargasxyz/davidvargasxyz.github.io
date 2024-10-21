@@ -37,14 +37,13 @@ There are three major categories of file systems. They are:
 
 **Memory-Based** filesystems are virtual. And are created automatically at system startup and destroyed when the system goes down.
 
-
 ### Key Directories in /
 
 #### /etc (extended text configuration)
 This directory contains system configuration files for systemd, LVM, and user shell startup template files.
 
 ```
-david@fedora:~/Documents/perfectdarkmode/perfectdarkmode1.github.io$ ls /etc
+david@fedora:$ ls /etc
 abrt                    dhcp                        gshadow-       locale.conf               openldap            request-key.d          sysctl.conf
 adjtime                 DIR_COLORS                  gss            localtime                 opensc.conf         resolv.conf            sysctl.d
 aliases                 DIR_COLORS.lightbgcolor     gssproxy       login.defs                opensc-x86_64.conf  rpc                    systemd
@@ -126,7 +125,6 @@ Contains header files for the C programming language.
 ##### /usr/local:
 This is a system administrator repository for storing commands and tools. These commands not generally included with the original Linux distribution.
 
-
 | Directory                           | Contains                                                           |
 | ----------------------------------- | ------------------------------------------------------------------ |
 | /usr/local/bin                      | ecutables                                                          |
@@ -163,18 +161,15 @@ Contains Device nodes for physical and virtual devices. Linux kernel talks to de
 The two types of device files are character (or raw) and block.
 
 #### Character devices
-
 - Accessed serially.
 - Console, serial printers, mice, keyboards, terminals, etc.
 
 #### Block devices
-
 - Accessed in a parallel fashion with data exchanged in blocks.
 - Data on block devices is accessed randomly.
 - Hard disk drives, optical drives, parallel printers, etc.
 
 ### Procfs File System (/proc)
-
 - Config and status info on:
 	- Kernel, CPU, memory, disks, partitioning, file systems, networking, running processes, etc.
 - Zero-length pseudo files point to data maintained by the kernel in the memory.
@@ -182,14 +177,12 @@ The two types of device files are character (or raw) and block.
 - Contents created in memory at system boot time, updated during runtime, and destroyed at system shutdown.
 
 ### Runtime File System (/run)
-
 - Data for processes running on the system.
 	- /run/media
 - Used to automatically mount external file systems (CD, DVD, flash USB.)
 - Contents deleted at shutdown.
 
 ### The System File System (/sys)
-
 - Info about hardware devices, drivers, and some kernel features.
 - Used by the kernel to load necessary support for devices, create device nodes in /dev, and configure devices.
 - Auto-maintained.
@@ -358,24 +351,20 @@ cd -
 ```
 
 # Terminal Device Files
-
 - Unique pseudo (or virtual) numbered device files that represent terminal sessions opened by users.
 - Used to communicate with individual sessions. 
 - Stored in the /dev/pts/ (pseudo terminal session).
 - Created  when a user opens a new terminal session.
 - Removed when a session closes.
 
-
 ## tty command
-
 - Identify current terminal session.
 - Displays filename and location.
 - Example: /dev/pts/0
 
 # Inspecting System’s Uptime and Processor Load
 
-## uptime command
-
+## `uptime` command
 - Displays:
 	- System’s current time.
 	- System up time.
@@ -393,13 +382,13 @@ clear
 
 ## Determining Command Path
 
-tools for identifying the absolute path of the command that will be executed when you run it without specifying its full path.
+Tools for identifying the absolute path of the command that will be executed when you run it without specifying its full path.
 
-which, whereis, and type
+`which`, `whereis`, and `type`
 
 show the full location of the ls command:
 
-## which command 
+## `which` command 
 - Show command aliases and location.
 ```
 [root@server1 bin]# which ls
@@ -407,14 +396,14 @@ alias ls='ls --color=auto'
         /usr/bin/ls
 ```
 
-## whereis command
+## `whereis` command
 - Locates binary, source, and manual files for specified command name. 
 ```
 [root@server1 bin]# whereis ls
 ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz /usr/share/man/man1p/ls.1p.gz>)
 ```
 
-## type command
+## `type` command
 - Find whether the given command is an alias, shell built-in, file, function, or keyword.
 ```
 type ls
@@ -422,7 +411,7 @@ type ls
 
 ## Viewing System Information
 
-#### uname command
+#### `uname` command
 - Show system operating system name.
 ```bash
 [root@server1 bin]# uname
@@ -459,7 +448,7 @@ uname -a
 
 ## Viewing CPU Specs
 
-## lscpu command
+## `lscpu` command
 - Shows CPU:
 	- Architecture.
 	- Operating modes.
@@ -490,20 +479,28 @@ lscpu
 ### Manual pages
 - Informational pages stored in /usr/share/man for each program. 
 
-#### man command
+See [Using Man Pages](Using%20Man%20Pages.md) for more.
 
-man -k {keyword} ::: perform a keyword search on manual pages.
-man -f ::: Equivalent to whatis.
-	
+#### `man` command
+
+Flags:
+-k 
+- Perform a keyword search on manual pages.
+- Must build the database with `mandb` first.
+
+-f 
+- Equivalent to whatis.
+
 #### Commands to find information/help about programs.
-- apropos 
-- whatis 
-- info 
-- pinfo 
+- `apropos `
+- `whatis` 
+- `info` 
+- `pinfo` 
 
-Directory with additional program documentation ::: /usr/share/doc/
+*/usr/share/doc/*
+- Directory with additional program documentation.
 
-```
+```bash
 man passwd
 ```
 
@@ -524,41 +521,56 @@ g / G ::: Move to the beginning / end of the man pages.
 n / N ::: Find the next / previous occurrence of a pattern.
 
 ## Headings in the Manual
-NAME :: Name of the command or file with a short description.
-SYNOPSIS :: Syntax summary.
-DESCRIPTION :: Overview of the command or file.
-OPTIONS :: Options available for use.
-EXAMPLES :: Some examples to explain the usage.
-FILES :: A list of related files.
-SEE ALSO :: Reference to other manual pages or topics.
-BUGS :: Any reported bugs or issues.
-AUTHOR :: Contributor information.
+**NAME**
+- Name of the command or file with a short description.
+**SYNOPSIS** 
+- Syntax summary.
+**DESCRIPTION** 
+- Overview of the command or file.
+**OPTIONS** 
+- Options available for use.
+**EXAMPLES**
+- Some examples to explain the usage.
+**FILES** 
+- A list of related files.
+**SEE ALSO** 
+- Reference to other manual pages or topics.
+**BUGS**
+- Any reported bugs or issues.
+**AUTHOR**
+- Contributor information.
 
 ## Manual Sections
 - Manual information is split into nine sections for organization and clarity.
 - Man searches through each section until it finds a match. 
 	- Starts at section 1, then section 2, etc.
 - Some commands in Linux also have a configuration file with an identical name. 
-	- Ex: passwd command in /usr/bin and the passwd file in /etc.
+	- Ex: `passwd` command in /usr/bin and the passwd file in /etc.
 - Specify the section to find that page only.
 	- Ex: ```man 5 passwd```
 - Section number is located at the top (header) of the page.
 
-Section 1 :: Refers to user commands.
-Section 4 :: Contains special files.
-Section 5 :: Describes file formats for many system configuration files.
-Section 8 :: Documents system administration and privileged commands designed for the root user.
+**Section 1**
+- Refers to user commands.
+**Section 4**
+- Contains special files.
+**Section 5**
+- Describes file formats for many system configuration files.
+**Section 8**
+- Documents system administration and privileged commands designed for the root user.
+
+Run `man man` for more details.
 
 ## Searching by Keyword
 
-#### apropos command
-- search all sections of the manual pages and show a list of all entries matching the specified keyword in their names or descriptions.
-- Must mandb command in order to build an indexed database of the manual pages prior to using.
-```
+## `apropos` command
+- Search all sections of the manual pages and show a list of all entries matching the specified keyword in their names or descriptions.
+- Must `mandb` command in order to build an indexed database of the manual pages prior to using.
+```bash
 mandb
 ```
 
-#### mandb command
+#### `mandb` command
 - Build an indexed database of the manual pages.
 
 #### Lab: Find a forgotten XFS administration command.
@@ -575,36 +587,40 @@ or
 passwd -?
 ```
 
-#### whatis command
-- same output as ```man -f```
+#### `whatis` command
+- Same output as ```man -f```
 - Display one-line manual page descriptions.
-		
-## info and pinfo Commands
 
-info and pinfo commands 
+## `info` and `pinfo` Commands
 - Display command detailed documentation.
-- Divided into sections called nodes. The 
+- Divided into sections called nodes. 
 - Header:
 	- Name of the file being displayed.
 	- Names of the current, next, and previous nodes.
-- info and pinfo commands is almost identical.
+-  Almost identical to each other.
 
-```
+```bash
 info ls
 ```
 
 u navigate efficiently.
 
 ### info page Navigation
-Down / Up arrows :: Move forward / backward one line.
-Spacebar / Del :: Move forward / backward one page.
-q :: Quit the info page.
-t :: Go to the top node of the document.
-s :: Search 
+Down / Up arrows
+- Move forward / backward one line.
+Spacebar / Del
+- Move forward / backward one page.
+q
+- Quit the info page.
+t
+- Go to the top node of the document.
+s
+- Search 
 
 ## Documentation in  /usr/share/doc/
 
-/usr/share/doc/ ::: stores general documentation for installed packages under subdirectories that match their names. 
+*/usr/share/doc/* 
+- Stores general documentation for installed packages under subdirectories that match their names. 
 
 ```
 ls -l /usr/share/doc/gzip
@@ -619,23 +635,23 @@ ls -l /usr/share/doc/gzip
 ### Lab 2: Navigate Linux Directory Tree
 
 Check your location in the directory tree. 
-```
+```bash
 pwd
 ```
 
 Show file permissions in the current directory including the hidden files. 
-```
+```bash
 ls -la
 ```
 
 Change directory into /etc and confirm the directory change. 
-```
+```bash
 cd /etc
 pwd
 ```
 
 Switch back to the directory where you were before, and run pwd again to verify. 
-```
+```bash
 cd -
 pwd
 ```
@@ -643,23 +659,23 @@ pwd
 ### Lab: Miscellaneous Tasks
 
 Identify the terminal device file.
-```
+```bash
 tty
 ```
 
 Open a couple of terminal sessions. Compare the terminal numbers. 
-```
-[vagrant@server1 ~]$ tty
+```bash
+tty
 /dev/pts/1
 ```
 
 Execute the uptime command and analyze the system uptime and processor load information. 
-```
+```bash
 uptime
 ```
 
 Use three commands to identify the location of the vgs command. 
-```
+```bash
 which vgs
 whereis vgs
 type vgs
@@ -668,24 +684,24 @@ type vgs
 ### Lab: Identify System and Kernel Information
 
 1. Analyze the basic information about the system and kernel reported. 
-```
+```bash
 uname -a
 ```
 
 Examine the key items relevant to the processor. 
-```
+```bash
 lscpu
 ```
 
 ### Lab: Man
 
 View man page for uname.
-```
+```bash
 man uname
 ```
 
 View the 5 man page section for the shadow.
-```
+```bash
 man 5 shadow
 ```
 

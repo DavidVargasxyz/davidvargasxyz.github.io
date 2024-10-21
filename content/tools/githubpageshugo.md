@@ -9,4 +9,3 @@ The general steps include:
 2. Change your pages settings.
 3. Build the repo into a Hugo site. 
 4. Add DNS records for a custom domain. 
-5. 

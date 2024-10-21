@@ -95,7 +95,7 @@ Containers
 - Share the same Linux kernel and require far fewer hardware resources than do virtual machines, which contributes to their speedy start and stop. 
 - Given the presence of an extra layer of hypervisor services, it may be more beneficial and economical to run containers directly on non-virtualized physical servers.
 
-![](/images/image-3RXCU9W7.jpg)
+![](image-3RXCU9W7%201.jpg)
 
 ### Container Images and Container Registries 
 

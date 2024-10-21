@@ -11,7 +11,9 @@ You get all the benefits of using containers Separates system level packages fro
 System Level
 Desktop, kernel? Layering Apps at system level because containers aren’t as developed yet Locks to the fedora version you are on Layered package examples - gnome shell extensions - distrobox Uses rpm-ostree? https://coreos.github.io/rpm-ostree/administrator-handbook/
 Flatpacks
-Remove fedora flatpack stuff and use flathub repos instead https://flatpak.org/setup/Fedora">
+Remove fedora flatpack stuff and use flathub repos instead https://flatpak.org/setup/Fedora
+Systemd unit for automatic flatpack updates
+Update every 4 hours to mirror ubuntu">
     <meta name="author" content="David Vargas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="Automated setup https://universal-blue.org/
@@ -19,14 +21,18 @@ You get all the benefits of using containers Separates system level packages fro
 System Level
 Desktop, kernel? Layering Apps at system level because containers aren’t as developed yet Locks to the fedora version you are on Layered package examples - gnome shell extensions - distrobox Uses rpm-ostree? https://coreos.github.io/rpm-ostree/administrator-handbook/
 Flatpacks
-Remove fedora flatpack stuff and use flathub repos instead https://flatpak.org/setup/Fedora">
+Remove fedora flatpack stuff and use flathub repos instead https://flatpak.org/setup/Fedora
+Systemd unit for automatic flatpack updates
+Update every 4 hours to mirror ubuntu">
     <meta property="og:url" content="http://davidvargas.xyz/tools/silverblue/">
     <meta property="og:description" content="Automated setup https://universal-blue.org/
 You get all the benefits of using containers Separates system level packages from applications.
 System Level
 Desktop, kernel? Layering Apps at system level because containers aren’t as developed yet Locks to the fedora version you are on Layered package examples - gnome shell extensions - distrobox Uses rpm-ostree? https://coreos.github.io/rpm-ostree/administrator-handbook/
 Flatpacks
-Remove fedora flatpack stuff and use flathub repos instead https://flatpak.org/setup/Fedora">
+Remove fedora flatpack stuff and use flathub repos instead https://flatpak.org/setup/Fedora
+Systemd unit for automatic flatpack updates
+Update every 4 hours to mirror ubuntu">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Tools">
@@ -35,21 +41,23 @@ You get all the benefits of using containers Separates system level packages fro
 System Level
 Desktop, kernel? Layering Apps at system level because containers aren’t as developed yet Locks to the fedora version you are on Layered package examples - gnome shell extensions - distrobox Uses rpm-ostree? https://coreos.github.io/rpm-ostree/administrator-handbook/
 Flatpacks
-Remove fedora flatpack stuff and use flathub repos instead https://flatpak.org/setup/Fedora">
+Remove fedora flatpack stuff and use flathub repos instead https://flatpak.org/setup/Fedora
+Systemd unit for automatic flatpack updates
+Update every 4 hours to mirror ubuntu">
     <meta itemprop="wordCount" content="126">
     <title></title>
-    <link href="/images/logo.svg?1727093232" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1727093234" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1727093234" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1727093234" rel="stylesheet">
-    <link href="/css/auto-complete.css?1727093234" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1727093234" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1727093234" rel="stylesheet">
-    <link href="/css/fonts.css?1727093234" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1727093234" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1727093234" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1727093234" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1727093234" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1727093234" rel="stylesheet">
-    <link href="/css/print.css?1727093234" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1727093234"></script>
+    <link href="/images/logo.svg?1729513265" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1729513268" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729513268" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729513268" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729513268" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729513268" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729513268" rel="stylesheet">
+    <link href="/css/fonts.css?1729513268" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729513268" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729513268" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1729513268" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1729513268" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1729513268" rel="stylesheet">
+    <link href="/css/print.css?1729513268" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729513268"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -158,14 +166,10 @@ Separates system level packages from applications.</p>
 <pre><code>- gnome shell extensions
 - distrobox
 </code></pre>
-<p><a href="#R-image-528df893877ccc8d6eb5d0133b322b5e" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="tech/tools/Obsidian/Archive/Attachments/Pasted%20image%2020230718045403.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-528df893877ccc8d6eb5d0133b322b5e"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="tech/tools/Obsidian/Archive/Attachments/Pasted%20image%2020230718045403.png"></a></p>
 <p>Uses rpm-ostree? <a href="https://coreos.github.io/rpm-ostree/administrator-handbook/" rel="external" target="_blank">https://coreos.github.io/rpm-ostree/administrator-handbook/</a></p>
 <p>Flatpacks</p>
 <p>Remove fedora flatpack stuff and use flathub repos instead <a href="https://flatpak.org/setup/Fedora" rel="external" target="_blank">https://flatpak.org/setup/Fedora</a></p>
 <p>Systemd unit for automatic flatpack updates</p>
-<p><a href="#R-image-4545d0605fef3b51f6c1b9d0319023e1" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="tech/tools/Obsidian/Archive/Attachments/Pasted%20image%2020230718045927.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4545d0605fef3b51f6c1b9d0319023e1"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="tech/tools/Obsidian/Archive/Attachments/Pasted%20image%2020230718045927.png"></a></p>
 <p>Update every 4 hours to mirror ubuntu</p>
 <p>flatseal
 adjust permissions of flatpacks</p>
@@ -204,12 +208,12 @@ adjust permissions of flatpacks</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1727093234" defer></script>
-        <script src="/js/lunr/lunr.min.js?1727093234" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1727093234" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1727093234" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1727093234" defer></script>
-        <script src="/js/search.js?1727093234" defer></script>
+        <script src="/js/auto-complete.js?1729513268" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729513268" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729513268" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729513268" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729513268" defer></script>
+        <script src="/js/search.js?1729513268" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -231,6 +235,7 @@ adjust permissions of flatpacks</p>
           <li data-nav-id="/tools/using-vagrant-on-linux/" class=""><a class="padding" href="/tools/using-vagrant-on-linux/">Using Vagrant on Linux<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/writing/" class=""><input type="checkbox" id="R-section-e557a922d533a171e9a204b7e50265e2" aria-controls="R-subsections-e557a922d533a171e9a204b7e50265e2"><label for="R-section-e557a922d533a171e9a204b7e50265e2"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Writing</span></label><a class="padding" href="/writing/">Writing<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e557a922d533a171e9a204b7e50265e2" class="morespace collapsible-menu">
           <li data-nav-id="/writing/4-ways-to-quit-caffeine/" class=""><a class="padding" href="/writing/4-ways-to-quit-caffeine/">4 Ways to Quit Caffeine<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/recipes/" class=""><a class="padding" href="/recipes/">Recipes<i class="fa-fw fas fa-check read-icon"></i></a></li>
           </ul>
         </div>
         <div id="R-shortcuts">
@@ -289,8 +294,8 @@ adjust permissions of flatpacks</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1727093234" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1727093234" defer></script>
+    <script src="/js/clipboard.min.js?1729513268" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729513268" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -306,20 +311,20 @@ adjust permissions of flatpacks</p>
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1727093234" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1727093234" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1727093234" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1727093234" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1727093234" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1727093234" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1727093234" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1727093234" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1727093234" defer></script>
-    <script src="/js/js-yaml.min.js?1727093234" defer></script>
+    <script src="/js/d3/d3-color.min.js?1729513268" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1729513268" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1729513268" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1729513268" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1729513268" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1729513268" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1729513268" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1729513268" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1729513268" defer></script>
+    <script src="/js/js-yaml.min.js?1729513268" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1727093234" defer></script>
+    <script src="/js/theme.js?1729513268" defer></script>
   </body>
 </html>

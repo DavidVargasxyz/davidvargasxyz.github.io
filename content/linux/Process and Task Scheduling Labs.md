@@ -172,7 +172,6 @@ sudo cat /var/log/cron
 ```
 
 
-
 ### Lab: at and crond
 1. run /home/user1/.bash_profile file for user1 2 hours from now:
 ```
@@ -222,10 +221,6 @@ This should erase the job file from the /var/spool/at directory. You can
 atq
 ```
 
-
-
-
-
 ### Lab: Add, List, and Erase a Cron Job
 assume that all users are currently denied access to cron
 
@@ -269,8 +264,6 @@ cat /etc/anacrontab | grep -ve ^# -ve ^$
 ```
 man anacron
 ```
-
-
 
 ### Lab 8-1: Nice and Renice a Process 
 1. As user1 with sudo on server1, open two terminal sessions. Run the top command in terminal 1. Run the pgrep or ps command in terminal 2 to determine the PID and the nice value of top. 

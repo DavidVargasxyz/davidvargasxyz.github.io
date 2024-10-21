@@ -13,14 +13,14 @@ This is a page to help me stay focused and keep track of what I am doing. It is 
 Updated: 08-12-2024
 ## Career
 
-I am currently a Linux System Administrator. I am studying for Red Hat's RHCSA exam. My goal is to take the test at the end of September 2024. Follow my progress here: [RHCSA Study Tracker](RHCSA%20Study%20Tracker.md) 
+I am currently a Linux System Administrator. I am studying for Red Hat's RHCSA exam. My goal is to take the test at the end of December 2024. Follow my progress here: [RHCSA Study Tracker](RHCSA%20Study%20Tracker.md) 
 
 I am also starting to write tech articles for companies online. 
 
 ## What I am Reading
 
 
-![Confessions of a Caffeine Addict](https://m.media-amazon.com/images/I/51simmxaV2L.jpg?classes=inline&height=175px)
+![Meditations](https://m.media-amazon.com/images/I/512B-9yFgAL._SL1200_.jpg?classes=inline&height=175px)
 
 ## Things to Learn
 

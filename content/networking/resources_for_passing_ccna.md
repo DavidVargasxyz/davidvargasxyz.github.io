@@ -1,4 +1,4 @@
-![](/images/resourcesforccna.png)
+![](resourcesforccna%201.png)
 
 There are a lot of great CCNA resources out there. This list does not include all of them. Only the ones that I personally used to pass the CCNA 200-301 exam.
 

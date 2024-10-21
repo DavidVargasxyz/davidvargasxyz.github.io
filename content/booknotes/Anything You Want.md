@@ -2,7 +2,7 @@
 
 ![Anything You Want](https://f.media-amazon.com/images/I/61P+7owVcML._SY425_.jpg?classes=inline&height=175px)
 
-Quick read about creating the business (and life) that you want. These lessons spill over into other areas of life, maybe accidentally. Life isn't all about maximizing profits and accelerated growth. Do what makes you happy. Treat your customers like rockstars and they will tell everyone. 
+Quick read about creating the business (and life) that you want. These lessons spill over into other areas of life, maybe accidentally. Life isn't all about maximizing profits and accelerated growth. Do what makes you happy. Treat your customers like rock stars and they will tell everyone. 
 
 ## Summary and Highlights
 

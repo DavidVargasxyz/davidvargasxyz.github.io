@@ -10,7 +10,7 @@
 	- Positional parameters beyond 9 are to be enclosed in curly brackets. 
 
 
-![](/images/image-G1VF6C4I.jpg)
+![](image-G1VF6C4I%201.jpg)
 
 - Just like the variable and command substitutions, the shell uses the dollar (\$) sign for special and positional parameter expansions as well.
 

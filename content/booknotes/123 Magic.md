@@ -7,7 +7,7 @@ title: 123 Magic Notes
 
 1.  Control obnoxious Behavior (STOP behaviors)
 2.  Encourage good behavior (START behaviors)
-3.  Strengthening your relationship with your children
+3.  Strengthening your relationship with your children.
 
 # Controlling obnoxious behavior (STOP Behaviors)
 

@@ -5,7 +5,7 @@ title = ""
 
 I'm David, I spin poi, read books, tinker, and write. Check out what I am doing [Now!](now/_index.md)
 
-I started keeping [summaries, notes, and reviews](booknotes/_index.md) of books that I am reading. 
+I started keeping [summaries, notes, and reviews](davidvargasxyz.github.io/content/booknotes/_index.md) of books that I am reading. 
 
 [Let's Chat!](https://davidvargas.xyz/contact/) I reply to every email. 
 

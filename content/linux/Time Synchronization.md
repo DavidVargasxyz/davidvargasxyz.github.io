@@ -78,7 +78,7 @@ Under these sub-pools, the owners maintain multiple time servers with enumerated
 - Similarly, a stratum 3 server can be configured to synchronize its time with a stratum 2 server and deliver time to the next lower-level servers, and so on. 
 - Servers sharing the same stratum can be configured as peers to exchange time updates with one another.
 
-![](image-OOGYXDFA.jpg)
+![](image-OOGYXDFA%201.jpg)
 
 There are numerous public NTP servers available for free that synchronize time. 
 They normally operate at higher stratum levels such as 2 and 3.

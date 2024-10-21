@@ -40,7 +40,7 @@ syslog protocol - a UDP protocol to send messages to a syslog server for storage
 
 To configure a router or switch to send log messages to a syslog server, add the logging host {address | hostname } global command
 
-![Pasted image 20230120151144.png](Pasted%20image%2020230120151144.png)
+![Pasted image 20230120151144 1.png](Pasted%20image%2020230120151144%201.png)
 
 Log Message Format
 

@@ -36,5 +36,12 @@
       <guid>http://davidvargas.xyz/writing/</guid>
       <description>I wanted a category to share what I learn about writing. So i can improve my writing skills and become a better thinker and better at helping others.&#xA;Things I Learned from Dickie Bush and Nicolas Cole’s Writing Email Course </description>
     </item>
+    <item>
+      <title>Recipes</title>
+      <link>http://davidvargas.xyz/recipes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://davidvargas.xyz/recipes/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

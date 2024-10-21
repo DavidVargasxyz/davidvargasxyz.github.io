@@ -1,14 +1,58 @@
 {
   "main": {
-    "id": "8b39d529d214c16a",
+    "id": "36dd718d9c3d8eee",
     "type": "split",
     "children": [
       {
-        "id": "f5f42f9d4ab4c8b8",
+        "id": "10e015a63f71b64a",
         "type": "tabs",
         "children": [
           {
-            "id": "49e43c752dc46500",
+            "id": "040be12bb1e1383e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "linux/Sample Exam 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sample Exam 1"
+            }
+          },
+          {
+            "id": "630489bf555158d2",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_index.md",
+                "mode": "preview",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "_index"
+            }
+          },
+          {
+            "id": "149849d9a7d3dc22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "linux/Reset the root User Password.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Reset the root User Password"
+            }
+          },
+          {
+            "id": "9167cabae6924ac1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -16,76 +60,179 @@
                 "file": "linux/_index.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "_index"
+            }
+          },
+          {
+            "id": "6f0618ca427b06b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "linux/RHCSA Study Tracker.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "RHCSA Study Tracker"
+            }
+          },
+          {
+            "id": "8eec7ab02fff7cc1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "booknotes/The Relationship Handbook.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "The Relationship Handbook"
+            }
+          },
+          {
+            "id": "1bfd88cd069900e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "booknotes/Meditations.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Meditations"
+            }
+          },
+          {
+            "id": "1246d9cf5ebe2898",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "booknotes/_index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_index"
+            }
+          },
+          {
+            "id": "4fba790696774390",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "booknotes/Why I read physical books.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Why I read physical books"
+            }
+          },
+          {
+            "id": "c1c9c40eaa44a09d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "booknotes/_index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_index"
             }
           }
-        ]
+        ],
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "fdb1a5f78187ee3e",
+    "id": "8848ae14603ee78f",
     "type": "split",
     "children": [
       {
-        "id": "7295bafcdd968aa6",
+        "id": "361d83feb6d745a0",
         "type": "tabs",
         "children": [
           {
-            "id": "e6e4cd88a2f8fa05",
+            "id": "590f786471872ecd",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
-            "id": "03e2515e86c4395c",
+            "id": "f14eff27ec058ca7",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "password recovery",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
-            "id": "716106d05814c192",
+            "id": "898a0f9de1f06cf7",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "fd36a3ed5fc0cb36",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 227.500732421875
   },
   "right": {
-    "id": "38fb9458b16f9f37",
+    "id": "ad5066786734e43c",
     "type": "split",
     "children": [
       {
-        "id": "5921ccd2736c56a1",
+        "id": "5e8663c065aefb79",
         "type": "tabs",
         "children": [
           {
-            "id": "00de31435ca476de",
+            "id": "af2f79665cbaca5c",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/_index.md",
+                "file": "booknotes/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,43 +240,86 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for _index"
             }
           },
           {
-            "id": "1e5ced7dd1ffe130",
+            "id": "52b5c518a247be86",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/_index.md",
+                "file": "booknotes/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from _index"
             }
           },
           {
-            "id": "3626077e0ba9ce9e",
+            "id": "ed8c9ec4f7824b83",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
-            "id": "03f6b9f32563a45d",
+            "id": "6a62648fab714559",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/_index.md"
-              }
+                "file": "booknotes/_index.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of _index"
+            }
+          },
+          {
+            "id": "1e784131a5c6fd16",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "34c7bef00f780872",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "35732e1dc1f45bb8",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo List"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -144,58 +334,61 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "dbfolder:Create a new database table": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
       "homepage:Open homepage": false,
-      "obsidian-file-cleaner:Clean files": false
+      "notion-like-tables:Create Notion-Like table": false,
+      "post-medium-draft:Post Medium draft": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "49e43c752dc46500",
+  "active": "c1c9c40eaa44a09d",
   "lastOpenFiles": [
+    "booknotes/Dopamine Nation.md",
+    "booknotes/123 Magic.md",
     "_index.md",
-    "proxmox install.md",
-    "Proxmox HA Cluster.md",
-    "linux/Turn a file into a block device.md",
+    "booknotes/Why I read physical books.md",
     "booknotes/_index.md",
-    "now/Projects (Copy).md",
-    "linux/Silverblue.md",
-    "now/_index.md",
-    "Recommended/_index.md",
-    "Skaffold.md",
-    "images/Pasted image 20240911050841.png",
-    "images/Pasted image 20240911045521.png",
-    "images/Pasted image 20240905110555.png",
-    "images/Pasted image 20240905110500.png",
-    "images/Pasted image 20240905110319.png",
-    "images/Pasted image 20240905110223.png",
-    "images/Pasted image 20240905110143.png",
-    "images/Pasted image 20240905110024.png",
-    "images/Pasted image 20240905105932.png",
-    "images/Pasted image 20240905105809.png",
-    "Untitled.md",
-    "linux/XBare Metal to Proxmox VM.md",
-    "linux/Process and Task Scheduling Review Questions.md",
+    "booknotes/Bliss of the Celibate.md",
+    "Recipes/Vegan Tofu Quesadilla.md",
+    "Recipes",
     "booknotes/Playful Parenting.md",
-    "linux/Job Scheduling.md",
-    "linux/Processes and Priorities.md",
-    "networking/How to Study for CCNA 200-301.md",
-    "images/Spaced.md",
-    "networking/_index.md",
-    "tools/Using Vagrant on Linux.md",
-    "tools/_index.md",
-    "tools/Setting Up a Self-hosted NextCloud Server.md",
-    "tools/How to Set Up Hugo Relearn Theme.md",
-    "tools/Calibre Web with Docker and NGINX.md",
-    "tools/How to Build a website With Hugo.md",
-    "writing/4 Ways to Quit caffeine.md",
+    "booknotes/The 12 Week Year.md",
+    "booknotes/Meditations.md",
+    "booknotes/The Relationship Handbook.md",
+    "booknotes/The Psychology of Money.md",
+    "booknotes/The Power of Positive Dog Training.md",
+    "booknotes/The Blog Startup.md",
+    "booknotes/I Will Teach You to Be Rich.md",
+    "now/_index.md",
+    "networking/IP Transport and Applications.md",
+    "booknotes/Master Reading List.md",
+    "linux/Sample Exam 1.md",
+    "linux/Reset the root User Password.md",
+    "linux/RHCSA Study Tracker.md",
+    "linux/_index.md",
+    "images/CCNA.png",
+    "linux/Process and Task Scheduling Labs.md",
+    "linux/Process and Task Scheduling.md",
+    "linux/RHCSA Notes.md",
+    "writing/19 Biggest Lessons From Reading 100 Books..md",
     "tools/LEGO_BRICK_LABELS-CONTACT_SHEET.pdf",
-    "python/Python Crash Course",
-    "networking/newccnanotes",
-    "tools/Archive",
-    "linux/Archive",
-    "Recommended",
-    "networking",
-    "booknotes",
+    "1 TCP",
+    "davidvargasxyz.github.io/content/images/Pasted image 20240710050240.png",
     "writing",
-    "contact"
+    "davidvargasxyz.github.io/content/images/00005.jpeg",
+    "davidvargasxyz.github.io/content/images/image-XCXMURUM 1.jpg",
+    "davidvargasxyz.github.io/content/images/image-XF4L26QO 1.jpg",
+    "davidvargasxyz.github.io/content/images/image-XGIYZ4QC 1.jpg",
+    "davidvargasxyz.github.io/content/images/image-XIIHM3OP 1.jpg",
+    "davidvargasxyz.github.io/content/images/image-XKQ27QUD 1.jpg",
+    "davidvargasxyz.github.io/content/images/image-XPAK0ELP 1.jpg",
+    "davidvargasxyz.github.io/content/images/image-XPOZIW0J 1.jpg",
+    "Archive/tools/Virtual Machines",
+    "Archive/tools/Text Editors",
+    "Archive/tools/Self Hosting",
+    "Archive/tools/Obsidian",
+    "Archive/tools/Misc",
+    "Archive/tools/Hugo"
   ]
 }

@@ -122,7 +122,7 @@ Install all dotfiles with a single command:
 If you use GitHub and your dotfiles repo is called `dotfiles` then this can be shortened to:
 `$ chezmoi init --apply $GITHUB_USERNAME`
 
-![](/images/Pasted%20image%2020240904142110.png)
+![](Pasted%20image%2020240904142110%201.png)
 
 See a list of full commands:
 `chezmoi help`
@@ -145,7 +145,7 @@ Or merge the current file with new file:
 From any machine, you can pull and apply changes from your repo:
 `chezmoi update -v`
 
-![](/images/Pasted%20image%2020240904141728.png)
+![](Pasted%20image%2020240904141728%201.png)
 
 Add the justfile:
 `chezmoi add .justfile`

@@ -14,7 +14,7 @@ Can also open a console from VM manager
 
 From vm manager, you can select "Rebuild node # vm" to erase and reset the vm.
 
-![](/images/Pasted%20image%2020240710073529.png)
+![](Pasted%20image%2020240710073529%201.png)
 
 Try not to use keyboard shortcuts, as it may not behave well in the environment. 
 

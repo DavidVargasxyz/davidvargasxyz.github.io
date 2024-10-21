@@ -73,7 +73,7 @@ Console 6 (Ctrl_Alt+F6)
 
 Console 1 Brings you to the log in screen. Console 2 does nothing. Console 3-6 all bring you to this log in screen
 
-![[Pasted image 20230624051043.png]]
+![[Pasted image 20230624051043 1.png]]
 
 Lab Setup
 

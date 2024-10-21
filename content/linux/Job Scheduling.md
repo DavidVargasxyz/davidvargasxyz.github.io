@@ -144,7 +144,7 @@ example crontable line
 	- Specifies the full path name of the command or program to be executed, along with any options or arguments that it requires.
 
 */etc/crontab* contents:
-![](/images/Pasted%20image%2020240815080652.png)
+![](Pasted%20image%2020240815080652%201.png)
 
 - Step values may be used with \* and ranges in the crontables using the forward slash character (/). 
 - Step values allow the number of skips for a given value. 

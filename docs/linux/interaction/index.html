@@ -24,20 +24,20 @@ RedHat (RHEL9) Graphical Environment (Wayland) Redhat runs a graphical environme
     <meta itemprop="description" content="Looking to get started using Fedora or Red Hat operating systems?
 This guide with get you started with the RHEL Graphical environment, file system, and essential commands to get started using Fedora, Red Hat, or other RHEL based systems.
 RedHat (RHEL9) Graphical Environment (Wayland) Redhat runs a graphical environment called Wayland. This is the foundation for running GUI apps. Wayland is a client/server display protocol. Which just means that the user (the client) requests a resource and the display manager (the server) serves those resources.">
-    <meta itemprop="wordCount" content="2923">
+    <meta itemprop="wordCount" content="2909">
     <title></title>
-    <link href="/images/logo.svg?1727093232" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1727093232" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1727093232" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1727093232" rel="stylesheet">
-    <link href="/css/auto-complete.css?1727093232" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1727093232" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1727093232" rel="stylesheet">
-    <link href="/css/fonts.css?1727093232" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1727093232" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1727093232" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1727093232" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1727093232" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1727093232" rel="stylesheet">
-    <link href="/css/print.css?1727093232" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1727093232"></script>
+    <link href="/images/logo.svg?1729513265" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1729513266" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729513266" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729513266" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729513266" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729513266" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729513266" rel="stylesheet">
+    <link href="/css/fonts.css?1729513266" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729513266" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729513266" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1729513266" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1729513266" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1729513266" rel="stylesheet">
+    <link href="/css/print.css?1729513266" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729513266"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -129,22 +129,22 @@ RedHat (RHEL9) Graphical Environment (Wayland) Redhat runs a graphical environme
   </ul>
 
   <ul>
-    <li><a href="#uptime-command">uptime command</a>
+    <li><a href="#uptime-command"><code>uptime</code> command</a>
       <ul>
         <li><a href="#clear-command">clear command</a></li>
       </ul>
     </li>
     <li><a href="#determining-command-path">Determining Command Path</a></li>
-    <li><a href="#which-command">which command</a></li>
-    <li><a href="#whereis-command">whereis command</a></li>
-    <li><a href="#type-command">type command</a></li>
+    <li><a href="#which-command"><code>which</code> command</a></li>
+    <li><a href="#whereis-command"><code>whereis</code> command</a></li>
+    <li><a href="#type-command"><code>type</code> command</a></li>
     <li><a href="#viewing-system-information">Viewing System Information</a>
       <ul>
         <li></li>
       </ul>
     </li>
     <li><a href="#viewing-cpu-specs">Viewing CPU Specs</a></li>
-    <li><a href="#lscpu-command">lscpu command</a></li>
+    <li><a href="#lscpu-command"><code>lscpu</code> command</a></li>
     <li><a href="#getting-help">Getting Help</a>
       <ul>
         <li><a href="#manual-pages">Manual pages</a></li>
@@ -153,12 +153,13 @@ RedHat (RHEL9) Graphical Environment (Wayland) Redhat runs a graphical environme
     </li>
     <li><a href="#headings-in-the-manual">Headings in the Manual</a></li>
     <li><a href="#manual-sections">Manual Sections</a></li>
-    <li><a href="#searching-by-keyword">Searching by Keyword</a>
+    <li><a href="#searching-by-keyword">Searching by Keyword</a></li>
+    <li><a href="#apropos-command"><code>apropos</code> command</a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#info-and-pinfo-commands">info and pinfo Commands</a>
+    <li><a href="#info-and-pinfo-commands"><code>info</code> and <code>pinfo</code> Commands</a>
       <ul>
         <li><a href="#info-page-navigation">info page Navigation</a></li>
       </ul>
@@ -241,7 +242,7 @@ afs  bin  boot  dev  etc  home  lib  lib64  lost+found  media  mnt  opt  proc  r
 <h3 id="key-directories-in-">Key Directories in /</h3>
 <h4 id="etc-extended-text-configuration">/etc (extended text configuration)</h4>
 <p>This directory contains system configuration files for systemd, LVM, and user shell startup template files.</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>david@fedora:~/Documents/perfectdarkmode/perfectdarkmode1.github.io$ ls /etc
+<div class="highlight wrap-code"><pre tabindex="0"><code>david@fedora:$ ls /etc
 abrt                    dhcp                        gshadow-       locale.conf               openldap            request-key.d          sysctl.conf
 adjtime                 DIR_COLORS                  gss            localtime                 opensc.conf         resolv.conf            sysctl.d
 aliases                 DIR_COLORS.lightbgcolor     gssproxy       login.defs                opensc-x86_64.conf  rpc                    systemd
@@ -499,7 +500,7 @@ cd etc/sysconfig</code></pre></div><h4 id="change-into-the-usrbin-directory-from
 <li>Example: /dev/pts/0</li>
 </ul>
 <h1 id="inspecting-systems-uptime-and-processor-load">Inspecting System’s Uptime and Processor Load</h1>
-<h2 id="uptime-command">uptime command</h2>
+<h2 id="uptime-command"><code>uptime</code> command</h2>
 <ul>
 <li>Displays:
 <ul>
@@ -521,26 +522,26 @@ cd etc/sysconfig</code></pre></div><h4 id="change-into-the-usrbin-directory-from
 <li>Can also use Ctrl+l for this command.</li>
 </ul>
 <div class="highlight wrap-code"><pre tabindex="0"><code>clear</code></pre></div><h2 id="determining-command-path">Determining Command Path</h2>
-<p>tools for identifying the absolute path of the command that will be executed when you run it without specifying its full path.</p>
-<p>which, whereis, and type</p>
+<p>Tools for identifying the absolute path of the command that will be executed when you run it without specifying its full path.</p>
+<p><code>which</code>, <code>whereis</code>, and <code>type</code></p>
 <p>show the full location of the ls command:</p>
-<h2 id="which-command">which command</h2>
+<h2 id="which-command"><code>which</code> command</h2>
 <ul>
 <li>Show command aliases and location.</li>
 </ul>
 <div class="highlight wrap-code"><pre tabindex="0"><code>[root@server1 bin]# which ls
 alias ls=&#39;ls --color=auto&#39;
-        /usr/bin/ls</code></pre></div><h2 id="whereis-command">whereis command</h2>
+        /usr/bin/ls</code></pre></div><h2 id="whereis-command"><code>whereis</code> command</h2>
 <ul>
 <li>Locates binary, source, and manual files for specified command name.</li>
 </ul>
 <div class="highlight wrap-code"><pre tabindex="0"><code>[root@server1 bin]# whereis ls
-ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz /usr/share/man/man1p/ls.1p.gz&gt;)</code></pre></div><h2 id="type-command">type command</h2>
+ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz /usr/share/man/man1p/ls.1p.gz&gt;)</code></pre></div><h2 id="type-command"><code>type</code> command</h2>
 <ul>
 <li>Find whether the given command is an alias, shell built-in, file, function, or keyword.</li>
 </ul>
 <div class="highlight wrap-code"><pre tabindex="0"><code>type ls</code></pre></div><h2 id="viewing-system-information">Viewing System Information</h2>
-<h4 id="uname-command">uname command</h4>
+<h4 id="uname-command"><code>uname</code> command</h4>
 <ul>
 <li>Show system operating system name.</li>
 </ul>
@@ -565,7 +566,7 @@ x86_64 = Hardware platform
 GNU/Linux = Operating system name
 </code></pre>
 <h2 id="viewing-cpu-specs">Viewing CPU Specs</h2>
-<h2 id="lscpu-command">lscpu command</h2>
+<h2 id="lscpu-command"><code>lscpu</code> command</h2>
 <ul>
 <li>Shows CPU:
 <ul>
@@ -596,18 +597,30 @@ amount and levels of cache memory (L1d, L1i, L2, and L3)
 <ul>
 <li>Informational pages stored in /usr/share/man for each program.</li>
 </ul>
-<h4 id="man-command">man command</h4>
-<p>man -k {keyword} ::: perform a keyword search on manual pages.
-man -f ::: Equivalent to whatis.</p>
+<p>See <a href="/linux/using-man-pages/">Using Man Pages</a> for more.</p>
+<h4 id="man-command"><code>man</code> command</h4>
+<p>Flags:
+-k</p>
+<ul>
+<li>Perform a keyword search on manual pages.</li>
+<li>Must build the database with <code>mandb</code> first.</li>
+</ul>
+<p>-f</p>
+<ul>
+<li>Equivalent to whatis.</li>
+</ul>
 <h4 id="commands-to-find-informationhelp-about-programs">Commands to find information/help about programs.</h4>
 <ul>
-<li>apropos</li>
-<li>whatis</li>
-<li>info</li>
-<li>pinfo</li>
+<li><code>apropos </code></li>
+<li><code>whatis</code></li>
+<li><code>info</code></li>
+<li><code>pinfo</code></li>
 </ul>
-<p>Directory with additional program documentation ::: /usr/share/doc/</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>man passwd</code></pre></div><p>line at the bottom indicates the line number of the manual page.</p>
+<p><em>/usr/share/doc/</em></p>
+<ul>
+<li>Directory with additional program documentation.</li>
+</ul>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>man passwd</span></span></code></pre></div><p>line at the bottom indicates the line number of the manual page.</p>
 <h3 id="man-page-navigation">Man page navigation</h3>
 <p>h ::: Help on navigation.
 q ::: Quit the man page.
@@ -622,15 +635,26 @@ g / G ::: Move to the beginning / end of the man pages.
 ?pattern ::: Searches backward for the specified pattern.
 n / N ::: Find the next / previous occurrence of a pattern.</p>
 <h2 id="headings-in-the-manual">Headings in the Manual</h2>
-<p>NAME :: Name of the command or file with a short description.
-SYNOPSIS :: Syntax summary.
-DESCRIPTION :: Overview of the command or file.
-OPTIONS :: Options available for use.
-EXAMPLES :: Some examples to explain the usage.
-FILES :: A list of related files.
-SEE ALSO :: Reference to other manual pages or topics.
-BUGS :: Any reported bugs or issues.
-AUTHOR :: Contributor information.</p>
+<p><strong>NAME</strong></p>
+<ul>
+<li>Name of the command or file with a short description.
+<strong>SYNOPSIS</strong></li>
+<li>Syntax summary.
+<strong>DESCRIPTION</strong></li>
+<li>Overview of the command or file.
+<strong>OPTIONS</strong></li>
+<li>Options available for use.
+<strong>EXAMPLES</strong></li>
+<li>Some examples to explain the usage.
+<strong>FILES</strong></li>
+<li>A list of related files.
+<strong>SEE ALSO</strong></li>
+<li>Reference to other manual pages or topics.
+<strong>BUGS</strong></li>
+<li>Any reported bugs or issues.
+<strong>AUTHOR</strong></li>
+<li>Contributor information.</li>
+</ul>
 <h2 id="manual-sections">Manual Sections</h2>
 <ul>
 <li>Manual information is split into nine sections for organization and clarity.</li>
@@ -641,7 +665,7 @@ AUTHOR :: Contributor information.</p>
 </li>
 <li>Some commands in Linux also have a configuration file with an identical name.
 <ul>
-<li>Ex: passwd command in /usr/bin and the passwd file in /etc.</li>
+<li>Ex: <code>passwd</code> command in /usr/bin and the passwd file in /etc.</li>
 </ul>
 </li>
 <li>Specify the section to find that page only.
@@ -651,17 +675,24 @@ AUTHOR :: Contributor information.</p>
 </li>
 <li>Section number is located at the top (header) of the page.</li>
 </ul>
-<p>Section 1 :: Refers to user commands.
-Section 4 :: Contains special files.
-Section 5 :: Describes file formats for many system configuration files.
-Section 8 :: Documents system administration and privileged commands designed for the root user.</p>
-<h2 id="searching-by-keyword">Searching by Keyword</h2>
-<h4 id="apropos-command">apropos command</h4>
+<p><strong>Section 1</strong></p>
 <ul>
-<li>search all sections of the manual pages and show a list of all entries matching the specified keyword in their names or descriptions.</li>
-<li>Must mandb command in order to build an indexed database of the manual pages prior to using.</li>
+<li>Refers to user commands.
+<strong>Section 4</strong></li>
+<li>Contains special files.
+<strong>Section 5</strong></li>
+<li>Describes file formats for many system configuration files.
+<strong>Section 8</strong></li>
+<li>Documents system administration and privileged commands designed for the root user.</li>
 </ul>
-<div class="highlight wrap-code"><pre tabindex="0"><code>mandb</code></pre></div><h4 id="mandb-command">mandb command</h4>
+<p>Run <code>man man</code> for more details.</p>
+<h2 id="searching-by-keyword">Searching by Keyword</h2>
+<h2 id="apropos-command"><code>apropos</code> command</h2>
+<ul>
+<li>Search all sections of the manual pages and show a list of all entries matching the specified keyword in their names or descriptions.</li>
+<li>Must <code>mandb</code> command in order to build an indexed database of the manual pages prior to using.</li>
+</ul>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mandb</span></span></code></pre></div><h4 id="mandb-command"><code>mandb</code> command</h4>
 <ul>
 <li>Build an indexed database of the manual pages.</li>
 </ul>
@@ -671,33 +702,42 @@ or
 apropos xfs</code></pre></div><h4 id="lab-show-a-brief-list-of-options-and-a-description">Lab: Show a brief list of options and a description.</h4>
 <div class="highlight wrap-code"><pre tabindex="0"><code>passwd --help
 or
-passwd -?</code></pre></div><h4 id="whatis-command">whatis command</h4>
+passwd -?</code></pre></div><h4 id="whatis-command"><code>whatis</code> command</h4>
 <ul>
-<li>same output as <code>man -f</code></li>
+<li>Same output as <code>man -f</code></li>
 <li>Display one-line manual page descriptions.</li>
 </ul>
-<h2 id="info-and-pinfo-commands">info and pinfo Commands</h2>
-<p>info and pinfo commands</p>
+<h2 id="info-and-pinfo-commands"><code>info</code> and <code>pinfo</code> Commands</h2>
 <ul>
 <li>Display command detailed documentation.</li>
-<li>Divided into sections called nodes. The</li>
+<li>Divided into sections called nodes.</li>
 <li>Header:
 <ul>
 <li>Name of the file being displayed.</li>
 <li>Names of the current, next, and previous nodes.</li>
 </ul>
 </li>
-<li>info and pinfo commands is almost identical.</li>
+<li>Almost identical to each other.</li>
 </ul>
-<div class="highlight wrap-code"><pre tabindex="0"><code>info ls</code></pre></div><p>u navigate efficiently.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>info ls</span></span></code></pre></div><p>u navigate efficiently.</p>
 <h3 id="info-page-navigation">info page Navigation</h3>
-<p>Down / Up arrows :: Move forward / backward one line.
-Spacebar / Del :: Move forward / backward one page.
-q :: Quit the info page.
-t :: Go to the top node of the document.
-s :: Search</p>
+<p>Down / Up arrows</p>
+<ul>
+<li>Move forward / backward one line.
+Spacebar / Del</li>
+<li>Move forward / backward one page.
+q</li>
+<li>Quit the info page.
+t</li>
+<li>Go to the top node of the document.
+s</li>
+<li>Search</li>
+</ul>
 <h2 id="documentation-in--usrsharedoc">Documentation in  /usr/share/doc/</h2>
-<p>/usr/share/doc/ ::: stores general documentation for installed packages under subdirectories that match their names.</p>
+<p><em>/usr/share/doc/</em></p>
+<ul>
+<li>Stores general documentation for installed packages under subdirectories that match their names.</li>
+</ul>
 <div class="highlight wrap-code"><pre tabindex="0"><code>ls -l /usr/share/doc/gzip</code></pre></div><h2 id="online-rhel-documentation">Online RHEL Documentation</h2>
 <ul>
 <li>docs.redhat.com</li>
@@ -707,28 +747,28 @@ s :: Search</p>
 <h2 id="labs-3">Labs</h2>
 <h3 id="lab-2-navigate-linux-directory-tree">Lab 2: Navigate Linux Directory Tree</h3>
 <p>Check your location in the directory tree.</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>pwd</code></pre></div><p>Show file permissions in the current directory including the hidden files.</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>ls -la</code></pre></div><p>Change directory into /etc and confirm the directory change.</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>cd /etc
-pwd</code></pre></div><p>Switch back to the directory where you were before, and run pwd again to verify.</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>cd -
-pwd</code></pre></div><h3 id="lab-miscellaneous-tasks">Lab: Miscellaneous Tasks</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pwd</span></span></code></pre></div><p>Show file permissions in the current directory including the hidden files.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -la</span></span></code></pre></div><p>Change directory into /etc and confirm the directory change.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">cd</span> /etc
+</span></span><span style="display:flex;"><span>pwd</span></span></code></pre></div><p>Switch back to the directory where you were before, and run pwd again to verify.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">cd</span> -
+</span></span><span style="display:flex;"><span>pwd</span></span></code></pre></div><h3 id="lab-miscellaneous-tasks">Lab: Miscellaneous Tasks</h3>
 <p>Identify the terminal device file.</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>tty</code></pre></div><p>Open a couple of terminal sessions. Compare the terminal numbers.</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>[vagrant@server1 ~]$ tty
-/dev/pts/1</code></pre></div><p>Execute the uptime command and analyze the system uptime and processor load information.</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>uptime</code></pre></div><p>Use three commands to identify the location of the vgs command.</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>which vgs
-whereis vgs
-type vgs</code></pre></div><h3 id="lab-identify-system-and-kernel-information">Lab: Identify System and Kernel Information</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tty</span></span></code></pre></div><p>Open a couple of terminal sessions. Compare the terminal numbers.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tty
+</span></span><span style="display:flex;"><span>/dev/pts/1</span></span></code></pre></div><p>Execute the uptime command and analyze the system uptime and processor load information.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>uptime</span></span></code></pre></div><p>Use three commands to identify the location of the vgs command.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>which vgs
+</span></span><span style="display:flex;"><span>whereis vgs
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">type</span> vgs</span></span></code></pre></div><h3 id="lab-identify-system-and-kernel-information">Lab: Identify System and Kernel Information</h3>
 <ol>
 <li>Analyze the basic information about the system and kernel reported.</li>
 </ol>
-<div class="highlight wrap-code"><pre tabindex="0"><code>uname -a</code></pre></div><p>Examine the key items relevant to the processor.</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>lscpu</code></pre></div><h3 id="lab-man">Lab: Man</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>uname -a</span></span></code></pre></div><p>Examine the key items relevant to the processor.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>lscpu</span></span></code></pre></div><h3 id="lab-man">Lab: Man</h3>
 <p>View man page for uname.</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>man uname</code></pre></div><p>View the 5 man page section for the shadow.</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>man 5 shadow</code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>man uname</span></span></code></pre></div><p>View the 5 man page section for the shadow.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>man <span style="color:#ff9f43">5</span> shadow</span></span></code></pre></div>
             <footer class="footline">
             </footer>
           </article>
@@ -756,12 +796,12 @@ type vgs</code></pre></div><h3 id="lab-identify-system-and-kernel-information">L
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1727093232" defer></script>
-        <script src="/js/lunr/lunr.min.js?1727093232" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1727093232" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1727093232" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1727093232" defer></script>
-        <script src="/js/search.js?1727093232" defer></script>
+        <script src="/js/auto-complete.js?1729513266" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729513266" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729513266" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729513266" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729513266" defer></script>
+        <script src="/js/search.js?1729513266" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -783,6 +823,7 @@ type vgs</code></pre></div><h3 id="lab-identify-system-and-kernel-information">L
           <li data-nav-id="/tools/using-vagrant-on-linux/" class=""><a class="padding" href="/tools/using-vagrant-on-linux/">Using Vagrant on Linux<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/writing/" class=""><input type="checkbox" id="R-section-e557a922d533a171e9a204b7e50265e2" aria-controls="R-subsections-e557a922d533a171e9a204b7e50265e2"><label for="R-section-e557a922d533a171e9a204b7e50265e2"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Writing</span></label><a class="padding" href="/writing/">Writing<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e557a922d533a171e9a204b7e50265e2" class="morespace collapsible-menu">
           <li data-nav-id="/writing/4-ways-to-quit-caffeine/" class=""><a class="padding" href="/writing/4-ways-to-quit-caffeine/">4 Ways to Quit Caffeine<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/recipes/" class=""><a class="padding" href="/recipes/">Recipes<i class="fa-fw fas fa-check read-icon"></i></a></li>
           </ul>
         </div>
         <div id="R-shortcuts">
@@ -841,8 +882,8 @@ type vgs</code></pre></div><h3 id="lab-identify-system-and-kernel-information">L
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1727093232" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1727093232" defer></script>
+    <script src="/js/clipboard.min.js?1729513266" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729513266" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -858,20 +899,20 @@ type vgs</code></pre></div><h3 id="lab-identify-system-and-kernel-information">L
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1727093232" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1727093232" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1727093232" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1727093232" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1727093232" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1727093232" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1727093232" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1727093232" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1727093232" defer></script>
-    <script src="/js/js-yaml.min.js?1727093232" defer></script>
+    <script src="/js/d3/d3-color.min.js?1729513266" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1729513266" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1729513266" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1729513266" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1729513266" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1729513266" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1729513266" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1729513266" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1729513266" defer></script>
+    <script src="/js/js-yaml.min.js?1729513266" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1727093232" defer></script>
+    <script src="/js/theme.js?1729513266" defer></script>
   </body>
 </html>

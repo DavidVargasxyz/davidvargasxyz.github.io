@@ -522,7 +522,7 @@ roopasswd: Authentication token manipulation error
 
 The following is a sample denial record from the same file in raw format:
 
-![](images/image-C7TMRBJO.jpg)
+![](image-C7TMRBJO%201.jpg)
 
 I got this for some reason:
 ```bash
@@ -539,7 +539,7 @@ type=USER_CHAUTHTOK msg=audit(1722275037.346:97): pid=1452 uid=1000 auid=0 ses=1
 
 Use `sealert` to analyze (`-a`) all **AVC** records in the *audit.log* file. This command produces a formatted report with all relevant details:
 
-![](images/image-WYWDQX1V.jpg)
+![](image-WYWDQX1V%201.jpg)
 
 * Will try this again, I think a previous labbing is messing me up
 

@@ -100,7 +100,7 @@ For example, try 'man man'.
 - Begins with an `if` and ends with a `fi`
 -  can execute an action only if the specified condition is true. It quits the statement if the condition is untrue.
 
-![](/images/image-7FX8FVMW.jpg)
+![](image-7FX8FVMW%201.jpg)
 
 The general syntax of this statement is as follows:
 
@@ -159,7 +159,7 @@ Script terminated
 
 - Can execute an action if the condition is true and another action if the condition is false. 
 
-![](/images/image-CMLV644G.jpg)
+![](image-CMLV644G%201.jpg)
 
 The general syntax of this statement is as follows:
 
@@ -207,7 +207,7 @@ a is a negative integer value
 - Can define multiple conditions and associate an action with each one of them. 
 - The action corresponding to the true condition is performed. 
 
-![](/images/image-TNYN7SP2.jpg)
+![](image-TNYN7SP2%201.jpg)
 
 The general syntax of this statement is as follows:
 
@@ -362,7 +362,7 @@ Operators used in test conditions
 - Executed on an array of elements until all the elements in the array are consumed. 
 - Each element is assigned to a variable one after the other for processing. 
 
-![](/images/image-BPQ7RWER.jpg)
+![](image-BPQ7RWER%201.jpg)
 
 
 The general syntax of this construct is as follows:

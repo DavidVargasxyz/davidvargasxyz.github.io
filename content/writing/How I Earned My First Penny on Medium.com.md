@@ -8,7 +8,7 @@ One who has finally earned money writing online.
 
 Check it out!
 
-![](Pasted%20image%2020240521051800.png)
+![](/images/Pasted%20image%2020240521051800.png)
 
 It may not look like much. A penny? You ask. 
 

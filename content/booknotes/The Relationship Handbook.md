@@ -6,49 +6,51 @@
 ## Summary and Highlights
 
 If you have a change of heart, your marriage will be on a new footing.
+
 A change of heart is the force that erases the distress in relationships and gives you a fresh start.
 
-a relationship dysfunction—a conflict, boredom or resentment—needs no healing time and is always reversible. A change of heart can occur in an instant.
+A relationship dysfunction—a conflict, boredom or resentment—needs no healing time and is always reversible. A change of heart can occur in an instant.
 
-Many marriage counselors say the past its unexpressed emotions and habit patterns—and poor communication are the “bad guys” that cause mental and relationship distress. These are the symptoms of relationship distress, not the cause. The cause, the
-real bad guy, is insecurity
+Many marriage counselors say the past its unexpressed emotions and habit patterns—and poor communication are the “bad guys” that cause mental and relationship distress. These are the symptoms of relationship distress, not the cause. The cause, the real bad guy, is insecurity.
 
-Painful memories, negative emotions, habit patterns and bad communication are all symptoms of insecurity
+Painful memories, negative emotions, habit patterns and bad communication are all symptoms of insecurity.
 
-Insecurity is the source of distress and all counterproductive behavior
+Insecurity is the source of distress and all counterproductive behavior.
 
-Thoughts of insecurity periodically pass through our minds. If we dismiss these thoughts, we will remain secure, our ideal selves: easygoing, joyful, compassionate and wise. If we harbor our thoughts of insecurity, we end up in a state o distress
+Thoughts of insecurity periodically pass through our minds. If we dismiss these thoughts, we will remain secure, our ideal selves: easygoing, joyful, compassionate and wise. If we harbor our thoughts of insecurity, we end up in a state of distress.
 
-marriage counseling doesn’t work because:
+Marriage counseling doesn’t work because:
 
-* Therapists tend to teach couples to struggle with their problems instead of giving them a fresh start
+* Therapists tend to teach couples to struggle with their problems instead of giving them a fresh start.
+* Therapists use low mood therapy instead of high mood therapy.
+* Clients are given misinformation, the same misinformation that explains why so many therapists get divorced.
 
-1.  Therapists use low mood therapy instead of high mood therapy.
+When couples go to a marriage counselor there are three possible outcomes: 
+(1) they get a fresh start, 
+(2) they stay together and “cope with” a tense or sour marriage.
+(3) they separate.
 
-2.  Clients are given misinformation, the same misinformation that explains why so many therapists get divorced
+Coping involves struggling (a more honest term for “working on”) with problems and expressing your feeling about them. Coping takes time and work and provides only temporary relief.
 
-When couples go to a marriage counselor there are three possible outcomes: (1) they get a fresh start, (2) they stay together and “cope with” a tense or sour marriage, or (3) they separate.
+It is about as effective as releasing steam without turning down the heat.
 
-Coping involves struggling (a more honest term for “working on”) with problems and expressing your feeling about them. Coping takes time and work and provides only temporary relief
+The strength of their marriages lies not in their ability to cope with their problems, but in their ability to keep their bearings and to stay close.
 
-It is about as effective as releasing steam without turning down the heat
+People mistakenly believe that pain and effort are an inevitable part of relationships. They believe that analyzing their problems and living patterns will change them.
 
-The strength of their marriages lies not in their ability to cope with their problems, but in their ability to keep their bearings and to stay close
+Analyzing problems makes you an expert on your problems. It doesn’t change you.
 
-People mistakenly believe that pain and effort are an inevitable part of relationships. They believe that analyzing their problems and living patterns will change them
+When partners probe and analyze each other’s faults, as they learn to do in most marriage counseling, they become insecure, defensive and resistant to change. They bring out the worst in each other.
 
-Analyzing problems makes you an expert on your problems. It doesn’t change you
+**LOW MOOD THERAPY**
 
-When partners probe and analyze each other’s faults, as they learn to do in most marriage counseling, they become insecure, defensive and resistant to change. They bring out the worst in each other
+There are actually two kinds of therapy: low mood therapy and high mood therapy.
 
-LOW MOOD THERAPY
+During low mood therapy the client is in a low mood because he’s probing problems and other negative thoughts. 
 
-there are actually two kinds of therapy: low mood therapy and high mood therapy.
+In high mood therapy, clients engage the thoughts we have in high moods—insights, non-contingent positive feelings and big-picture perspectives.
 
-During low mood therapy the client is in a low mood because he’s probing problems and other negative thoughts. In high mood therapy,
-clients engage the thoughts we have in high moods—insights, non-contingent positive feelings and big-picture perspectives.
-
-THE LOW MOOD THERAPY PROCESS
+**THE LOW MOOD THERAPY PROCESS**
 
 1\. The counselor asks clients to list their problems. This step makes all the problems vivid in the clients’ minds, thereby lowering their spirits.
 
@@ -56,63 +58,59 @@ Counselor and clients delve into each problem in detail. They look at its cause,
 
 Problems now seem so formidable that clients are discouraged. 
 
-3. From this discouraged state of mind, the counselor and clients attempt to solve relationship problems. The process is usually painful and unproductive
+2\. From this discouraged state of mind, the counselor and clients attempt to solve relationship problems. The process is usually painful and unproductive.
 
 The counselor concludes that the couple needs to put extensive “work” into their relationship. He or she then asks if they are willing to make the commitment. The couple considers how painful and unproductive their efforts have been and are reluctant to throw “good money after bad.”
 
-The high mood therapist sees that extracting misunderstandings, misinformation, overreactions, grudges and discouragement from relationships lays a
-foundation for a fresh start. This observation keeps the high mood therapist hopeful and patient
+## The high mood therapist 
 
-She doesn’t focus on problems. Instead, she explains personality and mood distortions and shows how misinformation damages relationships
+Sees that extracting misunderstandings, misinformation, overreactions, grudges and discouragement from relationships lays a foundation for a fresh start. This observation keeps the high mood therapist hopeful and patient.
 
-Once this understanding strikes home, the couple begins to glimpse the same possibilities for their relationship that the therapist sees. They see the viability of a fresh start. At this point, the couple sees their relationship history as a nightmare from which they are awakening
+She doesn’t focus on problems. Instead, she explains personality and mood distortions and shows how misinformation damages relationships.
 
-A characteristic of very low moods is that every little problem looks like the tip of an iceberg
+Once this understanding strikes home, the couple begins to glimpse the same possibilities for their relationship that the therapist sees. They see the viability of a fresh start. At this point, the couple sees their relationship history as a nightmare from which they are awakening.
 
-In the ignorance of low moods, they think the “real” Ben and Jennifer have finally surfaced
+A characteristic of very low moods is that every little problem looks like the tip of an iceberg.
 
-Their relationship is punctuated by insecurity, their mood held down by their fearful thoughts
+In the ignorance of low moods, they think the “real” Ben and Jennifer have finally surfaced.
 
-They bring their problem to a high mood therapist. Instead of analyzing their pattern of criticism and withdrawal, she reassures
-them that they have innocently brought out the worst in each other. She shows them that their behaviors have become exaggerated because they have been stuck in a low mood
+Their relationship is punctuated by insecurity, their mood held down by their fearful thoughts.
 
-She explains how moods distort our thinking and perceptions. She explains that if they make allowances for them, moods will have no
-lasting effect on relationships.
+They bring their problem to a high mood therapist. Instead of analyzing their pattern of criticism and withdrawal, she reassures them that they have innocently brought out the worst in each other. She shows them that their behaviors have become exaggerated because they have been stuck in a low mood.
 
-Moods are the constant shifts in perspective built into our experience of life. Our thinking and therefore our perceptions of life are a
-function of mood changes. Our thoughts are more optimistic, lighthearted, and wise when we are in a high mood
+She explains how moods distort our thinking and perceptions. She explains that if they make allowances for them, moods will have no lasting effect on relationships.
 
-This book emphasizes thinking because it is the steering wheel for a happy life and satisfying relationships. Thinking is like breathing—we do it continuously from birth to death
+Moods are the constant shifts in perspective built into our experience of life. Our thinking and therefore our perceptions of life are a function of mood changes. Our thoughts are more optimistic, lighthearted, and wise when we are in a high mood.
 
-Thinking is like a function that allows every human being to create a personal reality
+This book emphasizes thinking because it is the steering wheel for a happy life and satisfying relationships. Thinking is like breathing—we do it continuously from birth to death.
 
-Each thought creates a feeling that makes the thought appear real
+Thinking is like a function that allows every human being to create a personal reality.
 
-There is no way to enjoy a relationship if our minds are full of painful thoughts. We can’t enjoy anything while our minds are analyzing and criticizing
+Each thought creates a feeling that makes the thought appear real.
 
-As our thought processes get healthier, more responsive (less habitual), our relationships improve dramatically
+There is no way to enjoy a relationship if our minds are full of painful thoughts. We can’t enjoy anything while our minds are analyzing and criticizing.
+
+As our thought processes get healthier, more responsive (less habitual), our relationships improve dramatically.
 
 What makes people so rigid, so predictable in their thinking?
 
-Mind-sets, which we also could call thought systems, create unique realities for people in the same way a film creates an image on a
-movie screen. 
+Mind-sets, which we also could call thought systems, create unique realities for people in the same way a film creates an image on a movie screen. 
 
 A mind-set predisposes us toward specific feelings and behaviors.
 
-Mind-sets limit our perceived options and, in that way, cast our lot in life
+Mind-sets limit our perceived options and, in that way, cast our lot in life.
 
 Often people think of feelings as things to work through or deal with.
 
-But feelings were meant to be a barometer to help us maintain our emotional equilibrium
+But feelings were meant to be a barometer to help us maintain our emotional equilibrium.
 
-Feelings provide our moment-to-moment experience of life. They tell us the extent to which our perceptions are distorted by our moods and thought systems
+Feelings provide our moment-to-moment experience of life. They tell us the extent to which our perceptions are distorted by our moods and thought systems.
 
-The counselor finds and fans any spark of intimacy that exists between the partners. The couple begins to feel closer to each other and more hopeful about the relationship
+The counselor finds and fans any spark of intimacy that exists between the partners. The couple begins to feel closer to each other and more hopeful about the relationship.
 
-The counselor describes how insecurity distorts behavior in relationships
+The counselor describes how insecurity distorts behavior in relationships.
 
-He or she suggests that the relationship is not in as bad shape as it seems. The clients begin to see the spiral of emotional reactions that
-destroyed the closeness they want. They begin to see innocence in themselves and each other
+He or she suggests that the relationship is not in as bad shape as it seems. The clients begin to see the spiral of emotional reactions that destroyed the closeness they want. They begin to see innocence in themselves and each other.
 
 The counselor demonstrates that maintaining a sense of well-being is all it takes to make the relationship enjoyable and easy.
 
@@ -121,121 +119,114 @@ The counselor teaches them the building blocks of human psychological functionin
 Understanding these principles enables the couple to create and maintain a sense of
 well-being and to feel warm and respectful toward each other, even in hard times.
 
-According to the couple’s needs, the counselor discusses relationship-related subjects such as what the past really is, how to forgive and forget, how to use feeling
-as a compass of relationship well being and how compatibility is the result of the feeling, not the cause
+According to the couple’s needs, the counselor discusses relationship-related subjects such as what the past really is, how to forgive and forget, how to use feeling as a compass of relationship well being and how compatibility is the result of the feeling, not the cause.
 
-To get a fresh start in a marriage, we must know that the so-called “issues” in a marriage are symptoms and not causes of disharmony
+To get a fresh start in a marriage, we must know that the so-called “issues” in a marriage are symptoms and not causes of disharmony.
 
-a misunderstanding of the deeper dynamics of a relationship
+A misunderstanding of the deeper dynamics of a relationship.
 
-compatibility has to do with how you think and feel and not with how different you are
+Compatibility has to do with how you think and feel and not with how different you are.
 
-THE COMPATIBILITY MYTH
+### THE COMPATIBILITY MYTH
 
 Don’t personalities have to be compatible for a marriage to be successful?
 
-A couple must feel compatible and close for a marriage to work
+A couple must feel compatible and close for a marriage to work.
 
-Complementary and incompatible are two conclusions about the same situation, two sides of the same coin
+Complementary and incompatible are two conclusions about the same situation, two sides of the same coin.
 
-When differences are viewed with respect, partners are viewed as complementary
+When differences are viewed with respect, partners are viewed as complementary.
 
-Respect and affinity are the feelings that turn the personality differences into assets in a relationship
+Respect and affinity are the feelings that turn the personality differences into assets in a relationship.
 
-Thoughts of incompatibility are a sign that the respect and affinity level in the relationship has slipped. It is always humbling to
-realize that today’s incompatibility was yesterday’s refreshing difference.” 
+Thoughts of incompatibility are a sign that the respect and affinity level in the relationship has slipped. It is always humbling to realize that today’s incompatibility was yesterday’s refreshing difference.” 
 
-The two perspectives are just one thought
-apart.
+The two perspectives are just one thought apart.
 
-HOW THOUGHT CREATES INCOMPATIBILITY
+### HOW THOUGHT CREATES INCOMPATIBILITY
 
-to be close to our mates and enjoy their company. Closeness, a warm feeling of affinity, is the cake and the frosting.
+To be close to our mates and enjoy their company. Closeness, a warm feeling of affinity, is the cake and the frosting.
 
-dissimilar values and economic incompatibility don’t matter if the emotional connection is there
+Dissimilar values and economic incompatibility don’t matter if the emotional connection is there.
 
-Warm feelings give people a positive outlook
+Warm feelings give people a positive outlook.
 
-It is only when we lose good feelings that the qualities we think we want in a mate become important to us
+It is only when we lose good feelings that the qualities we think we want in a mate become important to us.
 
-In fact, the number and strength of our wants is an excellent indicator of relationship well-being. When we start to feel we are not
-getting what we want in our marriage, we know our level of intimacy is low.
+In fact, the number and strength of our wants is an excellent indicator of relationship well-being. 
 
-Being close helps us to get the things we want, such as a good sexual relationship or material luxury, because intimacy leads to good teamwork
+When we start to feel we are not getting what we want in our marriage, we know our level of intimacy is low.
 
-Closeness brings out the best in each person
+Being close helps us to get the things we want, such as a good sexual relationship or material luxury, because intimacy leads to good teamwork.
+
+Closeness brings out the best in each person.
 
 It also inspires both partners to attend to the things that are important to their mates, making it easier to realize their joint and individual goals.
 
-It is the thought of incompatibility that creates the feeling of incompatibility
+It is the thought of incompatibility that creates the feeling of incompatibility.
 
-natural compatibility is upset by negative thoughts and judgments
+Natural compatibility is upset by negative thoughts and judgments.
 
-If I am with a person and I entertain negative thoughts about how that person lives or is, my positive feelings begin to disappear
+If I am with a person and I entertain negative thoughts about how that person lives or is, my positive feelings begin to disappear.
 
-When people are insecure, what they want and don’t want feels a lot more compelling to them
+When people are insecure, what they want and don’t want feels a lot more compelling to them.
 
-But when our spirits are high, we’re more understanding
+But when our spirits are high, we’re more understanding.
 
-We can see both sides more easily. We see that “issues” are not as important in the grand scheme of things as we thought they were. In
-other words, it’s normal for us to be stubborn when we’re in a low mood and magnanimous when we’re in a higher frame of mind.
+We can see both sides more easily. We see that “issues” are not as important in the grand scheme of things as we thought they were. 
 
-The cake is feeling contented inside. In your marriage, the cake is sharing good feelings as a couple. But couples can lose sight of the
-closeness in their marriage when they search for the specific conditions they think they want. Often, the only reason they want
-those specific conditions is that they assume they will bring more love
+In other words, it’s normal for us to be stubborn when we’re in a low mood and magnanimous when we’re in a higher frame of mind.
 
-be careful not to hurt each other’s feelings over the issue
+The cake is feeling contented inside. In your marriage, the cake is sharing good feelings as a couple. But couples can lose sight of the closeness in their marriage when they search for the specific conditions they think they want. Often, the only reason they want those specific conditions is that they assume they will bring more love.
 
-We have to be more gentle with each other and more open
+Be careful not to hurt each other’s feelings over the issue.
 
-just to enjoy each other
+We have to be more gentle with each other and more open just to enjoy each other.
 
-Thoughts of compatibility or incompatibility are a compass that reacts to your level-of-closeness to the other person. When you are feeling close to your mate, you will entertain thoughts about how compatible
-you are.
+Thoughts of compatibility or incompatibility are a compass that reacts to your level-of-closeness to the other person. When you are feeling close to your mate, you will not entertain thoughts about how compatible you are.
 
-Remember that today’s incompatibilities were yesterday’s refreshing differences
+Remember that today’s incompatibilities were yesterday’s refreshing differences.
 
-Those differences represent opportunities to learn from each other. If you take the role of the student, the respect you show your mate will raise the level of the relationship
+Those differences represent opportunities to learn from each other. If you take the role of the student, the respect you show your mate will raise the level of the relationship.
 
-communication enhances a relationship that is on track. If a relationship is off track, communication is, at best, like brushing your teeth right before you eat candy. At worst,
-communication is tantamount to brushing your teeth with a tooth brush dipped in plaque.
+Communication enhances a relationship that is on track. If a relationship is off track, communication is, at best, like brushing your teeth right before you eat candy. 
 
-THE COMMUNICATION MYTH
+At worst, communication is tantamount to brushing your teeth with a tooth brush dipped in plaque.
+
+### THE COMMUNICATION MYTH
 
 Doesn’t clear communication automatically improve the quality of a relationship?
 
-THE GRAIN OF TRUTH
+**THE GRAIN OF TRUTH**
 
-Positive communication does deepen the feeling between two people
+Positive communication does deepen the feeling between two people.
 
-THE CHANGE OF HEART
+**THE CHANGE OF HEART**
 
 The couple told the counselor they had a “communication problem.” They said they had bad feelings toward each other. The counselor responded, “It’s a good thing your communication is poor. Just think how terrible you’d feel if you could get your ill feelings across to each other.” The counselor then helped the couple find a close, warm feeling in their relationship—he facilitated a change of heart. When they felt close, they saw the problem in their relationship was the feeling, not the communication.
 
-Communication is a pipe through which feelings pass. If the feelings are positive, the relationship will be uplifted. If they are negative, the couple’s level of closeness will drop
+Communication is a pipe through which feelings pass. If the feelings are positive, the relationship will be uplifted. If they are negative, the couple’s level of closeness will drop.
 
-In a relationship, then, the quality of feelings that passes through the communication pipe determines the state of that union. What brings
-new closeness and goodwill to a relationship is more positive feelings—not more talk. Good feelings are expressed in all kinds of ways besides talk. They radiate from your presence
+In a relationship, then, the quality of feelings that passes through the communication pipe determines the state of that union. What brings new closeness and goodwill to a relationship is more positive feelings—not more talk. Good feelings are expressed in all kinds of ways besides talk. They radiate from your presence.
 
-When we communicate from drunkenness, anger or happiness, what we say can only be understood within the context of that state of mind
+When we communicate from drunkenness, anger or happiness, what we say can only be understood within the context of that state of mind.
 
 If the two of you start a discussion at 7:10 P.M. and at 7:30 you feel closer, you are making progress. Your level of closeness is a moment-to-moment measure of your progress. 
-
 
 There is no such thing as a productive discussion that alienates its parties.
 
 There is no such thing as an unproductive discussion that brings two people closer together.
 
-communication takes care of itself. It’s the feelings that need to be tended to.
+Communication takes care of itself. It’s the feelings that need to be tended to.
 
-Each of you is probably seeing things a little bit differently than before, a little more optimistically. (They nod.) If you share these
-positive thoughts, they will help the relationship to spiral up. Believe me, these positive thoughts are just as real as the negative thoughts. It’s only force of
-habit that makes you dismiss positive thoughts and stick with the negative
+Each of you is probably seeing things a little bit differently than before, a little more optimistically. (They nod.) If you share these positive thoughts, they will help the relationship to spiral up. Believe me, these positive thoughts are just as real as the negative thoughts. It’s only force of
+habit that makes you dismiss positive thoughts and stick with the negative.
 
-You have to learn to trust it. Any time you can share hopeful, high-spirited thoughts, your relationship will benefit
+You have to learn to trust it. Any time you can share hopeful, high-spirited thoughts, your relationship will benefit.
 
-Positive thoughts are just as real as negative thoughts and feelings. In fact, they’re more real! Negative thoughts are always associated
-with fears of the future and negative memories of the past, and only the present is real.
+Positive thoughts are just as real as negative thoughts and feelings. In fact, they’re more real! Negative thoughts are always associated with fears of the future and negative memories of the past, and only the present is real.
+
+## Left off here
 
 You don’t have to feel this way all the time to have a good marriage. You just have to remember that when you slip into the doldrums, your thoughts and perceptions will go with you. If that happens, don’t take
 your thoughts too seriously.

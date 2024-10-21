@@ -1,28 +1,25 @@
 
-Joining children in their world, focusing on connection and confidence, giggling and roughhousing, reversing the roles and
-following your child\'s lead.
+Joining children in their world, focusing on connection and confidence, giggling and roughhousing, reversing the roles and following your child\'s lead.
 
 A little playfulness turned the tide.
 
 Pretending to be mad helped me not to be really mad, and playing instead of shouting helped her get ready faster!
 
-Play is also children\'s main way of communicating, of experimenting, and of learning
+Play is also children\'s main way of communicating, of experimenting, and of learning.
 
-A child who won\'t or can\'t play is instantly recognizable as being in significant emotional distress
+A child who won\'t or can\'t play is instantly recognizable as being in significant emotional distress.
 
-Play is fun, but it is also meaningful and complex
+Play is fun, but it is also meaningful and complex.
 
-“Can you catch what I throw at you? Are my feelings too much for you? Am I safe from my own impulses,
-my own anger?"
+“Can you catch what I throw at you? Are my feelings too much for you? Am I safe from my own impulses, my own anger?"
 
 Second purpose of play serves our incredible—almost bottomless—need for attachment and affection and closeness.
 
-Third purpose of play for children and perhaps the one that is most uniquely human, is to recover from
-emotional distress.
+Third purpose of play for children and perhaps the one that is most uniquely human, is to recover from emotional distress.
 
 If you are frustrated because you have to remind your child for the twelfth time to pack her lunch or take out the garbage, next time try singing the request in a fake-opera voice instead of using the usual nagging tones.
 
-Let\'s pretend you\'re the dad and I\'m the daughter and you\'re mad at me.” Well, that won\'t be hard to pretend, I would think, but soon we would be laughing instead of arguing.
+Let\'s pretend you\'re the dad and I\'m the daughter and you\'re mad at me.”Well, that won\'t be hard to pretend, I would think, but soon we would be laughing instead of arguing.
 
 Transform, through play, disconnection into connection.
 
@@ -33,6 +30,8 @@ These situations call for creating more playtime, not doling out punishment or l
 When children feel isolated, they can look withdrawn and depressed. Or they might look hyperactive instead, unable to pay attention, sit still, or calm down. 
 
 We may focus on the annoying behavior, not seeing the pain underneath, or we see the pain all too clearly and feel helpless to fix it.
+
+# Left off here
 
 I picked up two of her dolls and I made one of them say (in a nasty voice), “Oh, *she* can\'t get dressed by herself; *she* doesn\'t know how to get dressed by herself.
 

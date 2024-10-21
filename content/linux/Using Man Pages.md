@@ -146,7 +146,7 @@ Search for the Shell Builtins section:
 ![](/images/images/Pasted%20image%2020240710050240.png)
 
 You can find help on builtins with the help command:
-![](/images/Pasted%20image%2020240710050536.png)
+![](Pasted%20image%2020240710050536%201.png)
 
 ```bash
 david@fedora:~$ help hash

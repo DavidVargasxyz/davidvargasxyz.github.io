@@ -1,7 +1,7 @@
 Using GTKterm app
 
 Find out what port your serial cable is plugged into:
-```
+```bash
 dthomas@lgfedora:~$ dmesg | grep tty
 [    0.119494] printk: console [tty0] enabled
 [    1.591268] serial8250: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A

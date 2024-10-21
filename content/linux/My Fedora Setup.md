@@ -224,11 +224,11 @@ add minimize and maximize
 
 ## Flatseal
 
-![](/images/Pasted%20image%2020240905105809.png)
+![](Pasted%20image%2020240905105809%201.png)
 
 ## Input Leap
 
-![](/images/Pasted%20image%2020240905105932.png)
+![](Pasted%20image%2020240905105932%201.png)
 
 sudo dnf install git cmake make gcc-c++ xorg-x11-server-devel \
                  libcurl-devel avahi-compat-libdns_sd-devel \
@@ -238,31 +238,31 @@ sudo dnf install git cmake make gcc-c++ xorg-x11-server-devel \
 
 ## Virtual machine Manager
 
-![](/images/Pasted%20image%2020240905110024.png)
+![](Pasted%20image%2020240905110024%201.png)
 
 ## Box Buddy
 
-![](/images/Pasted%20image%2020240905110223.png)
+![](Pasted%20image%2020240905110223%201.png)
 ## Warehouse
 
-![](/images/Pasted%20image%2020240905110143.png)
+![](Pasted%20image%2020240905110143%201.png)
 
 ## Mission Center 
 
-![](/images/Pasted%20image%2020240905110500.png)
+![](Pasted%20image%2020240905110500%201.png)
 
 ## Pika Backup
 
-![](/images/Pasted%20image%2020240905110555.png)
+![](Pasted%20image%2020240905110555%201.png)
 ## Clapper
 
-![](/images/Pasted%20image%2020240905110319.png)
+![](Pasted%20image%2020240905110319%201.png)
 
 ## Extentions Manager (blue puzzle piece)
 
-![](/images/Pasted%20image%2020240905105624.png)
+![](Pasted%20image%2020240905105624%201.png)
 
-![](/images/Pasted%20image%2020240905105517.png)
+![](Pasted%20image%2020240905105517%201.png)
 
 
 s.gnome.org/extension/1112/screenshot-tool/](https://extensions.gnome.org/extension/1112/screenshot-tool/ "https://extensions.gnome.org/extension/1112/screenshot-tool/")

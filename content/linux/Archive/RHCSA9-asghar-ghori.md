@@ -90,7 +90,7 @@ workload of any size.
 \
 
 ::: {style="text-align: center;"}
-![](image-4XEV7K1H.jpg){height="100%"}
+![](image-4XEV7K1H%201.jpg){height="100%"}
 :::
 
 Red Hat Enterprise Linux may be downloaded for learning, practicing, and
@@ -344,7 +344,7 @@ The setup for the lab is shown in Figure 1-1.
 \
 
 ::: {style="text-align: center;"}
-![](image-SVDMQYV3.jpg){height="100%"}
+![](image-SVDMQYV3%201.jpg){height="100%"}
 :::
 
 Figure 1-1 Lab Setup for Exercises
@@ -556,7 +556,7 @@ Windows 10 as well) computer.
 \
 
 ::: {style="text-align: center;"}
-![](image-RYEUPN4F.jpg){height="100%"}
+![](image-RYEUPN4F%201.jpg){height="100%"}
 :::
 
 Figure 1-2 VirtualBox Website
@@ -569,7 +569,7 @@ download to your computer.
 \
 
 ::: {style="text-align: center;"}
-![](image-1DYZ3Q1X.jpg){height="100%"}
+![](image-1DYZ3Q1X%201.jpg){height="100%"}
 :::
 
 Figure 1-3 VirtualBox Download
@@ -586,7 +586,7 @@ Click Next to proceed on the first screen that appears.
 \
 
 ::: {style="text-align: center;"}
-![](image-N71B6T0L.jpg){height="100%"}
+![](image-N71B6T0L%201.jpg){height="100%"}
 :::
 
 Figure 1-4 VirtualBox Installation 1
@@ -599,7 +599,7 @@ Click Next to continue.
 \
 
 ::: {style="text-align: center;"}
-![](image-1DXVB8DX.jpg){height="100%"}
+![](image-1DXVB8DX%201.jpg){height="100%"}
 :::
 
 Figure 1-5 VirtualBox Installation 2
@@ -611,7 +611,7 @@ Figure 1-5 VirtualBox Installation 2
 \
 
 ::: {style="text-align: center;"}
-![](image-0TSWNWTK.jpg){height="100%"}
+![](image-0TSWNWTK%201.jpg){height="100%"}
 :::
 
 Figure 1-6 VirtualBox Installation 3
@@ -624,7 +624,7 @@ win32api dependencies are missing. Click Yes to proceed.
 \
 
 ::: {style="text-align: center;"}
-![](image-X38P0TXD.jpg){height="100%"}
+![](image-X38P0TXD%201.jpg){height="100%"}
 :::
 
 Figure 1-7 VirtualBox Installation 4
@@ -637,7 +637,7 @@ Install to proceed.
 \
 
 ::: {style="text-align: center;"}
-![](image-D4879HVC.jpg){height="100%"}
+![](image-D4879HVC%201.jpg){height="100%"}
 :::
 
 Figure 1-8 VirtualBox Installation 5
@@ -649,7 +649,7 @@ Figure 1-8 VirtualBox Installation 5
 \
 
 ::: {style="text-align: center;"}
-![](image-J1K9ZPIT.jpg){height="100%"}
+![](image-J1K9ZPIT%201.jpg){height="100%"}
 :::
 
 Figure 1-9 VirtualBox Installation 6
@@ -680,7 +680,7 @@ similar to what is shown in Figure 1-10.
 \
 
 ::: {style="text-align: center;"}
-![](image-L7VES11A.jpg){height="100%"}
+![](image-L7VES11A%201.jpg){height="100%"}
 :::
 
 Figure 1-10 Virtual Machine Creation 1
@@ -696,7 +696,7 @@ the VM files on the C drive. Click Next to continue.
 \
 
 ::: {style="text-align: center;"}
-![](image-JRKIAXWL.jpg){height="100%"}
+![](image-JRKIAXWL%201.jpg){height="100%"}
 :::
 
 Figure 1-11 Virtual Machine Creation 2
@@ -710,7 +710,7 @@ move the slider to the right to select 2 vCPUs and click Next.
 \
 
 ::: {style="text-align: center;"}
-![](image-DXGFJAD7.jpg){height="100%"}
+![](image-DXGFJAD7%201.jpg){height="100%"}
 :::
 
 Figure 1-12 Virtual Machine Creation 3
@@ -724,7 +724,7 @@ disk now with a size of 20GB. Both are also the defaults.
 \
 
 ::: {style="text-align: center;"}
-![](image-EA79AA6L.jpg){height="100%"}
+![](image-EA79AA6L%201.jpg){height="100%"}
 :::
 
 Figure 1-13 Virtual Machine Creation 4
@@ -738,7 +738,7 @@ the wizard.
 \
 
 ::: {style="text-align: center;"}
-![](image-ZJGX9SWI.jpg){height="100%"}
+![](image-ZJGX9SWI%201.jpg){height="100%"}
 :::
 
 Figure 1-14 Virtual Machine Creation 5
@@ -751,7 +751,7 @@ Figure 1-15.
 \
 
 ::: {style="text-align: center;"}
-![](image-N7UY11R9.jpg){height="100%"}
+![](image-N7UY11R9%201.jpg){height="100%"}
 :::
 
 Figure 1-15 Virtual Machine Configuration Summary
@@ -767,7 +767,7 @@ the internet in both directions.
 \
 
 ::: {style="text-align: center;"}
-![](image-Q2H5IDDW.jpg){height="100%"}
+![](image-Q2H5IDDW%201.jpg){height="100%"}
 :::
 
 Figure 1-16 Virtual Machine Network Configuration
@@ -844,7 +844,7 @@ Red Hat Account".
 \
 
 ::: {style="text-align: center;"}
-![](image-NTU4J16N.jpg){height="100%"}
+![](image-NTU4J16N%201.jpg){height="100%"}
 :::
 
 Figure 1-17 Red Hat User Account Creation 1
@@ -859,7 +859,7 @@ continue.
 \
 
 ::: {style="text-align: center;"}
-![](image-RX7LMWSU.jpg){height="100%"}
+![](image-RX7LMWSU%201.jpg){height="100%"}
 :::
 
 Figure 1-18 Red Hat User Account Creation 2
@@ -880,7 +880,7 @@ of RHEL available at the time of this writing is 9.1.
 \
 
 ::: {style="text-align: center;"}
-![](image-59IRNLF8.jpg){height="100%"}
+![](image-59IRNLF8%201.jpg){height="100%"}
 :::
 
 Figure 1-19 Red Hat Developer Login
@@ -911,7 +911,7 @@ Storage configuration will look like as depicted in Figure 1-20.
 \
 
 ::: {style="text-align: center;"}
-![](image-7GQXKE38.jpg){height="100%"}
+![](image-7GQXKE38%201.jpg){height="100%"}
 :::
 
 Figure 1-20 ISO Image Attached to VM
@@ -938,7 +938,7 @@ three options. Press the Spacebar key to halt the autoboot process.
 \
 
 ::: {style="text-align: center;"}
-![](image-HSGQHQB3.jpg){height="100%"}
+![](image-HSGQHQB3%201.jpg){height="100%"}
 :::
 
 Figure 1-21 Boot Menu
@@ -969,7 +969,7 @@ is set to English. Click Continue to accept the default and move on.
 \
 
 ::: {style="text-align: center;"}
-![](image-3ZOAO9D3.jpg){height="100%"}
+![](image-3ZOAO9D3%201.jpg){height="100%"}
 :::
 
 Figure 1-22 Language Selection
@@ -994,7 +994,7 @@ setting, etc.), and user settings (root password and user creation).
 \
 
 ::: {style="text-align: center;"}
-![](image-94XH47BJ.jpg){height="100%"}
+![](image-94XH47BJ%201.jpg){height="100%"}
 :::
 
 Figure 1-23 Installation Summary \| Main
@@ -1042,7 +1042,7 @@ screen.
 \
 
 ::: {style="text-align: center;"}
-![](image-HRSI2BJZ.jpg){height="100%"}
+![](image-HRSI2BJZ%201.jpg){height="100%"}
 :::
 
 Figure 1-24 Installation Summary \| Time & Date
@@ -1071,7 +1071,7 @@ to return to the Installation Summary page.
 \
 
 ::: {style="text-align: center;"}
-![](image-QYL8NB4M.jpg){height="100%"}
+![](image-QYL8NB4M%201.jpg){height="100%"}
 :::
 
 Figure 1-25 Installation Summary \| Installation Source
@@ -1132,7 +1132,7 @@ the selected base environment. See Figure 1-26.
 \
 
 ::: {style="text-align: center;"}
-![](image-Q7PTJJFK.jpg){height="100%"}
+![](image-Q7PTJJFK%201.jpg){height="100%"}
 :::
 
 Figure 1-26 Installation Summary \| Software Selection
@@ -1173,7 +1173,7 @@ length in Chapter 11, "Boot Process, GRUB2, and the Linux Kernel".
 \
 
 ::: {style="text-align: center;"}
-![](image-IO9H4D76.jpg){height="100%"}
+![](image-IO9H4D76%201.jpg){height="100%"}
 :::
 
 Figure 1-27 Installation Summary \| Installation Destination
@@ -1227,7 +1227,7 @@ also need to ensure that the network connection is set to autostart.
 \
 
 ::: {style="text-align: center;"}
-![](image-KJ3OEFEP.jpg){height="100%"}
+![](image-KJ3OEFEP%201.jpg){height="100%"}
 :::
 
 Figure 1-28 Installation Summary \| Network & Hostname
@@ -1251,7 +1251,7 @@ subnet.
 \
 
 ::: {style="text-align: center;"}
-![](image-U88JN5XT.jpg){height="100%"}
+![](image-U88JN5XT%201.jpg){height="100%"}
 :::
 
 Figure 1-29 Installation Summary \| Network & Hostname \| Configure
@@ -1266,7 +1266,7 @@ system reboots.
 \
 
 ::: {style="text-align: center;"}
-![](image-73JSEC0L.jpg){height="100%"}
+![](image-73JSEC0L%201.jpg){height="100%"}
 :::
 
 Figure 1-30 Installation Summary \| Network & Hostname
@@ -1297,7 +1297,7 @@ page.
 \
 
 ::: {style="text-align: center;"}
-![](image-IMMYGUZG.jpg){height="100%"}
+![](image-IMMYGUZG%201.jpg){height="100%"}
 :::
 
 Figure 1-31 Installation Summary \| Root Password
@@ -1317,7 +1317,7 @@ entered is too short or simple) to return to the previous screen.
 \
 
 ::: {style="text-align: center;"}
-![](image-Y7F3JQTE.jpg){height="100%"}
+![](image-Y7F3JQTE%201.jpg){height="100%"}
 :::
 
 Figure 1-32 Installation Summary \| User Creation
@@ -1372,7 +1372,7 @@ this button to reboot the new system.
 \
 
 ::: {style="text-align: center;"}
-![](image-75HNP06Y.jpg){height="100%"}
+![](image-75HNP06Y%201.jpg){height="100%"}
 :::
 
 Figure 1-33 Configuration \| Finishing Installation
@@ -1402,7 +1402,7 @@ with floppy first and then optical (DVD/CD) followed by hard disk.
 \
 
 ::: {style="text-align: center;"}
-![](image-VR2X26SS.jpg){height="100%"}
+![](image-VR2X26SS%201.jpg){height="100%"}
 :::
 
 Figure 1-34 VirtualBox Manager \| System \| Boot Order
@@ -1415,7 +1415,7 @@ Figure 1-35. Untick Floppy, as it is not needed.
 \
 
 ::: {style="text-align: center;"}
-![](image-LDV9IOW7.jpg){height="100%"}
+![](image-LDV9IOW7%201.jpg){height="100%"}
 :::
 
 Figure 1-35 VirtualBox Manager \| System \| Boot Order \| Alter
@@ -1455,7 +1455,7 @@ when prompted.
 \
 
 ::: {style="text-align: center;"}
-![](image-Z346KSK3.jpg){height="100%"}
+![](image-Z346KSK3%201.jpg){height="100%"}
 :::
 
 Figure 1-36 Graphical Desktop \| Sign-in Screen
@@ -1471,7 +1471,7 @@ the system as user1.
 \
 
 ::: {style="text-align: center;"}
-![](image-CFLLTST6.jpg){height="100%"}
+![](image-CFLLTST6%201.jpg){height="100%"}
 :::
 
 Figure 1-37 GNOME Desktop Environment
@@ -1505,7 +1505,7 @@ reappear.
 \
 
 ::: {style="text-align: center;"}
-![](image-LVZMTSPF.jpg){height="100%"}
+![](image-LVZMTSPF%201.jpg){height="100%"}
 :::
 
 Figure 1-38 GNOME Desktop Environment\| Log Out
@@ -1542,7 +1542,7 @@ rest of the settings to their defaults.
 \
 
 ::: {style="text-align: center;"}
-![](image-7XUS3MGQ.jpg){height="100%"}
+![](image-7XUS3MGQ%201.jpg){height="100%"}
 :::
 
 Figure 1-39 PuTTY Interface
@@ -1567,7 +1567,7 @@ only appears once.
 
 <div>
 
-![](image-NCGS2C6Y.jpg){height="100%"}
+![](image-NCGS2C6Y%201.jpg){height="100%"}
 
 </div>
 
@@ -1579,7 +1579,7 @@ home directory:
 
 <div>
 
-![](image-K9PFSVHH.jpg){height="100%"}
+![](image-K9PFSVHH%201.jpg){height="100%"}
 
 </div>
 
@@ -1590,7 +1590,7 @@ Ctrl+d to log off server1 and terminate the login session:
 
 <div>
 
-![](image-9SJC3DR2.jpg){height="100%"}
+![](image-9SJC3DR2%201.jpg){height="100%"}
 
 </div>
 
@@ -1811,7 +1811,7 @@ commands.
 \
 
 ::: {style="text-align: center;"}
-![](image-EIGCXOY4.jpg){height="100%"}
+![](image-EIGCXOY4%201.jpg){height="100%"}
 :::
 
 The availability of native help on the system simplifies task execution
@@ -1867,7 +1867,7 @@ Display Manager (GDM). Figure 2-1 provides an image of GDM.
 \
 
 ::: {style="text-align: center;"}
-![](image-EOVDRFYH.jpg){height="100%"}
+![](image-EOVDRFYH%201.jpg){height="100%"}
 :::
 
 Figure 2-1 GNOME Display Manager
@@ -1910,7 +1910,7 @@ default GNOME desktop environment for root.
 \
 
 ::: {style="text-align: center;"}
-![](image-0DGMOFPB.jpg){height="100%"}
+![](image-0DGMOFPB%201.jpg){height="100%"}
 :::
 
 Figure 2-2 GNOME Desktop Environment
@@ -1926,7 +1926,7 @@ when you click on Activities.
 \
 
 ::: {style="text-align: center;"}
-![](image-YUOF8FBN.jpg){height="100%"}
+![](image-YUOF8FBN%201.jpg){height="100%"}
 :::
 
 Figure 2-3 GNOME Desktop Environment \| Activities
@@ -2010,7 +2010,7 @@ files, etc.
 \
 
 ::: {style="text-align: center;"}
-![](image-0Y6JGBPH.jpg){height="100%"}
+![](image-0Y6JGBPH%201.jpg){height="100%"}
 :::
 
 Figure 2-4 Linux Directory Structure
@@ -2369,7 +2369,7 @@ Exercise 1-3 to log in to the system remotely as the root user. Figure
 \
 
 ::: {style="text-align: center;"}
-![](image-VBWMF02L.jpg){height="100%"}
+![](image-VBWMF02L%201.jpg){height="100%"}
 :::
 
 Figure 2-5 Remote Terminal Session
@@ -2568,7 +2568,7 @@ in the /root directory:
 
 <div>
 
-![](image-PHLYAZVF.jpg){height="100%"}
+![](image-PHLYAZVF%201.jpg){height="100%"}
 
 </div>
 
@@ -2578,7 +2578,7 @@ To list files in the current directory with detailed information:
 
 <div>
 
-![](image-BOX5Z77F.jpg){height="100%"}
+![](image-BOX5Z77F%201.jpg){height="100%"}
 
 </div>
 
@@ -2619,7 +2619,7 @@ its contents:
 
 <div>
 
-![](image-0O8WG75W.jpg){height="100%"}
+![](image-0O8WG75W%201.jpg){height="100%"}
 
 </div>
 
@@ -2630,7 +2630,7 @@ human-friendly format:
 
 <div>
 
-![](image-QFQ50CUV.jpg){height="100%"}
+![](image-QFQ50CUV%201.jpg){height="100%"}
 
 </div>
 
@@ -2641,7 +2641,7 @@ with detailed information:
 
 <div>
 
-![](image-IQP067S8.jpg){height="100%"}
+![](image-IQP067S8%201.jpg){height="100%"}
 
 </div>
 
@@ -2652,7 +2652,7 @@ and with the newest file first:
 
 <div>
 
-![](image-8E6BPMM9.jpg){height="100%"}
+![](image-8E6BPMM9%201.jpg){height="100%"}
 
 </div>
 
@@ -2662,7 +2662,7 @@ To list contents of the /etc directory recursively:
 
 <div>
 
-![](image-R45WLN04.jpg){height="100%"}
+![](image-R45WLN04%201.jpg){height="100%"}
 
 </div>
 
@@ -2686,7 +2686,7 @@ example shows that root is currently in the /root directory:
 
 <div>
 
-![](image-RSZ89C0C.jpg){height="100%"}
+![](image-RSZ89C0C%201.jpg){height="100%"}
 
 </div>
 
@@ -2720,7 +2720,7 @@ command to view your current absolute path in the tree:
 
 <div>
 
-![](image-AJL9FOAO.jpg){height="100%"}
+![](image-AJL9FOAO%201.jpg){height="100%"}
 
 </div>
 
@@ -2752,7 +2752,7 @@ parent directory using the relative path:
 
 <div>
 
-![](image-F50DK2QV.jpg){height="100%"}
+![](image-F50DK2QV%201.jpg){height="100%"}
 
 </div>
 
@@ -2772,7 +2772,7 @@ relative path (etc/sysconfig):
 
 <div>
 
-![](image-KG8A2UB7.jpg){height="100%"}
+![](image-KG8A2UB7%201.jpg){height="100%"}
 
 </div>
 
@@ -2783,7 +2783,7 @@ of the following:
 
 <div>
 
-![](image-S1GJXJW7.jpg){height="100%"}
+![](image-S1GJXJW7%201.jpg){height="100%"}
 
 </div>
 
@@ -2803,7 +2803,7 @@ result.
 
 <div>
 
-![](image-PHCHRAPP.jpg){height="100%"}
+![](image-PHCHRAPP%201.jpg){height="100%"}
 
 </div>
 
@@ -2820,7 +2820,7 @@ observe the output:
 
 <div>
 
-![](image-KVGSWNYH.jpg){height="100%"}
+![](image-KVGSWNYH%201.jpg){height="100%"}
 
 </div>
 
@@ -2873,7 +2873,7 @@ To list only the directories in the root user home directory (/root):
 
 <div>
 
-![](image-6C8003QO.jpg){height="100%"}
+![](image-6C8003QO%201.jpg){height="100%"}
 
 </div>
 
@@ -2888,7 +2888,7 @@ human-readable format, permissions, and full path:
 
 <div>
 
-![](image-ZZQ5KI48.jpg){height="100%"}
+![](image-ZZQ5KI48%201.jpg){height="100%"}
 
 </div>
 
@@ -2926,7 +2926,7 @@ active terminal session. Here is an example:
 
 <div>
 
-![](image-OARQ88HS.jpg){height="100%"}
+![](image-OARQ88HS%201.jpg){height="100%"}
 
 </div>
 
@@ -2951,7 +2951,7 @@ the following output:
 
 <div>
 
-![](image-53B9PR0U.jpg){height="100%"}
+![](image-53B9PR0U%201.jpg){height="100%"}
 
 </div>
 
@@ -2983,7 +2983,7 @@ of any distractive content and run new commands on a clean slate.
 
 <div>
 
-![](image-O228U47E.jpg){height="100%"}
+![](image-O228U47E%201.jpg){height="100%"}
 
 </div>
 
@@ -3008,7 +3008,7 @@ command:
 
 <div>
 
-![](image-Q7UY9UP5.jpg){height="100%"}
+![](image-Q7UY9UP5%201.jpg){height="100%"}
 
 </div>
 
@@ -3040,7 +3040,7 @@ the -a option.
 
 <div>
 
-![](image-A7ODXPK9.jpg){height="100%"}
+![](image-A7ODXPK9%201.jpg){height="100%"}
 
 </div>
 
@@ -3096,7 +3096,7 @@ from server1:
 
 <div>
 
-![](image-3RZ4PAD4.jpg){height="100%"}
+![](image-3RZ4PAD4%201.jpg){height="100%"}
 
 </div>
 
@@ -3160,7 +3160,7 @@ how to check manual pages for the passwd command:
 
 <div>
 
-![](image-LAIVUJED.jpg){height="100%"}
+![](image-LAIVUJED%201.jpg){height="100%"}
 
 </div>
 
@@ -3284,7 +3284,7 @@ only.
 
 <div>
 
-![](image-2KYYXF5Y.jpg){height="100%"}
+![](image-2KYYXF5Y%201.jpg){height="100%"}
 
 </div>
 
@@ -3319,7 +3319,7 @@ Enter key as follows:
 
 <div>
 
-![](image-CTK4D6LS.jpg){height="100%"}
+![](image-CTK4D6LS%201.jpg){height="100%"}
 
 </div>
 
@@ -3332,7 +3332,7 @@ result.
 
 <div>
 
-![](image-ZS97GPLO.jpg){height="100%"}
+![](image-ZS97GPLO%201.jpg){height="100%"}
 
 </div>
 
@@ -3350,7 +3350,7 @@ on the passwd command, run either passwd \--help or passwd -?:
 
 <div>
 
-![](image-UZRFBCBC.jpg){height="100%"}
+![](image-UZRFBCBC%201.jpg){height="100%"}
 
 </div>
 
@@ -3377,7 +3377,7 @@ command when run on yum.conf and passwd files:
 
 <div>
 
-![](image-SBGS7UQ8.jpg){height="100%"}
+![](image-SBGS7UQ8%201.jpg){height="100%"}
 
 </div>
 
@@ -3408,7 +3408,7 @@ documentation for the gzip package includes the following files:
 
 <div>
 
-![](image-P52C8YQ1.jpg){height="100%"}
+![](image-P52C8YQ1%201.jpg){height="100%"}
 
 </div>
 
@@ -3432,7 +3432,7 @@ products including RHEL 9 in HTML, PDF, and EPUB formats. See Figure
 \
 
 ::: {style="text-align: center;"}
-![](image-RLHIS7S9.jpg){height="100%"}
+![](image-RLHIS7S9%201.jpg){height="100%"}
 :::
 
 Figure 2-6 Red Hat's Webpage for RHEL 9 Documentation
@@ -3750,7 +3750,7 @@ knowledge of this tool is essential for all these roles.
 \
 
 ::: {style="text-align: center;"}
-![](image-8FMHO049.jpg){height="100%"}
+![](image-8FMHO049%201.jpg){height="100%"}
 :::
 
 There are a number of common operations that can be performed on files
@@ -3809,7 +3809,7 @@ of the /root directory:
 
 <div>
 
-![](image-THICZHLY.jpg){height="100%"}
+![](image-THICZHLY%201.jpg){height="100%"}
 
 </div>
 
@@ -3821,7 +3821,7 @@ file and stat commands on this file and see what they report:
 
 <div>
 
-![](image-MZ5FQW79.jpg){height="100%"}
+![](image-MZ5FQW79%201.jpg){height="100%"}
 
 </div>
 
@@ -3845,7 +3845,7 @@ The following ls command output shows a few directories from /usr/bin:
 
 <div>
 
-![](image-8XHJ7XCB.jpg){height="100%"}
+![](image-8XHJ7XCB%201.jpg){height="100%"}
 
 </div>
 
@@ -3873,7 +3873,7 @@ for character and a "b" for block:
 
 <div>
 
-![](image-4PM49963.jpg){height="100%"}
+![](image-4PM49963%201.jpg){height="100%"}
 
 </div>
 
@@ -3929,7 +3929,7 @@ example:
 
 <div>
 
-![](image-5OQYCSMU.jpg){height="100%"}
+![](image-5OQYCSMU%201.jpg){height="100%"}
 
 </div>
 
@@ -3998,7 +3998,7 @@ with ls:
 
 <div>
 
-![](image-AIU4IYX1.jpg){height="100%"}
+![](image-AIU4IYX1%201.jpg){height="100%"}
 
 </div>
 
@@ -4008,7 +4008,7 @@ Now use the gzip command to compress this file and ls to confirm:
 
 <div>
 
-![](image-6TGQPI7P.jpg){height="100%"}
+![](image-6TGQPI7P%201.jpg){height="100%"}
 
 </div>
 
@@ -4020,7 +4020,7 @@ the file, run the gzip command again with the -l option:
 
 <div>
 
-![](image-5FUKWTU1.jpg){height="100%"}
+![](image-5FUKWTU1%201.jpg){height="100%"}
 
 </div>
 
@@ -4030,7 +4030,7 @@ To decompress this file, use the gunzip command:
 
 <div>
 
-![](image-B4HIG7RG.jpg){height="100%"}
+![](image-B4HIG7RG%201.jpg){height="100%"}
 
 </div>
 
@@ -4060,7 +4060,7 @@ confirm with ls:
 
 <div>
 
-![](image-J0QK1M5F.jpg){height="100%"}
+![](image-J0QK1M5F%201.jpg){height="100%"}
 
 </div>
 
@@ -4071,7 +4071,7 @@ extension. To decompress this file, use the bunzip2 command:
 
 <div>
 
-![](image-VI9VT4E9.jpg){height="100%"}
+![](image-VI9VT4E9%201.jpg){height="100%"}
 
 </div>
 
@@ -4172,7 +4172,7 @@ of the command:
 
 <div>
 
-![](image-SUE044AM.jpg){height="100%"}
+![](image-SUE044AM%201.jpg){height="100%"}
 
 </div>
 
@@ -4193,7 +4193,7 @@ files (two files in this example) from the /etc directory:
 
 <div>
 
-![](image-VMLD26KX.jpg){height="100%"}
+![](image-VMLD26KX%201.jpg){height="100%"}
 
 </div>
 
@@ -4204,7 +4204,7 @@ existing tarball /tmp/files.tar:
 
 <div>
 
-![](image-CX1NZ1NN.jpg){height="100%"}
+![](image-CX1NZ1NN%201.jpg){height="100%"}
 
 </div>
 
@@ -4214,7 +4214,7 @@ To list what files are included in the files.tar tarball:
 
 <div>
 
-![](image-X4F6HAVE.jpg){height="100%"}
+![](image-X4F6HAVE%201.jpg){height="100%"}
 
 </div>
 
@@ -4225,7 +4225,7 @@ and confirm the output with ls:
 
 <div>
 
-![](image-KEHMD5TJ.jpg){height="100%"}
+![](image-KEHMD5TJ%201.jpg){height="100%"}
 
 </div>
 
@@ -4236,7 +4236,7 @@ output with ls:
 
 <div>
 
-![](image-GI6Q97O0.jpg){height="100%"}
+![](image-GI6Q97O0%201.jpg){height="100%"}
 
 </div>
 
@@ -4311,7 +4311,7 @@ directory. Finally, you will extract the bzip2-compressed archive in the
 
 <div>
 
-![](image-N71YHO6R.jpg){height="100%"}
+![](image-N71YHO6R%201.jpg){height="100%"}
 
 </div>
 
@@ -4322,7 +4322,7 @@ directory. Finally, you will extract the bzip2-compressed archive in the
 
 <div>
 
-![](image-2B5JU6VF.jpg){height="100%"}
+![](image-2B5JU6VF%201.jpg){height="100%"}
 
 </div>
 
@@ -4333,7 +4333,7 @@ uncompressing it:
 
 <div>
 
-![](image-QJHCZUCC.jpg){height="100%"}
+![](image-QJHCZUCC%201.jpg){height="100%"}
 
 </div>
 
@@ -4344,7 +4344,7 @@ current directory:
 
 <div>
 
-![](image-KGN0U946.jpg){height="100%"}
+![](image-KGN0U946%201.jpg){height="100%"}
 
 </div>
 
@@ -4355,7 +4355,7 @@ current directory:
 
 <div>
 
-![](image-06CIKGK6.jpg){height="100%"}
+![](image-06CIKGK6%201.jpg){height="100%"}
 
 </div>
 
@@ -4442,7 +4442,7 @@ commands provided in subsequent subsections.
 
 <div>
 
-![](image-82ERBIU1.jpg){height="100%"}
+![](image-82ERBIU1%201.jpg){height="100%"}
 
 </div>
 
@@ -5031,7 +5031,7 @@ create file1 and then run ls to verify:
 
 <div>
 
-![](image-O78BDF0T.jpg){height="100%"}
+![](image-O78BDF0T%201.jpg){height="100%"}
 
 </div>
 
@@ -5043,7 +5043,7 @@ on this file after a minute or so, a new timestamp is placed on it:
 
 <div>
 
-![](image-CIOVUAMS.jpg){height="100%"}
+![](image-CIOVUAMS%201.jpg){height="100%"}
 
 </div>
 
@@ -5062,7 +5062,7 @@ To set the date on file1 to January 31, 2023:
 
 <div>
 
-![](image-DQRG2FE4.jpg){height="100%"}
+![](image-DQRG2FE4%201.jpg){height="100%"}
 
 </div>
 
@@ -5072,7 +5072,7 @@ To change the modification time on file1 to the current system time:
 
 <div>
 
-![](image-84UO6LD7.jpg){height="100%"}
+![](image-84UO6LD7%201.jpg){height="100%"}
 
 </div>
 
@@ -5090,7 +5090,7 @@ bracket "\>" must be used to redirect the output to the specified file
 
 <div>
 
-![](image-RMUFFKPP.jpg){height="100%"}
+![](image-RMUFFKPP%201.jpg){height="100%"}
 
 </div>
 
@@ -5120,7 +5120,7 @@ home directory:
 
 <div>
 
-![](image-05TTIW83.jpg){height="100%"}
+![](image-05TTIW83%201.jpg){height="100%"}
 
 </div>
 
@@ -5132,7 +5132,7 @@ create the hierarchy dir2/perl/perl5:
 
 <div>
 
-![](image-OKFHWA19.jpg){height="100%"}
+![](image-OKFHWA19%201.jpg){height="100%"}
 
 </div>
 
@@ -5170,7 +5170,7 @@ with the cat command:
 
 <div>
 
-![](image-EXQ3VH47.jpg){height="100%"}
+![](image-EXQ3VH47%201.jpg){height="100%"}
 
 </div>
 
@@ -5194,7 +5194,7 @@ difference in the outputs:
 
 <div>
 
-![](image-TQORVOPT.jpg){height="100%"}
+![](image-TQORVOPT%201.jpg){height="100%"}
 
 </div>
 
@@ -5254,7 +5254,7 @@ default, it returns the first ten lines. See the example below:
 
 <div>
 
-![](image-EU3N9K6J.jpg){height="100%"}
+![](image-EU3N9K6J%201.jpg){height="100%"}
 
 </div>
 
@@ -5267,7 +5267,7 @@ lines from /etc/profile:
 
 <div>
 
-![](image-ELEC9F1W.jpg){height="100%"}
+![](image-ELEC9F1W%201.jpg){height="100%"}
 
 </div>
 
@@ -5280,7 +5280,7 @@ to witness the difference:
 
 <div>
 
-![](image-SE6FLHZI.jpg){height="100%"}
+![](image-SE6FLHZI%201.jpg){height="100%"}
 
 </div>
 
@@ -5293,7 +5293,7 @@ following example enables us to view the updates to the system log file
 
 <div>
 
-![](image-KFPLVXHY.jpg){height="100%"}
+![](image-KFPLVXHY%201.jpg){height="100%"}
 
 </div>
 
@@ -5318,7 +5318,7 @@ see output similar to the following:
 
 <div>
 
-![](image-3RW9955G.jpg){height="100%"}
+![](image-3RW9955G%201.jpg){height="100%"}
 
 </div>
 
@@ -5361,7 +5361,7 @@ The following example displays only the count of characters in
 
 <div>
 
-![](image-NFVHNCR4.jpg){height="100%"}
+![](image-NFVHNCR4%201.jpg){height="100%"}
 
 </div>
 
@@ -5397,7 +5397,7 @@ To copy file1 as newfile1 within the same directory:
 
 <div>
 
-![](image-CVJ5NU3B.jpg){height="100%"}
+![](image-CVJ5NU3B%201.jpg){height="100%"}
 
 </div>
 
@@ -5407,7 +5407,7 @@ To copy file1 by the same name to another existing directory dir1:
 
 <div>
 
-![](image-X0QITJ8I.jpg){height="100%"}
+![](image-X0QITJ8I%201.jpg){height="100%"}
 
 </div>
 
@@ -5420,7 +5420,7 @@ overwriting:
 
 <div>
 
-![](image-YJD07GBI.jpg){height="100%"}
+![](image-YJD07GBI%201.jpg){height="100%"}
 
 </div>
 
@@ -5445,7 +5445,7 @@ dir2 and then the directory contents of dir2 are listed for validation:
 
 <div>
 
-![](image-C1NALXYV.jpg){height="100%"}
+![](image-C1NALXYV%201.jpg){height="100%"}
 
 </div>
 
@@ -5496,7 +5496,7 @@ The following example moves file1 to dir1 and prompts for confirmation:
 
 <div>
 
-![](image-XKQ27QUD.jpg){height="100%"}
+![](image-XKQ27QUD%201.jpg){height="100%"}
 
 </div>
 
@@ -5513,7 +5513,7 @@ To rename newfile1 as newfile2:
 
 <div>
 
-![](image-K7ZF5ENF.jpg){height="100%"}
+![](image-K7ZF5ENF%201.jpg){height="100%"}
 
 </div>
 
@@ -5532,7 +5532,7 @@ operation):
 
 <div>
 
-![](image-AIC4GCS3.jpg){height="100%"}
+![](image-AIC4GCS3%201.jpg){height="100%"}
 
 </div>
 
@@ -5542,7 +5542,7 @@ To rename dir2 as dir20:
 
 <div>
 
-![](image-FDORIWVP.jpg){height="100%"}
+![](image-FDORIWVP%201.jpg){height="100%"}
 
 </div>
 
@@ -5573,7 +5573,7 @@ newfile2:
 
 <div>
 
-![](image-I62ESX2X.jpg){height="100%"}
+![](image-I62ESX2X%201.jpg){height="100%"}
 
 </div>
 
@@ -5628,7 +5628,7 @@ use either of the following:
 
 <div>
 
-![](image-63ALKUMM.jpg){height="100%"}
+![](image-63ALKUMM%201.jpg){height="100%"}
 
 </div>
 
@@ -5639,7 +5639,7 @@ with the command:
 
 <div>
 
-![](image-3KZV2R4T.jpg){height="100%"}
+![](image-3KZV2R4T%201.jpg){height="100%"}
 
 </div>
 
@@ -5734,7 +5734,7 @@ link pointing to the same inode.](#chapter0129.html)
 \
 
 ::: {style="text-align: center;"}
-![](image-C0T2UN4H.jpg){height="100%"}
+![](image-C0T2UN4H%201.jpg){height="100%"}
 :::
 
 Figure 3-1 Hard Link
@@ -5755,7 +5755,7 @@ directory:
 
 <div>
 
-![](image-EK765B6W.jpg){height="100%"}
+![](image-EK765B6W%201.jpg){height="100%"}
 
 </div>
 
@@ -5765,7 +5765,7 @@ After creating the link, run ls with the -li flags as follows:
 
 <div>
 
-![](image-JT0N82H0.jpg){height="100%"}
+![](image-JT0N82H0%201.jpg){height="100%"}
 
 </div>
 
@@ -5809,7 +5809,7 @@ pointing to it.](#chapter0130.html)
 \
 
 ::: {style="text-align: center;"}
-![](image-Z1PUZVFR.jpg){height="100%"}
+![](image-Z1PUZVFR%201.jpg){height="100%"}
 :::
 
 Figure 3-2 Soft Link
@@ -5828,7 +5828,7 @@ the ln command with the -s switch:
 
 <div>
 
-![](image-OOCFIMA5.jpg){height="100%"}
+![](image-OOCFIMA5%201.jpg){height="100%"}
 
 </div>
 
@@ -5843,7 +5843,7 @@ output of ls -il below:
 
 <div>
 
-![](image-D1NQ338T.jpg){height="100%"}
+![](image-D1NQ338T%201.jpg){height="100%"}
 
 </div>
 
@@ -5858,7 +5858,7 @@ RHEL 9 has four soft-linked directories under /. They are:
 
 <div>
 
-![](image-1H0Q5MIJ.jpg){height="100%"}
+![](image-1H0Q5MIJ%201.jpg){height="100%"}
 
 </div>
 
@@ -5960,7 +5960,7 @@ including the inode number:
 
 <div>
 
-![](image-M1Z9VT3J.jpg){height="100%"}
+![](image-M1Z9VT3J%201.jpg){height="100%"}
 
 </div>
 
@@ -5978,7 +5978,7 @@ the long listing:
 
 <div>
 
-![](image-9FQWQNDN.jpg){height="100%"}
+![](image-9FQWQNDN%201.jpg){height="100%"}
 
 </div>
 
@@ -5993,7 +5993,7 @@ for all three files again:
 
 <div>
 
-![](image-N3EG7QQC.jpg){height="100%"}
+![](image-N3EG7QQC%201.jpg){height="100%"}
 
 </div>
 
@@ -6009,7 +6009,7 @@ remaining file:
 
 <div>
 
-![](image-6AZAA0TO.jpg){height="100%"}
+![](image-6AZAA0TO%201.jpg){height="100%"}
 
 </div>
 
@@ -6046,7 +6046,7 @@ long file listing for both:
 
 <div>
 
-![](image-SZ2DMAAY.jpg){height="100%"}
+![](image-SZ2DMAAY%201.jpg){height="100%"}
 
 </div>
 
@@ -6067,7 +6067,7 @@ differences.
 
 <div>
 
-![](image-C5PFENJ2.jpg){height="100%"}
+![](image-C5PFENJ2%201.jpg){height="100%"}
 
 </div>
 
@@ -6082,7 +6082,7 @@ The rest of the attributes are the same.
 
 <div>
 
-![](image-94K3927V.jpg){height="100%"}
+![](image-94K3927V%201.jpg){height="100%"}
 
 </div>
 
@@ -6405,7 +6405,7 @@ prevent file deletion by non-owners.
 \
 
 ::: {style="text-align: center;"}
-![](image-5AS1F2J2.jpg){height="100%"}
+![](image-5AS1F2J2%201.jpg){height="100%"}
 :::
 
 There is a tool available in RHEL that proves to be very helpful in
@@ -6539,7 +6539,7 @@ Octal values are given in Table 4-1.
 \
 
 ::: {style="text-align: center;"}
-![](image-GNDDMZTD.jpg){height="100%"}
+![](image-GNDDMZTD%201.jpg){height="100%"}
 :::
 
 Table 4-1 Octal Permission Notation
@@ -6554,7 +6554,7 @@ Figure 4-1 shows weights associated with each digit position in the
 \
 
 ::: {style="text-align: center;"}
-![](image-OB461QQ8.jpg){height="100%"}
+![](image-OB461QQ8%201.jpg){height="100%"}
 :::
 
 Figure 4-1 Permission Weights
@@ -6588,7 +6588,7 @@ executing chmod 444 permfile1 prior to starting the exercise.
 
 <div>
 
-![](image-4VM5MRTR.jpg){height="100%"}
+![](image-4VM5MRTR%201.jpg){height="100%"}
 
 </div>
 
@@ -6608,7 +6608,7 @@ long listing after each command execution for verification.
 
 <div>
 
-![](image-U3PFQS1A.jpg){height="100%"}
+![](image-U3PFQS1A%201.jpg){height="100%"}
 
 </div>
 
@@ -6618,7 +6618,7 @@ long listing after each command execution for verification.
 
 <div>
 
-![](image-D3ST00WO.jpg){height="100%"}
+![](image-D3ST00WO%201.jpg){height="100%"}
 
 </div>
 
@@ -6628,7 +6628,7 @@ long listing after each command execution for verification.
 
 <div>
 
-![](image-MO6J3LHA.jpg){height="100%"}
+![](image-MO6J3LHA%201.jpg){height="100%"}
 
 </div>
 
@@ -6639,7 +6639,7 @@ categories:
 
 <div>
 
-![](image-RWFI1BJU.jpg){height="100%"}
+![](image-RWFI1BJU%201.jpg){height="100%"}
 
 </div>
 
@@ -6650,7 +6650,7 @@ from public:
 
 <div>
 
-![](image-YH0LN3ZE.jpg){height="100%"}
+![](image-YH0LN3ZE%201.jpg){height="100%"}
 
 </div>
 
@@ -6676,7 +6676,7 @@ chmod 444 permfile2 prior to starting the exercise.
 
 <div>
 
-![](image-CKNIBC96.jpg){height="100%"}
+![](image-CKNIBC96%201.jpg){height="100%"}
 
 </div>
 
@@ -6695,7 +6695,7 @@ listing after each command execution for verification.
 
 <div>
 
-![](image-6AYVCXAE.jpg){height="100%"}
+![](image-6AYVCXAE%201.jpg){height="100%"}
 
 </div>
 
@@ -6705,7 +6705,7 @@ listing after each command execution for verification.
 
 <div>
 
-![](image-ULO67WW3.jpg){height="100%"}
+![](image-ULO67WW3%201.jpg){height="100%"}
 
 </div>
 
@@ -6715,7 +6715,7 @@ listing after each command execution for verification.
 
 <div>
 
-![](image-HIROAEOW.jpg){height="100%"}
+![](image-HIROAEOW%201.jpg){height="100%"}
 
 </div>
 
@@ -6726,7 +6726,7 @@ categories:
 
 <div>
 
-![](image-VF9KNXH7.jpg){height="100%"}
+![](image-VF9KNXH7%201.jpg){height="100%"}
 
 </div>
 
@@ -6759,7 +6759,7 @@ display the current umask value in octal notation:
 
 <div>
 
-![](image-YU4SMQ5E.jpg){height="100%"}
+![](image-YU4SMQ5E%201.jpg){height="100%"}
 
 </div>
 
@@ -6770,7 +6770,7 @@ symbolic form:
 
 <div>
 
-![](image-J3BU1BL2.jpg){height="100%"}
+![](image-J3BU1BL2%201.jpg){height="100%"}
 
 </div>
 
@@ -6796,7 +6796,7 @@ values on files:
 
 <div>
 
-![](image-LJMOLT0U.jpg){height="100%"}
+![](image-LJMOLT0U%201.jpg){height="100%"}
 
 </div>
 
@@ -6812,7 +6812,7 @@ To calculate the default permission values on directories:
 
 <div>
 
-![](image-K1337OSM.jpg){height="100%"}
+![](image-K1337OSM%201.jpg){height="100%"}
 
 </div>
 
@@ -6832,7 +6832,7 @@ to 027 by running either of the following:
 
 <div>
 
-![](image-J3UDG7Y1.jpg){height="100%"}
+![](image-J3UDG7Y1%201.jpg){height="100%"}
 
 </div>
 
@@ -6845,7 +6845,7 @@ user1 under /home/user1 to test the effect of the new umask:
 
 <div>
 
-![](image-ABCHQBHQ.jpg){height="100%"}
+![](image-ABCHQBHQ%201.jpg){height="100%"}
 
 </div>
 
@@ -6913,7 +6913,7 @@ permission class below:
 
 <div>
 
-![](image-QX73HI69.jpg){height="100%"}
+![](image-QX73HI69%201.jpg){height="100%"}
 
 </div>
 
@@ -6954,7 +6954,7 @@ the following to switch into user1:
 
 <div>
 
-![](image-C0K3YX0W.jpg){height="100%"}
+![](image-C0K3YX0W%201.jpg){height="100%"}
 
 </div>
 
@@ -6964,7 +6964,7 @@ the following to switch into user1:
 
 <div>
 
-![](image-E4SO64XC.jpg){height="100%"}
+![](image-E4SO64XC%201.jpg){height="100%"}
 
 </div>
 
@@ -6978,7 +6978,7 @@ The output confirms the switch.
 
 <div>
 
-![](image-XQI52YDH.jpg){height="100%"}
+![](image-XQI52YDH%201.jpg){height="100%"}
 
 </div>
 
@@ -6996,7 +6996,7 @@ accounts, as they have lost that special elevated privilege.
 
 <div>
 
-![](image-HHF4OSV2.jpg){height="100%"}
+![](image-HHF4OSV2%201.jpg){height="100%"}
 
 </div>
 
@@ -7011,7 +7011,7 @@ the correct password.
 
 <div>
 
-![](image-SOIPED2M.jpg){height="100%"}
+![](image-SOIPED2M%201.jpg){height="100%"}
 
 </div>
 
@@ -7023,7 +7023,7 @@ Alternatively, you can use the symbolic notation as follows:
 
 <div>
 
-![](image-Z9J44HKZ.jpg){height="100%"}
+![](image-Z9J44HKZ%201.jpg){height="100%"}
 
 </div>
 
@@ -7057,13 +7057,13 @@ group. This command has the setgid bit enabled on it by default. See the
 
 <div>
 
-![](image-9ZIWIVI1.jpg){height="100%"}
+![](image-9ZIWIVI1%201.jpg){height="100%"}
 
 </div>
 
 <div>
 
-![](image-78DFVT8H.jpg){height="100%"}
+![](image-78DFVT8H%201.jpg){height="100%"}
 
 </div>
 
@@ -7110,7 +7110,7 @@ logged on:
 
 <div>
 
-![](image-MELJE5LX.jpg){height="100%"}
+![](image-MELJE5LX%201.jpg){height="100%"}
 
 </div>
 
@@ -7126,7 +7126,7 @@ message to root:
 
 <div>
 
-![](image-DUJJ6CIH.jpg){height="100%"}
+![](image-DUJJ6CIH%201.jpg){height="100%"}
 
 </div>
 
@@ -7136,7 +7136,7 @@ message to root:
 
 <div>
 
-![](image-MF8G8N3H.jpg){height="100%"}
+![](image-MF8G8N3H%201.jpg){height="100%"}
 
 </div>
 
@@ -7153,7 +7153,7 @@ on Terminal 2 to end the write session.
 
 <div>
 
-![](image-ZPBTA9RV.jpg){height="100%"}
+![](image-ZPBTA9RV%201.jpg){height="100%"}
 
 </div>
 
@@ -7169,7 +7169,7 @@ other users, as they have lost that special elevated privilege.
 
 <div>
 
-![](image-87MPG0R9.jpg){height="100%"}
+![](image-87MPG0R9%201.jpg){height="100%"}
 
 </div>
 
@@ -7183,7 +7183,7 @@ user1 gets an error as indicated in the above output.
 
 <div>
 
-![](image-5BPF8CFC.jpg){height="100%"}
+![](image-5BPF8CFC%201.jpg){height="100%"}
 
 </div>
 
@@ -7195,7 +7195,7 @@ Alternatively, you can use the symbolic form as follows:
 
 <div>
 
-![](image-5ZJMTCVN.jpg){height="100%"}
+![](image-5ZJMTCVN%201.jpg){height="100%"}
 
 </div>
 
@@ -7258,7 +7258,7 @@ Management" and Chapter 06 "Advanced User Management".
 
 <div>
 
-![](image-WO146GCR.jpg){height="100%"}
+![](image-WO146GCR%201.jpg){height="100%"}
 
 </div>
 
@@ -7269,7 +7269,7 @@ command:
 
 <div>
 
-![](image-Q9RQ45Q3.jpg){height="100%"}
+![](image-Q9RQ45Q3%201.jpg){height="100%"}
 
 </div>
 
@@ -7279,7 +7279,7 @@ command:
 
 <div>
 
-![](image-J381JYK8.jpg){height="100%"}
+![](image-J381JYK8%201.jpg){height="100%"}
 
 </div>
 
@@ -7290,7 +7290,7 @@ chown command:
 
 <div>
 
-![](image-CNLYPY61.jpg){height="100%"}
+![](image-CNLYPY61%201.jpg){height="100%"}
 
 </div>
 
@@ -7300,7 +7300,7 @@ chown command:
 
 <div>
 
-![](image-QP60YKVY.jpg){height="100%"}
+![](image-QP60YKVY%201.jpg){height="100%"}
 
 </div>
 
@@ -7311,7 +7311,7 @@ permissions from public:
 
 <div>
 
-![](image-X4GXOZJ5.jpg){height="100%"}
+![](image-X4GXOZJ5%201.jpg){height="100%"}
 
 </div>
 
@@ -7322,7 +7322,7 @@ command on /sdir:
 
 <div>
 
-![](image-UPLAT439.jpg){height="100%"}
+![](image-UPLAT439%201.jpg){height="100%"}
 
 </div>
 
@@ -7332,7 +7332,7 @@ command on /sdir:
 
 <div>
 
-![](image-5TO9AKS9.jpg){height="100%"}
+![](image-5TO9AKS9%201.jpg){height="100%"}
 
 </div>
 
@@ -7342,7 +7342,7 @@ command on /sdir:
 
 <div>
 
-![](image-E9K5IOUA.jpg){height="100%"}
+![](image-E9K5IOUA%201.jpg){height="100%"}
 
 </div>
 
@@ -7353,7 +7353,7 @@ the /sdir directory:
 
 <div>
 
-![](image-JPF5W0YO.jpg){height="100%"}
+![](image-JPF5W0YO%201.jpg){height="100%"}
 
 </div>
 
@@ -7363,7 +7363,7 @@ the /sdir directory:
 
 <div>
 
-![](image-COJMXNX1.jpg){height="100%"}
+![](image-COJMXNX1%201.jpg){height="100%"}
 
 </div>
 
@@ -7406,7 +7406,7 @@ can be applied to any writable directory:
 
 <div>
 
-![](image-GDP3WQ4B.jpg){height="100%"}
+![](image-GDP3WQ4B%201.jpg){height="100%"}
 
 </div>
 
@@ -7442,7 +7442,7 @@ groups, consult Chapter 05 "Basic User Management" and Chapter 06
 
 <div>
 
-![](image-UME67W2D.jpg){height="100%"}
+![](image-UME67W2D%201.jpg){height="100%"}
 
 </div>
 
@@ -7452,7 +7452,7 @@ groups, consult Chapter 05 "Basic User Management" and Chapter 06
 
 <div>
 
-![](image-RPX4A30T.jpg){height="100%"}
+![](image-RPX4A30T%201.jpg){height="100%"}
 
 </div>
 
@@ -7463,7 +7463,7 @@ groups, consult Chapter 05 "Basic User Management" and Chapter 06
 
 <div>
 
-![](image-663CNOJW.jpg){height="100%"}
+![](image-663CNOJW%201.jpg){height="100%"}
 
 </div>
 
@@ -7473,7 +7473,7 @@ groups, consult Chapter 05 "Basic User Management" and Chapter 06
 
 <div>
 
-![](image-UADMO0S8.jpg){height="100%"}
+![](image-UADMO0S8%201.jpg){height="100%"}
 
 </div>
 
@@ -7489,7 +7489,7 @@ confirm:
 
 <div>
 
-![](image-0Q7K0KTO.jpg){height="100%"}
+![](image-0Q7K0KTO%201.jpg){height="100%"}
 
 </div>
 
@@ -7499,7 +7499,7 @@ confirm:
 
 <div>
 
-![](image-R5D02U7W.jpg){height="100%"}
+![](image-R5D02U7W%201.jpg){height="100%"}
 
 </div>
 
@@ -7515,7 +7515,7 @@ user100, in a public writable directory, /tmp.
 
 <div>
 
-![](image-09FZUCZZ.jpg){height="100%"}
+![](image-09FZUCZZ%201.jpg){height="100%"}
 
 </div>
 
@@ -7528,7 +7528,7 @@ follows:
 
 <div>
 
-![](image-APN04HFX.jpg){height="100%"}
+![](image-APN04HFX%201.jpg){height="100%"}
 
 </div>
 
@@ -7582,7 +7582,7 @@ minutes, size, and file type. Figure 4-2 shows the command syntax.
 \
 
 ::: {style="text-align: center;"}
-![](image-0XQKWV1K.jpg){height="100%"}
+![](image-0XQKWV1K%201.jpg){height="100%"}
 :::
 
 Figure 4-2 find Command Syntax
@@ -7603,7 +7603,7 @@ directory, which is /root in this example.
 
 <div>
 
-![](image-1AB87PPU.jpg){height="100%"}
+![](image-1AB87PPU%201.jpg){height="100%"}
 
 </div>
 
@@ -7621,7 +7621,7 @@ in /dev that begin with the string "usb" followed by any characters:
 
 <div>
 
-![](image-SFGZWNPR.jpg){height="100%"}
+![](image-SFGZWNPR%201.jpg){height="100%"}
 
 </div>
 
@@ -7634,7 +7634,7 @@ tree.
 
 <div>
 
-![](image-X8W6K725.jpg){height="100%"}
+![](image-X8W6K725%201.jpg){height="100%"}
 
 </div>
 
@@ -7651,7 +7651,7 @@ directory:
 
 <div>
 
-![](image-ZSGHJTY9.jpg){height="100%"}
+![](image-ZSGHJTY9%201.jpg){height="100%"}
 
 </div>
 
@@ -7663,7 +7663,7 @@ set to user daemon and owning group (-group) set to any group other than
 
 <div>
 
-![](image-UG0DZ3VR.jpg){height="100%"}
+![](image-UG0DZ3VR%201.jpg){height="100%"}
 
 </div>
 
@@ -7674,7 +7674,7 @@ maximum of two subdirectory levels below (-maxdepth):
 
 <div>
 
-![](image-VQPI8PM0.jpg){height="100%"}
+![](image-VQPI8PM0%201.jpg){height="100%"}
 
 </div>
 
@@ -7690,7 +7690,7 @@ than (the + sign) 2000 days ago:
 
 <div>
 
-![](image-UQ3J024P.jpg){height="100%"}
+![](image-UQ3J024P%201.jpg){height="100%"}
 
 </div>
 
@@ -7706,7 +7706,7 @@ in the past (the - sign) 100 minutes:
 
 <div>
 
-![](image-EUFH0UP5.jpg){height="100%"}
+![](image-EUFH0UP5%201.jpg){height="100%"}
 
 </div>
 
@@ -7722,7 +7722,7 @@ permissions (-perm) set to exactly 660:
 
 <div>
 
-![](image-YBCRRUJS.jpg){height="100%"}
+![](image-YBCRRUJS%201.jpg){height="100%"}
 
 </div>
 
@@ -7734,7 +7734,7 @@ checking the write and execute permissions):
 
 <div>
 
-![](image-WFEWOCR7.jpg){height="100%"}
+![](image-WFEWOCR7%201.jpg){height="100%"}
 
 </div>
 
@@ -7745,7 +7745,7 @@ least their owner or group members:
 
 <div>
 
-![](image-2970SGDH.jpg){height="100%"}
+![](image-2970SGDH%201.jpg){height="100%"}
 
 </div>
 
@@ -7756,7 +7756,7 @@ set to read and write for the owner and owning group:
 
 <div>
 
-![](image-IKIM1TTX.jpg){height="100%"}
+![](image-IKIM1TTX%201.jpg){height="100%"}
 
 </div>
 
@@ -7808,7 +7808,7 @@ prompting for user confirmation (-exec):
 
 <div>
 
-![](image-5NUHXM0S.jpg){height="100%"}
+![](image-5NUHXM0S%201.jpg){height="100%"}
 
 </div>
 
@@ -7828,7 +7828,7 @@ confirmation (you need to enter a y) before it copies each matched file
 
 <div>
 
-![](image-OWQZAT42.jpg){height="100%"}
+![](image-OWQZAT42%201.jpg){height="100%"}
 
 </div>
 
@@ -8147,7 +8147,7 @@ from the system altogether if not required anymore.
 \
 
 ::: {style="text-align: center;"}
-![](image-MU2EFWWJ.jpg){height="100%"}
+![](image-MU2EFWWJ%201.jpg){height="100%"}
 :::
 
 Though service user accounts are added to the system when a
@@ -8207,7 +8207,7 @@ information. Here is a sample from server1:
 
 <div>
 
-![](image-HGQYUTVT.jpg){height="100%"}
+![](image-HGQYUTVT%201.jpg){height="100%"}
 
 </div>
 
@@ -8235,7 +8235,7 @@ also discussed in Chapter 02 "Initial Interaction with the System".
 
 <div>
 
-![](image-1O1MPOQG.jpg){height="100%"}
+![](image-1O1MPOQG%201.jpg){height="100%"}
 
 </div>
 
@@ -8268,7 +8268,7 @@ last command without any arguments:
 
 <div>
 
-![](image-FDTE1LO5.jpg){height="100%"}
+![](image-FDTE1LO5%201.jpg){height="100%"}
 
 </div>
 
@@ -8326,7 +8326,7 @@ specify reboot as an argument:
 
 <div>
 
-![](image-JE4QBL3J.jpg){height="100%"}
+![](image-JE4QBL3J%201.jpg){height="100%"}
 
 </div>
 
@@ -8357,7 +8357,7 @@ any arguments. You must be root in order to run this command.
 
 <div>
 
-![](image-KP2DXNYU.jpg){height="100%"}
+![](image-KP2DXNYU%201.jpg){height="100%"}
 
 </div>
 
@@ -8404,7 +8404,7 @@ the login name, time, and port (or tty). Consider the following example.
 
 <div>
 
-![](image-9KWOLBLG.jpg){height="100%"}
+![](image-9KWOLBLG%201.jpg){height="100%"}
 
 </div>
 
@@ -8412,7 +8412,7 @@ the login name, time, and port (or tty). Consider the following example.
 
 <div>
 
-![](image-7TI5W6WP.jpg){height="100%"}
+![](image-7TI5W6WP%201.jpg){height="100%"}
 
 </div>
 
@@ -8456,7 +8456,7 @@ option or argument:
 
 <div>
 
-![](image-GAHZ30B2.jpg){height="100%"}
+![](image-GAHZ30B2%201.jpg){height="100%"}
 
 </div>
 
@@ -8476,7 +8476,7 @@ the root user viewing another user's id:
 
 <div>
 
-![](image-SILBJXEG.jpg){height="100%"}
+![](image-SILBJXEG%201.jpg){height="100%"}
 
 </div>
 
@@ -8487,7 +8487,7 @@ member of:
 
 <div>
 
-![](image-HPBQSCQV.jpg){height="100%"}
+![](image-HPBQSCQV%201.jpg){height="100%"}
 
 </div>
 
@@ -8536,7 +8536,7 @@ directory:
 
 <div>
 
-![](image-A4Z5S61Y.jpg){height="100%"}
+![](image-A4Z5S61Y%201.jpg){height="100%"}
 
 </div>
 
@@ -8562,7 +8562,7 @@ the file is displayed in Figure 5-1.
 \
 
 ::: {style="text-align: center;"}
-![](image-GHNAJE2S.jpg){height="100%"}
+![](image-GHNAJE2S%201.jpg){height="100%"}
 :::
 
 Figure 5-1 The passwd File
@@ -8635,7 +8635,7 @@ is shown below:
 
 <div>
 
-![](image-V9XGPG6E.jpg){height="100%"}
+![](image-V9XGPG6E%201.jpg){height="100%"}
 
 </div>
 
@@ -8651,7 +8651,7 @@ Let's verify the permissions and ownership on the passwd file:
 
 <div>
 
-![](image-68DXSWIU.jpg){height="100%"}
+![](image-68DXSWIU%201.jpg){height="100%"}
 
 </div>
 
@@ -8695,7 +8695,7 @@ from this file is showcased in Figure 5-2.
 \
 
 ::: {style="text-align: center;"}
-![](image-9OZF1NYR.jpg){height="100%"}
+![](image-9OZF1NYR%201.jpg){height="100%"}
 :::
 
 Figure 5-2 The shadow File
@@ -8761,7 +8761,7 @@ is shown below:
 
 <div>
 
-![](image-M3491OWY.jpg){height="100%"}
+![](image-M3491OWY%201.jpg){height="100%"}
 
 </div>
 
@@ -8779,7 +8779,7 @@ Let's verify the permissions and ownership on the shadow file:
 
 <div>
 
-![](image-C1CNVHT9.jpg){height="100%"}
+![](image-C1CNVHT9%201.jpg){height="100%"}
 
 </div>
 
@@ -8810,7 +8810,7 @@ sample row from the file is exhibited in Figure 5-3.
 \
 
 ::: {style="text-align: center;"}
-![](image-SOA84JMN.jpg){height="100%"}
+![](image-SOA84JMN%201.jpg){height="100%"}
 :::
 
 Figure 5-3 The group File
@@ -8852,7 +8852,7 @@ is shown below:
 
 <div>
 
-![](image-8WT79POA.jpg){height="100%"}
+![](image-8WT79POA%201.jpg){height="100%"}
 
 </div>
 
@@ -8868,7 +8868,7 @@ Let's verify the permissions and ownership on the group file:
 
 <div>
 
-![](image-NB3LUOLI.jpg){height="100%"}
+![](image-NB3LUOLI%201.jpg){height="100%"}
 
 </div>
 
@@ -8901,7 +8901,7 @@ exhibited in Figure 5-4.
 \
 
 ::: {style="text-align: center;"}
-![](image-SC1V0Y14.jpg){height="100%"}
+![](image-SC1V0Y14%201.jpg){height="100%"}
 :::
 
 Figure 5-4 The gshadow File
@@ -8944,7 +8944,7 @@ is shown below:
 
 <div>
 
-![](image-D45PVK6Q.jpg){height="100%"}
+![](image-D45PVK6Q%201.jpg){height="100%"}
 
 </div>
 
@@ -8962,7 +8962,7 @@ Let's verify the permissions and ownership on the gshadow file:
 
 <div>
 
-![](image-516R0JR4.jpg){height="100%"}
+![](image-516R0JR4%201.jpg){height="100%"}
 
 </div>
 
@@ -8995,7 +8995,7 @@ the useradd command as follows:
 
 <div>
 
-![](image-EPNL0W66.jpg){height="100%"}
+![](image-EPNL0W66%201.jpg){height="100%"}
 
 </div>
 
@@ -9020,7 +9020,7 @@ on the file with uncommented and non-empty lines is shown below:
 
 <div>
 
-![](image-0XMDFW99.jpg){height="100%"}
+![](image-0XMDFW99%201.jpg){height="100%"}
 
 </div>
 
@@ -9271,7 +9271,7 @@ authentication files.
 
 <div>
 
-![](image-4WA63694.jpg){height="100%"}
+![](image-4WA63694%201.jpg){height="100%"}
 
 </div>
 
@@ -9281,7 +9281,7 @@ authentication files.
 
 <div>
 
-![](image-ZT4MTK7E.jpg){height="100%"}
+![](image-ZT4MTK7E%201.jpg){height="100%"}
 
 </div>
 
@@ -9292,7 +9292,7 @@ useradd command has added:
 
 <div>
 
-![](image-WRP7F67U.jpg){height="100%"}
+![](image-WRP7F67U%201.jpg){height="100%"}
 
 </div>
 
@@ -9310,7 +9310,7 @@ information:
 
 <div>
 
-![](image-5F827BSA.jpg){height="100%"}
+![](image-5F827BSA%201.jpg){height="100%"}
 
 </div>
 
@@ -9344,7 +9344,7 @@ and shell /bin/sh (-s):
 
 <div>
 
-![](image-T1S1QLMJ.jpg){height="100%"}
+![](image-T1S1QLMJ%201.jpg){height="100%"}
 
 </div>
 
@@ -9355,7 +9355,7 @@ is not recommended; however, it is okay in a lab environment):
 
 <div>
 
-![](image-169L50ZY.jpg){height="100%"}
+![](image-169L50ZY%201.jpg){height="100%"}
 
 </div>
 
@@ -9366,7 +9366,7 @@ added for this user:
 
 <div>
 
-![](image-WNLRKEKA.jpg){height="100%"}
+![](image-WNLRKEKA%201.jpg){height="100%"}
 
 </div>
 
@@ -9404,7 +9404,7 @@ sequence.
 
 <div>
 
-![](image-YKO6ZTZC.jpg){height="100%"}
+![](image-YKO6ZTZC%201.jpg){height="100%"}
 
 </div>
 
@@ -9415,7 +9415,7 @@ confirmation:
 
 <div>
 
-![](image-58AC3E3X.jpg){height="100%"}
+![](image-58AC3E3X%201.jpg){height="100%"}
 
 </div>
 
@@ -9426,7 +9426,7 @@ confirmation:
 
 <div>
 
-![](image-87BQNHPH.jpg){height="100%"}
+![](image-87BQNHPH%201.jpg){height="100%"}
 
 </div>
 
@@ -9436,7 +9436,7 @@ confirmation:
 
 <div>
 
-![](image-RKHYG0YK.jpg){height="100%"}
+![](image-RKHYG0YK%201.jpg){height="100%"}
 
 </div>
 
@@ -9487,7 +9487,7 @@ the passwd file and list such users:
 
 <div>
 
-![](image-MPEAZYWM.jpg){height="100%"}
+![](image-MPEAZYWM%201.jpg){height="100%"}
 
 </div>
 
@@ -9521,7 +9521,7 @@ new line entry from the passwd file and test the account.
 
 <div>
 
-![](image-H6Q6CNK5.jpg){height="100%"}
+![](image-H6Q6CNK5%201.jpg){height="100%"}
 
 </div>
 
@@ -9531,7 +9531,7 @@ new line entry from the passwd file and test the account.
 
 <div>
 
-![](image-HCH7YTI9.jpg){height="100%"}
+![](image-HCH7YTI9%201.jpg){height="100%"}
 
 </div>
 
@@ -9542,7 +9542,7 @@ containing the nologin shell:
 
 <div>
 
-![](image-MBLAIBKB.jpg){height="100%"}
+![](image-MBLAIBKB%201.jpg){height="100%"}
 
 </div>
 
@@ -9552,7 +9552,7 @@ containing the nologin shell:
 
 <div>
 
-![](image-DG1UEWSN.jpg){height="100%"}
+![](image-DG1UEWSN%201.jpg){height="100%"}
 
 </div>
 
@@ -9877,7 +9877,7 @@ examined in the previous chapter as well.
 \
 
 ::: {style="text-align: center;"}
-![](image-6TLJEZFQ.jpg){height="100%"}
+![](image-6TLJEZFQ%201.jpg){height="100%"}
 :::
 
 Users may switch into other user accounts, including the root user,
@@ -10029,7 +10029,7 @@ the exercise with another confirmation.
 
 <div>
 
-![](image-L64NDIOP.jpg){height="100%"}
+![](image-L64NDIOP%201.jpg){height="100%"}
 
 </div>
 
@@ -10039,7 +10039,7 @@ the exercise with another confirmation.
 
 <div>
 
-![](image-UF9216RK.jpg){height="100%"}
+![](image-UF9216RK%201.jpg){height="100%"}
 
 </div>
 
@@ -10055,7 +10055,7 @@ from January 29, 2023 when this command was executed.
 
 <div>
 
-![](image-J549MFAK.jpg){height="100%"}
+![](image-J549MFAK%201.jpg){height="100%"}
 
 </div>
 
@@ -10065,7 +10065,7 @@ from January 29, 2023 when this command was executed.
 
 <div>
 
-![](image-B9W55BEK.jpg){height="100%"}
+![](image-B9W55BEK%201.jpg){height="100%"}
 
 </div>
 
@@ -10171,7 +10171,7 @@ maxdays (-x) 90, and warndays (-w) 14:
 
 <div>
 
-![](image-5KC7T1K6.jpg){height="100%"}
+![](image-5KC7T1K6%201.jpg){height="100%"}
 
 </div>
 
@@ -10181,7 +10181,7 @@ maxdays (-x) 90, and warndays (-w) 14:
 
 <div>
 
-![](image-LZKYAFJS.jpg){height="100%"}
+![](image-LZKYAFJS%201.jpg){height="100%"}
 
 </div>
 
@@ -10195,7 +10195,7 @@ The output confirms the three new settings (10, 90, and 14).
 
 <div>
 
-![](image-2T17OBKE.jpg){height="100%"}
+![](image-2T17OBKE%201.jpg){height="100%"}
 
 </div>
 
@@ -10205,7 +10205,7 @@ The output confirms the three new settings (10, 90, and 14).
 
 <div>
 
-![](image-0NQ9KU3J.jpg){height="100%"}
+![](image-0NQ9KU3J%201.jpg){height="100%"}
 
 </div>
 
@@ -10220,7 +10220,7 @@ login:
 
 <div>
 
-![](image-NP96ZW94.jpg){height="100%"}
+![](image-NP96ZW94%201.jpg){height="100%"}
 
 </div>
 
@@ -10230,7 +10230,7 @@ login:
 
 <div>
 
-![](image-Y6779TNV.jpg){height="100%"}
+![](image-Y6779TNV%201.jpg){height="100%"}
 
 </div>
 
@@ -10304,7 +10304,7 @@ file:
 
 <div>
 
-![](image-CJ0NB6US.jpg){height="100%"}
+![](image-CJ0NB6US%201.jpg){height="100%"}
 
 </div>
 
@@ -10320,7 +10320,7 @@ the account is currently not locked.
 
 <div>
 
-![](image-VPDT4JEF.jpg){height="100%"}
+![](image-VPDT4JEF%201.jpg){height="100%"}
 
 </div>
 
@@ -10330,7 +10330,7 @@ the account is currently not locked.
 
 <div>
 
-![](image-4MH6J3BG.jpg){height="100%"}
+![](image-4MH6J3BG%201.jpg){height="100%"}
 
 </div>
 
@@ -10345,7 +10345,7 @@ password, which indicates a locked account.
 
 <div>
 
-![](image-98LS1470.jpg){height="100%"}
+![](image-98LS1470%201.jpg){height="100%"}
 
 </div>
 
@@ -10468,7 +10468,7 @@ a secondary member to group dba.
 
 <div>
 
-![](image-EK83P8T1.jpg){height="100%"}
+![](image-EK83P8T1%201.jpg){height="100%"}
 
 </div>
 
@@ -10479,7 +10479,7 @@ linuxadm:
 
 <div>
 
-![](image-3ABZFNJO.jpg){height="100%"}
+![](image-3ABZFNJO%201.jpg){height="100%"}
 
 </div>
 
@@ -10489,7 +10489,7 @@ linuxadm:
 
 <div>
 
-![](image-NVG6IT5W.jpg){height="100%"}
+![](image-NVG6IT5W%201.jpg){height="100%"}
 
 </div>
 
@@ -10504,7 +10504,7 @@ command. The existing membership for the user must remain intact.
 
 <div>
 
-![](image-FQA7TJPF.jpg){height="100%"}
+![](image-FQA7TJPF%201.jpg){height="100%"}
 
 </div>
 
@@ -10516,7 +10516,7 @@ and groups command for user1:
 
 <div>
 
-![](image-YL0O61MT.jpg){height="100%"}
+![](image-YL0O61MT%201.jpg){height="100%"}
 
 </div>
 
@@ -10548,7 +10548,7 @@ member. You will remove the sysadm group and verify.
 
 <div>
 
-![](image-WOL7VX6L.jpg){height="100%"}
+![](image-WOL7VX6L%201.jpg){height="100%"}
 
 </div>
 
@@ -10558,7 +10558,7 @@ member. You will remove the sysadm group and verify.
 
 <div>
 
-![](image-69RMTR9B.jpg){height="100%"}
+![](image-69RMTR9B%201.jpg){height="100%"}
 
 </div>
 
@@ -10568,7 +10568,7 @@ member. You will remove the sysadm group and verify.
 
 <div>
 
-![](image-JQY3PU6R.jpg){height="100%"}
+![](image-JQY3PU6R%201.jpg){height="100%"}
 
 </div>
 
@@ -10578,7 +10578,7 @@ member. You will remove the sysadm group and verify.
 
 <div>
 
-![](image-9D5J49CZ.jpg){height="100%"}
+![](image-9D5J49CZ%201.jpg){height="100%"}
 
 </div>
 
@@ -10595,7 +10595,7 @@ returned nothing for it.
 
 <div>
 
-![](image-AM54G831.jpg){height="100%"}
+![](image-AM54G831%201.jpg){height="100%"}
 
 </div>
 
@@ -10647,7 +10647,7 @@ the root user password when prompted:
 
 <div>
 
-![](image-UTF9MKID.jpg){height="100%"}
+![](image-UTF9MKID%201.jpg){height="100%"}
 
 </div>
 
@@ -10660,7 +10660,7 @@ environment similar to that of a real login:
 
 <div>
 
-![](image-8P7PZ8GR.jpg){height="100%"}
+![](image-8P7PZ8GR%201.jpg){height="100%"}
 
 </div>
 
@@ -10672,7 +10672,7 @@ the target user when prompted.
 
 <div>
 
-![](image-KDULSR0D.jpg){height="100%"}
+![](image-KDULSR0D%201.jpg){height="100%"}
 
 </div>
 
@@ -10685,7 +10685,7 @@ Let's see what they report after switching into user100:
 
 <div>
 
-![](image-NQLBEFMU.jpg){height="100%"}
+![](image-NQLBEFMU%201.jpg){height="100%"}
 
 </div>
 
@@ -10705,7 +10705,7 @@ results:
 
 <div>
 
-![](image-Z8FQI6D8.jpg){height="100%"}
+![](image-Z8FQI6D8%201.jpg){height="100%"}
 
 </div>
 
@@ -10799,7 +10799,7 @@ instance:
 
 <div>
 
-![](image-0YWP6JCH.jpg){height="100%"}
+![](image-0YWP6JCH%201.jpg){height="100%"}
 
 </div>
 
@@ -10924,7 +10924,7 @@ the file's long listing:
 
 <div>
 
-![](image-OMQMO2GZ.jpg){height="100%"}
+![](image-OMQMO2GZ%201.jpg){height="100%"}
 
 </div>
 
@@ -10936,7 +10936,7 @@ you can specify the -n option with the command:
 
 <div>
 
-![](image-BFQWNC1V.jpg){height="100%"}
+![](image-BFQWNC1V%201.jpg){height="100%"}
 
 </div>
 
@@ -10974,7 +10974,7 @@ necessary.
 
 <div>
 
-![](image-D7YT61QY.jpg){height="100%"}
+![](image-D7YT61QY%201.jpg){height="100%"}
 
 </div>
 
@@ -10984,7 +10984,7 @@ necessary.
 
 <div>
 
-![](image-WSGPH1TS.jpg){height="100%"}
+![](image-WSGPH1TS%201.jpg){height="100%"}
 
 </div>
 
@@ -10994,7 +10994,7 @@ necessary.
 
 <div>
 
-![](image-NCGYFBYV.jpg){height="100%"}
+![](image-NCGYFBYV%201.jpg){height="100%"}
 
 </div>
 
@@ -11004,7 +11004,7 @@ necessary.
 
 <div>
 
-![](image-RVKU8H6A.jpg){height="100%"}
+![](image-RVKU8H6A%201.jpg){height="100%"}
 
 </div>
 
@@ -11015,7 +11015,7 @@ confirm:
 
 <div>
 
-![](image-LGXEJQYG.jpg){height="100%"}
+![](image-LGXEJQYG%201.jpg){height="100%"}
 
 </div>
 
@@ -11026,7 +11026,7 @@ on dir10 and validate:
 
 <div>
 
-![](image-77LMTNLZ.jpg){height="100%"}
+![](image-77LMTNLZ%201.jpg){height="100%"}
 
 </div>
 
@@ -11362,7 +11362,7 @@ as a literal character, and so on.
 \
 
 ::: {style="text-align: center;"}
-![](image-2K3HBJX1.jpg){height="100%"}
+![](image-2K3HBJX1%201.jpg){height="100%"}
 :::
 
 Regular expressions are text patterns for matching against an input
@@ -11525,7 +11525,7 @@ command and ensure to prepend the variable name (PATH) with the \$ sign:
 
 <div>
 
-![](image-5GS9TC6O.jpg){height="100%"}
+![](image-5GS9TC6O%201.jpg){height="100%"}
 
 </div>
 
@@ -11559,7 +11559,7 @@ To define a local variable called VR1:
 
 <div>
 
-![](image-WPDFW9GI.jpg){height="100%"}
+![](image-WPDFW9GI%201.jpg){height="100%"}
 
 </div>
 
@@ -11569,7 +11569,7 @@ To view the value stored in VR1:
 
 <div>
 
-![](image-9WQZ779H.jpg){height="100%"}
+![](image-9WQZ779H%201.jpg){height="100%"}
 
 </div>
 
@@ -11586,7 +11586,7 @@ To make this variable an environment variable, use the export command:
 
 <div>
 
-![](image-BT1FTJSE.jpg){height="100%"}
+![](image-BT1FTJSE%201.jpg){height="100%"}
 
 </div>
 
@@ -11603,7 +11603,7 @@ To undefine this variable and erase it from the shell environment:
 
 <div>
 
-![](image-AEZCZDUJ.jpg){height="100%"}
+![](image-AEZCZDUJ%201.jpg){height="100%"}
 
 </div>
 
@@ -11614,7 +11614,7 @@ spaces:
 
 <div>
 
-![](image-0FK5RU91.jpg){height="100%"}
+![](image-0FK5RU91%201.jpg){height="100%"}
 
 </div>
 
@@ -11625,7 +11625,7 @@ time:
 
 <div>
 
-![](image-Q8O0VWMS.jpg){height="100%"}
+![](image-Q8O0VWMS%201.jpg){height="100%"}
 
 </div>
 
@@ -11707,7 +11707,7 @@ information:
 
 <div>
 
-![](image-7OGEOS7L.jpg){height="100%"}
+![](image-7OGEOS7L%201.jpg){height="100%"}
 
 </div>
 
@@ -11783,7 +11783,7 @@ display its content on the standard output (terminal screen):
 
 <div>
 
-![](image-EK3MAMAX.jpg){height="100%"}
+![](image-EK3MAMAX%201.jpg){height="100%"}
 
 </div>
 
@@ -11802,7 +11802,7 @@ otherwise, a new file will be created.
 
 <div>
 
-![](image-OK6JB8LG.jpg){height="100%"}
+![](image-OK6JB8LG%201.jpg){height="100%"}
 
 </div>
 
@@ -11819,7 +11819,7 @@ confirm its activation by re-issuing the above redirection example:
 
 <div>
 
-![](image-69YI6NBX.jpg){height="100%"}
+![](image-69YI6NBX%201.jpg){height="100%"}
 
 </div>
 
@@ -11839,7 +11839,7 @@ of overwriting it, use the two closing angle brackets (\>\>):
 
 <div>
 
-![](image-HVJTY278.jpg){height="100%"}
+![](image-HVJTY278%201.jpg){height="100%"}
 
 </div>
 
@@ -11862,7 +11862,7 @@ exhibited on the screen and errors are thrown away.
 
 <div>
 
-![](image-CSKLLD4A.jpg){height="100%"}
+![](image-CSKLLD4A%201.jpg){height="100%"}
 
 </div>
 
@@ -11878,7 +11878,7 @@ outerr.out:
 
 <div>
 
-![](image-S964X4SR.jpg){height="100%"}
+![](image-S964X4SR%201.jpg){height="100%"}
 
 </div>
 
@@ -11934,7 +11934,7 @@ echo command. The following shows the settings for user1:
 
 <div>
 
-![](image-ZCW97PGT.jpg){height="100%"}
+![](image-ZCW97PGT%201.jpg){height="100%"}
 
 </div>
 
@@ -11955,7 +11955,7 @@ everything on the screen:
 
 <div>
 
-![](image-NRYZJRO3.jpg){height="100%"}
+![](image-NRYZJRO3%201.jpg){height="100%"}
 
 </div>
 
@@ -11970,7 +11970,7 @@ To display this command and the ten preceding entries:
 
 <div>
 
-![](image-3KBPB5XG.jpg){height="100%"}
+![](image-3KBPB5XG%201.jpg){height="100%"}
 
 </div>
 
@@ -11980,7 +11980,7 @@ To re-execute a command by its line number (line 15 for example):
 
 <div>
 
-![](image-2JUC75PN.jpg){height="100%"}
+![](image-2JUC75PN%201.jpg){height="100%"}
 
 </div>
 
@@ -11991,7 +11991,7 @@ a particular letter or series of letters (ch for example):
 
 <div>
 
-![](image-02DCY2V0.jpg){height="100%"}
+![](image-02DCY2V0%201.jpg){height="100%"}
 
 </div>
 
@@ -12001,7 +12001,7 @@ To issue the most recent command that contained "grep":
 
 <div>
 
-![](image-3UIHU0VP.jpg){height="100%"}
+![](image-3UIHU0VP%201.jpg){height="100%"}
 
 </div>
 
@@ -12011,7 +12011,7 @@ To remove entry 24 from history:
 
 <div>
 
-![](image-L6LOII03.jpg){height="100%"}
+![](image-L6LOII03%201.jpg){height="100%"}
 
 </div>
 
@@ -12021,7 +12021,7 @@ To repeat the last command executed:
 
 <div>
 
-![](image-6ZQ8SXMQ.jpg){height="100%"}
+![](image-6ZQ8SXMQ%201.jpg){height="100%"}
 
 </div>
 
@@ -12143,7 +12143,7 @@ displays the \$HOME directory of user1:
 
 <div>
 
-![](image-7UWB1S17.jpg){height="100%"}
+![](image-7UWB1S17%201.jpg){height="100%"}
 
 </div>
 
@@ -12155,7 +12155,7 @@ directory. For example, if user1 is in the /usr/bin directory and does
 
 <div>
 
-![](image-9NMAPSC0.jpg){height="100%"}
+![](image-9NMAPSC0%201.jpg){height="100%"}
 
 </div>
 
@@ -12168,7 +12168,7 @@ the user's last working directory:
 
 <div>
 
-![](image-GY13GV9O.jpg){height="100%"}
+![](image-GY13GV9O%201.jpg){height="100%"}
 
 </div>
 
@@ -12179,7 +12179,7 @@ directory of that user:
 
 <div>
 
-![](image-G7UFKIUF.jpg){height="100%"}
+![](image-G7UFKIUF%201.jpg){height="100%"}
 
 </div>
 
@@ -12192,7 +12192,7 @@ name with the \~:
 
 <div>
 
-![](image-Q5FWRT44.jpg){height="100%"}
+![](image-Q5FWRT44%201.jpg){height="100%"}
 
 </div>
 
@@ -12204,7 +12204,7 @@ as the root user:
 
 <div>
 
-![](image-PPS5MWSH.jpg){height="100%"}
+![](image-PPS5MWSH%201.jpg){height="100%"}
 
 </div>
 
@@ -12223,7 +12223,7 @@ test):
 
 <div>
 
-![](image-8THMO19P.jpg){height="100%"}
+![](image-8THMO19P%201.jpg){height="100%"}
 
 </div>
 
@@ -12255,7 +12255,7 @@ following shows all the aliases that are currently set for user1:
 
 <div>
 
-![](image-3T256Z47.jpg){height="100%"}
+![](image-3T256Z47%201.jpg){height="100%"}
 
 </div>
 
@@ -12266,7 +12266,7 @@ alias as root:
 
 <div>
 
-![](image-B6OF4RJE.jpg){height="100%"}
+![](image-B6OF4RJE%201.jpg){height="100%"}
 
 </div>
 
@@ -12317,7 +12317,7 @@ leave any spaces before and after the equal sign (=).
 
 <div>
 
-![](image-4WR8W83A.jpg){height="100%"}
+![](image-4WR8W83A%201.jpg){height="100%"}
 
 </div>
 
@@ -12341,7 +12341,7 @@ shown below:
 
 <div>
 
-![](image-LI5IDFOB.jpg){height="100%"}
+![](image-LI5IDFOB%201.jpg){height="100%"}
 
 </div>
 
@@ -12353,7 +12353,7 @@ command instead, run it by preceding a backslash (\\) with it:
 
 <div>
 
-![](image-8U2YK2N3.jpg){height="100%"}
+![](image-8U2YK2N3%201.jpg){height="100%"}
 
 </div>
 
@@ -12365,7 +12365,7 @@ aliases that were defined for our examples:
 
 <div>
 
-![](image-XWV4OMK3.jpg){height="100%"}
+![](image-XWV4OMK3%201.jpg){height="100%"}
 
 </div>
 
@@ -12405,7 +12405,7 @@ followed by any characters:
 
 <div>
 
-![](image-7LPDVJU5.jpg){height="100%"}
+![](image-7LPDVJU5%201.jpg){height="100%"}
 
 </div>
 
@@ -12415,7 +12415,7 @@ To list all hidden files and directories in /home/user1:
 
 <div>
 
-![](image-EH3IVN5U.jpg){height="100%"}
+![](image-EH3IVN5U%201.jpg){height="100%"}
 
 </div>
 
@@ -12425,7 +12425,7 @@ To list all files in the /var/log directory that end in ".log":
 
 <div>
 
-![](image-3OTPZU65.jpg){height="100%"}
+![](image-3OTPZU65%201.jpg){height="100%"}
 
 </div>
 
@@ -12449,7 +12449,7 @@ characters in their names:
 
 <div>
 
-![](image-57GHFDSP.jpg){height="100%"}
+![](image-57GHFDSP%201.jpg){height="100%"}
 
 </div>
 
@@ -12476,7 +12476,7 @@ characters.
 
 <div>
 
-![](image-QYKB8Q0A.jpg){height="100%"}
+![](image-QYKB8Q0A%201.jpg){height="100%"}
 
 </div>
 
@@ -12489,7 +12489,7 @@ that begin with any letter between "m" and "o" in the
 
 <div>
 
-![](image-2IEV1IYG.jpg){height="100%"}
+![](image-2IEV1IYG%201.jpg){height="100%"}
 
 </div>
 
@@ -12502,7 +12502,7 @@ of what the previous example did:
 
 <div>
 
-![](image-830BNNQZ.jpg){height="100%"}
+![](image-830BNNQZ%201.jpg){height="100%"}
 
 </div>
 
@@ -12534,7 +12534,7 @@ view the directory listing one screenful at a time:
 
 <div>
 
-![](image-D2C20HIJ.jpg){height="100%"}
+![](image-D2C20HIJ%201.jpg){height="100%"}
 
 </div>
 
@@ -12545,7 +12545,7 @@ the nl command to number each output line:
 
 <div>
 
-![](image-JYEYMUD9.jpg){height="100%"}
+![](image-JYEYMUD9%201.jpg){height="100%"}
 
 </div>
 
@@ -12565,7 +12565,7 @@ four lines on the display.
 
 <div>
 
-![](image-CSXAKP5Z.jpg){height="100%"}
+![](image-CSXAKP5Z%201.jpg){height="100%"}
 
 </div>
 
@@ -12604,7 +12604,7 @@ wildcard character.
 
 <div>
 
-![](image-3JAUF7Y9.jpg){height="100%"}
+![](image-3JAUF7Y9%201.jpg){height="100%"}
 
 </div>
 
@@ -12623,7 +12623,7 @@ variable, and its value can be viewed with the echo command:
 
 <div>
 
-![](image-7KSYB8AX.jpg){height="100%"}
+![](image-7KSYB8AX%201.jpg){height="100%"}
 
 </div>
 
@@ -12634,7 +12634,7 @@ exhibit the entire string as is:
 
 <div>
 
-![](image-KS93V35S.jpg){height="100%"}
+![](image-KS93V35S%201.jpg){height="100%"}
 
 </div>
 
@@ -12656,7 +12656,7 @@ understand its usage.
 
 <div>
 
-![](image-X7PFNPD6.jpg){height="100%"}
+![](image-X7PFNPD6%201.jpg){height="100%"}
 
 </div>
 
@@ -12720,7 +12720,7 @@ To search for the pattern "operator" in the /etc/passwd file:
 
 <div>
 
-![](image-IE9HSIXA.jpg){height="100%"}
+![](image-IE9HSIXA%201.jpg){height="100%"}
 
 </div>
 
@@ -12731,7 +12731,7 @@ To search for the space-separated pattern "aliases and functions" in the
 
 <div>
 
-![](image-89EF7JW6.jpg){height="100%"}
+![](image-89EF7JW6%201.jpg){height="100%"}
 
 </div>
 
@@ -12743,7 +12743,7 @@ show the line numbers associated with the matched lines.
 
 <div>
 
-![](image-61ZRASOW.jpg){height="100%"}
+![](image-61ZRASOW%201.jpg){height="100%"}
 
 </div>
 
@@ -12755,7 +12755,7 @@ of a line.
 
 <div>
 
-![](image-D43UXGPI.jpg){height="100%"}
+![](image-D43UXGPI%201.jpg){height="100%"}
 
 </div>
 
@@ -12767,7 +12767,7 @@ line.
 
 <div>
 
-![](image-Q8HN7IKE.jpg){height="100%"}
+![](image-Q8HN7IKE%201.jpg){height="100%"}
 
 </div>
 
@@ -12777,7 +12777,7 @@ To show the entire login.defs file but exclude all the empty lines:
 
 <div>
 
-![](image-0PVWFTJ7.jpg){height="100%"}
+![](image-0PVWFTJ7%201.jpg){height="100%"}
 
 </div>
 
@@ -12788,7 +12788,7 @@ To perform a case-insensitive search (-i) for all the lines in the
 
 <div>
 
-![](image-HN9UC2YR.jpg){height="100%"}
+![](image-HN9UC2YR%201.jpg){height="100%"}
 
 </div>
 
@@ -12802,7 +12802,7 @@ by exactly two characters:
 
 <div>
 
-![](image-ZDZ90S3C.jpg){height="100%"}
+![](image-ZDZ90S3C%201.jpg){height="100%"}
 
 </div>
 
@@ -12825,7 +12825,7 @@ the /etc directory listing:
 
 <div>
 
-![](image-XVP75PQA.jpg){height="100%"}
+![](image-XVP75PQA%201.jpg){height="100%"}
 
 </div>
 
@@ -12839,7 +12839,7 @@ example.
 
 <div>
 
-![](image-JKKKW4GX.jpg){height="100%"}
+![](image-JKKKW4GX%201.jpg){height="100%"}
 
 </div>
 
@@ -12936,7 +12936,7 @@ profile.d directory are displayed below:
 
 <div>
 
-![](image-NRO2CSNF.jpg){height="100%"}
+![](image-NRO2CSNF%201.jpg){height="100%"}
 
 </div>
 
@@ -13004,7 +13004,7 @@ Excerpts from the .bashrc and .bash_profile files are exhibited below:
 
 <div>
 
-![](image-I4JTBKFM.jpg){height="100%"}
+![](image-I4JTBKFM%201.jpg){height="100%"}
 
 </div>
 
@@ -13302,7 +13302,7 @@ well.
 \
 
 ::: {style="text-align: center;"}
-![](image-7CRO31UX.jpg){height="100%"}
+![](image-7CRO31UX%201.jpg){height="100%"}
 :::
 
 RHEL provides a powerful tool for the installation and administration of
@@ -13645,7 +13645,7 @@ is attached to RHEL9-VM1 as depicted below:
 \
 
 ::: {style="text-align: center;"}
-![](image-3IUDQLIY.jpg){height="100%"}
+![](image-3IUDQLIY%201.jpg){height="100%"}
 :::
 
 2\. Open the /etc/fstab file in the vim editor (or another editor of
@@ -13657,7 +13657,7 @@ directory.
 
 <div>
 
-![](image-GKVBSV1F.jpg){height="100%"}
+![](image-GKVBSV1F%201.jpg){height="100%"}
 
 </div>
 
@@ -13675,7 +13675,7 @@ the standard format for optical file systems.
 
 <div>
 
-![](image-WN2O9LX7.jpg){height="100%"}
+![](image-WN2O9LX7%201.jpg){height="100%"}
 
 </div>
 
@@ -13692,7 +13692,7 @@ mount point concepts.
 
 <div>
 
-![](image-XCXMURUM.jpg){height="100%"}
+![](image-XCXMURUM%201.jpg){height="100%"}
 
 </div>
 
@@ -13709,7 +13709,7 @@ directory just like any other local directory on the system.
 
 <div>
 
-![](image-N9EJWUVQ.jpg){height="100%"}
+![](image-N9EJWUVQ%201.jpg){height="100%"}
 
 </div>
 
@@ -13740,7 +13740,7 @@ To query all installed packages:
 
 <div>
 
-![](image-KVRH8WB8.jpg){height="100%"}
+![](image-KVRH8WB8%201.jpg){height="100%"}
 
 </div>
 
@@ -13750,7 +13750,7 @@ To query whether the specified package is installed:
 
 <div>
 
-![](image-7LJUV3DF.jpg){height="100%"}
+![](image-7LJUV3DF%201.jpg){height="100%"}
 
 </div>
 
@@ -13760,7 +13760,7 @@ To list all files in a package:
 
 <div>
 
-![](image-OI67ZMJO.jpg){height="100%"}
+![](image-OI67ZMJO%201.jpg){height="100%"}
 
 </div>
 
@@ -13770,7 +13770,7 @@ To list only the documentation files in a package:
 
 <div>
 
-![](image-X3FZ4AZB.jpg){height="100%"}
+![](image-X3FZ4AZB%201.jpg){height="100%"}
 
 </div>
 
@@ -13780,7 +13780,7 @@ To list only the configuration files in a package:
 
 <div>
 
-![](image-LV8EF2LY.jpg){height="100%"}
+![](image-LV8EF2LY%201.jpg){height="100%"}
 
 </div>
 
@@ -13790,7 +13790,7 @@ To identify which package owns the specified file:
 
 <div>
 
-![](image-DCUD60EC.jpg){height="100%"}
+![](image-DCUD60EC%201.jpg){height="100%"}
 
 </div>
 
@@ -13802,7 +13802,7 @@ description, and so on:
 
 <div>
 
-![](image-NUG658MG.jpg){height="100%"}
+![](image-NUG658MG%201.jpg){height="100%"}
 
 </div>
 
@@ -13812,7 +13812,7 @@ To list all file and package dependencies for a given package:
 
 <div>
 
-![](image-1T92ARNR.jpg){height="100%"}
+![](image-1T92ARNR%201.jpg){height="100%"}
 
 </div>
 
@@ -13823,7 +13823,7 @@ release, architecture, description, size, signatures, etc.):
 
 <div>
 
-![](image-S85KT7A3.jpg){height="100%"}
+![](image-S85KT7A3%201.jpg){height="100%"}
 
 </div>
 
@@ -13834,7 +13834,7 @@ operate properly:
 
 <div>
 
-![](image-NU6MSOGS.jpg){height="100%"}
+![](image-NU6MSOGS%201.jpg){height="100%"}
 
 </div>
 
@@ -13859,7 +13859,7 @@ zsh-5.8-9.el9.x86_64.rpm on the system:
 
 <div>
 
-![](image-2TVCC9ZZ.jpg){height="100%"}
+![](image-2TVCC9ZZ%201.jpg){height="100%"}
 
 </div>
 
@@ -13890,7 +13890,7 @@ directory than the zsh package in the previous example.
 
 <div>
 
-![](image-3A75NDMP.jpg){height="100%"}
+![](image-3A75NDMP%201.jpg){height="100%"}
 
 </div>
 
@@ -13919,7 +13919,7 @@ To freshen the sushi package, use the -F option:
 
 <div>
 
-![](image-BSHGZDB2.jpg){height="100%"}
+![](image-BSHGZDB2%201.jpg){height="100%"}
 
 </div>
 
@@ -13948,7 +13948,7 @@ earlier, use the \--replacepkgs option:
 
 <div>
 
-![](image-0R848G66.jpg){height="100%"}
+![](image-0R848G66%201.jpg){height="100%"}
 
 </div>
 
@@ -13978,7 +13978,7 @@ verbosity:
 
 <div>
 
-![](image-5NST2QJN.jpg){height="100%"}
+![](image-5NST2QJN%201.jpg){height="100%"}
 
 </div>
 
@@ -14011,7 +14011,7 @@ package this file comes from:
 
 <div>
 
-![](image-NEU611T3.jpg){height="100%"}
+![](image-NEU611T3%201.jpg){height="100%"}
 
 </div>
 
@@ -14025,7 +14025,7 @@ overwriting the destination under /etc.
 
 <div>
 
-![](image-JBL7UWTA.jpg){height="100%"}
+![](image-JBL7UWTA%201.jpg){height="100%"}
 
 </div>
 
@@ -14035,7 +14035,7 @@ Run find to locate the chrony.conf file:
 
 <div>
 
-![](image-MM81KW15.jpg){height="100%"}
+![](image-MM81KW15%201.jpg){height="100%"}
 
 </div>
 
@@ -14073,7 +14073,7 @@ located in /mnt/BaseOS/Packages:
 
 <div>
 
-![](image-LY0BKMSI.jpg){height="100%"}
+![](image-LY0BKMSI%201.jpg){height="100%"}
 
 </div>
 
@@ -14119,7 +14119,7 @@ option with the command:
 
 <div>
 
-![](image-EH27MRJZ.jpg){height="100%"}
+![](image-EH27MRJZ%201.jpg){height="100%"}
 
 </div>
 
@@ -14143,7 +14143,7 @@ the command as follows to list the imported key:
 
 <div>
 
-![](image-VPSN5Z3N.jpg){height="100%"}
+![](image-VPSN5Z3N%201.jpg){height="100%"}
 
 </div>
 
@@ -14154,7 +14154,7 @@ imported on the system. Let's view the details for the second one:
 
 <div>
 
-![](image-G7PT26K1.jpg){height="100%"}
+![](image-G7PT26K1%201.jpg){height="100%"}
 
 </div>
 
@@ -14187,7 +14187,7 @@ Run this check on the at package:
 
 <div>
 
-![](image-D2WMRQ14.jpg){height="100%"}
+![](image-D2WMRQ14%201.jpg){height="100%"}
 
 </div>
 
@@ -14200,7 +14200,7 @@ intact. Now change the permissions on one of the files,
 
 <div>
 
-![](image-UPQVWKVC.jpg){height="100%"}
+![](image-UPQVWKVC%201.jpg){height="100%"}
 
 </div>
 
@@ -14213,7 +14213,7 @@ the filename as an argument:
 
 <div>
 
-![](image-QYIWLA1I.jpg){height="100%"}
+![](image-QYIWLA1I%201.jpg){height="100%"}
 
 </div>
 
@@ -14308,7 +14308,7 @@ its original state.
 
 <div>
 
-![](image-UUK2OG0K.jpg){height="100%"}
+![](image-UUK2OG0K%201.jpg){height="100%"}
 
 </div>
 
@@ -14345,7 +14345,7 @@ that the rmt package is available:
 
 <div>
 
-![](image-U6IH11U0.jpg){height="100%"}
+![](image-U6IH11U0%201.jpg){height="100%"}
 
 </div>
 
@@ -14356,7 +14356,7 @@ package:
 
 <div>
 
-![](image-UERUIEPM.jpg){height="100%"}
+![](image-UERUIEPM%201.jpg){height="100%"}
 
 </div>
 
@@ -14366,7 +14366,7 @@ package:
 
 <div>
 
-![](image-0N02V3EZ.jpg){height="100%"}
+![](image-0N02V3EZ%201.jpg){height="100%"}
 
 </div>
 
@@ -14376,7 +14376,7 @@ package:
 
 <div>
 
-![](image-B0QB0UUI.jpg){height="100%"}
+![](image-B0QB0UUI%201.jpg){height="100%"}
 
 </div>
 
@@ -14386,7 +14386,7 @@ package:
 
 <div>
 
-![](image-QUWE2D1D.jpg){height="100%"}
+![](image-QUWE2D1D%201.jpg){height="100%"}
 
 </div>
 
@@ -14396,7 +14396,7 @@ package:
 
 <div>
 
-![](image-VPE8XTFS.jpg){height="100%"}
+![](image-VPE8XTFS%201.jpg){height="100%"}
 
 </div>
 
@@ -14406,7 +14406,7 @@ package:
 
 <div>
 
-![](image-9J7W5IUW.jpg){height="100%"}
+![](image-9J7W5IUW%201.jpg){height="100%"}
 
 </div>
 
@@ -14416,7 +14416,7 @@ package:
 
 <div>
 
-![](image-GNPL0KOW.jpg){height="100%"}
+![](image-GNPL0KOW%201.jpg){height="100%"}
 
 </div>
 
@@ -14640,7 +14640,7 @@ them.
 \
 
 ::: {style="text-align: center;"}
-![](image-2A9A67LB.jpg){height="100%"}
+![](image-2A9A67LB%201.jpg){height="100%"}
 :::
 
 The dnf command is superior to the rpm tool in the sense that it
@@ -14876,7 +14876,7 @@ default content of this configuration file is listed below:
 
 <div>
 
-![](image-XPOZIW0J.jpg){height="100%"}
+![](image-XPOZIW0J%201.jpg){height="100%"}
 
 </div>
 
@@ -15089,7 +15089,7 @@ confirm.
 
 <div>
 
-![](image-L4U16DAS.jpg){height="100%"}
+![](image-L4U16DAS%201.jpg){height="100%"}
 
 </div>
 
@@ -15101,7 +15101,7 @@ repositories in it:
 
 <div>
 
-![](image-F90YG1AS.jpg){height="100%"}
+![](image-F90YG1AS%201.jpg){height="100%"}
 
 </div>
 
@@ -15111,7 +15111,7 @@ repositories in it:
 
 <div>
 
-![](image-JLG0R8I5.jpg){height="100%"}
+![](image-JLG0R8I5%201.jpg){height="100%"}
 
 </div>
 
@@ -15119,7 +15119,7 @@ repositories in it:
 
 <div>
 
-![](image-2E1B8HCW.jpg){height="100%"}
+![](image-2E1B8HCW%201.jpg){height="100%"}
 
 </div>
 
@@ -15180,7 +15180,7 @@ command will result in a long output.
 
 <div>
 
-![](image-P75SPRD8.jpg){height="100%"}
+![](image-P75SPRD8%201.jpg){height="100%"}
 
 </div>
 
@@ -15188,7 +15188,7 @@ command will result in a long output.
 
 <div>
 
-![](image-KX3XY2DR.jpg){height="100%"}
+![](image-KX3XY2DR%201.jpg){height="100%"}
 
 </div>
 
@@ -15199,7 +15199,7 @@ a specific repo:
 
 <div>
 
-![](image-IOO8OQP9.jpg){height="100%"}
+![](image-IOO8OQP9%201.jpg){height="100%"}
 
 </div>
 
@@ -15211,7 +15211,7 @@ following:
 
 <div>
 
-![](image-HB4G6I1W.jpg){height="100%"}
+![](image-HB4G6I1W%201.jpg){height="100%"}
 
 </div>
 
@@ -15221,7 +15221,7 @@ To list all installed packages on the system:
 
 <div>
 
-![](image-PY4I52WH.jpg){height="100%"}
+![](image-PY4I52WH%201.jpg){height="100%"}
 
 </div>
 
@@ -15238,7 +15238,7 @@ installation from all enabled repositories:
 
 <div>
 
-![](image-AB7TH0PO.jpg){height="100%"}
+![](image-AB7TH0PO%201.jpg){height="100%"}
 
 </div>
 
@@ -15246,7 +15246,7 @@ installation from all enabled repositories:
 
 <div>
 
-![](image-4KNWGQM2.jpg){height="100%"}
+![](image-4KNWGQM2%201.jpg){height="100%"}
 
 </div>
 
@@ -15262,7 +15262,7 @@ be able to update:
 
 <div>
 
-![](image-VIXJE8YM.jpg){height="100%"}
+![](image-VIXJE8YM%201.jpg){height="100%"}
 
 </div>
 
@@ -15273,7 +15273,7 @@ for installation from any enabled repository:
 
 <div>
 
-![](image-07918YLP.jpg){height="100%"}
+![](image-07918YLP%201.jpg){height="100%"}
 
 </div>
 
@@ -15284,7 +15284,7 @@ followed by any number of characters:
 
 <div>
 
-![](image-SX46OSHN.jpg){height="100%"}
+![](image-SX46OSHN%201.jpg){height="100%"}
 
 </div>
 
@@ -15294,7 +15294,7 @@ To list recently added packages:
 
 <div>
 
-![](image-E2IAYMJZ.jpg){height="100%"}
+![](image-E2IAYMJZ%201.jpg){height="100%"}
 
 </div>
 
@@ -15326,7 +15326,7 @@ proceeds with an update if it detects the presence of an older version:
 
 <div>
 
-![](image-5QFN5UQV.jpg){height="100%"}
+![](image-5QFN5UQV%201.jpg){height="100%"}
 
 </div>
 
@@ -15334,7 +15334,7 @@ proceeds with an update if it detects the presence of an older version:
 
 <div>
 
-![](image-LOACB9HT.jpg){height="100%"}
+![](image-LOACB9HT%201.jpg){height="100%"}
 
 </div>
 
@@ -15355,7 +15355,7 @@ To install or update a package called dcraw located locally at
 
 <div>
 
-![](image-2NMORC8P.jpg){height="100%"}
+![](image-2NMORC8P%201.jpg){height="100%"}
 
 </div>
 
@@ -15367,7 +15367,7 @@ not already installed.
 
 <div>
 
-![](image-5MBYWKO9.jpg){height="100%"}
+![](image-5MBYWKO9%201.jpg){height="100%"}
 
 </div>
 
@@ -15377,7 +15377,7 @@ To update all installed packages to the latest available versions:
 
 <div>
 
-![](image-HX7IE4ZG.jpg){height="100%"}
+![](image-HX7IE4ZG%201.jpg){height="100%"}
 
 </div>
 
@@ -15407,7 +15407,7 @@ To view information about a package called autofs:
 
 <div>
 
-![](image-VA4SFPXY.jpg){height="100%"}
+![](image-VA4SFPXY%201.jpg){height="100%"}
 
 </div>
 
@@ -15442,7 +15442,7 @@ To remove a package called keybinder3:
 
 <div>
 
-![](image-R39CARXZ.jpg){height="100%"}
+![](image-R39CARXZ%201.jpg){height="100%"}
 
 </div>
 
@@ -15486,7 +15486,7 @@ its dependencies and confirm the removal.
 
 <div>
 
-![](image-EGOVTKJP.jpg){height="100%"}
+![](image-EGOVTKJP%201.jpg){height="100%"}
 
 </div>
 
@@ -15501,7 +15501,7 @@ that the specified package is not installed.
 
 <div>
 
-![](image-6AWTPRD9.jpg){height="100%"}
+![](image-6AWTPRD9%201.jpg){height="100%"}
 
 </div>
 
@@ -15516,7 +15516,7 @@ as well.
 
 <div>
 
-![](image-VFBX39N9.jpg){height="100%"}
+![](image-VFBX39N9%201.jpg){height="100%"}
 
 </div>
 
@@ -15531,7 +15531,7 @@ installation from the BaseOS repo.
 
 <div>
 
-![](image-E36FJDAN.jpg){height="100%"}
+![](image-E36FJDAN%201.jpg){height="100%"}
 
 </div>
 
@@ -15541,7 +15541,7 @@ installation from the BaseOS repo.
 
 <div>
 
-![](image-6ZDXM0BM.jpg){height="100%"}
+![](image-6ZDXM0BM%201.jpg){height="100%"}
 
 </div>
 
@@ -15555,7 +15555,7 @@ The output reveals that the package is now installed.
 
 <div>
 
-![](image-4SFL3YEO.jpg){height="100%"}
+![](image-4SFL3YEO%201.jpg){height="100%"}
 
 </div>
 
@@ -15565,7 +15565,7 @@ The output reveals that the package is now installed.
 
 <div>
 
-![](image-FVANQ567.jpg){height="100%"}
+![](image-FVANQ567%201.jpg){height="100%"}
 
 </div>
 
@@ -15595,7 +15595,7 @@ use the provides or the whatprovides subcommand with dnf:
 
 <div>
 
-![](image-XPAK0ELP.jpg){height="100%"}
+![](image-XPAK0ELP%201.jpg){height="100%"}
 
 </div>
 
@@ -15615,7 +15615,7 @@ will list all packages that contain filenames beginning with
 
 <div>
 
-![](image-XW0UP1HX.jpg){height="100%"}
+![](image-XW0UP1HX%201.jpg){height="100%"}
 
 </div>
 
@@ -15626,7 +15626,7 @@ name or summary:
 
 <div>
 
-![](image-KUNHGB9G.jpg){height="100%"}
+![](image-KUNHGB9G%201.jpg){height="100%"}
 
 </div>
 
@@ -15669,7 +15669,7 @@ repositories:
 
 <div>
 
-![](image-W7C8QKJC.jpg){height="100%"}
+![](image-W7C8QKJC%201.jpg){height="100%"}
 
 </div>
 
@@ -15697,7 +15697,7 @@ To display the number of installed and available package groups:
 
 <div>
 
-![](image-2MIXMQDS.jpg){height="100%"}
+![](image-2MIXMQDS%201.jpg){height="100%"}
 
 </div>
 
@@ -15708,7 +15708,7 @@ are hidden:
 
 <div>
 
-![](image-32L923JP.jpg){height="100%"}
+![](image-32L923JP%201.jpg){height="100%"}
 
 </div>
 
@@ -15724,7 +15724,7 @@ shown in the above output) contains:
 
 <div>
 
-![](image-7KI5ABVP.jpg){height="100%"}
+![](image-7KI5ABVP%201.jpg){height="100%"}
 
 </div>
 
@@ -15760,7 +15760,7 @@ double quotation marks.
 
 <div>
 
-![](image-9WAQL7P3.jpg){height="100%"}
+![](image-9WAQL7P3%201.jpg){height="100%"}
 
 </div>
 
@@ -15768,7 +15768,7 @@ double quotation marks.
 
 <div>
 
-![](image-LF9LNFIF.jpg){height="100%"}
+![](image-LF9LNFIF%201.jpg){height="100%"}
 
 </div>
 
@@ -15784,7 +15784,7 @@ To update the smart card support group to the latest version:
 
 <div>
 
-![](image-6F2P5EZR.jpg){height="100%"}
+![](image-6F2P5EZR%201.jpg){height="100%"}
 
 </div>
 
@@ -15817,7 +15817,7 @@ earlier:
 
 <div>
 
-![](image-2N3ZZD33.jpg){height="100%"}
+![](image-2N3ZZD33%201.jpg){height="100%"}
 
 </div>
 
@@ -15860,7 +15860,7 @@ along with its dependencies and confirm the removal.
 
 <div>
 
-![](image-Y2859G3Y.jpg){height="100%"}
+![](image-Y2859G3Y%201.jpg){height="100%"}
 
 </div>
 
@@ -15874,7 +15874,7 @@ The output does not show it installed.
 
 <div>
 
-![](image-P7DKXRKX.jpg){height="100%"}
+![](image-P7DKXRKX%201.jpg){height="100%"}
 
 </div>
 
@@ -15888,7 +15888,7 @@ The group is available for installation.
 
 <div>
 
-![](image-EY2LZWUE.jpg){height="100%"}
+![](image-EY2LZWUE%201.jpg){height="100%"}
 
 </div>
 
@@ -15904,7 +15904,7 @@ installation.
 
 <div>
 
-![](image-5Y67BFXE.jpg){height="100%"}
+![](image-5Y67BFXE%201.jpg){height="100%"}
 
 </div>
 
@@ -15914,7 +15914,7 @@ installation.
 
 <div>
 
-![](image-8SBRXCOM.jpg){height="100%"}
+![](image-8SBRXCOM%201.jpg){height="100%"}
 
 </div>
 
@@ -15924,7 +15924,7 @@ installation.
 
 <div>
 
-![](image-3ZU9LNX9.jpg){height="100%"}
+![](image-3ZU9LNX9%201.jpg){height="100%"}
 
 </div>
 
@@ -15932,7 +15932,7 @@ installation.
 
 <div>
 
-![](image-CLH1C1UT.jpg){height="100%"}
+![](image-CLH1C1UT%201.jpg){height="100%"}
 
 </div>
 
@@ -16200,7 +16200,7 @@ specified target.
 \
 
 ::: {style="text-align: center;"}
-![](image-GLL6B3U1.jpg){height="100%"}
+![](image-GLL6B3U1%201.jpg){height="100%"}
 :::
 
 The kernel controls everything on the system. It controls the system
@@ -16391,7 +16391,7 @@ through the autoboot process.
 \
 
 ::: {style="text-align: center;"}
-![](image-KI0NX1B0.jpg){height="100%"}
+![](image-KI0NX1B0%201.jpg){height="100%"}
 :::
 
 Figure 11-1 GRUB2 Menu
@@ -16430,7 +16430,7 @@ touch the grub.cfg file.
 \
 
 ::: {style="text-align: center;"}
-![](image-64CTDI7S.jpg){height="100%"}
+![](image-64CTDI7S%201.jpg){height="100%"}
 :::
 
 Figure 11-2 GRUB2 Kernel Entry Edit
@@ -16451,7 +16451,7 @@ Figure 11-3.
 \
 
 ::: {style="text-align: center;"}
-![](image-XZ619VZP.jpg){height="100%"}
+![](image-XZ619VZP%201.jpg){height="100%"}
 :::
 
 Figure 11-3 GRUB2 Commands
@@ -16501,7 +16501,7 @@ followed by an explanation in Table 11-1:
 
 <div>
 
-![](image-SLTUKGRN.jpg){height="100%"}
+![](image-SLTUKGRN%201.jpg){height="100%"}
 
 </div>
 
@@ -16570,7 +16570,7 @@ There are plenty of files located here, as shown below:
 
 <div>
 
-![](image-R1989XH9.jpg){height="100%"}
+![](image-R1989XH9%201.jpg){height="100%"}
 
 </div>
 
@@ -16590,7 +16590,7 @@ what this file contains on server1:
 
 <div>
 
-![](image-4VDOD6IG.jpg){height="100%"}
+![](image-4VDOD6IG%201.jpg){height="100%"}
 
 </div>
 
@@ -16620,7 +16620,7 @@ to 8 seconds persistently, and validate.
 
 <div>
 
-![](image-UQCPFURL.jpg){height="100%"}
+![](image-UQCPFURL%201.jpg){height="100%"}
 
 </div>
 
@@ -16630,7 +16630,7 @@ to 8 seconds persistently, and validate.
 
 <div>
 
-![](image-YRZSX2GQ.jpg){height="100%"}
+![](image-YRZSX2GQ%201.jpg){height="100%"}
 
 </div>
 
@@ -16685,7 +16685,7 @@ Here is how you would append "emergency" to the kernel line entry:
 
 <div>
 
-![](image-3BFW34RH.jpg){height="100%"}
+![](image-3BFW34RH%201.jpg){height="100%"}
 
 </div>
 
@@ -16697,7 +16697,7 @@ log on. Run reboot after you are done to reboot the system.
 
 <div>
 
-![](image-VFAG48NT.jpg){height="100%"}
+![](image-VFAG48NT%201.jpg){height="100%"}
 
 </div>
 
@@ -16737,7 +16737,7 @@ to the end of that line:
 
 <div>
 
-![](image-2066CCQ8.jpg){height="100%"}
+![](image-2066CCQ8%201.jpg){height="100%"}
 
 </div>
 
@@ -16749,7 +16749,7 @@ been loaded into memory. It should look like:
 
 <div>
 
-![](image-RIS8ABOF.jpg){height="100%"}
+![](image-RIS8ABOF%201.jpg){height="100%"}
 
 </div>
 
@@ -16761,7 +16761,7 @@ the Enter key when prompted to enter the maintenance mode:
 
 <div>
 
-![](image-XF4L26QO.jpg){height="100%"}
+![](image-XF4L26QO%201.jpg){height="100%"}
 
 </div>
 
@@ -16772,7 +16772,7 @@ confirm:
 
 <div>
 
-![](image-HA8XJT3V.jpg){height="100%"}
+![](image-HA8XJT3V%201.jpg){height="100%"}
 
 </div>
 
@@ -16783,7 +16783,7 @@ command to modify the shadow file and replace the password:
 
 <div>
 
-![](image-ERAPZ0IU.jpg){height="100%"}
+![](image-ERAPZ0IU%201.jpg){height="100%"}
 
 </div>
 
@@ -16793,7 +16793,7 @@ command to modify the shadow file and replace the password:
 
 <div>
 
-![](image-5CHNU1P4.jpg){height="100%"}
+![](image-5CHNU1P4%201.jpg){height="100%"}
 
 </div>
 
@@ -16805,7 +16805,7 @@ that was updated with the new root password, on the next reboot:
 
 <div>
 
-![](image-KP42M3WI.jpg){height="100%"}
+![](image-KP42M3WI%201.jpg){height="100%"}
 
 </div>
 
@@ -16822,7 +16822,7 @@ to relabel SELinux and restart the system to boot to the default target.
 
 <div>
 
-![](image-6IS3N618.jpg){height="100%"}
+![](image-6IS3N618%201.jpg){height="100%"}
 
 </div>
 
@@ -16953,7 +16953,7 @@ Currently, the following kernel packages are installed on server1:
 
 <div>
 
-![](image-8UG681GQ.jpg){height="100%"}
+![](image-8UG681GQ%201.jpg){height="100%"}
 
 </div>
 
@@ -16979,7 +16979,7 @@ as follows:
 
 <div>
 
-![](image-RVFUDZEM.jpg){height="100%"}
+![](image-RVFUDZEM%201.jpg){height="100%"}
 
 </div>
 
@@ -16990,7 +16990,7 @@ Figure 11-4 and explained subsequently.
 \
 
 ::: {style="text-align: center;"}
-![](image-28ZJEP8O.jpg){height="100%"}
+![](image-28ZJEP8O%201.jpg){height="100%"}
 :::
 
 Figure 11-4 Anatomy of a Kernel Version
@@ -17059,7 +17059,7 @@ output for this file system:
 
 <div>
 
-![](image-ABTYD56Z.jpg){height="100%"}
+![](image-ABTYD56Z%201.jpg){height="100%"}
 
 </div>
 
@@ -17084,7 +17084,7 @@ grub2 contains GRUB2 information as shown below:
 
 <div>
 
-![](image-TL0VEPM9.jpg){height="100%"}
+![](image-TL0VEPM9%201.jpg){height="100%"}
 
 </div>
 
@@ -17102,7 +17102,7 @@ stored in files under the entries subdirectory, as shown below:
 
 <div>
 
-![](image-HWP7VBRR.jpg){height="100%"}
+![](image-HWP7VBRR%201.jpg){height="100%"}
 
 </div>
 
@@ -17114,7 +17114,7 @@ the kernel file is presented below:
 
 <div>
 
-![](image-1T8ZI22I.jpg){height="100%"}
+![](image-1T8ZI22I%201.jpg){height="100%"}
 
 </div>
 
@@ -17142,7 +17142,7 @@ provided below:
 
 <div>
 
-![](image-KKPVRQW3.jpg){height="100%"}
+![](image-KKPVRQW3%201.jpg){height="100%"}
 
 </div>
 
@@ -17159,7 +17159,7 @@ and memory information:
 
 <div>
 
-![](image-19YPNNFN.jpg){height="100%"}
+![](image-19YPNNFN%201.jpg){height="100%"}
 
 </div>
 
@@ -17180,7 +17180,7 @@ the installed kernel version.
 
 <div>
 
-![](image-4ZWOSW28.jpg){height="100%"}
+![](image-4ZWOSW28%201.jpg){height="100%"}
 
 </div>
 
@@ -17190,7 +17190,7 @@ And this subdirectory contains:
 
 <div>
 
-![](image-7J6ZA4XD.jpg){height="100%"}
+![](image-7J6ZA4XD%201.jpg){height="100%"}
 
 </div>
 
@@ -17208,7 +17208,7 @@ various subdirectories, as shown in the listing below:
 
 <div>
 
-![](image-V61A48MA.jpg){height="100%"}
+![](image-V61A48MA%201.jpg){height="100%"}
 
 </div>
 
@@ -17297,7 +17297,7 @@ intact.
 
 <div>
 
-![](image-IT42GL17.jpg){height="100%"}
+![](image-IT42GL17%201.jpg){height="100%"}
 
 </div>
 
@@ -17312,7 +17312,7 @@ The output discloses the current active kernel version as
 
 <div>
 
-![](image-OMXIZ896.jpg){height="100%"}
+![](image-OMXIZ896%201.jpg){height="100%"}
 
 </div>
 
@@ -17328,7 +17328,7 @@ account:
 \
 
 ::: {style="text-align: center;"}
-![](image-VN25C5XG.jpg){height="100%"}
+![](image-VN25C5XG%201.jpg){height="100%"}
 :::
 
 4\. Click Downloads at the top:
@@ -17336,7 +17336,7 @@ account:
 \
 
 ::: {style="text-align: center;"}
-![](image-080SANBI.jpg){height="100%"}
+![](image-080SANBI%201.jpg){height="100%"}
 :::
 
 5\. Click "Red Hat Enterprise Linux" under "By Category" on the next
@@ -17346,7 +17346,7 @@ screen:
 
 <div>
 
-![](image-I8UAM5D1.jpg){height="100%"}
+![](image-I8UAM5D1%201.jpg){height="100%"}
 
 </div>
 
@@ -17357,7 +17357,7 @@ list of available packages:
 
 <div>
 
-![](image-0W3JFF6K.jpg){height="100%"}
+![](image-0W3JFF6K%201.jpg){height="100%"}
 
 </div>
 
@@ -17375,7 +17375,7 @@ mv command.
 
 <div>
 
-![](image-M0OOKCGZ.jpg){height="100%"}
+![](image-M0OOKCGZ%201.jpg){height="100%"}
 
 </div>
 
@@ -17385,7 +17385,7 @@ mv command.
 
 <div>
 
-![](image-65MXH9K5.jpg){height="100%"}
+![](image-65MXH9K5%201.jpg){height="100%"}
 
 </div>
 
@@ -17395,7 +17395,7 @@ mv command.
 
 <div>
 
-![](image-PYXRYFE0.jpg){height="100%"}
+![](image-PYXRYFE0%201.jpg){height="100%"}
 
 </div>
 
@@ -17403,7 +17403,7 @@ mv command.
 
 <div>
 
-![](image-DP49QUZT.jpg){height="100%"}
+![](image-DP49QUZT%201.jpg){height="100%"}
 
 </div>
 
@@ -17421,7 +17421,7 @@ the next system restart:
 
 <div>
 
-![](image-XSA44WUG.jpg){height="100%"}
+![](image-XSA44WUG%201.jpg){height="100%"}
 
 </div>
 
@@ -17432,7 +17432,7 @@ boot list at the top. The system will autoboot this new default kernel.
 
 <div>
 
-![](image-4EEZ7V5S.jpg){height="100%"}
+![](image-4EEZ7V5S%201.jpg){height="100%"}
 
 </div>
 
@@ -17443,7 +17443,7 @@ confirm the loading of the new kernel:
 
 <div>
 
-![](image-DPVQ9V1O.jpg){height="100%"}
+![](image-DPVQ9V1O%201.jpg){height="100%"}
 
 </div>
 
@@ -17458,7 +17458,7 @@ under /proc to verify the active kernel:
 
 <div>
 
-![](image-XIIHM3OP.jpg){height="100%"}
+![](image-XIIHM3OP%201.jpg){height="100%"}
 
 </div>
 
@@ -17760,7 +17760,7 @@ configuration files store is key to understanding how systemd operates.
 \
 
 ::: {style="text-align: center;"}
-![](image-4HBCT875.jpg){height="100%"}
+![](image-4HBCT875%201.jpg){height="100%"}
 :::
 
 Alerts and messages generated by system services and user activities are
@@ -17984,7 +17984,7 @@ shown below from the /usr/lib/systemd/system directory:
 
 <div>
 
-![](image-W99S3SUU.jpg){height="100%"}
+![](image-W99S3SUU%201.jpg){height="100%"}
 
 </div>
 
@@ -18091,7 +18091,7 @@ is shown below from the /usr/lib/systemd/system directory:
 
 <div>
 
-![](image-G7WLS56W.jpg){height="100%"}
+![](image-G7WLS56W%201.jpg){height="100%"}
 
 </div>
 
@@ -18213,7 +18213,7 @@ starting and concluding lines followed by a brief explanation.
 
 <div>
 
-![](image-LS70BQ0X.jpg){height="100%"}
+![](image-LS70BQ0X%201.jpg){height="100%"}
 
 </div>
 
@@ -18221,7 +18221,7 @@ starting and concluding lines followed by a brief explanation.
 
 <div>
 
-![](image-R5SHK2RA.jpg){height="100%"}
+![](image-R5SHK2RA%201.jpg){height="100%"}
 
 </div>
 
@@ -18248,7 +18248,7 @@ To list all (\--all) active and inactive units of type (-t) socket:
 
 <div>
 
-![](image-KH1A3KSD.jpg){height="100%"}
+![](image-KH1A3KSD%201.jpg){height="100%"}
 
 </div>
 
@@ -18260,7 +18260,7 @@ address (column 1):
 
 <div>
 
-![](image-2IYK4UUY.jpg){height="100%"}
+![](image-2IYK4UUY%201.jpg){height="100%"}
 
 </div>
 
@@ -18272,7 +18272,7 @@ output. The following only shows a selection.
 
 <div>
 
-![](image-KNG8RPUS.jpg){height="100%"}
+![](image-KNG8RPUS%201.jpg){height="100%"}
 
 </div>
 
@@ -18283,7 +18283,7 @@ boot:
 
 <div>
 
-![](image-D0XSKYHZ.jpg){height="100%"}
+![](image-D0XSKYHZ%201.jpg){height="100%"}
 
 </div>
 
@@ -18294,7 +18294,7 @@ for the current default target:
 
 <div>
 
-![](image-X2T71TNX.jpg){height="100%"}
+![](image-X2T71TNX%201.jpg){height="100%"}
 
 </div>
 
@@ -18305,7 +18305,7 @@ for a specific unit such as atd.service:
 
 <div>
 
-![](image-H8GYR159.jpg){height="100%"}
+![](image-H8GYR159%201.jpg){height="100%"}
 
 </div>
 
@@ -18336,7 +18336,7 @@ service:
 
 <div>
 
-![](image-RLW0SGAL.jpg){height="100%"}
+![](image-RLW0SGAL%201.jpg){height="100%"}
 
 </div>
 
@@ -18386,7 +18386,7 @@ To disable the atd service from autostarting at the next system reboot:
 
 <div>
 
-![](image-JCGIU7R6.jpg){height="100%"}
+![](image-JCGIU7R6%201.jpg){height="100%"}
 
 </div>
 
@@ -18396,7 +18396,7 @@ To re-enable atd to autostart at the next system reboot:
 
 <div>
 
-![](image-E6EYIKX5.jpg){height="100%"}
+![](image-E6EYIKX5%201.jpg){height="100%"}
 
 </div>
 
@@ -18406,7 +18406,7 @@ To check whether atd is set to autostart at the next system reboot:
 
 <div>
 
-![](image-AKPBU3O6.jpg){height="100%"}
+![](image-AKPBU3O6%201.jpg){height="100%"}
 
 </div>
 
@@ -18416,7 +18416,7 @@ To check whether the atd service is running:
 
 <div>
 
-![](image-IS96Q3OT.jpg){height="100%"}
+![](image-IS96Q3OT%201.jpg){height="100%"}
 
 </div>
 
@@ -18426,7 +18426,7 @@ To stop and restart atd, run either of the following:
 
 <div>
 
-![](image-TBBVII8J.jpg){height="100%"}
+![](image-TBBVII8J%201.jpg){height="100%"}
 
 </div>
 
@@ -18436,7 +18436,7 @@ To show the details of the atd service:
 
 <div>
 
-![](image-6IYFJ7YW.jpg){height="100%"}
+![](image-6IYFJ7YW%201.jpg){height="100%"}
 
 </div>
 
@@ -18446,7 +18446,7 @@ To prohibit atd from being enabled or disabled:
 
 <div>
 
-![](image-RXUU6A1J.jpg){height="100%"}
+![](image-RXUU6A1J%201.jpg){height="100%"}
 
 </div>
 
@@ -18457,7 +18457,7 @@ command:
 
 <div>
 
-![](image-G4O1KUU8.jpg){height="100%"}
+![](image-G4O1KUU8%201.jpg){height="100%"}
 
 </div>
 
@@ -18468,7 +18468,7 @@ operations:
 
 <div>
 
-![](image-RLZIX9D6.jpg){height="100%"}
+![](image-RLZIX9D6%201.jpg){height="100%"}
 
 </div>
 
@@ -18497,7 +18497,7 @@ To view what units of type (-t) target are currently loaded and active:
 
 <div>
 
-![](image-A463ZA3C.jpg){height="100%"}
+![](image-A463ZA3C%201.jpg){height="100%"}
 
 </div>
 
@@ -18522,7 +18522,7 @@ To check the current default boot target:
 
 <div>
 
-![](image-MRZG1Q7R.jpg){height="100%"}
+![](image-MRZG1Q7R%201.jpg){height="100%"}
 
 </div>
 
@@ -18549,7 +18549,7 @@ multi-user.target:
 
 <div>
 
-![](image-MIKVWSXB.jpg){height="100%"}
+![](image-MIKVWSXB%201.jpg){height="100%"}
 
 </div>
 
@@ -18584,7 +18584,7 @@ multi-user, use the isolate subcommand with systemctl:
 
 <div>
 
-![](image-QHV2PNOF.jpg){height="100%"}
+![](image-QHV2PNOF%201.jpg){height="100%"}
 
 </div>
 
@@ -18595,7 +18595,7 @@ text-based console login screen, as shown below:
 
 <div>
 
-![](image-UYKHJFV6.jpg){height="100%"}
+![](image-UYKHJFV6%201.jpg){height="100%"}
 
 </div>
 
@@ -18605,7 +18605,7 @@ Type in a username such as user1 and enter the password to log in:
 
 <div>
 
-![](image-FESM01ZP.jpg){height="100%"}
+![](image-FESM01ZP%201.jpg){height="100%"}
 
 </div>
 
@@ -18615,7 +18615,7 @@ To return to the graphical target:
 
 <div>
 
-![](image-PT7C279V.jpg){height="100%"}
+![](image-PT7C279V%201.jpg){height="100%"}
 
 </div>
 
@@ -18631,7 +18631,7 @@ run the poweroff command:
 
 <div>
 
-![](image-YAUS6GLP.jpg){height="100%"}
+![](image-YAUS6GLP%201.jpg){height="100%"}
 
 </div>
 
@@ -18642,7 +18642,7 @@ reboot command:
 
 <div>
 
-![](image-GJW81SP0.jpg){height="100%"}
+![](image-GJW81SP0%201.jpg){height="100%"}
 
 </div>
 
@@ -18653,7 +18653,7 @@ systemctl command, as the following long listing suggests:
 
 <div>
 
-![](image-8NIP3CL6.jpg){height="100%"}
+![](image-8NIP3CL6%201.jpg){height="100%"}
 
 </div>
 
@@ -18738,7 +18738,7 @@ to separate the directives in each section.
 
 <div>
 
-![](image-XGIYZ4QC.jpg){height="100%"}
+![](image-XGIYZ4QC%201.jpg){height="100%"}
 
 </div>
 
@@ -18750,7 +18750,7 @@ to separate the directives in each section.
 
 <div>
 
-![](image-1TZ90V6M.jpg){height="100%"}
+![](image-1TZ90V6M%201.jpg){height="100%"}
 
 </div>
 
@@ -18758,7 +18758,7 @@ to separate the directives in each section.
 
 <div>
 
-![](image-F8N6G689.jpg){height="100%"}
+![](image-F8N6G689%201.jpg){height="100%"}
 
 </div>
 
@@ -18832,7 +18832,7 @@ issues:
 
 <div>
 
-![](image-ZM4S649D.jpg){height="100%"}
+![](image-ZM4S649D%201.jpg){height="100%"}
 
 </div>
 
@@ -18860,7 +18860,7 @@ Here is a listing from server1:
 
 <div>
 
-![](image-QQOOTMDQ.jpg){height="100%"}
+![](image-QQOOTMDQ%201.jpg){height="100%"}
 
 </div>
 
@@ -18883,7 +18883,7 @@ what this file contains:
 
 <div>
 
-![](image-UXLK7558.jpg){height="100%"}
+![](image-UXLK7558%201.jpg){height="100%"}
 
 </div>
 
@@ -18896,7 +18896,7 @@ following shows the content of /etc/logrotate.conf:
 
 <div>
 
-![](image-F1TAN45G.jpg){height="100%"}
+![](image-F1TAN45G%201.jpg){height="100%"}
 
 </div>
 
@@ -18922,7 +18922,7 @@ reside in the /etc/logrotate.d directory:
 
 <div>
 
-![](image-P7RQUVEV.jpg){height="100%"}
+![](image-P7RQUVEV%201.jpg){height="100%"}
 
 </div>
 
@@ -18936,7 +18936,7 @@ attempts) that is used to control the rotation behavior for the
 
 <div>
 
-![](image-VHMB8PN6.jpg){height="100%"}
+![](image-VHMB8PN6%201.jpg){height="100%"}
 
 </div>
 
@@ -18964,7 +18964,7 @@ Here are a few lines from the beginning of the file:
 
 <div>
 
-![](image-YM28MT86.jpg){height="100%"}
+![](image-YM28MT86%201.jpg){height="100%"}
 
 </div>
 
@@ -19013,7 +19013,7 @@ The following illustrates some recent entries from this file:
 
 <div>
 
-![](image-L0NUQHLU.jpg){height="100%"}
+![](image-L0NUQHLU%201.jpg){height="100%"}
 
 </div>
 
@@ -19047,7 +19047,7 @@ calling user has rebooted the system:
 
 <div>
 
-![](image-SJ8OORC8.jpg){height="100%"}
+![](image-SJ8OORC8%201.jpg){height="100%"}
 
 </div>
 
@@ -19058,7 +19058,7 @@ recorded along with the timestamp, hostname, and PID:
 
 <div>
 
-![](image-QX4DHWSW.jpg){height="100%"}
+![](image-QX4DHWSW%201.jpg){height="100%"}
 
 </div>
 
@@ -19123,7 +19123,7 @@ few initial entries from the journal:
 
 <div>
 
-![](image-GW2A64CY.jpg){height="100%"}
+![](image-GW2A64CY%201.jpg){height="100%"}
 
 </div>
 
@@ -19145,7 +19145,7 @@ To display detailed output for each entry, use the -o verbose option:
 
 <div>
 
-![](image-PGD7D39A.jpg){height="100%"}
+![](image-PGD7D39A%201.jpg){height="100%"}
 
 </div>
 
@@ -19155,7 +19155,7 @@ To view all events since the last system reboot, use the -b options:
 
 <div>
 
-![](image-X9FCN1P0.jpg){height="100%"}
+![](image-X9FCN1P0%201.jpg){height="100%"}
 
 </div>
 
@@ -19171,7 +19171,7 @@ To view only kernel-generated alerts since the last system reboot:
 
 <div>
 
-![](image-ZZNY2KP5.jpg){height="100%"}
+![](image-ZZNY2KP5%201.jpg){height="100%"}
 
 </div>
 
@@ -19182,7 +19182,7 @@ example below), use the -n option:
 
 <div>
 
-![](image-M3MS6IBH.jpg){height="100%"}
+![](image-M3MS6IBH%201.jpg){height="100%"}
 
 </div>
 
@@ -19192,7 +19192,7 @@ To show all alerts generated by a particular service, such as crond:
 
 <div>
 
-![](image-MRE8BVJ1.jpg){height="100%"}
+![](image-MRE8BVJ1%201.jpg){height="100%"}
 
 </div>
 
@@ -19203,7 +19203,7 @@ associated with the chronyd service:
 
 <div>
 
-![](image-P5X3WMHT.jpg){height="100%"}
+![](image-P5X3WMHT%201.jpg){height="100%"}
 
 </div>
 
@@ -19214,7 +19214,7 @@ sshd.service:
 
 <div>
 
-![](image-HQ6YXSCB.jpg){height="100%"}
+![](image-HQ6YXSCB%201.jpg){height="100%"}
 
 </div>
 
@@ -19225,7 +19225,7 @@ To view all error messages logged between a date range, such as January
 
 <div>
 
-![](image-0X8FCWW7.jpg){height="100%"}
+![](image-0X8FCWW7%201.jpg){height="100%"}
 
 </div>
 
@@ -19236,7 +19236,7 @@ reverse chronological order:
 
 <div>
 
-![](image-GFF7W41A.jpg){height="100%"}
+![](image-GFF7W41A%201.jpg){height="100%"}
 
 </div>
 
@@ -19253,7 +19253,7 @@ journalctl as well. Press Ctrl+c to terminate.
 
 <div>
 
-![](image-T0B3QSCO.jpg){height="100%"}
+![](image-T0B3QSCO%201.jpg){height="100%"}
 
 </div>
 
@@ -19351,7 +19351,7 @@ and confirm:
 
 <div>
 
-![](image-SSVIV3PQ.jpg){height="100%"}
+![](image-SSVIV3PQ%201.jpg){height="100%"}
 
 </div>
 
@@ -19361,7 +19361,7 @@ and confirm:
 
 <div>
 
-![](image-4WXRMTI0.jpg){height="100%"}
+![](image-4WXRMTI0%201.jpg){height="100%"}
 
 </div>
 
@@ -19373,7 +19373,7 @@ created:
 
 <div>
 
-![](image-GVED5QN3.jpg){height="100%"}
+![](image-GVED5QN3%201.jpg){height="100%"}
 
 </div>
 
@@ -19503,7 +19503,7 @@ of the directory:
 
 <div>
 
-![](image-0IW3L8D8.jpg){height="100%"}
+![](image-0IW3L8D8%201.jpg){height="100%"}
 
 </div>
 
@@ -19561,7 +19561,7 @@ conclude the exercise.
 
 <div>
 
-![](image-DOZ3L6D2.jpg){height="100%"}
+![](image-DOZ3L6D2%201.jpg){height="100%"}
 
 </div>
 
@@ -19575,7 +19575,7 @@ The output indicates that the software is already installed.
 
 <div>
 
-![](image-GZMM1FDK.jpg){height="100%"}
+![](image-GZMM1FDK%201.jpg){height="100%"}
 
 </div>
 
@@ -19585,7 +19585,7 @@ The output indicates that the software is already installed.
 
 <div>
 
-![](image-5SDIX9UC.jpg){height="100%"}
+![](image-5SDIX9UC%201.jpg){height="100%"}
 
 </div>
 
@@ -19595,7 +19595,7 @@ The output indicates that the software is already installed.
 
 <div>
 
-![](image-9BQU6WW7.jpg){height="100%"}
+![](image-9BQU6WW7%201.jpg){height="100%"}
 
 </div>
 
@@ -19610,7 +19610,7 @@ active profile.
 
 <div>
 
-![](image-FKCADCVR.jpg){height="100%"}
+![](image-FKCADCVR%201.jpg){height="100%"}
 
 </div>
 
@@ -19620,7 +19620,7 @@ active profile.
 
 <div>
 
-![](image-SI3GNXZ6.jpg){height="100%"}
+![](image-SI3GNXZ6%201.jpg){height="100%"}
 
 </div>
 
@@ -19634,7 +19634,7 @@ The active profile is now powersave.
 
 <div>
 
-![](image-PEYB6S9E.jpg){height="100%"}
+![](image-PEYB6S9E%201.jpg){height="100%"}
 
 </div>
 
@@ -19651,7 +19651,7 @@ the switching.
 
 <div>
 
-![](image-2DTQXPL4.jpg){height="100%"}
+![](image-2DTQXPL4%201.jpg){height="100%"}
 
 </div>
 
@@ -19665,7 +19665,7 @@ The service will not perform any tuning until it is reactivated.
 
 <div>
 
-![](image-TRKT2INU.jpg){height="100%"}
+![](image-TRKT2INU%201.jpg){height="100%"}
 
 </div>
 

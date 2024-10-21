@@ -2,7 +2,7 @@ Create a vm in proxmox and copy the physical drive to the vm drive.
 
 1. Create New VM in proxmox
 2. In the OS tab, select "Do not use any media"
-![](Pasted%20image%2020240806075409.png)
+![](Pasted%20image%2020240806075409%201.png)
 
 Verify Kernel version
 ```bash
@@ -34,7 +34,7 @@ sda                8:0    0 931.5G  0 disk
 ```
 
 Select the appropriate BIOS in the System tab:
-![](Pasted%20image%2020240806080050.png)
+![](Pasted%20image%2020240806080050%201.png)
 Check your disk size
 ```bash
 [root@dall conf.d]# lsblk
@@ -43,7 +43,7 @@ sda                8:0    0 931.5G  0 disk
 ```
 
 Make the disk a little bit bigger than the physical disk
-![](Pasted%20image%2020240806080538.png)
+![](Pasted%20image%2020240806080538%201.png)
 
 Select CPU and Memory based on requirements.
 

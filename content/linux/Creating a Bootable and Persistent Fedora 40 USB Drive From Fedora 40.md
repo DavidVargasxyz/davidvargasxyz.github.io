@@ -92,7 +92,7 @@ sdc           8:32   1 466.3G  0 disk
 ```
 
 Make sure you are using the right device here. The Disks Utility in Fedora can provide the same information. 
-![](/images/Pasted%20image%2020240808100730.png)
+![](Pasted%20image%2020240808100730%201.png)
 
 You can find more options for the `live-iso-to-disk` command here: https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/#_livecd_iso_to_disk_problems
 

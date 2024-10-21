@@ -11,7 +11,7 @@
 - Makes use of thin provisioning to identify and eliminate empty (zero-byte) data blocks. (zero-block elimination)
 - Removes randomization of data blocks by moving in-use data blocks to contiguous locations on the storage device.
 
-![](image-XYSCLXMC.jpg)
+![](image-XYSCLXMC%201.jpg)
 
 **Stage 2**
 - If it detects that new data is an identical copy of some existing data, it makes an internal note of it but does not actually write the redundant data to the disk. (de-duplication) 

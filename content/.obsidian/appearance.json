@@ -1,5 +1,7 @@
 {
-  "theme": "obsidian",
   "cssTheme": "Obsidianite",
-  "accentColor": "#0a54ff"
+  "enabledCssSnippets": [
+    "dashboard",
+    "dashboard-ReadLineLength"
+  ]
 }

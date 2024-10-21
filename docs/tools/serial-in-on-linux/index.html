@@ -26,18 +26,18 @@ Find out what port your serial cable is plugged into:
 dthomas@lgfedora:~$ dmesg | grep tty [ 0.119494] printk: console [tty0] enabled [ 1.591268] serial8250: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A [ 7.707751] systemd[1]: Created slice system-getty.slice - Slice /system/getty. [ 7.708786] systemd[1]: Reached target getty.target - Login Prompts. [ 424.829380] usb 3-6: FTDI USB Serial Device converter now attached to ttyUSB0 [ 498.255356] ftdi_sio ttyUSB0: FTDI USB Serial Device converter now disconnected from ttyUSB0 [ 499.952411] usb 3-4: FTDI USB Serial Device converter now attached to ttyUSB0 [ 1020.298236] ftdi_sio ttyUSB0: FTDI USB Serial Device converter now disconnected from ttyUSB0 [ 1022.774544] usb 3-6: FTDI USB Serial Device converter now attached to ttyUSB0 [ 1115.380773] ftdi_sio ttyUSB0: FTDI USB Serial Device converter now disconnected from ttyUSB0 [ 1117.430371] usb 3-4: FTDI USB Serial Device converter now attached to ttyUSB0See last line that says “now attached”">
     <meta itemprop="wordCount" content="155">
     <title></title>
-    <link href="/images/logo.svg?1727093232" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1727093234" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1727093234" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1727093234" rel="stylesheet">
-    <link href="/css/auto-complete.css?1727093234" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1727093234" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1727093234" rel="stylesheet">
-    <link href="/css/fonts.css?1727093234" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1727093234" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1727093234" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1727093234" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1727093234" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1727093234" rel="stylesheet">
-    <link href="/css/print.css?1727093234" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1727093234"></script>
+    <link href="/images/logo.svg?1729513265" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1729513268" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729513268" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729513268" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729513268" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729513268" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729513268" rel="stylesheet">
+    <link href="/css/fonts.css?1729513268" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729513268" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729513268" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1729513268" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1729513268" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1729513268" rel="stylesheet">
+    <link href="/css/print.css?1729513268" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729513268"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -126,18 +126,18 @@ dthomas@lgfedora:~$ dmesg | grep tty [ 0.119494] printk: console [tty0] enabled 
 
 <p>Using GTKterm app</p>
 <p>Find out what port your serial cable is plugged into:</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>dthomas@lgfedora:~$ dmesg | grep tty
-[    0.119494] printk: console [tty0] enabled
-[    1.591268] serial8250: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
-[    7.707751] systemd[1]: Created slice system-getty.slice - Slice /system/getty.
-[    7.708786] systemd[1]: Reached target getty.target - Login Prompts.
-[  424.829380] usb 3-6: FTDI USB Serial Device converter now attached to ttyUSB0
-[  498.255356] ftdi_sio ttyUSB0: FTDI USB Serial Device converter now disconnected from ttyUSB0
-[  499.952411] usb 3-4: FTDI USB Serial Device converter now attached to ttyUSB0
-[ 1020.298236] ftdi_sio ttyUSB0: FTDI USB Serial Device converter now disconnected from ttyUSB0
-[ 1022.774544] usb 3-6: FTDI USB Serial Device converter now attached to ttyUSB0
-[ 1115.380773] ftdi_sio ttyUSB0: FTDI USB Serial Device converter now disconnected from ttyUSB0
-[ 1117.430371] usb 3-4: FTDI USB Serial Device converter now attached to ttyUSB0</code></pre></div><p>See last line that says &ldquo;now attached&rdquo;</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dthomas@lgfedora:~$ dmesg | grep tty
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>    0.119494<span style="color:#ff6ac1">]</span> printk: console <span style="color:#ff6ac1">[</span>tty0<span style="color:#ff6ac1">]</span> enabled
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>    1.591268<span style="color:#ff6ac1">]</span> serial8250: ttyS0 at I/O 0x3f8 <span style="color:#ff6ac1">(</span><span style="color:#ff5c57">irq</span> <span style="color:#ff6ac1">=</span> 4, <span style="color:#ff5c57">base_baud</span> <span style="color:#ff6ac1">=</span> 115200<span style="color:#ff6ac1">)</span> is a 16550A
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>    7.707751<span style="color:#ff6ac1">]</span> systemd<span style="color:#ff6ac1">[</span>1<span style="color:#ff6ac1">]</span>: Created slice system-getty.slice - Slice /system/getty.
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>    7.708786<span style="color:#ff6ac1">]</span> systemd<span style="color:#ff6ac1">[</span>1<span style="color:#ff6ac1">]</span>: Reached target getty.target - Login Prompts.
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>  424.829380<span style="color:#ff6ac1">]</span> usb 3-6: FTDI USB Serial Device converter now attached to ttyUSB0
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>  498.255356<span style="color:#ff6ac1">]</span> ftdi_sio ttyUSB0: FTDI USB Serial Device converter now disconnected from ttyUSB0
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>  499.952411<span style="color:#ff6ac1">]</span> usb 3-4: FTDI USB Serial Device converter now attached to ttyUSB0
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span> 1020.298236<span style="color:#ff6ac1">]</span> ftdi_sio ttyUSB0: FTDI USB Serial Device converter now disconnected from ttyUSB0
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span> 1022.774544<span style="color:#ff6ac1">]</span> usb 3-6: FTDI USB Serial Device converter now attached to ttyUSB0
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span> 1115.380773<span style="color:#ff6ac1">]</span> ftdi_sio ttyUSB0: FTDI USB Serial Device converter now disconnected from ttyUSB0
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span> 1117.430371<span style="color:#ff6ac1">]</span> usb 3-4: FTDI USB Serial Device converter now attached to ttyUSB0</span></span></code></pre></div><p>See last line that says &ldquo;now attached&rdquo;</p>
 
             <footer class="footline">
             </footer>
@@ -166,12 +166,12 @@ dthomas@lgfedora:~$ dmesg | grep tty [ 0.119494] printk: console [tty0] enabled 
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1727093234" defer></script>
-        <script src="/js/lunr/lunr.min.js?1727093234" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1727093234" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1727093234" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1727093234" defer></script>
-        <script src="/js/search.js?1727093234" defer></script>
+        <script src="/js/auto-complete.js?1729513268" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729513268" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729513268" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729513268" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729513268" defer></script>
+        <script src="/js/search.js?1729513268" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -193,6 +193,7 @@ dthomas@lgfedora:~$ dmesg | grep tty [ 0.119494] printk: console [tty0] enabled 
           <li data-nav-id="/tools/using-vagrant-on-linux/" class=""><a class="padding" href="/tools/using-vagrant-on-linux/">Using Vagrant on Linux<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/writing/" class=""><input type="checkbox" id="R-section-e557a922d533a171e9a204b7e50265e2" aria-controls="R-subsections-e557a922d533a171e9a204b7e50265e2"><label for="R-section-e557a922d533a171e9a204b7e50265e2"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Writing</span></label><a class="padding" href="/writing/">Writing<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e557a922d533a171e9a204b7e50265e2" class="morespace collapsible-menu">
           <li data-nav-id="/writing/4-ways-to-quit-caffeine/" class=""><a class="padding" href="/writing/4-ways-to-quit-caffeine/">4 Ways to Quit Caffeine<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/recipes/" class=""><a class="padding" href="/recipes/">Recipes<i class="fa-fw fas fa-check read-icon"></i></a></li>
           </ul>
         </div>
         <div id="R-shortcuts">
@@ -251,8 +252,8 @@ dthomas@lgfedora:~$ dmesg | grep tty [ 0.119494] printk: console [tty0] enabled 
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1727093234" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1727093234" defer></script>
+    <script src="/js/clipboard.min.js?1729513268" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729513268" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -268,20 +269,20 @@ dthomas@lgfedora:~$ dmesg | grep tty [ 0.119494] printk: console [tty0] enabled 
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1727093234" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1727093234" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1727093234" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1727093234" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1727093234" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1727093234" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1727093234" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1727093234" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1727093234" defer></script>
-    <script src="/js/js-yaml.min.js?1727093234" defer></script>
+    <script src="/js/d3/d3-color.min.js?1729513268" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1729513268" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1729513268" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1729513268" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1729513268" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1729513268" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1729513268" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1729513268" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1729513268" defer></script>
+    <script src="/js/js-yaml.min.js?1729513268" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1727093234" defer></script>
+    <script src="/js/theme.js?1729513268" defer></script>
   </body>
 </html>

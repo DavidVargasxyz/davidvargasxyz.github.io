@@ -87,7 +87,7 @@ identifier.
 \
 
 ::: {style="text-align: center;"}
-![](image-BR20BNCA.jpg){height="100%"}
+![](image-BR20BNCA%201.jpg){height="100%"}
 :::
 
 Job scheduling allows a user to schedule a command for a one-time or
@@ -149,7 +149,7 @@ Figure 8-1.
 \
 
 ::: {style="text-align: center;"}
-![](image-5YWJN0KN.jpg){height="100%"}
+![](image-5YWJN0KN%201.jpg){height="100%"}
 :::
 
 Figure 8-1 Process State Transition
@@ -198,7 +198,7 @@ terminal where this command is issued:
 
 <div>
 
-![](image-2T0S653J.jpg){height="100%"}
+![](image-2T0S653J%201.jpg){height="100%"}
 
 </div>
 
@@ -228,7 +228,7 @@ when ps is executed with -e and -f flags on the system.
 
 <div>
 
-![](image-QQABWO1C.jpg){height="100%"}
+![](image-QQABWO1C%201.jpg){height="100%"}
 
 </div>
 
@@ -298,7 +298,7 @@ column 4, run it as follows:
 
 <div>
 
-![](image-P86YLM59.jpg){height="100%"}
+![](image-P86YLM59%201.jpg){height="100%"}
 
 </div>
 
@@ -317,7 +317,7 @@ currently running on the system:
 
 <div>
 
-![](image-CQ26C6T5.jpg){height="100%"}
+![](image-CQ26C6T5%201.jpg){height="100%"}
 
 </div>
 
@@ -341,7 +341,7 @@ system. A sample of a running top session is shown below:
 
 <div>
 
-![](image-9U9PV626.jpg){height="100%"}
+![](image-9U9PV626%201.jpg){height="100%"}
 
 </div>
 
@@ -431,7 +431,7 @@ following:
 
 <div>
 
-![](image-472TCNXI.jpg){height="100%"}
+![](image-472TCNXI%201.jpg){height="100%"}
 
 </div>
 
@@ -455,7 +455,7 @@ the username:
 
 <div>
 
-![](image-WLH9Y8KU.jpg){height="100%"}
+![](image-WLH9Y8KU%201.jpg){height="100%"}
 
 </div>
 
@@ -468,7 +468,7 @@ only:
 
 <div>
 
-![](image-NJVHX90K.jpg){height="100%"}
+![](image-NJVHX90K%201.jpg){height="100%"}
 
 </div>
 
@@ -520,7 +520,7 @@ The default niceness can be viewed with the nice command as follows:
 
 <div>
 
-![](image-DZFM9QSL.jpg){height="100%"}
+![](image-DZFM9QSL%201.jpg){height="100%"}
 
 </div>
 
@@ -532,7 +532,7 @@ processes:
 
 <div>
 
-![](image-5QPXBUA4.jpg){height="100%"}
+![](image-5QPXBUA4%201.jpg){height="100%"}
 
 </div>
 
@@ -586,7 +586,7 @@ new niceness and priority after each execution of the top session.
 
 <div>
 
-![](image-NX19F2O8.jpg){height="100%"}
+![](image-NX19F2O8%201.jpg){height="100%"}
 
 </div>
 
@@ -597,7 +597,7 @@ using the ps command:
 
 <div>
 
-![](image-CWI4DBM5.jpg){height="100%"}
+![](image-CWI4DBM5%201.jpg){height="100%"}
 
 </div>
 
@@ -612,7 +612,7 @@ relaunch it at a lower priority with a nice value of +2:
 
 <div>
 
-![](image-C97PWI8J.jpg){height="100%"}
+![](image-C97PWI8J%201.jpg){height="100%"}
 
 </div>
 
@@ -623,7 +623,7 @@ using the ps command:
 
 <div>
 
-![](image-6P3O8KHV.jpg){height="100%"}
+![](image-6P3O8KHV%201.jpg){height="100%"}
 
 </div>
 
@@ -639,7 +639,7 @@ root privileges.
 
 <div>
 
-![](image-BA4277WB.jpg){height="100%"}
+![](image-BA4277WB%201.jpg){height="100%"}
 
 </div>
 
@@ -650,7 +650,7 @@ using the ps command:
 
 <div>
 
-![](image-J4877DNH.jpg){height="100%"}
+![](image-J4877DNH%201.jpg){height="100%"}
 
 </div>
 
@@ -694,7 +694,7 @@ top session.
 
 <div>
 
-![](image-KOWFPB1H.jpg){height="100%"}
+![](image-KOWFPB1H%201.jpg){height="100%"}
 
 </div>
 
@@ -705,7 +705,7 @@ using the ps command:
 
 <div>
 
-![](image-RPCJG0EU.jpg){height="100%"}
+![](image-RPCJG0EU%201.jpg){height="100%"}
 
 </div>
 
@@ -721,7 +721,7 @@ substitution to get the PID of top. Prepend the renice command by sudo.
 
 <div>
 
-![](image-TI4GZLZS.jpg){height="100%"}
+![](image-TI4GZLZS%201.jpg){height="100%"}
 
 </div>
 
@@ -736,7 +736,7 @@ process.
 
 <div>
 
-![](image-ZXQM8G2A.jpg){height="100%"}
+![](image-ZXQM8G2A%201.jpg){height="100%"}
 
 </div>
 
@@ -752,7 +752,7 @@ renicing it to 8:
 
 <div>
 
-![](image-2O1CQAIK.jpg){height="100%"}
+![](image-2O1CQAIK%201.jpg){height="100%"}
 
 </div>
 
@@ -767,7 +767,7 @@ process.
 
 <div>
 
-![](image-TN53XVDV.jpg){height="100%"}
+![](image-TN53XVDV%201.jpg){height="100%"}
 
 </div>
 
@@ -807,7 +807,7 @@ kill command using the -l option:
 
 <div>
 
-![](image-AWPNXQBB.jpg){height="100%"}
+![](image-AWPNXQBB%201.jpg){height="100%"}
 
 </div>
 
@@ -890,7 +890,7 @@ the following:
 
 <div>
 
-![](image-36BT3VMP.jpg){height="100%"}
+![](image-36BT3VMP%201.jpg){height="100%"}
 
 </div>
 
@@ -912,7 +912,7 @@ forcefully using signal 9 in any of the following ways:
 
 <div>
 
-![](image-Z7GDROPY.jpg){height="100%"}
+![](image-Z7GDROPY%201.jpg){height="100%"}
 
 </div>
 
@@ -924,7 +924,7 @@ processes (assuming there are many of them running):
 
 <div>
 
-![](image-DBURS3XF.jpg){height="100%"}
+![](image-DBURS3XF%201.jpg){height="100%"}
 
 </div>
 
@@ -1053,7 +1053,7 @@ execute at:
 
 <div>
 
-![](image-VWFIN965.jpg){height="100%"}
+![](image-VWFIN965%201.jpg){height="100%"}
 
 </div>
 
@@ -1064,7 +1064,7 @@ to the cron service:
 
 <div>
 
-![](image-NIP1DRXO.jpg){height="100%"}
+![](image-NIP1DRXO%201.jpg){height="100%"}
 
 </div>
 
@@ -1091,7 +1091,7 @@ entries from the log file are shown below:
 
 <div>
 
-![](image-ME7X1OWZ.jpg){height="100%"}
+![](image-ME7X1OWZ%201.jpg){height="100%"}
 
 </div>
 
@@ -1162,7 +1162,7 @@ now:
 
 <div>
 
-![](image-EZ7PXBXJ.jpg){height="100%"}
+![](image-EZ7PXBXJ%201.jpg){height="100%"}
 
 </div>
 
@@ -1199,7 +1199,7 @@ submission and return to the shell prompt.
 
 <div>
 
-![](image-UPDGEA0O.jpg){height="100%"}
+![](image-UPDGEA0O%201.jpg){height="100%"}
 
 </div>
 
@@ -1214,7 +1214,7 @@ job's execution time.
 
 <div>
 
-![](image-5C170TNI.jpg){height="100%"}
+![](image-5C170TNI%201.jpg){height="100%"}
 
 </div>
 
@@ -1225,7 +1225,7 @@ atq to list it.
 
 <div>
 
-![](image-LFXE8NVO.jpg){height="100%"}
+![](image-LFXE8NVO%201.jpg){height="100%"}
 
 </div>
 
@@ -1236,7 +1236,7 @@ job ID:
 
 <div>
 
-![](image-NJLJSZ5H.jpg){height="100%"}
+![](image-NJLJSZ5H%201.jpg){height="100%"}
 
 </div>
 
@@ -1247,7 +1247,7 @@ You may alternatively run atrm 2 to delete it.
 
 <div>
 
-![](image-9PRXKDXI.jpg){height="100%"}
+![](image-9PRXKDXI%201.jpg){height="100%"}
 
 </div>
 
@@ -1312,7 +1312,7 @@ the syntax.
 \
 
 ::: {style="text-align: center;"}
-![](image-GWSG7KXY.jpg){height="100%"}
+![](image-GWSG7KXY%201.jpg){height="100%"}
 :::
 
 Figure 8-2 Syntax of Crontables
@@ -1441,7 +1441,7 @@ remove it.
 
 <div>
 
-![](image-XR18P20C.jpg){height="100%"}
+![](image-XR18P20C%201.jpg){height="100%"}
 
 </div>
 
@@ -1452,7 +1452,7 @@ file when done and exit out of the editor.
 
 <div>
 
-![](image-USG2I636.jpg){height="100%"}
+![](image-USG2I636%201.jpg){height="100%"}
 
 </div>
 
@@ -1463,7 +1463,7 @@ file when done and exit out of the editor.
 
 <div>
 
-![](image-XCVAY7OR.jpg){height="100%"}
+![](image-XCVAY7OR%201.jpg){height="100%"}
 
 </div>
 
@@ -1473,7 +1473,7 @@ file when done and exit out of the editor.
 
 <div>
 
-![](image-NCXRMCNC.jpg){height="100%"}
+![](image-NCXRMCNC%201.jpg){height="100%"}
 
 </div>
 
@@ -1483,7 +1483,7 @@ file when done and exit out of the editor.
 
 <div>
 
-![](image-Y48V5AOY.jpg){height="100%"}
+![](image-Y48V5AOY%201.jpg){height="100%"}
 
 </div>
 

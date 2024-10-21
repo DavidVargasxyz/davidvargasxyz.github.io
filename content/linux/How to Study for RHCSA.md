@@ -1,4 +1,4 @@
-![](Pasted%20image%2020240514085701.png)
+![](Pasted%20image%2020240514085701%201.png)
 For this one, I read the book completely to get a birds eye view. Then I converted the chapters to Markdown pages. And started with chapter 1 and turned it into an outline. Doing any labs along the way. Then do the same for chapter 2
 
 

@@ -2,7 +2,7 @@
 
 - DNS is also referred to as BIND (Berkeley Internet Name Domain)
 	- An implementation of DNS,
-	- most popular DNS application in use. 
+	- Most popular DNS application in use. 
 	- Name resolution is the technique that uses DNS/BIND for hostname lookups.
 ### DNS Name Space and Domains
 
@@ -11,9 +11,9 @@
 	- Root of the name space is represented by a period (.)
 	- Hierarchy below the root (.) denotes the top-level domains (TLDs) with names such as .com, .net, .edu, .org, .gov, .ca, and .de. 
 	- A DNS domain is a collection of one or more systems. Subdomains fall under their parent domains and are separated by a period (.). 
-		- redhat.com is a second-level subdomain that falls under .com, and bugzilla.redhat.com is a third-level subdomain that falls under redhat.com.
+	root of the name space is represented by a period (	- redhat.com is a second-level subdomain that falls under .com, and bugzilla.redhat.com is a third-level subdomain that falls under redhat.com.
 
-![](image-TJ7OW7U5.jpg)
+![](image-TJ7OW7U5%201.jpg)
 
 - Deepest level of the hierarchy are the leaves (systems, nodes, or any device with an IP address) of the name space. 
 	- a network switch net01 in .travel.gc.ca subdomain will be known as net01.travel.gc.ca. 

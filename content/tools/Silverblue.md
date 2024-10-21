@@ -13,7 +13,6 @@ System Level
 	- gnome shell extensions
 	- distrobox
 
-![](tech/tools/Obsidian/Archive/Attachments/Pasted%20image%2020230718045403.png)
 
 Uses rpm-ostree? https://coreos.github.io/rpm-ostree/administrator-handbook/
 
@@ -23,7 +22,6 @@ Remove fedora flatpack stuff and use flathub repos instead https://flatpak.org/s
 
 Systemd unit for automatic flatpack updates
 
-![](tech/tools/Obsidian/Archive/Attachments/Pasted%20image%2020230718045927.png)
 
 Update every 4 hours to mirror ubuntu
 

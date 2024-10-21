@@ -129,7 +129,7 @@ Start tmux:
 from a terminal window. You'll see something that looks like the
 following image appear on your screen.
 
-![](Pasted%20image%2020240403103153.png)
+![](/images/Pasted%20image%2020240403103153.png)
 
 
 
@@ -168,7 +168,7 @@ Named sessions come in handy when you want to leave tmux running in the backgrou
 Open the tmux clock: (press enter to dismiss the clock)
 `prefix-t`
 
-![](Pasted%20image%2020240403135641.png)
+![](/images/Pasted%20image%2020240403135641.png)
 
 Detach from a session:
 `Prefix-d`
@@ -182,7 +182,7 @@ Detach from a session:
 Within a tmux session, start top:
 `top`​
 
-![](Pasted%20image%2020240403141320.png)
+![](/images/Pasted%20image%2020240403141320.png)
 
 Detach from the tmux session: 
 `prefix-d`
@@ -272,9 +272,6 @@ Create a new tmux session called "panes":
 ​​`tmux​​ ​​new​​ ​​-s​ ​​panes`​
 
 - can split windows vertically or horizontally. 
-
-
-
 - `Prefix` `%` window will divide down the middle and start up a second terminal session in the new pane.
 - the focus will move to this new pane
 - `Prefix` `"` split this new pane in half horizontally. 
@@ -286,7 +283,7 @@ Create a new tmux session called "panes":
 Split the window in half vertically first, and then horizontally, creating one large pane on the left and two smaller panes on the right: 
 `Prefix` `%` `Prefix` `"`
 
-![](Pasted%20image%2020240403150606.png)
+![](/images/Pasted%20image%2020240403150606.png)
 ### Pane Layouts 
 
 - resize a pane using incremental resizing or templates.
@@ -750,7 +747,7 @@ mode. On the Mac, you can configure this in the Terminal app by editing
 the profile as shown in the following figure:
 
 ::: ss
-![images/config/iterm2.png](images/image00120.jpeg){#d24e2463
+![images/config/iterm2.png](/images/image00120.jpeg){#d24e2463
 style="width: 90%"}
 :::
 

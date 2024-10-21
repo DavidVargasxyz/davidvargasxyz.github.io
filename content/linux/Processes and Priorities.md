@@ -33,7 +33,7 @@ Process
 		- entry is retained until its parent process permits it to die
 		- also called a defunct process.
 		
-![](image-5YWJN0KN.jpg)
+![](image-5YWJN0KN%201.jpg)
 ### `ps` command
 - Lists processes specific to the terminal where this command is issued.
 - Shows:

@@ -2,7 +2,7 @@
 
 ### Lab: Mount RHEL 9 ISO Persistently
 1. Go to the VirtualBox VM Manager and make sure that the RHEL 8 image is attached to RHEL9-VM1 as depicted below:
-![](Pasted%20image%2020240713164339.png)
+![](Pasted%20image%2020240713164339%201.png)
 
 2. Open the /etc/fstab file in the vim editor (or another editor of your choice) and add the following line entry at the end of the file to mount the DVD image (/dev/sr0) in read-only (ro) mode on the /mnt directory.
 

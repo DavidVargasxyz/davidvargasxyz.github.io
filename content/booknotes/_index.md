@@ -56,6 +56,14 @@ Marcus Aurellius also cut through what does matter. Such as service to others. S
 
 ---
 
+![Your Brain on Porn](https://m.media-amazon.com/images/I/611TBbtqJYL._SL1360_.jpg?classes=inline&height=175px)
+
+[Your Brain on Porn](Your%20Brain%20on%20Porn.md) (9/10)
+
+Excellent primer on how addiction wires your brain. Explains the negatives of porn use without going into anything religious. Also gives tips on quitting porn use and includes many anecdotes of people describing how their lives changed when giving up porn use. 
+
+---
+
 ![Million Dollar Weekend](https://m.media-amazon.com/images/I/711Oi-AKX1L._SL1500_.jpg?classes=inline&height=175px)
 
 [Million Dollar Weekend](/booknotes/Million%20Dollar%20Weekend.md) (8/10)

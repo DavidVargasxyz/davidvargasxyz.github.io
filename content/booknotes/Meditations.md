@@ -11,16 +11,14 @@ Marcus Aurellius also cut through what does matter. Such as service to others. S
 
 ---
 
+## Summary and Highlights
+
 Self-control and resistance to distractions.
 
-Optimism in adversity—especially illness
+Optimism in adversity—especially illness.
 
-That I had someone—as a ruler and as a father—who could keep me from
-being arrogant and make me realize that even at court you can live
-without a troop of bodyguards, and gorgeous clothes, lamps,
-sculpture—the whole charade. That you can behave almost like an
-ordinary person without seeming slovenly or careless as a ruler or
-when carrying out official obligations.
+That I had someone—as a ruler and as a father—who could keep me from being arrogant and make me realize that even at court you can live without a troop of bodyguards, and gorgeous clothes, lamps, sculpture—the whole charade. That you can behave almost like an
+ordinary person without seeming slovenly or careless as a ruler or when carrying out official obligations.
 
 Remember how long you’ve been putting this off, how many extensions
 the gods gave you, and you didn’t use them. At some point you have to

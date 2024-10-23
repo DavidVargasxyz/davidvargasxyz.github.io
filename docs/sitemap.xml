@@ -30,6 +30,9 @@
     <loc>http://davidvargas.xyz/categories/</loc>
   </url>
   <url>
+    <loc>http://davidvargas.xyz/recipes/creamy-jalepeno-sauce/</loc>
+  </url>
+  <url>
     <loc>http://davidvargas.xyz/recipes/easy-mango-salsa-quinoa-bowl/</loc>
   </url>
   <url>
@@ -55,6 +58,9 @@
   </url>
   <url>
     <loc>http://davidvargas.xyz/tags/</loc>
+  </url>
+  <url>
+    <loc>http://davidvargas.xyz/recipes/tempeh-bacon/</loc>
   </url>
   <url>
     <loc>http://davidvargas.xyz/tools/using-vagrant-on-linux/</loc>

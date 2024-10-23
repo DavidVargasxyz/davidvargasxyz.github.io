@@ -41,8 +41,8 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "",
-    "content": "",
-    "description": "",
+    "content": " Creamy Jalepeno Sauce Easy Mango Salsa Quinoa Bowl Vegan Tofu Quesadilla Tempeh Bacon ",
+    "description": " Creamy Jalepeno Sauce Easy Mango Salsa Quinoa Bowl Vegan Tofu Quesadilla Tempeh Bacon ",
     "tags": [],
     "title": "Recipes",
     "uri": "/recipes/"
@@ -70,6 +70,14 @@ var relearn_search_index = [
     "tags": [],
     "title": "Categories",
     "uri": "/categories/"
+  },
+  {
+    "breadcrumb": "Recipes",
+    "content": "Creamy Jalepeno Sauce 1 cup vegan mayo 1 tsp onion powder 1 tsp garlic powder 1 tsp smoked paprika 1 tsp chipotle powder 2 tbps pickled jalepeno brine 8 slices pickled jelepenos finely diced Can add citric acid or lime juice for more zip 2-4 tablespoons vegan sour cream Blend ingredients and add to sauce bottle.",
+    "description": "Creamy Jalepeno Sauce 1 cup vegan mayo 1 tsp onion powder 1 tsp garlic powder 1 tsp smoked paprika 1 tsp chipotle powder 2 tbps pickled jalepeno brine 8 slices pickled jelepenos finely diced Can add citric acid or lime juice for more zip 2-4 tablespoons vegan sour cream Blend ingredients and add to sauce bottle.",
+    "tags": [],
+    "title": "Creamy Jalepeno Sauce",
+    "uri": "/recipes/creamy-jalepeno-sauce/"
   },
   {
     "breadcrumb": "Recipes",
@@ -142,6 +150,14 @@ var relearn_search_index = [
     "tags": [],
     "title": "Tags",
     "uri": "/tags/"
+  },
+  {
+    "breadcrumb": "Recipes",
+    "content": "Marinade: 2 cups Liquid Amino 2 cups Water 2 tbsp Liquid Smoke 1/4 cup Maple Syrup 2 tsp Cumin 2 tsp Pepper 2 tsp Garlic Powder 2 tsp Smoked Paprika\nMarinate for 1 hour and place on parchment paper on baking sheet. Bake at 400 degrees for 25 minutes Save Marinade, good for 7 days.",
+    "description": "Marinade: 2 cups Liquid Amino 2 cups Water 2 tbsp Liquid Smoke 1/4 cup Maple Syrup 2 tsp Cumin 2 tsp Pepper 2 tsp Garlic Powder 2 tsp Smoked Paprika\nMarinate for 1 hour and place on parchment paper on baking sheet. Bake at 400 degrees for 25 minutes Save Marinade, good for 7 days.",
+    "tags": [],
+    "title": "Tempeh Bacon",
+    "uri": "/recipes/tempeh-bacon/"
   },
   {
     "breadcrumb": "Tools",

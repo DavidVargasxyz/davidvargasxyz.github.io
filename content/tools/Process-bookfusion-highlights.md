@@ -2,7 +2,7 @@ Here are my highlights pulled up in Vim:
 
 ![](/images/Pasted%20image%2020240414034031.png)
 
-As you can see, Bookfusion gives you a lok of extra information when you export highlights. First, let's get rid of the lines that begin with `##`
+As you can see, Bookfusion gives you a lot of extra information when you export highlights. First, let's get rid of the lines that begin with `##`
 
 Enter command mode in Vim by pressing `esc`. Then type `:g/^##/d` and press enter.
 

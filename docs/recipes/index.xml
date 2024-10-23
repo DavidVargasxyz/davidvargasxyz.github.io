@@ -3,16 +3,30 @@
   <channel>
     <title>Recipes</title>
     <link>http://davidvargas.xyz/recipes/</link>
-    <description></description>
+    <description> Creamy Jalepeno Sauce Easy Mango Salsa Quinoa Bowl Vegan Tofu Quesadilla Tempeh Bacon </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://davidvargas.xyz/recipes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creamy Jalepeno Sauce</title>
+      <link>http://davidvargas.xyz/recipes/creamy-jalepeno-sauce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://davidvargas.xyz/recipes/creamy-jalepeno-sauce/</guid>
+      <description>Creamy Jalepeno Sauce 1 cup vegan mayo 1 tsp onion powder 1 tsp garlic powder 1 tsp smoked paprika 1 tsp chipotle powder 2 tbps pickled jalepeno brine 8 slices pickled jelepenos finely diced Can add citric acid or lime juice for more zip 2-4 tablespoons vegan sour cream Blend ingredients and add to sauce bottle.</description>
+    </item>
     <item>
       <title>Easy Mango Salsa Quinoa Bowl</title>
       <link>http://davidvargas.xyz/recipes/easy-mango-salsa-quinoa-bowl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://davidvargas.xyz/recipes/easy-mango-salsa-quinoa-bowl/</guid>
       <description> Ingredients Quinoa Mango Salsa Guacamole Micro greens Black Beans Creamy Jalepeno Sauce </description>
+    </item>
+    <item>
+      <title>Tempeh Bacon</title>
+      <link>http://davidvargas.xyz/recipes/tempeh-bacon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://davidvargas.xyz/recipes/tempeh-bacon/</guid>
+      <description>Marinade: 2 cups Liquid Amino 2 cups Water 2 tbsp Liquid Smoke 1/4 cup Maple Syrup 2 tsp Cumin 2 tsp Pepper 2 tsp Garlic Powder 2 tsp Smoked Paprika&#xA;Marinate for 1 hour and place on parchment paper on baking sheet. Bake at 400 degrees for 25 minutes Save Marinade, good for 7 days.</description>
     </item>
     <item>
       <title>Vegan Tofu Quesadilla</title>

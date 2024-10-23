@@ -1,3 +1,6 @@
+---
+title: Creamy Jalepeno Sauce
+---
 ## Creamy Jalepeno Sauce
 - 1 cup vegan mayo
 - 1 tsp onion powder

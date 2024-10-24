@@ -1,20 +1,88 @@
 {
   "recentFiles": [
     {
+      "basename": "Caffeine is Destroying You",
+      "path": "writing/Caffeine is Destroying You.md"
+    },
+    {
+      "basename": "Cardi B Fig Nest Turns Into Struggle for Power",
+      "path": "writing/Cardi B Fig Nest Turns Into Struggle for Power.md"
+    },
+    {
+      "basename": "The journey",
+      "path": "writing/The journey.md"
+    },
+    {
+      "basename": "Nat Eliason's SEO course",
+      "path": "writing/Nat Eliason's SEO course.md"
+    },
+    {
+      "basename": "My Journey With Addiction",
+      "path": "writing/My Journey With Addiction.md"
+    },
+    {
+      "basename": "How I Earned My First Penny on Medium.com",
+      "path": "writing/How I Earned My First Penny on Medium.com.md"
+    },
+    {
+      "basename": "caffeine-and-weightloss",
+      "path": "writing/caffeine-and-weightloss.md"
+    },
+    {
+      "basename": "Austerities",
+      "path": "writing/Austerities.md"
+    },
+    {
+      "basename": "19 Biggest Lessons From Reading 100 Books.",
+      "path": "writing/19 Biggest Lessons From Reading 100 Books..md"
+    },
+    {
+      "basename": "4 Ways to Quit caffeine",
+      "path": "writing/4 Ways to Quit caffeine.md"
+    },
+    {
+      "basename": "7 Steps to Get Back on a NoFap Streak Immediately",
+      "path": "writing/7 Steps to Get Back on a NoFap Streak Immediately.md"
+    },
+    {
+      "basename": "The Blog Startup",
+      "path": "booknotes/The Blog Startup.md"
+    },
+    {
       "basename": "_index",
       "path": "booknotes/_index.md"
     },
     {
-      "basename": "Dopamine Nation",
-      "path": "booknotes/Dopamine Nation.md"
+      "basename": "The Psychology of Money",
+      "path": "booknotes/The Psychology of Money.md"
+    },
+    {
+      "basename": "Why I Read Physical Books",
+      "path": "booknotes/Why I Read Physical Books.md"
+    },
+    {
+      "basename": "_index",
+      "path": "linux/_index.md"
+    },
+    {
+      "basename": "_index",
+      "path": "_index.md"
     },
     {
       "basename": "Meditations",
       "path": "booknotes/Meditations.md"
     },
     {
-      "basename": "The Relationship Handbook",
-      "path": "booknotes/The Relationship Handbook.md"
+      "basename": "Anything You Want",
+      "path": "booknotes/Anything You Want.md"
+    },
+    {
+      "basename": "Your Brain on Porn",
+      "path": "booknotes/Your Brain on Porn.md"
+    },
+    {
+      "basename": "Dopamine Nation",
+      "path": "booknotes/Dopamine Nation.md"
     },
     {
       "basename": "Process-bookfusion-highlights",
@@ -25,16 +93,28 @@
       "path": "tools/_index.md"
     },
     {
+      "basename": "Sample Exam 1",
+      "path": "linux/Sample Exam 1.md"
+    },
+    {
+      "basename": "RHCSA Study Tracker",
+      "path": "linux/RHCSA Study Tracker.md"
+    },
+    {
+      "basename": "Reset the root User Password",
+      "path": "linux/Reset the root User Password.md"
+    },
+    {
+      "basename": "The Power of Positive Dog Training",
+      "path": "booknotes/The Power of Positive Dog Training.md"
+    },
+    {
+      "basename": "The Relationship Handbook",
+      "path": "booknotes/The Relationship Handbook.md"
+    },
+    {
       "basename": "123 Magic",
       "path": "booknotes/123 Magic.md"
-    },
-    {
-      "basename": "Why I Read Physical Books",
-      "path": "booknotes/Why I Read Physical Books.md"
-    },
-    {
-      "basename": "_index",
-      "path": "_index.md"
     },
     {
       "basename": "Bliss of the Celibate",
@@ -77,24 +157,12 @@
       "path": "linux/Package Groups.md"
     },
     {
-      "basename": "_index",
-      "path": "linux/_index.md"
-    },
-    {
-      "basename": "Sample Exam 1",
-      "path": "linux/Sample Exam 1.md"
-    },
-    {
       "basename": "Networking DIY Challenge Labs",
       "path": "linux/Networking DIY Challenge Labs.md"
     },
     {
       "basename": "Networking Network Devices and Network Connections",
       "path": "linux/Networking Network Devices and Network Connections.md"
-    },
-    {
-      "basename": "RHCSA Study Tracker",
-      "path": "linux/RHCSA Study Tracker.md"
     },
     {
       "basename": "DNS and Name Resolution",
@@ -107,18 +175,6 @@
     {
       "basename": "DNS and Time Synchronization",
       "path": "linux/DNS and Time Synchronization.md"
-    },
-    {
-      "basename": "The Psychology of Money",
-      "path": "booknotes/The Psychology of Money.md"
-    },
-    {
-      "basename": "The Power of Positive Dog Training",
-      "path": "booknotes/The Power of Positive Dog Training.md"
-    },
-    {
-      "basename": "The Blog Startup",
-      "path": "booknotes/The Blog Startup.md"
     },
     {
       "basename": "I Will Teach You to Be Rich",
@@ -139,62 +195,6 @@
     {
       "basename": "Advanced User Management",
       "path": "linux/Advanced User Management.md"
-    },
-    {
-      "basename": "User Management",
-      "path": "linux/User Management.md"
-    },
-    {
-      "basename": "Linux Groups and their Management",
-      "path": "linux/Linux Groups and their Management.md"
-    },
-    {
-      "basename": "Basic User Management",
-      "path": "linux/Basic User Management.md"
-    },
-    {
-      "basename": "User Account Management",
-      "path": "linux/User Account Management.md"
-    },
-    {
-      "basename": "Reset the root User Password",
-      "path": "linux/Reset the root User Password.md"
-    },
-    {
-      "basename": "CCNA",
-      "path": "images/CCNA.png"
-    },
-    {
-      "basename": "Process and Task Scheduling Labs",
-      "path": "linux/Process and Task Scheduling Labs.md"
-    },
-    {
-      "basename": "Process and Task Scheduling",
-      "path": "linux/Process and Task Scheduling.md"
-    },
-    {
-      "basename": "19 Biggest Lessons From Reading 100 Books.",
-      "path": "writing/19 Biggest Lessons From Reading 100 Books..md"
-    },
-    {
-      "basename": "7 Steps to Get Back on a NoFap Streak Immediately",
-      "path": "writing/7 Steps to Get Back on a NoFap Streak Immediately.md"
-    },
-    {
-      "basename": "4 Ways to Quit caffeine",
-      "path": "writing/4 Ways to Quit caffeine.md"
-    },
-    {
-      "basename": "YAML In Obsidian",
-      "path": "tools/YAML In Obsidian.md"
-    },
-    {
-      "basename": "VS_Codium",
-      "path": "tools/VS_Codium.md"
-    },
-    {
-      "basename": "vimguide",
-      "path": "tools/vimguide.md"
     }
   ],
   "omittedPaths": [],

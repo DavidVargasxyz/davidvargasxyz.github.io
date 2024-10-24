@@ -18,18 +18,18 @@
     <meta itemprop="description" content="Process and Task Scheduling Labs Lab: ps ps ps Check manual pages: man ps Run with “every” and “full format” flags: ps -ef Produce an output with the command name in column 1, PID in column 2, PPID in column 3, and owner name in column 4, run it as follows: ps -o comm,pid,ppid,user Check how many sshd processes are currently running on the system: ps -C sshdLab: top top top View manual page: man topLab: List a specific process list the PID of the rsyslogd daemon pidof rsyslogd or pgrep rsyslogdLab: Listing Processes by User and Group Ownership List processes owned by user1: ps -U user1 List processes owned by group root: ps -G rootLab: nice View the default nice value: nice List priority and niceness for all processes: ps -eflLab: Start Processes at Non-Default Priorities (2 terminals) Run the top command at the default priority/niceness in Terminal 1: top Check the priority and niceness for the top command in Terminal 2 using the ps command: ps -efl | grep top Terminate the top session in Terminal 1 by pressing the letter q and relaunch it at a lower priority with a nice value of &#43;2: nice -n 2 top \Check the priority and niceness for the top command in Terminal 2 using the ps command: ps -efl | grep top Terminate the top session in Terminal 1 by pressing the letter q and relaunch it at a higher priority with a nice value of -10. Use sudo for root privileges. sudo nice -n -10 top Check the priority and niceness for the top command in Terminal 2 using the ps command: ps -efl | grep top Terminate the top session by pressing the letter q. Lab: Alter Process Priorities (2 terminals) Run the top command at the default priority/niceness in Terminal 1: top Check the priority and niceness for the top command in Terminal 2 using the ps command: ps -efl | grep top While the top session is running in Terminal 1, increase its priority by renicing it to -5. Use the command substitution to get the PID of top. Prepend the renice command by sudo. The output indicates the old (0) and new (-5) priorities for the process. sudo renice -n -5 $(pidof top) Validate the above change with ps. Focus on columns 7 and 8. ps -efl | grep top Repeat the above but set the process to run at a lower priority by renicing it to 8: The output indicates the old (-5) and new (8) priorities for the process. sudo renice -n 8 $(pidof top) Validate the above change with ps. Focus on columns 7 and 8. ps -efl | grep topLab: Controlling Processes with Signals Pass the soft termination signal to the crond daemon, use either of the following: sudo pkill crond # or sudo kill $(pidof crond) Confirm: ps -ef | grep crond Forcefully kill crond: sudo pkill -9 crond # or sudo pkill -s SIGKILL crond # or sudo kill -9 $(pgrep crond) Kill all crond processes: sudo killall crond View manual pages: man kill man pkill man killallLab: cron and atd View log files for cron and atd sudo cat /var/log/cronLab: at and crond run /home/user1/.bash_profile file for user1 2 hours from now: at -f ~/.bash_profile now &#43; 2 hours Consult crontab manual pages: man crontabLab: Submit, View, List, and Erase an at Job 1.Run the at command and specify the correct execution time and date for the job. Type the entire command at the first at&gt; prompt and press Enter. Press Ctrl&#43;d at the second at&gt; prompt to complete the job submission and return to the shell prompt.">
     <meta itemprop="wordCount" content="1044">
     <title></title>
-    <link href="/images/logo.svg?1729770039" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1729770040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729770040" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1729770040" rel="stylesheet">
-    <link href="/css/auto-complete.css?1729770040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729770040" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1729770040" rel="stylesheet">
-    <link href="/css/fonts.css?1729770040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729770040" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1729770040" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1729770040" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1729770040" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1729770040" rel="stylesheet">
-    <link href="/css/print.css?1729770040" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1729770040"></script>
+    <link href="/images/logo.svg?1729770732" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1729770733" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729770733" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729770733" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729770733" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729770733" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729770733" rel="stylesheet">
+    <link href="/css/fonts.css?1729770733" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729770733" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729770733" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1729770733" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1729770733" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1729770733" rel="stylesheet">
+    <link href="/css/print.css?1729770733" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729770733"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -350,12 +350,12 @@ user1</code></pre></div>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1729770040" defer></script>
-        <script src="/js/lunr/lunr.min.js?1729770040" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1729770040" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1729770040" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1729770040" defer></script>
-        <script src="/js/search.js?1729770040" defer></script>
+        <script src="/js/auto-complete.js?1729770733" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729770733" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729770733" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729770733" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729770733" defer></script>
+        <script src="/js/search.js?1729770733" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -386,7 +386,6 @@ user1</code></pre></div>
           <li data-nav-id="/recipes/easy-mango-salsa-quinoa-bowl/" class=""><a class="padding" href="/recipes/easy-mango-salsa-quinoa-bowl/">Easy Mango Salsa Quinoa Bowl<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/recipes/tempeh-bacon/" class=""><a class="padding" href="/recipes/tempeh-bacon/">Tempeh Bacon<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/recipes/vegan-tofu-quesadilla/" class=""><a class="padding" href="/recipes/vegan-tofu-quesadilla/">Vegan Tofu Quesadilla<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/content/" class=""><a class="padding" href="/content/">Contents<i class="fa-fw fas fa-check read-icon"></i></a></li>
           </ul>
         </div>
         <div id="R-shortcuts">
@@ -445,8 +444,8 @@ user1</code></pre></div>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1729770040" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1729770040" defer></script>
+    <script src="/js/clipboard.min.js?1729770733" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729770733" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -462,20 +461,20 @@ user1</code></pre></div>
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1729770040" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1729770040" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1729770040" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1729770040" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1729770040" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1729770040" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1729770040" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1729770040" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1729770040" defer></script>
-    <script src="/js/js-yaml.min.js?1729770040" defer></script>
+    <script src="/js/d3/d3-color.min.js?1729770733" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1729770733" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1729770733" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1729770733" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1729770733" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1729770733" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1729770733" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1729770733" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1729770733" defer></script>
+    <script src="/js/js-yaml.min.js?1729770733" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1729770040" defer></script>
+    <script src="/js/theme.js?1729770733" defer></script>
   </body>
 </html>

@@ -18,19 +18,19 @@
     <meta itemprop="description" content="AutoFS Automatically mount and unmount on clients during runtime and system reboots. Triggers mount or unmount action based on mount point activity. Client-side service Mount an NFS share on demand Entry placed in AutoFS config files. Automatically mounts share upon detecting activity in it’s mount point. (touch, ls, cd) unmounts share if the share hasn’t been accessed for a predefined period of time. Mounts managed with autofs should not be mounted manually via /etc/fstab to avoid inconsistencies. Saves Kernel from having to maintain unused NFS shares. (Improved performance!) NFS shares are defined in config files called maps (/etc/ or /etc/auto.master.d/) Does not use /etc/fstab. Does not require root to mount a share (fstab does). Prevents client from hanging if share is down. Share is unmounted if not accessed for 5 minutes (default) Supports wildcard characters or environment variables. Automount daemond in the userland mounts configured shares automatically upon access. invoked at system boot. Reads AutoFS master map and create inititial mount point entries. (not mounting yet) Does not mount shares until user activity is detected. Unmounts after set timeframe of inactivity. Use the mount command on a share to verify the path of the AutoFS map, file system type, and options used during mount. /etc/autofs.conf/ preset Directives: master_map_name=auto.master timeout = 300 negative_timeout = 60 mount_nfs_default_protocol = 4 logging = none">
     <meta itemprop="wordCount" content="1703">
     <title></title>
-    <link href="/images/logo.svg?1729770039" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1729770042" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729770042" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1729770042" rel="stylesheet">
-    <link href="/css/auto-complete.css?1729770042" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729770042" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1729770042" rel="stylesheet">
-    <link href="/css/fonts.css?1729770042" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729770042" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1729770042" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1729770042" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1729770042" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1729770042" rel="stylesheet">
-    <link href="/css/print.css?1729770042" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1729770042" rel="stylesheet">
-    <script src="/js/variant.js?1729770042"></script>
+    <link href="/images/logo.svg?1729770732" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1729770735" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729770735" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729770735" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729770735" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729770735" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729770735" rel="stylesheet">
+    <link href="/css/fonts.css?1729770735" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729770735" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729770735" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1729770735" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1729770735" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1729770735" rel="stylesheet">
+    <link href="/css/print.css?1729770735" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1729770735" rel="stylesheet">
+    <script src="/js/variant.js?1729770735"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -108,8 +108,8 @@
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1729770042" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1729770042" defer></script>
+    <script src="/js/clipboard.min.js?1729770735" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729770735" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -125,20 +125,20 @@
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1729770042" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1729770042" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1729770042" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1729770042" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1729770042" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1729770042" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1729770042" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1729770042" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1729770042" defer></script>
-    <script src="/js/js-yaml.min.js?1729770042" defer></script>
+    <script src="/js/d3/d3-color.min.js?1729770735" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1729770735" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1729770735" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1729770735" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1729770735" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1729770735" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1729770735" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1729770735" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1729770735" defer></script>
+    <script src="/js/js-yaml.min.js?1729770735" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1729770042" defer></script>
+    <script src="/js/theme.js?1729770735" defer></script>
   </body>
 </html>

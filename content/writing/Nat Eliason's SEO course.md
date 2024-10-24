@@ -1,3 +1,8 @@
+---
+title: Nat Eliason's SEO course
+---
+## Things I learned for Nat Eliason's SEO Course
+
 Leveling up
 - Start with an easy keyword
 - Over time, adjust article for harder and harder keywords

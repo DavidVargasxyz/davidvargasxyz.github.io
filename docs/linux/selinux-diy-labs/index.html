@@ -18,18 +18,18 @@
     <meta itemprop="description" content="SELinux DIY Labs Lab: Disable and Enable the SELinux Operating Mode Check and make a note of the current SELinux operating mode. [root@server30 ~]# getenforce Enforcing Modify the configuration file and set the mode to disabled. [root@server30 ~]# vim /etc/selinux/config SELINUX=permissive Reboot the system to apply the change. [root@server30 ~]# reboot Run sudo getenforce to confirm the change when the system is up. [root@server30 ~]# getenforce Permissive Restore the directive’s value to enforcing in the configuration file, and reboot to apply the new mode. [root@server30 ~]# vim /etc/selinux/config SELINUX=enforcing [root@server30 ~]# reboot Run sudo getenforce to confirm the mode when the system is up. [root@server30 ~]# getenforce EnforcingLab: Modify Context on Files Create directory hierarchy /tmp/d1/d2. [root@server30 ~]# mkdir /tmp/d1 [root@server30 ~]# mkdir /tmp/d1/d2 Check the contexts on /tmp/d1 and /tmp/d1/d2. [root@server30 d1]# ls -ldZ /tmp/d1 drwxr-xr-x. 3 root root unconfined_u:object_r:user_tmp_t:s0 16 Jul 29 13:17 /tmp/d1 [root@server30 d1]# ls -ldZ /tmp/d1/d2 drwxr-xr-x. 2 root root unconfined_u:object_r:user_tmp_t:s0 6 Jul 29 13:17 /tmp/d1/d2 Change the SELinux type on /tmp/d1 to etc_t recursively with the chcon command and confirm. [root@server30 tmp]# chcon -Rv -t etc_t /tmp/d1 changing security context of &#39;/tmp/d1/d2&#39; changing security context of &#39;/tmp/d1&#39; [root@server30 tmp]# ls -ldZ /tmp/d1 drwxr-xr-x. 3 root root unconfined_u:object_r:etc_t:s0 16 Jul 29 13:17 /tmp/d1 [root@server30 tmp]# ls -ldZ /tmp/d1/d2 drwxr-xr-x. 2 root root unconfined_u:object_r:etc_t:s0 6 Jul 29 13:17 /tmp/d1/d2 Add /tmp/d1 to the policy database with the semanage command to ensure the new context is persistent on the directory hierarchy. [root@server30 tmp]# semanage fcontext -a -t etc_t /tmp/d1 [root@server30 tmp]# reboot [root@server30 ~]# ls -ldZ /tmp/d1 drwxr-xr-x. 3 root root unconfined_u:object_r:etc_t:s0 16 Jul 29 13:17 /tmp/d1 [root@server30 ~]# ls -ldZ /tmp/d1/d2 drwxr-xr-x. 2 root root unconfined_u:object_r:etc_t:s0 6 Jul 29 13:17 /tmp/d1/d2Lab: Add Network Port to Policy Database Add network port 9005 to the SELinux policy database for the secure HTTP service using the semanage command. [root@server30 ~]# semanage port -l | grep ^http_port http_port_t tcp 80, 81, 443, 488, 8008, 8009, 8443, 9000 [root@server30 ~]# semanage port -at http_port_t -p tcp 9005 Verify the addition. [root@server30 ~]# semanage port -l | grep ^http_port http_port_t tcp 9005, 80, 81, 443, 488, 8008, 8009, 8443, 9000Lab: Copy Files with and without Context Create file sef1 under /tmp. [root@server30 ~]# touch /tmp/sef1 Copy the file to the /usr/local directory. [root@server30 ~]# cp /tmp/sef1 /usr/local Check and compare the contexts on both source and destination files. [root@server30 ~]# ls -lZ /tmp/sef1 -rw-r--r--. 1 root root unconfined_u:object_r:user_tmp_t:s0 0 Jul 29 13:33 /tmp/sef1 [root@server30 ~]# ls -lZ /usr/local/sef1 -rw-r--r--. 1 root root unconfined_u:object_r:usr_t:s0 0 Jul 29 13:33 /usr/local/sef1 Create another file sef2 under /tmp and copy it to the /var/local directory using the --preserve=context option with the cp command. [root@server30 ~]# touch /tmp/sef2 [root@server30 ~]# cp --preserve=context /tmp/sef2 /var/local/ Check and compare the contexts on both source and destination files. [root@server30 ~]# ls -lZ /tmp/sef2 /var/local/sef2 -rw-r--r--. 1 root root unconfined_u:object_r:user_tmp_t:s0 0 Jul 29 13:35 /tmp/sef2 -rw-r--r--. 1 root root unconfined_u:object_r:user_tmp_t:s0 0 Jul 29 13:36 /var/local/sef2Lab: Flip SELinux Booleans Check the current value of Boolean ssh_use_tcpd using the getsebool and sestatus commands. [root@server30 ~]# getsebool -a | grep ssh_use_tcpd ssh_use_tcpd --&gt; off Use the setsebool command and toggle the value of the directive. [root@server30 ~]# setsebool ssh_use_tcpd 1 Confirm the new value with the getsebool, semanage, or sestatus command. [root@server30 ~]# getsebool -a | grep ssh_use_tcpd ssh_use_tcpd --&gt; on [root@server30 ~]# sestatus -b | grep ssh_use_tcpd ssh_use_tcpd on [root@server30 ~]# semanage boolean -l | grep ssh_use_tcpd ssh_use_tcpd (on , off) Allow ssh to use tcpd">
     <meta itemprop="wordCount" content="583">
     <title></title>
-    <link href="/images/logo.svg?1729688014" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1729688015" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729688015" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1729688015" rel="stylesheet">
-    <link href="/css/auto-complete.css?1729688015" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729688015" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1729688015" rel="stylesheet">
-    <link href="/css/fonts.css?1729688015" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729688015" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1729688015" rel="stylesheet">
-    <link href="/css/theme-amoled.css?1729688015" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1729688015" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1729688015" rel="stylesheet">
-    <link href="/css/print.css?1729688015" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1729688015"></script>
+    <link href="/images/logo.svg?1729770039" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1729770040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729770040" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729770040" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729770040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729770040" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729770040" rel="stylesheet">
+    <link href="/css/fonts.css?1729770040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729770040" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729770040" rel="stylesheet">
+    <link href="/css/theme-amoled.css?1729770040" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1729770040" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1729770040" rel="stylesheet">
+    <link href="/css/print.css?1729770040" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729770040"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -267,12 +267,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1729688015" defer></script>
-        <script src="/js/lunr/lunr.min.js?1729688015" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1729688015" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1729688015" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1729688015" defer></script>
-        <script src="/js/search.js?1729688015" defer></script>
+        <script src="/js/auto-complete.js?1729770040" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729770040" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729770040" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729770040" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729770040" defer></script>
+        <script src="/js/search.js?1729770040" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -293,12 +293,17 @@
           <li data-nav-id="/tools/setting-up-a-self-hosted-nextcloud-server/" class=""><a class="padding" href="/tools/setting-up-a-self-hosted-nextcloud-server/">Setting Up a Self-hosted NextCloud Server<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tools/using-vagrant-on-linux/" class=""><a class="padding" href="/tools/using-vagrant-on-linux/">Using Vagrant on Linux<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/writing/" class=""><input type="checkbox" id="R-section-e557a922d533a171e9a204b7e50265e2" aria-controls="R-subsections-e557a922d533a171e9a204b7e50265e2"><label for="R-section-e557a922d533a171e9a204b7e50265e2"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Writing</span></label><a class="padding" href="/writing/">Writing<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e557a922d533a171e9a204b7e50265e2" class="morespace collapsible-menu">
-          <li data-nav-id="/writing/4-ways-to-quit-caffeine/" class=""><a class="padding" href="/writing/4-ways-to-quit-caffeine/">4 Ways to Quit Caffeine<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/writing/19-biggest-lessons-from-reading-100-books./" class=""><a class="padding" href="/writing/19-biggest-lessons-from-reading-100-books./">19 Biggest Lessons From Reading 100 Books<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/writing/4-ways-to-quit-caffeine/" class=""><a class="padding" href="/writing/4-ways-to-quit-caffeine/">4 Ways to Quit Caffeine<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/writing/7-steps-to-get-back-on-a-nofap-streak-immediately/" class=""><a class="padding" href="/writing/7-steps-to-get-back-on-a-nofap-streak-immediately/">7 Steps to Get Back on a NoFap Streak Immediately<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/writing/caffeine-is-destroying-you/" class=""><a class="padding" href="/writing/caffeine-is-destroying-you/">Caffeine is Destroying You<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/writing/nat-eliasons-seo-course/" class=""><a class="padding" href="/writing/nat-eliasons-seo-course/">Nat Eliason&#39;s SEO course<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/recipes/" class=""><input type="checkbox" id="R-section-a3e5255845a36048a8a1a9a771ebf825" aria-controls="R-subsections-a3e5255845a36048a8a1a9a771ebf825"><label for="R-section-a3e5255845a36048a8a1a9a771ebf825"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Recipes</span></label><a class="padding" href="/recipes/">Recipes<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-a3e5255845a36048a8a1a9a771ebf825" class="morespace collapsible-menu">
           <li data-nav-id="/recipes/creamy-jalepeno-sauce/" class=""><a class="padding" href="/recipes/creamy-jalepeno-sauce/">Creamy Jalepeno Sauce<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/recipes/easy-mango-salsa-quinoa-bowl/" class=""><a class="padding" href="/recipes/easy-mango-salsa-quinoa-bowl/">Easy Mango Salsa Quinoa Bowl<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/recipes/tempeh-bacon/" class=""><a class="padding" href="/recipes/tempeh-bacon/">Tempeh Bacon<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/recipes/vegan-tofu-quesadilla/" class=""><a class="padding" href="/recipes/vegan-tofu-quesadilla/">Vegan Tofu Quesadilla<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/content/" class=""><a class="padding" href="/content/">Contents<i class="fa-fw fas fa-check read-icon"></i></a></li>
           </ul>
         </div>
         <div id="R-shortcuts">
@@ -357,8 +362,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1729688015" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1729688015" defer></script>
+    <script src="/js/clipboard.min.js?1729770041" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729770041" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -374,20 +379,20 @@
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/d3/d3-color.min.js?1729688015" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1729688015" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1729688015" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1729688015" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1729688015" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1729688015" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1729688015" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1729688015" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1729688015" defer></script>
-    <script src="/js/js-yaml.min.js?1729688015" defer></script>
+    <script src="/js/d3/d3-color.min.js?1729770041" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1729770041" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1729770041" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1729770041" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1729770041" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1729770041" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1729770041" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1729770041" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1729770041" defer></script>
+    <script src="/js/js-yaml.min.js?1729770041" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/theme.js?1729688015" defer></script>
+    <script src="/js/theme.js?1729770041" defer></script>
   </body>
 </html>

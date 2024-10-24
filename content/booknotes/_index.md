@@ -84,8 +84,16 @@ I highly advise you make your own outline so you do not have to read everything 
 
 ---
 
+![Anything You Want](https://f.media-amazon.com/images/I/61P+7owVcML._SY425_.jpg?classes=inline&height=175px)
+
+[Anything You Want](Anything%20You%20Want.md) (8/10)
+
+Quick read about creating the business (and life) that you want. These lessons spill over into other areas of life, maybe accidentally. Life isn't all about maximizing profits and accelerated growth. Do what makes you happy. Treat your customers like rock stars and they will tell everyone. 
+
+---
+
 ![The Blog Startup](https://m.media-amazon.com/images/I/61Lm6P0rPsL._SL1360_.jpg?classes=inline&height=175px)
 
-[The Blog Startup - By Meera Kothand](/content/booknotes/The%20Blog%20Startup.md) (8/10)
+[The Blog Startup](The%20Blog%20Startup.md) (8/10)
 
 If you are wanting to blog as a business, you need a sound strategy and business model. Filled with practical tips on identifying your audience, email strategy, branding, marketing, things to watch out for, etc. Definitely read this if you are wanting to start a blog.

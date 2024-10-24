@@ -1,4 +1,4 @@
-# Anything You Want (9/10)
+# Anything You Want (8/10)
 
 ![Anything You Want](https://f.media-amazon.com/images/I/61P+7owVcML._SY425_.jpg?classes=inline&height=175px)
 
@@ -6,8 +6,7 @@ Quick read about creating the business (and life) that you want. These lessons s
 
 ## Summary and Highlights
 
-A business plan should never take more than a few hours of work. Hopefully no more than a few minutes. The best plans start simple. A
-quick glance and common sense should tell you if the numbers will work. The rest are details.
+A business plan should never take more than a few hours of work. Hopefully no more than a few minutes. The best plans start simple. A quick glance and common sense should tell you if the numbers will work. The rest are details.
 
 Success comes from persistently improving and inventing, not from persistently doing what’s not working.
 
@@ -17,15 +16,15 @@ By not having any money to waste, you never waste money.
 
 Never forget that absolutely everything you do is for your customers.
 
-Make every decision — even decisions about whether to expand the business, raise money, or promote someone — according to what’s best
-for your customers.
+Make every decision — even decisions about whether to expand the business, raise money, or promote someone — according to what’s best for your customers.
 
 The way to grow your business is to **focus entirely on your existing customers**. Just thrill them, and they’ll tell everyone.
 
 You need to confidently exclude people, and proudly say what you’re not. By doing so, you will win the hearts of the people you want.
 
-You can’t pretend there’s only one way to do it. Your first idea is bjust one of many options. **No business goes as planned**, so make ten radically different plans. Realizing the initial choice you made was
-just one of many.
+You can’t pretend there’s only one way to do it. Your first idea is just one of many options. 
+
+**No business goes as planned**, so make ten radically different plans. Realizing the initial choice you made was just one of many.
 
 You don’t need a plan or a vision.
 
@@ -69,13 +68,13 @@ When someone’s doing something for the money, people can sense it, like a desp
 
 We want to give to those who give.
 
-**People will choose one company over another just because they like the customer service**
+People will choose one company over another just because they like the customer service.
 
 Customer service is not an expense to be minimized. It’s a core profit center, like sales. It’s where you should put your best people.
 
-It’s much harder to get a new customer than it is to get more business from an existing customer
+It’s much harder to get a new customer than it is to get more business from an existing customer.
 
-Take a few inefficient minutes to get to know anyone who contacts you
+Take a few inefficient minutes to get to know anyone who contacts you.
 
 Imagine what you’d do if your favorite rock star called. You’d drop everything, and give them all the time in the world. So that’s how you should treat everyone that contacts your company.
 
@@ -129,8 +128,7 @@ Some want to be famous in Silicon Valley. Some want to be anonymous.
 
 No matter which goal you choose, there will be lots of people telling you you’re wrong.
 
-Just pay close attention to what excites you and what drains you. Pay close attention to when you’re being the real you
-and when you’re trying to impress an invisible jury.
+Just pay close attention to what excites you and what drains you. Pay close attention to when you’re being the real you and when you’re trying to impress an invisible jury.
 
 Even if what you’re doing is slowing the growth of your business — if it makes you happy, that’s OK. It’s your choice to remain small.
 

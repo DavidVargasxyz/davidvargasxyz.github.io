@@ -3,7 +3,6 @@
 ![The Blog Startup](https://m.media-amazon.com/images/I/61Lm6P0rPsL._SL1360_.jpg?classes=inline&height=175px)
 
 [The Blog Startup - By Meera Kothand](davidvargasxyz.github.io/content/booknotes/The%20Blog%20Startup.md)
-Date Read: 2024-04-14. How Strongly I Recommend It: 8/10
 
 If you are wanting to blog as a business, you need a sound strategy and business model. Filled with practical tips on identifying your audience, email strategy, branding, marketing, things to watch out for, etc. Definitely read this if you are wanting to start a blog.
 
@@ -22,14 +21,11 @@ With **content first**, you start with no product or service and create content 
 
 You get permission to be in touch with them via email.
 
-You find out what type of content makes your audience tick
+You find out what type of content makes your audience tick.
 
-Once you start attracting an audience, you promote your own digital or affiliate products or offer the services that are most aligned with
-their needs and your skill set or expertise.
+Once you start attracting an audience, you promote your own digital or affiliate products or offer the services that are most aligned with their needs and your skill set or expertise.
 
-In **Method 2**, you have existing products and
-
-services and your blog serves to support your business
+In **Method 2**, you have existing products and services and your blog serves to support your business
 
 Even if you start with Method 1—like I did—you will eventually need to
 transition to Method 2

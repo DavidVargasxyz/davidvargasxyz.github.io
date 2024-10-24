@@ -1,4 +1,8 @@
-No seriously. Look at this bird.
+---
+title: Caffeine is Destroying You
+---
+
+Look at this bird.
 
 [https://www.youtube.com/watch?v=HUngLgGRJpo](https://www.youtube.com/watch?v=HUngLgGRJpo)
 
@@ -11,11 +15,11 @@ Or.. you may not associate the negatives that are currently happening with caffe
 Here’s how it goes:
 
 1. You take caffeine through your medium of choice. (Some even go for the suppository… Coffee ENEMAS anyone?)
-    
+
 2. You think, “Caffeine is great”. Look at all your new “energy, adrenaline rush, tomato!”.
-    
+
 3. You wake up the next morning. Dreary and weary. Can’t get out of bed. Let’s get some of that caffeine to make you feel better.
-    
+
 
 And the cycle repeats. You associate your dreary wearies with getting old. Your lack of sleep is because you just suck at sleeping. Your fits of irritability are just your personality.
 
@@ -60,24 +64,17 @@ Take a look at this advertisement from 1924 mentioned in Eugene M. Schwartz’s 
 
 People knew this was a problem 100 years ago. Yet, we are all still addicted.
 
-# Caffeine is the #1 ignored factor when it comes to health.
+## Caffeine is the #1 ignored factor when it comes to health.
 
 Here is the “advice” we see over and over again in regards to taking control of your physical health:
 
-- Cut carbs.
-    
+- Cut carbs. 
 - Cut out blue light.
-    
 - Don’t eat past 6.
-    
 - Don’t eat uncooked spinach.
-    
 - Eat only meat.
-    
 - Stop eating unsoaked almonds.
-    
 - Take this supplement.
-    
 
 80% of Americans consume some form of caffeine daily. I’ve seen mothers give their toddlers Mountain dew! Almonds are the problem? What world are we living in?
 
@@ -95,7 +92,7 @@ Any amount of stimulants in your body is a problem. It’s effecting you **toda
 
 You need to quit caffeine. Plain and simple. You are not living the life you are fully capable of.
 
-# Studies showing caffeine is “Healthy”.
+## Studies showing caffeine is “Healthy”.
 
 Really think about it. Would you believe studies about cocaine funded by cocaine dealers or done my cocaine addicts that think cocaine gives them a positive lift?
 
@@ -103,7 +100,7 @@ There is a billion dollar industry that thrives off of you believing this nonsen
 
 The science is not as bleeding edge as we think. Especially when it comes to nutrition. Caffeine is not a vitamin. We need to start relying a little bit more on human intuition then studies funded by big caffeine and drug addicts.
 
-# Is caffeine stopping us from living the lives we truly want?
+## Is caffeine stopping us from living the lives we truly want?
 
 Here’s the #1 post on Reddit regarding caffeine:
 
@@ -121,11 +118,11 @@ Caffeine is a worker bee drug. It makes you a slave and complacent. It numbs you
 
 This screws with your ability to delay gratification and makes you seek out more short term rewards to numb the pain.
 
-I go over the pain-pleasure balance in my “[Dopamine Nation](https://medium.com/@davidvargasxyz/dopamine-nation-summary-and-review-ee860d628cfc)” summary. So I won’t re-hash it here.
+I go over the pain-pleasure balance in my [Dopamine Nation](../booknotes/Dopamine%20Nation.md) summary. So I won’t re-hash it here.
 
 But the pain-pleasure balance is important to understand. Once you do. You will realize that putting anything in your body that is not food or water is making you miserable.
 
-# Caffeine is a gateway drug.
+## Caffeine is a gateway drug.
 
 Imagine this..
 
@@ -133,7 +130,7 @@ You are anxious, on edge, irritable, depressed, have trouble sleeping. You think
 
 This scenario may not have happened to you yet. But I guarantee it has happened to millions of people who have turned towards drugs to numb the pain.
 
-Caffeine kills people, tips people with deadly heart disease over the edge, plays a factor in road rage car accident, cause vitamin and mineral deficiencies, cardiac arrhythmia, perpetuates drug addiction, and much more.
+Caffeine kills people, tips people with deadly heart disease over the edge, plays a factor in road rage car accidents, causes vitamin and mineral deficiencies, cardiac arrhythmia, perpetuates drug addiction, and much more.
 
 It’s poison.
 

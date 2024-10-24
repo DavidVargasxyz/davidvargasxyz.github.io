@@ -1,3 +1,6 @@
+---
+title: 7 Steps to Get Back on a NoFap Streak Immediately
+---
 1. Reconnect with your reason why. Is there a book or YouTube video that explained the benefits. What motivated you to start in the first place? Write down the negatives associated with porn and masturbation. And the benefits you have felt from previous attempts.
 
 2. Set a goal related to nofap. A 90 day timeline is far enough to make real progress. But not so far out that your timeline is unpredictable.

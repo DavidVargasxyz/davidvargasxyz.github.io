@@ -71,12 +71,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "writing/Caffeine is Destroying You.md",
+                "file": "networking/How to Study for CCNA 200-301.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Caffeine is Destroying You"
+              "title": "How to Study for CCNA 200-301"
             }
           },
           {
@@ -176,7 +176,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "writing/Caffeine is Destroying You.md",
+                "file": "networking/How to Study for CCNA 200-301.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Caffeine is Destroying You"
+              "title": "Backlinks for How to Study for CCNA 200-301"
             }
           },
           {
@@ -195,12 +195,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "writing/Caffeine is Destroying You.md",
+                "file": "networking/How to Study for CCNA 200-301.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Caffeine is Destroying You"
+              "title": "Outgoing links from How to Study for CCNA 200-301"
             }
           },
           {
@@ -222,10 +222,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "writing/Caffeine is Destroying You.md"
+                "file": "networking/How to Study for CCNA 200-301.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Caffeine is Destroying You"
+              "title": "Outline of How to Study for CCNA 200-301"
             }
           },
           {
@@ -288,8 +288,8 @@
   },
   "active": "4d713f41cf4fd0fc",
   "lastOpenFiles": [
-    "content/booknotes/The Blog Startup.md",
     "writing/Caffeine is Destroying You.md",
+    "content/booknotes/The Blog Startup.md",
     "writing/Cardi B Fig Nest Turns Into Struggle for Power.md",
     "writing/The journey.md",
     "writing/Nat Eliason's SEO course.md",
